@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* FONT 프리텐다드 CDN */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css");
+
+/* FONT 산돌 애플 고딕 neo CDN */
+@import url('https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo.css');
+
+/* FONT G마켓 산스 CDN */
+@import url('https://cdn.jsdelivr.net/gh/leetaewook/gmarket-sans-dynamic-subset/GmarketSans.css');
+
+/* FONT 나눔고딕 CDN */
+@import url('https://cdn.jsdelivr.net/gh/fonts-archive/NanumGothic/subsets/NanumGothic-dynamic-subset.css');
+
+
+
+/* text */
+body {
+    font-family: -apple-system,BlinkMacSystemFont,helvetica,Apple SD Gothic Neo,나눔고딕,NanumGothic,맑은 고딕,MalgunGothic,sans-serif;
+    letter-spacing: -0.03rem;
+}
+
+body, div, p, ul, li, h1, h2, h3, h4, h5, h6, dl, dt, dd, form, fieldset, input, legend, ol{ margin:0; padding:0; } /*디폴트 여백제거*/
+a, button {outline:none; text-decoration:none; cursor:pointer; border:none;}
+ul, li {list-style: none;}
+
+body {
+    width: 100%;
+}
+

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/history-style.css" type="text/css">
+    <link rel="stylesheet" href="css/style-nomal.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <title>네이버쇼핑-쇼핑라이브</title>
+</head>
+
+<body>
+    <div id="index" class="index">
+        <div class="wrap">
+
+            <!-- 네비게이션 -->
+            <nav>
+                <ul class="nav-title">
+                    <!-- 뒤로가기/ 탭 닫기 -->
+                    <li id="close-window" onclick="closeBtn();">
+                        <img src="imgs/asset/left-arrow.svg">
+                    </li>
+                    <li class="title">
+                        <p>적립예정 포인트</p>
+                    </li>
+                    <li></li>
+                </ul>
+            </nav>
+
+            <div class="history-top">
+                <ul class="history-box">
+                    <li>
+                        <p>적립 예정 포인트</p>
+                        <!--span 안에 적립 예정 포인트 총합을 출력-->
+                        <p><span>9,699</span> 원</p>
+                    </li>
+                    <li>
+                        <p>적립 받은 포인트 (최근 3개월)</p>
+                        <!--span 안에 3개월 내 적립 받은 포인트 총합을 출력-->
+                        <p><span>500</span> 원</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="history-con">
+                <!--달별 리스트 같은 달에 등록된 리스트는 아래 UL 안에 출력되어야함-->
+                <ul class="month-list">
+                    <!--년 달 표기 yyyy년 (m)m월로 표기 됨-->
+                    <li class="month-head">
+                        2026년 4월
+                    </li>
+                    <!--실질적인 적립 내역 상세 리스트 일별로 나뉨-->
+                    <li class="day-list">
+                        <div class="list-dec">
+                            <!--적립 날자 표기  mm.dd-->
+                            <p class="list-date">04.22</p>
+                            <!--적립 내용-->
+                            <p class="tit">캠핑톡 주식회사 스노우픽 랜드락 아이보리 TR-671R 피칭 세트 (우레탄창, IGT 테이블)</p>
+                            <!--적립 금액-->
+                            <!--적립되었을 경우(완료건 미완료건 둘다)-->
+                            <p class="price plus">+7,800원</p>
+                            <!--적립되었을 경우(완료건 미완료건 둘다)-->
+                            <!--
+                            <p class="price minus">-7,800원</p>
+                            -->
+                        </div>
+                        <div class="list-dec">
+                            <!--상단과 영역을 맞추기 위한 공백 영역-->
+                            <p class="list-blank"></p>
+                            <!--적립 시간-->
+                            <p class="time">09:25</p>
+                            <!--적립 상태-->
+                            <!--적립 상태 / 바로적립이 활성화 된 상태-->
+                            <!--네이버 적립내역 페이지로 이동시킴(고정링크)-->
+                            <p class="status cpc-btn">
+                                <img src="imgs/asset/add.svg">
+                                구매확정하고 바로적립
+                            </p>
+                            <!--적립 상태 / 완료된 상태, 취소된 상태-->
+                            <!--
+                            <p class="status">
+                                적립완료
+                            </p>
+                            <p class="status">
+                                적립취소
+                            </p>
+                            -->
+                        </div>
+                    </li>
+
+                    <li class="day-list">
+                        <div class="list-dec">
+                            <p class="list-date">04.16</p>
+                            <p class="tit">사과떡볶이</p>
+                            <p class="price plus">+17,800원</p>
+                        </div>
+                        <div class="list-dec">
+                            <p class="list-blank"></p>
+                            <p class="time">12:42</p>
+                            <p class="status cpc-btn">
+                                <img src="imgs/asset/add.svg">
+                                구매확정하고 바로적립
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="day-list">
+                        <div class="list-dec">
+                            <p class="list-date">04.07</p>
+                            <p class="tit">달짜상회</p>
+                            <p class="price plus">+117,800원</p>
+                        </div>
+                        <div class="list-dec">
+                            <p class="list-blank"></p>
+                            <p class="time">21:02</p>
+                            <p class="status">
+                                적립완료
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+
+                <!--달별 리스트 같은 달에 등록된 리스트는 아래 UL 안에 출력되어야함-->
+                <ul class="month-list">
+                    <li class="month-head">
+                        2026년 3월
+                    </li>
+                    <li class="day-list">
+                        <div class="list-dec">
+                            <p class="list-date">03.25</p>
+                            <p class="tit">스노우픽 어페럴</p>
+                            <!--취소건-->
+                            <p class="price minus">-6,400원</p>
+                        </div>
+                        <div class="list-dec">
+                            <p class="list-blank"></p>
+                            <p class="time">11:12</p>
+                            <!--적립취소의 건-->
+                            <p class="status">
+                                적립취소
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="day-list">
+                        <div class="list-dec">
+                            <p class="list-date">03.21</p>
+                            <p class="tit">주식회사 해랑</p>
+                            <p class="price plus">+22,100원</p>
+                        </div>
+                        <div class="list-dec">
+                            <p class="list-blank"></p>
+                            <p class="time">16:17</p>
+                            <p class="status">
+                                적립완료
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="day-list">
+                        <div class="list-dec">
+                            <p class="list-date">03.11</p>
+                            <p class="tit">메가커피</p>
+                            <p class="price plus">+1,800원</p>
+                        </div>
+                        <div class="list-dec">
+                            <p class="list-blank"></p>
+                            <p class="time">17:08</p>
+                            <p class="status">
+                                적립완료
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+
+                <!--달별 리스트 같은 달에 등록된 리스트는 아래 UL 안에 출력되어야함-->
+                <ul class="month-list">
+                    <li class="month-head">
+                        2026년 2월
+                    </li>
+                    <li class="day-list">
+                        <div class="list-dec">
+                            <p class="list-date">02.29</p>
+                            <p class="tit">네이버플러스 스토어 슈퍼적립</p>
+                            <!--취소건-->
+                            <p class="price minus">-400원</p>
+                        </div>
+                        <div class="list-dec">
+                            <p class="list-blank"></p>
+                            <p class="time">08:12</p>
+                            <!--적립취소의 건-->
+                            <p class="status">
+                                적립취소
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="day-list">
+                        <div class="list-dec">
+                            <p class="list-date">02.21</p>
+                            <p class="tit">PlayStation Network</p>
+                            <p class="price plus">+78,000원</p>
+                        </div>
+                        <div class="list-dec">
+                            <p class="list-blank"></p>
+                            <p class="time">22:20</p>
+                            <p class="status">
+                                적립완료
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="day-list">
+                        <div class="list-dec">
+                            <p class="list-date">02.02</p>
+                            <p class="tit">청년제과</p>
+                            <p class="price plus">+75,600원</p>
+                        </div>
+                        <div class="list-dec">
+                            <p class="list-blank"></p>
+                            <p class="time">09:18</p>
+                            <p class="status">
+                                적립완료
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+
+                <!--적립내역이 없을경우-->
+                <!--
+                    .history-con 안에 
+                    .month-list가 하나도 없을 경우 
+                    .list-empty 출력
+                -->
+                <div class="list-empty">
+                    <div class="empty-box">
+                        <div class="txt">
+                            <p class="tit">
+                                적립 예정 내역이 없습니다.
+                            </p>
+                            <p class="dec">
+                                적립 예정 내역에 반영되기까지<br>
+                                다소 시간이 걸릴 수 있습니다.
+                            </p>
+                        </div>
+                        <div class="button">
+                            <!--해당 버튼 누르면 새로 고침-->
+                            <!--일단 페이지 리로드 형태로 구현 됨-->
+                            <!--api 리스트 리로드 형태가 좋을듯 함-->
+                            <button class="btn-reload">
+                                <img src="imgs/asset/IcRetry.svg">
+                                새로고침
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--적립내용 전용 푸터-->
+            <div class="footer">
+                    <p class="header">알려드려요</p>
+                    <ul>
+                        <li>‘적립 내역은 최대 3개월 보관됩니다.</li>
+                        <li>내역의 날짜는 구매 또는 주문일 기준입니다.</li>
+                        <li>구매 이후 이용 내역에 반영까지 다소 시간이 소요 될 수 있습니다.</li>
+                        <li>결제일로부터 <span>60일 이내에 구매 확정된 건</span>에 한해 포인트가 지급됩니다.</li>
+                        <li>구매 후 취소/반품/환불하거나 쇼핑몰의 정책이 변경되면 적립이 취소 되거나 적립 포인트가 변경 될 수 있습니다.</li>
+                        <li>적립 한도 적립율 적립 시기 적립 제외 상품 등은 수시로 변경될 수 있습니다.</li>
+                    </ul>
+                </div>
+
+                <!-- 일반 푸터 -->
+                <div class="footer-sign">
+                    <div class="sign">
+                        <p>PINCRUX</p>
+                        <p>Copyright PINCRUX. All rights reserved.</p>
+                    </div>
+                    <div class="btn">
+                        <!--cs 호출 버튼-->
+                        <p onclick="window.open('#');">이용문의</p>
+                    </div>
+                </div>
+
+        </div>
+
+        <!-- 오류 팝업 -->
+        <div class="popup error">
+            <div class="pop-dim"></div>
+            <div class="pop-nomal">
+                <div class="tit">
+                    <p class="head">
+                        오류 제목
+                    </p>
+                </div>
+                <div class="adtxt">
+                    <p class="sub">오류 문구 입력</p>
+                </div>
+                <div class="button">
+                    <button class="close-btn">확인</button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script>
+        // 닫기 버튼
+        function closeBtn() {
+            window.close();
+        }
+
+        function checkEmpty() {
+            const count = $('.history-con .month-list').length;
+
+            if (count === 0) {
+                $('.list-empty').show();
+            } else {
+                $('.list-empty').hide();
+            }
+        }
+
+        // 리스트 그린 후 호출
+        checkEmpty();
+
+        // 새로고침 버튼
+        $('.btn-reload').on('click', function () {
+            location.reload();
+        });
+    </script>
+
+</body>
+</html>

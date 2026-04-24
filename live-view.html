@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style-nomal.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.13.0/lottie.min.js"></script>
+    <title>네이버쇼핑-쇼핑라이브</title>
+</head>
+<body>
+    <div id="index" class="index">
+        <div class="wrap" style="padding-top: 0; position: relative;">
+            <!-- 진행 중 토스트 -->
+            <!-- 페이지가 로드 되자마자 노출됨 -->
+            <!-- 리워드 지급 조건 타이머 (표준 5초) -->
+            <!-- 타이머 끝나면 Fade out-->
+            <div class="toast is-show" id="toast-pending">
+            <ul>
+                <li><img class="coin" src="imgs/asset/npayicon.svg" alt=""></li>
+                <li>
+                <!-- 타이머(초) -->
+                <span class="color"><time datetime="PT5S">5초</time></span>
+                <span>후</span> <span>적립</span>
+                </li>
+            </ul>
+            </div>
+
+            <!-- 완료 토스트 (초기 비노출) -->
+            <!-- 리워드 지급 조건 타이머 (표준 5초) 끝난 시점에서 fade in -->
+            <!-- 지급 리워드 표기 및 적립 완료 애니메이션 호출-->
+            <!-- 3s 후 fade out-->
+            <div class="toast-comple" id="toast-complete" aria-hidden="true">
+            <ul>
+                <li><img class="coin" src="imgs/asset/npayicon.svg" alt=""></li>
+                <li>
+                <!-- 지급 리워드 단위 -->
+                <span class="n-pay">5원</span>
+                <span>적립</span> <span>완료</span>
+                </li>
+                
+            </ul>
+            <!-- lottie 애니메이션 호출 -->
+            <div id="npay-ani"></div>
+            </div>
+
+            <!--10% 추가적립 설명 아이콘--> 
+            <!--영역 터치 시 cpc 설명 팝업 노출-->   
+            <div class="cpc-noti" id="cpc-noti">
+                <img src="imgs/asset/10p-ico.svg">
+            </div>
+
+            <!--최초 진입 시 아이콘옆에 플로팅 되어있는 설명서-->
+            <div class="bubble-box">
+                <div class="bubble">
+                    <!--txt 영역 터치 시 cpc 설명 팝업 노출-->
+                    <p class="txt">
+                        지금 보고 있는 LIVE상품 구매하고<br>
+                        <span class="inline-group">
+                            <span class="point">10% 추가 적립</span> 혜택 받기
+                            <span class="arrow">
+                                <img src="imgs/asset/nomal-arrow.svg">
+                            </span>
+                        </span>
+                    </p>
+
+                    <button class="close-btn">
+                        <img src="imgs/asset/IcClose.svg" alt="">
+                    </button>
+                </div>
+            </div>
+
+            <!-- 라이브 방송 ui 컨테이너 호촐용 아이프레임 영역 -->
+            <div id="iframe-container" style="width: 100%;">
+                <!--10% 추가적립 설명 아이콘--> 
+            </div>
+            <!-- 라이브 방송 ui 컨테이너 호촐용 아이프레임 영역 -->
+
+            <!--cpc 안내팝업-->
+            <div class="popup benefit-popup">
+                <div class="pop-dim"></div>
+                <div class="pop-nomal">
+                    <div class="tit">
+                    <p class="head" 
+                        style="
+                        font-weight: 700;
+                        line-height: 1.5rem;
+                        "
+                    >
+                        지금 보고 있는 상품 구매하면<br>
+                        10% 추가 적립
+                    </p>
+                    </div>
+                    <div class="adtxt"
+                        style="
+                        font-size: 0.875rem;
+                        font-style: normal;
+                        font-weight: 400;
+                        "
+                    >
+                        <p class="sub" 
+                            style="
+                            display: flex;
+                            flex-direction: column;
+                            gap:.625rem;
+                            color: #404048;
+                            text-align: left;
+                            font-size: 0.875rem;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 1.25rem; /* 142.857% */
+                            letter-spacing: -0.01875rem;
+                            padding-bottom: 1.5rem;
+                            ">
+                            <span>· 본 이벤트는 선착순 조기 종료 될 수 있습니다.</span>
+                            <span>· 라이브 시청 후 24시간 이내 라이브 상품을 구매해야 적립이 인정됩니다.</span>
+                            <span>· 쿠폰 할인 차감 및 배송비를 제외한 실제 결제액의 10% 가 적립됩니다.</span>
+                            <span>· 결제 이후 구매확정 완료 시점에 적립됩니다.</span>
+                        </p>
+                    </div>
+                    <div class="button">
+                        <!-- 팝업 닫기 -->
+                        <button class="close-btn" id="close-btn">확인</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        // live 방송 불러오기 - test
+        // 테스트용이며 해당 컨테이너에 알맞게 부여해서 사용해주시면 됩니다.
+        // URL 파라미터 읽기
+        const params = new URLSearchParams(window.location.search);
+        const externalServiceId = params.get("externalServiceId") || "npay";
+        //const type = params.get("type") || "replays";
+        const type = params.get("type") || "lives";
+        //const broadcastId = params.get("broadcastId") || "1662528";
+        const broadcastId = params.get("broadcastId") || "1765611";
+
+        //const src = `https://view.shoppinglive.naver.com/externals/${externalServiceId}/${type}/${broadcastId}?tr=lisol&fm=livesolution&sn=yourservice`;
+        const src = `https://view.shoppinglive.naver.com/externals/${externalServiceId}/${type}/${broadcastId}?tr=lim&fm=shoppinglive&sn=home`;
+        
+        document.getElementById("iframe-container").innerHTML = `<iframe class="iframe" src="${src}"></iframe>`
+
+        //로띠파일 적용 근데 좀 느린것같음
+        var animation = lottie.loadAnimation({
+            container: document.getElementById('npay-ani'), // 애니메이션이 렌더링될 DOM 엘리먼트
+            renderer: 'svg', // 렌더러 종류: 'svg', 'canvas', 또는 'html' (SVG가 가장 일반적)
+            loop: true, // 반복 재생 여부 (true/false 또는 숫자)
+            autoplay: true, // 자동 재생 여부 (true/false)
+            path: 'imgs/lotti/coinflip.json' // Lottie JSON 파일의 경로 (로컬 또는 URL)
+        });
+
+        //타이머 토스트 -test
+        //구동을 위한 테스트 스크립트이며 서버와 통신등등 변경하거나 새로 만들어서 사용하시면 될것 같습니다.
+        //화면 유지 시간이나 지급 리워드 등등에 관하여서는 변경의 여지가 있으니 이점 참고하시어 제작해주시면 될것 같습니다.
+
+        $(function () {
+            const $pending  = $("#toast-pending");   // 진행 토스트
+            const $complete = $("#toast-complete");  // 완료 토스트
+            const $time     = $pending.find("time");
+
+            // PTnS 형태에서 n(초) 추출
+            function getSecondsFromISO(isoStr) {
+                const m = /^PT(\d+)S$/i.exec(isoStr || "");
+                return m ? parseInt(m[1], 10) : 5;     // 기본 5초
+            }
+
+            // 초 값을 ISO와 표시 텍스트에 반영
+            function setTime(seconds) {
+                $time.attr("datetime", `PT${seconds}S`);
+                $time.text(`${seconds}초`);
+            }
+
+            // 최초 표시 상태
+            let seconds = getSecondsFromISO($time.attr("datetime"));
+            setTime(seconds);            // 텍스트 싱크 맞추기
+            $pending.addClass("is-show");
+
+            const tick = setInterval(function () {
+                seconds -= 1;
+                if (seconds <= 0) {
+                clearInterval(tick);
+                // 진행 토스트를 자연스럽게 감추고 → 완료 토스트로 전환
+                $pending.addClass("is-hide").removeClass("is-show");
+
+                // 트랜지션 종료 후 완료 토스트 표시 (fallback로 320ms 사용)
+                const after = function () {
+                    $pending.removeClass("is-hide");
+                    $complete.attr("aria-hidden", "false").addClass("is-show");
+
+                    // 완료 토스트 3초 노출 후 자연스럽게 사라짐
+                    setTimeout(function () {
+                    $complete.addClass("is-hide").removeClass("is-show");
+                    setTimeout(function () {
+                        $complete.removeClass("is-hide").attr("aria-hidden", "true");
+                    }, 320); // CSS transition과 맞춰줌
+                    }, 3000);
+                };
+
+                // 트랜지션 이벤트 & 폴백
+                let transitioned = false;
+                $pending.one("transitionend", function () {
+                    transitioned = true;
+                    after();
+                });
+                setTimeout(function () {
+                    if (!transitioned) after();
+                }, 320);
+
+                } else {
+                setTime(seconds);
+                }
+            }, 1000);
+        });
+
+        //팝업 관련 스크립트
+        $(function () {
+
+            const $popup = $('.benefit-popup');
+            const $bubble = $('.bubble-box');
+
+            // 텍스트 / 버튼 클릭 → 팝업 열기
+            $(document).on('click', '.bubble-box .txt, #cpc-noti', function (e) {
+                e.stopPropagation();
+                $popup.fadeIn(200);
+            });
+
+            // bubble 닫기 버튼
+            $(document).on('click', '.bubble-box .close-btn', function (e) {
+                e.stopPropagation();
+                $bubble.fadeOut(200);
+            });
+
+            // 팝업 닫기 (dim 클릭)
+            $(document).on('click', '.benefit-popup .pop-dim', function () {
+                $popup.fadeOut(200);
+            });
+
+            // 확인 버튼 닫기
+            $(document).on('click', '.benefit-popup #close-btn', function () {
+                $popup.fadeOut(200);
+            });
+
+        });
+
+
+
+    </script>
+
+</body>
+</html>

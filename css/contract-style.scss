@@ -1,0 +1,545 @@
+//기본 그레이스케일
+$w-1 : #fff;
+$w-22 : #f9f9f9;
+$w-2 : #f4f4f4;
+$w-3 : #ededed;
+$w-4 :#f3f4f6;
+$w-5 : #ddd;
+$w-6 : #cacaca;
+$g-1 : #333;
+$g-2 : #666;
+$g-3 : #999;
+
+$dg-1 :#2E343A;
+
+//bg컬러
+$bg : #fff;
+
+//line 컬러
+$l-c1 : #E2E9F4;
+
+//시그니처
+$s-c1 : #00DE5A;
+$s-c2 : #3891FF;
+$-red : #F73631;
+$-naverbg : #FFEAEB;
+
+.no-print { display: inline-flex; gap: 8px; }
+
+@media print {
+  .no-print { display: none !important; }
+  #dateInput { display: none !important; }
+  input::placeholder,
+  textarea::placeholder {
+    color: transparent !important;
+  }
+
+  /* 크롬/사파리 대응 */
+  input::-webkit-input-placeholder,
+  textarea::-webkit-input-placeholder {
+    color: transparent !important;
+  }
+
+  /* 파이어폭스 */
+  input::-moz-placeholder,
+  textarea::-moz-placeholder {
+    color: transparent !important;
+  }
+
+  /* IE/Edge 구버전 */
+  input:-ms-input-placeholder,
+  textarea:-ms-input-placeholder {
+    color: transparent !important;
+  }
+}
+
+@media print {
+  input:disabled {
+    color: #111 !important;
+    -webkit-text-fill-color: #111 !important; // iOS 대응
+    opacity: 1 !important;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: transparent !important;
+  }
+}
+
+
+@mixin dis-flex($direction, $gap){
+    display: flex;
+    flex-direction: $direction;
+    gap: $gap;
+}
+@mixin badge($font-size, $back-c){
+    width: fit-content;
+    font-size: $font-size;
+    font-weight: 600;
+    color: $w-1;
+    background-color: $back-c;
+    border-radius: .4rem;
+}
+@mixin line-clamp($lines) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $lines;
+  overflow: hidden;
+}
+@media print {
+  @page {
+    size: A4;
+    margin: 1cm;
+  }
+}
+
+input, textarea, select, button {
+  font-family: "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif !important;
+}
+
+input:focus,
+textarea:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.logo {
+    width: calc(100% - 4rem);
+    padding: 0 2rem;
+    img {
+        height: 2rem;
+    }
+}
+
+.contract {
+    width: calc(100% - 4rem);
+    padding: 2rem;
+    @include dis-flex(column, .8rem);
+    .title {
+        font-size: 20pt;
+        font-weight: 700;
+    }
+}
+
+.contract {
+    .input-div {
+        padding: 24px 0;
+        .tit {
+            font-size: 14pt;
+            font-weight: 700;
+        }
+    }
+}
+
+.input-div {
+    .grid {
+        margin-top: 16px;
+        display: grid;
+        grid-template-columns: 1fr;
+        border-top: 2px solid #333;
+    }
+}
+
+.col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: .6rem;
+    border-bottom: 1px solid #999;
+    .item {    
+        @include dis-flex(row, 0rem);
+        align-items: center;
+        position: relative;
+        .tit {
+            width: 25%;
+            font-size: 12pt;
+            font-weight: 600;
+            text-align: center;
+        }
+        .input {
+            width: calc(75% - 2rem);
+            input {
+                width: 100%;
+                padding: 1rem;
+                border: none;
+                font-size: 12pt;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.full {
+    grid-template-columns: 1fr;
+    .item {    
+        .tit {
+            width: 12.5%;
+        }
+        .input {
+            width: calc(87.5% - 2rem);
+        }
+    }
+}
+
+.row {
+    @include dis-flex(column, 0rem);
+    width: calc(43.775% - 2rem);
+    .inner {
+        .tit {
+            width: 25%;
+        }
+    }
+}
+
+input[type="text"]:disabled {
+  background: none;
+}
+
+input::placeholder {
+  color: #ddd;
+  font-style: italic;
+}
+
+textarea::placeholder {
+  color: #ddd;
+  font-style: italic;
+}
+
+.inner {
+    @include dis-flex(row, 0rem);
+    align-items: center;
+    position: relative;
+    .tit {
+        font-size: 14pt;
+        font-weight: 600;
+        text-align: center;
+    }
+    .input {
+        width: 70%;
+        input {
+            width: 100%;
+            padding: 1rem;
+            border: none;
+            font-size: 14pt;
+            font-weight: 400;
+        }
+    }
+}
+
+.txt-area {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    font-size: 12pt;
+    font-weight: 400;
+    box-sizing: border-box;
+    overflow: hidden; /* 스크롤바 숨김 */
+    resize: none; 
+}
+
+.txt {
+    padding: 1rem;
+    font-size: 12pt;
+    line-height: 20pt;
+    width: calc(87.5% - 2rem);
+    span {
+        font-weight: 700;
+    }
+    .input {
+        @include dis-flex(row, 0rem);
+        align-items: center;
+        input {
+            flex: 1;
+        }
+    }
+}
+
+.footer-date {
+    padding: 1rem;
+    @include dis-flex(column, 1rem);
+    align-items: center;
+    text-align: center;
+    font-size: 14pt;
+    .input {
+        @include dis-flex(row, 0rem);
+        align-items: center;
+        input {
+            text-align: center;
+            flex: 1;
+            padding: 1rem;
+            border: none;
+            font-size: 14pt;
+            font-weight: 400;
+        }
+    }
+}
+
+.footer-signed {
+    @include dis-flex(row, 1rem);
+    .signed-grid {
+        flex: 1;
+        padding: 3rem 3rem
+    }
+}
+
+.signed-grid {
+    .table-txt {
+        @include dis-flex(column, .4rem);
+        font-size: 14pt;
+        p {
+            font-weight: 700;
+        }
+        input {
+            padding: 1rem 0;
+            border: none;
+            font-size: 14pt;
+            font-weight: 400;
+        }
+        .full {
+            @include dis-flex(row, .4rem);
+            align-items: center;
+            position: relative;
+        }
+    }
+}
+
+.sub {
+    font-size: 12pt;
+    color: #999;
+}
+
+.signed {
+    position: relative;
+    .label {
+        position: relative; /* 또는 absolute, fixed */
+        z-index: 10;  
+    }
+    #imageUpload {
+        z-index: 99;
+    }
+}
+
+.sign-img {
+    position: absolute;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    top: -30px;
+    right: -38px;
+    margin-left: auto;
+    margin-right: auto;
+    img {
+        width: 100%;
+    }
+}
+
+.contract-actions {
+    @include dis-flex(column, 1.6rem);
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 3rem;
+    p {
+        line-height: 20pt;
+        span {
+            font-size: 16pt;
+            font-weight: 700;
+            line-height: 30pt;
+            color: #333;
+        }
+    }
+    button {
+        margin: 0 auto;
+        width: 560px;
+        padding: 2rem;
+        border-radius: 1rem;
+        font-size: 18pt;
+        font-weight: 700;
+        color: #fff;
+        background-color: #333;
+    }
+}
+
+.date-wrap {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* 출력용 텍스트 */
+.date-text {
+  display: none;
+  font-size: 14pt;
+  font-weight: 400;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+/* 선택 후 상태 */
+.date-wrap.is-fixed .date {
+  display: none;
+}
+
+.date-wrap.is-fixed .date-text {
+  display: inline-block;
+}
+
+input[type='date']{
+    // 캘린더 아이콘을 클릭해야만 달력이 보이는데 캘린더의 영역을 조절하기위함
+    position: relative; 
+    padding-right: 10px;
+    // 글자색 변경
+    color: #ddd;
+    font-family: -apple-system,BlinkMacSystemFont,helvetica,Apple SD Gothic Neo,나눔고딕,NanumGothic,맑은 고딕,MalgunGothic,sans-serif;                     
+}
+
+// 기본으로 제공되는 달력 이모지 display 없애기 
+// + 기본 값으론 캘린더를 눌러야만 달력이 나왔는데 이 기능도 무력화
+input[type="date"]::-webkit-clear-button,
+input[type="date"]::-webkit-inner-spin-button { 
+    display: none;
+} 
+        
+        
+// 캘린더 아이콘을 클릭하는 영역을 의미하는 선택자
+// 이 영역을 input의 크기만큼으로 설정(width,heigh 값이 100%)하여
+// input의 어떤 곳을 클릭해도 캘린더를 클릭한 것과 같도록 함
+input[type='date']::-webkit-calendar-picker-indicator {
+    position:absolute;
+    //왼쪽위에 위치시키고 클릭 영역을 부모(input)의 크기만큼 가짐
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    // 배경과 글자를 투명하게 하여 기존의 아이콘이 없는 것처럼 보여줌
+    background: transparent;
+    color: transparent;
+}
+
+.select {
+    padding: 1.4rem 0 1rem;
+    .inner {
+        .tit {
+            text-align: start;
+        }
+    }
+}
+
+.inner .input .select-box {
+    padding: .2rem;
+    font-size: 12pt;
+    border: 0.1px solid #fff;
+}
+
+
+/* =========================
+   Error Popup
+   ========================= */
+
+.popup.error {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: none;
+
+  &.open {
+    display: block;
+  }
+
+  /* dim */
+  .pop-dim {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(2px);
+  }
+
+  /* popup box */
+  .pop-nomal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% - 4rem);
+    max-width: 420px;
+    background: #fff;
+    border-radius: 1.2rem;
+    overflow: hidden;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+    animation: popIn 0.1s ease-out;
+  }
+
+  /* title */
+  .tit {
+    padding: 1.6rem 1.6rem 0.8rem;
+    text-align: center;
+
+    .head {
+      font-size: 16pt;
+      font-weight: 700;
+      color: #111;
+    }
+  }
+
+  /* content */
+  .adtxt {
+    padding: 0 1.6rem 1.6rem;
+    text-align: center;
+
+    .sub {
+      font-size: 13pt;
+      line-height: 1.4;
+      color: #666;
+      word-break: keep-all;
+    }
+  }
+
+  /* button area */
+  .button {
+    padding: 1.2rem 1.6rem 1.6rem;
+
+    .close-btn {
+      width: 100%;
+      height: 56px;
+      border-radius: 0.8rem;
+      border: none;
+      font-size: 14pt;
+      font-weight: 700;
+      color: #fff;
+      background: #333;
+      cursor: pointer;
+    }
+  }
+}
+
+/* =========================
+   Animation
+   ========================= */
+@keyframes popIn {
+  from {
+    transform: translate(-50%, -48%) scale(0.96);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+
+/* =========================
+   Print 시 팝업 제거
+   ========================= */
+@media print {
+  .popup {
+    display: none !important;
+  }
+}
+
+
+/*Pc*/
+@media (min-width : 1279px) {
+    
+    .index {
+        .wrap {
+            width: 960px;
+        }
+    }
+}

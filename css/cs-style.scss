@@ -1,0 +1,415 @@
+@import "style.scss";
+
+input {
+    font-family: -apple-system,BlinkMacSystemFont,helvetica,Apple SD Gothic Neo,나눔고딕,NanumGothic,맑은 고딕,MalgunGothic,sans-serif;
+    letter-spacing: -0.03rem;
+}
+
+input::placeholder {
+  color: $g-3;
+}
+
+textarea::placeholder {
+    color: $g-3;
+}
+
+.cs-top-banner {
+    @include dis-flex(column, 1.2rem);
+    position: relative;
+    padding-bottom: 2rem;
+    .img {
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+    .txt {
+        @include dis-flex(column, .8rem);
+        padding: 0 1rem;
+        .tit {
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+        .sub {
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.8rem;
+        }
+    }
+    .btn-area {
+        @include dis-flex(column, 0rem);
+        align-items: flex-start;
+        padding: 0 1rem;
+        .download-btn {
+            width: auto;
+            display: block;
+            padding: .6rem 1rem;
+            font-size: 1rem;
+            font-weight: 700;
+            border-radius: .4rem;
+            background-color: #93E998;
+            color: $g-1;
+        }
+    }
+}
+
+.cs-top-banner::before {
+    content: "";
+    position: absolute;
+    left: 1rem;
+    bottom: 0;
+    height: 1px;
+    width: calc(100% - 2rem);
+    border-bottom: 1px solid $w-3;
+}
+
+.cs-input-area {
+    @include dis-flex(column, 1rem);
+    position: relative;
+    padding: 2rem 1rem;
+}
+
+.input-full {
+    width: 100%;
+    @include dis-flex(column, .6rem);
+    label {
+        @include dis-flex(row, 0em);
+        font-size: 1rem;
+        font-weight: 600;
+        align-items: center;
+        span {
+            margin-left: .4rem;
+            font-size: .65rem;
+            color: $-red;
+        }
+    }
+    input {
+        font-size: 1rem;
+        font-weight: 400;
+        height: 56px;
+        padding: 0 1rem;
+        border-radius: .6rem;
+        border: .8px solid $w-6;
+    }
+    .sub-noti {
+        font-size: .75rem;
+        font-weight: 400;
+        color: $g-2;
+        span {
+            font-weight: 600;
+            color: $-red;
+        }
+    }
+    .input-half {
+        @include dis-flex(row, .6rem);
+        input {
+            width: calc(50% - .3rem);
+        }
+    }
+    textarea {
+        font-family: -apple-system,BlinkMacSystemFont,helvetica,Apple SD Gothic Neo,나눔고딕,NanumGothic,맑은 고딕,MalgunGothic,sans-serif;
+        color: $g-1;
+        letter-spacing: -0.03rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.6rem;
+        align-items: start;
+        padding: 1rem;
+        height: 10rem;
+        border-radius: .6rem;
+        border: .8px solid $w-6;
+        overflow: scroll;
+    }
+    .check-box {
+        @include dis-flex(row, .6rem);
+        align-items: center;
+        input[type="checkbox"] {
+            margin-top: 1.25px;
+            appearance: none; /* 기본(네이티브) 모양을 제거 */
+            box-sizing: border-box;
+            background-clip: content-box;
+            padding: 0.25em;
+            width: 1.25em;
+            height: 1.25em;
+            border-radius: .4rem;
+            border: 1px solid $w-6;
+            cursor: pointer;
+        }
+        input[type="checkbox"]:checked {
+            border-color: $s-c1;
+            background-color: $s-c1;
+        }
+        label {
+            font-size: .9rem;
+            font-weight: 500;
+        }
+    }
+    .txt-box {
+        margin-top: .4rem;
+        padding: 1rem;
+        border-radius: .6rem;
+        background-color: $w-2;
+        font-size: .8rem;
+        font-weight: 400;
+        color: $g-2;
+        line-height: 1.4rem;
+    }
+}
+
+.sumit-btn {
+    height: 56px;
+    background-color: $s-c1;
+    font-size: 1rem;
+    font-weight: 700;
+    color: $g-1;
+    border-radius: .6rem;
+}
+
+.sumit-btn.disabled {
+    background-color: $w-5;
+    color: $w-2;
+}
+
+
+.cs-footer {
+    position: relative;
+    @include dis-flex(column, .6rem);
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: .8rem;
+    font-weight: 400;
+    color: $g-3;
+    p:first-child {
+        font-size: .9rem;
+        font-weight: 700;
+    }
+}
+
+.cs-footer::before {
+    content: "";
+    position: absolute;
+    left: 1rem;
+    top: 0;
+    height: 1px;
+    width: calc(100% - 2rem);
+    border-top: 1px solid $w-3;
+}
+
+.date_picker {
+    @include dis-flex(column, .6rem);
+    width: 100%;
+    position: relative;
+    flex: 1;
+
+    //date - Time 피커 박스 기본값 아이콘 숨기고 기본 텍스트 들을 숨김처리 (플레이스 홀더용)
+    input {
+        display: flex;
+        position: relative; // 캘린더 아이콘을 클릭해야만 달력이 보이기 때문에 이 영역 자체를 제어하기 위해 설정
+        background: url(../imgs/asset/Calendar.svg )
+        no-repeat right 1rem center / 1.5rem auto; // 배경에 커스텀 아이콘을 넣어주자! x축은 오른쪽에서부터 10px 떨어지게 하고, y축은 가운데 정렬하고, width 25px에 height auto라는 크기를 부여한다.
+        align-items: center;
+        width: calc(100% - 2rem);
+        text-align: left;
+        font-size: 1rem;
+        font-weight: 500;
+        color: $g-1;
+        background-color: $w-1;
+    }
+    // 실제 캘린더 아이콘을 클릭하는 영역을 의미하는 선택자
+    // 이 영역을 확장해서 input의 어떤 곳을 클릭해도 캘린더를 클릭한 것과 같은 효과
+    input::-webkit-calendar-picker-indicator {
+        position: absolute; // 이를 설정하기 위해 사전에 relative를 설정한 것이다.
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: transparent; // 배경은 투명하게,
+        color: transparent; // 글자도 투명하게! 이 두 설정을 통해 캘린더 아이콘을 사라지게 만든다.
+        cursor: pointer;
+    }
+
+    //Time 피커 - 플레이스홀더 개시용
+    input[type="time"] {
+        width: calc(100% - 2rem);
+        background: url(../imgs/asset/TimeSquare.svg )
+        no-repeat right 1rem center / 1.5rem auto; // 배경에 커스텀 아이콘을 넣어주자! x축은 오른쪽에서부터 10px 떨어지게 하고, y축은 가운데 정렬하고, width 25px에 height auto라는 
+    }
+    .timeinput {
+        border: .8px solid $w-6;
+        border-radius: .6rem;
+        background: #fff;
+        outline: none;
+        // 빈 값일 때(아직 시간 선택 전): 크롬의 --:-- 을 숨김
+        &.is-empty {
+            color: transparent;
+            // 크롬/사파리 계열 내부 시간 표시 영역도 숨김
+            &::-webkit-datetime-edit,
+            &::-webkit-datetime-edit-fields-wrapper,
+            &::-webkit-datetime-edit-text,
+            &::-webkit-datetime-edit-hour-field,
+            &::-webkit-datetime-edit-minute-field {
+                color: transparent;
+            }
+        }
+        // 값이 있을 때는 정상 표시
+        &.is-filled {
+            color: $g-1;
+            &::-webkit-datetime-edit,
+            &::-webkit-datetime-edit-fields-wrapper,
+            &::-webkit-datetime-edit-text,
+            &::-webkit-datetime-edit-hour-field,
+            &::-webkit-datetime-edit-minute-field {
+                color:$g-1;
+            }
+        }
+        &:focus {
+            border-color: $s-c1;
+        }
+    }
+    //time 라벨 (플레이스 홀더역할)
+    .time-label {
+        position: absolute;
+        left: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 1rem;
+        color: $g-3;
+        font-weight: 400;
+        pointer-events: none;
+        transition: 0.2s ease;
+        z-index: 1;
+    }
+    //값이 있으면 라벨 삭제
+    &.is-filled {
+        .time-label {
+        display: none;
+        }
+    }
+
+    //Time 피커 - 플레이스홀더 개시용
+    input[type="date"]::before {
+        content: attr(
+            placeholder
+        ); 
+        // input 태그의 placeholder라는 속성값을 가져와서 content로 사용한다.
+        width: 100%;
+        line-height: 2;
+        color: $g-3;
+        text-align: left;
+    }
+    //날짜를 선택하지 않았을 때 자동으로 적용되는 placeholder를 없애기 위해 설정.
+    input[type="date"]:not(:focus):invalid {
+        &::-webkit-datetime-edit-text,
+        &::-webkit-datetime-edit-month-field,
+        &::-webkit-datetime-edit-day-field,
+        &::-webkit-datetime-edit-year-field {
+        -webkit-appearance: none;
+        display: none;
+        }
+    }
+    input[type="date"]:focus::before,
+    input[type="date"]:valid::before {
+        display: none; // 유효값이 입력된 경우 before에 있는 것을 사라지게 한다.
+        &::-webkit-datetime-edit-text,
+        &::-webkit-datetime-edit-month-field,
+        &::-webkit-datetime-edit-day-field,
+        &::-webkit-datetime-edit-year-field {
+        -webkit-appearance: none;
+        display: none;
+        }
+    }
+
+}
+
+.select_box {
+    flex: 1;
+    width: 100%;
+    select {
+        width: 100%;
+        font-size: 1rem;
+        font-weight: 400;
+        height: 56px;
+        padding: 0 1rem;
+        border-radius: .6rem;
+        border: .8px solid $w-6;
+        -webkit-appearance:none; /* for chrome */
+        -moz-appearance:none; /*for firefox*/
+        appearance:none;
+        background:url('../imgs/asset/TimeCircle.svg') no-repeat right 1rem center / 1.5rem auto;
+    }
+    select::-ms-expand{
+        display:none;/*for IE10,11*/
+    }
+
+
+    //셀렉트 박스 값이 없을때 플레이스 홀더 표시
+    select:invalid {
+        color: $g-3;
+    }
+}
+
+@media (min-width : 1279px) {
+    nav {
+        display: none;
+    }
+    .wrap {
+        padding-top: 0;
+    }
+    #cs-wrap {
+        min-width: 1270px;
+        width: 100svw;
+        height: 100svh;
+        background: linear-gradient(159deg, #0E1611 8.08%, #043617 90.09%);
+        background-attachment: fixed;
+        overflow: scroll;
+    }
+    .contant-box {
+        @include dis-flex(row, 4rem);
+    }
+    .box{
+        flex: 1;
+    }
+
+    .box.left {
+        width: 560px;
+        height: 100svh;
+        display: flex;
+        align-items: center;
+        position: fixed;
+    }
+
+    .cs-top-banner {
+        margin-top: calc(56px - 1rem);
+        @include dis-flex(column, 2rem);
+            .img {
+                img {
+                    border-radius: 1rem
+                }
+            }
+            .txt {
+                .tit {
+                    color: #65DB6A;
+                }
+                .sub {
+                    color: #ddd;
+                }
+            }
+    }
+    .cs-top-banner::before {
+            display: none;
+    }
+
+    .box.right {
+        width: 480px;
+        margin-left: calc(560px + 4rem);
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        padding: .6rem;
+        overflow: scroll;
+        background-color: $w-1;
+        border-radius: 1rem;
+    }
+
+
+}
