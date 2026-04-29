@@ -307,14 +307,12 @@ let landingURL     = '';
 let countdownTimer = null;
 let sdkAdInstance  = null;
 let bannerInstance = null;
-
-// 클릭 후 복귀 감지용
 let adClickedFlag  = false;
 
 function markSuccess(btnId, labelId, ringId) {
-  const btn   = document.getElementById(btnId);
+  const btn = document.getElementById(btnId);
   const label = document.getElementById(labelId);
-  const ring  = document.getElementById(ringId);
+  const ring = document.getElementById(ringId);
   if (!btn) return;
   btn.disabled = false;
   btn.classList.add('success');
@@ -322,11 +320,9 @@ function markSuccess(btnId, labelId, ringId) {
   label.textContent = '✅ 성공';
 }
 
-// visibilitychange: 광고 클릭 후 탭 복귀 시 성공 처리
 document.addEventListener('visibilitychange', () => {
   if (document.visibilityState === 'visible' && adClickedFlag) {
     adClickedFlag = false;
-    // 현재 보이는 버튼에 성공 표시
     const sdkFrame = document.getElementById('sdk-banner-frame');
     if (sdkFrame && sdkFrame.style.display !== 'none') {
       markSuccess('btn-cta-sdk', 'cta-label-sdk', 'countdown-ring-sdk');
@@ -363,7 +359,6 @@ function resetAdUI() {
   document.getElementById('countdown-progress').style.strokeDashoffset = '0';
   document.getElementById('countdown-ring').style.display = 'inline-block';
   document.getElementById('cta-label').textContent = '광고 참여하기';
-
   document.getElementById('countdown-num-sdk').textContent = '5';
   document.getElementById('countdown-progress-sdk').style.strokeDashoffset = '0';
   document.getElementById('countdown-ring-sdk').style.display = 'inline-block';
