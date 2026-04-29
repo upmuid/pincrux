@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>애드팝콘 SSP Web SDK 테스트</title>
+  <script async src="https://webapi.adpopcorn.com/ssp/web-sdk/ap-ssp-web-sdk-1.14.1.min.js"></script>
+  <style>
+    /* ===== 공통 ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', Apple SD Gothic Neo, sans-serif; background: #f5f6fa; min-height: 100vh; }
+
+    /* ===== 설정 페이지 ===== */
+    #page-config {
+      display: flex; flex-direction: column; align-items: center;
+      justify-content: center; min-height: 100vh; padding: 24px;
+    }
+    .config-card {
+      background: #fff; border-radius: 16px; padding: 36px 32px;
+      width: 100%; max-width: 480px;
+      box-shadow: 0 4px 24px rgba(0,0,0,.10);
+    }
+    .config-card h1 {
+      font-size: 22px; font-weight: 700; margin-bottom: 6px;
+      color: #1a1a2e; text-align: center;
+    }
+    .config-card .subtitle {
+      font-size: 13px; color: #888; text-align: center; margin-bottom: 28px;
+    }
+    .form-group { margin-bottom: 18px; }
+    .form-group label { display: block; font-size: 13px; font-weight: 600; color: #444; margin-bottom: 6px; }
+    .form-group input, .form-group select {
+      width: 100%; padding: 11px 14px; border: 1.5px solid #e0e0e0;
+      border-radius: 9px; font-size: 14px; color: #222;
+      transition: border-color .2s; outline: none; background: #fafafa;
+    }
+    .form-group input:focus, .form-group select:focus { border-color: #5b6cf8; background: #fff; }
+    .form-group .hint { font-size: 11px; color: #aaa; margin-top: 4px; }
+    .divider { border: none; border-top: 1px solid #f0f0f0; margin: 22px 0; }
+    .btn-start {
+      width: 100%; padding: 14px; background: linear-gradient(135deg, #5b6cf8, #7c3aed);
+      color: #fff; border: none; border-radius: 10px; font-size: 16px;
+      font-weight: 700; cursor: pointer; transition: opacity .2s;
+    }
+    .btn-start:hover { opacity: .88; }
+    .saved-badge {
+      display: inline-block; background: #eefbf0; color: #27ae60;
+      border-radius: 20px; font-size: 11px; padding: 2px 10px;
+      margin-left: 8px; vertical-align: middle;
+    }
+
+    /* ===== 광고 노출 페이지 ===== */
+    #page-ad {
+      display: none; flex-direction: column; align-items: center;
+      min-height: 100vh; background: #0d0d1a; padding: 0;
+    }
+    .ad-header {
+      width: 100%; max-width: 600px; display: flex;
+      align-items: center; justify-content: space-between;
+      padding: 18px 20px 12px;
+    }
+    .ad-header .back-btn {
+      background: none; border: none; color: #aaa; font-size: 13px;
+      cursor: pointer; display: flex; align-items: center; gap: 4px;
+    }
+    .ad-header .back-btn:hover { color: #fff; }
+    .ad-header .header-label { font-size: 13px; color: #888; }
+
+    .ad-content-area {
+      flex: 1; width: 100%; max-width: 600px;
+      display: flex; flex-direction: column; align-items: center;
+      justify-content: center; padding: 20px;
+      gap: 24px;
+    }
+
+    /* 로딩 스피너 */
+    .ad-loading {
+      display: flex; flex-direction: column; align-items: center; gap: 14px;
+    }
+    .spinner {
+      width: 44px; height: 44px; border: 4px solid rgba(255,255,255,.15);
+      border-top-color: #5b6cf8; border-radius: 50%;
+      animation: spin .8s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .ad-loading p { color: #aaa; font-size: 14px; }
+
+    /* 광고 배너 컨테이너 */
+    .ad-banner-container {
+      display: none; width: 100%; flex-direction: column; align-items: center; gap: 20px;
+    }
+    .ad-sponsor-label { font-size: 11px; color: #666; letter-spacing: 1px; text-transform: uppercase; }
+    .ad-banner-wrapper {
+      width: 100%; max-width: 500px; border-radius: 16px; overflow: hidden;
+      box-shadow: 0 8px 40px rgba(0,0,0,.5); position: relative; cursor: pointer;
+    }
+    .ad-banner-wrapper img {
+      width: 100%; display: block; object-fit: cover;
+    }
+    .ad-info-bar {
+      width: 100%; max-width: 500px; display: flex;
+      align-items: center; gap: 12px; padding: 12px 0;
+    }
+    .ad-icon { width: 40px; height: 40px; border-radius: 8px; object-fit: cover; flex-shrink: 0; }
+    .ad-text-group { flex: 1; }
+    .ad-title { font-size: 14px; font-weight: 700; color: #fff; margin-bottom: 2px; }
+    .ad-desc { font-size: 12px; color: #aaa; }
+    .ad-privacy {
+      width: 16px; height: 16px; opacity: .5; flex-shrink: 0; cursor: pointer;
+    }
+
+    /* CTA 버튼 영역 */
+    .ad-cta-area {
+      width: 100%; max-width: 500px; padding-bottom: 28px;
+    }
+    .btn-cta {
+      width: 100%; padding: 16px;
+      background: linear-gradient(135deg, #5b6cf8, #7c3aed);
+      color: #fff; border: none; border-radius: 12px;
+      font-size: 16px; font-weight: 700; cursor: pointer;
+      transition: opacity .2s, transform .1s;
+      position: relative; overflow: hidden;
+    }
+    .btn-cta:disabled { opacity: .6; cursor: not-allowed; }
+    .btn-cta:not(:disabled):hover { opacity: .9; }
+    .btn-cta:not(:disabled):active { transform: scale(.98); }
+    .btn-cta .countdown-ring {
+      position: absolute; top: 50%; right: 18px; transform: translateY(-50%);
+    }
+    .countdown-circle {
+      width: 28px; height: 28px; transform: rotate(-90deg);
+    }
+    .countdown-bg { fill: none; stroke: rgba(255,255,255,.25); stroke-width: 3; }
+    .countdown-progress {
+      fill: none; stroke: #fff; stroke-width: 3;
+      stroke-dasharray: 75.4; stroke-dashoffset: 0;
+      stroke-linecap: round; transition: stroke-dashoffset .9s linear;
+    }
+    .countdown-num {
+      position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+      font-size: 11px; font-weight: 700; color: #fff;
+    }
+
+    /* 오류 / 재시도 영역 */
+    .ad-error {
+      display: none; flex-direction: column; align-items: center;
+      gap: 14px; padding: 32px 20px; text-align: center;
+    }
+    .ad-error .error-icon { font-size: 40px; }
+    .ad-error .error-msg { color: #ccc; font-size: 14px; line-height: 1.6; }
+    .ad-error .error-detail { color: #666; font-size: 12px; }
+    .btn-retry {
+      padding: 12px 28px; background: #5b6cf8; color: #fff;
+      border: none; border-radius: 9px; font-size: 14px; font-weight: 600;
+      cursor: pointer; transition: opacity .2s;
+    }
+    .btn-retry:hover { opacity: .85; }
+    .retry-count { font-size: 11px; color: #666; }
+
+    /* 네이티브 광고 SDK 컨테이너 (숨김) */
+    #native-ad-inventory { display: none; }
+
+    /* SDK 광고 배너 (3-1 방식 병행 테스트용) */
+    #sdk-banner-frame { display: none; }
+  </style>
+</head>
+<body>
+
+<!-- ============================================================
+     PAGE 1: 설정 입력
+     ============================================================ -->
+<div id="page-config">
+  <div class="config-card">
+    <h1>🎯 애드팝콘 SSP 테스트</h1>
+    <p class="subtitle">광고 SDK 연동 테스트 페이지 · 입력값은 쿠키에 저장됩니다</p>
+
+    <div class="form-group">
+      <label>App Key <span id="badge-appkey"></span></label>
+      <input type="text" id="input-appkey" placeholder="발급받은 App Key를 입력하세요" />
+    </div>
+
+    <div class="form-group">
+      <label>Placement ID <span id="badge-placementid"></span></label>
+      <input type="text" id="input-placementid" placeholder="발급받은 Placement ID를 입력하세요" />
+    </div>
+
+    <hr class="divider" />
+
+    <div class="form-group">
+      <label>광고 타입</label>
+      <select id="input-adtype">
+        <option value="native">네이티브 (커스텀 UI · 권장)</option>
+        <option value="banner300x250">배너 300×250</option>
+        <option value="banner320x50">배너 320×50</option>
+        <option value="banner320x100">배너 320×100</option>
+        <option value="interstitial">전면 광고</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>플랫폼 / 광고 ID</label>
+      <select id="input-platform">
+        <option value="android">Android (ADID)</option>
+        <option value="ios">iOS (IDFA)</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label id="label-adid">Android ADID</label>
+      <input type="text" id="input-adid" placeholder="예) 550e8400-e29b-41d4-a716-446655440000" />
+      <div class="hint">테스트 시 임의의 UUID 형식 값 사용 가능</div>
+    </div>
+
+    <div class="form-group">
+      <label>SDK 로그 출력</label>
+      <select id="input-log">
+        <option value="true">활성화</option>
+        <option value="false">비활성화</option>
+      </select>
+    </div>
+
+    <hr class="divider" />
+    <button class="btn-start" id="btn-go-ad">광고 보기 →</button>
+  </div>
+</div>
+
+<!-- ============================================================
+     PAGE 2: 광고 노출
+     ============================================================ -->
+<div id="page-ad">
+  <div class="ad-header">
+    <button class="back-btn" id="btn-back">← 설정으로</button>
+    <span class="header-label" id="ad-type-label">네이티브 광고</span>
+  </div>
+
+  <div class="ad-content-area">
+
+    <!-- 로딩 -->
+    <div class="ad-loading" id="ad-loading">
+      <div class="spinner"></div>
+      <p id="loading-msg">광고 불러오는 중...</p>
+    </div>
+
+    <!-- 오류 / 재시도 -->
+    <div class="ad-error" id="ad-error">
+      <div class="error-icon">⚠️</div>
+      <div class="error-msg" id="error-msg">광고를 불러오지 못했습니다.</div>
+      <div class="error-detail" id="error-detail"></div>
+      <div class="retry-count" id="retry-count-label"></div>
+      <button class="btn-retry" id="btn-retry">다시 시도</button>
+    </div>
+
+    <!-- 광고 배너 (네이티브용 커스텀 UI) -->
+    <div class="ad-banner-container" id="ad-banner-container">
+      <div class="ad-sponsor-label">광고</div>
+
+      <!-- 메인 이미지 배너 (클릭 시 광고주 이동) -->
+      <div class="ad-banner-wrapper" id="ad-banner-click-area">
+        <img id="ad-main-image" src="" alt="광고 이미지" />
+      </div>
+
+      <!-- 광고 정보 바 -->
+      <div class="ad-info-bar">
+        <img class="ad-icon" id="ad-icon" src="" alt="광고 아이콘" />
+        <div class="ad-text-group">
+          <div class="ad-title" id="ad-title"></div>
+          <div class="ad-desc" id="ad-desc"></div>
+        </div>
+        <img class="ad-privacy" id="ad-privacy-icon" src="" alt="개인정보" title="개인정보 처리방침" />
+      </div>
+
+      <!-- CTA 버튼 영역 -->
+      <div class="ad-cta-area">
+        <button class="btn-cta" id="btn-cta" disabled>
+          <span id="cta-label">광고 참여하기</span>
+          <!-- 5초 카운트다운 링 -->
+          <span class="countdown-ring" id="countdown-ring">
+            <svg class="countdown-circle" viewBox="0 0 28 28">
+              <circle class="countdown-bg" cx="14" cy="14" r="12"/>
+              <circle class="countdown-progress" id="countdown-progress" cx="14" cy="14" r="12"/>
+            </svg>
+            <span class="countdown-num" id="countdown-num">5</span>
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <!-- SDK 배너 광고용 컨테이너 (배너/전면 타입) -->
+    <div id="sdk-banner-frame">
+      <div id="sdk-ad-inventory"></div>
+      <div class="ad-cta-area" style="margin-top:24px">
+        <button class="btn-cta" id="btn-cta-sdk" disabled>
+          <span id="cta-label-sdk">광고 참여하기</span>
+          <span class="countdown-ring" id="countdown-ring-sdk">
+            <svg class="countdown-circle" viewBox="0 0 28 28">
+              <circle class="countdown-bg" cx="14" cy="14" r="12"/>
+              <circle class="countdown-progress" id="countdown-progress-sdk" cx="14" cy="14" r="12"/>
+            </svg>
+            <span class="countdown-num" id="countdown-num-sdk">5</span>
+          </span>
+        </button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- 네이티브 광고 SDK 호출용 숨김 div -->
+<div id="native-ad-inventory"></div>
+
+<script>
+// ================================================================
+//  유틸: 쿠키 헬퍼
+// ================================================================
+const Cookie = {
+  set(name, value, days = 365) {
+    const exp = new Date(Date.now() + days * 864e5).toUTCString();
+    document.cookie = name + '=' + encodeURIComponent(value) + '; expires=' + exp + '; path=/';
+  },
+  get(name) {
+    const kv = document.cookie.split('; ').find(r => r.startsWith(name + '='));
+    return kv ? decodeURIComponent(kv.split('=')[1]) : '';
+  }
+};
+
+// ================================================================
+//  설정 페이지: 저장된 값 불러오기 + 변경 시 즉시 저장
+// ================================================================
+const FIELDS = ['appkey','placementid','adtype','platform','adid','log'];
+
+FIELDS.forEach(key => {
+  const el = document.getElementById('input-' + key);
+  const saved = Cookie.get('apssp_' + key);
+  if (saved) {
+    el.value = saved;
+    const badge = document.getElementById('badge-' + key);
+    if (badge) badge.innerHTML = '<span class="saved-badge">저장됨</span>';
+  }
+  el.addEventListener('input', () => {
+    Cookie.set('apssp_' + key, el.value);
+    const badge = document.getElementById('badge-' + key);
+    if (badge) badge.innerHTML = '<span class="saved-badge">저장됨</span>';
+  });
+  el.addEventListener('change', () => Cookie.set('apssp_' + key, el.value));
+});
+
+// 플랫폼 변경 시 라벨 업데이트
+document.getElementById('input-platform').addEventListener('change', function() {
+  document.getElementById('label-adid').textContent =
+    this.value === 'android' ? 'Android ADID' : 'iOS IDFA';
+});
+if (Cookie.get('apssp_platform') === 'ios') {
+  document.getElementById('label-adid').textContent = 'iOS IDFA';
+}
+
+// ================================================================
+//  상태 변수
+// ================================================================
+let adData = null;          // 네이티브 광고 데이터
+let landingURL = '';        // 광고주 랜딩 URL
+let retryCount = 0;         // 재시도 횟수
+const MAX_RETRY = 3;        // 최대 재시도 횟수
+let countdownTimer = null;  // 카운트다운 타이머
+let sdkAdInstance = null;   // SDK 인스턴스
+
+// ================================================================
+//  페이지 전환 헬퍼
+// ================================================================
+function showConfig() {
+  document.getElementById('page-config').style.display = 'flex';
+  document.getElementById('page-ad').style.display = 'none';
+  if (countdownTimer) clearInterval(countdownTimer);
+}
+function showAd() {
+  document.getElementById('page-config').style.display = 'none';
+  document.getElementById('page-ad').style.display = 'flex';
+}
+
+// ================================================================
+//  광고 페이지 초기 상태로 리셋
+// ================================================================
+function resetAdUI() {
+  document.getElementById('ad-loading').style.display = 'flex';
+  document.getElementById('ad-error').style.display = 'none';
+  document.getElementById('ad-banner-container').style.display = 'none';
+  document.getElementById('sdk-banner-frame').style.display = 'none';
+  document.getElementById('loading-msg').textContent = '광고 불러오는 중...';
+  const btnCta = document.getElementById('btn-cta');
+  btnCta.disabled = true;
+  document.getElementById('countdown-num').textContent = '5';
+  document.getElementById('countdown-progress').style.strokeDashoffset = '0';
+  document.getElementById('countdown-ring').style.display = 'inline-block';
+  document.getElementById('cta-label').textContent = '광고 참여하기';
+  const btnCtaSdk = document.getElementById('btn-cta-sdk');
+  btnCtaSdk.disabled = true;
+  document.getElementById('countdown-num-sdk').textContent = '5';
+  document.getElementById('countdown-progress-sdk').style.strokeDashoffset = '0';
+  document.getElementById('countdown-ring-sdk').style.display = 'inline-block';
+  document.getElementById('cta-label-sdk').textContent = '광고 참여하기';
+  if (countdownTimer) clearInterval(countdownTimer);
+}
+
+// ================================================================
+//  5초 카운트다운 → CTA 버튼 활성화
+// ================================================================
+function startCountdown(btnId, numId, progressId, ringId, labelId, onComplete) {
+  let remaining = 5;
+  const totalDash = 75.4;
+  const progressEl = document.getElementById(progressId);
+  const numEl = document.getElementById(numId);
+  const btnEl = document.getElementById(btnId);
+  const ringEl = document.getElementById(ringId);
+
+  progressEl.style.strokeDashoffset = '0';
+  numEl.textContent = remaining;
+
+  countdownTimer = setInterval(() => {
+    remaining -= 1;
+    numEl.textContent = remaining;
+    const offset = totalDash * (1 - remaining / 5);
+    progressEl.style.strokeDashoffset = offset;
+    if (remaining <= 0) {
+      clearInterval(countdownTimer);
+      btnEl.disabled = false;
+      ringEl.style.display = 'none';
+      document.getElementById(labelId).textContent = '광고 참여하기 →';
+      if (onComplete) onComplete();
+    }
+  }, 1000);
+}
+
+// ================================================================
+//  SDK 초기화
+// ================================================================
+window.AdPopcornSSPWebSDK = window.AdPopcornSSPWebSDK || { cmd: [] };
+
+function initSDK(appKey, placementId, platform, adId, logEnabled) {
+  AdPopcornSSPWebSDK.cmd.push(() => {
+    AdPopcornSSPWebSDK.init({
+      app_key: appKey,
+      placement_id: placementId,
+      log_enabled: logEnabled === 'true',
+    });
+    const cfg = platform === 'android'
+      ? { adid: adId }
+      : { idfa: adId };
+    AdPopcornSSPWebSDK.setConfig(cfg);
+  });
+}
+
+// ================================================================
+//  광고 오류 표시 + 재시도 UI
+// ================================================================
+function showError(msg, detail) {
+  document.getElementById('ad-loading').style.display = 'none';
+  document.getElementById('ad-banner-container').style.display = 'none';
+  document.getElementById('sdk-banner-frame').style.display = 'none';
+
+  document.getElementById('error-msg').textContent = msg;
+  document.getElementById('error-detail').textContent = detail || '';
+  document.getElementById('retry-count-label').textContent =
+    retryCount < MAX_RETRY
+      ? '재시도 가능 횟수: ' + (MAX_RETRY - retryCount) + '/' + MAX_RETRY
+      : '최대 재시도 횟수에 도달했습니다.';
+
+  const retryBtn = document.getElementById('btn-retry');
+  retryBtn.style.display = retryCount < MAX_RETRY ? 'block' : 'none';
+  document.getElementById('ad-error').style.display = 'flex';
+}
+
+// ================================================================
+//  네이티브 광고 렌더링
+// ================================================================
+function renderNativeAd(data) {
+  adData = data;
+  landingURL = data.landingURL || '';
+
+  document.getElementById('ad-main-image').src = data.mainImageURL || '';
+  document.getElementById('ad-icon').src = data.iconImageURL || '';
+  document.getElementById('ad-title').textContent = data.title || '';
+  document.getElementById('ad-desc').textContent = data.desc || '';
+  document.getElementById('ad-privacy-icon').src = data.privacyPolicyImageURL || '';
+
+  const privacyIcon = document.getElementById('ad-privacy-icon');
+  privacyIcon.onclick = () => { if (data.privacyPolicyURL) window.open(data.privacyPolicyURL, '_blank'); };
+
+  document.getElementById('ad-banner-click-area').onclick = () => {
+    if (landingURL) window.open(landingURL, '_blank');
+  };
+
+  document.getElementById('ad-loading').style.display = 'none';
+  document.getElementById('ad-banner-container').style.display = 'flex';
+
+  startCountdown('btn-cta', 'countdown-num', 'countdown-progress', 'countdown-ring', 'cta-label', null);
+}
+
+// ================================================================
+//  네이티브 광고 로드
+// ================================================================
+function loadNativeAd(appKey, placementId) {
+  document.getElementById('loading-msg').textContent = '광고 불러오는 중...';
+
+  AdPopcornSSPWebSDK.cmd.push(() => {
+    const native = AdPopcornSSPWebSDK.createNative({
+      app_key: appKey,
+      placement_id: placementId,
+    });
+    sdkAdInstance = native;
+
+    native.addEventListener('sdkError', (e) => {
+      console.error('[AdPopcorn] sdkError', e);
+      retryCount++;
+      showError('SDK 오류가 발생했습니다.', e.message ? e.message : JSON.stringify(e));
+    });
+
+    native.addEventListener('adLoadCompleted', (e) => {
+      if (e.isNoAd) {
+        retryCount++;
+        showError('현재 노출 가능한 광고가 없습니다. (NoAd)', 'code: ' + (e.code || '-') + ' / ' + (e.message || ''));
+        return;
+      }
+      retryCount = 0;
+      renderNativeAd(e.adData);
+      try { native.reportImpression(); } catch(err) { console.warn('[AdPopcorn] reportImpression error', err); }
+    });
+
+    native.loadAd();
+  });
+}
+
+// ================================================================
+//  SDK 배너/전면 광고 로드
+// ================================================================
+function loadSdkBannerAd(appKey, placementId, adType) {
+  document.getElementById('loading-msg').textContent = '광고 불러오는 중...';
+
+  AdPopcornSSPWebSDK.cmd.push(() => {
+    let instance;
+    if (adType === 'banner300x250') {
+      instance = AdPopcornSSPWebSDK.createBannerSize300x250({ app_key: appKey, placement_id: placementId });
+    } else if (adType === 'banner320x50') {
+      instance = AdPopcornSSPWebSDK.createBannerSize320x50({ app_key: appKey, placement_id: placementId });
+    } else if (adType === 'banner320x100') {
+      instance = AdPopcornSSPWebSDK.createBannerSize320x100({ app_key: appKey, placement_id: placementId });
+    } else if (adType === 'interstitial') {
+      instance = AdPopcornSSPWebSDK.createInterstitial({ app_key: appKey, placement_id: placementId });
+    }
+    sdkAdInstance = instance;
+
+    instance.addEventListener('sdkError', (e) => {
+      console.error('[AdPopcorn] sdkError', e);
+      retryCount++;
+      showError('SDK 오류가 발생했습니다.', e.message ? e.message : JSON.stringify(e));
+    });
+
+    instance.addEventListener('adInventoryRendered', (e) => {
+      if (e.isNoAd) {
+        retryCount++;
+        showError('현재 노출 가능한 광고가 없습니다. (NoAd)', 'code: ' + (e.code || '-'));
+        return;
+      }
+      retryCount = 0;
+      document.getElementById('ad-loading').style.display = 'none';
+      document.getElementById('sdk-banner-frame').style.display = 'block';
+      landingURL = '';
+      startCountdown('btn-cta-sdk', 'countdown-num-sdk', 'countdown-progress-sdk', 'countdown-ring-sdk', 'cta-label-sdk', null);
+    });
+
+    instance.addEventListener('adClicked', () => {
+      console.log('[AdPopcorn] 광고 클릭됨');
+    });
+
+    instance.display('sdk-ad-inventory');
+  });
+}
+
+// ================================================================
+//  재시도 버튼
+// ================================================================
+document.getElementById('btn-retry').addEventListener('click', () => {
+  const appKey = document.getElementById('input-appkey').value.trim();
+  const placementId = document.getElementById('input-placementid').value.trim();
+  const adType = document.getElementById('input-adtype').value;
+
+  document.getElementById('ad-error').style.display = 'none';
+  document.getElementById('ad-loading').style.display = 'flex';
+
+  if (adType === 'native') {
+    loadNativeAd(appKey, placementId);
+  } else {
+    document.getElementById('sdk-ad-inventory').innerHTML = '';
+    loadSdkBannerAd(appKey, placementId, adType);
+  }
+});
+
+// ================================================================
+//  CTA 버튼: 광고주 랜딩 이동 + 클릭 리포트 (네이티브)
+// ================================================================
+document.getElementById('btn-cta').addEventListener('click', () => {
+  if (landingURL) window.open(landingURL, '_blank');
+  if (sdkAdInstance && typeof sdkAdInstance.reportClick === 'function') {
+    try { sdkAdInstance.reportClick(); } catch(err) { console.warn('[AdPopcorn] reportClick error', err); }
+  }
+});
+
+document.getElementById('btn-cta-sdk').addEventListener('click', () => {
+  alert('배너 광고를 직접 클릭하여 광고주 페이지로 이동하세요.');
+});
+
+// ================================================================
+//  '광고 보기' 버튼
+// ================================================================
+document.getElementById('btn-go-ad').addEventListener('click', () => {
+  const appKey = document.getElementById('input-appkey').value.trim();
+  const placementId = document.getElementById('input-placementid').value.trim();
+  const adType = document.getElementById('input-adtype').value;
+  const platform = document.getElementById('input-platform').value;
+  const adId = document.getElementById('input-adid').value.trim();
+  const logEnabled = document.getElementById('input-log').value;
+
+  if (!appKey || !placementId) {
+    alert('App Key와 Placement ID를 입력해주세요.');
+    return;
+  }
+
+  retryCount = 0;
+  showAd();
+  resetAdUI();
+
+  const typeLabels = {
+    native: '네이티브 광고', banner300x250: '배너 300×250',
+    banner320x50: '배너 320×50', banner320x100: '배너 320×100',
+    interstitial: '전면 광고'
+  };
+  document.getElementById('ad-type-label').textContent = typeLabels[adType] || adType;
+
+  initSDK(appKey, placementId, platform, adId, logEnabled);
+
+  if (adType === 'native') {
+    loadNativeAd(appKey, placementId);
+  } else {
+    document.getElementById('sdk-ad-inventory').innerHTML = '';
+    loadSdkBannerAd(appKey, placementId, adType);
+  }
+});
+
+// ================================================================
+//  '설정으로' 버튼
+// ================================================================
+document.getElementById('btn-back').addEventListener('click', showConfig);
+
+</script>
+</body>
+</html>
