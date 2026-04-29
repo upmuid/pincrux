@@ -5,10 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>애드팝콘 SSP Web SDK 테스트</title>
 
-  <!-- 1. SDK 라이브러리 로드 -->
   <script async src="https://webapi.adpopcorn.com/ssp/web-sdk/ap-ssp-web-sdk-1.14.1.min.js"></script>
-
-  <!-- 2. SDK 전역 초기화 (cmd 큐 준비) -->
   <script>
     window.AdPopcornSSPWebSDK = window.AdPopcornSSPWebSDK || { cmd: [] };
   </script>
@@ -100,12 +97,16 @@
       background: linear-gradient(135deg, #5b6cf8, #7c3aed);
       color: #fff; border: none; border-radius: 12px;
       font-size: 16px; font-weight: 700; cursor: pointer;
-      transition: opacity .2s, transform .1s;
+      transition: opacity .2s, transform .1s, background .3s;
       position: relative; overflow: hidden;
     }
     .btn-cta:disabled { opacity: .6; cursor: not-allowed; }
     .btn-cta:not(:disabled):hover { opacity: .9; }
     .btn-cta:not(:disabled):active { transform: scale(.98); }
+    .btn-cta.success {
+      background: linear-gradient(135deg, #27ae60, #1e8449);
+      cursor: default;
+    }
     .btn-cta .countdown-ring { position: absolute; top: 50%; right: 18px; transform: translateY(-50%); }
     .countdown-circle { width: 28px; height: 28px; transform: rotate(-90deg); }
     .countdown-bg { fill: none; stroke: rgba(255,255,255,.25); stroke-width: 3; }
@@ -132,7 +133,6 @@
       cursor: pointer; transition: opacity .2s;
     }
     .btn-retry:hover { opacity: .85; }
-    .retry-count { font-size: 11px; color: #666; }
 
     .passback-label {
       font-size: 11px; color: #555; letter-spacing: 1px;
@@ -216,7 +216,6 @@
       <div class="error-icon">⚠️</div>
       <div class="error-msg" id="error-msg">광고를 불러오지 못했습니다.</div>
       <div class="error-detail" id="error-detail"></div>
-      <div class="retry-count" id="retry-count-label"></div>
       <button class="btn-retry" id="btn-retry">다시 시도</button>
     </div>
 
@@ -304,12 +303,38 @@ if (Cookie.get('apssp_platform') === 'ios') {
   document.getElementById('label-adid').textContent = 'iOS IDFA';
 }
 
-let landingURL    = '';
-let retryCount    = 0;
-const MAX_RETRY   = 3;
+let landingURL     = '';
 let countdownTimer = null;
 let sdkAdInstance  = null;
 let bannerInstance = null;
+
+// 클릭 후 복귀 감지용
+let adClickedFlag  = false;
+
+function markSuccess(btnId, labelId, ringId) {
+  const btn   = document.getElementById(btnId);
+  const label = document.getElementById(labelId);
+  const ring  = document.getElementById(ringId);
+  if (!btn) return;
+  btn.disabled = false;
+  btn.classList.add('success');
+  if (ring) ring.style.display = 'none';
+  label.textContent = '✅ 성공';
+}
+
+// visibilitychange: 광고 클릭 후 탭 복귀 시 성공 처리
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'visible' && adClickedFlag) {
+    adClickedFlag = false;
+    // 현재 보이는 버튼에 성공 표시
+    const sdkFrame = document.getElementById('sdk-banner-frame');
+    if (sdkFrame && sdkFrame.style.display !== 'none') {
+      markSuccess('btn-cta-sdk', 'cta-label-sdk', 'countdown-ring-sdk');
+    } else {
+      markSuccess('btn-cta', 'cta-label', 'countdown-ring');
+    }
+  }
+});
 
 function showConfig() {
   document.getElementById('page-config').style.display = 'flex';
@@ -322,21 +347,23 @@ function showAd() {
 }
 
 function resetAdUI() {
+  adClickedFlag = false;
   document.getElementById('ad-loading').style.display = 'flex';
   document.getElementById('ad-error').style.display = 'none';
   document.getElementById('ad-banner-container').style.display = 'none';
   document.getElementById('sdk-banner-frame').style.display = 'none';
   document.getElementById('loading-msg').textContent = '광고 불러오는 중...';
 
-  const btnCta = document.getElementById('btn-cta');
-  btnCta.disabled = true;
+  ['btn-cta', 'btn-cta-sdk'].forEach(id => {
+    const btn = document.getElementById(id);
+    btn.disabled = true;
+    btn.classList.remove('success');
+  });
   document.getElementById('countdown-num').textContent = '5';
   document.getElementById('countdown-progress').style.strokeDashoffset = '0';
   document.getElementById('countdown-ring').style.display = 'inline-block';
   document.getElementById('cta-label').textContent = '광고 참여하기';
 
-  const btnCtaSdk = document.getElementById('btn-cta-sdk');
-  btnCtaSdk.disabled = true;
   document.getElementById('countdown-num-sdk').textContent = '5';
   document.getElementById('countdown-progress-sdk').style.strokeDashoffset = '0';
   document.getElementById('countdown-ring-sdk').style.display = 'inline-block';
@@ -376,11 +403,6 @@ function showError(msg, detail) {
   document.getElementById('sdk-banner-frame').style.display = 'none';
   document.getElementById('error-msg').textContent = msg;
   document.getElementById('error-detail').textContent = detail || '';
-  document.getElementById('retry-count-label').textContent =
-    retryCount < MAX_RETRY
-      ? '재시도 가능 횟수: ' + (MAX_RETRY - retryCount) + '/' + MAX_RETRY
-      : '최대 재시도 횟수에 도달했습니다.';
-  document.getElementById('btn-retry').style.display = retryCount < MAX_RETRY ? 'block' : 'none';
   document.getElementById('ad-error').style.display = 'flex';
 }
 
@@ -419,6 +441,7 @@ const iframeClickEventHandler = (adElement) => {
   const adElementId    = adElement.id;
   if (activeIframeId === adElementId) {
     adElement.dataset.clicked = 'true';
+    adClickedFlag = true;
     console.log('[passback ad clicked]');
   }
   window.addEventListener('visibilitychange', () => { window.focus(); });
@@ -463,6 +486,7 @@ function renderNativeAd(data) {
     if (sdkAdInstance && typeof sdkAdInstance.reportClick === 'function') {
       try { sdkAdInstance.reportClick(); } catch (e) {}
     }
+    adClickedFlag = true;
   };
   document.getElementById('ad-loading').style.display = 'none';
   document.getElementById('ad-banner-container').style.display = 'flex';
@@ -493,17 +517,14 @@ function loadNativeAdBlock(appKey, placementId) {
     });
     sdkAdInstance.addEventListener('sdkError', (e) => {
       console.log('[adpopcorn native sdkError]', e);
-      retryCount++;
       showError('SDK 오류가 발생했습니다.', e.message || JSON.stringify(e));
     });
     sdkAdInstance.addEventListener('adLoadCompleted', (e) => {
       if (e.isNoAd) {
-        retryCount++;
         showError('현재 노출 가능한 광고가 없습니다. (NoAd)', 'code: ' + (e.code || '-'));
         showPassbackArea();
         return;
       }
-      retryCount = 0;
       renderNativeAd(e.adData);
       try { sdkAdInstance.reportImpression(); } catch (err) {}
     });
@@ -522,23 +543,21 @@ function loadBannerAdBlock(appKey, placementId, adType) {
 
     bannerInstance.addEventListener('sdkError', (e) => {
       console.log('[adpopcorn banner sdkError]', e);
-      retryCount++;
       showError('SDK 오류가 발생했습니다.', e.message || JSON.stringify(e));
     });
     bannerInstance.addEventListener('adInventoryRendered', (e) => {
       if (e.isNoAd) {
-        retryCount++;
         showError('현재 노출 가능한 광고가 없습니다. (NoAd)', 'code: ' + (e.code || '-'));
         showPassbackArea();
         return;
       }
-      retryCount = 0;
       document.getElementById('ad-loading').style.display = 'none';
       document.getElementById('sdk-banner-frame').style.display = 'block';
       startCountdown('btn-cta-sdk', 'countdown-num-sdk', 'countdown-progress-sdk', 'countdown-ring-sdk', 'cta-label-sdk');
     });
     bannerInstance.addEventListener('adClicked', () => {
       console.log('[adpopcorn banner clicked]');
+      adClickedFlag = true;
     });
 
     bannerInstance.display('sdk-ad-inventory');
@@ -555,6 +574,7 @@ document.getElementById('btn-retry').addEventListener('click', () => {
 
   document.getElementById('ad-error').style.display = 'none';
   document.getElementById('ad-loading').style.display = 'flex';
+  adClickedFlag = false;
 
   if (adType === 'native') {
     loadNativeAdBlock(appKey, placementId);
@@ -569,10 +589,11 @@ document.getElementById('btn-cta').addEventListener('click', () => {
   if (sdkAdInstance && typeof sdkAdInstance.reportClick === 'function') {
     try { sdkAdInstance.reportClick(); } catch (e) {}
   }
+  adClickedFlag = true;
 });
 
 document.getElementById('btn-cta-sdk').addEventListener('click', () => {
-  alert('배너 광고를 직접 클릭하여 광고주 페이지로 이동하세요.');
+  adClickedFlag = true;
 });
 
 document.getElementById('btn-go-ad').addEventListener('click', () => {
@@ -588,7 +609,6 @@ document.getElementById('btn-go-ad').addEventListener('click', () => {
     return;
   }
 
-  retryCount = 0;
   showAd();
   resetAdUI();
 
