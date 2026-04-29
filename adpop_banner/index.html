@@ -17,7 +17,6 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: 'Segoe UI', Apple SD Gothic Neo, sans-serif; background: #f5f6fa; min-height: 100vh; }
 
-    /* ===== 설정 페이지 ===== */
     #page-config {
       display: flex; flex-direction: column; align-items: center;
       justify-content: center; min-height: 100vh; padding: 24px;
@@ -51,7 +50,6 @@
       margin-left: 8px; vertical-align: middle;
     }
 
-    /* ===== 광고 노출 페이지 ===== */
     #page-ad {
       display: none; flex-direction: column; align-items: center;
       min-height: 100vh; background: #0d0d1a; padding: 0;
@@ -73,7 +71,6 @@
       justify-content: center; padding: 20px; gap: 24px;
     }
 
-    /* 로딩 스피너 */
     .ad-loading { display: flex; flex-direction: column; align-items: center; gap: 14px; }
     .spinner {
       width: 44px; height: 44px; border: 4px solid rgba(255,255,255,.15);
@@ -83,7 +80,6 @@
     @keyframes spin { to { transform: rotate(360deg); } }
     .ad-loading p { color: #aaa; font-size: 14px; }
 
-    /* 광고 배너 컨테이너 (네이티브) */
     .ad-banner-container { display: none; width: 100%; flex-direction: column; align-items: center; gap: 20px; }
     .ad-sponsor-label { font-size: 11px; color: #666; letter-spacing: 1px; text-transform: uppercase; }
     .ad-banner-wrapper {
@@ -98,7 +94,6 @@
     .ad-desc { font-size: 12px; color: #aaa; }
     .ad-privacy { width: 16px; height: 16px; opacity: .5; flex-shrink: 0; cursor: pointer; }
 
-    /* CTA 버튼 */
     .ad-cta-area { width: 100%; max-width: 500px; padding-bottom: 28px; }
     .btn-cta {
       width: 100%; padding: 16px;
@@ -124,7 +119,6 @@
       font-size: 11px; font-weight: 700; color: #fff;
     }
 
-    /* 오류 / 재시도 */
     .ad-error {
       display: none; flex-direction: column; align-items: center;
       gap: 14px; padding: 32px 20px; text-align: center;
@@ -140,21 +134,16 @@
     .btn-retry:hover { opacity: .85; }
     .retry-count { font-size: 11px; color: #666; }
 
-    /* 패스백 배너 안내 */
     .passback-label {
       font-size: 11px; color: #555; letter-spacing: 1px;
       text-transform: uppercase; margin-bottom: 4px;
     }
 
-    /* SDK 배너/전면 프레임 */
     #sdk-banner-frame { display: none; }
   </style>
 </head>
 <body>
 
-<!-- ============================================================
-     PAGE 1: 설정 입력
-     ============================================================ -->
 <div id="page-config">
   <div class="config-card">
     <h1>🎯 애드팝콘 SSP 테스트</h1>
@@ -162,12 +151,12 @@
 
     <div class="form-group">
       <label>App Key <span id="badge-appkey"></span></label>
-      <input type="text" id="input-appkey" placeholder="발급받은 App Key를 입력하세요" />
+      <input type="text" id="input-appkey" value="819369634" />
     </div>
 
     <div class="form-group">
       <label>Placement ID <span id="badge-placementid"></span></label>
-      <input type="text" id="input-placementid" placeholder="발급받은 Placement ID를 입력하세요" />
+      <input type="text" id="input-placementid" value="uKXcE3ELEAuzz8m" />
     </div>
 
     <hr class="divider" />
@@ -177,7 +166,7 @@
       <select id="input-adtype">
         <option value="native">네이티브 (커스텀 UI · 권장)</option>
         <option value="banner300x250">배너 300×250</option>
-        <option value="banner320x50">배너 320×50</option>
+        <option value="banner320x50" selected>배너 320×50</option>
         <option value="banner320x100">배너 320×100</option>
         <option value="interstitial">전면 광고</option>
       </select>
@@ -186,14 +175,14 @@
     <div class="form-group">
       <label>플랫폼 / 광고 ID</label>
       <select id="input-platform">
-        <option value="android">Android (ADID)</option>
+        <option value="android" selected>Android (ADID)</option>
         <option value="ios">iOS (IDFA)</option>
       </select>
     </div>
 
     <div class="form-group">
       <label id="label-adid">Android ADID</label>
-      <input type="text" id="input-adid" placeholder="예) 550e8400-e29b-41d4-a716-446655440000" />
+      <input type="text" id="input-adid" value="09c3e3c3-1ca6-411d-9502-6c71f67ebf65" />
       <div class="hint">테스트 시 임의의 UUID 형식 값 사용 가능</div>
     </div>
 
@@ -210,9 +199,6 @@
   </div>
 </div>
 
-<!-- ============================================================
-     PAGE 2: 광고 노출
-     ============================================================ -->
 <div id="page-ad">
   <div class="ad-header">
     <button class="back-btn" id="btn-back">← 설정으로</button>
@@ -221,13 +207,11 @@
 
   <div class="ad-content-area">
 
-    <!-- 로딩 -->
     <div class="ad-loading" id="ad-loading">
       <div class="spinner"></div>
       <p id="loading-msg">광고 불러오는 중...</p>
     </div>
 
-    <!-- 오류 / 재시도 -->
     <div class="ad-error" id="ad-error">
       <div class="error-icon">⚠️</div>
       <div class="error-msg" id="error-msg">광고를 불러오지 못했습니다.</div>
@@ -236,7 +220,6 @@
       <button class="btn-retry" id="btn-retry">다시 시도</button>
     </div>
 
-    <!-- 네이티브 광고 커스텀 UI -->
     <div class="ad-banner-container" id="ad-banner-container">
       <div class="ad-sponsor-label">광고</div>
       <div class="ad-banner-wrapper" id="ad-banner-click-area">
@@ -264,7 +247,6 @@
       </div>
     </div>
 
-    <!-- SDK 배너/전면 광고 프레임 -->
     <div id="sdk-banner-frame">
       <div id="sdk-ad-inventory"></div>
       <div class="ad-cta-area" style="margin-top:24px">
@@ -284,12 +266,8 @@
   </div>
 </div>
 
-<!-- 광고 실행 코드 (body 최하단 - SDK 권장 위치) -->
 <script>
 
-// ================================================================
-//  유틸: 쿠키 헬퍼
-// ================================================================
 const Cookie = {
   set(name, value, days = 365) {
     const exp = new Date(Date.now() + days * 864e5).toUTCString();
@@ -301,9 +279,6 @@ const Cookie = {
   }
 };
 
-// ================================================================
-//  설정 페이지: 저장된 값 복원 + 변경 시 즉시 저장
-// ================================================================
 const FIELDS = ['appkey', 'placementid', 'adtype', 'platform', 'adid', 'log'];
 FIELDS.forEach(key => {
   const el = document.getElementById('input-' + key);
@@ -329,19 +304,13 @@ if (Cookie.get('apssp_platform') === 'ios') {
   document.getElementById('label-adid').textContent = 'iOS IDFA';
 }
 
-// ================================================================
-//  상태 변수
-// ================================================================
 let landingURL    = '';
 let retryCount    = 0;
 const MAX_RETRY   = 3;
 let countdownTimer = null;
-let sdkAdInstance  = null;   // 네이티브 인스턴스 (전역 참조, 샘플 코드 방식)
-let bannerInstance = null;   // 배너/전면 인스턴스 (전역 참조)
+let sdkAdInstance  = null;
+let bannerInstance = null;
 
-// ================================================================
-//  페이지 전환
-// ================================================================
 function showConfig() {
   document.getElementById('page-config').style.display = 'flex';
   document.getElementById('page-ad').style.display = 'none';
@@ -352,9 +321,6 @@ function showAd() {
   document.getElementById('page-ad').style.display = 'flex';
 }
 
-// ================================================================
-//  광고 UI 리셋
-// ================================================================
 function resetAdUI() {
   document.getElementById('ad-loading').style.display = 'flex';
   document.getElementById('ad-error').style.display = 'none';
@@ -379,9 +345,6 @@ function resetAdUI() {
   if (countdownTimer) clearInterval(countdownTimer);
 }
 
-// ================================================================
-//  5초 카운트다운 → CTA 활성화
-// ================================================================
 function startCountdown(btnId, numId, progressId, ringId, labelId) {
   let remaining = 5;
   const totalDash = 75.4;
@@ -407,9 +370,6 @@ function startCountdown(btnId, numId, progressId, ringId, labelId) {
   }, 1000);
 }
 
-// ================================================================
-//  오류 표시 + 재시도 UI
-// ================================================================
 function showError(msg, detail) {
   document.getElementById('ad-loading').style.display = 'none';
   document.getElementById('ad-banner-container').style.display = 'none';
@@ -424,10 +384,6 @@ function showError(msg, detail) {
   document.getElementById('ad-error').style.display = 'flex';
 }
 
-// ================================================================
-//  [변경 3] 패스백: MobWith iframe 삽입 (샘플 코드 방식 그대로 적용)
-//  NoAd 발생 시 재시도와 함께 패스백 광고도 노출
-// ================================================================
 const setPassbackBannerAd = (inventoryFrameId, passbackAdId) => {
   const bannerInventoryFrame = document.getElementById(inventoryFrameId);
   if (!bannerInventoryFrame) return;
@@ -437,21 +393,16 @@ const setPassbackBannerAd = (inventoryFrameId, passbackAdId) => {
   bannerAd.dataset.clicked = 'false';
 
   Object.assign(bannerAd.style, {
-    border: 'none',
-    width: '300px',
-    height: '250px',
-    display: 'block',
-    margin: '0 auto',
+    border: 'none', width: '320px', height: '50px',
+    display: 'block', margin: '0 auto',
   });
 
-  // ❗ MobWith API URL (zone 값은 실제 발급값으로 교체)
-  bannerAd.src = 'https://www.mobwithad.com/api/banner/app/adpopcorn/v2/adpopcorn?zone=&w=300&h=250&adid=' +
+  bannerAd.src = 'https://www.mobwithad.com/api/banner/app/adpopcorn/v2/adpopcorn?zone=&w=320&h=50&adid=' +
     encodeURIComponent(document.getElementById('input-adid').value.trim() || '');
 
   bannerInventoryFrame.appendChild(bannerAd);
 
   const bannerAdDocument = bannerAd.contentDocument || bannerAd.contentWindow?.document;
-
   if (bannerAdDocument) {
     bannerAd.addEventListener('load', () => {
       try { bannerAdDocument.body.style.margin = '0'; } catch(e) {}
@@ -464,26 +415,20 @@ const setPassbackBannerAd = (inventoryFrameId, passbackAdId) => {
 const iframeClickEventHandler = (adElement) => {
   if (!document.activeElement || document.activeElement.tagName !== 'IFRAME') return;
   if (adElement.dataset.clicked === 'true') return;
-
   const activeIframeId = document.activeElement.id;
   const adElementId    = adElement.id;
-
   if (activeIframeId === adElementId) {
     adElement.dataset.clicked = 'true';
     console.log('[passback ad clicked]');
   }
-
   window.addEventListener('visibilitychange', () => { window.focus(); });
 };
 
-// 패스백 광고 표시 영역 (광고 페이지 내 동적 삽입용)
 const PASSBACK_INVENTORY_ID = 'passback-inventory-frame';
 
 function showPassbackArea() {
-  // 이미 삽입된 경우 중복 방지
   if (document.getElementById(PASSBACK_INVENTORY_ID)) return;
-  const container = document.getElementById('ad-content-area') ||
-    document.querySelector('.ad-content-area');
+  const container = document.querySelector('.ad-content-area');
   if (!container) return;
 
   const wrapper = document.createElement('div');
@@ -503,48 +448,35 @@ function showPassbackArea() {
   setPassbackBannerAd(PASSBACK_INVENTORY_ID, 'reward-banner-ad-inventory-frame');
 }
 
-// ================================================================
-//  네이티브 광고 렌더링
-// ================================================================
 function renderNativeAd(data) {
   landingURL = data.landingURL || '';
-
   document.getElementById('ad-main-image').src = data.mainImageURL || '';
   document.getElementById('ad-icon').src        = data.iconImageURL || '';
   document.getElementById('ad-title').textContent = data.title || '';
   document.getElementById('ad-desc').textContent  = data.desc || '';
   document.getElementById('ad-privacy-icon').src  = data.privacyPolicyImageURL || '';
-
   document.getElementById('ad-privacy-icon').onclick = () => {
     if (data.privacyPolicyURL) window.open(data.privacyPolicyURL, '_blank');
   };
   document.getElementById('ad-banner-click-area').onclick = () => {
     if (landingURL) window.open(landingURL, '_blank');
     if (sdkAdInstance && typeof sdkAdInstance.reportClick === 'function') {
-      try { sdkAdInstance.reportClick(); } catch (e) { console.warn('[AdPopcorn] reportClick error', e); }
+      try { sdkAdInstance.reportClick(); } catch (e) {}
     }
   };
-
   document.getElementById('ad-loading').style.display = 'none';
   document.getElementById('ad-banner-container').style.display = 'flex';
-
   startCountdown('btn-cta', 'countdown-num', 'countdown-progress', 'countdown-ring', 'cta-label');
 }
 
-// ================================================================
-//  [변경 4] cmd.push 분리: BLOCK 1 - SDK init
-// ================================================================
 function initSDKBlock(appKey, placementId, platform, adId, logEnabled) {
   AdPopcornSSPWebSDK.cmd.push(() => {
-    // [변경 2] log_level: 0 추가
     AdPopcornSSPWebSDK.init({
       app_key: appKey,
       placement_id: placementId,
       log_enabled: logEnabled === 'true',
       log_level: 0,
     });
-
-    // android / iOS config 분기
     if (platform === 'android') {
       AdPopcornSSPWebSDK.setConfig({ adid: adId });
     } else {
@@ -553,63 +485,49 @@ function initSDKBlock(appKey, placementId, platform, adId, logEnabled) {
   });
 }
 
-// ================================================================
-//  [변경 4] cmd.push 분리: BLOCK 2 - 네이티브 광고 로드
-// ================================================================
 function loadNativeAdBlock(appKey, placementId) {
   AdPopcornSSPWebSDK.cmd.push(() => {
     sdkAdInstance = AdPopcornSSPWebSDK.createNative({
       app_key: appKey,
       placement_id: placementId,
     });
-
     sdkAdInstance.addEventListener('sdkError', (e) => {
       console.log('[adpopcorn native sdkError]', e);
       retryCount++;
       showError('SDK 오류가 발생했습니다.', e.message || JSON.stringify(e));
     });
-
     sdkAdInstance.addEventListener('adLoadCompleted', (e) => {
       if (e.isNoAd) {
-        console.log('[adpopcorn native] NoAd - 패스백 실행');
         retryCount++;
-        // ❗ NoAd 시: 오류 UI(재시도) + MobWith 패스백 병행
         showError('현재 노출 가능한 광고가 없습니다. (NoAd)', 'code: ' + (e.code || '-'));
         showPassbackArea();
         return;
       }
       retryCount = 0;
       renderNativeAd(e.adData);
-      try { sdkAdInstance.reportImpression(); } catch (err) { console.warn('[AdPopcorn] reportImpression error', err); }
+      try { sdkAdInstance.reportImpression(); } catch (err) {}
     });
-
     sdkAdInstance.loadAd();
   });
 }
 
-// ================================================================
-//  [변경 4] cmd.push 분리: BLOCK 2 - 배너/전면 광고 로드
-// ================================================================
 function loadBannerAdBlock(appKey, placementId, adType) {
   AdPopcornSSPWebSDK.cmd.push(() => {
     const opts = { app_key: appKey, placement_id: placementId };
 
-    if (adType === 'banner300x250')     bannerInstance = AdPopcornSSPWebSDK.createBannerSize300x250(opts);
-    else if (adType === 'banner320x50') bannerInstance = AdPopcornSSPWebSDK.createBannerSize320x50(opts);
-    else if (adType === 'banner320x100')bannerInstance = AdPopcornSSPWebSDK.createBannerSize320x100(opts);
-    else if (adType === 'interstitial') bannerInstance = AdPopcornSSPWebSDK.createInterstitial(opts);
+    if (adType === 'banner300x250')      bannerInstance = AdPopcornSSPWebSDK.createBannerSize300x250(opts);
+    else if (adType === 'banner320x50')  bannerInstance = AdPopcornSSPWebSDK.createBannerSize320x50(opts);
+    else if (adType === 'banner320x100') bannerInstance = AdPopcornSSPWebSDK.createBannerSize320x100(opts);
+    else if (adType === 'interstitial')  bannerInstance = AdPopcornSSPWebSDK.createInterstitial(opts);
 
     bannerInstance.addEventListener('sdkError', (e) => {
       console.log('[adpopcorn banner sdkError]', e);
       retryCount++;
       showError('SDK 오류가 발생했습니다.', e.message || JSON.stringify(e));
     });
-
     bannerInstance.addEventListener('adInventoryRendered', (e) => {
       if (e.isNoAd) {
-        console.log('[adpopcorn banner] NoAd - 패스백 실행');
         retryCount++;
-        // ❗ NoAd 시: 오류 UI(재시도) + MobWith 패스백 병행
         showError('현재 노출 가능한 광고가 없습니다. (NoAd)', 'code: ' + (e.code || '-'));
         showPassbackArea();
         return;
@@ -619,7 +537,6 @@ function loadBannerAdBlock(appKey, placementId, adType) {
       document.getElementById('sdk-banner-frame').style.display = 'block';
       startCountdown('btn-cta-sdk', 'countdown-num-sdk', 'countdown-progress-sdk', 'countdown-ring-sdk', 'cta-label-sdk');
     });
-
     bannerInstance.addEventListener('adClicked', () => {
       console.log('[adpopcorn banner clicked]');
     });
@@ -628,15 +545,11 @@ function loadBannerAdBlock(appKey, placementId, adType) {
   });
 }
 
-// ================================================================
-//  재시도 버튼
-// ================================================================
 document.getElementById('btn-retry').addEventListener('click', () => {
   const appKey      = document.getElementById('input-appkey').value.trim();
   const placementId = document.getElementById('input-placementid').value.trim();
   const adType      = document.getElementById('input-adtype').value;
 
-  // 패스백 영역 제거 후 재시도
   const passbackEl = document.getElementById(PASSBACK_INVENTORY_ID);
   if (passbackEl && passbackEl.parentElement) passbackEl.parentElement.remove();
 
@@ -651,13 +564,10 @@ document.getElementById('btn-retry').addEventListener('click', () => {
   }
 });
 
-// ================================================================
-//  CTA 버튼 이벤트
-// ================================================================
 document.getElementById('btn-cta').addEventListener('click', () => {
   if (landingURL) window.open(landingURL, '_blank');
   if (sdkAdInstance && typeof sdkAdInstance.reportClick === 'function') {
-    try { sdkAdInstance.reportClick(); } catch (e) { console.warn('[AdPopcorn] reportClick error', e); }
+    try { sdkAdInstance.reportClick(); } catch (e) {}
   }
 });
 
@@ -665,9 +575,6 @@ document.getElementById('btn-cta-sdk').addEventListener('click', () => {
   alert('배너 광고를 직접 클릭하여 광고주 페이지로 이동하세요.');
 });
 
-// ================================================================
-//  '광고 보기' 버튼 → init 블록 + 광고 로드 블록 순서로 실행
-// ================================================================
 document.getElementById('btn-go-ad').addEventListener('click', () => {
   const appKey      = document.getElementById('input-appkey').value.trim();
   const placementId = document.getElementById('input-placementid').value.trim();
@@ -692,10 +599,8 @@ document.getElementById('btn-go-ad').addEventListener('click', () => {
   };
   document.getElementById('ad-type-label').textContent = typeLabels[adType] || adType;
 
-  // [변경 4] BLOCK 1: init
   initSDKBlock(appKey, placementId, platform, adId, logEnabled);
 
-  // [변경 4] BLOCK 2: 광고 로드 (init 완료 후 cmd 큐가 순서대로 처리)
   if (adType === 'native') {
     loadNativeAdBlock(appKey, placementId);
   } else {
@@ -704,9 +609,6 @@ document.getElementById('btn-go-ad').addEventListener('click', () => {
   }
 });
 
-// ================================================================
-//  '설정으로' 버튼
-// ================================================================
 document.getElementById('btn-back').addEventListener('click', showConfig);
 
 </script>
