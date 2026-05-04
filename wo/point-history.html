@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta
+    name="viewport" content="user-scalable=no, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0,width=device-width">
+  <meta name="autocomplete" content="off">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="no">
+  <meta name="apple-touch-fullscreen" content="YES">
+  <link rel="stylesheet" type="text/css" href="css/style_m.css">
+  <title>적립 내역</title>
+</head>
+
+<body>
+  <div id="wrap">
+    <div class="bg01 offer-detail">
+
+      <!-- 상단 바 -->
+      <header class="header" id="note-header">
+        <button type="button" class="btn-back" onclick="history.back()"></button>
+        <!-- 타이틀변경가능 -->
+        <h1 class="header-title">적립 내역</h1>
+      </header>
+
+      <!-- 메인 콘텐츠 -->
+      <main class="content">
+            <div class="title-wrap">
+              <div class="title-row">
+             <img src="imgs/ico_point.png" alt="포인트 아이콘" class="point">
+             <p class="item-name" id="bill-money">보유 빌머니</p>
+              </div>
+            <p class="point-desc">
+        <!-- 보유 빌머니 금액 -->
+            <span class="point-amount">123,456,789</span>
+            <span class="unit">원</span></p>
+            </div>
+
+        <!-- 날짜 선택 -->
+        <section class="filter-section">
+            <div class="date-picker" onclick="ui.bottomSheet.open('#dateSheet')">
+            <p class="date date-selector__value" id="currentDate" style="min-width: 100px; display: inline-block;">2026년 04월</p> 
+            <img src="imgs/arrow-outlined_down.svg" alt="날짜 선택 메뉴 열기">
+            </div>
+        
+        <!-- 탭 -->
+            <div class="tab-menu">
+                <nav class="tab" role="tablist">
+                <button type="button" class="tab__item is-active" data-tab="all" role="tab" aria-selected="true">
+                    <span class="tab__txt">전체</span>
+                </button>
+                <button type="button" class="tab__item" data-tab="save" role="tab" aria-selected="false">
+                    <span class="tab__txt">적립</span>
+                </button>
+                <button type="button" class="tab__item" data-tab="use" role="tab" aria-selected="false">
+                    <span class="tab__txt">사용</span>
+                </button>
+                <button type="button" class="tab__item" data-tab="expire" role="tab" aria-selected="false">
+                    <span class="tab__txt">소멸</span>
+                </button>
+                </nav>
+            </div>
+        </section>
+
+        <!-- 리스트 시작 -->
+            <div class="list-container" id="historyContainer">
+
+                <!-- 적립했을 경우 -->
+            <div class="use-detail" data-date="2026년 04월" data-type="save">
+                <div class="item-info">
+                <div class="item-row">
+                <!-- 타이틀 -->
+                    <p class="item-title">방문하고 혜택 받기</p>
+                    <span class="item-point is-save">
+                <!-- 금액 -->
+                    <span class="point-sign">+</span>
+                    <span class="point-num">10,000</span>
+                    <span class="point-unit">원</span>
+                </span>
+                </div>
+                <div class="item-row">
+                <!-- 날짜/상태 구분 -->
+                    <p class="item-sub ">2026.4.1 14:30</p>
+                    <p class="item-sub">적립</p>
+                </div>
+                </div>
+                </div>
+
+                <!-- 소멸했을 경우 -->
+                <div class="use-detail" data-date="2026년 04월" data-type="expire">
+                <div class="item-info">
+                <div class="item-row">
+                <!-- 타이틀 -->
+                    <p class="item-title">방문하고 혜택 받기</p>
+                    <span class="item-point is-save">
+                <!-- 금액 -->
+                    <span class="point-sign expire-point">-</span>
+                    <span class="point-num expire-point">10,000</span>
+                    <span class="point-unit expire-point">원</span>
+                </span>
+                </div>
+                <div class="item-row">
+                <!-- 날짜/상태 구분 -->
+                    <p class="item-sub ">2026.4.1 14:30</p>
+                    <p class="item-sub">소멸</p>
+                </div>
+                </div>
+                </div>
+
+                <!-- 사용했을 경우 -->
+                <div class="use-detail" data-date="2026년 04월" data-type="use">
+                <div class="item-info">
+                <div class="item-row">
+                <!-- 타이틀 -->
+                    <p class="item-title">방문하고 혜택 받기</p>
+                    <span class="item-point is-save">
+                <!-- 금액 -->
+                    <span class="point-sign expire-point">-</span>
+                    <span class="point-num expire-point">10,000</span>
+                    <span class="point-unit expire-point">원</span>
+                </span>
+                </div>
+                <div class="item-row">
+                <!-- 날짜/상태 구분 -->
+                    <p class="item-sub ">2026.4.1 14:30</p>
+                    <p class="item-sub">사용</p>
+                </div>
+                </div>
+                </div>
+        </div>
+
+      </main>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="footer__left">
+            <p class="footer__title">PINCRUX OFFERWALL</p>
+            <p class="footer__copy">COPYRIGHT © PINCRUX</p>
+        </div>
+        <div class="footer__right">
+            <a href="#" class="footer__link">이용문의 및 약관</a>
+        </div>
+    </footer>
+
+    </div>
+  </div>
+
+    <!-- 바텀시트 -->
+        <div id="dateSheet" class="c-bottom-sheet" role="dialog" aria-modal="true">
+        <div class="c-bottom-sheet__dim" onclick="ui.bottomSheet.close('#dateSheet')"></div>
+        <div class="c-bottom-sheet__container">
+            <div class="c-bottom-sheet__body">
+                <ul class="date-list">
+                    <li class="date-list__item is-active" onclick="selectDate(this, '2026년 04월')">2026년 04월</li>
+                    <li class="date-list__item" onclick="selectDate(this, '2026년 03월')">2026년 03월</li>
+                    <li class="date-list__item" onclick="selectDate(this, '2026년 02월')">2026년 02월</li>
+                    <li class="date-list__item" onclick="selectDate(this, '2026년 01월')">2026년 01월</li>
+                    <li class="date-list__item" onclick="selectDate(this, '2025년 12월')">2025년 12월</li>
+                    <li class="date-list__item" onclick="selectDate(this, '2025년 11월')">2025년 11월</li>
+                    <li class="date-list__item" onclick="selectDate(this, '2025년 10월')">2025년 10월</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+</body>
+
+
+
+<script>
+const ui = {
+  state: {
+    date: '2026년 04월',
+    tab: 'all'
+  },
+
+  bottomSheet: {
+    open: (target) => {
+      const sheet = document.querySelector(target);
+      if (sheet) {
+        sheet.classList.add('is-active');
+        document.body.style.overflow = 'hidden';
+      }
+    },
+    close: (target) => {
+      const sheet = document.querySelector(target);
+      if (sheet) {
+        sheet.classList.remove('is-active');
+        document.body.style.removeProperty('overflow');
+      }
+    }
+  },
+
+  filterList: () => {
+    const items = document.querySelectorAll('.use-detail');
+    console.log("현재 필터 날짜:", ui.state.date, "탭:", ui.state.tab);
+
+    items.forEach(item => {
+      const itemDate = item.dataset.date;
+      const itemType = item.dataset.type;
+      
+      const isDateMatch = (itemDate === ui.state.date);
+      const isTabMatch = (ui.state.tab === 'all' || itemType === ui.state.tab);
+
+      if (isDateMatch && isTabMatch) {
+        item.style.display = 'flex';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  },
+
+  initTabs: () => {
+    const tabButtons = document.querySelectorAll('.tab__item');
+    tabButtons.forEach(button => {
+      button.addEventListener('click', (e) => {
+        e.preventDefault();
+        ui.state.tab = button.dataset.tab; 
+        tabButtons.forEach(btn => btn.classList.remove('is-active'));
+        button.classList.add('is-active');
+        ui.filterList(); 
+      });
+    });
+  }
+};
+
+function selectDate(el, dateText) {
+  const dateDisplay = document.getElementById('currentDate');
+  if (dateDisplay) dateDisplay.innerText = dateText;
+
+  const items = document.querySelectorAll('.date-list__item');
+  items.forEach(item => item.classList.remove('is-active'));
+  el.classList.add('is-active');
+
+  ui.state.date = dateText;
+  ui.filterList();
+  ui.bottomSheet.close('#dateSheet');
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const dateDisplay = document.getElementById('currentDate');
+  const firstDateItem = document.querySelector('.date-list__item');
+
+  if (dateDisplay) {
+    ui.state.date = dateDisplay.innerText.trim();
+  } else if (firstDateItem) {
+    ui.state.date = firstDateItem.innerText.trim();
+  }
+
+  ui.initTabs();
+  ui.filterList();
+});
+</script>
+</html>

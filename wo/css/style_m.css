@@ -1,0 +1,683 @@
+@charset "utf-8";
+
+/* =========================================================
+   reset
+========================================================= */
+* {margin: 0; padding: 0; box-sizing: border-box;}
+body {font-family: 'Noto Sans KR', sans-serif;background: #f2f2f2; color: #333; letter-spacing: -0.3px; line-height: 150%;}
+img {display: block; max-width: 100%;}
+
+/* 컨테이너 */
+#wrap {
+  width: 100svw;
+  margin: 0 auto;
+  background: #fff;
+  min-height: 100svh;
+  /* display: flex; */
+}
+
+/* =========================================================
+   header
+========================================================= */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 999;        
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3.5rem;      
+  padding: 0 0.75rem;   
+  background: #fff;
+}
+#note-header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 3.5rem; 
+    min-height: 3.5rem; 
+    box-sizing: border-box; 
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    padding: 0 0.75rem;
+    background: #fff;
+    border-bottom: 1px solid #DDD;
+    flex-shrink: 0;
+}
+.btn-logo {
+  position: absolute;
+  left: 0.75rem;          
+  width: 1.5rem;         
+  height: 1.5rem;        
+  background: url('../imgs/arrow.svg') no-repeat center;
+  background-size: contain;
+  border: none;
+}
+
+.btn-back {
+  left: 0.75rem;          
+  width: 1.5rem;         
+  height: 1.5rem;        
+  background: url('../imgs/arrow-back-linear.svg') no-repeat center;
+  background-size: contain;
+  border: none;
+}
+
+.header-title {
+  margin: 0;
+  font-size: 1.125rem;   
+  font-weight: 600;
+  text-align: center;
+  padding-left: 0.625rem;
+}
+
+/* =========================================================
+   content
+========================================================= */
+.content {
+  flex: 1;
+  width: 100%;
+  padding: 1rem;      
+}
+
+.content-inner{
+  flex: 1;
+  width: 100%;
+  padding: 1rem;;
+}
+
+.tab {
+  width: 100%;
+}
+
+/* 배너 */
+.banner {
+  width: 100%;
+  border-radius: 0.25rem; 
+}
+
+/* 오퍼 아이템 */
+.offer-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.25rem;           
+  margin: 2rem 0;         
+}
+.item-icon {
+  width: 5rem;            
+  height: 5rem;          
+  border-radius: 0.75rem; 
+  flex-shrink: 0;
+}
+
+/* 기본 상태: 아이콘 보이기 */
+/* .item-icon {display: block;} */
+/* .hide-icon 클래스가 붙으면 숨김 처리 */
+.item-icon.hide-icon {display: none;}
+
+/* 텍스트 박스 */
+.item-info {
+    flex: 1; 
+}
+
+.item-name {
+  font-weight: 500;
+  margin-bottom: 0.125rem; 
+  color: #222;
+  font-size: 1rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; 
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  word-break: break-all;
+}
+
+.title-name{
+  font-weight: 700;
+  color: #222;
+  font-size: 1.125rem;
+  width: 100%;
+}
+.item-desc {
+  margin-bottom: 0.125rem; 
+  color: #666;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.item-point {
+  font-weight: 700;
+  color: #412DCE;
+  /* flex-basis: 100%;  */
+  font-size: 1rem;
+}
+
+.title-wrap{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.title-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#bill-money{
+  font-size: 0.813rem;
+  font-weight: 400;
+  color: #333;
+}
+
+.point{
+  width: 1rem;
+  height:  1rem;
+  margin-right: 0.25rem
+}
+
+.point-desc{
+  color: #333;
+  font-family: Pretendard;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+}
+
+/* =========================================================
+    tab-menu
+========================================================= */
+:root {
+  --tab-sticky-h: 4.5rem;
+}
+
+.tab-menu {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: #fff;
+  padding: 0.5rem 0;
+}
+
+.tab-menu.is-sticky {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.04);
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.tab::-webkit-scrollbar {
+  display: none;
+}
+
+.tab__item {
+  height: 2rem;
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.75rem;
+  padding-bottom: 2px;
+  font-size: 0.875rem;
+  color: #767678;
+  font-weight: 400;
+  background-color: #F3F5F7;
+  border-radius: 0.938rem;
+  white-space: nowrap;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  font: inherit;
+}
+
+.tab__item.is-active {
+  background-color: #24282C;
+  color: #ffffff;
+  font-weight: 600; 
+}
+
+.tab__count {
+  color: var(--primary-green);
+  font-weight: 600;
+  margin-left: 0.25rem;
+}
+
+/* =========================================================
+   list
+========================================================= */
+.use-detail{
+  display: flex;
+  align-items: flex-start;
+  gap: 0.25rem;           
+  margin: 2rem 0;         
+}
+
+.date-picker{
+  width: 100%;
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  padding: 1rem 0;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#tab-list {
+  display: flex;       
+  flex-direction: column;    
+  padding: 1.25rem 0;
+  gap: 0.625rem;         
+}
+
+.item-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 0.5rem;
+}
+
+.bill-row{
+  justify-content: start;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.item-colum{
+  width: 100%;
+}
+
+.bill-thum{
+  width: 100%;         
+  max-width: 5rem;      
+  aspect-ratio: 1 / 1;
+}
+
+.detail-thum{
+  margin: 0 auto;
+  max-width: 9.375rem;
+  padding-top: 2em;
+}
+
+.expire-point{
+  color:#959595 ;
+}
+
+.item-type{
+  color: #959595;
+}
+
+.item-title{
+  color: #333;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.item-sub{
+  font-size: 0.875rem;
+  color: #959595;
+}
+
+.bill-money-sub{
+  color: #666;
+}
+
+
+/* =========================================================
+   bill-detail
+========================================================= */
+.divider{
+  width: 100%;
+  height: 0.5rem;        
+  background-color: #F3F5F7; 
+}
+
+.detail-wrap{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.detail-inner{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.coupon-form {
+  padding: 1.25rem;
+  background-color: #fff;
+}
+
+.coupon-form__title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 1.5rem
+}
+
+.coupon-form__input-wrap {
+  margin-bottom: 1.25rem
+}
+
+.coupon-form__input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1.125rem;
+  border: 1px solid #E4E6E8;
+  border-radius: 0.75rem;
+  color: #333;
+  outline: none;
+  margin: 1rem 0;
+}
+
+.coupon-form__input::placeholder {
+  color: #959595;
+}
+.coupon-form__input:focus {
+  border-color: #666;
+}
+
+/* 약관 동의 영역 */
+.coupon-form__agree-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0 1rem 0;
+}
+
+.coupon-form__checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+.coupon-form__checkbox {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1.25rem;
+  height: 1.25rem; 
+  background: url('../imgs/check_off.svg') no-repeat center; 
+  background-size: 100%; 
+  border: 0;
+  cursor: pointer;
+  outline: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.coupon-form__checkbox:checked {
+  background: url('../imgs/check_on.svg') no-repeat center; 
+  background-size: 100%;
+}
+
+.coupon-form__checkbox-text{
+  font-size: 0.75rem;
+  color: #666;
+}
+
+
+.coupon-form__detail-btn{
+  border: 0;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* =========================================================
+   bill-con
+========================================================= */
+.offer-coupon-detail {
+    display: flex;
+    flex-direction: column;
+    height: 100svh;   
+    overflow: hidden;  
+}
+
+.center-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.coupon-title-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.coupon-title{
+  width: 100%;
+  font-size: 1.25rem;
+  color: #333;
+  font-weight: 700;
+  text-align: center;
+  padding: 1rem 0 2rem 0;
+}
+
+.coupon-item-wrap{
+  width: 100%;
+    justify-content: start;
+    gap: 0.75rem;
+    padding: 1rem;
+    align-items: center;
+    border-radius: 0.75rem;
+    border: 1px solid #E4E6E8;
+}
+
+.coupon-item-thum{
+  width: 2.5rem;
+}
+
+.coupon-name{
+  font-size:1rem;
+  font-weight: 500;
+}
+
+.coupon-info-box{
+    width: 100%;
+    padding: 1rem 0;
+    box-sizing: border-box;
+}
+
+.coupon-info-title{
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #666;
+}
+
+/* =========================================================
+   bottomsheet
+========================================================= */
+.c-bottom-sheet__body {
+  max-height: calc(3.5rem * 5); 
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.c-bottom-sheet__body::-webkit-scrollbar {
+  width: 4px;
+}
+
+.c-bottom-sheet {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 35rem;
+  height: 100%;
+  
+  z-index: 1000;
+  visibility: hidden;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.c-bottom-sheet.is-active {
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.c-bottom-sheet__dim {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.c-bottom-sheet.is-active .c-bottom-sheet__dim {
+  opacity: 1;
+}
+
+.c-bottom-sheet__container {
+  position: relative;
+  width: 100%;
+  max-height: 80vh;
+  background: #fff;
+  border-radius: 24px 24px 0 0;
+  z-index: 1001;
+  transform: translateY(100%);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.c-bottom-sheet.is-active .c-bottom-sheet__container {
+  transform: translateY(0);
+}
+
+/* 날짜 리스트 */
+.date-list { 
+  list-style: none;
+  padding-top: 1rem;
+ }
+ 
+.date-list__item {
+  padding: 1rem 1.25rem;
+  font-size: 1rem;
+  color: #444;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.date-list__item.is-active {
+  color: #333;
+  font-weight: 700;
+}
+
+/* =========================================================
+   btn
+========================================================= */
+.btn-cta {
+  width: 100%;
+  height: 3.5rem;          
+  padding: 1rem 0;  
+  color: #fff;
+  border: none;
+  border-radius: 0.75rem;  
+  font-size: 1rem; 
+}
+
+#disable{
+    background:#BCB3FF;
+}
+
+.coupon-cta{
+  margin:0 1rem 1rem;
+  width: auto;
+}
+/* 정보 섹션 */
+.info-section + .info-section {
+  margin-top: 1.5rem; 
+}
+
+.info-title {
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin: 0.75rem 0 0.5rem;
+}
+.info-box {
+  width: 100%;
+  background: #F3F5F7;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+.info-box p{
+  margin: 0;
+  font-size: 0.875rem;
+  font-weight: 400;
+  white-space: pre-line;
+}
+
+.coupon-info-box p{
+  color: #959595;
+    margin: 0;
+  font-size: 0.875rem;
+  font-weight: 400;
+  white-space: pre-line;
+}
+
+/* =========================================================
+   footer
+========================================================= */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: #F3F5F7;
+  padding: 1rem 0.75rem;
+  color: #999;
+  line-height: 100%;
+}
+.footer__title {
+  font-size: 0.75rem;       
+  font-weight: 700; 
+}
+.footer__copy {
+  font-size: 0.625rem;      
+  font-weight: 300; 
+}
+.footer__left p {
+  margin: 0;
+}
+.footer__left p + p {
+  margin-top: 0.25rem;      
+}
+
+/* 오른쪽 링크 */
+.footer__link {
+  font-size: 0.75rem;       
+  color: #666;
+  text-decoration: none;
+  align-self: flex-start;
+}
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+@media (min-width:769px){
+#wrap {width: 100%; }
+.bg01 {position:relative; width:560px; margin: 0 auto; box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.1);}
+
+}
+
+
