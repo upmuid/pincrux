@@ -1,0 +1,62 @@
+{
+  "entities": {
+    "Settings": {
+      "title": "Global Settings",
+      "description": "Adjustable parameters for the game that apply to all users.",
+      "type": "object",
+      "properties": {
+        "allowedTypes": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "List of platform types allowed in the game."
+        },
+        "speedMultiplier": {
+          "type": "number",
+          "description": "Multiplier for platform speeds."
+        },
+        "startHeightFactor": {
+          "type": "number",
+          "description": "Factor (0.0 to 1.0) determining the starting height of the player."
+        }
+      },
+      "required": ["allowedTypes", "speedMultiplier", "startHeightFactor"]
+    },
+    "Ranking": {
+      "title": "Player Ranking",
+      "description": "A score entry for the global leaderboard.",
+      "type": "object",
+      "properties": {
+        "userKey": { "type": "string" },
+        "yourKey": { "type": "string" },
+        "name": { "type": "string" },
+        "score": { "type": "number" },
+        "timestamp": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userKey", "yourKey", "name", "score", "timestamp"]
+    },
+    "UserMapping": {
+      "title": "User Key Mapping",
+      "description": "Mapping between external usrkey and internal customer yourkey.",
+      "type": "object",
+      "properties": {
+        "yourKey": { "type": "string" }
+      },
+      "required": ["yourKey"]
+    },
+    "DailyStats": {
+      "title": "User Daily Stats",
+      "description": "Tracks daily play counts and bonus resets.",
+      "type": "object",
+      "properties": {
+        "playsCount": { "type": "number" }
+      },
+      "required": ["playsCount"]
+    }
+  },
+  "firestore": {
+    "settings": { "schema": "Settings", "description": "Global game configuration." },
+    "rankings": { "schema": "Ranking", "description": "Global leaderboard entries." },
+    "userMappings": { "schema": "UserMapping", "description": "UsrKey to YourKey mapping." },
+    "dailyStats": { "schema": "DailyStats", "description": "User daily activity tracking." }
+  }
+}

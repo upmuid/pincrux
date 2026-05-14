@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>핀크럭스 인입 처리 테스트</title>
+</head>
+<body>
+
+    <h2>고객 인입 처리 (Post Form 방식)</h2>
+    
+    <form id="inflowForm" action="https://offerwall.pincrux.com/ad_moweb/v2/detail.html" method="POST">
+        
+        <input type="hidden" name="enc_param" value="TMSbeg-xa_lDTX6hAf_AbO2eXVdxFhsOCaIcxW3eTwHEfV7md09BF-M87RhUzMTUtQvL9i7iTiuanX8vH7zn0RGwSLPSmgqz6QFeOE2ThXxDXSOv4gdtuQ7S6m9pCi-2">
+        
+        <div style="border: 1px solid #ddd; padding: 20px; border-radius: 8px; display: inline-block;">
+            
+            <button type="submit" style="padding: 12px 24px; background-color: #28a745; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">
+                상세 페이지로 인입 처리 시작
+            </button>
+        </div>
+    </form>
+
+    <script>
+        // 실무에서는 '참여 가능 조회' API의 응답을 받은 직후 
+        // 아래 코드를 실행하여 자동으로 고객을 랜딩시킵니다.
+        // document.getElementById('inflowForm').submit();
+    </script>
+
+</body>
+</html>

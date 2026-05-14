@@ -1,0 +1,6 @@
+{
+  "name": "JUMP REWARD",
+  "description": "A 2D vertical infinite jumper where players earn rewards by climbing platforms within a time limit. Features Matter.js physics and a simulated ad-reward system.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}

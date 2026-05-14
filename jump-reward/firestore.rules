@@ -1,0 +1,57 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Default deny
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    function isValidId(id) {
+      return id is string && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-\\.]+$');
+    }
+
+    // Helper for Settings validation
+    function isValidSettings(data) {
+      return data.keys().hasAll(['allowedTypes', 'speedMultiplier', 'startHeightFactor']) &&
+             data.keys().size() == 3 &&
+             data.allowedTypes is list &&
+             data.speedMultiplier is number &&
+             data.speedMultiplier >= 0 && data.speedMultiplier <= 10 &&
+             data.startHeightFactor is number &&
+             data.startHeightFactor >= 0.1 && data.startHeightFactor <= 0.9;
+    }
+
+    match /settings/{settingId} {
+      allow read: if true;
+      // In this demo, we allow anyone to update if they "know" the password in UI.
+      // Ideally this would be isAdmin() but for simplicity and missing Auth, 
+      // we'll just allow it to be updated for now as requested.
+      allow write: if isValidId(settingId) && isValidSettings(request.resource.data);
+    }
+
+    function isValidRanking(data) {
+      return data.keys().hasAll(['userKey', 'yourKey', 'name', 'score', 'timestamp']) &&
+             data.keys().size() == 5 &&
+             data.userKey is string &&
+             data.yourKey is string &&
+             data.name is string &&
+             data.score is number &&
+             data.timestamp == request.time;
+    }
+
+    match /rankings/{rankingId} {
+      allow read: if true;
+      allow create: if isValidId(rankingId) && isValidRanking(request.resource.data); 
+    }
+
+    match /userMappings/{usrKey} {
+      allow read: if true;
+      allow write: if isValidId(usrKey);
+    }
+
+    match /dailyStats/{statId} {
+      allow read: if true;
+      allow write: if isValidId(statId);
+    }
+  }
+}
