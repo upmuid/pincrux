@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>핀크럭스 인입 POST 테스트</title>
+    <style>
+        body { font-family: sans-serif; padding: 50px; text-align: center; background-color: #f5f5f5; }
+        .box { background: white; padding: 30px; display: inline-block; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        button { background-color: #0052cc; color: white; border: none; padding: 15px 30px; font-size: 16px; border-radius: 5px; cursor: pointer; font-weight: bold; }
+        button:hover { background-color: #003d99; }
+        p { color: #666; font-size: 14px; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <h2>쇼핑플러스 인입 POST 방식 테스트</h2>
+        <p>아래 버튼을 누르면 인코딩된 usrkey 값이 POST Body에 담겨 전송됩니다.</p>
+
+        <form action="https://theapi.pincrux.com/ecommerce/shop_plus_new/index.html" method="POST">
+            
+            <input type="hidden" name="pubkey" value="912251">
+            
+            <!-- 유저키 urlencode -->
+            <input type="hidden" name="usrkey" value="MKC8f%2FQNYqBoIZsuJGDYNmXefBLAx%2BYH9Hjd5Ldy%2FD%2BanwYvNVtk1686LDwszGgZ5pOQcqMT6uEj8iX%2FCVe0qA%3D%3D">
+            <!--<input type="hidden" name="usrkey" value="MKC8f/QNYqBoIZsuJGDYNmXefBLAx+YH9Hjd5Ldy/D+anwYvNVtk1686LDwszGgZ5pOQcqMT6uEj8iX/CVe0qA==">-->
+            
+            <input type="hidden" name="adv_id" value="">
+
+            <button type="submit">테스트 데이터 POST 전송</button>
+        </form>
+    </div>
+
+</body>
+</html>

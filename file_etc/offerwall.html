@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>봉봉 퀴즈 오퍼월</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #0f0e17;
+    --surface: #1a1829;
+    --card: #211f33;
+    --card-hover: #2a2740;
+    --accent: #7c6dfa;
+    --accent2: #f7c948;
+    --text: #eeeaf8;
+    --muted: #8b85a8;
+    --border: #322f4b;
+    --reward-bg: #2a2019;
+    --reward: #f7c948;
+    --radius: 14px;
+  }
+
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+  }
+
+  /* Header */
+  .header {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 0 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .header-inner {
+    max-width: 480px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 54px;
+  }
+  .header-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .header-title .dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 8px var(--accent);
+  }
+  .header-badge {
+    font-size: 12px;
+    background: var(--reward-bg);
+    color: var(--reward);
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-weight: 500;
+    border: 1px solid #3d3212;
+  }
+
+  /* Banner */
+  .banner {
+    background: linear-gradient(135deg, #1d1a30 0%, #2d1f4e 50%, #1a1829 100%);
+    padding: 28px 20px 24px;
+    border-bottom: 1px solid var(--border);
+  }
+  .banner-inner {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  .banner-eyebrow {
+    font-size: 11px;
+    color: var(--accent);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  .banner-headline {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 6px;
+    color: var(--text);
+  }
+  .banner-headline em {
+    font-style: normal;
+    color: var(--accent2);
+  }
+  .banner-sub {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+  .banner-stats {
+    display: flex;
+    gap: 16px;
+    margin-top: 20px;
+  }
+  .stat {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 10px 16px;
+    flex: 1;
+    text-align: center;
+  }
+  .stat-num {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--accent2);
+    display: block;
+  }
+  .stat-label {
+    font-size: 11px;
+    color: var(--muted);
+    margin-top: 2px;
+  }
+
+  /* Search */
+  .search-wrap {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 16px 20px 8px;
+  }
+  .search-box {
+    width: 100%;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 10px 16px 10px 40px;
+    font-size: 14px;
+    color: var(--text);
+    font-family: inherit;
+    outline: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%238b85a8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'/%3E%3Cpath d='m21 21-4.35-4.35'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: 14px center;
+    transition: border-color 0.2s;
+  }
+  .search-box::placeholder { color: var(--muted); }
+  .search-box:focus { border-color: var(--accent); }
+
+  /* List */
+  .list-wrap {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 8px 20px 32px;
+  }
+  .list-count {
+    font-size: 12px;
+    color: var(--muted);
+    margin-bottom: 12px;
+    padding-top: 4px;
+  }
+
+  /* Card */
+  .card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 14px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: inherit;
+    transition: background 0.18s, transform 0.15s, border-color 0.18s;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  .card::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 3px;
+    background: var(--accent);
+    opacity: 0;
+    transition: opacity 0.18s;
+  }
+  .card:hover {
+    background: var(--card-hover);
+    border-color: #4a4570;
+    transform: translateY(-1px);
+  }
+  .card:hover::before { opacity: 1; }
+  .card:active { transform: translateY(0); }
+
+  .thumb {
+    width: 80px;
+    height: 56px;
+    border-radius: 8px;
+    object-fit: cover;
+    flex-shrink: 0;
+    background: var(--border);
+  }
+  .thumb-fallback {
+    width: 80px;
+    height: 56px;
+    border-radius: 8px;
+    flex-shrink: 0;
+    background: var(--surface);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+  }
+
+  .card-body {
+    flex: 1;
+    min-width: 0;
+  }
+  .card-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 5px;
+  }
+  .card-title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.35;
+    color: var(--text);
+    flex: 1;
+    min-width: 0;
+  }
+  .reward-pill {
+    background: var(--reward-bg);
+    color: var(--reward);
+    font-size: 12px;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 20px;
+    white-space: nowrap;
+    border: 1px solid #3d3212;
+    flex-shrink: 0;
+  }
+  .card-desc {
+    font-size: 12px;
+    color: var(--muted);
+    line-height: 1.5;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin-bottom: 6px;
+  }
+  .card-footer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .icon-img {
+    width: 16px; height: 16px;
+    border-radius: 4px;
+    object-fit: cover;
+  }
+  .card-key {
+    font-size: 11px;
+    color: var(--muted);
+    font-feature-settings: "tnum";
+  }
+  .card-arrow {
+    margin-left: auto;
+    color: var(--muted);
+    font-size: 16px;
+    transition: transform 0.15s, color 0.15s;
+  }
+  .card:hover .card-arrow {
+    transform: translateX(3px);
+    color: var(--accent);
+  }
+
+  /* Empty */
+  .empty {
+    text-align: center;
+    padding: 48px 0;
+    color: var(--muted);
+    font-size: 14px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .card { transition: none; }
+    .card:hover { transform: none; }
+  }
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <div class="header-title">
+      <span class="dot"></span>
+      봉봉 퀴즈 오퍼월
+    </div>
+    <div class="header-badge" id="headerBadge">총 0P 적립 가능</div>
+  </div>
+</header>
+
+<section class="banner">
+  <div class="banner-inner">
+    <div class="banner-eyebrow">AdPopcorn × 봉봉</div>
+    <div class="banner-headline">퀴즈 참여하고<br><em>포인트 받아가세요</em></div>
+    <div class="banner-sub">간단한 테스트·게임 참여만 해도 포인트가 쌓여요.</div>
+    <div class="banner-stats">
+      <div class="stat">
+        <span class="stat-num" id="statCount">0</span>
+        <div class="stat-label">참여 가능 캠페인</div>
+      </div>
+      <div class="stat">
+        <span class="stat-num" id="statPoint">0P</span>
+        <div class="stat-label">캠페인당 리워드</div>
+      </div>
+      <div class="stat">
+        <span class="stat-num" id="statTotal">0P</span>
+        <div class="stat-label">최대 적립 가능</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="search-wrap">
+  <input class="search-box" type="text" placeholder="캠페인 검색..." id="search" oninput="render()" autocomplete="off" />
+</div>
+
+<div class="list-wrap">
+  <div class="list-count" id="listCount"></div>
+  <div id="list"></div>
+</div>
+
+<script>
+const campaigns = [{"CampaignKey":"979237130_101997","ImageURL":"https://thumb.zumst.com/1200x627/https://static.vonvon.co.kr/quiz/images/20250402190027_3e62bc1f-8fb4-45fc-af82-6755f6fa73ca.jpg","IconURL":"https://thumb.zumst.com/196x196/https://static.vonvon.co.kr/images/rss2/vonvon_rss2_logo.png","Title":"[봉봉게임] 9를 찾아라!","Description":"제한시간내에 8사이에 있는 9를 찾아라! 스타또☆★","RewardQuantity":3,"RewardUnit":"포인트","CategoryType":29,"LandingURL":"https://apapi.adpopcorn.com/ap/v2/api/mediamix/ContentsClick?token=IG8rV08EHPeUbvfeOLbPBzk4g_E8ocdtCh4qKLJ9nbvbNBUo4-IaxlS7beMUIb2iZha1Z8vTveVMBeP4hBgbpecC1Aa9DRAGnWnLQOVqoH-w1wgzJXFZZ5IJ4U6frZwS0iavDyFmLMTnWIVrNgRZ4Iu2Ww1w-X5dLWvgCwJfYvpueqHzGlAZYZbeWLlAiDJEWp6-uqtvDi4kWH7V5SmK8zLgabUf1YbCzHFA5RIEuCDC6W6seVI9Ax7N-epG_Wrzkl9VIy6Hg5ILzfun0AuHhSDo1zziSdh4jvacAdjjEHtdUslb3NtCo3Xn4Z0hu4QtTxl9IkrzkGq2FDM0jmZ_jEnLB6c50dGhNXxlRxQQx6NFsmTOIp33fyvdBTwvGg6tt9OS5Zp5Snf1LP_l8LnjTfAaApBx483kZSysLreRJX_rRLye-nO9v7umRnfBPLbYJg3lSEqtwx5EeZxylIDYD57YvH5uzGQqwDrY96T4rlWyfO5dzlHa6qt5H0p-u_v9TUK2OPR9N7brnsmT8n4CbVT4n60u_MHXHTcPkzRKz5hFUqnsFbyQt71pnVKEQA9Zr_-bToqfTFLboJvAHCAhZVHOmTXSb43jLpPck6_PVZYcYidK4jB8wTzszqjoLUYRCrp-lfA2GAR4qJXLQRh7LhqXBHyZv_gqFKdxG5wpDHQO2njNgXqlzz4yU2rfCrfF6XX_F2RqVVMlUOLJ_yVEY8CWrR1Z6KiTTnorZ69Ppgh53c0SA7DQaqvAo3sXbLsW8FXD2A2oXqeeJgf1BShyEv6w4C0YGVj1jsSu2rvJ_NZmzIrYQcx8xT4Tb7c0937UMAQivuJOaA1eZ2gg0XTfO4Wotl7UJShimUguxFDVIbuvtGF9iAlrgaDTBxeuFoFqr1gDD71aAGeSObTp1rRBcQ3CSnS_1h6x7bTt-eRqcyXaDgnSsl1Edf51h5_CRWfk9nuyeNdmAkh8eZ1omL1H5Bhp2qcZg-ChcArCudOyzP8m8YVAFzoGBjuqu8TcdCy1l9Ekj7tqu7klUd8isZebQg!!"},{"CampaignKey":"979237130_105695","ImageURL":"https://thumb.zumst.com/1200x627/https://static.vonvon.co.kr/quiz/images/20260226131325_e5bf4ffe-5fbd-4ff3-9e0d-468896d2fee4.png","IconURL":"https://thumb.zumst.com/196x196/https://static.vonvon.co.kr/images/rss2/vonvon_rss2_logo.png","Title":"나의 컬러 민감도는?","Description":"⏰ 플레이 시간 : 3분 이내 비슷해 보이는 색들 속에서 당신은 과연 '다른 색'을 찾아낼 수 있을까요? 아주 미묘한 색상 차이를 구별하는 당신의 컬러 민감도를 테스트해보세요 👀✨","RewardQuantity":3,"RewardUnit":"포인트","CategoryType":29,"LandingURL":"https://apapi.adpopcorn.com/ap/v2/api/mediamix/ContentsClick?token=IG8rV08EHPeUbvfeOLbPBzk4g_E8ocdtCh4qKLJ9nbvbNBUo4-IaxlS7beMUIb2iZha1Z8vTveVMBeP4hBgbpecC1Aa9DRAGnWnLQOVqoH-w1wgzJXFZZ5IJ4U6frZwS0iavDyFmLMTnWIVrNgRZ4Iu2Ww1w-X5dLWvgCwJfYvpueqHzGlAZYZbeWLlAiDJEWp6-uqtvDi4kWH7V5SmK8zLgabUf1YbCzHFA5RIEuCDC6W6seVI9Ax7N-epG_Wrzkl9VIy6Hg5ILzfun0AuHhSDo1zziSdh4jvacAdjjEHtdUslb3NtCo3Xn4Z0hu4QtTxl9IkrzkGq2FDM0jmZ_jEnLB6c50dGhNXxlRxQQx6NFsmTOIp33fyvdBTwvGg6tt9OS5Zp5Snf1LP_l8LnjTfAaApBx483kEly9qzqj3aA51H6XnHYwI9CjeTAjwS5EJwyQrBZxk1yNkDyM-fIU2oqp1QBSLiNF8HMRo6V_U3N1JIyx1xKvwBOS1VnWZ21XfTVaYTbi7HbkRvHz0sf3FcFxzm6k4FNGS3cnD8McJmIDTNm8u37DojwlJEQLUkQX3KFVbdSfHrMPiDth3xiXqTwXrr11tPOpnd-nAJUizXc-pujBPdqzRBLbhaR1s1t_bnHW9zwqv6b71EnIfm0nocxtBZICCISa-Mp51y1F3biWrp9rNsbfbjR7zLJwdbk_c8sEz2hbS66EYP0VOgPxm5pdmnIpWKDkz6RKxe0znfLlaPm2lUexK_8tLDwk21sspg6jMJT2KlZAFvfqQ26uwyve9ZFDTHy56z3eyteFrXKVCC94MPLRoJvWuiWbe9iURY7JAXsVOuhQuhZ6TMdCnPabBRuJSlxO5OI2LFYvWueIK-wBnF1rlz3Z7S65nasp72gT8FAaqXTWlnlkd5A1vJW0mAkBtx7vPJL-wOvCV3pQtzbUM1zsLakFr0eG5azKXRG-oTAgCTWCnmo9v68SZ7AJa6GO0UzGHbkJzsnYLxbmM6-b8dMqsde4WC6p4keHq0sufVs56nQ!"},{"CampaignKey":"979237130_100326","ImageURL":"https://thumb.zumst.com/1200x627/https://static.vonvon.co.kr/images/quiz/20250123164955_oNd0UIkIkN-FyPzX193Y1ewXqpf45VCUTVzu7wr1Ru2bXEebBEXw7b5QeC2OXPaqevuZLWN0RSteVxdYh3sj02wm65wvjnIs=s0","IconURL":"https://thumb.zumst.com/196x196/https://static.vonvon.co.kr/images/rss2/vonvon_rss2_logo.png","Title":"당신은 화나면 무슨 동물로 변할까요?","Description":"으으.. 더는 못참아! 당신은 화나면 무슨 동물로 변할까요?","RewardQuantity":3,"RewardUnit":"포인트","CategoryType":29,"LandingURL":"https://apapi.adpopcorn.com/ap/v2/api/mediamix/ContentsClick?token=IG8rV08EHPeUbvfeOLbPBzk4g_E8ocdtCh4qKLJ9nbvbNBUo4-IaxlS7beMUIb2iZha1Z8vTveVMBeP4hBgbpecC1Aa9DRAGnWnLQOVqoH-w1wgzJXFZZ5IJ4U6frZwS0iavDyFmLMTnWIVrNgRZ4Iu2Ww1w-X5dLWvgCwJfYvpueqHzGlAZYZbeWLlAiDJEWp6-uqtvDi4kWH7V5SmK8zLgabUf1YbCzHFA5RIEuCDC6W6seVI9Ax7N-epG_Wrzkl9VIy6Hg5ILzfun0AuHhSDo1zziSdh4jvacAdjjEHtdUslb3NtCo3Xn4Z0hu4QtTxl9IkrzkGq2FDM0jmZ_jEnLB6c50dGhNXxlRxQQx6NFsmTOIp33fyvdBTwvGg6tt9OS5Zp5Snf1LP_l8LnjTfAaApBx483kMV_p-mbScSWvVUcZmTAxTj17LJeORJ9gvXlH6jTh8g1mYVasNK9_yl4hAhindhv9aKZciN0BTQwxUg8BZUq3jh9rveL-EAk71wSGkqt6QnhroZyHMXMmqYG6LEKYfvxgwWuw5CfFHIUK_297bMiSupHB3chy6_oLSDvRFyL1jyzF5EmwiPAmWmYPtQjEYM1UVB-WVgEQVP_8Ow0ycJsuIngoTpmvQx_g3qyRB8Z0kjEsIx_s524eWWDp1OiP82DluVlbws01q6UnthP8wQl7XZutVRE2znJ22kuU66o5exCIzDQzO3KAEhonoEkTwulQZvWrIz1trdxNzo3g0qq9FSIz2ZXMThDt8hAeDCPBh7tZL9N-uf2uuua903BrAN-7F1A8ffcCRbw_y5fb0E83cY9CoEiA1OIfkyOcUHKbGYmYNqYXW_k1JOi9Abc96QJL7i8WekaPEfsG5DHLLNU7UazlwSaAz_b40ytVy-P5wSWb_Au976mqxes87LB6FuHA1k05aPOkUlqLjmdcP4ixzyvomQJdLgeNGXHduqWLMALfX_2fA4lwc_a5M3T2jlo-XHBSK7-6ogZwFRcbnD4YaXy927e3gh6x4pYlnVYGeRnNC6-DREdCp3S-lVBtooWUkdVD49kcHkDV8CVkWT348uU2yK7i06Krx7-Bjc7Db53L8nY3Xj3B8NONOvT755XA"},{"CampaignKey":"979237130_105741","ImageURL":"https://thumb.zumst.com/1200x627/https://static.vonvon.co.kr/quiz/images/20260520143014_71295752-a451-464f-a71b-169a1d875160.jpg","IconURL":"https://thumb.zumst.com/196x196/https://static.vonvon.co.kr/images/rss2/vonvon_rss2_logo.png","Title":"치향존중 테스트","Description":"바삭파? 날개파? 근본파? 순살파? 8가지 질문으로 알아보는 나의 치킨 취향🍗 어떤 치킨이 나와도 치향존중해주기 약속~!","RewardQuantity":3,"RewardUnit":"포인트","CategoryType":29,"LandingURL":"https://apapi.adpopcorn.com/ap/v2/api/mediamix/ContentsClick?token=IG8rV08EHPeUbvfeOLbPBzk4g_E8ocdtCh4qKLJ9nbvbNBUo4-IaxlS7beMUIb2iZha1Z8vTveVMBeP4hBgbpecC1Aa9DRAGnWnLQOVqoH-w1wgzJXFZZ5IJ4U6frZwS0iavDyFmLMTnWIVrNgRZ4Iu2Ww1w-X5dLWvgCwJfYvpueqHzGlAZYZbeWLlAiDJEWp6-uqtvDi4kWH7V5SmK8zLgabUf1YbCzHFA5RIEuCDC6W6seVI9Ax7N-epG_Wrzkl9VIy6Hg5ILzfun0AuHhSDo1zziSdh4jvacAdjjEHtdUslb3NtCo3Xn4Z0hu4QtTxl9IkrzkGq2FDM0jmZ_jEnLB6c50dGhNXxlRxQQx6NFsmTOIp33fyvdBTwvGg6tt9OS5Zp5Snf1LP_l8LnjTfAaApBx483k_bltTe6ZmJXukPkmWvQoHc-010tkOdJoZl1Nq4g7N04oarPc30E_zgutOZcJGf6u0tTy_uaDPh70yKItFxYKlkMMtBceoN9K9b7kO0rqO7c9NItCvPPIzwynJCprLptoG8LqXZGii7xYY9Aiej0epkLd86vAanefxJi4B1FucuCO5RN-_kucs41BTwBNbDVrhzaddnGFB91kiQ7I4RCevfYq3UBiz226Q-IQrUdpy1mKuGVs2kgYSjtRwDUimUhW2Mc8NY55H6HrfPaHDjK5YgJqgKMlY80dXF6i-CN4ho7uuCBPpPelo9I9mqwKsrAxS7UY1E3Nu4hG5tOK8QSXHyDJrk5qZ0Z_qQc0lkBMzBz7kTRPWPfVUUAJgJrowpaO2An0_-pY3vhEQxZv-W_YpL-iR5VL-HZg6Iz-g1MiW2ronh1n_xpvpvMHrnZAeRP_VfkDiUGPCkwzrxqfZh3g8M0pm3CiqUOCbQOmdsZ1Mdcfrfng2NPifh68_OYhVMvK2iv3ZxKqK-R5lAC43a_86W7rPXaTRWK97dq7JO9dB0Jy7CGm_qh3CQJ1C0f8u9Hqk1mPZmmIcQ2ilIsN7mlaHGzDU8wm-1Pb"},{"CampaignKey":"979237130_105608","ImageURL":"https://thumb.zumst.com/1200x627/https://static.vonvon.co.kr/quiz/images/20250723104138_596241ed-7423-43b9-8365-7c78ee728b9a.jpg","IconURL":"https://thumb.zumst.com/196x196/https://static.vonvon.co.kr/images/rss2/vonvon_rss2_logo.png","Title":"퇴마 부적 테스트","Description":"지금 운이 안 좋은 시기라고 생각하시나요? 불길한 기운을 쫓아줄 봉봉 특제 부적 받아가세요 액운을 막고 기운을 정화해주는 맞춤 부적! 복을 가져다주고 행운을 드립니다","RewardQuantity":3,"RewardUnit":"포인트","CategoryType":29,"LandingURL":"https://apapi.adpopcorn.com/ap/v2/api/mediamix/ContentsClick?token=IG8rV08EHPeUbvfeOLbPBzk4g_E8ocdtCh4qKLJ9nbvbNBUo4-IaxlS7beMUIb2iZha1Z8vTveVMBeP4hBgbpecC1Aa9DRAGnWnLQOVqoH-w1wgzJXFZZ5IJ4U6frZwS0iavDyFmLMTnWIVrNgRZ4Iu2Ww1w-X5dLWvgCwJfYvpueqHzGlAZYZbeWLlAiDJEWp6-uqtvDi4kWH7V5SmK8zLgabUf1YbCzHFA5RIEuCDC6W6seVI9Ax7N-epG_Wrzkl9VIy6Hg5ILzfun0AuHhSDo1zziSdh4jvacAdjjEHtdUslb3NtCo3Xn4Z0hu4QtTxl9IkrzkGq2FDM0jmZ_jEnLB6c50dGhNXxlRxQQx6NFsmTOIp33fyvdBTwvGg6tt9OS5Zp5Snf1LP_l8LnjTfAaApBx483k5YNVEzTjcA_20LF28dImmdkGHF_zz3-XShLRt-8gEyZVeowKebgSsO-o6QhTb7rY1b1bmBl9LiwDWj6mU6rQvDVi4KyC43bgna80LsNTT_hihrMExdm4ev7qjyEMXOSjyNO8cJkUksg6sb15yHhei_B9Hyc7Xf0oOxJDjSG-fedVBAYQRm5YUn5xO8_jpi3EEJJ3MRqa8tyEc1SzOu9dHZ0sQRLdx1JVy_tQODuG0UvR8NKmUcmK3kIIzHSRzDGzqRa8gfSO1vjqD_e0arvE7N10yrg6Iw04NeLwdfR3lc_dfUIg5l-HqsnAMVpRSjWTbdLQ9uCqv9jprdGIBDAJ2h8mxHRXklt8da37pR0HyXS5atA0hRO6zb0M1OkcmX0LHgIs-siGbkUE8B-yushaPhWC0zLz9tkcZnFZZxs4FGCb6jLCpRPbMK3QAy0VyEAvximdwKbRZb3bF5OhCD3_pIYqAO7p_sWU4xskyL2rBObQFyH_hbxbhqB8lXXtioJ6aApEuhnV8FtgjeOOfQu9duwi9n7JBhJ7urg9MMqdetBSpfOFyeRq30wFN6AdI4r4YsVUJeFYF1GwbkTxdoAWHDlJNYHO81T8"},{"CampaignKey":"979237130_100184","ImageURL":"https://thumb.zumst.com/1200x627/https://static.vonvon.co.kr/images/quiz/20250122143538_PtGT5ZLqplJvkO1aUJdkS0oUoAXZ8jyOOLBNFbf0OOEtpLYNbKTzYqOeWXfX0SC735toYcoVWwbOesLTem53yQrDsp4lDqzleLM=s0","IconURL":"https://thumb.zumst.com/196x196/https://static.vonvon.co.kr/images/rss2/vonvon_rss2_logo.png","Title":"나는 좌뇌형? 우뇌형?","Description":"나는 좌뇌형 인간일까 우뇌형 인간일까? 아니면 양쪽을 비슷하게 사용하고 있을까? 이 퀴즈로 간단히 알아보자.","RewardQuantity":3,"RewardUnit":"포인트","CategoryType":29,"LandingURL":"https://apapi.adpopcorn.com/ap/v2/api/mediamix/ContentsClick?token=IG8rV08EHPeUbvfeOLbPBzk4g_E8ocdtCh4qKLJ9nbvbNBUo4-IaxlS7beMUIb2iZha1Z8vTveVMBeP4hBgbpecC1Aa9DRAGnWnLQOVqoH-w1wgzJXFZZ5IJ4U6frZwS0iavDyFmLMTnWIVrNgRZ4Iu2Ww1w-X5dLWvgCwJfYvpueqHzGlAZYZbeWLlAiDJEWp6-uqtvDi4kWH7V5SmK8zLgabUf1YbCzHFA5RIEuCDC6W6seVI9Ax7N-epG_Wrzkl9VIy6Hg5ILzfun0AuHhSDo1zziSdh4jvacAdjjEHtdUslb3NtCo3Xn4Z0hu4QtTxl9IkrzkGq2FDM0jmZ_jEnLB6c50dGhNXxlRxQQx6NFsmTOIp33fyvdBTwvGg6tt9OS5Zp5Snf1LP_l8LnjTfAaApBx483kEly9qzqj3aAT9D75EOIFu9GxPbF4pUTzBRZ1koUZf2ik1i8QWcDyVRKVx6mh_Z43mDJSx13st2z5AMz-__8uf9IEWOzWMbu6RuGKKEp9zgEyoAUGmBcsIYnJJCGHIaH2beSp8z_RJhos6wsoNB0L9nqZ13Sq2HTOM3B0Oeu6Rx2m9RtyWtx4D3XR3KmNmbzcVQ5YhqSKknKva6aESncuNFYDNyfCkWpODbhgE82l8xxMFt7tHA1Q-kgDtl3n7WFd-QwdMPBvELEpmT2PoOEgC1eUl30xwe_3MMQxwb9kB2pgLy2gGcgaX_0Py5Ae43qcC9cF88IcW97mgNytLQxA1I9TWgr9SYMvbnkvovUoUl9suX6BbNMVDeL5YIceIZAbMJm5seIuc8j120ofEHMGcBxrj1ENPpkI8BsWeVgptbStxFItkrV2I5D7ZW56zY_0DWjCm40aySsWGF9kNIEk2ffQS4RFVG8zdmQcx3xPmIuCgSK6pdVZHmNVKtGj4bmQgrqUGVhyfUWFoholwaHHh4BWPZRrsw9hoGqy9UpQR5bh70Jbb81PZ8sNRhhl9x0f7ccfU2wEtMOqG-kh50sNJibcmJc7kLdpdcSvxxzcu8_pKFoj8-Gilg!!"},{"CampaignKey":"979237130_101165","ImageURL":"https://thumb.zumst.com/1200x627/https://static.vonvon.co.kr/quiz/images/20250301121946_5yMizmDB2Xy6qPhuqV_7KwFEpAvwuJbKDs0KhwD9AaeXWTyQ9Z3Y9Aa53Su3UQSvngIIF7bMKWmTSltvtGAM5ZOuDgsj9y7zvRg=s0.jpg","IconURL":"https://thumb.zumst.com/196x196/https://static.vonvon.co.kr/images/rss2/vonvon_rss2_logo.png","Title":"결정장애테스트","Description":"결정장애 소리 좀 듣는다싶으면 닥클! ㅇ_< ☆","RewardQuantity":3,"RewardUnit":"포인트","CategoryType":29,"LandingURL":"https://apapi.adpopcorn.com/ap/v2/api/mediamix/ContentsClick?token=IG8rV08EHPeUbvfeOLbPBzk4g_E8ocdtCh4qKLJ9nbvbNBUo4-IaxlS7beMUIb2iZha1Z8vTveVMBeP4hBgbpecC1Aa9DRAGnWnLQOVqoH-w1wgzJXFZZ5IJ4U6frZwS0iavDyFmLMTnWIVrNgRZ4Iu2Ww1w-X5dLWvgCwJfYvpueqHzGlAZYZbeWLlAiDJEWp6-uqtvDi4kWH7V5SmK8zLgabUf1YbCzHFA5RIEuCDC6W6seVI9Ax7N-epG_Wrzkl9VIy6Hg5ILzfun0AuHhSDo1zziSdh4jvacAdjjEHtdUslb3NtCo3Xn4Z0hu4QtTxl9IkrzkGq2FDM0jmZ_jEnLB6c50dGhNXxlRxQQx6NFsmTOIp33fyvdBTwvGg6tt9OS5Zp5Snf1LP_l8LnjTfAaApBx483kmHveZcmqHpbGISbcPDR0STdmGf2w5yeEAuyL_yaTgkGzYUXylMhkg9beQCJt7GFAoEQz8E9aLUGv64mk--cZh9TjgORTCS2Os-LzeBer62cll8fXVMcQdmUN5BTgO9q2h_zfUG-YWkLBDmsRggwp8myaHwO6TPW-tI74-YkALnKno0KB5g7xOq1B7WUzWqm0a3H0gAXTdhlb1awWKSmaWiNPgsf9f-hC1PKDea0Q9W0gBp-c56foHF4L9efpWrNXVW-tGXqad-yS5cVdYdK4CEJUIT_Mq5owOLXb1Ycu1CjjWksp1pnhNWaL1Z6BUpm4pmjbtKQHzRnz7J3W3Qq8IMgC1UvdnS_OdkZrKuo-NIYk1CROFFIs_NYDZULB2jXsBp03kbVKh7QsiaiWbRwUN76a2OlcCAitFP2fykln-7UpWan5wvXbywb_ZhqVfQD0NjmIqNiCPS4Xkp5O1JTEgwMVDncawNpVEZZItJ1QCO8kKxq80AfvmF4zqT-p_Cs1Kl1xP3VEvsKQIBivKNqS1zxk-IyZ7PEcRNQfqKHK0ZHmimsoIZigpNo6EPUwhTQ6BNlw20VLIpzzCc58PplBag!!"},{"CampaignKey":"979237130_105583","ImageURL":"https://thumb.zumst.com/1200x627/https://static.vonvon.co.kr/quiz/images/20250710105353_c477af74-be9f-4e4b-bd79-9d3df2667e9c.jpg","IconURL":"https://thumb.zumst.com/196x196/https://static.vonvon.co.kr/images/rss2/vonvon_rss2_logo.png","Title":"돈 들어오는 배경화면 랜덤 뽑기","Description":"재물운을 끌어당기는 배경화면을 드립니다 자주 볼수록 효과가 상승해요! 배경화면, 잠금화면으로 설정해보세요 돈이 들어올 행운을 놓치지 마세요!","RewardQuantity":3,"RewardUnit":"포인트","CategoryType":29,"LandingURL":"https://apapi.adpopcorn.com/ap/v2/api/mediamix/ContentsClick?token=IG8rV08EHPeUbvfeOLbPBzk4g_E8ocdtCh4qKLJ9nbvbNBUo4-IaxlS7beMUIb2iZha1Z8vTveVMBeP4hBgbpecC1Aa9DRAGnWnLQOVqoH-w1wgzJXFZZ5IJ4U6frZwS0iavDyFmLMTnWIVrNgRZ4Iu2Ww1w-X5dLWvgCwJfYvpueqHzGlAZYZbeWLlAiDJEWp6-uqtvDi4kWH7V5SmK8zLgabUf1YbCzHFA5RIEuCDC6W6seVI9Ax7N-epG_Wrzkl9VIy6Hg5ILzfun0AuHhSDo1zziSdh4jvacAdjjEHtdUslb3NtCo3Xn4Z0hu4QtTxl9IkrzkGq2FDM0jmZ_jEnLB6c50dGhNXxlRxQQx6NFsmTOIp33fyvdBTwvGg6tt9OS5Zp5Snf1LP_l8LnjTfAaApBx483kXhCKblAGbX3xQrQa39FGqCW5WCUQ8dE9V30zZPykj_PDa3SZNCs-TE0YvNpfFY9r2xKKHC6Of64SDoGKpIa7QkaB9vfV6iy3dol5Z1Sr7J3lMVdPr6RudB4yPAaGhHm0-srRNLn_h_4Lib4iTpAlMuLfkbIDl2XfPpgVhiYcGggVw4u_xIKDRJB4Sx34CUtXNHnisAfS_KAejPA3JbeO5jrknu3naumNJVUEVlIwf0tLF-QSDAegXEJmjkztH2wC0seimih2Ena5ITFIboW5yExGfk_Xhm7CvEIC_PeXYwuSt8vsk8vlhxWiUJV7p6WS5N0vIXeAta9gCi0I3vcwC-WL1YC_8MtHZ3GaV8kyQZ6Ro3bQEIfY1hKNDaFqQWcsRUi9QhmfiTXSTT5nB_Em1l9uSS7ZaiCoJoWjh-FXvskS1ZJWXwyFrukCRHJt0dKOc6lv7--4a8kl7wb0oBxEe1-qrPADWVAJSTdozCFVXoBFFMepov8XTZZJxFt_TpeAAbBrYhqt_i0RRQhhdKu6bGonDavTQExs8PLeArytNenHY3lKusJ8TJW9kYa1ddqHuMTOMn-bvuHaAoGRA94GTF6gSKJqwWeHmzkePIFBOmtv7qkY7qB9rVj5d7hiGbvfAwj7VqMTpbFGBaRVaUpALqNMwpt6KVOHhp-CzECVMJs!"},{"CampaignKey":"979237130_101170","ImageURL":"https://thumb.zumst.com/1200x627/https://static.vonvon.co.kr/quiz/images/20250301123942_%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C%20(91).jpg","IconURL":"https://thumb.zumst.com/196x196/https://static.vonvon.co.kr/images/rss2/vonvon_rss2_logo.png","Title":"[색채테스트] 파란색에 대해 얼마나 알고 계시나요?","Description":"파란색의 미세한 차이를 구분할 수 있을까요?","RewardQuantity":3,"RewardUnit":"포인트","CategoryType":29,"LandingURL":"https://apapi.adpopcorn.com/ap/v2/api/mediamix/ContentsClick?token=IG8rV08EHPeUbvfeOLbPBzk4g_E8ocdtCh4qKLJ9nbvbNBUo4-IaxlS7beMUIb2iZha1Z8vTveVMBeP4hBgbpecC1Aa9DRAGnWnLQOVqoH-w1wgzJXFZZ5IJ4U6frZwS0iavDyFmLMTnWIVrNgRZ4Iu2Ww1w-X5dLWvgCwJfYvpueqHzGlAZYZbeWLlAiDJEWp6-uqtvDi4kWH7V5SmK8zLgabUf1YbCzHFA5RIEuCDC6W6seVI9Ax7N-epG_Wrzkl9VIy6Hg5ILzfun0AuHhSDo1zziSdh4jvacAdjjEHtdUslb3NtCo3Xn4Z0hu4QtTxl9IkrzkGq2FDM0jmZ_jEnLB6c50dGhNXxlRxQQx6NFsmTOIp33fyvdBTwvGg6tt9OS5Zp5Snf1LP_l8LnjTfAaApBx483knlyh2QAljKnswQPjDl585dUoIJ6_1GgHp7wNs1LCtlYapaHiFRsJDEKK54uIKh7WPl5gKrnLl5obT9PfNkDJY3__E6o-TTZkwKQhzkZp-78L2Og0C_ngTUTTY43oIWpqiRrh-V1BT3E1AGgLoZy1fo_fT15qQmaS0IQSwszOMYA16FacFJLfBhv7GXxV0dDiu6J5AFJCMUcWmsZVXymtR6yLK1ZpvxSso5JPsWmcZnXuXADZ7lR6UkIqGxc6SQd7NwbKFusMtvldpfksvvL4Du8YJANJIuHkW3B3LM6iCynVYc4tDxAmZq81WKX9UNif4iP6uPdrclwVtZZPJvGlQhJQ2JCWlpMHujTVw6UBvjv3kJwRbO73eUqAByH8d2R2vf4s2i_4aR2wet2EyRyd9JC_bDxFwiFim1fmLudfNJXTIFR9kA-dP5vapkXcyLugj9A31Lmauj8Rqi3BzWs6f2y065FedDermT9xgt0glPUs-8RA7Rhf8xdOAR9Jq6W7u3EVGUX9p2j-yrKHAhhWFTbO17EK62AG5jxX-oQxS-Ohdr46PntdmmJ3dP7VZ862ioVnxXdfZ5QQFrVpMZI-NJBrlWb1pYXeE1LmKv423v2ZBXN2zg-ImQF4Q2Sk2mWtPPeVT53LHEtHUCGg1ymwolxD9yAh5DIGCPm5da6Jj3bJt90DoTBkFiW4u9GjlsnEO0SpZcgkre7PoJcBDUCZV9FOto3smq6jKzBjqRPAgBD-BgGaiLcIbPHuzEI3eBL71M9aoHGLdLY!"},{"CampaignKey":"979237130_102139","ImageURL":"https://thumb.zumst.com/1200x627/https://static.vonvon.co.kr/quiz/images/20250409205258_7c81255f-018d-4814-bbe2-f4e63eb5a845.jpg","IconURL":"https://thumb.zumst.com/196x196/https://static.vonvon.co.kr/images/rss2/vonvon_rss2_logo.png","Title":"과수면증 테스트","Description":"잠을 자도 자도 졸리지 않으신가요? 과수면증 테스트를 통해 확인해봐요","RewardQuantity":3,"RewardUnit":"포인트","CategoryType":29,"LandingURL":"https://apapi.adpopcorn.com/ap/v2/api/mediamix/ContentsClick?token=IG8rV08EHPeUbvfeOLbPBzk4g_E8ocdtCh4qKLJ9nbvbNBUo4-IaxlS7beMUIb2iZha1Z8vTveVMBeP4hBgbpecC1Aa9DRAGnWnLQOVqoH-w1wgzJXFZZ5IJ4U6frZwS0iavDyFmLMTnWIVrNgRZ4Iu2Ww1w-X5dLWvgCwJfYvpueqHzGlAZYZbeWLlAiDJEWp6-uqtvDi4kWH7V5SmK8zLgabUf1YbCzHFA5RIEuCDC6W6seVI9Ax7N-epG_Wrzkl9VIy6Hg5ILzfun0AuHhSDo1zziSdh4jvacAdjjEHtdUslb3NtCo3Xn4Z0hu4QtTxl9IkrzkGq2FDM0jmZ_jEnLB6c50dGhNXxlRxQQx6NFsmTOIp33fyvdBTwvGg6tt9OS5Zp5Snf1LP_l8LnjTfAaApBx483kP9DUVpnzDKdBZd7DCvdWVSLqPIw29csRIQSiYkEomjzeTeCm0CuzTPmQlecFTfXG6ylQgYXf7DJlHc67woHNAff4O3KzLIvT1l_AtaFtz4k2GX7hcIUV5PLVAFFHQGpy4FTgCTZ6xL0oxEB4ty4MWe3xx0T7O9jX71g6RtLF3Lptt6qs7wHF16bHOWLzVWFJY1IwwUCANywgK12cWRcOZ-qMLq69o2Dk7yqcbLU8vl9jnx5PsERlz63ZqfmI1r9OZv63jRPHzgFZFTMeWSn0mMlk_hxD3hX8LbQowol1os62NpTerbp32kXCQM8hcLki2s9OPDimLjrQTKKfz3quctdESPt1UjMWbcQL6-ryMOsUce9TYiu7ayN90YBd2ENhB7hoaOBptXopcv13KADqFK96xxtSF2YtNkv9CBrQ3J9ciL3MGvQ9dtRhm0dhGY-Hy8rA1__ff7H5ixCKt-lafxuGWb_O_L6QPE2DTVCxPvXP9kESJfMpNohoD3AAe8_HB8cR00tK7fkKgie8i27J22rIvdMFzHBgjIxzk2GPC2ag67qbh-qZVDJa3bIu-HUgkSNWSjrOBI_Z3n76T97eXiCwh3Qo7QHf"}];
+
+const total = campaigns.reduce((s,c)=>s+c.RewardQuantity,0);
+document.getElementById('statCount').textContent = campaigns.length;
+document.getElementById('statPoint').textContent = campaigns[0].RewardQuantity + campaigns[0].RewardUnit;
+document.getElementById('statTotal').textContent = total + campaigns[0].RewardUnit;
+document.getElementById('headerBadge').textContent = '최대 ' + total + 'P 적립';
+
+function render() {
+  const q = document.getElementById('search').value.toLowerCase().trim();
+  const filtered = q
+    ? campaigns.filter(c => c.Title.toLowerCase().includes(q) || c.Description.toLowerCase().includes(q))
+    : campaigns;
+  
+  document.getElementById('listCount').textContent = filtered.length + '개 캠페인';
+
+  if (!filtered.length) {
+    document.getElementById('list').innerHTML = '<div class="empty">검색 결과가 없어요</div>';
+    return;
+  }
+
+  document.getElementById('list').innerHTML = filtered.map(c => {
+    const desc = c.Description ? `<div class="card-desc">${c.Description}</div>` : '';
+    return `
+      <a class="card" href="${c.LandingURL}" target="_blank" rel="noopener noreferrer">
+        <img class="thumb" src="${c.ImageURL}" alt="" loading="lazy"
+          onerror="this.outerHTML='<div class=\\'thumb-fallback\\'>🎮</div>'" />
+        <div class="card-body">
+          <div class="card-top">
+            <div class="card-title">${c.Title}</div>
+            <div class="reward-pill">+${c.RewardQuantity}${c.RewardUnit}</div>
+          </div>
+          ${desc}
+          <div class="card-footer">
+            <img class="icon-img" src="${c.IconURL}" alt="" loading="lazy" onerror="this.style.display='none'" />
+            <span class="card-key">${c.CampaignKey}</span>
+            <span class="card-arrow">›</span>
+          </div>
+        </div>
+      </a>
+    `;
+  }).join('');
+}
+
+render();
+</script>
+</body>
+</html>
