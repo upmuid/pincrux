@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.0",
+  "node": "writer",
+  "run_date": "2026-06-25",
+  "source_file": "Archive_Pincrux/01_Collector/2026-06-25.json",
+  "node_status": "success",
+  "processed_tasks": [
+    {
+      "task_id": "T001",
+      "target_name": "핑크럭스 플랫폼 2.0",
+      "context_status": "new",
+      "action_taken": "created_new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/190480385",
+      "confluence_page_id": "190480385",
+      "updated_sections": ["## 1. 개요", "## 2. 배경 및 목적", "## 3. 주요 의사결정", "## 4. 액션 아이템", "## 5. 히스토리"]
+    },
+    {
+      "task_id": "T002",
+      "target_name": "핑크럭스 플랫폼 모니터링",
+      "context_status": "matched",
+      "action_taken": "created_new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/190513154",
+      "confluence_page_id": "190513154",
+      "updated_sections": ["## 1. 개요", "## 2. 배경 및 목적", "## 3. 주요 의사결정", "## 4. 액션 아이템", "## 5. 히스토리"],
+      "note": "AR 스페이스 최초 구축으로 기존 페이지 없음. 신규 생성으로 처리."
+    },
+    {
+      "task_id": "T003",
+      "target_name": "핑크럭스 개발 인프라",
+      "context_status": "new",
+      "action_taken": "created_new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/190218243",
+      "confluence_page_id": "190218243",
+      "updated_sections": ["## 1. 개요", "## 2. 배경 및 목적", "## 3. 주요 의사결정", "## 4. 액션 아이템", "## 5. 히스토리"]
+    },
+    {
+      "task_id": "T004",
+      "target_name": "코인제스트",
+      "context_status": "new",
+      "action_taken": "created_new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/190185474",
+      "confluence_page_id": "190185474",
+      "updated_sections": ["## 1. 개요", "## 2. 배경 및 목적", "## 3. 주요 의사결정", "## 4. 액션 아이템", "## 5. 히스토리"]
+    },
+    {
+      "task_id": "T005",
+      "target_name": "저스트엔",
+      "context_status": "new",
+      "action_taken": "created_new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/189300746",
+      "confluence_page_id": "189300746",
+      "updated_sections": ["## 1. 개요", "## 2. 배경 및 목적", "## 3. 주요 의사결정", "## 4. 액션 아이템", "## 5. 히스토리"]
+    },
+    {
+      "task_id": "T006",
+      "target_name": "인터파트 투어 (웹충전소)",
+      "context_status": "inquiry",
+      "action_taken": "isolated_to_faq",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/190545921",
+      "confluence_page_id": "190545921",
+      "updated_sections": ["## 1. 개요", "## 2. 배경 및 목적", "### FAQ 및 트러블슈팅", "### Q&A 누적"]
+    },
+    {
+      "task_id": "T007",
+      "target_name": "페이앤드",
+      "context_status": "matched",
+      "action_taken": "created_new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/189300769",
+      "confluence_page_id": "189300769",
+      "updated_sections": ["## 1. 개요", "## 2. 배경 및 목적", "## 3. 주요 의사결정", "## 4. 액션 아이템", "## 5. 히스토리"],
+      "note": "AR 스페이스 최초 구축으로 기존 페이지 없음. 신규 생성으로 처리."
+    },
+    {
+      "task_id": "T008",
+      "target_name": "미래에셋대우",
+      "context_status": "matched",
+      "action_taken": "created_new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/190382101",
+      "confluence_page_id": "190382101",
+      "updated_sections": ["## 1. 개요", "## 2. 배경 및 목적", "## 3. 주요 의사결정", "## 4. 액션 아이템", "## 5. 히스토리"],
+      "note": "AR 스페이스 최초 구축으로 기존 페이지 없음. 신규 생성으로 처리."
+    },
+    {
+      "task_id": "T009",
+      "target_name": "KT M모바일",
+      "context_status": "matched",
+      "action_taken": "created_new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/190578689",
+      "confluence_page_id": "190578689",
+      "updated_sections": ["## 1. 개요", "## 2. 배경 및 목적", "## 3. 주요 의사결정", "## 4. 액션 아이템", "## 5. 히스토리"],
+      "note": "AR 스페이스 최초 구축으로 기존 페이지 없음. 신규 생성으로 처리."
+    },
+    {
+      "task_id": "T010",
+      "target_name": "교보 라이프플래닛",
+      "context_status": "matched",
+      "action_taken": "created_new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/189792270",
+      "confluence_page_id": "189792270",
+      "updated_sections": ["## 1. 개요", "## 2. 배경 및 목적", "## 3. 주요 의사결정", "## 4. 액션 아이템", "## 5. 히스토리"],
+      "note": "AR 스페이스 최초 구축으로 기존 페이지 없음. 신규 생성으로 처리."
+    },
+    {
+      "task_id": "T011",
+      "target_name": "DB손해보험",
+      "context_status": "new",
+      "action_taken": "created_new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/190382124",
+      "confluence_page_id": "190382124",
+      "updated_sections": ["## 1. 개요", "## 2. 배경 및 목적", "## 3. 주요 의사결정", "## 4. 액션 아이템", "## 5. 히스토리"]
+    }
+  ],
+  "skipped_tasks": []
+}
