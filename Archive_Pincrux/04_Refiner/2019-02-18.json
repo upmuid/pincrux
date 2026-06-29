@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.1",
+  "node": "refiner",
+  "run_date": "2026-06-28",
+  "source_file": "Archive_Pincrux/03_Validator/2019-02-18.json",
+  "node_status": "success",
+  "published_at": "2026-06-28T17:00:04+09:00",
+  "polishing_summary": {
+    "total_pages_updated": 3,
+    "style_changes": "의사결정 사항 연속 단락 → 불릿 리스트 구조화 (전체 섹션 적용)",
+    "tone_changes": "구어체 잔재 없음 확인. 모든 종결어미 확정형 비즈니스 문어체 유지됨.",
+    "markdown_issues_fixed": 0,
+    "hallucination_check": "PASSED — 수치, 일정, 결정 사항 원본 대비 변경 없음"
+  },
+  "published_pages": [
+    {
+      "entity_name": "페이앤드",
+      "confluence_page_id": "192053250",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192053250/Client",
+      "version_after_publish": 4,
+      "sections_polished": [
+        "페이앤드 첫 회원사 오픈 준비 (데이브레이크게임즈, 2019) — 의사결정 사항 불릿 구조화",
+        "페이앤드 사용점 iOS 앱 개발 (2019) — 의사결정 사항 불릿 구조화 + 사용점 정보 변경 기능 후순위 처리 결정 추가",
+        "페이앤드 앱 iOS 출시 준비 (2019) — 의사결정 사항 불릿 구조화",
+        "페이앤드 앱 구매할인 기능 개발 (2019) — 의사결정 사항 불릿 구조화"
+      ]
+    },
+    {
+      "entity_name": "PINCRUX",
+      "confluence_page_id": "191987714",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "version_after_publish": 4,
+      "sections_polished": [
+        "PINCRUX CS 시스템 기능 개선 (2019) — 의사결정 사항 불릿 구조화",
+        "PINCRUX 신규 광고 상품 기획 (2019) — 의사결정 사항 불릿 구조화",
+        "PINCRUX 개발팀 업무 프로세스 정비 (2019) — 의사결정 사항 불릿 구조화",
+        "핀크럭스 광고 SDK/API 연동 관리 (2019) — 의사결정 사항 불릿 구조화"
+      ]
+    },
+    {
+      "entity_name": "DB손해보험",
+      "confluence_page_id": "191955049",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955049/DB+Client",
+      "version_after_publish": 3,
+      "sections_polished": [
+        "DB손해보험 자동차동호회 가입 이벤트 캠페인 (2019) — 의사결정 사항 불릿 구조화, 핵심 결정사항 볼드 처리"
+      ]
+    }
+  ]
+}

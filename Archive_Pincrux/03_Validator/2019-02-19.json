@@ -1,0 +1,178 @@
+{
+  "schema_version": "1.1",
+  "node": "validator",
+  "run_date": "2019-02-19",
+  "run_mode": "backfill",
+  "period": "2019-02-19 to 2019-02-25",
+  "node_status": "success",
+  "source_collector_file": "Archive_Pincrux/01_Collector/2019-02-19.json",
+  "source_writer_file": "Archive_Pincrux/02_Writer/2019-02-19.json",
+  "validation_results": [
+    {
+      "task_id": "T001",
+      "entity": "DB손해보험",
+      "page_id": "191955049",
+      "pass1_json_check": "PASSED",
+      "pass1_confluence_check": "PASSED",
+      "pass2_slack_check": "SKIPPED",
+      "verdict": "PASSED",
+      "note": "이벤트 기간(02.19~03.19), 당첨자 발표(03.20) 수치 일치 확인"
+    },
+    {
+      "task_id": "T002",
+      "entity": "하나멤버스",
+      "page_id": "192151700",
+      "pass1_json_check": "PASSED",
+      "pass1_confluence_check": "PASSED",
+      "pass2_slack_check": "TRIGGERED",
+      "pass2_result": "PASSED",
+      "verdict": "PASSED",
+      "note": "신규 페이지 생성. 소재 수정사항 안내 이력 반영 확인"
+    },
+    {
+      "task_id": "T003",
+      "entity": "DB손해보험 / 레진코믹스",
+      "page_id": "191955049 / 192348161",
+      "pass1_json_check": "PASSED",
+      "pass1_confluence_check": "PASSED",
+      "pass2_slack_check": "TRIGGERED",
+      "pass2_result": "PASSED",
+      "verdict": "PASSED",
+      "note": "50코인, 쿠폰번호 75번, 유효기간 2019.03.14, 200매 수치 일치 확인. DB손해보험 및 레진코믹스 양측 페이지 반영 확인"
+    },
+    {
+      "task_id": "T004",
+      "entity": "DB손해보험",
+      "page_id": "191955049",
+      "pass1_json_check": "PASSED",
+      "pass1_confluence_check": "PASSED",
+      "pass2_slack_check": "SKIPPED",
+      "verdict": "PASSED",
+      "note": "상단 원→P, 하단 3만원→페이코 3만 포인트 문구 변경 일치 확인"
+    },
+    {
+      "task_id": "T005",
+      "entity": "SK브로드밴드",
+      "page_id": "192217151",
+      "pass1_json_check": "PASSED",
+      "pass1_confluence_check": "PASSED",
+      "pass2_slack_check": "TRIGGERED",
+      "pass2_result": "PASSED",
+      "verdict": "PASSED",
+      "note": "신규 페이지 생성. 26세~60세 참여 제한 적용 완료 이력 확인"
+    },
+    {
+      "task_id": "T006",
+      "entity": "레진코믹스",
+      "page_id": "192348161",
+      "pass1_json_check": "PASSED",
+      "pass1_confluence_check": "PASSED",
+      "pass2_slack_check": "TRIGGERED",
+      "pass2_result": "PASSED",
+      "verdict": "PASSED",
+      "note": "Unknown column 'appgrp' 오류 내용 일치 확인"
+    },
+    {
+      "task_id": "T007",
+      "entity": "페이앤드",
+      "page_id": "192053250",
+      "pass1_json_check": "PASSED",
+      "pass1_confluence_check": "PASSED",
+      "pass2_slack_check": "TRIGGERED",
+      "pass2_result": "PASSED",
+      "verdict": "PASSED",
+      "note": "기능 개선 4가지(함께쓰기 2안, N빵, 거래취소 텍스트, 거래관리 검색) 모두 반영 확인"
+    },
+    {
+      "task_id": "T008",
+      "entity": "페이앤드",
+      "page_id": "192053250",
+      "pass1_json_check": "PASSED",
+      "pass1_confluence_check": "PASSED",
+      "pass2_slack_check": "SKIPPED",
+      "verdict": "PASSED",
+      "note": "iOS 심사 완료 및 마켓 업데이트 이력 일치 확인"
+    },
+    {
+      "task_id": "T009",
+      "entity": "페이앤드",
+      "page_id": "192053250",
+      "pass1_json_check": "PASSED",
+      "pass1_confluence_check": "PASSED",
+      "pass2_slack_check": "TRIGGERED",
+      "pass2_result": "PASSED",
+      "verdict": "PASSED",
+      "note": "이크레더블 2호 회원사 오픈 공지 및 QR 인쇄 이슈 반영 확인"
+    },
+    {
+      "task_id": "T010",
+      "entity": "미래에셋대우",
+      "page_id": "191955009",
+      "pass1_json_check": "PASSED",
+      "pass1_confluence_check": "PASSED",
+      "pass2_slack_check": "TRIGGERED",
+      "pass2_result": "PASSED",
+      "verdict": "PASSED",
+      "note": "계좌개설 1만원, 거래실적 4만/6만/10만 포인트 수치, 소재 규격(720×720, 720×360, 400×400) 일치 확인"
+    },
+    {
+      "task_id": "T011",
+      "entity": "미래에셋대우",
+      "page_id": "191955009",
+      "pass1_json_check": "PASSED",
+      "pass1_confluence_check": "PASSED",
+      "pass2_slack_check": "TRIGGERED",
+      "pass2_result": "PASSED",
+      "verdict": "PASSED",
+      "note": "계좌개설 2만원 코나카드 충전권, 배너 1ea + 모바일랜딩 1ea 수치 일치 확인"
+    },
+    {
+      "task_id": "T012",
+      "entity": "DB손해보험",
+      "page_id": "191955049",
+      "pass1_json_check": "PASSED",
+      "pass1_confluence_check": "PASSED",
+      "pass2_slack_check": "SKIPPED",
+      "verdict": "PASSED",
+      "note": "코나 소재 등록 요청 이력 반영 확인"
+    },
+    {
+      "task_id": "T013",
+      "entity": "페이앤드",
+      "page_id": "192053250",
+      "pass1_json_check": "PASSED",
+      "pass1_confluence_check": "PASSED",
+      "pass2_slack_check": "SKIPPED",
+      "verdict": "PASSED",
+      "note": "API 18번(favorite_flag), 20번(cancel_text) 파라미터명 일치 확인"
+    },
+    {
+      "task_id": "T014",
+      "entity": "페이앤드",
+      "page_id": "192053250",
+      "pass1_json_check": "PASSED",
+      "pass1_confluence_check": "PASSED",
+      "pass2_slack_check": "SKIPPED",
+      "verdict": "PASSED",
+      "note": "제플린 업로드 완료 이력 일치 확인"
+    },
+    {
+      "task_id": "T015",
+      "entity": "스테들러 코리아",
+      "page_id": "192086101",
+      "pass1_json_check": "PASSED",
+      "pass1_confluence_check": "PASSED",
+      "pass2_slack_check": "TRIGGERED",
+      "pass2_result": "PASSED",
+      "verdict": "PASSED",
+      "note": "신규 페이지 생성. 인스타그램 소재 제작 요청 이력 반영 확인"
+    }
+  ],
+  "summary": {
+    "total_items": 15,
+    "passed": 15,
+    "failed": 0,
+    "new_items_checked": 5,
+    "matched_items_checked": 10
+  }
+}

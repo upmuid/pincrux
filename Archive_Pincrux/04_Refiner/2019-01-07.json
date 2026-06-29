@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.1",
+  "node": "refiner",
+  "run_date": "2019-01-07",
+  "source_file": "Archive_Pincrux/03_Validator/2019-01-07.json",
+  "node_status": "success",
+  "published_tasks": [
+    {
+      "task_id": "T1",
+      "target_name": "PINCRUX",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "refined_points": [
+        "읽어봄이 검증 결과 이미 양호한 상태로 판단 — 빈 의사결정 항목 없음, 구어체 잔재 없음",
+        "별도 교정 없이 현행 유지 (no-op 퍼블리싱)"
+      ],
+      "published_at": "2026-06-28T01:11:00+09:00"
+    },
+    {
+      "task_id": "T2",
+      "target_name": "페이앤드 > 페이앤드 앱 구매할인 기능 개발",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192118785",
+      "confluence_page_id": "192118785",
+      "refined_points": [
+        "의사결정 사항 섹션: 빈 DECIDED 항목 2개 및 빈 UNDECIDED 항목 1개 전체 제거",
+        "'iOS 결제 시 비밀번호 추가 입력 미적용으로 결정' 내용을 DECIDED 항목으로 명시 — iOS 세션 유지 특성에 근거한 결정 사항 본문 기반"
+      ],
+      "published_at": "2026-06-28T01:11:51+09:00"
+    },
+    {
+      "task_id": "T3",
+      "target_name": "페이앤드 > 페이앤드 앱 Google Play 정책 대응",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151553/Google+Play",
+      "confluence_page_id": "192151553",
+      "refined_points": [
+        "의사결정 사항 섹션: 빈 DECIDED 항목 2개 제거",
+        "'SMS Retriever 방식 전환 결정' 내용을 첫 번째 DECIDED 항목으로 명시",
+        "'Google Play 내부 테스트 트랙 업로드 대응 방안으로 채택' 내용을 두 번째 DECIDED 항목으로 명시"
+      ],
+      "published_at": "2026-06-28T01:12:12+09:00"
+    },
+    {
+      "task_id": "T4",
+      "target_name": "PINCRUX > 핀크럭스 광고 플랫폼 클릭/포스트백 연동",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191954947",
+      "confluence_page_id": "191954947",
+      "refined_points": [
+        "의사결정 사항 섹션: 빈 DECIDED 항목 1개 제거 및 섹션 전체 삭제 처리",
+        "원본 모으미 JSON의 action_items가 빈 배열이므로 결정 사항 없음 확인 — Hallucination 방지"
+      ],
+      "published_at": "2026-06-28T01:12:22+09:00"
+    },
+    {
+      "task_id": "T5",
+      "target_name": "PINCRUX > 핀크럭스 광고 SDK/API 연동 관리",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151574/SDK+API",
+      "confluence_page_id": "192151574",
+      "refined_points": [
+        "의사결정 사항 섹션: 빈 DECIDED 항목 2개 제거",
+        "'해당 문서 외부 반출 금지 정책 준수 결정' 내용을 DECIDED 항목으로 명시 — 목적 및 배경 섹션 기재 내용 기반"
+      ],
+      "published_at": "2026-06-28T01:12:32+09:00"
+    }
+  ]
+}

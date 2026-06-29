@@ -1,7 +1,7 @@
 ---
 document: 노드 간 데이터 교환 인터페이스 규격
-version: 1.0.0
-last_updated: 2026-06-25
+version: 1.1.0
+last_updated: 2026-06-28
 owner: 총총(COO)
 ---
 
@@ -72,9 +72,10 @@ Archive_Pincrux/
 
 ```json
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "node": "collector",
   "run_date": "YYYY-MM-DD",
+  "run_mode": "daily / backfill",
   "period": "YYYY-MM-DD to YYYY-MM-DD",
   "status": "success / fail",
   "data_summaries": [
@@ -84,7 +85,10 @@ Archive_Pincrux/
       "minor_category": "Project / Product",
       "context_status": "matched / new / inquiry / unknown",
       "context_reference": "판단 근거",
-      "target_name": "광고주/매체/프로덕트명",
+      "entity_name": "광고주/매체/내부팀 고유명 (canonical name)",
+      "project_name": "캠페인/프로젝트/상품명 (nullable — 엔티티 레벨 이슈면 null)",
+      "page_scope": "root / child",
+      "target_name": "entity_name 또는 'entity_name > project_name' 형식",
       "issue_title": "이슈 제목",
       "summary": "핵심 내용 요약 (50자 이내)",
       "decision": "결정 사항",
@@ -101,11 +105,17 @@ Archive_Pincrux/
 }
 ```
 
+**`entity_name` 규칙**: 동일 광고주/매체는 시간이 지나도 같은 이름을 유지해야 한다. 별칭·축약어가 여러 개인 경우 정식 명칭으로 통일하고 `context_reference`에 원문 표기를 기록한다.
+
+**`page_scope` 결정 기준**:
+- `root`: 계약 체결, 파트너십 개요, 조직 변경 등 특정 캠페인에 귀속되지 않는 엔티티 레벨 이슈
+- `child`: 특정 캠페인·프로젝트·상품에 귀속되는 이슈. 반드시 `project_name`을 함께 기재
+
 ### 4-2. 쓰미 출력 (`02_Writer/YYYY-MM-DD.json`)
 
 ```json
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "node": "writer",
   "run_date": "YYYY-MM-DD",
   "source_file": "Archive_Pincrux/01_Collector/YYYY-MM-DD.json",
@@ -113,12 +123,17 @@ Archive_Pincrux/
   "processed_tasks": [
     {
       "task_id": "T001",
-      "target_name": "A광고주 프로젝트",
+      "entity_name": "A광고주",
+      "project_name": "2022 여름 캠페인",
+      "page_scope": "child",
+      "target_name": "A광고주 > 2022 여름 캠페인",
       "context_status": "matched / new / inquiry / unknown",
-      "action_taken": "merged_into_existing / created_new / isolated_to_faq / skipped",
+      "action_taken": "merged_into_existing / created_new / created_root_and_child / isolated_to_faq / skipped",
       "confluence_space": "AR",
       "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/123456",
       "confluence_page_id": "123456",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/111111",
+      "confluence_parent_page_id": "111111",
       "updated_sections": ["## 3. 매체 운영 히스토리"]
     }
   ],
@@ -132,12 +147,13 @@ Archive_Pincrux/
 ```
 
 > `confluence_page_url`과 `confluence_page_id`는 필수 필드. 없으면 읽어봄이가 검증 불가.
+> `page_scope: child`인 경우 `confluence_parent_page_url`과 `confluence_parent_page_id`도 필수. root 페이지가 없으면 쓰미가 먼저 root를 생성한 뒤 child를 작성한다.
 
 ### 4-3. 읽어봄이 출력 (`03_Validator/YYYY-MM-DD.json`)
 
 ```json
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "node": "validator",
   "run_date": "YYYY-MM-DD",
   "source_files": {
@@ -190,7 +206,7 @@ Archive_Pincrux/
 
 ```json
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "node": "refiner",
   "run_date": "YYYY-MM-DD",
   "source_file": "Archive_Pincrux/03_Validator/YYYY-MM-DD.json",
@@ -239,3 +255,23 @@ Archive_Pincrux/
 - 각 노드는 **자신의 입력 파일 경로를 직접 읽는다.** 총총이가 데이터를 복사해 전달하지 않는다.
 - `confluence_page_url`과 `confluence_page_id`는 쓰미(v2)에서 최초 발급되어 v3 → v4로 그대로 승계된다. 중간에 URL이 바뀌면 전체 체인이 깨지므로 수정 금지.
 - `schema_version`이 다른 파일을 수신한 노드는 작업을 중단하고 총총에게 버전 불일치를 보고한다.
+- `entity_name`은 파이프라인 전 노드에서 동일한 표기를 유지해야 한다. 노드가 임의로 수정 불가.
+
+### 백필(Backfill) 체크포인트 파일
+백필 모드 실행 시 진행 상태를 아래 경로에 기록한다. 중단 후 재실행 시 이 파일을 기준으로 재개한다.
+
+```
+Archive_Pincrux/00_COO_Center/backfill_checkpoint.json
+```
+
+```json
+{
+  "backfill_status": "in_progress / completed",
+  "target_range": "2019-01-01 to 2026-06-27",
+  "last_completed_period": "2019-03-31",
+  "next_period_start": "2019-04-01",
+  "total_weeks_planned": 364,
+  "completed_weeks": 12,
+  "last_run_date": "2026-06-28"
+}
+```

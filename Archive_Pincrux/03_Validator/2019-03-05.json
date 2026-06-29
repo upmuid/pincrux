@@ -1,0 +1,209 @@
+{
+  "schema_version": "1.1",
+  "period": "2019-03-05",
+  "week": "W10",
+  "generated_at": "2026-06-28T03:08:00Z",
+  "agent": "validator_v3",
+  "source_collector": "Archive_Pincrux/01_Collector/2019-03-05.json",
+  "source_writer": "Archive_Pincrux/02_Writer/2019-03-05.json",
+  "validation_results": [
+    {
+      "item_id": "T001",
+      "entity": "미래에셋대우",
+      "page_id": "191955009",
+      "status": "PASSED",
+      "checks": {
+        "fact_alignment": "PASS",
+        "no_hallucination": "PASS",
+        "history_preserved": "PASS",
+        "action_items_intact": "PASS"
+      },
+      "notes": "와디즈 소재 폰트(Neo 01), BG 기존 색상 유지, PPT 참조 사항 모두 반영 확인"
+    },
+    {
+      "item_id": "T002",
+      "entity": "미래에셋대우",
+      "page_id": "191955009",
+      "status": "PASSED",
+      "checks": {
+        "fact_alignment": "PASS",
+        "no_hallucination": "PASS",
+        "history_preserved": "PASS",
+        "action_items_intact": "PASS"
+      },
+      "notes": "클립 랜딩페이지 리워드 11만P/거래혜택 10만P, 배너 없음 정확히 반영"
+    },
+    {
+      "item_id": "T003",
+      "entity": "DB금융투자",
+      "page_id": "192151759",
+      "status": "PASSED",
+      "checks": {
+        "fact_alignment": "PASS",
+        "no_hallucination": "PASS",
+        "history_preserved": "PASS",
+        "action_items_intact": "PASS"
+      },
+      "notes": "심사필 번호(제19-00876호), 유효기간(2019.03.06~2019.12.31) 정확 반영"
+    },
+    {
+      "item_id": "T004",
+      "entity": "DB금융투자",
+      "page_id": "192151759",
+      "status": "PASSED",
+      "checks": {
+        "fact_alignment": "PASS",
+        "no_hallucination": "PASS",
+        "history_preserved": "PASS",
+        "action_items_intact": "PASS"
+      },
+      "notes": "경로(/home/pincrux/randing/dbhappy/network), 앱키 104976, OCB 앱키 105352 모두 정확 반영"
+    },
+    {
+      "item_id": "T005",
+      "entity": "페이앤드",
+      "page_id": "192053250",
+      "status": "PASSED",
+      "checks": {
+        "fact_alignment": "PASS",
+        "no_hallucination": "PASS",
+        "history_preserved": "PASS",
+        "action_items_intact": "PASS"
+      },
+      "notes": "iOS 검수 통과, 앱스토어 노출 대기 상태 정확 반영"
+    },
+    {
+      "item_id": "T006",
+      "entity": "페이앤드",
+      "page_id": "192053250",
+      "status": "PASSED",
+      "checks": {
+        "fact_alignment": "PASS",
+        "no_hallucination": "PASS",
+        "history_preserved": "PASS",
+        "action_items_intact": "PASS"
+      },
+      "notes": "DB서버 이중화 및 Failover 구축 완료 정확 반영"
+    },
+    {
+      "item_id": "T007",
+      "entity": "CPS 커스텀 오퍼월",
+      "page_id": null,
+      "status": "SKIPPED",
+      "notes": "내부 기술 검토 단계, 별도 엔티티 페이지 미생성 — 정상 처리"
+    },
+    {
+      "item_id": "T008",
+      "entity": "교보라이프플래닛",
+      "page_id": "191954989",
+      "status": "PASSED",
+      "checks": {
+        "fact_alignment": "PASS",
+        "no_hallucination": "PASS",
+        "history_preserved": "PASS",
+        "action_items_intact": "PASS"
+      },
+      "notes": "11번가×저축 MO 소재 기존 문구 유지, 교보 캐릭터 소스 활용 정확 반영"
+    },
+    {
+      "item_id": "T009",
+      "entity": "미래에셋대우",
+      "page_id": "191955009",
+      "status": "PASSED",
+      "checks": {
+        "fact_alignment": "PASS",
+        "no_hallucination": "PASS",
+        "history_preserved": "PASS",
+        "action_items_intact": "PASS"
+      },
+      "notes": "삼총사 문구 폰트 사이즈 업, 가독성 색상 변경, 긴급 처리 요청 정확 반영"
+    },
+    {
+      "item_id": "T010",
+      "entity": "삼성증권",
+      "page_id": "192086150",
+      "status": "PASSED",
+      "checks": {
+        "fact_alignment": "PASS",
+        "no_hallucination": "PASS",
+        "history_preserved": "PASS",
+        "action_items_intact": "PASS"
+      },
+      "notes": "삼성증권 우선순위 작업 확정, 기존 미진행 캠페인 제외 사항 정확 반영"
+    },
+    {
+      "item_id": "T011",
+      "entity": "캐치랜드",
+      "page_id": "192217197",
+      "status": "PASSED",
+      "checks": {
+        "fact_alignment": "PASS",
+        "no_hallucination": "PASS",
+        "history_preserved": "PASS",
+        "action_items_intact": "PASS"
+      },
+      "notes": "광고리스트 맨위이동 기능, Android SVG/iOS 1x2x3x PNG 디자인 요청 정확 반영"
+    },
+    {
+      "item_id": "T012",
+      "entity": "캐치랜드",
+      "page_id": "192217197",
+      "status": "PASSED",
+      "checks": {
+        "fact_alignment": "PASS",
+        "no_hallucination": "PASS",
+        "history_preserved": "PASS",
+        "action_items_intact": "PASS"
+      },
+      "notes": "클립 충전소 개발미팅 프리미엄&네이티브, 4월 리뉴얼 목표 정확 반영"
+    },
+    {
+      "item_id": "T013",
+      "entity": "굿다이렉트",
+      "page_id": null,
+      "status": "SKIPPED",
+      "notes": "단순 오퍼월 소재 제작 요청 — 정상 처리"
+    },
+    {
+      "item_id": "T014",
+      "entity": "아지냥이",
+      "page_id": null,
+      "status": "SKIPPED",
+      "notes": "단순 오퍼월 소재 제작 요청 — 정상 처리"
+    },
+    {
+      "item_id": "T015",
+      "entity": "서베이빌리",
+      "page_id": null,
+      "status": "SKIPPED",
+      "notes": "단순 오퍼월 소재 제작 요청 — 정상 처리"
+    },
+    {
+      "item_id": "T016",
+      "entity": "나혼자한다",
+      "page_id": null,
+      "status": "SKIPPED",
+      "notes": "단순 오퍼월 소재 제작 요청 — 정상 처리"
+    },
+    {
+      "item_id": "T017",
+      "entity": "페이앤드",
+      "page_id": "192053250",
+      "status": "PASSED",
+      "checks": {
+        "fact_alignment": "PASS",
+        "no_hallucination": "PASS",
+        "history_preserved": "PASS",
+        "action_items_intact": "PASS"
+      },
+      "notes": "이크레더블 4개 업체(윤가네칼국수/소용궁/어반테이블/고릴라김밥) QR팻 거치대형, 추가 2개 익일 확정 사항 정확 반영"
+    }
+  ],
+  "summary": {
+    "total": 17,
+    "passed": 12,
+    "failed": 0,
+    "skipped": 5
+  },
+  "node_status": "success"
+}

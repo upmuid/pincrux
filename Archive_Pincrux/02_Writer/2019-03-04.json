@@ -1,0 +1,112 @@
+{
+  "schema_version": "1.1",
+  "node": "writer",
+  "run_date": "2019-03-04",
+  "run_mode": "backfill",
+  "period": "2019-02-19 to 2019-03-04",
+  "status": "success",
+  "updates": [
+    {
+      "task_id": "T001",
+      "entity_name": "페이앤드",
+      "context_status": "matched",
+      "page_scope": "child",
+      "confluence_page_id": "192053250",
+      "confluence_page_title": "페이앤드",
+      "action": "updated",
+      "version": 8,
+      "sections_updated": ["페이앤드 기능 개선 v2 (2019)"],
+      "changes": [
+        "2019-02-21 기능 개선 우선순위 확정 이력 추가",
+        "2019-02-22 iOS 사용자용 추가기능 심사 제출 이력 추가",
+        "2019-02-28 iOS 심사 통과 이력 추가",
+        "2019-03-01 Android 사용자용 신규 버전 릴리즈 완료 이력 추가",
+        "2019-03-04 iOS QR 버그 발견 및 수정 버전 TestFlight 심사 등록 완료 이력 추가",
+        "의사결정 사항: Android 릴리즈 완료, iOS QR 버그 수정 버전 제출 추가",
+        "액션 아이템: iOS QR 버그 수정 AppStore 심사 제출 추가"
+      ],
+      "confluence_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192053250"
+    },
+    {
+      "task_id": "T002",
+      "entity_name": "페이앤드",
+      "context_status": "matched",
+      "page_scope": "child",
+      "confluence_page_id": "192053250",
+      "confluence_page_title": "페이앤드",
+      "action": "updated",
+      "sections_updated": ["페이앤드 기능 개선 v2 (2019)"],
+      "changes": [
+        "iOS/Android 릴리즈 완료 및 QR 버그 이력 반영 (T001과 동일 페이지, 동시 반영)"
+      ],
+      "confluence_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192053250"
+    },
+    {
+      "task_id": "T003",
+      "entity_name": "페이앤드",
+      "context_status": "matched",
+      "page_scope": "child",
+      "confluence_page_id": "192053250",
+      "confluence_page_title": "페이앤드",
+      "action": "updated",
+      "sections_updated": ["페이앤드 2호 회원사 이크레더블 오픈 (2019)"],
+      "changes": [
+        "2019-02-21 이크레더블 3/4 오픈 예정 공지 및 거치대형 QR 긴급 작업 요청 이력 추가",
+        "2019-02-27 QR 웹 구현 불가 확인 및 어드민 거치대형 인쇄 기능 구현 요청 이력 추가",
+        "의사결정 사항: QR 웹 구현 불가, 어드민 기능 구현 요청 추가",
+        "액션 아이템: 거치대형 QR 이미지 작업 완료(체크됨), 어드민 인쇄 기능 구현 추가"
+      ],
+      "confluence_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192053250"
+    },
+    {
+      "task_id": "T004",
+      "entity_name": "DB손해보험",
+      "context_status": "matched",
+      "page_scope": "child",
+      "confluence_page_id": "191955049",
+      "confluence_page_title": "DB손해보험",
+      "action": "updated",
+      "sections_updated": ["DB손해보험 월별 가입 이벤트 운영 (2019)"],
+      "changes": [
+        "2019-03-04 3월 가입 이벤트 조건 확정 이력 추가 (기간 3/4~3/10, 신규 3만원/갱신 2만원, 혜택발송 4/11)",
+        "심의필 번호: 신규 제14072호, 갱신 제14077호 반영"
+      ],
+      "confluence_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955049"
+    },
+    {
+      "task_id": "T005",
+      "entity_name": "DB손해보험",
+      "context_status": "matched",
+      "page_scope": "child",
+      "confluence_page_id": "191955049",
+      "confluence_page_title": "DB손해보험",
+      "action": "updated",
+      "sections_updated": ["DB손해보험 자동차동호회 가입 이벤트 캠페인 (2019)"],
+      "changes": [
+        "2019-02-25 마이나우코믹스 신규 이미지 배너 소재 심의 요청 이력 추가",
+        "의사결정 사항: 텍스트 배너→이미지 배너 전환 확정 추가",
+        "액션 아이템: 마이나우코믹스 이미지 배너 소재 심의 완료 추가"
+      ],
+      "confluence_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955049"
+    },
+    {
+      "task_id": "T006",
+      "entity_name": "DB손해보험",
+      "context_status": "matched",
+      "page_scope": "child",
+      "confluence_page_id": "191955049",
+      "confluence_page_title": "DB손해보험",
+      "action": "updated",
+      "sections_updated": ["DB손해보험 자동차동호회 가입 이벤트 캠페인 (2019)", "DB손해보험 월별 가입 이벤트 운영 (2019)"],
+      "changes": [
+        "2019-02-25 자동차동호회 계약 종료 안내 완료 이력 추가 (카포인트 동호회 연장 안내)",
+        "2019-02-25 노티투미 홀딩 완료 이력 추가",
+        "2019-02-25 몬테일 소재 교체 미완료 이력 추가 (강형구 파트장 재연락 예정)",
+        "2019-02-25 갱신 리스트 전체 집행 중지 결정 이력 추가",
+        "의사결정 사항: 자동차동호회 계약 종료 안내 완료, 갱신 리스트 집행 중지 추가",
+        "액션 아이템: 몬테일 재연락, 갱신 리스트 재집행 검토 추가"
+      ],
+      "confluence_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955049"
+    }
+  ]
+}

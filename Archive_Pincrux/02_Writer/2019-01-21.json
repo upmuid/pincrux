@@ -1,0 +1,159 @@
+{
+  "schema_version": "1.1",
+  "node": "writer",
+  "run_date": "2019-01-21",
+  "executed_at": "2026-06-28T01:33:30+09:00",
+  "status": "success",
+  "thread_count": 14,
+  "processed_tasks": [
+    {
+      "task_id": "CBTGBP78F_1546938875.011100",
+      "entity_name": "페이앤드",
+      "project_name": "페이앤드 앱 구매할인 기능 개발",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_page_id": "192053250",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192053250/Client",
+      "note": "기존 페이앤드 페이지에 '페이앤드 앱 구매할인 기능 개발 (2019)' 섹션 신규 추가 — Git 형상관리 도입 및 가맹점 QR코드 관련 내용 병합"
+    },
+    {
+      "task_id": "CBTGBP78F_1546939281.014800",
+      "entity_name": "페이앤드",
+      "project_name": "페이앤드 앱 구매할인 기능 개발",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_page_id": "192053250",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192053250/Client",
+      "note": "동일 섹션에 가맹점 QR코드 관리자 화면 출력 기능 내용 추가 병합"
+    },
+    {
+      "task_id": "CBTGBP78F_1546944114.017200",
+      "entity_name": "페이앤드",
+      "project_name": "페이앤드 앱 iOS 출시 준비",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_page_id": "192053250",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192053250/Client",
+      "note": "기존 페이앤드 페이지에 '페이앤드 앱 iOS 출시 준비 (2019)' 섹션 신규 추가 — TestFlight 베타 테스트 및 앱스토어 심사 리젝 대응 내용 포함"
+    },
+    {
+      "task_id": "CBTGBP78F_1547519482.030500",
+      "entity_name": "페이앤드",
+      "project_name": "페이앤드 앱 iOS 출시 준비",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_page_id": "192053250",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192053250/Client",
+      "note": "iOS 회원가입 루틴 최종 확정 내용 동일 섹션에 추가 병합"
+    },
+    {
+      "task_id": "CBU0PHP3P_1547530613.025300",
+      "entity_name": "PINCRUX",
+      "project_name": "핀크럭스 광고 SDK/API 연동 관리",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_page_id": "191987714",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "note": "기존 PINCRUX 페이지에 '핀크럭스 광고 SDK/API 연동 관리 (2019)' 섹션 신규 추가 — CPE 트래킹 검증 내용 포함"
+    },
+    {
+      "task_id": "CBTJWKH0C_1546924092.027900",
+      "entity_name": "KT 엠모바일",
+      "project_name": "KT 엠모바일 유심칩 신청 캠페인 랜딩페이지 운영",
+      "context_status": "new",
+      "action_taken": "created_new",
+      "confluence_page_id": "192151605",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151605/KT+Media",
+      "note": "신규 엔티티 페이지 생성"
+    },
+    {
+      "task_id": "CBT7G5RUN_1546935216.010500",
+      "entity_name": "저스텀",
+      "project_name": "저스텀 PC/모바일웹/Android SDK 매체 연동",
+      "context_status": "new",
+      "action_taken": "created_new",
+      "confluence_page_id": "192086020",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192086020/Media",
+      "note": "신규 엔티티 페이지 생성"
+    },
+    {
+      "task_id": "CBTJWKH0C_1546937372.029300",
+      "entity_name": "교보라이프플래닛",
+      "project_name": "교보라이프플래닛 M저축 랜딩 운영",
+      "context_status": "new",
+      "action_taken": "created_new",
+      "confluence_page_id": "191954989",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191954989/Client",
+      "note": "신규 엔티티 페이지 생성"
+    },
+    {
+      "task_id": "CBTJWKH0C_1547011040.031400",
+      "entity_name": "미래에셋대우",
+      "project_name": "미래에셋대우 캠페인 소재 운영 (OCB/네이버웹툰/네오위즈/한투증권)",
+      "context_status": "new",
+      "action_taken": "created_new",
+      "confluence_page_id": "191955009",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955009/Client",
+      "note": "신규 엔티티 페이지 생성. 2019-01-15 소재 수정 내용(thread CBTJWKH0C_1547525990.050000)도 동일 페이지에 통합"
+    },
+    {
+      "task_id": "CBT7G5RUN_1547082143.013100",
+      "entity_name": "인터파크 투어",
+      "project_name": "인터파크 투어 웹충전소 운영",
+      "context_status": "new",
+      "action_taken": "created_new",
+      "confluence_page_id": "191955029",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955029/Media",
+      "note": "신규 엔티티 페이지 생성. FAQ 섹션에 HTTP 500 오류 트러블슈팅 내역 포함"
+    },
+    {
+      "task_id": "CBU0PHP3P_1547522356.019600",
+      "entity_name": "이노클릭",
+      "project_name": "이노클릭 문자 서버 이전",
+      "context_status": "new",
+      "action_taken": "created_new",
+      "confluence_page_id": "192086040",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192086040/Media",
+      "note": "신규 엔티티 페이지 생성"
+    },
+    {
+      "task_id": "CFCGF3CNQ_1547429903.001400",
+      "entity_name": "DB손해보험",
+      "project_name": "DB손해보험 자동차동호회 가입 이벤트 캠페인",
+      "context_status": "new",
+      "action_taken": "created_new",
+      "confluence_page_id": "191955049",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955049/DB+Client",
+      "note": "신규 엔티티 페이지 생성. 2019-01-15 심의번호 삽입 내용(thread CBTJWKH0C_1547525990.050000)도 동일 페이지에 통합"
+    },
+    {
+      "task_id": "CBTJWKH0C_1547519342.048000",
+      "entity_name": "G9",
+      "project_name": "G9 트렌드트럭 오퍼월 캠페인",
+      "context_status": "new",
+      "action_taken": "created_new",
+      "confluence_page_id": "192053296",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192053296/G9+Client",
+      "note": "신규 엔티티 페이지 생성"
+    },
+    {
+      "task_id": "CBTJWKH0C_1547525990.050000",
+      "entity_name": "DB손해보험",
+      "project_name": "DB손해보험 자동차동호회 가입 이벤트 캠페인",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_page_id": "191955049",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955049/DB+Client",
+      "note": "DB손해보험 신규 페이지 내 2019-01-15 심의번호 삽입 내용 병합 완료"
+    }
+  ],
+  "skipped_tasks": [],
+  "summary": {
+    "total_processed": 14,
+    "created_new": 8,
+    "merged_into_existing": 6,
+    "skipped": 0,
+    "entities_updated": ["페이앤드", "PINCRUX"],
+    "entities_created": ["KT 엠모바일", "저스텀", "교보라이프플래닛", "미래에셋대우", "인터파크 투어", "이노클릭", "DB손해보험", "G9"]
+  }
+}

@@ -1,0 +1,227 @@
+{
+  "schema_version": "1.1",
+  "period": "2019-03-05",
+  "week": "W10",
+  "generated_at": "2026-06-28T03:00:00Z",
+  "agent": "collector_v1",
+  "collection_criteria": "v3.1.0",
+  "data_summaries": [
+    {
+      "id": "T001",
+      "date": "2019-03-06",
+      "channel": "#03_pincrux_디자인업무",
+      "entity": "미래에셋대우",
+      "sub_entity": "미래에셋대우 × 와디즈",
+      "category": "Client+Project",
+      "type": "matched",
+      "summary": "와디즈 랜딩페이지 배너 소재 수정 요청. 폰트 Neo 01 서체로 변경, 기존 PPT 파일 참조, BG는 기존 색상 유지.",
+      "action_items": ["와디즈 랜딩페이지 배너 소재 수정 (폰트 Neo 01, BG 기존 색상 유지)"],
+      "participants": ["고현복(frank)", "조혁(hill)"]
+    },
+    {
+      "id": "T002",
+      "date": "2019-03-06",
+      "channel": "#03_pincrux_디자인업무",
+      "entity": "미래에셋대우",
+      "sub_entity": "미래에셋대우 × 클립",
+      "category": "Client+Project",
+      "type": "matched",
+      "summary": "미래에셋대우 × 클립 랜딩페이지 제작 요청. 기존 소재 활용, 배너 없음, 리워드 최대 11만P, 거래혜택 최대 10만P.",
+      "action_items": ["미래에셋대우 × 클립 랜딩페이지 제작 (기존 소재 활용, 배너 없음)"],
+      "participants": ["고현복(frank)", "조혁(hill)"]
+    },
+    {
+      "id": "T003",
+      "date": "2019-03-06",
+      "channel": "#03_pincrux_디자인업무",
+      "entity": "DB금융투자",
+      "sub_entity": "DB금융투자 심의필",
+      "category": "Client+Project",
+      "type": "new",
+      "summary": "DB금융투자 한국금융투자협회 심사필 번호 삽입 및 네트워크 오픈 예정. 심사필 번호: 제19-00876호 (2019.03.06~2019.12.31). 특정 매체 포인트 아닌 기존 표기 방식으로 확인 부탁.",
+      "action_items": ["심의필 번호 소재 삽입 확인", "기존 표기 방식 확인"],
+      "participants": ["박상욱(jack)", "조혁(hill)"]
+    },
+    {
+      "id": "T004",
+      "date": "2019-03-07",
+      "channel": "#03_pincrux_개발업무",
+      "entity": "DB금융투자",
+      "sub_entity": "DB금융투자 이벤트페이지 연동",
+      "category": "Client+Project",
+      "type": "matched",
+      "summary": "DB금융투자 이벤트페이지 연동 작업. 경로: /home/pincrux/randing/dbhappy/network, 앱키 104976 (해당 캠페인 키 모두 적용). OCB의 경우 별도 앱키 105352 생성, 기존 104976 브릿지 페이지 노출 가능하도록 설정 (차후 OCB 전용페이지로 교체 예정).",
+      "action_items": [
+        "DB금융투자 이벤트페이지 연동 (경로: /home/pincrux/randing/dbhappy/network, 앱키 104976)",
+        "OCB 별도 앱키 105352 생성, 기존 브릿지 페이지 노출 설정"
+      ],
+      "participants": ["박상욱(jack)", "강수현(emily)"]
+    },
+    {
+      "id": "T005",
+      "date": "2019-03-06",
+      "channel": "#09_project_페이앤드",
+      "entity": "페이앤드",
+      "sub_entity": "페이앤드 iOS",
+      "category": "In-house",
+      "type": "matched",
+      "summary": "페이앤드 iOS 검수 통과 완료, 앱스토어 노출 대기 중.",
+      "action_items": [],
+      "participants": ["김현우(jerry)", "김지훈(eric)"]
+    },
+    {
+      "id": "T006",
+      "date": "2019-03-11",
+      "channel": "#09_project_페이앤드",
+      "entity": "페이앤드",
+      "sub_entity": "페이앤드 DB서버",
+      "category": "In-house",
+      "type": "matched",
+      "summary": "페이앤드 DB서버 이중화 및 Failover 서버 구축 완료.",
+      "action_items": [],
+      "participants": ["김판근(ad)", "원성진", "서정철"]
+    },
+    {
+      "id": "T007",
+      "date": "2019-03-06",
+      "channel": "#03_pincrux_개발업무",
+      "entity": "CPS 커스텀 오퍼월",
+      "sub_entity": "CPS 오퍼월 폐쇄몰 연동",
+      "category": "In-house",
+      "type": "new",
+      "summary": "CPS 관련 미팅 — 폐쇄몰 업체와 제휴하여 아래 시나리오로 커스텀 오퍼월 구성 가능 여부 검토. 구매취소 시 리워드 취소 정책 결정 필요: 1) 리워드 미사용 시 취소 요청, 2) 리워드 사용 시 해당 재화 가치만큼 제외 후 환불. 쇼핑몰이 우리원몰(폐쇄몰·복지몰) 운영 — 제조사로부터 판매코드 직접 받아 자사 쇼핑몰에서 판매, 1~2개가 아닌 다수 상품 리스트 보유, 상품 리스트 API 제공 가능한 경우 캐시워크 내 탑재 예정. 오퍼월에 탭으로 구분 시 중복지급 정책, 적립 요청된 금액 회수 불가 정책 등 설정 필요.",
+      "action_items": [
+        "CPS 커스텀 오퍼월 구성 가능 여부 검토 (리소스 체크 포함)",
+        "구매취소 시 리워드 처리 정책 결정",
+        "우리원몰 상품 리스트 API 제공 여부 확인"
+      ],
+      "participants": ["김지훈(eric)", "김천두(tom)", "김판근(ad)", "김상원(mason)"]
+    },
+    {
+      "id": "T008",
+      "date": "2019-03-08",
+      "channel": "#03_pincrux_디자인업무",
+      "entity": "교보라이프플래닛",
+      "sub_entity": "11번가×저축 MO 소재",
+      "category": "Client+Product",
+      "type": "matched",
+      "summary": "11번가×저축 관련 MO 소재 제작 요청. 기존에 예시로 제작해주신 문구 그대로 사용, 교보 측으로부터 전달받은 캐릭터 소스 기반으로 제작.",
+      "action_items": ["11번가×저축 MO 소재 제작 (기존 문구 유지, 캐릭터 소스 활용)"],
+      "participants": ["고현복(frank)", "조혁(hill)"]
+    },
+    {
+      "id": "T009",
+      "date": "2019-03-11",
+      "channel": "#03_pincrux_디자인업무",
+      "entity": "미래에셋대우",
+      "sub_entity": "미래에셋대우 × 와디즈 배너 재수정",
+      "category": "Client+Project",
+      "type": "matched",
+      "summary": "전주 금요일 수정해주신 미래에셋대우 × 와디즈 배너 문구 재수정 요청. 삼총사 문구 크기 및 색상 흐려서 긴급 수정 필요. 폰트 사이즈 업 및 가독성 좋은 색상으로 변경. 광고주 측에 바로 전달 필요.",
+      "action_items": ["미래에셋대우 × 와디즈 배너 삼총사 문구 폰트 사이즈 업 및 색상 수정 (긴급)"],
+      "participants": ["고현복(frank)", "조혁(hill)"]
+    },
+    {
+      "id": "T010",
+      "date": "2019-03-11",
+      "channel": "#03_pincrux_디자인업무",
+      "entity": "삼성증권",
+      "sub_entity": "삼성증권 작업 우선순위",
+      "category": "Client+Project",
+      "type": "new",
+      "summary": "향후 작업 예정 목록 공유. 직접 오픈 예정 없으나 수정 등 관리 필요한 미래에셋대우/한투/DB손보/프리미엄 오퍼월 등은 제외. 삼성증권을 우선으로 진행 예정. 갑자기 생긴 업무로 부하가 많이 걸릴 것으로 예상, 각 매체 담당자분들·영업자 분들 참고 요청.",
+      "action_items": ["삼성증권 소재 작업 우선 진행"],
+      "participants": ["조혁(hill)", "박상욱(jack)", "정회훈", "채수범(peter)"]
+    },
+    {
+      "id": "T011",
+      "date": "2019-03-11",
+      "channel": "#03_pincrux_개발업무",
+      "entity": "캐치랜드",
+      "sub_entity": "광고리스트 맨위이동 기능",
+      "category": "In-house",
+      "type": "new",
+      "summary": "광고리스트에서 맨위로 갈 수 있는 기능을 캐치랜드 요청으로 구현 완료. 스크린샷의 우측 하단 '<' 버튼 누르면 맨위로 올라감. 현재 테스트 버전, 디자인 요청 — Android: 벡터파일(.svg), iOS: 1x, 2x, 3x 사이즈 png.",
+      "action_items": ["캐치랜드 광고리스트 맨위이동 버튼 디자인 제작 (Android: SVG, iOS: 1x/2x/3x PNG)"],
+      "participants": ["김상원(mason)", "박보경", "김천두(tom)", "김판근(ad)", "김지훈(eric)", "김현우(jerry)"]
+    },
+    {
+      "id": "T012",
+      "date": "2019-03-08",
+      "channel": "#02_pincrux_매체사업무",
+      "entity": "캐치랜드",
+      "sub_entity": "클립 충전소 개발 미팅",
+      "category": "In-house",
+      "type": "new",
+      "summary": "클립 충전소 관련 개발 미팅 요청. 프리미엄 & 네이티브 형태로 진행 희망, 4월 리뉴얼 일정으로 진행 희망. VINCENT 화요일 2시 30분 의왕시에서 개발미팅 확인.",
+      "action_items": ["클립 충전소 개발 미팅 일정 조율 (4월 리뉴얼 목표)"],
+      "participants": ["채수범(peter)", "김판근(ad)"]
+    },
+    {
+      "id": "T013",
+      "date": "2019-03-07",
+      "channel": "#03_pincrux_디자인업무",
+      "entity": "굿다이렉트",
+      "sub_entity": "굿다이렉트 오퍼월 소재",
+      "category": "Client+Product",
+      "type": "new",
+      "summary": "오퍼월 소재 제작 요청 (굿다이렉트). 참조 URL: https://www.gooddirect.net/direct1/",
+      "action_items": ["굿다이렉트 오퍼월 소재 제작"],
+      "participants": ["정빈희(bliss)", "조혁(hill)"]
+    },
+    {
+      "id": "T014",
+      "date": "2019-03-08",
+      "channel": "#03_pincrux_디자인업무",
+      "entity": "아지냥이",
+      "sub_entity": "아지냥이 오퍼월 소재",
+      "category": "Client+Product",
+      "type": "new",
+      "summary": "오퍼월 소재 제작 요청 (아지냥이 삼성카드 앱). 참조 URL: https://play.google.com/store/apps/details?id=com.samsungcard.pet",
+      "action_items": ["아지냥이 오퍼월 소재 제작"],
+      "participants": ["정빈희(bliss)", "조혁(hill)"]
+    },
+    {
+      "id": "T015",
+      "date": "2019-03-11",
+      "channel": "#03_pincrux_디자인업무",
+      "entity": "서베이빌리",
+      "sub_entity": "서베이빌리 오퍼월 소재",
+      "category": "Client+Product",
+      "type": "new",
+      "summary": "오퍼월 소재 제작 요청 (서베이빌리). 참조 URL: https://play.google.com/store/apps/details?id=fouronefivespace.surveybilly",
+      "action_items": ["서베이빌리 오퍼월 소재 제작"],
+      "participants": ["정빈희(bliss)", "조혁(hill)"]
+    },
+    {
+      "id": "T016",
+      "date": "2019-03-11",
+      "channel": "#03_pincrux_디자인업무",
+      "entity": "나혼자한다",
+      "sub_entity": "나혼자한다 오퍼월 소재",
+      "category": "Client+Product",
+      "type": "new",
+      "summary": "오퍼월 소재 제작 요청 (나혼자한다). 참조 URL: https://play.google.com/store/apps/details?id=com.noblegames.origin.g",
+      "action_items": ["나혼자한다 오퍼월 소재 제작"],
+      "participants": ["정빈희(bliss)", "조혁(hill)"]
+    },
+    {
+      "id": "T017",
+      "date": "2019-03-11",
+      "channel": "#09_project_페이앤드",
+      "entity": "페이앤드",
+      "sub_entity": "페이앤드 이크레더블 QR팻",
+      "category": "In-house",
+      "type": "matched",
+      "summary": "페이앤드 2호 회사 이크레더블 사용점 QR팻 요청. 거치대형 배너만, 윤가네칼국수/소용궁/어반테이블/고릴라김밥 4개 업체 우선 요청, 추가 2개 업체 익일(3/12) 확정 후 공유 예정.",
+      "action_items": ["이크레더블 4개 업체 QR팻 제작 (거치대형 배너)", "추가 2개 업체 확정 후 QR팻 추가 제작"],
+      "participants": ["원성진", "박보경"]
+    }
+  ],
+  "stats": {
+    "total": 17,
+    "matched": 9,
+    "new": 8,
+    "inquiry": 0
+  }
+}

@@ -1,0 +1,240 @@
+{
+  "schema_version": "1.1",
+  "node": "refiner",
+  "run_date": "2019-04-01",
+  "source_file": "Archive_Pincrux/03_Validator/2019-04-01.json",
+  "node_status": "success",
+  "published_tasks": [
+    {
+      "task_id": "T001",
+      "target_name": "삼성증권",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192086150",
+      "confluence_page_id": "192086150",
+      "refined_points": ["문체 검수 완료 (별도 교정 불필요 수준) — 기존 페이지로 이번 실행 추가 섹션이 이미 비즈니스 문어체로 작성됨"],
+      "published_at": "2026-06-28T07:15:00+09:00"
+    },
+    {
+      "task_id": "T002",
+      "target_name": "삼성증권",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192086150",
+      "confluence_page_id": "192086150",
+      "refined_points": ["문체 검수 완료 (별도 교정 불필요 수준) — 기존 페이지로 이번 실행 추가 섹션이 이미 비즈니스 문어체로 작성됨"],
+      "published_at": "2026-06-28T07:15:00+09:00"
+    },
+    {
+      "task_id": "T003",
+      "target_name": "DB손해보험",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955049",
+      "confluence_page_id": "191955049",
+      "refined_points": ["문체 검수 완료 (별도 교정 불필요 수준) — 기존 페이지로 이번 실행 추가 섹션이 이미 비즈니스 문어체로 작성됨"],
+      "published_at": "2026-06-28T07:15:00+09:00"
+    },
+    {
+      "task_id": "T004",
+      "target_name": "KB손해보험",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192086208",
+      "confluence_page_id": "192086208",
+      "refined_points": [
+        "운영 히스토리 구어체 교정: '최대한 빠르게 요청 접수' → '신속 처리 요청 접수'",
+        "운영 히스토리 종결어미 교정: '통보' → '공식 통보 수신'",
+        "의사결정 사항 종결어미 명확화: '개발 협의 진행' → '~결정함' 형식으로 통일",
+        "액션 아이템 담당자 명기 형식 적용: '- [ ] 담당자: 태스크' 구조로 통일",
+        "Confluence 퍼블리싱 완료 (v2)"
+      ],
+      "published_at": "2026-06-28T07:13:54+09:00"
+    },
+    {
+      "task_id": "T005",
+      "target_name": "KB손해보험",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192086208",
+      "confluence_page_id": "192086208",
+      "refined_points": [
+        "운영 히스토리 종결어미 교정: '완료 확인' → '전달 확인됨'으로 명확화",
+        "의사결정 사항 종결어미 명확화: '코딩본 전달 완료' → '전달 완료 확인됨' 형식으로 통일",
+        "Confluence 퍼블리싱 완료 (v2, T004와 동일 페이지)"
+      ],
+      "published_at": "2026-06-28T07:13:54+09:00"
+    },
+    {
+      "task_id": "T006",
+      "target_name": "PINCRUX",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "refined_points": ["문체 검수 완료 (별도 교정 불필요 수준) — AWS 서버 이전 및 realpincrux.com 도메인 전략 섹션이 이미 비즈니스 문어체로 작성됨. 볼드체·의사결정 구조 양호."],
+      "published_at": "2026-06-28T07:15:00+09:00"
+    },
+    {
+      "task_id": "T007",
+      "target_name": "PINCRUX",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "refined_points": ["문체 검수 완료 (별도 교정 불필요 수준) — 프로젝트 히스토리 항목으로 반영됨. 문체 양호."],
+      "published_at": "2026-06-28T07:15:00+09:00"
+    },
+    {
+      "task_id": "T008",
+      "target_name": "톡소다",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151842",
+      "confluence_page_id": "192151842",
+      "refined_points": [
+        "운영 히스토리 구어체 교정: '잘못 붙인 게 아닌지 확인 필요' → '톡소다 측 연동 설정 오류 여부 확인 요청'으로 교정",
+        "운영 히스토리 종결어미 교정: '해결' → '해결됨'으로 명확화",
+        "의사결정 사항 구어체 제거: em dash(—) 활용한 단문 → '~로 추정되나 재현 불가로 확정 불가' 형식의 문어체로 교정",
+        "액션 아이템 담당자 명기 형식 적용",
+        "Confluence 퍼블리싱 완료 (v2)"
+      ],
+      "published_at": "2026-06-28T07:14:09+09:00"
+    },
+    {
+      "task_id": "T009",
+      "target_name": "PINCRUX",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "refined_points": ["문체 검수 완료 (별도 교정 불필요 수준) — Pinkey iOS country 코드 처리 개선 섹션이 이미 비즈니스 문어체로 작성됨. 의사결정·액션 아이템 구조 양호."],
+      "published_at": "2026-06-28T07:15:00+09:00"
+    },
+    {
+      "task_id": "T010",
+      "target_name": "컬쳐랜드",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192446484",
+      "confluence_page_id": "192446484",
+      "refined_points": [
+        "FAQ 섹션 구조 개선: 단순 나열형 텍스트 → 항목별 표(유형/인벤토리/현상/결과/후속조치) 형식으로 구조화",
+        "문체 교정: '금일' → '당일', '전날' → '전일'로 문어체 통일",
+        "수치 강조: 클릭 8건, 실적 1건에 볼드체 적용",
+        "페이지 복구: 초기 빈 body 업데이트 오류 즉시 복구 완료 (v3)",
+        "Confluence 퍼블리싱 완료 (v3)"
+      ],
+      "published_at": "2026-06-28T07:14:48+09:00"
+    },
+    {
+      "task_id": "T011",
+      "target_name": "DB금융투자",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151759",
+      "confluence_page_id": "192151759",
+      "refined_points": ["문체 검수 완료 (별도 교정 불필요 수준) — 기존 페이지로 이번 실행 추가 섹션이 이미 비즈니스 문어체로 작성됨"],
+      "published_at": "2026-06-28T07:15:00+09:00"
+    },
+    {
+      "task_id": "T012",
+      "target_name": "DB금융투자",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151759",
+      "confluence_page_id": "192151759",
+      "refined_points": ["문체 검수 완료 (별도 교정 불필요 수준) — 기존 페이지로 이번 실행 추가 섹션이 이미 비즈니스 문어체로 작성됨"],
+      "published_at": "2026-06-28T07:15:00+09:00"
+    },
+    {
+      "task_id": "T013",
+      "target_name": "미래에셋대우",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955009",
+      "confluence_page_id": "191955009",
+      "refined_points": ["문체 검수 완료 (별도 교정 불필요 수준) — 기존 페이지로 이번 실행 추가 섹션이 이미 비즈니스 문어체로 작성됨"],
+      "published_at": "2026-06-28T07:15:00+09:00"
+    },
+    {
+      "task_id": "T014",
+      "target_name": "DB손해보험",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955049",
+      "confluence_page_id": "191955049",
+      "refined_points": ["문체 검수 완료 (별도 교정 불필요 수준) — 기존 페이지로 이번 실행 추가 섹션이 이미 비즈니스 문어체로 작성됨"],
+      "published_at": "2026-06-28T07:15:00+09:00"
+    },
+    {
+      "task_id": "T015",
+      "target_name": "삼성증권",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192086150",
+      "confluence_page_id": "192086150",
+      "refined_points": ["문체 검수 완료 (별도 교정 불필요 수준) — 기존 페이지로 이번 실행 추가 섹션이 이미 비즈니스 문어체로 작성됨"],
+      "published_at": "2026-06-28T07:15:00+09:00"
+    },
+    {
+      "task_id": "T016",
+      "target_name": "삼성증권",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192086150",
+      "confluence_page_id": "192086150",
+      "refined_points": ["문체 검수 완료 (별도 교정 불필요 수준) — 기존 페이지로 이번 실행 추가 섹션이 이미 비즈니스 문어체로 작성됨"],
+      "published_at": "2026-06-28T07:15:00+09:00"
+    },
+    {
+      "task_id": "T017",
+      "target_name": "DB금융투자",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151759",
+      "confluence_page_id": "192151759",
+      "refined_points": ["문체 검수 완료 (별도 교정 불필요 수준) — 기존 페이지로 이번 실행 추가 섹션이 이미 비즈니스 문어체로 작성됨"],
+      "published_at": "2026-06-28T07:15:00+09:00"
+    },
+    {
+      "task_id": "T018",
+      "target_name": "PINCRUX",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "refined_points": ["문체 검수 완료 (별도 교정 불필요 수준) — 디자인 리소스 운영 정규화 섹션이 이미 비즈니스 문어체로 작성됨. 의사결정·액션 아이템 구조 양호."],
+      "published_at": "2026-06-28T07:15:00+09:00"
+    },
+    {
+      "task_id": "T019",
+      "target_name": "오퍼월",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151821",
+      "confluence_page_id": "192151821",
+      "refined_points": [
+        "의사결정 사항 종결어미 명확화: '2건 모두 제작 진행' → '~진행하기로 결정함'으로 교정",
+        "개요 종결어미 교정: '병행 진행' → '병행 진행함'으로 명확화",
+        "액션 아이템 담당자 명기 형식 적용 및 제목 소재명 명시(천령/엘롯데 괄호 표기)",
+        "Confluence 퍼블리싱 완료 (v2)"
+      ],
+      "published_at": "2026-06-28T07:14:59+09:00"
+    },
+    {
+      "task_id": "T020",
+      "target_name": "DB손해보험",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955049",
+      "confluence_page_id": "191955049",
+      "refined_points": ["문체 검수 완료 (별도 교정 불필요 수준) — 기존 페이지로 이번 실행 추가 섹션이 이미 비즈니스 문어체로 작성됨"],
+      "published_at": "2026-06-28T07:15:00+09:00"
+    },
+    {
+      "task_id": "T021",
+      "target_name": "PINCRUX",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "refined_points": ["문체 검수 완료 (별도 교정 불필요 수준) — 프로젝트 히스토리 항목으로 반영됨. 완료 처리 건으로 액션 아이템 없음. 문체 양호."],
+      "published_at": "2026-06-28T07:15:00+09:00"
+    },
+    {
+      "task_id": "T022",
+      "target_name": "카카오페이",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192446504",
+      "confluence_page_id": "192446504",
+      "refined_points": [
+        "운영 히스토리 종결어미 교정: '공유 예정' → '공유하기로 협의함'으로 확정형 교정",
+        "수치 강조: PSD 파일 2개에 볼드체 적용",
+        "의사결정 사항 종결어미 명확화: '회신 후 공유' → '~결정함' 형식으로 통일",
+        "액션 아이템 담당자 명기 형식 적용",
+        "Confluence 퍼블리싱 완료 (v2)"
+      ],
+      "published_at": "2026-06-28T07:15:07+09:00"
+    }
+  ]
+}

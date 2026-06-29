@@ -1,0 +1,36 @@
+{
+  "last_completed_period": "2019-04-01",
+  "next_period_start": "2019-04-02",
+  "completed_weeks": 13,
+  "last_run_date": "2026-06-28",
+  "pipeline_log": [
+    {
+      "week": "W1~W10",
+      "status": "completed"
+    },
+    {
+      "week": "W8-W9",
+      "period": "2019-02-19 to 2019-03-04",
+      "run_type": "re-run",
+      "run_date": "2026-06-28",
+      "status": "completed",
+      "note": "백필 보정 재실행. Confluence 페이지 2개 업데이트(페이앤드 v8, DB손해보험 v7). 모든 파이프라인 노드 success."
+    },
+    {
+      "week": "W11-W12",
+      "period": "2019-03-12 to 2019-03-25",
+      "run_type": "backfill",
+      "run_date": "2026-06-28",
+      "status": "completed",
+      "note": "11개 task 처리. 신규 페이지 3개 생성(한국투자증권, 웰컴저축은행, 샌드박스네트워크). 기존 페이지 5개 업데이트(미래에셋대우, 삼성증권, DB손해보험, 이노클릭, 핀크럭스 플랫폼 모니터링). 모든 파이프라인 노드 success."
+    },
+    {
+      "week": "W13",
+      "period": "2019-03-26 to 2019-04-01",
+      "run_type": "backfill",
+      "run_date": "2026-06-28",
+      "status": "completed",
+      "note": "22개 task 처리. 신규 페이지 5개 생성(KB손해보험, 오퍼월, 톡소다, 컬쳐랜드, 카카오페이). 기존 페이지 5개 업데이트(삼성증권, DB손해보험, DB금융투자, 미래에셋대우, PINCRUX). 모든 파이프라인 노드 success. 읽어봄이 22건 전부 PASSED."
+    }
+  ]
+}

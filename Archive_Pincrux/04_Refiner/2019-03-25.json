@@ -1,0 +1,123 @@
+{
+  "schema_version": "1.1",
+  "node": "refiner",
+  "run_date": "2019-03-25",
+  "source_file": "Archive_Pincrux/03_Validator/2019-03-25.json",
+  "node_status": "success",
+  "published_at": "2026-06-28T04:27:30Z",
+  "refinement_summary": {
+    "total_pages_reviewed": 8,
+    "pages_polished": 3,
+    "pages_no_change": 5,
+    "polish_actions": [
+      {
+        "confluence_page_id": "192151790",
+        "page_title": "웰컴저축은행",
+        "action": "문체 교정",
+        "detail": "운영 히스토리 2019-03-19: 영문 약어 'ASAP' → '가능한 빠른 시일 내에'로 비즈니스 문어체 교정"
+      },
+      {
+        "confluence_page_id": "192348202",
+        "page_title": "샌드박스네트워크",
+        "action": "맞춤법 교정 + 구어체 제거",
+        "detail": "'발급 싸이트' → '발급 사이트' 맞춤법 교정(개요 및 배경, 운영 히스토리 방향1). '간단한 제휴 내용 정리하여' → '제휴 내용 정리 후'로 구어체 잔재 제거"
+      },
+      {
+        "confluence_page_id": "192086040",
+        "page_title": "이노클릭",
+        "action": "의사결정 문체 교정 + FAQ 구어체 제거",
+        "detail": "IGAW 섹션 의사결정 '개인의견' 뉘앙스 → '내부 검토 의견으로 제기됨'으로 교정. FAQ '급할 때 전화 먼저' → '긴급 시 전화 선행'으로 문어체 전환"
+      }
+    ]
+  },
+  "published_tasks": [
+    {
+      "task_id": "T001",
+      "confluence_page_id": "191955009",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955009",
+      "page_title": "미래에셋대우",
+      "polished": false,
+      "polish_note": "이번 사이클 추가 섹션(이지원페어, 시리즈) 문체·마크다운 검수 통과. 추가 교정 불필요."
+    },
+    {
+      "task_id": "T002",
+      "confluence_page_id": "191955009",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955009",
+      "page_title": "미래에셋대우",
+      "polished": false,
+      "polish_note": "T001과 동일 페이지. 시리즈 캠페인 섹션 검수 통과."
+    },
+    {
+      "task_id": "T003",
+      "confluence_page_id": "192086150",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192086150",
+      "page_title": "삼성증권",
+      "polished": false,
+      "polish_note": "이번 사이클 추가 이력 전건 비즈니스 문어체 확인. 추가 교정 불필요."
+    },
+    {
+      "task_id": "T004",
+      "confluence_page_id": "191955049",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955049",
+      "page_title": "DB손해보험",
+      "polished": false,
+      "polish_note": "이번 사이클 추가 섹션(네이버웹툰 오기재 수정, 한솔오크밸리 반려사항) 검수 통과. 추가 교정 불필요."
+    },
+    {
+      "task_id": "T005",
+      "confluence_page_id": "192086176",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192086176",
+      "page_title": "한국투자증권",
+      "polished": false,
+      "polish_note": "신규 페이지 전체 검수 통과. 마크다운 구조 적절. 추가 교정 불필요."
+    },
+    {
+      "task_id": "T006",
+      "confluence_page_id": "192151790",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151790",
+      "page_title": "웰컴저축은행",
+      "polished": true,
+      "polish_note": "영문 약어 'ASAP' → 비즈니스 문어체 교정. v2 퍼블리싱 완료."
+    },
+    {
+      "task_id": "T007",
+      "confluence_page_id": "192086040",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192086040",
+      "page_title": "이노클릭",
+      "polished": true,
+      "polish_note": "IGAW 섹션 의사결정 문체 교정(개인의견→내부검토의견), FAQ 구어체 제거. v4 퍼블리싱 완료."
+    },
+    {
+      "task_id": "T008",
+      "confluence_page_id": "192348202",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192348202",
+      "page_title": "샌드박스네트워크",
+      "polished": true,
+      "polish_note": "'발급 싸이트' → '발급 사이트' 맞춤법 교정, 구어체 잔재 제거. v2 퍼블리싱 완료."
+    },
+    {
+      "task_id": "T009",
+      "confluence_page_id": "190218243",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/190218243",
+      "page_title": "핀크럭스 개발 인프라",
+      "polished": false,
+      "polish_note": "skipped 태스크. 폴리싱 대상 없음."
+    },
+    {
+      "task_id": "T010",
+      "confluence_page_id": "190513154",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/190513154",
+      "page_title": "핀크럭스 플랫폼 모니터링",
+      "polished": false,
+      "polish_note": "이번 사이클 추가 히스토리(excute.pin 트래픽 이상) 검수 통과. 기술적 수치·시각 정보 정확히 기재됨. 추가 교정 불필요."
+    },
+    {
+      "task_id": "T011",
+      "confluence_page_id": "191955009",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955009",
+      "page_title": "미래에셋대우",
+      "polished": false,
+      "polish_note": "T002와 동일 페이지(시리즈 섹션 병합). 검수 통과."
+    }
+  ]
+}

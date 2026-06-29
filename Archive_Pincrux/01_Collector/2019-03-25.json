@@ -1,0 +1,220 @@
+{
+  "schema_version": "1.1",
+  "node": "collector",
+  "run_date": "2019-03-25",
+  "run_mode": "backfill",
+  "period": "2019-03-12 to 2019-03-25",
+  "status": "success",
+  "data_summaries": [
+    {
+      "task_id": "T001",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "기존 미래에셋대우 페이지(191955009) 존재. 이지원페어 x 미래에셋대우 계좌개설+연금이전 소재 신규 2ver 제작 요청.",
+      "entity_name": "미래에셋대우",
+      "project_name": "미래에셋대우 이지원페어 캠페인 (2019)",
+      "page_scope": "child",
+      "target_name": "미래에셋대우 > 미래에셋대우 이지원페어 캠페인 (2019)",
+      "issue_title": "미래에셋대우 x 이지원페어 소재 제작 요청 (계좌개설+연금이전 2ver)",
+      "summary": "이지원페어 x 미래에셋대우 계좌개설·연금이전 캠페인 랜딩페이지 소재 신규 제작 요청",
+      "decision": "계좌개설(ver)과 연금이전(ver) 총 2종으로 제작. 광고주측 과금 관계로 현재 진행 중인 소재와 다른 톤&매너로 제작. 기존소재 활용 금지. PC: 1080×free, MO: 600×free.",
+      "action_items": [
+        "이지원페어-미래에셋대우 계좌개설 랜딩페이지 소재 제작 (PC/MO)",
+        "이지원페어-미래에셋대우 연금이전 랜딩페이지 소재 제작 (PC/MO)",
+        "소재 완성 후 수정사항 반영하여 매체 전달"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTJWKH0C/p1552975859091800"
+    },
+    {
+      "task_id": "T002",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "기존 미래에셋대우 페이지(191955009) 존재. 시리즈 캠페인 네이버웹툰/와디즈/엘포인트 소재 심의번호 삽입 및 문구 수정.",
+      "entity_name": "미래에셋대우",
+      "project_name": "미래에셋대우 시리즈 캠페인 (2019)",
+      "page_scope": "child",
+      "target_name": "미래에셋대우 > 미래에셋대우 시리즈 캠페인 (2019)",
+      "issue_title": "미래에셋대우 시리즈 소재 수정 및 심의번호 삽입",
+      "summary": "시리즈 캠페인 소재 심의번호 삽입 및 네이버시리즈 문구 수정 요청",
+      "decision": "한국금융투자협회 심사필 제19-01040호(2019-03-15~2020-03-14) 심의번호 카카오페이지·OK캐시백·네이버웹툰 랜딩페이지에 공통 삽입. 네이버시리즈→'네이버시리즈'로 표기 통일. 페이코는 현재 심의 진행 중(미확정).",
+      "action_items": [
+        "카카오페이지·OK캐시백·네이버웹툰 랜딩페이지 심의번호 삽입 후 전달",
+        "페이코 랜딩 심의번호 확보 후 추가 삽입",
+        "이벤트 랜딩페이지 안내사항 최하단 기대조건 충족고객 제외→기 조건 충족고객 제외로 수정"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTJWKH0C/p1552975907093100"
+    },
+    {
+      "task_id": "T003",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "기존 삼성증권 페이지(192086150) 존재. 3/12~3/25 기간 중 카카오페이지 CPM, OCB, 페이코, 11번가, 한솔오크밸리 등 대규모 소재 작업 집중 진행.",
+      "entity_name": "삼성증권",
+      "project_name": "삼성증권 소재 작업 (2019)",
+      "page_scope": "child",
+      "target_name": "삼성증권 > 삼성증권 소재 작업 (2019)",
+      "issue_title": "삼성증권 소재 대규모 작업 — 카카오페이지 CPM, OCB, 페이코, 11번가, 한솔오크밸리 등",
+      "summary": "삼성증권 3월 다수 매체 소재 수정·신규 제작 집중 진행",
+      "decision": "카카오페이지 CPM 지면: 광고주측 확인 후 문구 가이드 준수 조건으로 팝업지면부터 우선 제작. 삼성증권 CI 파일(국문형) 전달 완료. 심의번호 한국금융투자협회 심사필 제19-01147호(2019.03.21~2020.03.19) 삽입. OCB 배너: 삼중사 문구 크기·위치 수정. 한솔오크밸리 서울대우: 연금이전 캠페인 ver.로 배너 모두 동일 디자인 수정 요청(문구 변동 없음).",
+      "action_items": [
+        "삼성증권 x 카카오페이지 CPM 팝업지면 소재 제작 후 전달",
+        "삼성증권 OCB 배너 삼중사 문구 수정 반영",
+        "미래에셋 시리즈 심의번호(제19-01147호) 삼성증권 소재 3개 매체 공통 삽입",
+        "한솔오크밸리 서울대우 연금이전 배너 소재 수정 전달",
+        "페이코 x 삼성증권 소재 수정본 전달"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTJWKH0C/p1553054049101000"
+    },
+    {
+      "task_id": "T004",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "기존 DB손해보험 페이지(191955049) 존재. 시리즈, 네이버웹툰 심의번호 오기재 수정, 한솔오크밸리 X배너 요청.",
+      "entity_name": "DB손해보험",
+      "project_name": "DB손해보험 자동차동호회 가입 이벤트 캠페인 (2019)",
+      "page_scope": "child",
+      "target_name": "DB손해보험 > DB손해보험 자동차동호회 가입 이벤트 캠페인 (2019)",
+      "issue_title": "DB손해보험 소재 수정 — 시리즈 심의번호 오기재 수정, 한솔오크밸리 X배너",
+      "summary": "DB손해보험 네이버웹툰 심의번호 오기재 수정 및 한솔오크밸리 X배너 소재 요청",
+      "decision": "네이버웹툰 리스트 배너 DB손해보험 심의번호 오기재로 수정. 한솔오크밸리 서울대우(박군영 과장) X배너 소재 제작 요청 접수.",
+      "action_items": [
+        "DB손해보험 네이버웹툰 심의번호 오기재 수정 후 즉시 적용 부탁",
+        "한솔오크밸리 박군영 요청 X배너 소재 제작 전달"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTJWKH0C/p1553161044124600"
+    },
+    {
+      "task_id": "T005",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "new",
+      "context_reference": "한국투자증권 페이지 없음(검색 결과 0). OCB 배너 및 시럽피드 심의번호 삽입 요청 확인. 신규 엔티티 페이지 생성 필요.",
+      "entity_name": "한국투자증권",
+      "project_name": "한국투자증권 OCB·시럽피드 캠페인 (2019)",
+      "page_scope": "child",
+      "target_name": "한국투자증권 > 한국투자증권 OCB·시럽피드 캠페인 (2019)",
+      "issue_title": "한국투자증권 OCB 배너 소재 수정 및 시럽피드 심의번호 삽입",
+      "summary": "한국투자증권 OCB 배너 1종 수정 및 시럽피드 심의번호 삽입 요청",
+      "decision": "한국투자증권 OCB 배너 수정 요청 및 시럽피드 심의번호 삽입 진행. 시럽피드(한국투자증권) 페이지 확인 후 전달.",
+      "action_items": [
+        "한국투자증권 OCB 배너 수정 반영 후 전달",
+        "한국투자증권 시럽피드 심의번호 삽입 후 전달"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTJWKH0C/p1552974133090000"
+    },
+    {
+      "task_id": "T006",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "new",
+      "context_reference": "웰컴저축은행 페이지 없음. 비대면 계좌개설 캠페인 진행을 위한 Branch 3rd 파티 트래커 연동 신규 요청 확인.",
+      "entity_name": "웰컴저축은행",
+      "project_name": "웰컴저축은행 비대면 계좌개설 캠페인 (2019)",
+      "page_scope": "child",
+      "target_name": "웰컴저축은행 > 웰컴저축은행 비대면 계좌개설 캠페인 (2019)",
+      "issue_title": "웰컴저축은행 비대면 계좌개설 캠페인 — Branch 3rd 파티 트래커 신규 연동",
+      "summary": "웰컴저축은행 비대면 계좌개설 캠페인용 Branch 트래커 신규 연동 요청",
+      "decision": "트래커는 Branch이며, 현재 해당 플랫폼 내 분석 파트너로 신청 완료. 연동 관련 안내 가이드 확인되면 공유 예정. ASAP으로 연동 진행 요청. 오퍼월 기준 안드로이드: KR, iOS: en_KR로 설정 완료.",
+      "action_items": [
+        "Branch 트래커 연동 안내 가이드 확인 후 공유",
+        "웰컴저축은행 Branch 연동 ASAP 진행",
+        "오퍼월 미정산건 엑셀 기준 country 필드 확인 (안드로이드: KR, iOS: en_KR)"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBU0PHP3P/p1552961280045000"
+    },
+    {
+      "task_id": "T007",
+      "major_category": "Media_Partner",
+      "minor_category": "Product",
+      "context_status": "matched",
+      "context_reference": "이노클릭(IGAW) 기존 페이지(192086040) 존재. 애드팝콘 리뉴얼 충전소와 핀크럭스 프리미엄 충전소 A타입 비교 분석 공유.",
+      "entity_name": "이노클릭",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "이노클릭",
+      "issue_title": "IGAW(애드팝콘) 리뉴얼 충전소 vs 핀크럭스 프리미엄 충전소 비교 분석 공유",
+      "summary": "애드팝콘 리뉴얼 충전소와 핀크럭스 충전소 UI/구성 비교 인사이트 공유",
+      "decision": "애드팝콘 리뉴얼 충전소가 핀크럭스 충전소보다 깔끔한 UI로 평가됨. 핀크럭스 충전소도 리뉴얼 필요성 제기. 참고 목적으로 공유.",
+      "action_items": [
+        "핀크럭스 프리미엄 충전소 리뉴얼 검토 (애드팝콘 리뉴얼 충전소 벤치마킹)"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBT7G5RUN/p1552478334003900"
+    },
+    {
+      "task_id": "T008",
+      "major_category": "Media_Partner",
+      "minor_category": "Project",
+      "context_status": "new",
+      "context_reference": "샌드박스네트워크 페이지 없음. MCN 기반 카포인트 제휴 제안 미팅 내용 최초 기록.",
+      "entity_name": "샌드박스네트워크",
+      "project_name": "샌드박스네트워크 MCN 제휴 논의 (2019)",
+      "page_scope": "child",
+      "target_name": "샌드박스네트워크 > 샌드박스네트워크 MCN 제휴 논의 (2019)",
+      "issue_title": "샌드박스네트워크 CPO 미팅 — MCN 기반 카포인트 제휴 및 샌드박스 앱 활용 제안",
+      "summary": "샌드박스네트워크 김범휴 CPO와 MCN 기반 카포인트 제휴 가능성 논의",
+      "decision": "1) 자동차 또는 성인 전문 크리에이터 통한 카포인트 사용방법 및 카포인트 발급 싸이트 안내 — 광고 형태: RS/고정광고비 지급/쿠폰발급형 중 추가 협의하기로 함. 간단한 제휴 내용 정리하여 메일 전송 필요. 2) 만보기 기능과 무료충전소 기능을 이용한 앱 만든 후 샌드박스 크리에이터 IP 활용 앱 제안 — 제휴 내용 정리하여 메일 보내야 함. 담당자: 김범휴 이사 010-4521-8194, bumhugh@sandboxnetwork.net",
+      "action_items": [
+        "카포인트 MCN 크리에이터 제휴 내용 정리하여 샌드박스 측 메일 전송",
+        "무료충전소+만보기 앱 제안서 작성 후 샌드박스 측 메일 전송",
+        "샌드박스 담당자: 김범휴 이사 (010-[PII_REDACTED], bumhugh@sandboxnetwork.net)"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBWTXH42G/p1553068073007200"
+    },
+    {
+      "task_id": "T009",
+      "major_category": "In-house",
+      "minor_category": "Product",
+      "context_status": "matched",
+      "context_reference": "핀크럭스 플랫폼 관련 페이지 다수 존재. developer.pincrux.com 어드민 센터 계정 탈퇴 기능 신규 생성.",
+      "entity_name": "핀크럭스 개발 인프라",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "핀크럭스 개발 인프라",
+      "issue_title": "developer.pincrux.com 어드민 센터 계정 탈퇴 기능 신규 생성",
+      "summary": "개발자 어드민 센터에 계정 탈퇴 기능 신규 생성 완료",
+      "decision": "developer.pincrux.com 어드민 센터에 계정 탈퇴 기능 생성 완료. 프로필 사진 아래 버튼 클릭 → Close Account → 계정삭제 버튼 → 계정 아이디 입력 시 삭제 가능.",
+      "action_items": [],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBU0PHP3P/p1552894438041800"
+    },
+    {
+      "task_id": "T010",
+      "major_category": "In-house",
+      "minor_category": "Product",
+      "context_status": "matched",
+      "context_reference": "핀크럭스 플랫폼 모니터링 페이지(190513154) 존재. excute.pin 자체 트래킹 트래픽 이상 — 평상시 대비 5분당 4천건 이상 유입.",
+      "entity_name": "핀크럭스 플랫폼 모니터링",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "핀크럭스 플랫폼 모니터링",
+      "issue_title": "excute.pin 자체 트래킹 비정상 트래픽 이상 감지 (2019-03-12)",
+      "summary": "excute.pin 자체트래킹에서 평상시 100건 이하 대비 5분당 4천건 이상 트래픽 유입 감지",
+      "decision": "트래킹은 앱 구동 후 들어오는 것이 아닌지, 특정 앱에서 멀한 건지, 다른 이유가 있는지 조사 필요. pubkey: 910304 투믹스 앱과 연관 가능성 있음. 평상시 100건 이하에서 5분당 4천건으로 급증한 패턴 확인.",
+      "action_items": [
+        "excute.pin 트래픽 이상 원인 조사 — 투믹스(910304) 앱 연관성 확인",
+        "특정 앱 트래킹 연동 이슈 여부 점검"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBU0PHP3P/p1552351734022500"
+    },
+    {
+      "task_id": "T011",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "기존 미래에셋대우 페이지(191955009) 존재. 미래에셋대우 x 시리즈 와디즈/엘포인트 소재에서 피망 에디스쿦 지면 배너 소재 별도 요청 확인.",
+      "entity_name": "미래에셋대우",
+      "project_name": "미래에셋대우 시리즈 캠페인 (2019)",
+      "page_scope": "child",
+      "target_name": "미래에셋대우 > 미래에셋대우 시리즈 캠페인 (2019)",
+      "issue_title": "미래에셋대우 피망 에디스쿦 지면 배너 소재",
+      "summary": "피망 에디스쿦 지면 미래에셋대우 배너 소재 전달",
+      "decision": "피망 에디스쿦 지면 배너 소재 전달 완료.",
+      "action_items": [],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTJWKH0C/p1553163717126800"
+    }
+  ],
+  "uncategorized": []
+}

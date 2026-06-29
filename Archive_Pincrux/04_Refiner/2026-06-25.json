@@ -1,0 +1,135 @@
+{
+  "schema_version": "1.0",
+  "node": "refiner",
+  "run_date": "2026-06-25",
+  "source_file": "Archive_Pincrux/03_Validator/2026-06-25.json",
+  "node_status": "success",
+  "published_tasks": [
+    {
+      "task_id": "T001",
+      "target_name": "핀크럭스 플랫폼 2.0",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/190480385",
+      "confluence_page_id": "190480385",
+      "refined_points": [
+        "페이지 제목 교정: 핑크럭스 → 핀크럭스",
+        "배경 및 목적 섹션 본문 교정: 핑크럭스 → 핀크럭스",
+        "주요 의사결정 섹션 문장 간격 수정: 마침표 후 공백 누락 교정"
+      ],
+      "published_at": "2026-06-26T00:30:22+09:00"
+    },
+    {
+      "task_id": "T002",
+      "target_name": "핀크럭스 플랫폼 모니터링",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/190513154",
+      "confluence_page_id": "190513154",
+      "refined_points": [
+        "페이지 제목 교정: 핑크럭스 → 핀크럭스",
+        "배경 및 목적 섹션 본문 교정: 핑크럭스 → 핀크럭스"
+      ],
+      "published_at": "2026-06-26T00:30:34+09:00"
+    },
+    {
+      "task_id": "T003",
+      "target_name": "핀크럭스 개발 인프라",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/190218243",
+      "confluence_page_id": "190218243",
+      "refined_points": [
+        "페이지 제목 교정: 핑크럭스 → 핀크럭스",
+        "주요 의사결정 섹션 문장 간격 수정: 마침표 후 공백 누락 교정"
+      ],
+      "published_at": "2026-06-26T00:30:47+09:00"
+    },
+    {
+      "task_id": "T004",
+      "target_name": "코인제스트",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/190185474",
+      "confluence_page_id": "190185474",
+      "refined_points": [
+        "배경 및 목적 섹션 본문 교정: 핑크럭스 → 핀크럭스 (2건)",
+        "주요 의사결정 섹션 문장 간격 수정: 마침표 후 공백 누락 교정"
+      ],
+      "published_at": "2026-06-26T00:30:59+09:00"
+    },
+    {
+      "task_id": "T005",
+      "target_name": "저스트엔",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/189300746",
+      "confluence_page_id": "189300746",
+      "refined_points": [
+        "정제 불필요: 문체 및 포맷 기준 이상 없음"
+      ],
+      "published_at": null
+    },
+    {
+      "task_id": "T006",
+      "target_name": "인터파트 투어 (웹충전소)",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/190545921",
+      "confluence_page_id": "190545921",
+      "refined_points": [
+        "정제 불필요: 문체 및 포맷 기준 이상 없음"
+      ],
+      "published_at": null
+    },
+    {
+      "task_id": "T007",
+      "target_name": "페이앤드",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/189300769",
+      "confluence_page_id": "189300769",
+      "refined_points": [
+        "주요 의사결정 섹션 문장 간격 수정: 마침표 후 공백 누락 교정 (2건)"
+      ],
+      "published_at": "2026-06-26T00:31:13+09:00"
+    },
+    {
+      "task_id": "T008",
+      "target_name": "미래에셋대우",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/190382101",
+      "confluence_page_id": "190382101",
+      "refined_points": [
+        "주요 의사결정 섹션 문장 간격 수정: 마침표 후 공백 누락 교정 (2건)"
+      ],
+      "published_at": "2026-06-26T00:31:27+09:00"
+    },
+    {
+      "task_id": "T009",
+      "target_name": "KT M모바일",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/190578689",
+      "confluence_page_id": "190578689",
+      "refined_points": [
+        "주요 의사결정 섹션 문장 간격 수정: 마침표 후 공백 누락 교정"
+      ],
+      "published_at": "2026-06-26T00:31:37+09:00"
+    },
+    {
+      "task_id": "T010",
+      "target_name": "교보 라이프플래닛",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/189792270",
+      "confluence_page_id": "189792270",
+      "refined_points": [
+        "정제 불필요: 문체 및 포맷 기준 이상 없음"
+      ],
+      "published_at": null
+    },
+    {
+      "task_id": "T011",
+      "target_name": "DB손해보험",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/190382124",
+      "confluence_page_id": "190382124",
+      "refined_points": [
+        "정제 불필요: 문체 및 포맷 기준 이상 없음"
+      ],
+      "published_at": null
+    }
+  ]
+}

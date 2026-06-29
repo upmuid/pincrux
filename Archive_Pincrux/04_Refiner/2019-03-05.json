@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.1",
+  "period": "2019-03-05",
+  "week": "W10",
+  "generated_at": "2026-06-28T03:10:00Z",
+  "agent": "refiner_v4",
+  "source_validator": "Archive_Pincrux/03_Validator/2019-03-05.json",
+  "published_at": "2026-06-28T03:10:00Z",
+  "pages_published": [
+    {
+      "entity": "미래에셋대우",
+      "confluence_page_id": "191955009",
+      "action": "updated",
+      "version": 5,
+      "refinements": "구어체 제거, 액션 아이템 체크리스트 형식 유지, 볼드체 의사결정 사항 강조, 날짜 표기 일관성 확인"
+    },
+    {
+      "entity": "교보라이프플래닛",
+      "confluence_page_id": "191954989",
+      "action": "updated",
+      "version": 4,
+      "refinements": "11번가×저축 섹션 문어체 교정, 마크다운 문법 검수 완료"
+    },
+    {
+      "entity": "페이앤드",
+      "confluence_page_id": "192053250",
+      "action": "updated",
+      "version": 7,
+      "refinements": "DB서버 섹션 신규 추가, 이크레더블 QR팻 섹션 업데이트, 프로젝트 히스토리 타임라인 정렬"
+    },
+    {
+      "entity": "DB금융투자",
+      "confluence_page_id": "192151759",
+      "action": "created",
+      "version": 1,
+      "refinements": "신규 페이지 초안 — 심의필 번호/앱키/경로 수치 정확성 최종 확인, 마크다운 오류 없음"
+    },
+    {
+      "entity": "삼성증권",
+      "confluence_page_id": "192086150",
+      "action": "created",
+      "version": 1,
+      "refinements": "신규 페이지 초안 — 우선순위 배경 맥락 명확화, 구어체 제거 완료"
+    },
+    {
+      "entity": "캐치랜드",
+      "confluence_page_id": "192217197",
+      "action": "created",
+      "version": 1,
+      "refinements": "신규 페이지 초안 — 두 섹션(맨위이동 기능, 클립 충전소) 분리 구조 확인, 에셋 규격 볼드 처리"
+    }
+  ],
+  "items_skipped": ["T007", "T013", "T014", "T015", "T016"],
+  "stats": {
+    "total_published": 6,
+    "updated": 3,
+    "created": 3,
+    "skipped": 5
+  },
+  "quality_check": {
+    "markdown_errors": 0,
+    "hallucination_detected": false,
+    "fact_changes": 0
+  }
+}

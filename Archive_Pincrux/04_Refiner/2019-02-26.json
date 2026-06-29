@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.1",
+  "node": "refiner",
+  "run_date": "2019-02-26",
+  "run_mode": "backfill",
+  "period": "2019-02-26 to 2019-03-04",
+  "node_status": "success",
+  "source_validator_file": "Archive_Pincrux/03_Validator/2019-02-26.json",
+  "published_at": "2026-06-28T01:58:00Z",
+  "refinement_log": [
+    {"page_id": "191955009", "entity": "미래에셋대우", "action": "updated", "style_corrections": "심의번호 포맷 통일(제XX-XXXXX호). 비즈니스 문어체 유지.", "markdown_check": "PASS", "published": true},
+    {"page_id": "191955049", "entity": "DB손해보험", "action": "updated", "style_corrections": "월별 이벤트 섹션 분리. 날짜 형식 통일.", "markdown_check": "PASS", "published": true},
+    {"page_id": "191954989", "entity": "교보라이프플래닛", "action": "updated", "style_corrections": "신규 섹션 추가. 기존 M저축 섹션 보존.", "markdown_check": "PASS", "published": true},
+    {"page_id": "192151734", "entity": "아이테마니아", "action": "created", "style_corrections": "표준 템플릿 준수. 배너 규격 수치 명시.", "markdown_check": "PASS", "published": true},
+    {"page_id": "192217173", "entity": "에몬스", "action": "created", "style_corrections": "표준 템플릿 준수.", "markdown_check": "PASS", "published": true},
+    {"page_id": "192315400", "entity": "DOMA", "action": "created", "style_corrections": "FAQ 섹션에 기술적 오류 내용 분리 기재. CDN 구조 설명 명확화.", "markdown_check": "PASS", "published": true}
+  ],
+  "summary": {
+    "total_pages": 6,
+    "pages_updated": 3,
+    "pages_created": 3,
+    "style_issues_found": 0,
+    "markdown_errors_found": 0
+  }
+}

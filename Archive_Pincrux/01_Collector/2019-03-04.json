@@ -1,0 +1,130 @@
+{
+  "schema_version": "1.1",
+  "node": "collector",
+  "run_date": "2019-03-04",
+  "run_mode": "backfill",
+  "period": "2019-02-19 to 2019-03-04",
+  "status": "success",
+  "data_summaries": [
+    {
+      "task_id": "T001",
+      "major_category": "In-house",
+      "minor_category": "Product",
+      "context_status": "matched",
+      "context_reference": "슬랙 채널 #09_project_페이앤드 — 기존 페이앤드 프로젝트 운영 중 신규 기능 개선안 논의",
+      "entity_name": "페이앤드",
+      "project_name": "페이앤드 앱 v2 개선",
+      "page_scope": "child",
+      "target_name": "페이앤드 > 페이앤드 앱 v2 개선",
+      "issue_title": "페이앤드 앱 UX/기능 개선안 확정 — 함께쓰기·일괄적용·거래관리 검색·취소사유 입력",
+      "summary": "4가지 기능 개선안(함께쓰기·일괄적용·거래관리검색·취소사유) 우선순위 및 방향 확정",
+      "decision": "1) 함께쓰기 기능: 즐겨찾기 인원 호출 버튼 삽입(2안) 채택. 2) 일괄적용 기능: N분의1 구현 가능 시 카카오페이·토스 벤치마크 UI 도입 방향으로 검토. 3) 거래관리 검색: 단순 이름 검색만 지원, 1Day 거래내역 내 성명으로 검색 결과 출력. 4) 거래취소 시 기타 항목 선택 시 취소사유 텍스트 입력창 추가(기타 선택 시만 노출). 개선안 우선순위: 일괄적용(2번) → 함께쓰기(1번) → 취소사유 입력(3번) → 거래관리 검색(4번) 순.",
+      "action_items": [
+        "함께쓰기 기능: 즐겨찾기 인원 호출 버튼 삽입(2안) 디자인 수정 및 제플린 업로드 (담당: 김민희)",
+        "일괄적용 기능: N분의1 구현 방향 개발 검토 (담당: 김지훈)",
+        "거래관리 검색: 단순 이름 검색 기능 구현 (담당: 개발팀)",
+        "거래취소 사유 텍스트 입력창 추가 구현 (담당: 개발팀)",
+        "페이앤드 API 수정 요청 — 18번 API favorite_flag 파라미터 추가, 20번 API cancel_text 파라미터 추가 (담당: 김판근)"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTGBP78F/p1550678433007800"
+    },
+    {
+      "task_id": "T002",
+      "major_category": "In-house",
+      "minor_category": "Product",
+      "context_status": "matched",
+      "context_reference": "슬랙 채널 #09_project_페이앤드 — iOS/Android 앱 심사 및 릴리즈 진행 현황",
+      "entity_name": "페이앤드",
+      "project_name": "페이앤드 앱 v2 개선",
+      "page_scope": "child",
+      "target_name": "페이앤드 > 페이앤드 앱 v2 개선",
+      "issue_title": "페이앤드 iOS·Android 신규 버전 심사 및 릴리즈 완료",
+      "summary": "iOS 사용자용·사용점용 추가기능 적용 심사 제출, Android 사용자용 릴리즈 및 QR 버그 발견",
+      "decision": "iOS 사용점용: 추가기능(거래내역 검색, 거래취소 사유 입력) 오늘 마무리 후 심사 제출. iOS 사용자용: 어제 저녁 심사 올림. Android 사용자용: 3/2(토) 마켓 노출 릴리즈 완료. Android 사용점용: 차주 초 릴리즈 예정. iOS QR코드 결제 진행 후 사용인원 추가 페이지 재진입 시 방금 추가한 사용자를 찾을 수 없는 버그 발견 → 원인 파악 중, 수정 버전 TestFlight 심사 등록 완료.",
+      "action_items": [
+        "iOS QR 버그 수정 버전 AppStore 업데이트 심사 제출 (담당: 김현우)",
+        "Android 사용점용 차주 초 릴리즈 진행 (담당: 김상원)"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTGBP78F/p1550732065022800"
+    },
+    {
+      "task_id": "T003",
+      "major_category": "In-house",
+      "minor_category": "Product",
+      "context_status": "matched",
+      "context_reference": "슬랙 채널 #09_project_페이앤드 — 페이앤드 2호 회원사 이크레더블 오픈 공지",
+      "entity_name": "페이앤드",
+      "project_name": "페이앤드 앱 v2 개선",
+      "page_scope": "child",
+      "target_name": "페이앤드 > 페이앤드 앱 v2 개선",
+      "issue_title": "페이앤드 2호 회원사 이크레더블 오픈 예정 및 QR코드 인쇄 이슈",
+      "summary": "이크레더블 3/1 오픈 예정, 대형 QR 이미지 작업 요청 및 웹 QR 구현 불가 기술적 제약 확인",
+      "decision": "이크레더블 사용점 차주 월요일부터 사용, 1개 사용점 일부 부서 사용 후 3월부터 전사 확대. 2월 정산은 3월 정산 시 반영 처리 예정. QR코드 인쇄 시 업체별 디자인 작업 필요(웹은 RGB 컬러, 인쇄는 CMYK → 업체에 ai 파일로 전달 필요). 어드민에 거치대형 스티커형 인쇄 가능 기능 구현 요청.",
+      "action_items": [
+        "거치대형 대형 QR 이미지 오전 내 작업 요청 (담당: 김민희)",
+        "어드민 거치대형 스티커형 인쇄 기능 구현 (담당: 개발팀)",
+        "QR코드 인쇄용 ai 파일 업체 전달 프로세스 정립 (담당: 원성진)"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTGBP78F/p1550721614000000"
+    },
+    {
+      "task_id": "T004",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "슬랙 채널 #99_db손해보험업무 — DB손해보험 이벤트 페이지 제작 및 쿠폰 발행 요청 지속 운영",
+      "entity_name": "DB손해보험",
+      "project_name": "DB손해보험 이벤트 페이지 운영",
+      "page_scope": "child",
+      "target_name": "DB손해보험 > DB손해보험 이벤트 페이지 운영",
+      "issue_title": "DB손해보험 2월~3월 이벤트 페이지 수정 및 쿠폰 발행 요청",
+      "summary": "3월 가입 이벤트 수정, 레진코믹스 제휴 쿠폰 유효기간 만료 임박 신규 발행 요청, GS주유권 발송 완료",
+      "decision": "3월 이벤트(3/4~3/10): 신규 상품권 3만원, 갱신 상품권 2만원으로 진행. 심의필 번호 각각 명시. 2월 25일자 DB손해보험 갱신 리스트 집행 중지(효율 저하로 일시 중단 후 재개 예정). 레진코믹스 제휴 쿠폰(75번, 유효기간 2019.03.14 만료 임박) 200매 신규 발행 요청. GS주유권 친구소개 이벤트 발송 완료. 페이코 수정 요청: 상단 배너 원→P, 하단 배너 3만원 할인혜택→페이코 3만 포인트로 변경.",
+      "action_items": [
+        "3월 이벤트 이미지 수정(기간·상품권금액·심의필번호) 제작 요청 (담당: 조혁)",
+        "레진코믹스 쿠폰 200매 신규 발행 심의 진행 (담당: 채수범)",
+        "페이코 랜딩페이지 배너 수정 (담당: 조혁)",
+        "코나 소재등록 후 고현복 승인 메일 전달 (담당: 조혁)",
+        "몬테일 홀딩 현황 확인 및 소재 교체 재요청 (담당: 고현복)"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CFCGF3CNQ/p1550542527008400"
+    },
+    {
+      "task_id": "T005",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "슬랙 채널 #99_db손해보험업무 — DB손해보험 마이나우코믹스 신규 배너 심의 진행",
+      "entity_name": "DB손해보험",
+      "project_name": "DB손해보험 이벤트 페이지 운영",
+      "page_scope": "child",
+      "target_name": "DB손해보험 > DB손해보험 이벤트 페이지 운영",
+      "issue_title": "DB손해보험 마이나우코믹스 신규 이미지배너 소재 심의 요청",
+      "summary": "기존 텍스트 배너에서 이미지 배너로 전환, 신규 소재 심의 요청",
+      "decision": "마이나우코믹스 매체 개편으로 이미지 배너 소재 제작 요청 접수. 기존 텍스트 배너 캠페인에서 이미지 배너로 전환. 랜딩페이지는 기존과 동일. 전달된 소재로 심의 진행 요청.",
+      "action_items": [
+        "마이나우코믹스 이미지 배너 소재 심의 진행 (담당: 채수범)"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CFCGF3CNQ/p1550627380011800"
+    },
+    {
+      "task_id": "T006",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "슬랙 채널 #99_db손해보험업무 — DB손해보험 자동차동호회 계약 종료 처리",
+      "entity_name": "DB손해보험",
+      "project_name": "DB손해보험 이벤트 페이지 운영",
+      "page_scope": "child",
+      "target_name": "DB손해보험 > DB손해보험 이벤트 페이지 운영",
+      "issue_title": "DB손해보험 자동차동호회 계약 종료 안내 및 노티투미·몬테일 현황 보고",
+      "summary": "2/25 자동차동호회 계약 종료 안내, 노티투미 홀딩 완료·몬테일 소재 교체 미완료",
+      "decision": "카포인트 동호회 및 자동차동호회 모두 계약 종료 안내 완료(카포인트는 연장 안내). 노티투미 홀딩 처리 완료. 몬테일 현황 소재 교체 미완료 — 강형구 파트장 연락 안 되어 명일 중 재연락 후 소재 교체 재요청 예정.",
+      "action_items": [
+        "몬테일 강형구 파트장 재연락 및 소재 교체 요청 (담당: 고현복)"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CFCGF3CNQ/p1550627380011800"
+    }
+  ],
+  "uncategorized": []
+}
