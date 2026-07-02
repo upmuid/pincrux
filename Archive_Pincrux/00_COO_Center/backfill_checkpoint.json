@@ -1,8 +1,8 @@
 {
-  "last_completed_period": "2019-04-01",
-  "next_period_start": "2019-04-02",
-  "completed_weeks": 13,
-  "last_run_date": "2026-06-28",
+  "last_completed_period": "2019-04-30",
+  "next_period_start": "2019-05-01",
+  "completed_weeks": 17,
+  "last_run_date": "2026-07-02",
   "pipeline_log": [
     {
       "week": "W1~W10",
@@ -31,6 +31,22 @@
       "run_date": "2026-06-28",
       "status": "completed",
       "note": "22개 task 처리. 신규 페이지 5개 생성(KB손해보험, 오퍼월, 톡소다, 컬쳐랜드, 카카오페이). 기존 페이지 5개 업데이트(삼성증권, DB손해보험, DB금융투자, 미래에셋대우, PINCRUX). 모든 파이프라인 노드 success. 읽어봄이 22건 전부 PASSED."
+    },
+    {
+      "week": "W14-W15",
+      "period": "2019-04-02 to 2019-04-15",
+      "run_type": "backfill",
+      "run_date": "2026-07-02",
+      "status": "completed",
+      "note": "9개 task 처리. 신규 페이지 5개 생성(브이피, OCB, 캐시비, KT, 모바일팝). 기존 페이지 4개 업데이트(KB손해보험 v3, 페이앤드 v9, 미래에셋대우 v8, 하나멤버스 v3). 모든 파이프라인 노드 success. 읽어봄이 9건 전부 PASSED."
+    },
+    {
+      "week": "W16-W17",
+      "period": "2019-04-16 to 2019-04-30",
+      "run_type": "backfill",
+      "run_date": "2026-07-02",
+      "status": "completed",
+      "note": "8개 task 처리. 신규 페이지 3개 생성(해피머니, 미스터블루, 메리츠화재). 기존 페이지 3개 업데이트(오퍼월 v4, KT v4, 캐시비 v4). 스킵 1건(T008: 코나아이x미래에셋 inquiry, 엔티티 페이지 미존재). 모든 파이프라인 노드 success. 읽어봄이 7건 전부 PASSED."
     }
   ]
 }

@@ -1,0 +1,173 @@
+{
+  "schema_version": "1.1",
+  "node": "collector",
+  "run_date": "2019-04-15",
+  "run_mode": "backfill",
+  "period": "2019-04-02 to 2019-04-15",
+  "status": "success",
+  "data_summaries": [
+    {
+      "task_id": "T001",
+      "major_category": "Client",
+      "minor_category": "Product",
+      "context_status": "matched",
+      "context_reference": "KB손해보험 IT부서 담당자 연락처 신규 공유(박찬우 과장 02-6206-8249) 및 4/15 realpincrux 시스템 반영 완료 확인. 기존 KB손해보험 운영 페이지 업데이트 대상.",
+      "entity_name": "KB손해보험",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "KB손해보험",
+      "issue_title": "KB손해보험 IT부서 담당자 연락처 공유 및 realpincrux 반영 완료",
+      "summary": "IT부서 담당자(박찬우 과장) 연락처 공유, 4/15 realpincrux 반영 완료 확인",
+      "decision": "KB손해보험 IT부서 담당자 박찬우 과장(02-6206-8249) 연락처를 내부 공유하기로 결정. 4/15 KB손해보험 측으로부터 realpincrux 시스템 반영 완료 통보 접수 및 확인.",
+      "action_items": [
+        "KB손해보험 IT담당자 회신 수신 시 내부 공유"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBU0PHP3P/p1554167491000700"
+    },
+    {
+      "task_id": "T002",
+      "major_category": "Media_Partner",
+      "minor_category": "Product",
+      "context_status": "matched",
+      "context_reference": "브이피(Vibe) 안전결제 CPA 캠페인에서 동일 IP·동일 매체·동일날짜 중복 참여를 통한 포인트 부정 수취 이슈 발생. 마로인(goodcoin, 매체키 910014) 매체에서 확인. IP 기반 제한 정책 협의 및 결정.",
+      "entity_name": "브이피",
+      "project_name": "안전결제 CPA 캠페인",
+      "page_scope": "child",
+      "target_name": "브이피 > 안전결제 CPA 캠페인",
+      "issue_title": "CPA 캠페인 동일 IP 중복 참여 부정 수취 이슈 및 IP 정책 결정",
+      "summary": "마로인 매체에서 동일 IP 중복 참여로 포인트 부정 수취 확인, IP 예외 처리 정책 적용",
+      "decision": "광고주 측에서 탈퇴 재가입 방지 처리 완료. 해당 이슈는 마로인(goodcoin, 매체 910014)에서 동일 시간대·동일 매체·동일 IP로 참여한 건으로 확인. 브이피 안전결제의 경우 포스트백 신호를 유저가 전송하는 방식으로 유저마다 포스트백 IP가 달라 IP만으로 전체 차단 시 정상 참여자 과다 제한 우려. 따라서 동일 IP에서 기 참여 광고를 재참여 시 팝업 제한 방식으로 처리하기로 결정.",
+      "action_items": [
+        "마로인(매체 910014) IP 정책 최종 확인 강수현 담당"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBU0PHP3P/p1554688655003200"
+    },
+    {
+      "task_id": "T003",
+      "major_category": "Media_Partner",
+      "minor_category": "Product",
+      "context_status": "matched",
+      "context_reference": "OCB 참여적립 매체 운영 정책(소재 전달 규칙 및 랜딩 URL 처리 방식) 공유. 기존 OCB 연동 운영 히스토리의 후속 정책 확정.",
+      "entity_name": "OCB",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "OCB",
+      "issue_title": "OCB 참여적립 매체 운영 정책 확정 공유",
+      "summary": "OCB 참여적립 2종(참여적립 내 상단배너, OCB락커) 소재 전달 및 랜딩 URL 처리 정책 확정",
+      "decision": "OCB 참여적립 운영 정책 확정: (1) 참여적립 내 상단배너 — 랜딩 URL 불필요, 소재만 전달, 소재명은 반드시 영문으로 기재. (2) OCB락커 — 랜딩 URL과 소재 모두 필요, 랜딩 URL은 반드시 OCB를 통해 전달받아야 함.",
+      "action_items": [],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBT7G5RUN/p1554440490002500"
+    },
+    {
+      "task_id": "T004",
+      "major_category": "Media_Partner",
+      "minor_category": "Product",
+      "context_status": "matched",
+      "context_reference": "캐시비(Cashbee) AOS 앱 내 자사 충전소 탑재 결정 및 일정 협의. 기존 캐시비 매체 연동 운영 맥락의 후속 확장 결정.",
+      "entity_name": "캐시비",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "캐시비",
+      "issue_title": "캐시비 AOS 자사 충전소 탑재 결정",
+      "summary": "캐시비 AOS 내 자사 충전소 탑재 진행하기로 결정, 차주 미팅 후 탑재 일정 확정 예정",
+      "decision": "캐시비 AOS 앱 내 자사 충전소 탑재 진행하기로 결정. 차주 미팅 후 탑재 일정 확정 예정.",
+      "action_items": [
+        "캐시비 담당자와 차주 미팅 일정 확정",
+        "캐시비 AOS 충전소 탑재 개발 일정 채수범 확인"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBT7G5RUN/p1554803500016900"
+    },
+    {
+      "task_id": "T005",
+      "major_category": "Media_Partner",
+      "minor_category": "Product",
+      "context_status": "matched",
+      "context_reference": "KT CLIP SDK 통합 관련 대면 미팅 진행 및 기술 결정 6종 확정. SDK 납기 일정 4/26 요청 대비 수일 연장 합의. 기존 KT CLIP 연동 개발 히스토리 맥락.",
+      "entity_name": "KT",
+      "project_name": "KT CLIP SDK 통합",
+      "page_scope": "child",
+      "target_name": "KT > KT CLIP SDK 통합",
+      "issue_title": "KT CLIP SDK 통합 미팅 결과 — 기술 결정 6종 및 납기 일정 협의",
+      "summary": "KT CLIP SDK 미팅: 폰트 소스 분리, 디자인 가이드 전달, SDK 납기 4/26에서 연장 합의",
+      "decision": "KT CLIP 미팅 결과 6개 기술 결정 사항 확정: (1) SDK 내 폰트 적용 필요 — Android 소스 분리 방식으로 처리. (2) 상세 디자인 가이드 및 KT 사용 폰트 파일 금일~익일 중 전달. (3) READ_PHONE_STATE 권한은 KT에서 기본 수령. (4) 적립 가능 포인트 삭제. (5) 적용 샘플 소스 제공. (6) 신규 미니 오퍼월 SDK 탑재 영역은 광고 3줄만 제공. KT 측 SDK 납기 요청일 4/26을 핀크럭스 측 요청으로 수일 연장하기로 합의.",
+      "action_items": [
+        "상세 디자인 가이드 및 KT 사용 폰트 파일 금일~익일 중 전달 (김판근/김상원)",
+        "KT build에만 폰트 파일 적용되도록 원소스 처리 가능 여부 확인 (김현우)",
+        "SDK 납기 연장 후 확정 일정 내부 공유"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBU0PHP3P/p1555315090009800"
+    },
+    {
+      "task_id": "T006",
+      "major_category": "Client",
+      "minor_category": "Product",
+      "context_status": "matched",
+      "context_reference": "페이앤드(PayNd) 인터파크 연동 제안 관련 신규 기능 4종 개발 가능 여부 및 예상 리소스 협의. 인터파크 진행 확정 시 기능 스펙 확정 후 개발·마켓 릴리즈 방향 합의. 현재 페이코와 경쟁 중.",
+      "entity_name": "페이앤드",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "페이앤드",
+      "issue_title": "페이앤드 인터파크 연동 제안 — 신규 기능 4종 개발 리소스 내부 검토 및 방향 합의",
+      "summary": "인터파크 연동 신규 기능 4종 리소스 검토 완료, 인터파크 확정 시 스펙 확정 후 개발 진행 합의",
+      "decision": "인터파크 연동 제안 신규 기능 4종 개발팀 검토 결과: (1) 사원번호 관리 로그인 루틴 추가 개발 필요(1W). (2) 지도 위 사용점 위치 표시 — 기존 플랫폼과 Dynamic map은 플랫폼 자체가 상이, 신규 포팅 필요(1W). (3) 목적별 한도 금액 자동 입력 처리 — 기능 예외 변경 자체는 용이하나 공통 기능 온/오프 의미 불명확 확인 필요(2D). (4) 유연근무제 대응 — 클라이언트 고려 사항 아님. 인터파크 진행 확정 시 기능 확정 및 개발 업데이트 후 마켓 릴리즈 방향으로 합의. 일정은 정확한 컨셉 확정 후 산정 예정.",
+      "action_items": [
+        "인터파크 연동 진행 확정 여부 확인 후 기능 스펙 확정 (원성진)",
+        "인터파크 진행 확정 시 기능 확정 후 개발 업데이트 및 마켓 릴리즈 진행"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTGBP78F/p1554869297005100"
+    },
+    {
+      "task_id": "T007",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "미래에셋대우 이지원페어 계좌개설 이벤트(2019-04-02~2019-04-30) 및 연금이전(2019-04-05~2020-04-01) 캠페인 심의번호 2종 확정. 기존 미래에셋대우 운영 히스토리 후속.",
+      "entity_name": "미래에셋대우",
+      "project_name": "이지원페어 이벤트 2019",
+      "page_scope": "child",
+      "target_name": "미래에셋대우 > 이지원페어 이벤트 2019",
+      "issue_title": "미래에셋대우 이지원페어 캠페인 심의번호 2종 확정",
+      "summary": "이지원페어 계좌개설(제19-01359호, ~4/30) 및 연금이전(제19-01361호, ~2020/4/1) 심의번호 확정",
+      "decision": "미래에셋대우-이지원페어 캠페인 심의번호 2종 확정: (1) 계좌개설 이벤트 — 한국금융투자협회 심사필 제19-01359호(2019.04.02~2019.04.30). (2) 연금이전 이벤트 — 한국금융투자협회 심사필 제19-01361호(2019.04.05~2020.04.01). 가장 최근 소재 수정 내역 반영본 및 배너 포함 매체 전달 예정.",
+      "action_items": [
+        "심의번호 삽입 최근 수정 소재 배너 포함 매체 전달"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTJWKH0C/p1554447908045200"
+    },
+    {
+      "task_id": "T008",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "하나멤버스 카카오페이지/네이버웹툰 매체 심의번호 일괄 처리. 하나 금융사 6개사 전 캠페인 대상 복수 심의번호 확정 및 매체 세팅용 전달.",
+      "entity_name": "하나멤버스",
+      "project_name": "하나금융그룹 봄 이벤트 2019",
+      "page_scope": "child",
+      "target_name": "하나멤버스 > 하나금융그룹 봄 이벤트 2019",
+      "issue_title": "하나멤버스 하나금융그룹 6개사 심의번호 카카오페이지·네이버웹툰 매체용 일괄 전달",
+      "summary": "하나금융그룹 6개사 심의번호 카카오페이지(7종)·네이버웹툰(7종) 매체 세팅용 전달 완료",
+      "decision": "하나멤버스 하위 하나금융그룹 6개사(KEB하나은행, 하나카드, 하나금융투자, 하나캐피탈, 하나생명, 하나저축은행) 심의번호를 카카오페이지 및 네이버웹툰 각각 7종씩 확정 및 매체 세팅 전달 완료. CC브랜드 포함. 유효기간 2019.04.03~2019.12.31.",
+      "action_items": [
+        "심의번호 기반 매체 세팅 적용 확인"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTJWKH0C/p1554956734080300"
+    },
+    {
+      "task_id": "T009",
+      "major_category": "Media_Partner",
+      "minor_category": "Product",
+      "context_status": "matched",
+      "context_reference": "모바일팝 인하우스 광고 참여 시 충전권 발송 버튼 문구 변경 요청. 기존 모바일팝 운영 히스토리 후속 운영 정책 업데이트.",
+      "entity_name": "모바일팝",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "모바일팝",
+      "issue_title": "모바일팝 인하우스 광고 상세 페이지 버튼 문구 변경 완료",
+      "summary": "모바일팝 인하우스 광고 8개 appkey 버튼 문구 '참여하고 충전권받기'로 변경 완료",
+      "decision": "모바일팝 무료충전소 인하우스 광고 상세 페이지 버튼 문구를 '참여하고 충전권받기'로 변경 요청 접수 및 처리 완료. 대상 appkey: 105250/105135/105086/105068/105035/104998/104884/104883(8종), pubkey: 910389/910462.",
+      "action_items": [],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBT7G5RUN/p1554729121006500"
+    }
+  ],
+  "uncategorized": []
+}

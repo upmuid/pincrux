@@ -1,0 +1,153 @@
+{
+  "schema_version": "1.1",
+  "node": "collector",
+  "run_date": "2019-04-30",
+  "run_mode": "backfill",
+  "period": "2019-04-16 to 2019-04-30",
+  "status": "success",
+  "data_summaries": [
+    {
+      "task_id": "T001",
+      "major_category": "In-house",
+      "minor_category": "Product",
+      "context_status": "matched",
+      "context_reference": "오퍼월 Android Tracking SDK 릴리스 — google play service(ads) 미참조, offerwall과 동일 방식으로 adid 추출하도록 수정 배포. 슬랙 원문: '금일 Android Tracking을 release 했습니다. 큰 이슈는 아니고 google play service(ads)를 참조하지 않고 offerwall과 동일하게 adid를 뽑아오도록 수정했습니다'",
+      "entity_name": "오퍼월",
+      "project_name": "오퍼월 플랫폼 운영",
+      "page_scope": "child",
+      "target_name": "오퍼월 > 오퍼월 플랫폼 운영",
+      "issue_title": "오퍼월 Android Tracking SDK 릴리스 (adid 추출 방식 변경)",
+      "summary": "오퍼월 Android Tracking SDK 릴리스. google play service(ads) 미참조, offerwall 동일 방식으로 adid 추출 수정 배포.",
+      "decision": "google play service(ads)를 참조하지 않고 offerwall과 동일하게 adid를 추출하는 방식으로 수정하여 릴리스하기로 결정함.",
+      "action_items": [],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBU0PHP3P/p1555396086015700"
+    },
+    {
+      "task_id": "T002",
+      "major_category": "In-house",
+      "minor_category": "Product",
+      "context_status": "matched",
+      "context_reference": "Pincrux Offerwall Framework Release 등록 과정 가이드 문서(Word, PDF)를 개발문서 공유 채널에 배포. 슬랙 원문: 'PincruxOfferwall Framework Release 등록 과정 가이드 문서입니다.'",
+      "entity_name": "오퍼월",
+      "project_name": "오퍼월 플랫폼 운영",
+      "page_scope": "child",
+      "target_name": "오퍼월 > 오퍼월 플랫폼 운영",
+      "issue_title": "Pincrux Offerwall Framework Release 등록 가이드 문서 배포",
+      "summary": "Pincrux Offerwall Framework Release 등록 과정 가이드 문서(Word/PDF) 전사 배포.",
+      "decision": "오퍼월 Framework Release 등록 절차를 문서화하여 개발팀 공유 채널에 배포하기로 결정함.",
+      "action_items": [],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CDFM2MJAY/p1555391133000100"
+    },
+    {
+      "task_id": "T003",
+      "major_category": "Media_Partner",
+      "minor_category": "Product",
+      "context_status": "matched",
+      "context_reference": "KT 클립 미니충전소 개발/오픈 일정 확인. iOS 5월 초중순 오픈 예정, Android 일정 미정, SDK 4월 26일까지 완료 예정. 슬랙 원문: '오픈일은 iOS가 5월초중순 오픈으로 알고 있고, Android는 모르겠습니다. SDK는 4/26일까지 완료예정입니다'",
+      "entity_name": "KT",
+      "project_name": "KT 클립 미니충전소",
+      "page_scope": "child",
+      "target_name": "KT > KT 클립 미니충전소",
+      "issue_title": "KT 클립 미니충전소 SDK 개발 및 오픈 일정 확인",
+      "summary": "KT 클립 미니충전소 오픈 일정: iOS 5월초중순, Android 미정. SDK 개발 완료 목표 4/26.",
+      "decision": "iOS 오픈 5월 초중순으로 확정. SDK 4월 26일까지 완료 예정. Android 오픈 일정은 추후 확인.",
+      "action_items": [
+        "SDK 4월 26일까지 개발 완료 (담당: 김상원)",
+        "Android 오픈 일정 확인 후 공유"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBU0PHP3P/p1555893173016600"
+    },
+    {
+      "task_id": "T004",
+      "major_category": "Media_Partner",
+      "minor_category": "Product",
+      "context_status": "new",
+      "context_reference": "캐시비 앱에 핀크럭스 충전소 추가 탑재 연동 개발 미팅 진행 및 결과 공유. 현재 캐시비 앱에 타사 충전소 1개 탑재 상태, 핀크럭스 충전소 추가 탑재 예정. 5월 계약 및 진행 예정. 슬랙 원문: '현재 캐시비앱에 충전소가 하나 탑재되어 있는 상태로, 핀크럭스 충전소 추가 탑재할 예정입니다. 5월 계약 및 진행예정'",
+      "entity_name": "캐시비",
+      "project_name": "캐시비 충전소 연동",
+      "page_scope": "child",
+      "target_name": "캐시비 > 캐시비 충전소 연동",
+      "issue_title": "캐시비 앱 핀크럭스 충전소 탑재 연동 개발 미팅 및 진행 결정",
+      "summary": "캐시비 앱에 핀크럭스 충전소 추가 탑재 연동 결정. 5월 계약 및 개발 진행 예정.",
+      "decision": "캐시비 앱에 핀크럭스 충전소를 추가 탑재하기로 결정. SDK, 연동 문서, 개발자 연락처, 서버 IP 제공 요청 예정. 5월 계약 및 진행 예정. UI: 리스트형(상단에 컬쳐랜드와 같이 설치/실행·영상/쇼핑·가입/참여 탭 구성), iOS 탭 기능 없음 — Android만 적용.",
+      "action_items": [
+        "SDK + 연동 문서 + 개발자 연락처 + 서버 IP 캐시비 측에 제공 (담당: 김상원)",
+        "5월 계약 체결 진행 (담당: 채수범)"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBU0PHP3P/p1555921595022300"
+    },
+    {
+      "task_id": "T005",
+      "major_category": "Media_Partner",
+      "minor_category": "Product",
+      "context_status": "matched",
+      "context_reference": "해피머니 매체에서 광고가 노출되지 않는다는 메일 수신. android 매체코드 910425, iOS 매체코드 910566. 충전소 기본 설정(포인트 단위 등) 미비로 광고 미노출 확인. 매체코드 2개에 포인트 단위 및 기본 정보 입력 조치 완료. 슬랙 원문: '해피머니에서 지난번에 광고가 나오지 않는다는 메일이 왔는데 아직 처리가 안됐네요'",
+      "entity_name": "해피머니",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "해피머니",
+      "issue_title": "해피머니 광고 미노출 이슈 — 매체코드 기본 설정 누락 확인 및 조치",
+      "summary": "해피머니 충전소 광고 미노출. 매체코드(android 910425/iOS 910566) 포인트 단위 설정 누락이 원인. 설정 완료.",
+      "decision": "해피머니 매체코드 2개(android 910425, iOS 910566)에 포인트 단위 및 기본 정보를 입력하여 광고 노출 조치 완료함.",
+      "action_items": [],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBT7G5RUN/p1555983000002900"
+    },
+    {
+      "task_id": "T006",
+      "major_category": "Media_Partner",
+      "minor_category": "Product",
+      "context_status": "new",
+      "context_reference": "미스터블루 연동 진행사항 공유 요청. 슬랙 원문: '미스터블루 진행사항 공유 부탁드립니다.' 앱은 김상원 매니저가 발송한 메일 참조 안내. 구체적 진행내용은 이메일로 전달된 상태.",
+      "entity_name": "미스터블루",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "미스터블루",
+      "issue_title": "미스터블루 연동 진행사항 공유 및 개발 착수",
+      "summary": "미스터블루 연동 진행사항 공유. 구체적 스펙은 이메일로 전달.",
+      "decision": "미스터블루 연동 착수. 진행 세부사항은 이메일 통해 공유하기로 함.",
+      "action_items": [
+        "미스터블루 연동 개발 착수 (담당: 김상원, 김판근)"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBU0PHP3P/p1556165151025600"
+    },
+    {
+      "task_id": "T007",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "new",
+      "context_reference": "메리츠화재 포스트백 보험 연동 신규 개발 착수. 최종 컨펌 코딩본 전달. 앱키 105755. 고객사와 송수신 통신값 없이 자체적으로 성공포스트백 처리(기존 SK브로드밴드와 동일 방식). 오답시 팝업1(성공팝업 고정), 실패팝업은 팝업2. 유저 식별: 전화번호/유저키/adid 수집 필요. 슬랙 원문: '메리츠 포스트백 보험 최종 컨펌 시안 코딩본 전달드립니다. 실서버 반영 및 퀴즈 로직 개발 진행 부탁드립니다. 앱키: 105755'",
+      "entity_name": "메리츠화재",
+      "project_name": "메리츠화재 포스트백 보험",
+      "page_scope": "child",
+      "target_name": "메리츠화재 > 메리츠화재 포스트백 보험",
+      "issue_title": "메리츠화재 포스트백 보험 연동 개발 착수 — 최종 컨펌 코딩본 전달",
+      "summary": "메리츠화재 포스트백 보험 최종 컨펌 코딩본 전달 및 개발 착수. 앱키 105755, 자체 성공포스트백 방식.",
+      "decision": "메리츠화재 포스트백 보험 연동 개발 착수 결정. 앱키 105755. 고객사 송수신 통신값 없이 자체 성공포스트백 처리(SK브로드밴드 방식 동일). 유저 식별을 위해 전화번호/유저키/adid 수집 필요. 퀴즈 오답시 팝업1(성공팝업 고정)/실패팝업 팝업2 구성.",
+      "action_items": [
+        "실서버 반영 및 퀴즈 로직 개발 (담당: 강수현)",
+        "매체에서 전화번호, 유저키, adid 수집 처리 구현",
+        "24시간 이후 재지급 처리 방안 확인"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBU0PHP3P/p1556527401000400"
+    },
+    {
+      "task_id": "T008",
+      "major_category": "Media_Partner",
+      "minor_category": "Product",
+      "context_status": "inquiry",
+      "context_reference": "코나아이 x 미래에셋 연동 테스트 중 발생한 계정개설 취소 요청 건. 광고주(미래에셋) 내부 정책상 계정 취소 불가, 기존 계정개설 이력 있는 경우 이벤트 대상 아님 및 성공포스트백 대상 아님. 슬랙 원문: '코나아이에서 실제 테스트를 진행해서 계정개설을 하셨는데 계정개설 취소를 요청하셨어요. 광고주 내부 정책상 계정개설에 대한 취소는 불가합니다.'",
+      "entity_name": "미래에셋대우",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "미래에셋대우",
+      "issue_title": "코나아이 연동 테스트 계정개설 취소 불가 정책 확인",
+      "summary": "코나아이 미래에셋 연동 테스트 중 계정개설 취소 요청. 광고주 정책상 취소 불가 및 기존 개설자는 이벤트/포스트백 대상 제외 안내.",
+      "decision": "미래에셋대우 광고주 내부 정책상 계정개설 취소 불가. 기존 계정개설 이력이 있는 경우 이벤트 대상 아님 및 성공포스트백 대상 아님. 계정 해지 희망시 광고주 직접 문의 처리.",
+      "action_items": [
+        "코나아이 측에 계정해지 희망 시 광고주(미래에셋) 직접 문의 안내 (담당: 강수현)"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBT7G5RUN/p1556505750006100"
+    }
+  ],
+  "uncategorized": []
+}

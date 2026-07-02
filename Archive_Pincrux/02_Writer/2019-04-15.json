@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.1",
+  "node": "writer",
+  "run_date": "2019-04-15",
+  "run_mode": "backfill",
+  "period": "2019-04-02 to 2019-04-15",
+  "status": "success",
+  "node_status": "success",
+  "results": [
+    {
+      "task_id": "T001",
+      "entity_name": "KB손해보험",
+      "context_status": "matched",
+      "action_taken": "updated_existing",
+      "confluence_page_id": "192086208",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192086208/KB",
+      "version_number": 3,
+      "note": "KB손해보험 페이지 root 수준 — IT부서 담당자(박찬우 과장) 연락처 공유 및 realpincrux 반영 완료 이력 섹션 추가"
+    },
+    {
+      "task_id": "T002",
+      "entity_name": "브이피",
+      "context_status": "matched",
+      "action_taken": "created_new",
+      "confluence_page_id": "196247560",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/196247560",
+      "version_number": 2,
+      "note": "브이피 신규 페이지 생성(parent: 190152706 Client>Project) 후 안전결제 CPA 캠페인 — 동일 IP 중복 참여 부정 수취 이슈 및 팝업 제한 정책 결정 이력 추가"
+    },
+    {
+      "task_id": "T003",
+      "entity_name": "OCB",
+      "context_status": "matched",
+      "action_taken": "created_new",
+      "confluence_page_id": "196509697",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/196509697/OCB",
+      "version_number": 2,
+      "note": "OCB 신규 페이지 생성(parent: 190447617 Media_Partner>Product) 후 참여적립 2종 소재 전달 규칙 및 랜딩 URL 처리 운영 정책 확정 이력 추가"
+    },
+    {
+      "task_id": "T004",
+      "entity_name": "캐시비",
+      "context_status": "matched",
+      "action_taken": "created_new",
+      "confluence_page_id": "196542465",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/196542465",
+      "version_number": 2,
+      "note": "캐시비 신규 페이지 생성(parent: 190447617 Media_Partner>Product) 후 AOS 자사 충전소 탑재 결정 및 일정 협의 이력 추가"
+    },
+    {
+      "task_id": "T005",
+      "entity_name": "KT",
+      "context_status": "matched",
+      "action_taken": "created_new",
+      "confluence_page_id": "196575233",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/196575233/KT",
+      "version_number": 2,
+      "note": "KT 신규 페이지 생성(parent: 190414849 Media_Partner>Project) 후 CLIP SDK 통합 미팅 기술 결정 6종 및 납기 일정 협의 이력 추가. KT 엠모바일(192151605)과 별개 엔티티."
+    },
+    {
+      "task_id": "T006",
+      "entity_name": "페이앤드",
+      "context_status": "matched",
+      "action_taken": "updated_existing",
+      "confluence_page_id": "192053250",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192053250",
+      "version_number": 9,
+      "note": "페이앤드 페이지 root 수준 — 인터파크 연동 제안 신규 기능 4종 개발 리소스 내부 검토 및 방향 합의 이력 섹션 추가"
+    },
+    {
+      "task_id": "T007",
+      "entity_name": "미래에셋대우",
+      "context_status": "matched",
+      "action_taken": "updated_existing",
+      "confluence_page_id": "191955009",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955009",
+      "version_number": 8,
+      "note": "미래에셋대우 페이지 — 이지원페어 이벤트 2019 섹션 추가: 계좌개설(제19-01359호, ~4/30) 및 연금이전(제19-01361호, ~2020/4/1) 심의번호 2종 확정 이력"
+    },
+    {
+      "task_id": "T008",
+      "entity_name": "하나멤버스",
+      "context_status": "matched",
+      "action_taken": "updated_existing",
+      "confluence_page_id": "192151700",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151700",
+      "version_number": 3,
+      "note": "하나멤버스 페이지 — 하나금융그룹 봄 이벤트 2019 섹션 추가: 6개사 심의번호 카카오페이지·네이버웹툰 각 7종 일괄 전달 완료 이력"
+    },
+    {
+      "task_id": "T009",
+      "entity_name": "모바일팝",
+      "context_status": "matched",
+      "action_taken": "created_new",
+      "confluence_page_id": "196608001",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/196608001",
+      "version_number": 2,
+      "note": "모바일팝 신규 페이지 생성(parent: 190447617 Media_Partner>Product) 후 인하우스 광고 버튼 문구 '참여하고 충전권받기' 변경 운영 정책 이력 추가"
+    }
+  ],
+  "skipped_tasks": [],
+  "summary": {
+    "total_tasks": 9,
+    "updated_existing": 4,
+    "created_new": 5,
+    "skipped": 0
+  }
+}
