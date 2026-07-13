@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.1",
+  "node": "refiner",
+  "run_date": "2019-11-14",
+  "source_file": "Archive_Pincrux/03_Validator/2019-11-14.json",
+  "node_status": "success",
+  "published_tasks": [
+    {
+      "task_id": "T001",
+      "target_name": "KB증권 > 롯데홈쇼핑",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/198279169/KB",
+      "confluence_page_id": "198279169",
+      "refined_points": [
+        "쓰미(v2)가 반영한 '롯데홈쇼핑 랜딩 사이즈 반복 불일치 및 11월 캠페인 미집행 위기' 섹션을 검수함",
+        "구어체 잔재 없음, 의사결정 사항 볼드체, 액션 아이템 체크리스트 형식 이미 규격 충족 확인되어 추가 교정 없음"
+      ],
+      "published_at": "2026-07-09T00:00:00+09:00"
+    },
+    {
+      "task_id": "T002",
+      "target_name": "KB증권",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/198279169/KB",
+      "confluence_page_id": "198279169",
+      "refined_points": [
+        "쓰미(v2)가 반영한 'KB증권 네이버페이·카카오페이 채널 운영주체 전환(핀크럭스 재위탁)' 섹션을 검수함",
+        "구어체 잔재 없음, 의사결정 사항 볼드체, 액션 아이템 체크리스트 형식 이미 규격 충족 확인되어 추가 교정 없음"
+      ],
+      "published_at": "2026-07-09T00:00:00+09:00"
+    },
+    {
+      "task_id": "T003",
+      "target_name": "미래에셋대우",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955009",
+      "confluence_page_id": "191955009",
+      "refined_points": [
+        "쓰미(v2)가 병합한 '11월 1일 캠페인 라이브 매체수 감소 우려 및 심의 진행 경과' 섹션 내 11-04 추가분(카카오페이·캐시슬라이드 지연 사유)을 검수함",
+        "기존 10/18·10/24·10/31 히스토리 및 액션아이템 손실 없음을 재확인, 구어체·마크다운 오류 없어 추가 교정 없음"
+      ],
+      "published_at": "2026-07-09T00:00:00+09:00"
+    },
+    {
+      "task_id": "T004",
+      "target_name": "PINCRUX > 멤버십 팬 서비스(CJE&M·다이아)",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "refined_points": [
+        "명칭 확정 이력 및 11-12~11-14 신규 히스토리·의사결정·액션아이템 섹션을 검수함",
+        "'개인정보 수집정책 4개 항목 정리 완료' 의사결정 항목을 단일 장문 슬래시(/) 구분 문장에서 4개 하위 불릿 리스트로 재구조화하여 가독성 개선 (수치·내용 변경 없음)",
+        "10월 '멤버십 커뮤니티(가칭)' 기존 히스토리 보존 여부 재확인, 구어체 잔재 없음"
+      ],
+      "published_at": "2026-07-09T00:00:00+09:00"
+    },
+    {
+      "task_id": "T005",
+      "target_name": "PINCRUX > 포인트 통합 쇼핑몰(가칭)",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "refined_points": [
+        "COO 정정 조치로 교체된 인용구('포인트를 두루 사용하게 되면 저희 입장에서는 좋긴 할텐데') 문단의 표현 매끄러움을 재확인함",
+        "인용구 자체(사실관계)는 절대 변경하지 않았으며, 인용문과 괄호 출처 표기 사이에 띄어쓰기를 보완하여 페이지 내 타 항목과 표기 형식을 통일 (가독성 목적, 워딩·발신자·타임스탬프 불변)",
+        "정정 이력 문구 및 '방향 미확정' 서술 그대로 유지"
+      ],
+      "published_at": "2026-07-09T00:00:00+09:00"
+    }
+  ]
+}

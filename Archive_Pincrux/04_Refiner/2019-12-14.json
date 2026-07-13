@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.1",
+  "node": "refiner",
+  "run_date": "2019-12-14",
+  "source_file": "Archive_Pincrux/03_Validator/2019-12-14.json",
+  "node_status": "success",
+  "published_tasks": [
+    {
+      "task_id": "T001",
+      "target_name": "페이앤드 > 티켓 충전소",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192053250",
+      "confluence_page_id": "192053250",
+      "refined_points": [
+        "운영 히스토리 내 핵심 수치(1원, 70%, '1원 = 1티켓')에 볼드 강조 적용",
+        "구어체 잔재 없음, 비즈니스 문어체·체크리스트·볼드 결정사항 기준 이미 충족 확인"
+      ],
+      "published_at": "2026-07-09T20:05:26+09:00"
+    },
+    {
+      "task_id": "T002",
+      "target_name": "페이앤드",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192053250",
+      "confluence_page_id": "192053250",
+      "refined_points": [
+        "운영 히스토리 내 일정·가용성 수치('즉시 이용 가능', '1~2시간 내', '12월 11일')에 볼드 강조 적용",
+        "구어체 잔재 없음, 비즈니스 문어체·체크리스트 기준 이미 충족 확인"
+      ],
+      "published_at": "2026-07-09T20:05:26+09:00"
+    },
+    {
+      "task_id": "T003",
+      "target_name": "PINCRUX > 인플루언서 앱 개발(공용 플랫폼 인프라)",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "refined_points": [
+        "컨텍스트 판단 근거의 (1)(2)(3) 나열형 서술을 순서목록(ol)으로 구조화하여 가독성 개선(사실관계·판단근거 문구는 원문 그대로 유지)",
+        "액션 아이템 체크리스트 및 의사결정 사항 볼드 처리는 기존 형식이 이미 기준을 충족함을 확인"
+      ],
+      "published_at": "2026-07-09T20:19:16+09:00"
+    },
+    {
+      "task_id": "T004",
+      "target_name": "SPC > 출석체크+충전소 연동",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/204603424/SPC",
+      "confluence_page_id": "204603424",
+      "refined_points": [
+        "운영 히스토리의 ①출석체크·②충전소 병렬 서술을 하위 리스트로 구조화하여 가독성 개선",
+        "human_action_required 비고 문구 및 사실관계(수치·결정사항) 변경 없이 유지"
+      ],
+      "published_at": "2026-07-09T20:07:56+09:00"
+    },
+    {
+      "task_id": "T005",
+      "target_name": "PINCRUX",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "refined_points": [
+        "2019-12-05 재안내 히스토리 항목의 장문 서술을 사실 기술과 [컨텍스트 판단] 근거로 문단 분리하여 가독성 개선(내용 변경 없음)"
+      ],
+      "published_at": "2026-07-09T20:19:16+09:00"
+    },
+    {
+      "task_id": "T006",
+      "target_name": "컬처랜드 > SDK 연동",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192217197",
+      "confluence_page_id": "192217197",
+      "refined_points": [
+        "운영 히스토리 내 핵심 수치·일정('100*100', '익일(12/5)까지', '1순위')에 볼드 강조 적용",
+        "구어체 잔재 없음, 비즈니스 문어체·체크리스트 기준 이미 충족 확인"
+      ],
+      "published_at": "2026-07-09T20:06:49+09:00"
+    }
+  ]
+}

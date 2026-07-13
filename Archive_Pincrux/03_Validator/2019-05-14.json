@@ -1,0 +1,216 @@
+{
+  "schema_version": "1.1",
+  "node": "validator",
+  "run_date": "2019-05-14",
+  "run_mode": "backfill",
+  "period": "2019-05-01 to 2019-05-14",
+  "node_status": "success",
+  "source_files": {
+    "collector": "Archive_Pincrux/01_Collector/2019-05-14.json",
+    "writer": "Archive_Pincrux/02_Writer/2019-05-14.json"
+  },
+  "validation_results": [
+    {
+      "task_id": "T001",
+      "context_status": "new",
+      "entity_name": "PINCRUX",
+      "confluence_page_id": "191987714",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "pass_1": "PASS",
+      "pass_2": "PASS",
+      "pass_2_trigger": "context_status: new",
+      "checks": [
+        {
+          "item": "섹션 신규 생성 확인",
+          "result": "PASSED",
+          "detail": "컨플루언스 내 '네이버 동아일보 구독시청 이벤트 솔루션 (2019)' 섹션 정상 생성 확인."
+        },
+        {
+          "item": "비용 구조 정합성",
+          "result": "PASSED",
+          "detail": "슬랙 원본: 1,000회당 $1.5, 1인당 약 10원, 트래픽 최대 1원, 합산 약 11원 — 컨플루언스 정확 일치."
+        },
+        {
+          "item": "기술 제약 사항 정합성",
+          "result": "PASSED",
+          "detail": "이미지 업로드 200K 이하, 베타 라이브러리 공용 모듈화 불가(건바이건), adid 보유사만 집행 가능 — 정확 일치."
+        },
+        {
+          "item": "액션 아이템 정합성",
+          "result": "PASSED",
+          "detail": "광고주 계약 체결 후 디자인팀 소재 제작 요청 — 슬랙 원본 맥락 일치."
+        },
+        {
+          "item": "인스타그램 동일 적용 항목 (2019-05-03)",
+          "result": "PASSED",
+          "detail": "5/2 스레드 내 박상욱의 '6월경 인스타그램 CPL 진행 예정' 발언과 5/3 별도 스레드 기반 항목 간 맥락 연속성 확인. 모으미 해석 수용 가능."
+        },
+        {
+          "item": "기존 섹션 훼손 여부",
+          "result": "PASSED",
+          "detail": "기존 12개 섹션 및 프로젝트 히스토리 전부 정상 보존 확인."
+        }
+      ],
+      "overall": "PASSED"
+    },
+    {
+      "task_id": "T002",
+      "context_status": "matched",
+      "entity_name": "PINCRUX",
+      "confluence_page_id": "191987714",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "pass_1": "PASS",
+      "pass_2": "SKIP",
+      "checks": [
+        {
+          "item": "SSL 인증서 정책 3종 가격 반영",
+          "result": "PASSED",
+          "detail": "Sectigo Basic 60,000원/년, Digicert/GeoTrust 80,000원/년, GeoTrust 와일드카드 450,000원/년 — 정확 반영."
+        },
+        {
+          "item": "PINCRUX 보안 및 운영 정책 섹션 내 추가",
+          "result": "PASSED",
+          "detail": "기존 섹션에 올바르게 병합, 기존 데이터 손실 없음."
+        }
+      ],
+      "overall": "PASSED"
+    },
+    {
+      "task_id": "T003",
+      "context_status": "matched",
+      "entity_name": "PINCRUX",
+      "confluence_page_id": "191987714",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "pass_1": "PASS",
+      "pass_2": "SKIP",
+      "checks": [
+        {
+          "item": "개인정보 암호화 정책 내용 반영",
+          "result": "PASSED",
+          "detail": "메일 바디 전달 금지, 엑셀 암호화 파일 전달 의무화 — 정확 반영."
+        },
+        {
+          "item": "제휴사·광고주 수신 시 동일 협조 요청 내용",
+          "result": "PASSED",
+          "detail": "제휴사·광고주로부터 전달받는 경우도 동일 방향 협조 요청 명시 확인."
+        }
+      ],
+      "overall": "PASSED"
+    },
+    {
+      "task_id": "T004",
+      "context_status": "matched",
+      "entity_name": "미스터블루",
+      "confluence_page_id": "196902913",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/196902913",
+      "pass_1": "PASS",
+      "pass_2": "SKIP",
+      "checks": [
+        {
+          "item": "iOS MoWeb CPI 불가 결정 반영",
+          "result": "PASSED",
+          "detail": "iOS 모바일웹 환경에서 CPI 집행 구조상 불가, 미노출 설정 처리 결정 — 정확 반영."
+        },
+        {
+          "item": "인벤토리 코드 명시",
+          "result": "PASSED",
+          "detail": "FAQ 섹션에 910498(MoWeb), 910580(MoWeb-dev), 910581(MoWeb-stage) 명시 확인."
+        },
+        {
+          "item": "기존 운영 히스토리 보존",
+          "result": "PASSED",
+          "detail": "2019-04-25 연동 착수 내용 보존 확인."
+        }
+      ],
+      "overall": "PASSED"
+    },
+    {
+      "task_id": "T005",
+      "context_status": "matched",
+      "entity_name": "KB증권",
+      "confluence_page_id": "198279169",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/198279169/KB",
+      "pass_1": "PASS",
+      "pass_2": "SKIP",
+      "checks": [
+        {
+          "item": "신규 페이지 생성 확인",
+          "result": "PASSED",
+          "detail": "Client > Project 카테고리 아래(parentId: 190152706) 정상 생성."
+        },
+        {
+          "item": "캠페인 번호 103123 반영",
+          "result": "PASSED",
+          "detail": "KB증권 비대면 계좌개설 캠페인(103123) 명시 확인."
+        },
+        {
+          "item": "매체 세팅 이력 반영",
+          "result": "PASSED",
+          "detail": "2019-05-10 매체 미세팅 건 세팅 완료 이력 정상 반영."
+        }
+      ],
+      "overall": "PASSED"
+    },
+    {
+      "task_id": "T006",
+      "context_status": "matched",
+      "entity_name": "오케이캐쉬백",
+      "confluence_page_id": "198311937",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/198311937",
+      "pass_1": "PASS",
+      "pass_2": "SKIP",
+      "checks": [
+        {
+          "item": "신규 페이지 생성 확인",
+          "result": "PASSED",
+          "detail": "Media_Partner > Product 카테고리 아래(parentId: 190447617) 정상 생성."
+        },
+        {
+          "item": "연동 처리 이력 반영",
+          "result": "PASSED",
+          "detail": "2019-05-07 광고 인벤토리 세팅 및 집행 환경 점검 완료 이력 정상 반영."
+        }
+      ],
+      "overall": "PASSED"
+    },
+    {
+      "task_id": "T007",
+      "context_status": "matched",
+      "entity_name": "DB손해보험",
+      "confluence_page_id": "191955049",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955049/DB",
+      "pass_1": "PASS",
+      "pass_2": "SKIP",
+      "checks": [
+        {
+          "item": "갱신 1주차 이벤트 기간 반영",
+          "result": "PASSED",
+          "detail": "이벤트 기간 5/2~5/12, 혜택발송 기간 6/13 — 정확 반영."
+        },
+        {
+          "item": "리워드 정보 반영",
+          "result": "PASSED",
+          "detail": "에쏘일 주유권 2만원 — 정확 반영."
+        },
+        {
+          "item": "SFTP 반영 완료 액션 아이템",
+          "result": "PASSED",
+          "detail": "SFTP 서버(211.117.60.113) 갱신 1페이지 반영 완료 체크박스 처리 확인."
+        },
+        {
+          "item": "기존 섹션 보존",
+          "result": "PASSED",
+          "detail": "기존 6개 섹션(자동차동호회, 친구소개, 월별가입, 시리즈 등) 전부 정상 보존."
+        }
+      ],
+      "overall": "PASSED"
+    }
+  ],
+  "summary": {
+    "total_tasks": 7,
+    "passed": 7,
+    "failed": 0,
+    "pass_2_executed": 1,
+    "pass_2_tasks": ["T001"]
+  }
+}

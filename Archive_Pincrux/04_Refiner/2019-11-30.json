@@ -1,0 +1,116 @@
+{
+  "schema_version": "1.1",
+  "node": "refiner",
+  "run_date": "2019-11-30",
+  "source_file": "Archive_Pincrux/03_Validator/2019-11-30.json",
+  "node_status": "success",
+  "published_tasks": [
+    {
+      "task_id": "T001",
+      "target_name": "삼성카드",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/204603393",
+      "confluence_page_id": "204603393",
+      "refined_points": [
+        "계약 상태를 [체결 예정]으로 명확히 유지하여 확정형으로 왜곡되지 않았음을 확인",
+        "핵심 의사결정 사항(전체 임직원 삼성카드 발급 진행, 발급 완료자 5만원 지급)이 볼드체 및 decision-list로 강조되어 있음을 확인",
+        "액션 아이템 2건이 체크리스트([ ]) 형식으로 정리되어 있고 구어체 잔재가 없음을 확인",
+        "신규 페이지 기본 구조(엔티티 개요 표, FAQ 및 트러블슈팅, 주요 담당자 섹션) 존재를 확인"
+      ],
+      "published_at": "2026-07-08T00:00:00+09:00"
+    },
+    {
+      "task_id": "T002",
+      "target_name": "SSG(신세계)",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/204636161",
+      "confluence_page_id": "204636161",
+      "refined_points": [
+        "제휴 3종(할인쿠폰/리워드몰/충전소) 담당자 배정 내역이 볼드체 및 decision-list로 정리되어 있음을 확인",
+        "SSG 최우선 대응 원칙 및 담당자 지정 사항이 명확한 확정형 문어체로 서술됨을 확인",
+        "액션 아이템 3건이 체크리스트 형식으로 정리되어 있음을 확인",
+        "신규 페이지 기본 구조(엔티티 개요 표, FAQ 및 트러블슈팅, 주요 담당자 섹션) 존재를 확인"
+      ],
+      "published_at": "2026-07-08T00:00:00+09:00"
+    },
+    {
+      "task_id": "T003",
+      "target_name": "SSG(신세계) > SSG 리워드몰(쇼핑몰) 연동",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/204636161",
+      "confluence_page_id": "204636161",
+      "refined_points": [
+        "T002와 동일 페이지 내 별도 h2 섹션으로 분리되어 기존 섹션 손상 없이 공존함을 확인",
+        "SDK 단독 노출 대신 쇼핑몰 전체 연동 방식 채택 결정이 볼드체 및 decision-list로 강조되어 있음을 확인",
+        "액션 아이템 2건이 체크리스트 형식으로 정리되어 있음을 확인"
+      ],
+      "published_at": "2026-07-08T00:00:00+09:00"
+    },
+    {
+      "task_id": "T004",
+      "target_name": "페이앤드 > 자동로그인 기능",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192053250",
+      "confluence_page_id": "192053250",
+      "refined_points": [
+        "스토어(심사) 버전 자동로그인 기능 제외 사실이 볼드체로 명확히 강조되어 있음을 확인",
+        "완료된 액션 아이템이 체크박스([x] 완료 상태)로 정확히 반영되어 있음을 확인",
+        "구어체 잔재 없이 확정형 비즈니스 문어체로 서술됨을 확인",
+        "기존 페이지 내 다른 섹션(정산 시스템, 네이버맵 API 등)은 변경 없이 그대로 보존됨을 확인"
+      ],
+      "published_at": "2026-07-08T00:00:00+09:00"
+    },
+    {
+      "task_id": "T005",
+      "target_name": "페이앤드 > 로그아웃 기능",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192053250",
+      "confluence_page_id": "192053250",
+      "refined_points": [
+        "[미결] 상태 표기가 확정형으로 왜곡되지 않고 명확히 유지되어 있음을 확인",
+        "옵션 1/옵션 2 액션 아이템이 체크리스트 형식으로 정리되어 있음을 확인",
+        "구어체 잔재 없이 확정형 비즈니스 문어체로 서술됨을 확인"
+      ],
+      "published_at": "2026-07-08T00:00:00+09:00"
+    },
+    {
+      "task_id": "T006",
+      "target_name": "PINCRUX",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714",
+      "confluence_page_id": "191987714",
+      "refined_points": [
+        "채용요청서 양식 사용 및 승인 절차가 볼드체 및 decision-list로 강조되어 있음을 확인",
+        "액션 아이템 2건이 체크리스트 형식으로 정리되어 있음을 확인",
+        "기존 PINCRUX 페이지의 다른 섹션은 변경 없이 그대로 보존됨을 확인"
+      ],
+      "published_at": "2026-07-08T00:00:00+09:00"
+    },
+    {
+      "task_id": "T007",
+      "target_name": "PINCRUX",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714",
+      "confluence_page_id": "191987714",
+      "refined_points": [
+        "보고체계 간소화/연차 사유란 삭제/반반차 신설 3개 결정 사항이 각각 볼드체 decision-list 항목으로 구분되어 있음을 확인",
+        "액션 아이템이 없는 공지성 결정임을 '현재 등록된 액션 아이템 없음' 문구로 명확히 표기함을 확인(빈 배열을 임의로 채우지 않음)"
+      ],
+      "published_at": "2026-07-08T00:00:00+09:00"
+    },
+    {
+      "task_id": "T008",
+      "target_name": "PINCRUX > Creator Membership Community(대청자)",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714",
+      "confluence_page_id": "191987714",
+      "refined_points": [
+        "컨텍스트 판단 근거(대상 인물·계약·인프라·프로젝트명 상이)가 panel-note로 구조화되어 기존 'PINCRUX 멤버십 팬 서비스(CJE&M·다이아)' 섹션과 명확히 분리됨을 확인",
+        "의사결정 사항(프로젝트 가칭 확정, 도메인 구매 완료) 볼드체 강조 및 액션 아이템 체크리스트 형식 확인",
+        "향후 연관성 재검토 필요 유보 문구가 그대로 유지되어 미확정 사항이 확정형으로 왜곡되지 않았음을 확인",
+        "기존 CJE&M·다이아 섹션의 히스토리·액션 아이템이 손상 없이 그대로 보존됨을 확인"
+      ],
+      "published_at": "2026-07-08T00:00:00+09:00"
+    }
+  ]
+}

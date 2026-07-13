@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.1",
+  "node": "refiner",
+  "run_date": "2019-10-14",
+  "source_file": "Archive_Pincrux/03_Validator/2019-10-14.json",
+  "node_status": "success",
+  "published_tasks": [
+    {
+      "task_id": "T001",
+      "target_name": "웰컴저축은행 > 체크플러스2 M정기적금",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151790",
+      "confluence_page_id": "192151790",
+      "refined_points": [
+        "기존 볼드체·인용구·체크리스트 포맷이 이미 사내 기준을 충족함을 확인",
+        "19,091원(정산단가)/25,000원(그로스단가) 두 수치와 human_action_required 재확인 권고 인용구를 원문 그대로 유지 — 임의 단일화 없음",
+        "구어체 잔재 없음, 추가 윤문 불필요"
+      ],
+      "published_at": "2026-07-08T15:49:48+09:00"
+    },
+    {
+      "task_id": "T002",
+      "target_name": "웰컴저축은행 > 계좌개설",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151790",
+      "confluence_page_id": "192151790",
+      "refined_points": [
+        "완료/예정 시제 구분 및 액션 아이템 체크리스트 포맷이 이미 정확히 반영되어 있음을 확인",
+        "구어체 잔재·문법 오류 없음, 추가 윤문 불필요"
+      ],
+      "published_at": "2026-07-08T15:49:48+09:00"
+    },
+    {
+      "task_id": "T003",
+      "target_name": "NH멤버스 > CPA 매체별 잔존율 분석",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/199491593/NH",
+      "confluence_page_id": "199491593",
+      "refined_points": [
+        "신규 반영분(서버반영 10/10, APP배포 10/14 일정)의 볼드 강조와 체크리스트 갱신이 이미 적절히 반영되어 있음을 확인",
+        "구어체 잔재·문법 오류 없음, 추가 윤문 불필요"
+      ],
+      "published_at": "2026-07-08T15:49:48+09:00"
+    },
+    {
+      "task_id": "T004",
+      "target_name": "KB증권 > 비대면 계좌개설 이벤트",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/198279169/KB",
+      "confluence_page_id": "198279169",
+      "refined_points": [
+        "신규 반영분(특별우대수수료 문구 삭제, 페이코 홀딩)의 볼드 강조와 체크리스트 갱신이 이미 적절히 반영되어 있음을 확인",
+        "구어체 잔재·문법 오류 없음, 추가 윤문 불필요"
+      ],
+      "published_at": "2026-07-08T15:49:48+09:00"
+    },
+    {
+      "task_id": "T005",
+      "target_name": "미스터블루 > AOS/iOS 충전소",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/196902913",
+      "confluence_page_id": "196902913",
+      "refined_points": [
+        "신규 섹션 운영 히스토리 문장 중 핵심 의사결정 내용(AOS·iOS 충전소 홀딩 처리, 재라이브 예정)에 볼드체 강조 추가 — 문구·수치·예정 상태 표기는 변경 없이 그대로 유지",
+        "체크리스트·문어체는 이미 기준 충족 확인, 사실관계 변경 없음"
+      ],
+      "published_at": "2026-07-08T15:49:48+09:00"
+    }
+  ]
+}

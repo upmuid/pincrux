@@ -1,0 +1,165 @@
+{
+  "schema_version": "1.1",
+  "node": "collector",
+  "run_date": "2019-08-14",
+  "run_mode": "backfill",
+  "period": "2019-08-01 to 2019-08-14",
+  "status": "success",
+  "data_summaries": [
+    {
+      "task_id": "T001",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "기존 DB손해보험 LMS 캠페인 후속 스케줄 변경",
+      "entity_name": "DB손해보험",
+      "project_name": "신용카드몰 LMS 가입이벤트",
+      "page_scope": "child",
+      "target_name": "DB손해보험 > 신용카드몰 LMS 가입이벤트",
+      "issue_title": "8월 LMS 발송일정 및 URL 기간 확정",
+      "summary": "8월 전체 신세계 3만원 발송, URL 기간 8/1~8/31 확정",
+      "decision": "join-lms1.db-event.co.kr URL 유효기간을 8월 1일~8월 31일로, 발송일은 9월 11일로 재조정. 1~11일 soil, 12~18일 신세계, 19~25일 SK주유권, 26~31일 신세계 순으로 진행",
+      "action_items": ["8월 전체 신세계 3만원 발송분 URL 기간 수정 반영"],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTJWKH0C/p1564621308038000?thread_ts=1564621308.038000&cid=CBTJWKH0C"
+    },
+    {
+      "task_id": "T002",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "DB손해보험 8월 소재 제작 요청 중 캠페인 조건(기간) 확정 부분만 발췌",
+      "entity_name": "DB손해보험",
+      "project_name": "상담사 신청 페이지 캠페인",
+      "page_scope": "child",
+      "target_name": "DB손해보험 > 상담사 신청 페이지 캠페인",
+      "issue_title": "8월 상담사 신청 페이지 캠페인 기간 확정",
+      "summary": "캠페인 기간 8/1~8/31, 발송일 8/15 확정, 8/31까지 가입 건 인정",
+      "decision": "캠페인 기간을 2019년 8월 1일~8월 31일로 확정하고 발송일은 8월 15일(월)경으로 설정. 8월 31일까지 가입한 건에 한해 인정",
+      "action_items": [],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTJWKH0C/p1564996945053800?thread_ts=1564996945053800&cid=CBTJWKH0C"
+    },
+    {
+      "task_id": "T003",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "기존 삼성증권 카카오페이/삼성페이/페이코 이벤트 진행 히스토리 후속",
+      "entity_name": "삼성증권",
+      "project_name": "카카오페이/삼성페이/페이코 이벤트",
+      "page_scope": "child",
+      "target_name": "삼성증권 > 카카오페이/삼성페이/페이코 이벤트",
+      "issue_title": "3개 매체 이벤트 기간 변경 및 삼성페이 개시일 확정",
+      "summary": "이벤트 기간을 8/6~8/31로 심의 재요청, 삼성페이는 8/9부터 진행",
+      "decision": "삼성증권 요청으로 카카오페이/삼성페이/페이코 이벤트 기간을 8월 6일~8월 31일 버전으로 심의 재요청. 삼성페이는 현부매니저 요청에 따라 8월 9일부터 진행",
+      "action_items": [],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CKHKH3KC5/p1564733236004100"
+    },
+    {
+      "task_id": "T004",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "T003과 동일 이벤트의 후속 조건 변경(기간 재연장)",
+      "entity_name": "삼성증권",
+      "project_name": "카카오페이/삼성페이/페이코 이벤트",
+      "page_scope": "child",
+      "target_name": "삼성증권 > 카카오페이/삼성페이/페이코 이벤트",
+      "issue_title": "이벤트 기간 8/30→9/30 연장 및 심의필 획득",
+      "summary": "타사대체입금 이벤트 기간 변경에 따라 8/30을 9/30로 재연장, 심의필 완료",
+      "decision": "삼성증권 요청으로 타사대체입금 이벤트 기간이 변경되어 카카오페이/삼성페이/페이코 이벤트 종료일을 8월 30일에서 9월 30일로 수정. 한국금융투자협회 심사필 제19-03174호(2019.08.06-2020.08.05), 삼성증권 준법감시인 심사필 제19-B2484호(2019.08.07-2020.08.05) 획득",
+      "action_items": [],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTJWKH0C/p1565154942064400"
+    },
+    {
+      "task_id": "T005",
+      "major_category": "Client",
+      "minor_category": "Product",
+      "context_status": "matched",
+      "context_reference": "미래에셋대우 매체 운영 및 정산 히스토리 후속",
+      "entity_name": "미래에셋대우",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "미래에셋대우",
+      "issue_title": "7월 거래 리스트 정산 및 신규 이벤트페이지 배포",
+      "summary": "7월 거래리스트 정산 진행, 신규 이벤트페이지 2ver 공유",
+      "decision": "미래에셋대우 7월 거래 리스트 정산 진행(매체별 리워드 요청 후 최대한 빠르게 발송). 계좌개설 프로세스 캡처본 기반 신규 이벤트페이지 2ver 제작 및 공유 완료",
+      "action_items": ["매체별 리워드 요청 및 발송"],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CJP8CLM36/p1565576833067800"
+    },
+    {
+      "task_id": "T006",
+      "major_category": "Client",
+      "minor_category": "Product",
+      "context_status": "matched",
+      "context_reference": "KB증권 매체 정산 히스토리 후속",
+      "entity_name": "KB증권",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "KB증권",
+      "issue_title": "6월분 정산 완료, 7월분 정산 요청",
+      "summary": "6월분 정산 서팀장 검토 완료, 7월분 정산 KB증권에 요청",
+      "decision": "6월분 정산내역 서팀장 검토 완료 후 KB증권에 7월분 정산 요청 진행",
+      "action_items": ["7월분 정산 결과 확인"],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CJPA1CBD2/p1564983993012300?thread_ts=1564983993.012300&cid=CJPA1CBD2"
+    },
+    {
+      "task_id": "T007",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "unknown",
+      "context_reference": "웰컴저축은행 관련 첫 등장, 기존 맥락 확인 불가하여 unknown 처리",
+      "entity_name": "웰컴저축은행",
+      "project_name": "카카오페이 이벤트",
+      "page_scope": "child",
+      "target_name": "웰컴저축은행 > 카카오페이 이벤트",
+      "issue_title": "카카오페이 이벤트 라이브 완료",
+      "summary": "웰컴저축은행 카카오페이 이벤트 라이브 완료",
+      "decision": "웰컴저축은행 카카오페이 이벤트 라이브 완료 (2019-08-06, 푸쉬문구 공유 포함)",
+      "action_items": [],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CJCD15KJN/p1565065763050700",
+      "correction_note": "COO 긴급 정정(2026-07-07): 원본 slack_thread_link(CBTJWKH0C, ts=1564997182.054300)는 조혁이 공유한 '새 폴더.zip' 파일 메시지로 카카오페이 이벤트와 무관함을 읽어봄이(v3) 검증 단계에서 발견(FAILED, CONTEXT_DISTORTION). 재조사 결과 #v_웰컴저축은행 채널(CJCD15KJN)에서 2019-08-06 13:29 고현복이 작성한 '푸쉬문구 공유하였으며, 카카오페이 라이브되었습니다' 메시지가 실제 근거로 확인되어 slack_thread_link 및 날짜를 정정함."
+    },
+    {
+      "task_id": "T008",
+      "major_category": "In-house",
+      "minor_category": "Product",
+      "context_status": "unknown",
+      "context_reference": "페이앤드 프로젝트 채널(#09_project_페이앤드) 첫 등장, 기존 히스토리 매칭 불가",
+      "entity_name": "페이앤드",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "페이앤드",
+      "issue_title": "앱스토어 업데이트 심사 반려 - 아이콘 디자인 중복 문제",
+      "summary": "사용자용 앱과 페이앤드S 아이콘 디자인 동일해 앱스토어 심사 반려",
+      "decision": "페이앤드 사용자용 앱과 페이앤드S(사용점) 앱의 아이콘 디자인이 동일하여 AppStore 업데이트 심사에 실패. 사용자용 앱 아이콘 디자인 수정 필요성 확인",
+      "action_items": ["사용자용 앱 아이콘 디자인 수정", "재심사 제출"],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTGBP78F/p1565138087009900?thread_ts=1565138087.009900&cid=CBTGBP78F"
+    }
+  ],
+  "uncategorized": [
+    {
+      "raw_text": "카카오페이 재라이브 관련 대응 (미래에셋대우 채널, 8/1 오전) - 재라이브 요청, 노출 확인, 문자 테스트 등 다수 메시지",
+      "reason": "단건 매체 노출 이슈 대응으로 실행 레벨 오퍼레이션에 해당하여 제외. 재발/구조적 원인 여부 불명확"
+    },
+    {
+      "raw_text": "삼성증권 소재 문구 수정, PSD 파일 수정, 랜딩페이지 코딩 요청 등 다수 (8/2~8/13)",
+      "reason": "개별 소재 제작·수정 요청으로 수집 기준 미충족"
+    },
+    {
+      "raw_text": "DB손해보험 S오일 쿠폰 발송 관련 CS 문의 (비밀번호 상이) 및 매니저 CS 건",
+      "reason": "단순 CS 문의/전달 확인으로 수집 기준 미충족"
+    },
+    {
+      "raw_text": "교보라이프플래닛 문구 수정, PPT 파일 확인, 심의번호 삽입 등 (8/7~8/9)",
+      "reason": "개별 소재 제작·수정 및 심의번호 삽입 단건 처리로 수집 기준 미충족"
+    },
+    {
+      "raw_text": "카포인트 CPS 관련 신규 매체 개인정보 수집창 반영 요청 (캠페인 106668 등, 8/12, #03_pincrux_개발업무)",
+      "reason": "개별 캠페인 설정 변경 요청으로 실행 레벨 오퍼레이션에 해당, 캠페인 런칭/종료 등 상위 의사결정 아님"
+    },
+    {
+      "raw_text": "페이앤드 앱스토어 릴리즈 완료 확인 (8/12)",
+      "reason": "단순 완료 확인 메시지로 수집 기준 미충족 (단, 관련 반려 이슈인 T008은 수집)"
+    }
+  ]
+}

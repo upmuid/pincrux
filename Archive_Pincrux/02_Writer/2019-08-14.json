@@ -1,0 +1,135 @@
+{
+  "schema_version": "1.1",
+  "node": "writer",
+  "run_date": "2019-08-14",
+  "source_file": "Archive_Pincrux/01_Collector/2019-08-14.json",
+  "node_status": "success",
+  "processed_tasks": [
+    {
+      "task_id": "T001",
+      "entity_name": "DB손해보험",
+      "project_name": "신용카드몰 LMS 가입이벤트",
+      "page_scope": "child",
+      "target_name": "DB손해보험 > 신용카드몰 LMS 가입이벤트",
+      "context_status": "matched",
+      "action_taken": "existing_page_updated",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955049/DB",
+      "confluence_page_id": "191955049",
+      "updated_sections": [
+        "DB손해보험 8월 LMS 발송일정 및 URL 기간 확정 (2019-08)"
+      ]
+    },
+    {
+      "task_id": "T002",
+      "entity_name": "DB손해보험",
+      "project_name": "상담사 신청 페이지 캠페인",
+      "page_scope": "child",
+      "target_name": "DB손해보험 > 상담사 신청 페이지 캠페인",
+      "context_status": "matched",
+      "action_taken": "existing_page_updated",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955049/DB",
+      "confluence_page_id": "191955049",
+      "updated_sections": [
+        "DB손해보험 8월 상담사 신청 페이지 캠페인 기간 확정 (2019-08)"
+      ]
+    },
+    {
+      "task_id": "T003",
+      "entity_name": "삼성증권",
+      "project_name": "카카오페이/삼성페이/페이코 이벤트",
+      "page_scope": "child",
+      "target_name": "삼성증권 > 카카오페이/삼성페이/페이코 이벤트",
+      "context_status": "matched",
+      "action_taken": "existing_page_updated",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192086150",
+      "confluence_page_id": "192086150",
+      "updated_sections": [
+        "삼성증권 카카오페이/삼성페이/페이코 이벤트 기간 변경 및 연장 (2019-08)"
+      ]
+    },
+    {
+      "task_id": "T004",
+      "entity_name": "삼성증권",
+      "project_name": "카카오페이/삼성페이/페이코 이벤트",
+      "page_scope": "child",
+      "target_name": "삼성증권 > 카카오페이/삼성페이/페이코 이벤트",
+      "context_status": "matched",
+      "action_taken": "existing_page_updated",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192086150",
+      "confluence_page_id": "192086150",
+      "updated_sections": [
+        "삼성증권 카카오페이/삼성페이/페이코 이벤트 기간 변경 및 연장 (2019-08)"
+      ]
+    },
+    {
+      "task_id": "T005",
+      "entity_name": "미래에셋대우",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "미래에셋대우",
+      "context_status": "matched",
+      "action_taken": "existing_page_updated",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955009",
+      "confluence_page_id": "191955009",
+      "updated_sections": [
+        "미래에셋대우 7월 거래 리스트 정산 및 신규 이벤트페이지 배포 (2019-08)"
+      ]
+    },
+    {
+      "task_id": "T006",
+      "entity_name": "KB증권",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "KB증권",
+      "context_status": "matched",
+      "action_taken": "existing_page_updated",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/198279169/KB",
+      "confluence_page_id": "198279169",
+      "updated_sections": [
+        "KB증권 6월분 정산 완료 및 7월분 정산 요청 (2019-08)"
+      ]
+    },
+    {
+      "task_id": "T007",
+      "entity_name": "웰컴저축은행",
+      "project_name": "카카오페이 이벤트",
+      "page_scope": "child",
+      "target_name": "웰컴저축은행 > 카카오페이 이벤트",
+      "context_status": "matched",
+      "action_taken": "existing_page_updated",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151790",
+      "confluence_page_id": "192151790",
+      "updated_sections": [
+        "웰컴저축은행 카카오페이 이벤트 라이브 완료 (2019-08)"
+      ],
+      "writer_judgment": "unknown → matched로 최종 판단. 기존 웰컴저축은행(192151790) 페이지에 2019-06 첫거래우대 정기적금 가입 이벤트에서 카카오페이 매체 라이브 완료(2019-06-11) 히스토리가 이미 존재하며, 동일 광고주 엔티티의 신규 프로젝트(카카오페이 이벤트) 후속 운영으로 판단하여 기존 페이지에 새 섹션으로 병합함.",
+      "correction_note": "COO 긴급 정정(2026-07-07): 읽어봄이(v3) 검증에서 CONTEXT_DISTORTION(FAILED) 판정. 모으미가 연결한 slack_thread_link(CBTJWKH0C, ts=1564997182.054300)가 무관한 zip 파일 공유였음이 확인되어 Confluence 페이지(192151790) 내 해당 섹션을 정정함. 재조사로 실제 근거(CJCD15KJN, ts=1565065763.050700, 2019-08-06 고현복 '카카오페이 라이브되었습니다')를 발견하여 섹션 내용은 유지하되 날짜(2019-08-14→2019-08-06)와 출처 링크만 교체 반영함. context_status는 matched로 유지(사실 자체는 유효, 근거 링크만 오류였음)."
+    },
+    {
+      "task_id": "T008",
+      "entity_name": "페이앤드",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "페이앤드",
+      "context_status": "matched",
+      "action_taken": "existing_page_updated",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192053250",
+      "confluence_page_id": "192053250",
+      "confluence_parent_page_url": null,
+      "confluence_parent_page_id": null,
+      "updated_sections": [
+        "페이앤드 앱스토어 업데이트 심사 반려 - 아이콘 디자인 중복 문제 (2019-08)"
+      ],
+      "writer_judgment": "unknown(모으미 In-house 1차 분류) → matched(Client>Product 페이앤드)로 오분류 정정. 기존 페이앤드(192053250, Client>Product) 페이지를 확인한 결과 인터파크 연동, CLIP 플랫폼 연동 등 페이앤드 서비스(사용자용 앱 포함) 관련 콘텐츠를 다루고 있음. T008 내용(사용자용 앱과 페이앤드S 가맹점용 앱 아이콘 디자인 중복으로 AppStore 심사 반려)은 동일한 페이앤드 서비스의 앱 운영 이슈로 판단, 기존 페이지에 병합함. 명칭이 동일한 사내 정산 시스템 '페이앤드(Payand)'는 PINCRUX(191987714) 페이지에 별도로 이미 기록되어 있어 혼동 소지 없음을 확인, 페이지 내 비고란에 상호 참조 링크 추가."
+    }
+  ],
+  "skipped_tasks": []
+}

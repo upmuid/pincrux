@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.1",
+  "node": "validator",
+  "run_date": "2019-09-30",
+  "source_files": {
+    "collector": "Archive_Pincrux/01_Collector/2019-09-30.json",
+    "writer": "Archive_Pincrux/02_Writer/2019-09-30.json"
+  },
+  "node_status": "success",
+  "review_summary": {
+    "total_reviewed": 7,
+    "passed_cnt": 7,
+    "failed_cnt": 0,
+    "slack_reread_cnt": 5,
+    "revalidation_note": "T002/T003/T004는 COO 정정 지시(2026-07-08) 반영 후 재검증됨. T001/T005/T006/T007은 이전 검증(PASSED)에서 변경 없어 그대로 승계."
+  },
+  "validation_results": [
+    {
+      "task_id": "T001",
+      "target_name": "DB금융투자",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151759/DB",
+      "confluence_page_id": "192151759",
+      "slack_reread": true,
+      "slack_reread_trigger": "action_items가 비어있으나 decision 존재 + T001 집중검토 지시(다중 날짜 사실 나열/인과관계 창작 여부 확인)",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "슬랙 원문 2건(9/23 종료셋팅 요청 p1569232414000800, 9/30 종료완료 확인 p1569817899002700) 모두 컨플루언스 반영 내용과 정확히 일치. 날짜별 사실이 나열식으로만 반영되었고 임의의 인과관계·해석 추가 없음. 기존 하위 섹션(8월/6월/5월/3월 히스토리) 훼손 없음. (변경 없음, 이전 검증 승계)"
+    },
+    {
+      "task_id": "T002",
+      "target_name": "삼성증권",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192086150",
+      "confluence_page_id": "192086150",
+      "slack_reread": false,
+      "slack_reread_trigger": "재검증: 직전 회차 FAILED(CONTEXT_DISTORTION) 사유의 정정 여부만 컨플루언스 대조로 확인. 원 슬랙 채널은 이전 회차에서 이미 확인 완료.",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "COO 정정 반영 확인. (1) 9/24 항목 출처가 단일 링크(p1569285307003600)에서 실제 수치·방침이 담긴 09:44~09:53 대화 링크(p1569285990007600, p1569286151011300)로 정확히 재표기됨. (2) '페이코 9/30까지 무조건 진행'이 '삼성페이는 9월말까지 진행 필요, 페이코는 9/30 강제 진행 미확정'으로 정정됨 — 지시된 정정 사항과 일치. (3) 정정 외 다른 수치·서술 변경 없음, 기존 7월/6월/3월 히스토리 섹션 훼손 없음. 정정 이력(COO 정정 2026-07-08)이 본문에 명시됨.",
+      "suggested_fix": null
+    },
+    {
+      "task_id": "T003",
+      "target_name": "웰컴저축은행 > 다음웹툰 SB",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151790",
+      "confluence_page_id": "192151790",
+      "slack_reread": false,
+      "slack_reread_trigger": "재검증: 직전 회차 FAILED(CONTEXT_DISTORTION) 사유의 정정 여부만 컨플루언스 대조로 확인. 원 슬랙 스레드는 이전 회차에서 이미 확인 완료.",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "COO 정정 반영 확인. '담당 과장에게 전달했으며'(완료형)가 '담당 과장에게 전달을 요청함(전달 완료 여부는 원문상 미확인)'으로 정확히 정정됨. 액션 아이템도 '자료 담당 과장 전달 진행 및 10월 라이브 준비'로 진행 상태를 반영하도록 조정됨. 10월 라이브 협의 부분(원문과 일치했던 부분)은 변경 없이 유지됨. 정정 이력이 본문에 명시됨.",
+      "suggested_fix": null
+    },
+    {
+      "task_id": "T004",
+      "target_name": "딜카",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/203128842",
+      "confluence_page_id": "203128842",
+      "slack_reread": false,
+      "slack_reread_trigger": "재검증: 직전 회차 FAILED(CONTEXT_DISTORTION) 사유의 정정 여부만 컨플루언스 대조로 확인. 원 슬랙 스레드는 이전 회차에서 이미 확인 완료.",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "COO 정정 반영 확인. 딜카 페이지(203128842): '딜카-Branch 대사에서 소계 차이가 크게 확인됨'이라는 확정형 서술이 제거되고, '딜카도 웰컴과 동일하게... 추정(유추)되나, 딜카 자체의 대사 가능 데이터 존재 여부는... 아직 확정되지 않음'이라는 '확인 중' 수준으로 정확히 하향 조정됨. 웰컴저축은행 페이지(192151790)에는 신규 섹션 '웰컴저축은행 Branch 트래커 실적 소계 불일치 확인 (2019-09)'가 추가되어, 실제 소계 불일치가 확인된 주체(웰컴저축은행)와 출처(p1568623206006800)가 원문과 정확히 일치하게 반영됨. 두 페이지 모두 정정 이력이 본문에 명시됨.",
+      "suggested_fix": null
+    },
+    {
+      "task_id": "T005",
+      "target_name": "미래에셋대우",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955009",
+      "confluence_page_id": "191955009",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "action_items 존재 및 decision이 단문 과요약이 아니어서 2패스 트리거 미해당. 컨플루언스 반영 내용이 모으미 JSON과 정확히 일치하며, 기존 다른 섹션(전체매체 종료/재라이브, 진행일자 수정, 심의번호 갱신 등) 훼손 없음. (변경 없음, 이전 검증 승계)"
+    },
+    {
+      "task_id": "T006",
+      "target_name": "NH멤버스 > CPA 매체별 잔존율 분석",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/199491593/NH",
+      "confluence_page_id": "199491593",
+      "slack_reread": true,
+      "slack_reread_trigger": "쓰미의 major_category 재분류(Client/new → Media_Partner/matched) 타당성 확인",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "슬랙 원문(김천두, 2019-09-24)과 결정사항·액션아이템이 정확히 일치. 기존 NH멤버스 페이지(199491593)가 이미 Media_Partner>Product로 등록되어 있었음을 컨플루언스로 확인했으므로, 쓰미의 재분류(Client→Media_Partner, new→matched)는 타당함. 기존 하위 섹션(SDK 개발, referrer 오류 대응) 훼손 없음. (변경 없음, 이전 검증 승계)"
+    },
+    {
+      "task_id": "T007",
+      "target_name": "페이앤드",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192053250",
+      "confluence_page_id": "192053250",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "action_items 존재 및 decision이 단문 과요약이 아니어서 2패스 트리거 미해당. 컨플루언스 반영 내용이 모으미 JSON과 일치하며, 기존 In-house>Product 카테고리 및 비고(정정) 섹션 유지 확인. (변경 없음, 이전 검증 승계)"
+    }
+  ]
+}

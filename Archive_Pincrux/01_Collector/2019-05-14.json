@@ -1,0 +1,132 @@
+{
+  "schema_version": "1.1",
+  "node": "collector",
+  "run_date": "2019-05-14",
+  "run_mode": "backfill",
+  "period": "2019-05-01 to 2019-05-14",
+  "status": "success",
+  "data_summaries": [
+    {
+      "task_id": "T001",
+      "major_category": "In-house",
+      "minor_category": "Product",
+      "context_status": "new",
+      "context_reference": "네이버 동아일보 구독시청 이벤트 페이지를 자체 개발하였으며, 스크린샷 분석 비용($1.5/1000회), 이미지 200K 이하 업로드 제한, adid 보유 업체만 집행 가능 등 기술·비용 조건을 구체적으로 논의. 광고주 계약 범위 확정 후 디자인 추가 예정.",
+      "entity_name": "PINCRUX",
+      "project_name": "네이버 동아일보 구독시청 이벤트 솔루션",
+      "page_scope": "child",
+      "target_name": "PINCRUX > 네이버 동아일보 구독시청 이벤트 솔루션",
+      "issue_title": "네이버 동아일보 구독시청 이벤트 페이지 개발 완료 및 운영 조건 확정",
+      "summary": "자체 이벤트 페이지 개발 완료, 스크린샷 분석 비용 구조 및 기술 제약 조건 내부 공유",
+      "decision": "스크린샷 분석 비용 1,000회당 $1.5, 이미지 업로드 200K 이하 제한, 베타 라이브러리로 공용 모듈화 불가(빅광고주 있을 때 건바이건 제작), 중복 제거를 위해 adid 보유 회사만 집행 가능. 광고주 계약 체결 및 집행 범위 결정 후 디자인팀에 별도 요청 예정.",
+      "action_items": [
+        "광고주와 계약 체결 및 집행 범위 확정 후 디자인팀에 소재 제작 요청",
+        "인스타그램 동일 적용 처리 확인 (구독하기 캠페인)"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBU0PHP3P/p1556786331003000"
+    },
+    {
+      "task_id": "T002",
+      "major_category": "In-house",
+      "minor_category": "Product",
+      "context_status": "matched",
+      "context_reference": "회사 내부 SSL 인증서 사용 종류와 비용을 공유. 범용 Sectigo Basic 6만원/년, 앱 웹뷰 호환 Digicert/GeoTrust 8만원/년, 와일드카드 GeoTrust 45만원/년. 기존 PINCRUX 플랫폼 운영 및 보안 관리 히스토리의 연장선.",
+      "entity_name": "PINCRUX",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "PINCRUX",
+      "issue_title": "회사 내부 SSL 인증서 종류 및 연간 비용 정책 확정 공유",
+      "summary": "SSL 인증서 용도별 종류와 연간 비용 내부 공유 및 확정",
+      "decision": "범용: Sectigo Basic 60,000원/년, 앱 웹뷰 호환: Digicert 또는 GeoTrust 80,000원/년, 와일드카드(3개 이상 도메인): GeoTrust 450,000원/년",
+      "action_items": [],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CDFM2MJAY/p1556765891001100"
+    },
+    {
+      "task_id": "T003",
+      "major_category": "In-house",
+      "minor_category": "Product",
+      "context_status": "matched",
+      "context_reference": "CS 및 제휴사 지급 요청 건 관련 개인정보(고객 성함, 휴대번호 등) 전달·수신 시 메일 바디가 아닌 엑셀 파일 암호화 후 진행 재요청. 전사 공지로 전달. PINCRUX 내부 운영 정책 변경.",
+      "entity_name": "PINCRUX",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "PINCRUX",
+      "issue_title": "CS 및 제휴사 개인정보 전달 시 암호화 파일 정책 공식 재공지",
+      "summary": "고객 개인정보 전달 시 메일 바디 금지, 엑셀 암호화 후 전달 정책 전사 재공지",
+      "decision": "CS 또는 제휴사 지급 요청 관련 개인정보(고객 성함, 휴대번호 등) 전달·수신 시 메일 바디로 진행 금지. 엑셀 파일에 암호화하여 진행. 제휴사·광고주로부터 먼저 전달받는 경우도 동일 방향으로 협조 요청.",
+      "action_items": [
+        "전 팀원 개인정보 암호화 전달 정책 준수"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBRLA2LGL/p1556850101002700"
+    },
+    {
+      "task_id": "T004",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "미스터블루 iOS 모바일웹에서 설치형 캠페인 오류 발생 보고. 확인 결과 iOS 모바일웹은 CPI 집행 자체가 불가능한 구조로 확인. 해당 광고를 블라인드 처리하기로 결정. 미스터블루(MoWeb) 인벤토리 코드 특정하여 iOS CPI 미노출 처리 요청.",
+      "entity_name": "미스터블루",
+      "project_name": "미스터블루 모바일웹(MoWeb) 캠페인 운영",
+      "page_scope": "child",
+      "target_name": "미스터블루 > 미스터블루 모바일웹(MoWeb) 캠페인 운영",
+      "issue_title": "미스터블루 iOS 모바일웹 설치형 캠페인 CPI 집행 불가 구조 확인 및 블라인드 처리 결정",
+      "summary": "iOS 모바일웹 설치형 캠페인 오류 → CPI 집행 구조상 불가 확인, 미노출 처리 결정",
+      "decision": "iOS 모바일웹(MoWeb)은 CPI 집행이 구조상 불가능함. 미스터블루 MoWeb 인벤토리(910498, 910580, 910581)에 iOS CPI 광고 미노출 설정 처리하기로 결정.",
+      "action_items": [
+        "미스터블루 MoWeb 인벤토리 코드(910498, 910580, 910581)에 iOS CPI 광고 미노출 설정"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBU0PHP3P/p1557379258007900"
+    },
+    {
+      "task_id": "T005",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "KB증권 캠페인(appkey 103123) 운영 중 매체 설정 변경 요청. 브릿지 페이지 없이 광고주 페이지로 바로 이동하도록 설정(PUBKEY: 910031). 이어서 이벤트 페이지 반영 요청(PUBKEY: 910007, 전화번호 수집창 포함). 기존 KB증권 캠페인 운영의 연속.",
+      "entity_name": "KB증권",
+      "project_name": "KB증권 비대면 계좌개설 캠페인 (103123)",
+      "page_scope": "child",
+      "target_name": "KB증권 > KB증권 비대면 계좌개설 캠페인 (103123)",
+      "issue_title": "KB증권 캠페인 매체 설정 변경 — 브릿지 없이 광고주 페이지 직접 이동 및 이벤트 페이지 반영",
+      "summary": "KB증권 캠페인 매체 설정 2건 변경: 직접 이동 설정 및 이벤트 페이지 반영",
+      "decision": "PUBKEY 910031: 브릿지 페이지 없이 광고주 페이지로 직접 이동하도록 설정 변경 완료. PUBKEY 910007: 이벤트 페이지(전화번호 수집창 포함) 반영 완료.",
+      "action_items": [],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBU0PHP3P/p1557456558020500"
+    },
+    {
+      "task_id": "T006",
+      "major_category": "Media_Partner",
+      "minor_category": "Product",
+      "context_status": "matched",
+      "context_reference": "오케이캐쉬백(OK캐시백) 담당 매니저가 시스템 이상으로 메일이 발송되지 않는 장애 상황을 슬랙으로 긴급 공지. 급한 CS 업무는 네이트온으로 문의 요청. 파트너사 채널 운영 이슈.",
+      "entity_name": "오케이캐쉬백",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "오케이캐쉬백",
+      "issue_title": "오케이캐쉬백 CS 이메일 시스템 장애 발생 — 네이트온으로 임시 대응",
+      "summary": "오케이캐쉬백 메일 시스템 장애, 급한 CS는 네이트온으로 대응 요청",
+      "decision": "오케이캐쉬백 측 시스템 이상으로 메일 발송 불가. 급한 CS 업무는 네이트온으로 문의하도록 임시 대응.",
+      "action_items": [
+        "오케이캐쉬백 관련 긴급 CS 업무는 네이트온으로 문의"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CHX4DH5EU/p1557190400034100"
+    },
+    {
+      "task_id": "T007",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "DB손해보험 타이어뱅크 제휴 이벤트 갱신 1주차(5/2~5/12) 랜딩페이지 수정 요청. 날짜 및 혜택발송 기간 변경 등. 기존 4월에 사용했던 페이지 그대로 적용 요청. SFTP 서버 경로 통해 반영. 기존 DB손해보험 캠페인 운영의 연속.",
+      "entity_name": "DB손해보험",
+      "project_name": "DB손해보험 갱신 이벤트 (타이어뱅크 제휴)",
+      "page_scope": "child",
+      "target_name": "DB손해보험 > DB손해보험 갱신 이벤트 (타이어뱅크 제휴)",
+      "issue_title": "DB손해보험 타이어뱅크 제휴 갱신 이벤트 1주차 랜딩페이지 날짜 업데이트 (5/2~5/12)",
+      "summary": "갱신 이벤트 랜딩페이지 날짜·기간 업데이트, 4월 페이지 그대로 적용 요청",
+      "decision": "기존 4월 페이지 그대로 1번에 적용. 날짜: 5월 2일~5월 12일, 혜택발송 기간: 6월 13일로 변경. SFTP 서버(211.117.60.113) 경로 통해 갱신 1페이지 반영. 리워드: 에쏘일 주유권 2만원.",
+      "action_items": [],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTJWKH0C/p1556780158062700"
+    }
+  ],
+  "uncategorized": []
+}

@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.1",
+  "node": "writer",
+  "run_date": "2019-10-14",
+  "source_file": "Archive_Pincrux/01_Collector/2019-10-14.json",
+  "node_status": "success",
+  "processed_tasks": [
+    {
+      "task_id": "T001",
+      "entity_name": "웰컴저축은행",
+      "project_name": "체크플러스2 M정기적금",
+      "page_scope": "child",
+      "target_name": "웰컴저축은행 > 체크플러스2 M정기적금",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151790",
+      "confluence_page_id": "192151790",
+      "updated_sections": [
+        "판단 정정(모으미 new → 최종 matched): 웰컴저축은행 엔티티 페이지(192151790)가 이미 존재하므로 신규 페이지 생성 대신 기존 페이지에 신규 캠페인 섹션으로 병합함",
+        "신규 섹션 추가: '웰컴저축은행 체크플러스2 M정기적금 캠페인 (2019-10)' — 2019-10-07 날짜 기준 최신 히스토리로 최상단 배치",
+        "단가 쟁점(T001) 판단: 슬랙 채널(#v_웰컴저축은행저축은행, CJCD15KJN) 2019-10-07 15:40~16:03 대화를 원문 순서대로 재확인함. 15:43 '리워드 1만포인트+수수료 1만원(VAT별도)을 리워드 VAT별도 포함 산출한 진행단가 19,091원(VAT별도)' 안내 이후, 15:53 담당자가 'gross는 2만5천원인가요?'라고 명시적으로 질의하였고 16:02 '그로스 25,000원 VAT별도'로 최종 확인 답변(이어 '넹 알겠습니다'로 종결)됨. 대화 순서상 마지막 확정 발언은 25,000원(VAT별도, 그로스 단가)이나, 19,091원은 별도의 정산 기준(CJONE→PINCRUX 정산 진행단가)일 가능성이 높아 동일 항목의 상충으로 단정하지 않고 두 수치를 모두 페이지에 남기며 human_action_required 코멘트(담당자 재확인 권고)를 페이지 내 인용구로 명시함. 사실을 임의로 하나로 확정하지 않음"
+      ]
+    },
+    {
+      "task_id": "T002",
+      "entity_name": "웰컴저축은행",
+      "project_name": "계좌개설",
+      "page_scope": "child",
+      "target_name": "웰컴저축은행 > 계좌개설",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151790",
+      "confluence_page_id": "192151790",
+      "updated_sections": [
+        "기존 섹션 '웰컴저축은행 비대면 계좌개설 캠페인 (2019)'에 운영 히스토리/의사결정 사항/액션 아이템 각 1건씩 추가(2019-10-08, 전매체 종료 처리 완료). 기존 2019-03-19 세팅 이력 및 다른 섹션은 훼손하지 않음"
+      ]
+    },
+    {
+      "task_id": "T003",
+      "entity_name": "NH멤버스",
+      "project_name": "CPA 매체별 잔존율 분석",
+      "page_scope": "child",
+      "target_name": "NH멤버스 > CPA 매체별 잔존율 분석",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/199491593/NH",
+      "confluence_page_id": "199491593",
+      "updated_sections": [
+        "기존 섹션 'NH멤버스 CPA 매체별 잔존율 분석을 위한 개발 방안 확정 (2019-09)'에 2019-09-24 히스토리의 자연스러운 후속으로 2019-10-10 운영 히스토리/의사결정 사항 추가, 기존 액션 아이템(referrer PUBKEY 개발)은 당사측 적용 완료로 체크 처리하고 NH멤버스측 서버반영(10/10)·APP배포(10/14) 확인 액션 아이템 신규 추가"
+      ]
+    },
+    {
+      "task_id": "T004",
+      "entity_name": "KB증권",
+      "project_name": "비대면 계좌개설 이벤트",
+      "page_scope": "child",
+      "target_name": "KB증권 > 비대면 계좌개설 이벤트",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/198279169/KB",
+      "confluence_page_id": "198279169",
+      "updated_sections": [
+        "기존 섹션 'KB증권 비대면 계좌개설 캠페인 (103123) (2019)'에 2019-10-11 운영 히스토리(특별우대수수료 이벤트 문구 전매체 삭제, 페이코 매체 반영 전 홀딩)/의사결정 사항 추가, 액션 아이템 2건(페이코·네이버웹툰·시리즈 반영 확인) 신규 추가. 기존 5월~8월 섹션은 훼손하지 않음"
+      ]
+    },
+    {
+      "task_id": "T005",
+      "entity_name": "미스터블루",
+      "project_name": "AOS/iOS 충전소",
+      "page_scope": "child",
+      "target_name": "미스터블루 > AOS/iOS 충전소",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/196902913",
+      "confluence_page_id": "196902913",
+      "updated_sections": [
+        "판단 정정(모으미 unknown → 최종 matched, Media_Partner > Product): CQL 'title ~ \"미스터블루\" AND space=\"AR\" AND type=page' 조회 결과 기존 페이지(196902913, 카테고리 Media_Partner > Product)가 이미 존재함을 확인함. 지시서에 제시된 'Media_Partner > Project 신규 생성' 가정은 실제 조회 결과와 달라 채택하지 않고, 기존 엔티티 페이지 카테고리(Media_Partner > Product)를 그대로 유지한 채 병합함",
+        "신규 섹션 추가: '[추론된 컨텍스트] 미스터블루 AOS/iOS 충전소 지면 홀딩 (2019-10)' — 기존 '미스터블루 연동 (2019)' 프로젝트와는 별개 프로젝트이므로 2019-10-14 날짜 기준 최신 히스토리로 최상단 배치, unknown 컨텍스트 병합 규칙에 따라 섹션 제목에 '[추론된 컨텍스트]' 말머리 부여"
+      ]
+    }
+  ],
+  "skipped_tasks": []
+}

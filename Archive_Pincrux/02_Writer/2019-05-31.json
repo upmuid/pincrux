@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.1",
+  "node": "writer",
+  "run_date": "2019-05-31",
+  "run_mode": "backfill",
+  "collection_period": {
+    "start": "2019-05-15",
+    "end": "2019-05-31"
+  },
+  "status": "success",
+  "source_file": "Archive_Pincrux/01_Collector/2019-05-31.json",
+  "metrics": {
+    "total_tasks": 7,
+    "processed": 7,
+    "created_new": 1,
+    "updated_existing": 6,
+    "skipped": 0
+  },
+  "processed_tasks": [
+    {
+      "task_id": "T001",
+      "entity_name": "미래에셋대우",
+      "project_name": "클립 금융 제휴 캠페인",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_page_id": "191955009",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955009",
+      "confluence_version": 9,
+      "notes": "이벤트 기간 확정(~5/31), SSGPAY 임직원 소재 결정, 관리자 페이지 계정 공유 방식 변경, 11번가 소재 반려 건 협의, 6월 랜딩페이지 공유, 네이버시리즈 오표기 수정 건 포함"
+    },
+    {
+      "task_id": "T002",
+      "entity_name": "KB증권",
+      "project_name": "다음웹툰 CPI 캠페인",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_page_id": "198279169",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/198279169",
+      "confluence_version": 2,
+      "notes": "단가 13,000원/리워드 10,000원 확정, 케시슬라이드 리워드 1만 캐시 확정, 해피머니 쿠폰 처리 경로 변경, 페이코 쿠폰 코딩 진행 중, 신규 앱키(105973) 생성"
+    },
+    {
+      "task_id": "T003",
+      "entity_name": "웰컴저축은행",
+      "project_name": "OCB 참여적립 캠페인",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_page_id": "192151790",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151790",
+      "confluence_version": 3,
+      "notes": "collector JSON에 confluence_page_id null 기재되었으나 실제 CQL 검색으로 192151790 확인 후 업데이트. OCB 참여적립 캠페인 런칭 확정(2019-05-22)"
+    },
+    {
+      "task_id": "T004",
+      "entity_name": "DB금융투자",
+      "project_name": "CJONE OCB 캠페인",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_page_id": "192151759",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151759",
+      "confluence_version": 3,
+      "notes": "collector JSON에 confluence_page_id null 기재되었으나 실제 CQL 검색으로 192151759 확인 후 업데이트. CJONE OCB 캠페인 런칭 확정(2019-05-22)"
+    },
+    {
+      "task_id": "T005",
+      "entity_name": "미래에셋대우",
+      "project_name": "OCB 참여적립 실적 관리",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_page_id": "191955009",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955009",
+      "confluence_version": 9,
+      "notes": "T001과 동일 페이지(미래에셋대우 191955009)에 별도 섹션으로 추가. OCB 참여적립 실적 저조 확인 및 상단 배너 노출 순위 조정 완료(2019-05-22)"
+    },
+    {
+      "task_id": "T006",
+      "entity_name": "다날",
+      "project_name": "다날 모바일 상품권 CPA 연동",
+      "context_status": "new",
+      "action_taken": "created_new",
+      "confluence_page_id": "198213640",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/198213640",
+      "confluence_version": 1,
+      "parent_page_id": "190447617",
+      "parent_category": "Media_Partner > Product",
+      "notes": "다날 신규 엔티티 페이지 생성. parentId: 190447617 (Media_Partner > Product)"
+    },
+    {
+      "task_id": "T007",
+      "entity_name": "KT 엠모바일",
+      "project_name": "KT CLIP 오퍼월 미니뷰 Crash 버그 수정",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_page_id": "192151605",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151605",
+      "confluence_version": 3,
+      "notes": "오퍼월 미니뷰 Crash 버그 원인(렌더링 오류) 확정 및 수정 SDK 배포 완료(2019-05-27). 구조적 원인 파악 완료건으로 수집 기준 충족"
+    }
+  ],
+  "skipped_tasks": []
+}

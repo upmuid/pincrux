@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.1",
+  "node": "validator",
+  "run_date": "2019-12-14",
+  "source_files": {
+    "collector": "Archive_Pincrux/01_Collector/2019-12-14.json",
+    "writer": "Archive_Pincrux/02_Writer/2019-12-14.json"
+  },
+  "node_status": "success",
+  "review_summary": {
+    "total_reviewed": 6,
+    "passed_cnt": 6,
+    "failed_cnt": 0,
+    "slack_reread_cnt": 2
+  },
+  "validation_results": [
+    {
+      "task_id": "T001",
+      "target_name": "페이앤드 > 티켓 충전소",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192053250",
+      "confluence_page_id": "192053250",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "실제 페이지에 '페이앤드 티켓 충전소 지급비율 및 포인트 전환가치 확정 (2019-12)' 섹션이 신규 추가되어 있음. 지급비율 70%·포인트 전환가치 1원=1티켓 확정 사실, 3건 slack_thread_link 인용 모두 모으미 원본과 정확히 일치. action_item(지급비율 반영 후 Android/iOS 테스트·릴리즈)도 그대로 반영됨. 기존 페이지의 타 섹션(로그아웃 이슈, 자동로그인 검토 등)도 삭제 없이 보존됨."
+    },
+    {
+      "task_id": "T002",
+      "target_name": "페이앤드",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192053250",
+      "confluence_page_id": "192053250",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "'페이앤드 신규 버전 출시(자동로그인·QR코드 간소화 기능 추가) (2019-12)' 섹션이 신규 추가됨. Android 12/10 즉시 이용, iOS 1~2시간내 노출 예정, 12/11 '이수통닭' 가맹점 확대 등 수치·일정이 모으미 원본과 일치. action_item(iOS 노출 완료 확인 후 공유)도 반영됨."
+    },
+    {
+      "task_id": "T003",
+      "target_name": "PINCRUX > 인플루언서 앱 개발(공용 플랫폼 인프라)",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "slack_reread": true,
+      "slack_reread_trigger": "context_status: new — 신규 프로젝트 판단이므로 슬랙 원본 확인. 지정 slack_thread_link(CBU0PHP3P, thread_ts 1575434249.084600) 재확인.",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "(a) 'PINCRUX 인플루언서 앱 개발(공용 플랫폼 인프라) (2019-12)' 신규 섹션이 실제 존재함. (b) 기존 두 섹션 'PINCRUX Creator Membership Community(대청자, 대도서관)'와 'PINCRUX 멤버십 팬 서비스(CJE&M·다이아) 기획'은 원 내용(운영 히스토리·의사결정·액션아이템) 그대로 보존되어 있고 삭제된 부분 없음. (c) 추가된 비고는 '[관련 프로젝트 참고]' 문구로 참고용 안내만 추가했고 원문 사실 왜곡 없음. 슬랙 원본 재확인 결과, 지정 스레드(김판근 12/4 13:37~13:38)의 '인플루언서 프로젝트와 위 SPC와 컬처랜드 SDK가 겹쳤습니다' 및 '컬처랜드 SDK > 인플루언서 > SPC' 인용문이 원문과 정확히 일치함. writer_judgment_note의 공용 플랫폼 추론은 근거(선행 배치의 '인플루언서' 상위 프로젝트 언급, 명칭후보 불일치, API 구조상 멀티채널 해석)를 명시하고 '재검토 필요'로 스스로 유보 표시한 합리적 추론이며 근거 없는 창작으로 볼 수 없음. entity_name을 모으미의 '인플루언서'(root)에서 'PINCRUX'(child)로 재분류한 것도 판단 근거가 투명하게 기록되어 있어 수용 가능."
+    },
+    {
+      "task_id": "T004",
+      "target_name": "SPC > 출석체크+충전소 연동",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/204603424/SPC",
+      "confluence_page_id": "204603424",
+      "slack_reread": true,
+      "slack_reread_trigger": "context_status: new — 신규 페이지 생성이므로 슬랙 원본 확인. 지정 slack_thread_link(CBU0PHP3P, thread_ts 1575434249.084600) 재확인.",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "204603424 페이지가 실제 생성되어 있고, getConfluencePageDescendants(190414849) 조회 결과 parentId가 190414849(Media_Partner>Project)로 확인됨. human_action_required 비고(SPC 사업 주체 성격 재확인 필요)가 페이지 본문에도 동일하게 기재됨. 슬랙 원본 재확인 결과 김판근의 12/4 13:37 히스토리 인용문(출석체크+충전소 세부 정책)과 13:38 우선순위 인용문 모두 원문과 정확히 일치. 결정사항·action_items도 모으미 원본과 동일."
+    },
+    {
+      "task_id": "T005",
+      "target_name": "PINCRUX",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "'PINCRUX 개발팀 업무 프로세스 정비' 섹션에서 기존 2019-01-23 정책(주간 업무 보고 구글 스프레드시트 관리, 개발노트 관리)이 삭제 없이 그대로 유지된 채, 2019-12-05 [재안내] 신규 히스토리(작성주기 매주 금요일→매일, 리소스 투입량 측정 목적 명시)가 병합됨. 의사결정·액션아이템 항목도 기존 항목 보존 + 신규 항목(매일 작성 준수, TOM 공유) 추가 형태로 정상 반영. 쓰미가 context_status를 unknown→matched로 재판단한 근거(목적·대상 동일한 기존 정책 확인)도 페이지 내 명시되어 투명함."
+    },
+    {
+      "task_id": "T006",
+      "target_name": "컬처랜드 > SDK 연동",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192217197",
+      "confluence_page_id": "192217197",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "'컬처랜드 SDK 연동 (2019-12)' 섹션이 신규 추가됨. 인하우스 아이콘(100*100) 등록 필드 오픈, SDK 12/5까지 전달, Android 최소버전 이슈 동반 공유, 개발 리소스 1순위 배정 등 모으미 원본과 정확히 일치. 기존 섹션(광고리스트 맨위이동, 클립 충전소, FAQ)도 삭제 없이 보존됨."
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.1",
+  "node": "validator",
+  "run_date": "2026-07-06",
+  "run_type": "maintenance_cleanup",
+  "note": "정기 파이프라인(daily/backfill) 실행이 아닌, 사용자(Jason) 요청에 의한 In-house > Product 카테고리 페이지 구조 정리 audit. 컨플루언스 AR 스페이스의 In-house > Product 하위 페이지(PINCRUX 및 형제/자식 페이지 5건)가 단일 엔티티 페이지 정책(v3.1.0)과 불일치하게 별도 페이지로 존재하고 있어, 각 페이지 내용이 PINCRUX(191987714) 단일 페이지에 이미 반영되어 있는지 사실 대조 검증함.",
+  "source_files": {
+    "collector_refs": [
+      "Archive_Pincrux/01_Collector/2019-01-07.json",
+      "Archive_Pincrux/01_Collector/2019-01-21.json",
+      "Archive_Pincrux/01_Collector/2019-02-28.json"
+    ],
+    "writer_refs": [
+      "Archive_Pincrux/02_Writer/2019-01-07.json",
+      "Archive_Pincrux/02_Writer/2019-01-21.json",
+      "Archive_Pincrux/02_Writer/2019-02-28.json",
+      "Archive_Pincrux/02_Writer/2019-03-25.json"
+    ]
+  },
+  "node_status": "success",
+  "review_summary": {
+    "total_reviewed": 6,
+    "passed_cnt": 2,
+    "failed_cnt": 4,
+    "slack_reread_cnt": 0
+  },
+  "validation_results": [
+    {
+      "target_name": "핀크럭스 광고 SDK/API 연동 관리",
+      "confluence_space": "AR",
+      "confluence_page_id": "192151574",
+      "confluence_parent_page_id": "191987714",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "PINCRUX 페이지의 '핀크럭스 광고 SDK/API 연동 관리 (2019)' 섹션이 본 페이지 내용을 전부 포함하며 더 상세함(CPE 트래킹 01-15, 구글드라이브 공유 02-07 등 추가 포함). 외부반출금지 보안 경고 문구도 PINCRUX 섹션 히스토리에 유지됨. 완전 중복 — 데이터 손실 없이 삭제 가능."
+    },
+    {
+      "target_name": "핀크럭스 플랫폼 2.0",
+      "confluence_space": "AR",
+      "confluence_page_id": "190480385",
+      "confluence_parent_page_id": "190382081",
+      "result": "PASSED",
+      "error_type": "CONTEXT_DISTORTION (사유 명시, 병합 대상 아님)",
+      "comment": "PINCRUX 페이지의 'PINCRUX 플랫폼 2.0 및 AWS 전환 전략 (2019)' 섹션이 동일 주제를 더 정확하게 포함함. 단, 본 페이지 '3. 주요 의사결정'의 'pizzu 카포인트 컨디션에 따라...' 문구는 모으미 원본 수집 JSON(2019-02-28) 및 PINCRUX 페이지의 검증된 결정문(\"방법론 선택은 신규 개발자 합류 시점 및 역량에 따라 결정하기로 협의함\")과 불일치하며, '카포인트'는 DB손해보험 캠페인 관련 무관 용어로 과거 Writer 실행 중 발생한 오염/혼입으로 추정됨. 해당 미검증 문구는 PINCRUX 페이지에 병합하지 않음 — Jason 확인 권장."
+    },
+    {
+      "target_name": "핀크럭스 플랫폼 모니터링",
+      "confluence_space": "AR",
+      "confluence_page_id": "190513154",
+      "confluence_parent_page_id": "190382081",
+      "result": "FAILED",
+      "error_type": "DATA_LOSS (병합 전)",
+      "comment": "PINCRUX 페이지의 'PINCRUX 플랫폼 운영 인프라' 섹션은 DB 모니터링 로직 변경(01-02)만 포함하고, 본 페이지에만 있는 2019-03-12 execute.pin/ad_info.pin 비정상 트래픽 감지 이력(투믹스 pubkey 910304 연관 조사)이 누락되어 있었음. → 다시쓰미 단계에서 PINCRUX 페이지에 해당 이력 병합 완료 후 PASSED로 전환, 삭제 처리."
+    },
+    {
+      "target_name": "핀크럭스 개발 인프라",
+      "confluence_space": "AR",
+      "confluence_page_id": "190218243",
+      "confluence_parent_page_id": "190382081",
+      "result": "FAILED",
+      "error_type": "DATA_LOSS (병합 전)",
+      "comment": "PINCRUX 페이지에는 Git 형상관리 도입(2019-01-08) 관련 섹션이 전혀 존재하지 않았음(02_Writer/2019-03-25.json T009에서도 스킵 처리된 이력 확인). → 다시쓰미 단계에서 PINCRUX 페이지에 신규 섹션 병합 완료 후 PASSED로 전환, 삭제 처리."
+    },
+    {
+      "target_name": "핀크럭스 광고 플랫폼 클릭/포스트백 연동",
+      "confluence_space": "AR",
+      "confluence_page_id": "191954947",
+      "confluence_parent_page_id": "191987714",
+      "result": "FAILED",
+      "error_type": "DATA_LOSS (병합 전)",
+      "comment": "PINCRUX 페이지 '프로젝트 히스토리' 타임라인에는 2019-01-03 항목이 한 줄로만 언급되어 있었고, 클릭 연동/포스트백 연동의 방향성 정의(핀크럭스↔광고주) 설명이 담긴 전용 섹션이 없었음. → 다시쓰미 단계에서 PINCRUX 페이지에 신규 섹션 병합 완료 후 PASSED로 전환, 삭제 처리."
+    },
+    {
+      "target_name": "컬쳐랜드 (표기 오탈자 중복)",
+      "confluence_space": "AR",
+      "confluence_page_id": "192446484",
+      "confluence_parent_page_id": "190414849",
+      "result": "FAILED",
+      "error_type": "DUPLICATE_ENTITY_TITLE_TYPO (병합 전)",
+      "comment": "Media_Partner > Project 카테고리에 '컬처랜드'(192217197, 정본)와 '컬쳐랜드'(192446484, 오탈자)가 별도 페이지로 존재. 컬쳐랜드 페이지에는 정본에 없는 FAQ(T010: 모바일웹 910231 인벤토리 클릭/실적 누락 이슈)가 있었음. 정본 '컬처랜드' 페이지 자체의 엔티티 개요 표에도 카테고리가 'In-house'로 잘못 기재되어 있어 실제 위치(Media_Partner > Project)와 불일치 — 함께 수정 필요. → 다시쓰미 단계에서 FAQ 내용을 정본 페이지로 병합, 카테고리 오류 수정 후 PASSED로 전환, 오탈자 페이지는 삭제 처리."
+    }
+  ],
+  "human_action_required": [
+    "핀크럭스 플랫폼 2.0(190480385) 페이지의 기존 '주요 의사결정' 문구('pizzu 카포인트 컨디션에 따라...')는 원본 데이터와 불일치하는 것으로 판단되어 PINCRUX 페이지에 병합하지 않았습니다. 과거 Writer 실행 오류로 추정되며, 필요 시 Jason 확인 요망."
+  ]
+}

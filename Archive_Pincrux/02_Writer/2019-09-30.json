@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.1",
+  "node": "writer",
+  "run_date": "2019-09-30",
+  "source_file": "Archive_Pincrux/01_Collector/2019-09-30.json",
+  "node_status": "success",
+  "processed_tasks": [
+    {
+      "task_id": "T001",
+      "entity_name": "DB금융투자",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "DB금융투자",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151759/DB",
+      "confluence_page_id": "192151759",
+      "updated_sections": [
+        "신규 섹션 추가: 'DB금융투자 제휴매체 전 채널 종료 셋팅 (2019-09)' (엔티티 개요 표 바로 아래, 최신 히스토리로 최상단 배치)",
+        "운영 히스토리에 날짜별 개별 사실 2건을 그대로 나열함(2019-09-23 종료셋팅 요청, 2019-09-30 전체 앱키 종료 완료) — context_reference에 병기된 개별 슬랙 링크를 각 항목에 그대로 연결, 임의의 인과관계 해석 추가하지 않음"
+      ]
+    },
+    {
+      "task_id": "T002",
+      "entity_name": "삼성증권",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "삼성증권",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192086150",
+      "confluence_page_id": "192086150",
+      "updated_sections": [
+        "신규 섹션 추가: '삼성증권 9월 누적 목표 관리 및 채널 종료 (2019-09)' (엔티티 개요 표 바로 아래, 최신 히스토리로 최상단 배치)",
+        "운영 히스토리에 날짜별 개별 사실 4건을 그대로 나열함(2019-09-23 OCB 라이브, 2019-09-24 9월 누적 실적 계산, 2019-09-28 OCB 종료, 2019-09-30 전체 앱키 종료 및 광고주 확대 거부) — context_reference에 병기된 개별 슬랙 링크를 각 항목에 그대로 연결, 임의의 인과관계 해석 추가하지 않음"
+      ],
+      "correction_note": "[COO 정정 2026-07-08] 읽어봄이 FAILED(CONTEXT_DISTORTION, 출처불명 수치 의심) 판정에 따라 채널 재조사 완료. 9/24 항목의 누적실적 수치는 원 링크(09:35) 직후 같은 채널 09:44~09:53 대화에 실제 존재함을 확인해 출처를 정확히 재표기했고, '페이코 9/30까지 무조건 진행'을 '삼성페이는 필요, 페이코는 미확정'으로 정정함(컨플루언스 192086150 반영 완료)."
+    },
+    {
+      "task_id": "T003",
+      "entity_name": "웰컴저축은행",
+      "project_name": "다음웹툰 SB",
+      "page_scope": "child",
+      "target_name": "웰컴저축은행 > 다음웹툰 SB",
+      "context_status": "new",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151790",
+      "confluence_page_id": "192151790",
+      "updated_sections": [
+        "신규 섹션 추가: '웰컴저축은행 다음웹툰 SB 신규 캠페인 (2019-09)' — 기존 엔티티 페이지(웰컴저축은행) 내 신규 캠페인 섹션으로 최상단(가장 최근 날짜인 2019-09-24) 배치, 기존 하위 섹션·FAQ·주요 담당자 영역은 훼손하지 않음"
+      ],
+      "correction_note": "[COO 정정 2026-07-08] 읽어봄이 FAILED(CONTEXT_DISTORTION, 완료/요청 시제 왜곡) 판정에 따라 원문 재확인. '전달했으며'(완료)를 '전달을 요청함(완료 여부 미확인)'으로 정정, 액션 아이템도 전달 진행 상태 반영하도록 조정(컨플루언스 192151790 반영 완료). 아울러 딜카건(T004) 재조사 결과 웰컴저축은행 캠페인의 Branch 트래커 실적 소계 불일치 사실을 신규 섹션으로 동일 페이지에 반영함."
+    },
+    {
+      "task_id": "T004",
+      "entity_name": "딜카",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "딜카",
+      "context_status": "new",
+      "action_taken": "created_new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/203128842",
+      "confluence_page_id": "203128842",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/190152706",
+      "confluence_parent_page_id": "190152706",
+      "updated_sections": [
+        "판단 근거(unknown → new 확정): CQL 'title ~ \"딜카\" AND space=\"AR\" AND type=page' 조회 결과 기존 페이지 없음(totalCount=0)을 확인함. 슬랙 원문상 딜카는 PINCRUX가 광고 집행을 대행하는 광고주(카셰어링 서비스)로, 캠페인 실적 대사(PINCRUX-Branch-딜카 3자 대사)를 진행하는 대상으로 확인되어 신규 광고주 엔티티로 최종 판단함. 캠페인 기간이 한정적인 단발 대행 성격으로 판단하여 Client > Project(190152706) 하위에 신규 생성함",
+        "신규 페이지 생성: '딜카' — 엔티티 개요 표 + '딜카 캠페인 실적 대사 불일치 확인 (2019-09)' 섹션 + FAQ/주요 담당자 고정 섹션",
+        "운영 히스토리에 날짜별(시간 포함) 개별 사실 2건을 그대로 나열함(2019-09-16 17:18 조사 요청, 2019-09-16 17:40 조사결과 공유) — 각 항목에 개별 슬랙 링크를 그대로 연결, 임의의 인과관계 해석 추가하지 않음"
+      ],
+      "correction_note": "[COO 정정 2026-07-08] 읽어봄이 FAILED(CONTEXT_DISTORTION, 주체 오귀속) 판정에 따라 원문 재확인. '딜카-Branch 대사에서 소계 차이가 크게 확인됨'은 실제로는 웰컴저축은행 캠페인에서 확인된 사실이며 딜카 자체는 유추/추정 수준이었음을 확인 — 딜카 페이지(203128842)는 '확인 중' 수준으로 서술을 낮추고, 실제 확인된 사실은 웰컴저축은행 페이지(192151790)에 신규 섹션으로 반영함."
+    },
+    {
+      "task_id": "T005",
+      "entity_name": "미래에셋대우",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "미래에셋대우",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955009",
+      "confluence_page_id": "191955009",
+      "updated_sections": [
+        "신규 섹션 추가: '미래에셋대우 리워드(치킨쿠폰) 정산 방식 재변경 (2019-09)' — 2019-09-25 날짜 기준 최신 히스토리로 최상단 배치, 기존 페이지 카테고리(Media_Partner > Product)는 그대로 유지"
+      ]
+    },
+    {
+      "task_id": "T006",
+      "entity_name": "NH멤버스",
+      "project_name": "CPA 매체별 잔존율 분석",
+      "page_scope": "child",
+      "target_name": "NH멤버스 > CPA 매체별 잔존율 분석",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/199491593/NH",
+      "confluence_page_id": "199491593",
+      "updated_sections": [
+        "판단 정정(모으미 Client/new → 최종 matched/Media_Partner>Product): getConfluencePage(199491593)로 확인한 결과 NH멤버스는 기존에 Media_Partner > Product로 이미 등록된 엔티티임. 모으미의 major_category=Client, context_status=new 분류는 카테고리 오분류로 판단하여, 신규 페이지 생성 대신 기존 NH멤버스(199491593) 페이지에 병합함",
+        "신규 섹션 추가: 'NH멤버스 CPA 매체별 잔존율 분석을 위한 개발 방안 확정 (2019-09)' — 2019-09-24 날짜 기준 최신 히스토리로 최상단 배치"
+      ]
+    },
+    {
+      "task_id": "T007",
+      "entity_name": "페이앤드",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "페이앤드",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192053250",
+      "confluence_page_id": "192053250",
+      "updated_sections": [
+        "신규 섹션 추가: '페이앤드 네이버맵 API 마이그레이션 대응 앱 업데이트 준비 완료 (2019-09)' — 2019-09-27 날짜 기준 최신 히스토리로 최상단 배치, 기존 In-house > Product 카테고리 및 하단 정정 비고 유지"
+      ]
+    }
+  ],
+  "skipped_tasks": []
+}

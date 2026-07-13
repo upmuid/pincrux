@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.1",
+  "node": "collector",
+  "run_date": "2019-08-31",
+  "run_mode": "backfill",
+  "period": "2019-08-15 to 2019-08-31",
+  "status": "success",
+  "data_summaries": [
+    {
+      "task_id": "T001",
+      "major_category": "Client",
+      "minor_category": "Product",
+      "context_status": "new",
+      "context_reference": "NH멤버스 신규 매체 연동 첫 등장, 기존 히스토리 없어 신규 처리",
+      "entity_name": "NH멤버스",
+      "project_name": "트래킹 SDK CPA 연동",
+      "page_scope": "root",
+      "target_name": "NH멤버스",
+      "issue_title": "NH멤버스 트래킹 SDK CPA 연동 및 앱 배포 일정 확정, referrer 수집 오류 긴급 수정",
+      "summary": "SDK 연동 후 8/29 앱배포, 9/6 대고객 오픈 예정이었으나 배포 직후 referrer 미수집 버그 발견, 8/30 긴급 수정 재배포 완료",
+      "decision": "NH멤버스 트래킹 SDK 연동 CPA 광고 제공을 위해 8/28 구글플레이 검수, 8/29 앱배포, 8/29 운영환경 테스트, 9/6(예정) 대고객 서비스 오픈 일정으로 진행. 8/29 앱배포 직후 디벨로퍼>분석기능>인앱추적 메뉴에서 NH멤버스 앱코드(PIN10000022)로 수집되는 정보 중 REFERRER 값이 'utm_source=pincrux' 외의 데이터로 들어오는 오류(이소프팅광고를 통한 앱설치 여부(referer 값) 미확인)를 발견하여 8/30 16:00 버그 수정 재배포 완료",
+      "action_items": ["9/6 대고객 서비스 오픈 진행 확인", "재배포 후 referrer 수집 정상화 여부 모니터링"],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBU0PHP3P/p1566896519056400?thread_ts=1566896519.056400&cid=CBU0PHP3P"
+    },
+    {
+      "task_id": "T002",
+      "major_category": "In-house",
+      "minor_category": "Product",
+      "context_status": "unknown",
+      "context_reference": "티켓충전소(웰컴저축은행 계열 서비스로 추정되나 기존 맥락 확인 불가) 개인정보 약관 정책 변경 첫 등장",
+      "entity_name": "티켓충전소",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "티켓충전소",
+      "issue_title": "티켓충전소 개인정보 수집·이용 동의 약관 신설",
+      "summary": "핀크럭스가 회원관리번호/광고이용내역을 수집하는 개인정보 수집·이용 동의 조항 신설, 동의 거부 시 서비스 제공 불가 명시",
+      "decision": "수집자 (주)핀크럭스, 수집목적 티켓충전소 서비스 이용·보상적립/사용내역 확인, 수집항목 회원관리번호·광고이용내역, 보유기간은 서비스 이용 철회 및 제휴사 서비스 회원탈퇴 시까지로 하는 개인정보 수집·이용 동의 조항을 신설. 동의 거부 권리가 있으나 거부 시 티켓충전소 서비스 제공이 불가함을 명시. 신규 개인정보 취급방침 반영 후 약관 개정 완료",
+      "action_items": [],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBU0PHP3P/p1566810603044800?thread_ts=1566810603.044800&cid=CBU0PHP3P",
+      "correction_note": "읽어봄이 FAIL(CONTEXT_DISTORTION) 판정에 따른 총총 정정(2026-07-07). 원 슬랙 스레드 초안(8/27 09:37)에는 수집항목이 CI·회원관리번호·광고이용내역이었으나, 동일 스레드 후속 대화(8/27 13:07 서정철 'CI값 빼주세요' 요청, 8/27 13:08 조혁 코딩본 수정 확정, 8/28 20:01 김지훈 최종 승인)에서 CI가 제외된 회원관리번호·광고이용내역으로 최종 확정됨. 모으미가 최종 확정본이 아닌 중간 초안을 반영한 오류를 정정."
+    },
+    {
+      "task_id": "T003",
+      "major_category": "Client",
+      "minor_category": "Product",
+      "context_status": "matched",
+      "context_reference": "기존 미래에셋대우 매체 운영 히스토리 후속, 신규 매체(코나카드) 확장 및 심의필 갱신",
+      "entity_name": "미래에셋대우",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "미래에셋대우",
+      "issue_title": "심의번호(제19-03517) 갱신 및 코나카드 매체 확장",
+      "summary": "한국금융투자협회 심사필 제19-03517(8/29~10/31) 취득, 11번가/CJONE/OCB/Tmoney/네오위즈/캐시슬라이드/컬쳐랜드/클립 코딩 반영, 코나카드 추가 확장",
+      "decision": "미래에셋대우 심의번호를 한국금융투자협회 심사필 제19-03517호(2019.08.29~2019.10.31)로 갱신하고, 11번가/CJONE/OCB/Tmoney/네오위즈(게임별 코딩)/캐시슬라이드/컬쳐랜드/클립 매체에 코딩 반영 요청. 코나카드는 심의번호 삽입 없이 추가 진행 가능하도록 확장",
+      "action_items": ["8개 매체 코딩본 반영 확인"],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTJWKH0C/p1567125203010300?thread_ts=1567125203.010300&cid=CBTJWKH0C"
+    },
+    {
+      "task_id": "T004",
+      "major_category": "Client",
+      "minor_category": "Product",
+      "context_status": "new",
+      "context_reference": "DB금융투자 첫 등장, 기존 히스토리 없어 신규 처리 (DB손해보험과는 별개 법인)",
+      "entity_name": "DB금융투자",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "DB금융투자",
+      "issue_title": "DB금융투자 x 네오위즈 심의번호 신규 취득",
+      "summary": "한국금융투자협회 심사필 제19-03396호(8/22~12/31) 취득, 랜딩페이지 2종 코딩 반영 진행",
+      "decision": "DB금융투자 x 네오위즈 매체 진행을 위해 한국금융투자협회 심사필 제19-03396호(2019.08.22~2019.12.31) 신규 취득, 랜딩페이지 2종에 코딩 반영 요청",
+      "action_items": ["랜딩페이지 2종 코딩 반영 확인"],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTJWKH0C/p1567037906006100"
+    }
+  ],
+  "uncategorized": [
+    {
+      "raw_text": "미래에셋대우 CJONE 소재 심의기간 만료(8/31) 및 배리에이션 후 재진행 논의 (8/27, #v_미래에셋대우 채널)",
+      "reason": "심의기간 단순 확인 및 배리에이션 일정 조율로 실행 레벨 오퍼레이션에 해당, 구조적 결정 아님"
+    },
+    {
+      "raw_text": "DB손해보험 6월/8월 가입이벤트 페이지 소재 수정요청 (pptx/zip 파일 교환, 8/19~8/20, #03_pincrux_디자인업무)",
+      "reason": "개별 소재 제작·수정 요청 및 파일 전달로 수집 기준 미충족"
+    },
+    {
+      "raw_text": "삼성증권/KB증권 카카오페이머니 소진 및 인보이스 청구 관련 대화 (8/19, 8/30, #v_삼성증권 · #v_kb증권)",
+      "reason": "단건 예산 소진 확인 및 인보이스 금액 캐주얼 협의로, 공식 조건 확정 문서화 없이 대화가 종결되어 수집 기준 미충족"
+    },
+    {
+      "raw_text": "미래에셋대우 소재 제작 요청(프리미엄A 배너/상세/랜딩페이지, 롱투코리아 보스레이브 소재 등, 8/16~8/20, #03_pincrux_디자인업무)",
+      "reason": "개별 소재 제작 요청으로 수집 기준 미충족"
+    },
+    {
+      "raw_text": "카포인트 CPS 캠페인(106668 등) 클릭URL 발급 완료 확인 (8/26, #03_pincrux_개발업무)",
+      "reason": "단순 완료 확인 및 URL 전달로 수집 기준 미충족"
+    },
+    {
+      "raw_text": "팬플러스 tic_view_flag 미전달 이슈 대응, 문화적립 연동타입 OFFERWALL 변경 확인 (8/27, #03_pincrux_개발업무)",
+      "reason": "단건 설정 오류 확인 및 즉시 해결로 종결, 재발/구조적 원인 불명확하여 수집 기준 미충족"
+    },
+    {
+      "raw_text": "하나멤버스 쿠폰할인 소재 커스텀마이징 작업 시작 및 완료 (8/16, 8/21, #03_pincrux_개발업무)",
+      "reason": "개별 소재 제작·수정 작업으로 수집 기준 미충족"
+    },
+    {
+      "raw_text": "웜컴저축은행/티켓충전소 관련 워크샵 비행기표 예매 영문이름 확인 요청 (8/16, #01_공지사항)",
+      "reason": "사내 행정 업무 조율로 비즈니스 맥락과 무관, 수집 기준 미충족"
+    }
+  ]
+}

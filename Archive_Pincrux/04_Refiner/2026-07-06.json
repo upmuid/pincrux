@@ -1,0 +1,118 @@
+{
+  "schema_version": "1.1",
+  "node": "refiner",
+  "run_date": "2026-07-06",
+  "run_type": "maintenance_cleanup",
+  "source_file": "Archive_Pincrux/03_Validator/2026-07-06.json",
+  "node_status": "success",
+  "published_tasks": [
+    {
+      "task_id": "MAINT-001",
+      "target_name": "PINCRUX (병합 대상 페이지)",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "action": "content_merged",
+      "refined_points": [
+        "'핀크럭스 광고 플랫폼 클릭/포스트백 연동 (2019)' 신규 섹션 추가 — 191954947 원문 내용 그대로 반영, 사실관계 변경 없음",
+        "'PINCRUX 개발 인프라 — Git 형상관리 도입 (2019)' 신규 섹션 추가 — 190218243 원문 내용 그대로 반영",
+        "'PINCRUX 플랫폼 운영 인프라' 섹션에 2019-03-12 execute.pin/ad_info.pin 비정상 트래픽 감지 이력 2건 추가 — 190513154 원문 내용 그대로 반영",
+        "프로젝트 히스토리 타임라인에 2019-01-08(Git 도입), 2019-03-12(비정상 트래픽) 항목 시간순 삽입"
+      ],
+      "published_at": "2026-07-06T12:30:48+09:00"
+    },
+    {
+      "task_id": "MAINT-002",
+      "target_name": "핀크럭스 광고 SDK/API 연동 관리",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151574/SDK+API",
+      "confluence_page_id": "192151574",
+      "action": "title_tagged_for_deletion",
+      "refined_points": [
+        "제목에 '(삭제)' 태그 추가 (컨플루언스 MCP에 페이지 삭제 API 없어 수동 삭제 전 표시)",
+        "본문 상단에 정리 안내 배너 추가, 본문 사실관계는 변경하지 않음",
+        "PINCRUX 페이지와 완전 중복 확인됨 — 병합 불필요"
+      ],
+      "published_at": "2026-07-06T12:30:48+09:00"
+    },
+    {
+      "task_id": "MAINT-003",
+      "target_name": "핀크럭스 광고 플랫폼 클릭/포스트백 연동",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191954947",
+      "confluence_page_id": "191954947",
+      "action": "content_merged_then_title_tagged_for_deletion",
+      "refined_points": [
+        "PINCRUX 페이지로 내용 선병합 완료 확인 후 제목에 '(삭제)' 태그 추가",
+        "본문 상단에 정리 안내 배너 추가, 본문 사실관계는 변경하지 않음"
+      ],
+      "published_at": "2026-07-06T12:30:48+09:00"
+    },
+    {
+      "task_id": "MAINT-004",
+      "target_name": "핀크럭스 플랫폼 모니터링",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/190513154",
+      "confluence_page_id": "190513154",
+      "action": "content_merged_then_title_tagged_for_deletion",
+      "refined_points": [
+        "2019-03-12 이상 트래픽 감지 이력 PINCRUX 페이지로 선병합 완료 확인 후 제목에 '(삭제)' 태그 추가",
+        "본문 상단에 정리 안내 배너 추가, 본문 사실관계는 변경하지 않음"
+      ],
+      "published_at": "2026-07-06T12:30:48+09:00"
+    },
+    {
+      "task_id": "MAINT-005",
+      "target_name": "핀크럭스 개발 인프라",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/190218243",
+      "confluence_page_id": "190218243",
+      "action": "content_merged_then_title_tagged_for_deletion",
+      "refined_points": [
+        "Git 형상관리 도입 이력 PINCRUX 페이지로 선병합 완료 확인 후 제목에 '(삭제)' 태그 추가",
+        "본문 상단에 정리 안내 배너 추가, 본문 사실관계는 변경하지 않음"
+      ],
+      "published_at": "2026-07-06T12:30:48+09:00"
+    },
+    {
+      "task_id": "MAINT-006",
+      "target_name": "핀크럭스 플랫폼 2.0",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/190480385/2.0",
+      "confluence_page_id": "190480385",
+      "action": "title_tagged_for_deletion",
+      "refined_points": [
+        "제목에 '(삭제)' 태그 추가",
+        "본문 상단에 정리 안내 배너 추가 — 기존 '주요 의사결정' 문구가 검증된 원본과 불일치함을 명시(병합하지 않음)",
+        "본문 사실관계 임의 수정 없음(No Hallucination 원칙 준수) — 불일치 사항은 human_action_required로 총총에게 보고"
+      ],
+      "published_at": "2026-07-06T12:30:48+09:00"
+    },
+    {
+      "task_id": "MAINT-007",
+      "target_name": "컬처랜드 (정본 페이지)",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192217197",
+      "confluence_page_id": "192217197",
+      "action": "content_merged_and_metadata_corrected",
+      "refined_points": [
+        "오탈자 중복 페이지 '컬쳐랜드'(192446484)의 FAQ(T010: 모바일웹 910231 인벤토리 클릭/실적 누락) 원문 그대로 병합, 표기만 '컬처랜드'로 통일",
+        "엔티티 개요 표의 카테고리 오류 수정: In-house → Media_Partner > Project (실제 페이지 위치 및 유형과 일치시킴)"
+      ],
+      "published_at": "2026-07-06T12:37:48+09:00"
+    },
+    {
+      "task_id": "MAINT-008",
+      "target_name": "컬쳐랜드 (표기 오탈자 중복)",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192446484",
+      "confluence_page_id": "192446484",
+      "action": "content_merged_then_title_tagged_for_deletion",
+      "refined_points": [
+        "정본 페이지 '컬처랜드'(192217197)로 FAQ 내용 선병합 완료 확인 후 제목에 '(삭제)' 태그 추가",
+        "본문 상단에 정리 안내 배너 추가, 본문 사실관계는 변경하지 않음"
+      ],
+      "published_at": "2026-07-06T12:37:48+09:00"
+    }
+  ]
+}

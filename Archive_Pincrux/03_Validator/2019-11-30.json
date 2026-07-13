@@ -1,0 +1,122 @@
+{
+  "schema_version": "1.1",
+  "node": "validator",
+  "run_date": "2019-11-30",
+  "source_files": {
+    "collector": "Archive_Pincrux/01_Collector/2019-11-30.json",
+    "writer": "Archive_Pincrux/02_Writer/2019-11-30.json"
+  },
+  "node_status": "success",
+  "review_summary": {
+    "total_reviewed": 8,
+    "passed_cnt": 8,
+    "failed_cnt": 0,
+    "slack_reread_cnt": 8
+  },
+  "validation_results": [
+    {
+      "task_id": "T001",
+      "target_name": "삼성카드",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/204603393",
+      "confluence_page_id": "204603393",
+      "slack_reread": true,
+      "slack_reread_trigger": "context_status: new — 신규 페이지 생성",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "슬랙 원문(서정철, 2019-11-27 13:33:18) 대조 결과 인용 워딩·발신자·시점 일치. 계약 상태를 [체결 예정](미완료)으로 정확히 명시하여 '체결 완료'로 왜곡되지 않음. 액션 아이템(임직원 발급 협조, 16:00 데드라인) 모두 반영됨."
+    },
+    {
+      "task_id": "T002",
+      "target_name": "SSG(신세계)",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/204636161",
+      "confluence_page_id": "204636161",
+      "slack_reread": true,
+      "slack_reread_trigger": "context_status: new — 신규 페이지 생성",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "슬랙 스레드(김판근, 2019-11-20 23:05:48) 대조 결과 담당자 배정(할인쿠폰/리워드몰/충전소) 및 우선순위 정책 워딩·발신자 일치. 액션 아이템 3건 모두 컨플루언스 반영 확인."
+    },
+    {
+      "task_id": "T003",
+      "target_name": "SSG(신세계) > SSG 리워드몰(쇼핑몰) 연동",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/204636161",
+      "confluence_page_id": "204636161",
+      "slack_reread": true,
+      "slack_reread_trigger": "context_status: new — 신규 페이지 생성(동일 스레드 후속 메시지)",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "동일 스레드 내 후속 답글(김판근, 2019-11-22 01:18:08) 확인. SDK 단독 노출 대신 쇼핑몰 전체 연동 방식 채택 결정이 왜곡 없이 반영됨. T002와 같은 페이지 내 별도 섹션으로 정상 공존, 기존 섹션 손상 없음."
+    },
+    {
+      "task_id": "T004",
+      "target_name": "페이앤드 > 자동로그인 기능",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192053250",
+      "confluence_page_id": "192053250",
+      "slack_reread": true,
+      "slack_reread_trigger": "context_status: new — 신규 섹션 추가",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "3건의 개별 permalink(김상원 11-19, 원성진 11-19, 조혁 11-22)를 모두 열어 발신자·시점 대조 완료, 사실관계 일치. 스토어(심사) 버전 제외 사실이 정확히 유지됨. 액션 아이템 체크박스([x]) 완료 상태로 정확히 반영. 참고: 01_Collector의 원성진 인용문이 원문 대비 경미하게 의역되었으나(보안수준 문장), 의미 왜곡은 없고 컨플루언스 본문은 원문 취지를 정확히 요약함."
+    },
+    {
+      "task_id": "T005",
+      "target_name": "페이앤드 > 로그아웃 기능",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192053250",
+      "confluence_page_id": "192053250",
+      "slack_reread": true,
+      "slack_reread_trigger": "context_status: new — 신규 섹션 추가 및 미결 상태 확인 필요",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "슬랙 원문(김상원, 2019-11-29 17:09:03)과 인용문이 축약 없이 거의 완전히 일치. [미결] 상태가 컨플루언스에 명확히 유지되어 확정처럼 서술되지 않음. 옵션 1/2 액션 아이템 정확히 반영."
+    },
+    {
+      "task_id": "T006",
+      "target_name": "PINCRUX",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714",
+      "confluence_page_id": "191987714",
+      "slack_reread": true,
+      "slack_reread_trigger": "context_status: new — 신규 섹션 추가",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "슬랙 원문(서정철, 2019-11-22 15:34:15)과 인용 워딩 일치. 채용요청서 양식·승인 프로세스 액션 아이템 2건 정확히 반영, 기존 PINCRUX 페이지 다른 섹션 손상 없음."
+    },
+    {
+      "task_id": "T007",
+      "target_name": "PINCRUX",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714",
+      "confluence_page_id": "191987714",
+      "slack_reread": true,
+      "slack_reread_trigger": "context_status: new — 신규 섹션 추가",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "슬랙 원문(허성원, 2019-11-22 14:50:27)과 3개 변경사항(보고체계 간소화/연차사유란 삭제/반반차 신설) 워딩 일치. action_items가 빈 배열인 것도 원문에 후속 태스크가 없는 공지성 결정이므로 타당하며, 컨플루언스에도 '등록된 액션 아이템 없음'으로 정확히 반영됨."
+    },
+    {
+      "task_id": "T008",
+      "target_name": "PINCRUX > Creator Membership Community(대청자)",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714",
+      "confluence_page_id": "191987714",
+      "slack_reread": true,
+      "slack_reread_trigger": "context_status: new (원 collector 분류는 unknown) — 신규 판단 및 기존 섹션 병합 검증 필요",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "슬랙 스레드(CBU0PHP3P, thread_ts=1574042836.024700) 전체 대조 결과 4개 인용문(김판근/지리산/서정철 x2) 모두 발신자·시점·워딩 일치. 쓰미가 기존 'PINCRUX 멤버십 팬 서비스(CJE&M·다이아)' 섹션과 별개 프로젝트로 판단한 근거(대상 인물 상이: 대도서관 vs CJE&M·다이아, 별도 도메인 구매, 별도 AWS 보안정책 확인, 프로젝트명 표기 상이)를 컨플루언스 본문에서 확인함. 두 섹션이 실제로 분리되어 있고 기존 CJE&M·다이아 섹션의 히스토리·액션아이템이 손상 없이 그대로 보존됨(OVERWRITE_ERROR 없음). 판단 근거가 원문에 기반해 타당하며, 향후 연관성 확인 시 재검토가 필요하다는 유보 문구도 유지됨."
+    }
+  ]
+}

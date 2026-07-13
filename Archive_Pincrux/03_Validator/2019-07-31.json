@@ -1,0 +1,122 @@
+{
+  "schema_version": "1.1",
+  "node": "validator",
+  "run_date": "2019-07-31",
+  "source_files": {
+    "collector": "Archive_Pincrux/01_Collector/2019-07-31.json",
+    "writer": "Archive_Pincrux/02_Writer/2019-07-31.json"
+  },
+  "node_status": "success",
+  "review_summary": {
+    "total_reviewed": 8,
+    "passed_cnt": 8,
+    "failed_cnt": 0,
+    "slack_reread_cnt": 0
+  },
+  "validation_results": [
+    {
+      "task_id": "T001",
+      "target_name": "네오위즈",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955009",
+      "confluence_page_id": "191955009",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "미래에셋대우 페이지 내 신규 섹션에 KB증권 방식 통일 결정, 리뉴얼 대상 5개 캠페인(뉴맥고/섯다, 포커, 슬롯, 블랙잭/바카라, 마이베가스) 및 action_items 2건 모두 왜곡·누락 없이 반영됨. 기존 섹션(해피포인트, 삼성페이 정산, 6월 히스토리 등) 보존 확인."
+    },
+    {
+      "task_id": "T002",
+      "target_name": "해피포인트",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955009",
+      "confluence_page_id": "191955009",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "\"매월 5천원씩 지급\" 오삽입 문구 및 삭제·재송부 결정이 정확히 반영됨. 동일 페이지 내 T001 섹션과 병존하며 상호 훼손 없음."
+    },
+    {
+      "task_id": "T003",
+      "target_name": "삼성증권",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192086150",
+      "confluence_page_id": "192086150",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "7/17 기준 신규 3,900건 목표 중 600건 부족 수치, 삼성페이 편중 의혹, 별도 문의 보류 결정, action_items 2건 모두 정확 반영. 기존 다수 섹션(카카오페이지 CPM, 계좌개설 CPA 등) 훼손 없음."
+    },
+    {
+      "task_id": "T004",
+      "target_name": "삼성페이",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192086150",
+      "confluence_page_id": "192086150",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "심의번호 제19-B2282호(2019.07.22~2020.07.21) 갱신 사항 정확 반영. action_items 없음은 모으미 원본과 일치."
+    },
+    {
+      "task_id": "T005",
+      "target_name": "삼성증권",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192086150",
+      "confluence_page_id": "192086150",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "8/1 잠정 중단, 8/5~8/12 재라이브 일정, action_items 2건 모두 정확 반영. T003과 동일 페이지 내 별도 섹션으로 정상 분리됨."
+    },
+    {
+      "task_id": "T006",
+      "target_name": "네이버페이",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/198279169",
+      "confluence_page_id": "198279169",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "KB증권 x 네이버페이 캠페인 2019.07.31 종료 결정이 정확 반영됨. 기존 쿠폰 미지급 이슈, 티머니 등 타 섹션 보존 확인."
+    },
+    {
+      "task_id": "T007",
+      "target_name": "웰컴저축은행",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151790",
+      "confluence_page_id": "192151790",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "10만건 목표(7/22~31), 네오위즈 매체 제안, action_items 2건(PPT 전달, 금주 디자인 제작) 모두 정확 반영. 기존 CPS/OCB 등 섹션 훼손 없음."
+    },
+    {
+      "task_id": "T008",
+      "target_name": "페이앤드",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714",
+      "confluence_page_id": "191987714",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "human_action_required: 쓰미가 사내 정산시스템 '페이앤드'와 기존 클라이언트 엔티티 '페이앤드'(192053250, 인터파크/CLIP)를 별개 대상으로 판단한 근거(사업 성격·이해관계자 상이)는 합리적임. 실제 확인 결과 PINCRUX(191987714) 페이지 내 신규 섹션에 8/1 5~9호 회원사(창비/계열사, 핀크럭스, 블랙홀릭) 확대 적용 결정, 7/22 앱 업데이트 논의, 7/26 iOS API 중복 오류 확인 요청, action_items 2건 모두 정확 반영됨. 명칭 혼동 방지 비고(\"본 섹션의 '페이앤드'는 사내 정산 시스템 명칭이며... 동명이인 관계로 서로 다른 대상임\")가 섹션 본문에 실제로 삽입되어 있음을 확인. 기존 페이앤드(192053250) 페이지는 lastModified 기준 금번 실행으로 변경되지 않았으며 인터파크 연동/CLIP 내용만 유지되어 OVERWRITE_ERROR나 명칭 혼동으로 인한 사실 오염 없음. 다만 두 동명 엔티티가 같은 AR 스페이스에 별도 페이지로 공존하는 구조 자체는 향후 검색·탐색 시 혼동 소지가 있어 총총의 엔티티 명명 정책 재검토가 필요할 수 있음."
+    }
+  ]
+}

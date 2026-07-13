@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.1",
+  "node": "refiner",
+  "run_date": "2019-10-31",
+  "source_file": "Archive_Pincrux/03_Validator/2019-10-31.json",
+  "node_status": "success",
+  "published_tasks": [
+    {
+      "task_id": "T001",
+      "target_name": "웰컴저축은행 > 롯데홈쇼핑 첫거래적금",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151790",
+      "confluence_page_id": "192151790",
+      "refined_points": [
+        "기존 섹션이 이미 확정형 종결어미(~로 변경됨/확정)와 볼드체·체크리스트 구조를 충족하고 있어 추가 교정 없음"
+      ],
+      "published_at": "2026-07-09T10:50:00+09:00"
+    },
+    {
+      "task_id": "T002",
+      "target_name": "KB증권",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/198279169/KB",
+      "confluence_page_id": "198279169",
+      "refined_points": [
+        "출처 재표기 후 '문구 변경 필요 여부가 논의됨(심의 이슈 없으면 그대로 진행 가능)'이라는 병렬 결합 문장을 두 문장으로 분리",
+        "조건부 결론('심의 이슈가 없으면 그대로 진행 가능함')을 볼드체로 강조 처리하여 의사결정 사항을 명확화",
+        "사실관계(날짜, 발언자, 출처 링크, 결론) 변경 없이 문장 구조만 정제"
+      ],
+      "published_at": "2026-07-09T10:50:00+09:00"
+    },
+    {
+      "task_id": "T003",
+      "target_name": "KB증권",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/198279169/KB",
+      "confluence_page_id": "198279169",
+      "refined_points": [
+        "기존 섹션이 이미 확정형 문어체·볼드체·체크리스트 구조를 충족하고 있어 추가 교정 없음"
+      ],
+      "published_at": "2026-07-09T10:50:00+09:00"
+    },
+    {
+      "task_id": "T004",
+      "target_name": "미래에셋대우",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955009",
+      "confluence_page_id": "191955009",
+      "refined_points": [
+        "출처 재표기 후 2019-10-31 운영 히스토리 문장을 '심의필이 나와,' → '심의필이 확보됨에 따라,'로 교정하여 확정형 문어체로 정리",
+        "쉼표로 나열된 두 개의 후속 조치(라이브 요청/예정일 공유)를 절 단위로 분리해 가독성 개선",
+        "사실관계(날짜, 발언자, 출처 링크, 결정 내용) 변경 없이 문장 표현만 정제"
+      ],
+      "published_at": "2026-07-09T10:50:00+09:00"
+    },
+    {
+      "task_id": "T005",
+      "target_name": "PINCRUX > 멤버십 커뮤니티(가칭)",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "refined_points": [
+        "신규 섹션이 이미 [표기 불확실 안내] 인용구, 볼드체 의사결정, 체크리스트 액션 아이템 구조를 충족하고 있어 추가 교정 없음"
+      ],
+      "published_at": "2026-07-09T10:50:00+09:00"
+    },
+    {
+      "task_id": "T006",
+      "target_name": "PINCRUX > 제우스 리뉴얼",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "refined_points": [
+        "신규 섹션이 이미 확정형 문어체와 볼드체 구조를 충족하고 있어 추가 교정 없음"
+      ],
+      "published_at": "2026-07-09T10:50:00+09:00"
+    }
+  ]
+}
