@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.1",
+  "node": "writer",
+  "run_date": "2020-03-31",
+  "source_file": "Archive_Pincrux/01_Collector/2020-03-31.json",
+  "node_status": "success",
+  "processed_tasks": [
+    {
+      "task_id": "T001",
+      "entity_name": "SK플래닛",
+      "project_name": "CASK 구독서비스 연동",
+      "page_scope": "child",
+      "target_name": "SK플래닛 > CASK 구독서비스 연동",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/206077953/SK",
+      "confluence_page_id": "206077953",
+      "updated_sections": ["CASK 구독서비스 연동 (2020-03) [신규 추가]"]
+    },
+    {
+      "task_id": "T002",
+      "entity_name": "컬처랜드",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "컬처랜드",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192217197",
+      "confluence_page_id": "192217197",
+      "updated_sections": ["엔티티 개요 (계약 주체 행 추가)", "엔티티 개요 하단 비고 (2020-03-23 갱신, 계약주체 핀크럭스→릴라 변경 및 매체코드 910367/910263 예외처리 확인사항 반영)"]
+    },
+    {
+      "task_id": "T003",
+      "entity_name": "오퍼월",
+      "project_name": "하나멤버스 연동",
+      "page_scope": "child",
+      "target_name": "오퍼월 > 하나멤버스 연동",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151821",
+      "confluence_page_id": "192151821",
+      "updated_sections": ["하나멤버스 연동 (2020-03) [신규 추가]"]
+    },
+    {
+      "task_id": "T004",
+      "entity_name": "미래에셋대우",
+      "project_name": "주식거래리워드 CPA 연동(계좌개설 실시간+최초거래 익일)",
+      "page_scope": "child",
+      "target_name": "미래에셋대우 > 주식거래리워드 CPA 연동(계좌개설 실시간+최초거래 익일)",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955009",
+      "confluence_page_id": "191955009",
+      "updated_sections": ["미래에셋대우 주식거래리워드 CPA 연동(계좌개설 실시간+최초거래 익일) (2020-02) > 운영 히스토리", "미래에셋대우 주식거래리워드 CPA 연동(계좌개설 실시간+최초거래 익일) (2020-02) > 의사결정 사항", "미래에셋대우 주식거래리워드 CPA 연동(계좌개설 실시간+최초거래 익일) (2020-02) > 액션 아이템"]
+    },
+    {
+      "task_id": "T005",
+      "entity_name": "SPC",
+      "project_name": "해피포인트 클로버 충전소(교환소)",
+      "page_scope": "child",
+      "target_name": "SPC > 해피포인트 클로버 충전소(교환소)",
+      "context_status": "new",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/204603424/SPC",
+      "confluence_page_id": "204603424",
+      "updated_sections": ["해피포인트 클로버 충전소(교환소) (2020-03) [신규 추가]"]
+    },
+    {
+      "task_id": "T006",
+      "entity_name": "페이앤드",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "페이앤드",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192053250",
+      "confluence_page_id": "192053250",
+      "updated_sections": ["엔티티 개요 하단 비고 (2020-03-18 갱신, 약관·개인정보처리방침 등 5종 URL 개정본 전달 및 확인요청 신규 추가)"]
+    }
+  ],
+  "skipped_tasks": []
+}

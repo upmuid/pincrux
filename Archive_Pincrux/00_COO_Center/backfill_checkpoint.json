@@ -1,8 +1,22 @@
 {
-  "last_completed_period": "2019-12-31",
-  "next_period_start": "2020-01-01",
-  "completed_weeks": 49,
-  "last_run_date": "2026-07-13",
+  "last_completed_period": "2020-08-31",
+  "next_period_start": "2020-09-01",
+  "completed_weeks": 69,
+  "last_run_date": "2026-07-21",
+  "batch_cadence": "monthly (2026-07-13부터 반달→월단위 전환, Jason 지시)",
+  "pending_review": [
+    {"item": "쿠프마케팅(213286923) 신규 엔티티 major_category 확정", "batch": "2020-08-31", "status": "partially_resolved", "note": "정식 명칭은 2026-07-21 Jason 확인으로 '쿠프마케팅' 확정됨('쿠포마케팅'은 alias로 유지). entity_manifest.json 갱신 완료. major_category(Media_Partner 잠정, Media_Partner 폴더 210894849 하위 생성됨)만 Jason 재확인 필요."},
+    {"item": "피플카(212631553) 신규 엔티티 major_category 확정", "batch": "2020-07-31", "note": "쓰미가 슬랙 원문 맥락상 Client로 추정 분류하여 신규 페이지 생성함(Client 폴더 210665474 하위). entity_manifest.json에 human_action_required로 임시 등록. Jason 확인 필요."},
+    {"item": "아이허브-카카오페이지(OHC) 매체/광고주 관계 불명확", "batch": "2020-02-29", "note": "major_category 확정 불가로 skipped 처리됨, Jason 확인 필요"},
+    {"item": "네오위즈/애디스콥(209518599) 엔티티명 정정", "batch": "2020-05-31", "status": "resolved", "note": "05월 배치에서 쓰미가 '네오위즈'로 신규생성했던 페이지를 읽어봄이 검증+슬랙 원문 재확인으로 1차 '애디스콕'으로 정정했으나, 2026-07-16 Jason 확인 결과 '애디스콥(Adiscope)'은 네오위즈의 광고 플랫폼 브랜드명이며 별개 회사가 아님. entity_name은 최종적으로 '네오위즈'로 확정, '애디스콥'은 별칭 처리. entity_manifest.json/client_media_registry.md 갱신 완료. 페이지 제목 정정('애디스콕'→'네오위즈')도 2026-07-16 테스트 실행 시 완료(v0_coo.md 4-D절 대기열 5번)."},
+    {"item": "일회성 구조 정비 작업 대기열 (v0_coo.md 4-D절)", "batch": "구조개선", "status": "partially_resolved", "note": "2026-07-16 Jason 지시 5건 중 진행 상황: (1) '핑크럭스'→'핀크럭스' 전수 정정 — 2026-07-16 테스트 실행 시 AR 스페이스 57개 페이지 전수 확인 완료, 오탈자 0건(이미 전량 정상 표기). (2) 폴더 구조 — Jason이 실제 네이티브 폴더(Client/Media_Partner/In-house+IH_Policy/IH_Product)를 직접 생성, Project/Product 하위구분 자체가 폐기되어 완료 처리. (3) CLUV 독립 페이지 신설 — 완료(211320841, IH_Product 하위), 이후 멤버십 팬 서비스(CJE&M·다이아) 섹션도 동일 프로젝트로 추가 확인되어 2차 이관 완료. PINCRUX 잔여 섹션 전량(조직인사/개발프로세스 추가분 + 신규 페이지 '사업·정책 결정 히스토리' 211550226 20건)도 재분류 이관 완료 — PINCRUX(191987714)는 이제 엔티티개요+4개 리다이렉트 스텁+타임라인(인덱스)+FAQ+담당자만 남은 허브 페이지. (4) PINCRUX 제목 변경 — 재보류. 애초 '멤버십 팬 서비스만 남는다' 가정이 틀렸던 데 이어, 이제 그 콘텐츠조차 CLUV로 이관되어 페이지가 순수 인덱스 역할만 하므로 제목을 그대로 'PINCRUX'(허브)로 둘지 다른 이름으로 바꿀지 Jason 재확인 필요(유일하게 남은 미해결 항목). (5) 209518599 페이지 제목 '애디스콕'→'네오위즈' 정정 — 2026-07-16 테스트 실행 시 완료. 추가로 minor_category(Project/Product) 개념 자체를 폐기(엔티티 51건에서 필드 제거 완료, Product 명명은 IH_Product 폴더명으로만 존속). **5건 중 4건 완료, 1건(4번 PINCRUX 제목)만 Jason 재확인 대기.**"},
+    {"item": "네오위즈 CPS 쇼핑몰(피망몰) 공동사업 계약 미확정", "batch": "2020-05-31", "status": "resolved", "note": "5월 말 시점 계약 미서명이었으나, 6월 배치(2020-06-30.json T001)에서 확인 결과 6월 1일 네오위즈 내부 협의 완료되어 판매수수료 5:5 조건으로 계약 완료됨(50:50 협의안이 아닌 5:5로 최종 확정). 쓰미가 네오위즈>피망몰 CPS 리워드 쇼핑몰 하위 페이지에 반영 필요."},
+    {"item": "미래에셋대우(191955009) 페이지 카테고리 오류", "batch": "2020-03-31", "status": "resolved", "note": "2026-07-14 Jason 확인 후 Client>Project로 페이지 이동·라벨 정정 완료."},
+    {"item": "오퍼월(192151821) 페이지 카테고리 오류", "batch": "2020-04 registry 점검", "status": "resolved", "note": "2026-07-15 Jason 확인 후 In-house>Product로 페이지 이동·라벨 정정 완료."},
+    {"item": "PINCRUX 내 Cluv/인플루언서앱/대청자 3개 섹션 통합", "batch": "2020-04", "status": "resolved", "note": "2026-07-15 동일 프로젝트로 확인되어 하나의 통합 섹션으로 병합 완료(원본 히스토리·의사결정·액션아이템 전량 보존)."},
+    {"item": "PINCRUX 페이지 조직·인사정책/개발프로세스 분리", "batch": "구조개선", "status": "resolved", "note": "2026-07-15 각각 독립 페이지(209321985, 209256450)로 이관 완료. PINCRUX(191987714)는 제품/프로젝트 전용으로 정리됨."},
+    {"item": "파이프라인 워크플로 개편 (읽어봄이/다시쓰미 조건부 실행, 슬랙 검색 2단계 전략)", "batch": "구조개선", "status": "resolved", "note": "2026-07-15 v0/v1/v2_coo·collector·writer 지침 반영 완료. 다음 배치(5월)부터 적용."}
+  ],
   "history": [
     {"period_end": "2019-01-07", "weeks": 1, "run_date": "2026-06-12"},
     {"period_end": "2019-01-21", "weeks": 3, "run_date": "2026-06-12"},
@@ -24,6 +38,15 @@
     {"period_end": "2019-11-14", "weeks": 43, "run_date": "2026-07-08"},
     {"period_end": "2019-11-30", "weeks": 45, "run_date": "2026-07-09"},
     {"period_end": "2019-12-14", "weeks": 47, "run_date": "2026-07-09"},
-    {"period_end": "2019-12-31", "weeks": 49, "run_date": "2026-07-13"}
+    {"period_end": "2019-12-31", "weeks": 49, "run_date": "2026-07-13"},
+    {"period_end": "2020-01-14", "weeks": 51, "run_date": "2026-07-13"},
+    {"period_end": "2020-01-31", "weeks": 53, "run_date": "2026-07-13"},
+    {"period_end": "2020-02-29", "weeks": 57, "run_date": "2026-07-13"},
+    {"period_end": "2020-03-31", "weeks": 61, "run_date": "2026-07-14"},
+    {"period_end": "2020-04-30", "weeks": 65, "run_date": "2026-07-15"},
+    {"period_end": "2020-05-31", "weeks": 69, "run_date": "2026-07-16"},
+    {"period_end": "2020-06-30", "weeks": 69, "run_date": "2026-07-16"},
+    {"period_end": "2020-07-31", "weeks": 69, "run_date": "2026-07-20"},
+    {"period_end": "2020-08-31", "weeks": 69, "run_date": "2026-07-21"}
   ]
 }

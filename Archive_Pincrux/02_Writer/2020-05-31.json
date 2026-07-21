@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.1",
+  "node": "writer",
+  "run_date": "2020-05-31",
+  "run_mode": "backfill",
+  "source_file": "Archive_Pincrux/01_Collector/2020-05-31.json",
+  "node_status": "success",
+  "processed_tasks": [
+    {
+      "task_id": "T001",
+      "entity_name": "네오위즈",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "네오위즈",
+      "context_status": "new",
+      "action_taken": "CQL로 '네오위즈' 기존 페이지 부재를 확인 후, Media_Partner > Project(190414849) 하위에 신규 엔티티 페이지를 생성함. 공동사업/조인트벤처 성격상 major_category(Media_Partner vs 별도 분류) 재확인이 필요함을 human_action_required로 페이지 본문 및 액션 아이템에 명시함. 과거 미래에셋대우 페이지(2019-08~09월)에 언급된 동명의 '네오위즈'(게임별 코딩 매체명)와는 무관한 별개 맥락임을 CQL 및 원문 대조로 확인하여 비고에 기록함.",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/209518599",
+      "confluence_page_id": "209518599",
+      "confluence_parent_page_id": "190414849",
+      "updated_sections": [
+        "엔티티 개요",
+        "네오위즈(피망) 리워드형 CPS 쇼핑몰 신규 공동사업 계약 검토 (2020-05)"
+      ]
+    },
+    {
+      "task_id": "T002",
+      "entity_name": "PINCRUX",
+      "project_name": "PINCRUX Cluv(클럽) — Creator Membership Community 통합 프로젝트",
+      "page_scope": "child",
+      "target_name": "PINCRUX > PINCRUX Cluv(클럽) — Creator Membership Community 통합 프로젝트",
+      "context_status": "matched",
+      "action_taken": "getConfluencePage(191987714)로 Cluv 섹션에 3분기 연기/QA 관련 내용이 아직 반영되지 않았음을 재확인한 뒤(중복 반영 방지), 운영 히스토리에 2020-05-08(베타 AOS/Admin QA 완료, iOS QA 진행 중)·2020-05-19(정식 오픈 3분기 연기 회신) 항목을 추가하고, 의사결정 사항에 '정식 오픈 일정 3분기 변경 확정' 1건을 추가했으며, 액션 아이템에 iOS 베타 QA 완료 등 후속 항목 4건을 신규 체크박스로 추가함. 기존 통합 판단 근거(2026-07-15 총총 확인 이력 포함)는 변경 없이 보존함.",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "updated_sections": [
+        "PINCRUX Cluv(클럽) — Creator Membership Community(대청자,대도서관) 통합 프로젝트 > 운영 히스토리",
+        "PINCRUX Cluv(클럽) — Creator Membership Community(대청자,대도서관) 통합 프로젝트 > 의사결정 사항",
+        "PINCRUX Cluv(클럽) — Creator Membership Community(대청자,대도서관) 통합 프로젝트 > 액션 아이템"
+      ]
+    }
+  ],
+  "skipped_tasks": [
+    {
+      "raw_text": "'애디스콕'(슬랙 원문 표기, 재확인 필요)이 (1) 네오위즈 CPS 리워드 쇼핑몰 수익분배(5:5) 협상 상대방, (2) PINCRUX Cluv 정식 오픈일정 문의 주체로 동시 등장. entity_manifest 미등록.",
+      "reason": "CQL(title/text ~ '애디스콕')로 확인한 결과 독립된 엔티티 페이지가 존재하지 않으며, 네오위즈의 자회사/제휴사인지 핀크럭스의 별도 투자·제휴 파트너인지 슬랙 원문만으로는 관계가 불확실하여 독립 엔티티 페이지를 생성하지 않음. major_category(Client/Media_Partner/In-house) 및 네오위즈와의 관계는 총총(COO) 확인 후 entity_manifest 신규 등재 여부를 결정해야 하므로 processed_tasks에 포함하지 않고 skipped 처리함."
+    }
+  ]
+}

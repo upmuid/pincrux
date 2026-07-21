@@ -1,0 +1,118 @@
+{
+  "schema_version": "1.1",
+  "node": "writer",
+  "run_date": "2020-07-31",
+  "source_file": "Archive_Pincrux/01_Collector/2020-07-31.json",
+  "node_status": "success",
+  "processed_tasks": [
+    {
+      "task_id": "T001",
+      "entity_name": "SPC",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "SPC",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/204603424/SPC",
+      "confluence_page_id": "204603424",
+      "updated_sections": [
+        "## SPC 출석체크+충전소 연동 개발 (2019-12) > ### 운영 히스토리",
+        "### 의사결정 사항",
+        "### 액션 아이템"
+      ],
+      "note": "manifest 미등록 human_action_required 엔티티(SPC). project_name이 null이고 page_scope가 root이나, 원문 내용(8/1 오픈 확정)이 기존 'SPC 출석체크+충전소 연동 개발' 프로젝트의 연장선이라 판단하여 해당 섹션에 병합 기록함."
+    },
+    {
+      "task_id": "T002",
+      "entity_name": "PINCRUX 조직·인사 정책",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "PINCRUX 조직·인사 정책",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/209321985/PINCRUX",
+      "confluence_page_id": "209321985",
+      "updated_sections": [
+        "## PINCRUX 조직·인사 정책 (2020-07) [신규 섹션, T003과 통합 기록]"
+      ]
+    },
+    {
+      "task_id": "T003",
+      "entity_name": "PINCRUX 조직·인사 정책",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "PINCRUX 조직·인사 정책",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/209321985/PINCRUX",
+      "confluence_page_id": "209321985",
+      "updated_sections": [
+        "## PINCRUX 조직·인사 정책 (2020-07) [신규 섹션, T002와 통합 기록]"
+      ]
+    },
+    {
+      "task_id": "T004",
+      "entity_name": "PINCRUX 개발팀 업무 프로세스",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "PINCRUX 개발팀 업무 프로세스",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/209256450/PINCRUX",
+      "confluence_page_id": "209256450",
+      "updated_sections": [
+        "## PINCRUX 개발팀 업무 프로세스 정비 (2019) > ### 운영 히스토리",
+        "### 의사결정 사항",
+        "### 액션 아이템"
+      ]
+    },
+    {
+      "task_id": "T005",
+      "entity_name": "PINCRUX 사업·정책 결정 히스토리",
+      "project_name": "리워드샵 배송비 정책(공급사별 제주/도서산간)",
+      "page_scope": "child",
+      "target_name": "PINCRUX 사업·정책 결정 히스토리 > 리워드샵 배송비 정책(공급사별 제주/도서산간)",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/211550226/PINCRUX",
+      "confluence_page_id": "211550226",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/211550226/PINCRUX",
+      "confluence_parent_page_id": "211550226",
+      "updated_sections": [
+        "## 리워드샵 배송비 정책(공급사별 제주/도서산간) (2020-07) [신규 섹션]"
+      ],
+      "note": "엔티티 단일 페이지 원칙에 따라 별도 child 페이지를 생성하지 않고 동일 엔티티 페이지(211550226) 내 신규 섹션으로 추가함. confluence_parent_page_id는 섹션이 속한 엔티티 페이지 자신을 가리킴(별도 Confluence child 페이지 없음)."
+    },
+    {
+      "task_id": "T006",
+      "entity_name": "피플카",
+      "project_name": "피플카 CPA 캠페인 운영",
+      "page_scope": "child",
+      "target_name": "피플카 > 피플카 CPA 캠페인 운영",
+      "context_status": "new",
+      "action_taken": "created_new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/212631553/피플카",
+      "confluence_page_id": "212631553",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/210665474",
+      "confluence_parent_page_id": "210665474",
+      "updated_sections": [
+        "## 엔티티 개요",
+        "## 피플카 CPA 캠페인 운영 (2020) [신규 페이지 최초 섹션]",
+        "## FAQ 및 트러블슈팅",
+        "## 주요 담당자"
+      ],
+      "note": "신규 엔티티. entity_manifest.json 미등록 확인 후 CQL 정확/부분 일치 검색(title = \"피플카\", title ~ \"피플카\") 모두 0건으로 기존 페이지 부재 확인. major_category Client 추정에 따라 Client 폴더(210665474) 하위에 신규 페이지 생성함. 총총(COO)의 manifest 등록 및 major_category 확정 필요(human_action_required)."
+    }
+  ],
+  "skipped_tasks": [],
+  "human_action_required_summary": [
+    "T006(피플카): 신규 엔티티 manifest 등록 및 major_category(Client 추정) 확정 필요",
+    "T001(SPC): 기존 human_action_required 상태 유지 — 사업 주체 성격(광고주 vs 매체/제휴사) 재확인 필요(기존 이슈, 이번 배치와 무관)"
+  ]
+}

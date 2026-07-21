@@ -1,0 +1,177 @@
+{
+  "schema_version": "1.1",
+  "node": "writer",
+  "run_date": "2020-08-31",
+  "source_file": "Archive_Pincrux/01_Collector/2020-08-31.json",
+  "node_status": "success",
+  "processed_tasks": [
+    {
+      "task_id": "T001",
+      "entity_name": "SPC",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "SPC",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/204603424/SPC",
+      "confluence_page_id": "204603424",
+      "updated_sections": [
+        "## SPC 출석체크+충전소 연동 개발 (2019-12) > ### 운영 히스토리",
+        "### 의사결정 사항",
+        "### 액션 아이템"
+      ],
+      "note": "manifest 등록 human_action_required 엔티티(SPC). 원문(8/1 캠페인 오픈 확정)이 기존 'SPC 출석체크+충전소 연동 개발' 프로젝트의 연장선이라 판단하여 해당 섹션에 병합 기록함. 오픈 전 액션아이템(연동·QA 최종 점검)을 완료 체크하고, API 레이턴시 이슈를 신규 미해결 액션아이템으로 추가함."
+    },
+    {
+      "task_id": "T002",
+      "entity_name": "DB손해보험",
+      "project_name": "네이버페이 CPM 캠페인",
+      "page_scope": "child",
+      "target_name": "DB손해보험 > 네이버페이 CPM 캠페인",
+      "context_status": "new",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955049/DB",
+      "confluence_page_id": "191955049",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955049/DB",
+      "confluence_parent_page_id": "191955049",
+      "updated_sections": [
+        "## DB손해보험 네이버페이 CPM 캠페인 (2020-08) [신규 섹션]"
+      ],
+      "note": "엔티티 단일 페이지 원칙에 따라 별도 child 페이지를 생성하지 않고 기존 DB손해보험 엔티티 페이지 내 신규 섹션으로 추가함."
+    },
+    {
+      "task_id": "T003",
+      "entity_name": "KB손해보험",
+      "project_name": "SPC 충전소 캠페인",
+      "page_scope": "child",
+      "target_name": "KB손해보험 > SPC 충전소 캠페인",
+      "context_status": "new",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192086208/KB",
+      "confluence_page_id": "192086208",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192086208/KB",
+      "confluence_parent_page_id": "192086208",
+      "updated_sections": [
+        "## KB손해보험 SPC 충전소 캠페인 (2020-08) [신규 섹션]"
+      ],
+      "note": "기존 KB손해보험 엔티티 페이지 내 신규 프로젝트 섹션으로 추가함."
+    },
+    {
+      "task_id": "T004",
+      "entity_name": "웰컴저축은행",
+      "project_name": "룰렛뽑기 게임",
+      "page_scope": "child",
+      "target_name": "웰컴저축은행 > 룰렛뽑기 게임",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151790",
+      "confluence_page_id": "192151790",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151790",
+      "confluence_parent_page_id": "192151790",
+      "updated_sections": [
+        "## 웰컴저축은행 룰렛뽑기 게임 (2020-08) [신규 섹션]"
+      ],
+      "note": "context_status는 matched이나 기존 페이지 내 '룰렛뽑기 게임' 프로젝트에 대한 기존 섹션이 확인되지 않아, v2_writer.md 5-A절 4항(기존 섹션 없으면 신규 섹션 추가)에 따라 신규 섹션으로 추가함."
+    },
+    {
+      "task_id": "T005",
+      "entity_name": "오퍼월",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "오퍼월",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151821",
+      "confluence_page_id": "192151821",
+      "updated_sections": [
+        "## 오퍼월 iOS14 IDFA 정책 변경 대응 일정 취합 (2020-08) [신규 섹션]"
+      ],
+      "note": "iOS14 IDFA 대응 관련 기존 섹션이 없어 신규 섹션으로 추가함(entity_manifest.json aliases: Tracking SDK)."
+    },
+    {
+      "task_id": "T006",
+      "entity_name": "CPS 기획전 플랫폼",
+      "project_name": "우리원 장바구니 기획전(네이버웹툰향)",
+      "page_scope": "child",
+      "target_name": "CPS 기획전 플랫폼 > 우리원 장바구니 기획전(네이버웹툰향)",
+      "context_status": "new",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/206012417/CPS",
+      "confluence_page_id": "206012417",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/206012417/CPS",
+      "confluence_parent_page_id": "206012417",
+      "updated_sections": [
+        "## CPS 기획전 플랫폼 — 우리원 장바구니 기획전(네이버웹툰향) (2020-08) [신규 섹션]"
+      ],
+      "note": "기존 CPS 기획전 플랫폼 엔티티 페이지 내 신규 프로젝트 섹션으로 추가함."
+    },
+    {
+      "task_id": "T007",
+      "entity_name": "OCB",
+      "project_name": "HOT배너 프로모션",
+      "page_scope": "child",
+      "target_name": "OCB > HOT배너 프로모션",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/196509697/OCB",
+      "confluence_page_id": "196509697",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/196509697/OCB",
+      "confluence_parent_page_id": "196509697",
+      "updated_sections": [
+        "## OCB HOT배너 프로모션 (2020-08) [신규 섹션]"
+      ],
+      "note": "context_status는 matched이나 'HOT배너 프로모션' 프로젝트의 기존 섹션이 확인되지 않아 신규 섹션으로 추가함."
+    },
+    {
+      "task_id": "T008",
+      "entity_name": "삼성카드",
+      "project_name": "다이렉트 오토 캠페인",
+      "page_scope": "child",
+      "target_name": "삼성카드 > 다이렉트 오토 캠페인",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/204603393",
+      "confluence_page_id": "204603393",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/204603393",
+      "confluence_parent_page_id": "204603393",
+      "updated_sections": [
+        "## 삼성카드 다이렉트 오토 캠페인 (2020-08) [신규 섹션]"
+      ],
+      "note": "context_status는 matched이나 '다이렉트 오토 캠페인' 프로젝트의 기존 섹션이 확인되지 않아 신규 섹션으로 추가함."
+    },
+    {
+      "task_id": "T009",
+      "entity_name": "쿠프마케팅",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "쿠프마케팅",
+      "context_status": "new",
+      "action_taken": "created_new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/213286923",
+      "confluence_page_id": "213286923",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/210894849",
+      "confluence_parent_page_id": "210894849",
+      "updated_sections": [
+        "## 엔티티 개요",
+        "## 쿠프마케팅 신규 계약 체결 (2020-08) [신규 페이지 최초 섹션]",
+        "## FAQ 및 트러블슈팅",
+        "## 주요 담당자"
+      ],
+      "note": "신규 엔티티. entity_manifest.json 미등록 확인 후 CQL 정확/부분 일치 검색(title ~ \"쿠프마케팅\", title ~ \"쿠포마케팅\") 모두 0건으로 기존 페이지 부재 확인. 원문에 '쿠프마케팅'/'쿠포마케팅' 혼용 표기가 있으나 최초 언급된 '쿠프마케팅'을 정식 표기로 채택함. 기존 소소잉(쿠폰/포인트 공급, Media_Partner) 사례에 준하여 Media_Partner 폴더(210894849) 하위에 신규 페이지 생성함. 총총(COO)의 manifest 등록, 정식 명칭 및 major_category 확정 필요(human_action_required)."
+    }
+  ],
+  "skipped_tasks": [],
+  "human_action_required_summary": [
+    "T009(쿠프마케팅): 신규 엔티티 manifest 등록 필요. 정식 명칭('쿠프마케팅' vs '쿠포마케팅') 및 major_category(Media_Partner 추정) 확정 필요",
+    "T001(SPC): 기존 human_action_required 상태 유지 — 사업 주체 성격(광고주 vs 매체/제휴사) 재확인 필요(기존 이슈, 이번 배치와 무관)"
+  ]
+}

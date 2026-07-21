@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.1",
+  "node": "refiner",
+  "run_date": "2020-07-31",
+  "source_file": "Archive_Pincrux/03_Validator/2020-07-31.json",
+  "node_status": "success",
+  "published_tasks": [
+    {
+      "task_id": "T001",
+      "target_name": "SPC",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/204603424/SPC",
+      "confluence_page_id": "204603424",
+      "refined_points": [
+        "이번 배치에서 추가된 '2020-07-28 SPC 매체 오픈 일정 확정' 섹션 검토 완료",
+        "구어체 잔재·지시대명사 없음, 종결어미·볼드체·체크리스트가 이미 사내 스타일 가이드 기준을 충족하여 원문 유지"
+      ],
+      "published_at": "2026-07-20T09:57:43+09:00"
+    },
+    {
+      "task_id": "T002",
+      "target_name": "PINCRUX 조직·인사 정책",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/209321985/PINCRUX",
+      "confluence_page_id": "209321985",
+      "refined_points": [
+        "이번 배치에서 추가된 'PINCRUX 조직·인사 정책 (2020-07)' 섹션 중 점심시간 운영 항목 검토 완료",
+        "종결어미·볼드체 강조·출처 링크가 이미 기준을 충족하여 원문 유지"
+      ],
+      "published_at": "2026-07-20T09:57:43+09:00"
+    },
+    {
+      "task_id": "T003",
+      "target_name": "PINCRUX 조직·인사 정책",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/209321985/PINCRUX",
+      "confluence_page_id": "209321985",
+      "refined_points": [
+        "이번 배치에서 추가된 'PINCRUX 조직·인사 정책 (2020-07)' 섹션 중 상반기 리뷰 순연 항목 검토 완료",
+        "제출기한(7/10 오전 10시) 등 핵심 수치가 이미 볼드 처리되어 있어 원문 유지"
+      ],
+      "published_at": "2026-07-20T09:57:43+09:00"
+    },
+    {
+      "task_id": "T004",
+      "target_name": "PINCRUX 개발팀 업무 프로세스",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/209256450/PINCRUX",
+      "confluence_page_id": "209256450",
+      "refined_points": [
+        "이번 배치에서 추가된 'Google Play 패키지 가시성 정책(8/12 적용)' 히스토리·의사결정·액션아이템 검토 완료",
+        "적용일(8/12) 강조 및 체크리스트 형식이 이미 기준을 충족하여 원문 유지"
+      ],
+      "published_at": "2026-07-20T09:57:43+09:00"
+    },
+    {
+      "task_id": "T005",
+      "target_name": "PINCRUX 사업·정책 결정 히스토리 > 리워드샵 배송비 정책(공급사별 제주/도서산간)",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/211550226/PINCRUX",
+      "confluence_page_id": "211550226",
+      "refined_points": [
+        "이번 배치에서 신규 추가된 '리워드샵 배송비 정책(공급사별 제주/도서산간) (2020-07)' 섹션 검토 완료",
+        "공급사별 배송비 수치 볼드 처리 및 체크리스트가 이미 기준을 충족하여 원문 유지, 기존 하위 섹션들은 재포맷하지 않음(단일 페이지 구조 존중)"
+      ],
+      "published_at": "2026-07-20T09:57:43+09:00"
+    },
+    {
+      "task_id": "T006",
+      "target_name": "피플카 > 피플카 CPA 캠페인 운영",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/212631553/피플카",
+      "confluence_page_id": "212631553",
+      "refined_points": [
+        "human_action_required 비고란의 긴 4문장 단일 문단을 2개 문단으로 분리하여 가독성 개선",
+        "'총총(COO) 확인 후 entity_manifest.json에 정식 등록이 필요합니다' 문구를 볼드체로 강조",
+        "운영 히스토리 내 핵심 수치(예산 4,400만원 / 목표 11,000건·일 350건 / 매체비 건당 1,500원)를 볼드체로 강조 처리",
+        "의사결정 사항 항목을 인용구(blockquote)로 전환하여 시각적으로 구분",
+        "구어체 잔재·지시대명사·사명 오탈자 없음 확인, 수치·일정 등 사실관계는 변경하지 않음"
+      ],
+      "published_at": "2026-07-20T09:57:43+09:00"
+    }
+  ]
+}

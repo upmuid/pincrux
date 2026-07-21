@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.1",
+  "node": "writer",
+  "run_date": "2020-04-30",
+  "source_file": "Archive_Pincrux/01_Collector/2020-04-30.json",
+  "node_status": "success",
+  "processed_tasks": [
+    {
+      "task_id": "T001",
+      "entity_name": "오퍼월",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "오퍼월",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151821",
+      "confluence_page_id": "192151821",
+      "updated_sections": ["오퍼월 인프라 구성 방식 검토 (2020-04) [신규 추가, root]"]
+    },
+    {
+      "task_id": "T002",
+      "entity_name": "PINCRUX",
+      "project_name": "Cluv(클럽) 앱 기획",
+      "page_scope": "child",
+      "target_name": "PINCRUX > Cluv(클럽) 앱 기획",
+      "context_status": "new",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "updated_sections": ["PINCRUX 신규 프로덕트 'Cluv(클럽)' 앱 기획 (2020-04) [이전 시도에서 이미 반영 확인, 이번 실행에서는 중복 편집 없이 검증만 수행]"],
+      "writer_judgment_note": "PINCRUX 페이지 내 기존 known_sections(인플루언서 앱 개발-공용 플랫폼 인프라, Creator Membership Community/대청자-대도서관 등)과 대조한 결과, 'Cluv(클럽)'는 2019-12-02 인플루언서 앱 섹션에서 앱 명칭 후보 중 하나로 이미 언급된 바 있고(celuv/Cluv 후보 논의), 2020-01-29 오퍼월 페이지의 'CLUV에 먼저 적용할 예정' 기록으로 늦어도 2020-01 시점에 실제 제품명으로 확정·사용 중이었음이 확인됨. 또한 본 배치의 '펀딩'·'굿즈몰' 기능은 대청자(Creator Membership Community) 섹션에서 2019-12-16 확정된 정식 오픈 기능 5종과 명칭·개념이 정확히 일치하고, '팬심 캐시' 용어도 2020-01-13 확정된 캐시·팬심 화폐체계와 동일함. 이에 'Cluv(클럽)'가 기존 '인플루언서 앱' 및/또는 '대청자' 프로젝트의 후속 진행 단계일 가능성이 높다고 판단하였으나, 슬랙 원문만으로는 명시적 명칭 전환 공지 등 100% 확정 근거가 부족하여 지시에 따라 이번 배치에서는 독립 신규 섹션으로 기록하고, 위 판단 근거와 총총 확인요청 액션아이템을 섹션 내에 남겨두었음. 해당 내용은 확인 결과 이전 시도(API 오류로 중단되기 전)에 이미 페이지에 정확히 반영되어 있어, 이번 실행에서는 중복 편집을 방지하기 위해 추가 쓰기 작업을 수행하지 않았음."
+    },
+    {
+      "task_id": "T003",
+      "entity_name": "KB손해보험",
+      "project_name": "네이버페이 적립금 캠페인(KB다이렉트)",
+      "page_scope": "child",
+      "target_name": "KB손해보험 > 네이버페이 적립금 캠페인(KB다이렉트)",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192086208/KB",
+      "confluence_page_id": "192086208",
+      "updated_sections": ["네이버페이 적립금 캠페인(KB다이렉트) (2020-04) [신규 추가]"]
+    }
+  ],
+  "skipped_tasks": []
+}

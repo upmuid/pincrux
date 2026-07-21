@@ -1,0 +1,119 @@
+{
+  "schema_version": "1.1",
+  "node": "refiner",
+  "run_date": "2020-02-29",
+  "source_file": "Archive_Pincrux/03_Validator/2020-02-29.json",
+  "node_status": "success",
+  "published_tasks": [
+    {
+      "task_id": "T001",
+      "target_name": "PINCRUX > 멤버십 팬 서비스(CJE&M·다이아)",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "refined_points": [
+        "신규 반영분(2020-02-05 CJ 다이아 수익쉐어 협상: 소유권 PINCRUX 보유, r/s 5:5, 합작법인 검토)이 이미 확정형 문어체·볼드체(r/s 5:5)·체크리스트 기준을 충족하여 실질 교정 없이 검수만 완료"
+      ],
+      "published_at": "2026-07-13T15:20:00+09:00"
+    },
+    {
+      "task_id": "T002",
+      "target_name": "PINCRUX > 인플루언서 앱",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "refined_points": [
+        "신규 반영분(2020-02-12 셀럽글/유저게시글 구현방식 재확인, 관리자페이지 신규개발 착수: 디자인 카피 2/17까지·기획서 검토 1~2일)이 이미 볼드체·체크리스트 기준을 충족하여 실질 교정 없이 검수만 완료"
+      ],
+      "published_at": "2026-07-13T15:20:20+09:00"
+    },
+    {
+      "task_id": "T003",
+      "target_name": "하나금융투자 > 비대면계좌개설 CPA 연동",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/205062145",
+      "confluence_page_id": "205062145",
+      "refined_points": [
+        "신규 반영분(오픈일정 변경: 희망 2/3→확정 2/17, 운영반영→클로즈테스트→매체오픈→모니터링 순서)이 취소선 처리로 변경 이력을 보존하면서 볼드체·체크리스트 기준을 이미 충족하여 실질 교정 없이 검수만 완료. PINKEY 14자리 등 기존 사실관계는 변경하지 않음을 확인"
+      ],
+      "published_at": "2026-07-13T15:20:40+09:00"
+    },
+    {
+      "task_id": "T004",
+      "target_name": "PINCRUX > 조직·인사정책",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "refined_points": [
+        "신규 반영분(2020-02-11 연말정산 결과·이의신청 2/13·환급 3/15, 건강보험요율 3.23%→3.335%·장기요양보험요율 8.51%→10.25% 인상)이 이미 볼드체(수치 포함)·체크리스트 기준을 충족하여 실질 교정 없이 검수만 완료"
+      ],
+      "published_at": "2026-07-13T15:21:00+09:00"
+    },
+    {
+      "task_id": "T005",
+      "target_name": "PINCRUX > 개발팀 업무프로세스",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "refined_points": [
+        "신규 반영분(2020-02-18 충전소 채널별 pubkey 정책 유지 재확인, adiscope 통합 리워드플랫폼 콜백 기반 정산분배 확정)이 이미 볼드체·확정형 문어체 기준을 충족하여 실질 교정 없이 검수만 완료. adiscope 엔티티화 보류 비고는 원문 판단 그대로 유지"
+      ],
+      "published_at": "2026-07-13T15:21:20+09:00"
+    },
+    {
+      "task_id": "T006",
+      "target_name": "KT > 프로젝트K(혜택플랫폼/제휴할인)",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/196575233/KT",
+      "confluence_page_id": "196575233",
+      "refined_points": [
+        "신규 반영분(2020-02-19, 2/18 개발미팅: 혜택존 연동 개발항목, 마이KT 5월·KT멤버십 6월 확장, KT클립 오토멤버십 3월내 개발)이 의사결정 사항에 볼드체(담당자·일정)와 체크리스트가 이미 반영되어 있어 실질 교정 없이 검수만 완료. 운영 히스토리 서술은 기존 페이지 전반의 일관된 문체(사실 나열형)와 통일되어 있음을 확인"
+      ],
+      "published_at": "2026-07-13T15:21:40+09:00"
+    },
+    {
+      "task_id": "T007",
+      "target_name": "PINCRUX > Creator Membership Community(대청자,대도서관)",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "refined_points": [
+        "신규 반영분(2020-02-27 16:07 QA 포함 개발물량 과다로 하위 페이지 우선순위 하향)이 이미 볼드체·확정형 문어체 기준을 충족하여 실질 교정 없이 검수만 완료"
+      ],
+      "published_at": "2026-07-13T15:22:00+09:00"
+    },
+    {
+      "task_id": "T008",
+      "target_name": "PINCRUX > Creator Membership Community(대청자,대도서관)",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "refined_points": [
+        "신규 반영분(2020-02-27 12:25~12:26 백키 히스토리 관리를 메뉴 대카테고리 단위로 한정)이 T007·T009와 동일 섹션 내 개별 불릿으로 구분되어 이미 볼드체 기준을 충족하여 실질 교정 없이 검수만 완료"
+      ],
+      "published_at": "2026-07-13T15:22:00+09:00"
+    },
+    {
+      "task_id": "T009",
+      "target_name": "PINCRUX > Creator Membership Community(대청자,대도서관)",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "refined_points": [
+        "신규 반영분(2020-02-28 16:22 광고 적립 UX 정책 4건: 푸시 안내, 상세페이지 생략, 홈 노출 속도 개선, 알림 3종 유지)이 이미 볼드체·체크리스트(4건 모두) 기준을 충족하여 실질 교정 없이 검수만 완료"
+      ],
+      "published_at": "2026-07-13T15:22:20+09:00"
+    },
+    {
+      "task_id": "T010",
+      "target_name": "미래에셋대우 > 주식거래리워드 CPA 연동(계좌개설 실시간+최초거래 익일)",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955009",
+      "confluence_page_id": "191955009",
+      "refined_points": [
+        "신규 섹션 전체(2020-02-24 도미노피자 pubkey 910856·라이브 3/6 변경, 2020-02-27 거래실적 0/48/48/32건 및 최초거래자 데이터 최종반영 예정)가 이미 볼드체(핵심 수치)·체크리스트·확정형 문어체 기준을 충족하여 실질 교정 없이 검수만 완료. 기존 하위 섹션(11월 캠페인, 치킨쿠폰 정산 등) 손상 없음을 확인"
+      ],
+      "published_at": "2026-07-13T15:22:40+09:00"
+    }
+  ]
+}

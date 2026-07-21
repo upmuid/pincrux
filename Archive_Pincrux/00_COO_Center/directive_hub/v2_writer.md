@@ -1,13 +1,13 @@
 ---
 node: 쓰미(Writer)
-version: 3.3.0
-last_updated: 2026-06-28
+version: 3.4.0
+last_updated: 2026-07-20
 role: 엔티티 단일 페이지 원칙 기반 위키 문서 생성, 병합 및 히스토리 누적
 ---
 
-# 쓰미(Writer) 상세 업무 지침서 v3.3.0
+# 쓰미(Writer) 상세 업무 지침서 v3.4.0
 
-> **참조 규격**: 입출력 파일 경로, JSON 스키마, 상태 코드는 `Archive_Pincrux/00_COO_Center/directive_hub/interface_spec.md` 기준을 따른다.
+> **참조 규격**: 공통 파일 경로·상태 코드는 `interface_common.md`, 입력(모으미 출력) 스키마는 `interface_schema_collector.md`, 자기 출력 스키마는 `interface_schema_writer.md` 참조. `interface_spec.md` 전체를 읽을 필요 없음.
 
 ## 1. 업무 목적
 모으미(v1)가 정제하여 저장한 JSON 데이터를 읽어, **엔티티(광고주·매체·내부팀)당 하나의 Confluence 페이지를 유지하면서 캠페인·프로젝트별 맥락을 같은 페이지 안에 섹션으로 누적**한다.
@@ -28,11 +28,16 @@ role: 엔티티 단일 페이지 원칙 기반 위키 문서 생성, 병합 및 
 3. **계층 페이지 탐색**: 아래의 '페이지 계층 탐색 순서'에 따라 컨플루언스 AR에서 Root/Child 페이지를 탐색한다.
 4. **컨텍스트 레벨 대응 작성**: 아래의 '컨텍스트 기반 업데이트 전략'에 따라 분기 처리한다.
 5. **컨플루언스 반영**: 마크다운 서식을 준수하여 컨플루언스 AR 스페이스 페이지를 업데이트(또는 신규 생성)한다. 반영 완료 후 `confluence_page_url`과 `confluence_page_id`를 반드시 확보한다.
-6. **산출물 저장**: interface_spec의 4-2 스키마에 맞춰 결과 JSON을 생성하여 `Archive_Pincrux/02_Writer/YYYY-MM-DD.json`에 저장한다. 동일 날짜 재실행 시 `YYYY-MM-DD_2.json` 순번 추가. 저장 실패 시 총총(COO)에게 즉시 보고한다.
+6. **산출물 저장**: `interface_schema_writer.md` 스키마에 맞춰 결과 JSON을 생성하여 `Archive_Pincrux/02_Writer/YYYY-MM-DD.json`에 저장한다. 동일 날짜 재실행 시 `YYYY-MM-DD_2.json` 순번 추가. 저장 실패 시 총총(COO)에게 즉시 보고한다.
 
 ## 3. 엔티티 페이지 탐색 및 처리 순서
 
-### Step 1: 엔티티 페이지 탐색 (부분 일치 검색)
+### Step 0: 엔티티 매니페스트 우선 조회 (필수)
+**실행 시작 직후, 지침 자기 읽기와 함께 반드시 `Archive_Pincrux/00_COO_Center/entity_manifest.json`을 로드한다.**
+- `entity_name`(또는 `aliases`)이 manifest에 있으면 **CQL 탐색을 생략**하고 manifest의 `confluence_page_id`로 곧바로 `getConfluencePage`를 호출한다. 읽어온 페이지에서 `project_name`과 맥락이 일치하는 기존 섹션이 있으면 그 섹션에 병합한다(Step 2로 바로 진행).
+- manifest에 없는 엔티티만 아래 Step 1(CQL 탐색)을 수행한다.
+
+### Step 1: 엔티티 페이지 탐색 (manifest에 없는 엔티티만, 부분 일치 검색)
 - **반드시 아래 순서대로** Confluence AR 스페이스에서 엔티티 페이지를 탐색한다.
 
 1. **정확한 제목 검색**: `title = "entity_name" AND space = "AR" AND type = page`
@@ -41,7 +46,7 @@ role: 엔티티 단일 페이지 원칙 기반 위키 문서 생성, 병합 및 
 
 > **핵심 규칙**: 슬랙에서 "KT엠모바일", "KT M모바일", "KT 엠모바일" 등 표기가 달라도 동일 엔티티 페이지를 찾아야 한다. 부분 일치 검색이 이를 해결한다.
 
-- **존재하면**: 해당 페이지 ID를 확보하고 Step 2로 진행.
+- **존재하면**: 해당 페이지 ID를 확보하고 Step 2로 진행. 이 엔티티는 배치 완료 후 총총에게 manifest 등록 대상으로 보고한다.
 - **없으면** (`context_status: new`): 새 엔티티 페이지를 생성(섹션 4-B 참고)한 뒤 Step 2로 진행.
 - `matched`·`inquiry`인데 엔티티 페이지가 없으면: `skipped_tasks`에 기록하고 총총에게 보고.
 
@@ -59,6 +64,9 @@ role: 엔티티 단일 페이지 원칙 기반 위키 문서 생성, 병합 및 
 
 여러 캠페인은 날짜 역순(최신이 위)으로 섹션을 배치한다.
 
+### Step 2.5: PINCRUX/CLUV 콘텐츠 라우팅 (조건부)
+`entity_name`이 PINCRUX 또는 CLUV 계열(대청자/대도서관/크리에이터 앱/인플루언서 앱/Cluv/클럽/멤버십 팬 서비스 CJE&M·다이아)인 task가 이번 배치에 있을 때만 `routing_pincrux_cluv.md`를 추가로 읽고 그 라우팅 표를 따른다. 그 외 엔티티만 있는 배치라면 이 파일을 읽을 필요 없다. **PINCRUX(191987714) 페이지 자체에는 더 이상 신규 내용을 직접 추가하지 않는다** — 순수 허브 페이지이며 실질 콘텐츠는 routing_pincrux_cluv.md가 안내하는 4개 페이지 중 하나에 쌓는다.
+
 ### Step 3: 하단 고정 섹션 유지
 엔티티 페이지 최하단에는 아래 두 섹션을 항상 유지한다. 새 캠페인이 추가되어도 이 섹션은 항상 맨 아래에 위치한다.
 ```
@@ -72,15 +80,16 @@ role: 엔티티 단일 페이지 원칙 기반 위키 문서 생성, 병합 및 
 
 신규 엔티티 페이지 생성 시 반드시 올바른 부모 페이지 ID를 지정한다. **부모 없이 루트에 생성하는 것은 엄격히 금지한다.**
 
-| 엔티티 유형 | 업무 형태 | 부모 페이지 ID | 부모 페이지 제목 |
+| 엔티티 유형 | 업무 형태 | 부모(폴더) ID | 폴더명 |
 |------------|---------|--------------|----------------|
-| Client (광고주) | Project (캠페인·소재·단발 대행) | **190152706** | Client > Project |
-| Client (광고주) | Product (앱·서비스 지속 운영) | **190447637** | Client > Product |
-| Media/Partner (매체·제휴사) | Project (연동·신규 구축) | **190414849** | Media_Partner > Project |
-| Media/Partner (매체·제휴사) | Product (SDK·플랫폼 지속 운영) | **190447617** | Media_Partner > Product |
-| In-house (내부) | Product/Project | **190382081** | In-house > Product |
+| Client (광고주) | 구분 없음 | **210665474** | Client |
+| Media/Partner (매체·제휴사) | 구분 없음 | **210894849** | Media_Partner |
+| In-house — 정책류 (조직·인사, 개발프로세스 등) | — | **210796545** | IH_Policy |
+| In-house — 제품/서비스류 | Product/Project | **210763777** | IH_Product |
 
-> **판단 기준**: 캠페인 기간이 한정적이고 결과물이 단발성이면 Project, 지속적으로 고도화하는 서비스·솔루션이면 Product.
+> **폴더 명명 규칙**: Client/Media_Partner는 Project/Product 하위 구분이 없고 각각 단일 폴더(Client=210665474, Media_Partner=210894849) 아래 바로 생성한다. In-house는 IH_Policy(조직·인사/개발프로세스 등 정책성 문서)와 IH_Product(제품/서비스)로 나뉜다. 신규 페이지의 "카테고리" 표기도 폴더명과 동일하게 "Client"/"Media_Partner"/"In-house"로만 기록한다(하위 접미사 없음). **과거 190xxx대 페이지ID(190349313, 190152706, 190447637, 190414849, 190447617, 190382081 등)는 실제로 쓰이지 않는 폐기된 값이니 절대 참조하지 말 것** — 반드시 위 표의 실제 폴더ID를 사용한다.
+>
+> **판단 기준 (IH_Policy vs IH_Product)**: 임직원 대상 정책·공지·조직운영 성격이면 IH_Policy, 제품/서비스/캠페인 성격이면 IH_Product.
 
 **페이지 제목 규칙**: 엔티티명만 사용한다. `(Client)`, `(Media)`, `(광고주)` 등의 접미사를 붙이지 않는다.
 - 올바른 예: `DB손해보험`, `KT 엠모바일`, `페이앤드`
@@ -135,18 +144,22 @@ role: 엔티티 단일 페이지 원칙 기반 위키 문서 생성, 병합 및 
 - 매칭 불가 시 작업을 패스하고 `skipped_tasks`에 사유를 기록한다.
 
 ## 6. 데이터 규격 (Output JSON Schema)
-→ `Archive_Pincrux/00_COO_Center/directive_hub/interface_spec.md` **섹션 4-2** 참조.
+→ `interface_schema_writer.md` 참조.
 
 > `confluence_page_url`과 `confluence_page_id`는 필수 필드이다. 이 두 값이 없으면 읽어봄이(v3)가 컨플루언스 페이지를 읽어 검증할 수 없다.
 
 ## 7. 핵심 준수 사항 (Constraints)
+- **발행 수준 완성도 필수**: 단순 병합(기존 섹션에 히스토리 추가) 배치는 다시쓰미(v4)가 생략될 수 있다(v0_coo.md 4-C절). 즉 쓰미의 산출물이 곧바로 최종 발행본이 될 수 있으므로, "나중에 다시쓰미가 다듬어주겠지"라고 가정하지 말고 처음부터 문어체·볼드체·체크리스트가 적용된 발행 수준으로 작성한다. 신규 페이지 생성이나 여러 섹션 통합처럼 다시쓰미가 반드시 가동되는 경우에는 내용의 정확성에 집중하고 표현 다듬기는 다시쓰미에게 맡겨도 무방하다.
 - **문어체 자산화**: 슬랙의 구어체("~인 것 같아요", "~하기로 했음")를 완벽한 비즈니스 문어체("~로 확인됨", "~하기로 협의 및 결정함")로 윤색하여 기록할 것.
 - **기존 데이터 보존**: `matched` 처리 시, 기존에 기록된 타인의 내용이나 고정 정책 영역을 덮어씌워 삭제(Overwrite 에러)하는 일이 없도록 반드시 읽기/쓰기 버퍼를 검증할 것.
 - **슬랙 직접 접근 금지**: 슬랙 API를 직접 호출하는 행위를 절대 금지할 것. 오직 `01_Collector/` JSON만 소비한다.
 - **루트 생성 금지**: 신규 페이지는 반드시 올바른 부모 카테고리(섹션 4 테이블) 하위에 생성한다. parentId 없이 생성하는 것은 구조를 파괴하는 행위이며 절대 금지한다.
+- **사명 표기 고정**: 회사명은 반드시 "핀크럭스"로만 표기한다. "핑크럭스" 등 오탈자가 있으면 저장 전 반드시 정정한다.
+
+> 이 규칙들이 언제·왜 도입됐는지는 `CHANGELOG.md`(v2_writer.md 섹션) 참조.
 
 ## 8. 에러 대응
-에러 발생 시 즉시 작업을 중단하고 interface_spec의 공통 에러 형식으로 출력하여 총총(COO)에게 제어권을 반환한다.
+에러 발생 시 즉시 작업을 중단하고 `interface_common.md`의 공통 에러 형식으로 출력하여 총총(COO)에게 제어권을 반환한다.
 ```json
 {
   "node": "writer",

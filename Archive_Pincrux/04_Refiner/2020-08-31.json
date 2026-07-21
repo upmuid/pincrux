@@ -1,0 +1,122 @@
+{
+  "schema_version": "1.1",
+  "node": "refiner",
+  "run_date": "2020-08-31",
+  "source_file": "Archive_Pincrux/03_Validator/2020-08-31.json",
+  "node_status": "success",
+  "published_tasks": [
+    {
+      "task_id": "T001",
+      "target_name": "SPC",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/204603424/SPC",
+      "confluence_page_id": "204603424",
+      "refined_points": [
+        "'SPC측 API에서 1분단위 레이턴시가 증가하는 현상' 문구를 볼드체로 강조 처리하여 8/1 오픈 후 발생한 이슈의 가시성을 높임",
+        "기존 섹션(해피포인트 클로버 충전소 등)은 재포맷 없이 그대로 보존",
+        "액션 아이템은 기존 체크리스트(task-list) 형식을 유지하며 완료/미완료 상태 재확인"
+      ],
+      "published_at": "2026-07-21T11:57:14+09:00"
+    },
+    {
+      "task_id": "T002",
+      "target_name": "DB손해보험 > 네이버페이 CPM 캠페인",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955049/DB",
+      "confluence_page_id": "191955049",
+      "refined_points": [
+        "신규 섹션 문체 확정형 비즈니스 문어체 재확인(수정 불요 확인)",
+        "핵심 수치(단가 900만원, 자사 부담금액 450만원 등) 볼드체 강조 유지",
+        "기존 다수 히스토리 섹션은 손대지 않고 신규 섹션만 검수"
+      ],
+      "published_at": "2026-07-21T11:58:56+09:00"
+    },
+    {
+      "task_id": "T003",
+      "target_name": "KB손해보험 > SPC 충전소 캠페인",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192086208/KB",
+      "confluence_page_id": "192086208",
+      "refined_points": [
+        "신규 섹션 확정형 종결어미 및 볼드 강조(단가 1만원, RS 1,100원) 재확인",
+        "기존 섹션(IT부서 담당자, 클립/해피머니 랜딩페이지 등) 변경 없이 보존"
+      ],
+      "published_at": "2026-07-21T11:59:28+09:00"
+    },
+    {
+      "task_id": "T004",
+      "target_name": "웰컴저축은행 > 룰렛뽑기 게임",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151790",
+      "confluence_page_id": "192151790",
+      "refined_points": [
+        "신규 섹션 의사결정 문구 볼드 강조 및 문어체 확인(수정 불요 확인)",
+        "기존 다수 히스토리 섹션(COO 정정 이력 포함) 재포맷 없이 보존"
+      ],
+      "published_at": "2026-07-21T12:00:54+09:00"
+    },
+    {
+      "task_id": "T005",
+      "target_name": "오퍼월",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151821",
+      "confluence_page_id": "192151821",
+      "refined_points": [
+        "신규 섹션(iOS14 IDFA 대응 일정 취합) 액션 아이템 체크리스트 형식 유지 확인",
+        "기존 PG계약, 인프라 검토 등 타 섹션은 변경 없이 보존"
+      ],
+      "published_at": "2026-07-21T12:02:11+09:00"
+    },
+    {
+      "task_id": "T006",
+      "target_name": "CPS 기획전 플랫폼 > 우리원 장바구니 기획전(네이버웹툰향)",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/206012417/CPS",
+      "confluence_page_id": "206012417",
+      "refined_points": [
+        "신규 섹션 의사결정 문구 볼드 강조 및 액션 아이템 체크리스트 형식 재확인",
+        "읽어봄이 코멘트에서 지적된 부가 진행상황(PG연동주체, 주문번호 체계 변경 등)은 모으미/쓰미 단계 미포함 정보로, 사실 추가 없이 원 데이터 범위 내에서만 정제(No Hallucination 원칙 준수)",
+        "기존 컬처랜드/오케이캐시백 섹션은 변경 없이 보존"
+      ],
+      "published_at": "2026-07-21T12:02:41+09:00"
+    },
+    {
+      "task_id": "T007",
+      "target_name": "OCB > HOT배너 프로모션",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/196509697/OCB",
+      "confluence_page_id": "196509697",
+      "refined_points": [
+        "신규 섹션 확정형 문어체 및 볼드 강조 재확인(수정 불요 확인)",
+        "기존 참여적립 매체 운영정책 섹션(decision-list 포함) 변경 없이 보존"
+      ],
+      "published_at": "2026-07-21T12:02:53+09:00"
+    },
+    {
+      "task_id": "T008",
+      "target_name": "삼성카드 > 다이렉트 오토 캠페인",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/204603393",
+      "confluence_page_id": "204603393",
+      "refined_points": [
+        "신규 섹션 핵심 수치(일매출 약45만원, 일500건/일예산125만원) 볼드 강조 재확인",
+        "기존 대규모계약 체결 섹션은 변경 없이 보존"
+      ],
+      "published_at": "2026-07-21T12:03:07+09:00"
+    },
+    {
+      "task_id": "T009",
+      "target_name": "쿠프마케팅",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/213286923",
+      "confluence_page_id": "213286923",
+      "refined_points": [
+        "신규 생성 페이지로, human_action_required 비고 문단을 패널(panel-warning)로 시각화하여 총총(COO) 확인 필요 사항의 가시성 강화",
+        "액션 아이템 중 총총(COO) 확인이 필요한 항목을 볼드체로 강조하고 담당 주체를 명시(entity_manifest.json 신규 엔티티 등록)",
+        "사명 오탈자('핑크럭스' 등) 없음을 확인, 전 페이지 표기 일관성 재검증",
+        "핵심 의사결정(계약체결+보증보험 가입 후 API 쿠폰 공급) 볼드 강조 유지, 사실관계(계약 상대방, 조건) 변경 없이 문체만 정제"
+      ],
+      "published_at": "2026-07-21T11:57:26+09:00"
+    }
+  ]
+}

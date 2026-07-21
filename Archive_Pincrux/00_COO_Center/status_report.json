@@ -1,0 +1,38 @@
+{
+  "pipeline_execution": {
+    "date": "2026-07-21",
+    "run_mode": "backfill",
+    "period": "2020-08-01 to 2020-08-31",
+    "total_status": "success",
+    "metrics": {
+      "collected_threads": 9,
+      "updated_matched_contexts": 5,
+      "created_new_contexts": 4,
+      "uncategorized_inquiries": 0,
+      "reviewer_run": true,
+      "refiner_run": true,
+      "reviewer_review_summary": {"total_reviewed": 9, "passed_cnt": 9, "failed_cnt": 0, "slack_reread_cnt": 4},
+      "refiner_published_tasks": 9
+    },
+    "conditional_execution_rationale": "쓰미 산출물 중 T002/T003/T006/T009가 context_status: new이므로 v0_coo.md 4-C절 기준에 따라 읽어봄이 필수 가동(신규 4건 2패스, 나머지 5건 1패스). T009(쿠프마케팅)가 action_taken: created_new(신규 페이지 생성)이므로 다시쓰미도 필수 가동."
+  },
+  "published_pages": [
+    {"task_id": "T001", "entity_name": "SPC", "confluence_page_id": "204603424", "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/204603424/SPC"},
+    {"task_id": "T002", "entity_name": "DB손해보험", "confluence_page_id": "191955049", "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955049/DB"},
+    {"task_id": "T003", "entity_name": "KB손해보험", "confluence_page_id": "192086208", "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192086208/KB"},
+    {"task_id": "T004", "entity_name": "웰컴저축은행", "confluence_page_id": "192151790", "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151790"},
+    {"task_id": "T005", "entity_name": "오퍼월", "confluence_page_id": "192151821", "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151821"},
+    {"task_id": "T006", "entity_name": "CPS 기획전 플랫폼", "confluence_page_id": "206012417", "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/206012417/CPS"},
+    {"task_id": "T007", "entity_name": "OCB", "confluence_page_id": "196509697", "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/196509697/OCB"},
+    {"task_id": "T008", "entity_name": "삼성카드", "confluence_page_id": "204603393", "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/204603393"},
+    {"task_id": "T009", "entity_name": "쿠프마케팅", "confluence_page_id": "213286923", "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/213286923", "note": "신규 엔티티. Media_Partner 폴더(210894849) 하위 신규 생성, 다시쓰미 최종 폴리싱 완료"}
+  ],
+  "error_logs": [],
+  "human_action_required": [
+    "쿠프마케팅(213286923) 신규 엔티티의 정식 명칭('쿠프마케팅' vs '쿠포마케팅') 및 major_category(현재 Media_Partner로 추정) 확정 필요 — entity_manifest.json에 human_action_required로 임시 등록됨",
+    "피플카(212631553) 신규 엔티티 major_category 확정 필요 — 계속 보류 중(2020-07 배치 항목, 이번 배치와 무관)",
+    "SPC(204603424) 사업 주체 성격(광고주 vs 매체) 미확정 — 계속 보류 중(기존 미해결 항목, 이번 배치와 무관)",
+    "PINCRUX(191987714) 허브 페이지 타이틀 유지/변경 여부 — v0_coo.md 4-D절 대기열 4번, 계속 보류 중(이번 배치와 무관)",
+    "checkpoint next_period_start가 2020-09-01로 갱신됨 — 다음 실행 시 2020-09 배치가 이어서 진행됨(현재 실행 시점 기준 직전 년/월인 2026-06에는 아직 크게 못 미쳐 backfill 계속 진행 필요)"
+  ]
+}
