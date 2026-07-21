@@ -1,0 +1,1970 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="css/style-normal.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <title>한게임 오퍼월</title>
+</head>
+
+<body>
+  <div id="index" class="index">
+    <div class="wrap">
+
+      <!-- 상단 타이틀 -->
+      <header class="offer-header">
+        <div class="layout-inner">
+          <div class="offer-header__row">
+            <h1 class="offer-header__title">한코인 모으기</h1>
+
+            <a href="#" class="offer-header__inquiry">
+              <img
+                class="offer-header__inquiry-icon"
+                src="imgs/info.png"
+                alt=""
+              />
+              <span class="offer-header__inquiry-label">이용문의</span>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <!-- 본문 -->
+<main class="content">
+  <div class="layout-inner content__inner">
+
+    <!-- 미션 카테고리 및 정렬 -->
+    <section class="offer-toolbar" aria-label="미션 카테고리 및 정렬">
+      <nav class="offer-tabs" aria-label="미션 카테고리">
+        <div class="offer-tabs__list" role="tablist">
+          <button type="button"  class="offer-tab is-active"  role="tab"  aria-selected="true"  data-category="all"  >
+            전체
+          </button>
+
+          <button type="button"  class="offer-tab"  role="tab"  aria-selected="false"  data-category="participation" >
+            참여 미션
+          </button>
+
+          <button  type="button"  class="offer-tab"  role="tab"  aria-selected="false"  data-category="finance" >
+            금융 미션
+          </button>
+
+          <button type="button"  class="offer-tab"   role="tab"  aria-selected="false"  data-category="shopping"  >
+            쇼핑 미션
+          </button>
+        </div>
+      </nav>
+
+      <div class="offer-sort" role="group" aria-label="미션 정렬">
+        <button  type="button"  class="offer-sort__button is-active"  aria-pressed="true"  data-sort="recommended" >
+          추천순
+        </button>
+
+        <span class="offer-sort__dot" aria-hidden="true"></span>
+
+        <button  type="button"  class="offer-sort__button"  aria-pressed="false"  data-sort="coin-desc" >
+          코인 많은 순
+        </button>
+
+        <span class="offer-sort__dot" aria-hidden="true"></span>
+
+        <button type="button" class="offer-sort__button" aria-pressed="false" data-sort="coin-asc" >
+          코인 적은 순
+        </button>
+      </div>
+    </section>
+
+    <!-- 미션 리스트 -->
+    <section class="mission-area" aria-label="미션 목록">
+
+      <div class="mission-list-view" id="missionListView">
+        <ul class="mission-list" id="missionList">
+
+        <!-- 참여 가능한 미션 -->
+        <li class="mission-list__item" data-category="participation" data-coin="300000" data-status="available" >
+          <a href="#" class="mission-item">
+            <img class="mission-item__image" src="imgs/product/01.png" alt=""/>
+
+            <div class="mission-item__info">
+              <strong class="mission-item__title">
+                방송 알림 신청하기방송 알림 신청하기 방송 알림 신청하기 방송 알림 신청하기
+              </strong>
+
+              <p class="mission-item__description">
+                갤럭시 캠퍼스 라이프 갤럭시 캠퍼스 라이프 갤럭시 캠퍼스 라이프
+              </p>
+            </div>
+
+            <!-- 최소 너비 95px, 숫자가 길면 자동 확장 -->
+            <span class="mission-item__reward">
+              <img class="mission-item__reward-icon" src="imgs/coin.svg" alt="" />
+              <span class="mission-item__reward-value">300,000</span>
+            </span>
+          </a>
+        </li>
+
+        <!-- 참여 가능한 미션 -->
+        <li class="mission-list__item" data-category="shopping" data-coin="30000" data-status="available" >
+          <a href="#" class="mission-item">
+            <img class="mission-item__image" src="imgs/product/02.png" alt="" />
+
+            <div class="mission-item__info">
+              <strong class="mission-item__title">
+                방송 알림 신청하기
+              </strong>
+
+              <p class="mission-item__description">
+                갤럭시 캠퍼스 라이프
+              </p>
+            </div>
+
+            <span class="mission-item__reward">
+              <img class="mission-item__reward-icon" src="imgs/coin.svg" alt="" />
+              <span class="mission-item__reward-value">30,000</span>
+            </span>
+          </a>
+        </li>
+
+        <li class="mission-list__item" data-category="shopping" data-coin="30000" data-status="available" >
+          <a href="#" class="mission-item">
+            <img class="mission-item__image" src="imgs/product/03.png" alt="" />
+
+            <div class="mission-item__info">
+              <strong class="mission-item__title">
+                방송 알림 신청하기
+              </strong>
+
+              <p class="mission-item__description">
+                갤럭시 캠퍼스 라이프
+              </p>
+            </div>
+
+            <span class="mission-item__reward">
+              <img class="mission-item__reward-icon" src="imgs/coin.svg" alt="" />
+              <span class="mission-item__reward-value">30,000</span>
+            </span>
+          </a>
+        </li>
+
+        <li class="mission-list__item" data-category="shopping" data-coin="30000" data-status="available" >
+          <a href="#" class="mission-item">
+            <img class="mission-item__image" src="imgs/product/04.png" alt="" />
+
+            <div class="mission-item__info">
+              <strong class="mission-item__title">
+                방송 알림 신청하기
+              </strong>
+
+              <p class="mission-item__description">
+                갤럭시 캠퍼스 라이프
+              </p>
+            </div>
+
+            <span class="mission-item__reward">
+              <img class="mission-item__reward-icon" src="imgs/coin.svg" alt="" />
+              <span class="mission-item__reward-value">30,000</span>
+            </span>
+          </a>
+        </li>
+
+        <li class="mission-list__item" data-category="shopping" data-coin="30000" data-status="available" >
+          <a href="#" class="mission-item">
+            <img class="mission-item__image" src="imgs/product/05.png" alt="" />
+
+            <div class="mission-item__info">
+              <strong class="mission-item__title">
+                방송 알림 신청하기
+              </strong>
+
+              <p class="mission-item__description">
+                갤럭시 캠퍼스 라이프
+              </p>
+            </div>
+
+            <span class="mission-item__reward">
+              <img class="mission-item__reward-icon" src="imgs/coin.svg" alt="" />
+              <span class="mission-item__reward-value">30,000</span>
+            </span>
+          </a>
+        </li>
+
+        <li class="mission-list__item" data-category="shopping" data-coin="30000" data-status="available" >
+          <a href="#" class="mission-item">
+            <img class="mission-item__image" src="imgs/product/06.png" alt="" />
+
+            <div class="mission-item__info">
+              <strong class="mission-item__title">
+                방송 알림 신청하기
+              </strong>
+
+              <p class="mission-item__description">
+                갤럭시 캠퍼스 라이프
+              </p>
+            </div>
+
+            <span class="mission-item__reward">
+              <img class="mission-item__reward-icon" src="imgs/coin.svg" alt="" />
+              <span class="mission-item__reward-value">30,000</span>
+            </span>
+          </a>
+        </li>
+
+        <li class="mission-list__item" data-category="shopping" data-coin="30000" data-status="available" >
+          <a href="#" class="mission-item">
+            <img class="mission-item__image" src="imgs/product/07.png" alt="" />
+
+            <div class="mission-item__info">
+              <strong class="mission-item__title">
+                방송 알림 신청하기
+              </strong>
+
+              <p class="mission-item__description">
+                갤럭시 캠퍼스 라이프
+              </p>
+            </div>
+
+            <span class="mission-item__reward">
+              <img class="mission-item__reward-icon" src="imgs/coin.svg" alt="" />
+              <span class="mission-item__reward-value">30,000</span>
+            </span>
+          </a>
+        </li>
+
+        <li class="mission-list__item" data-category="shopping" data-coin="30000" data-status="available" >
+          <a href="#" class="mission-item">
+            <img class="mission-item__image" src="imgs/product/01.png" alt="" />
+
+            <div class="mission-item__info">
+              <strong class="mission-item__title">
+                방송 알림 신청하기
+              </strong>
+
+              <p class="mission-item__description">
+                갤럭시 캠퍼스 라이프
+              </p>
+            </div>
+
+            <span class="mission-item__reward">
+              <img class="mission-item__reward-icon" src="imgs/coin.svg" alt="" />
+              <span class="mission-item__reward-value">30,000</span>
+            </span>
+          </a>
+        </li>
+
+        <li class="mission-list__item" data-category="shopping" data-coin="30000" data-status="available" >
+          <a href="#" class="mission-item">
+            <img class="mission-item__image" src="imgs/product/02.png" alt="" />
+
+            <div class="mission-item__info">
+              <strong class="mission-item__title">
+                방송 알림 신청하기
+              </strong>
+
+              <p class="mission-item__description">
+                갤럭시 캠퍼스 라이프
+              </p>
+            </div>
+
+            <span class="mission-item__reward">
+              <img class="mission-item__reward-icon" src="imgs/coin.svg" alt="" />
+              <span class="mission-item__reward-value">30,000</span>
+            </span>
+          </a>
+        </li>
+
+        <li class="mission-list__item" data-category="shopping" data-coin="30000" data-status="available" >
+          <a href="#" class="mission-item">
+            <img class="mission-item__image" src="imgs/product/03.png" alt="" />
+
+            <div class="mission-item__info">
+              <strong class="mission-item__title">
+                방송 알림 신청하기
+              </strong>
+
+              <p class="mission-item__description">
+                갤럭시 캠퍼스 라이프
+              </p>
+            </div>
+
+            <span class="mission-item__reward">
+              <img class="mission-item__reward-icon" src="imgs/coin.svg" alt="" />
+              <span class="mission-item__reward-value">30,000</span>
+            </span>
+          </a>
+        </li>
+
+        <li class="mission-list__item" data-category="shopping" data-coin="30000" data-status="available" >
+          <a href="#" class="mission-item">
+            <img class="mission-item__image" src="imgs/product/04.png" alt="" />
+
+            <div class="mission-item__info">
+              <strong class="mission-item__title">
+                방송 알림 신청하기
+              </strong>
+
+              <p class="mission-item__description">
+                갤럭시 캠퍼스 라이프
+              </p>
+            </div>
+
+            <span class="mission-item__reward">
+              <img class="mission-item__reward-icon" src="imgs/coin.svg" alt="" />
+              <span class="mission-item__reward-value">30,000</span>
+            </span>
+          </a>
+        </li>
+
+        <li class="mission-list__item" data-category="shopping" data-coin="30000" data-status="available" >
+          <a href="#" class="mission-item">
+            <img class="mission-item__image" src="imgs/product/05.png" alt="" />
+
+            <div class="mission-item__info">
+              <strong class="mission-item__title">
+                방송 알림 신청하기
+              </strong>
+
+              <p class="mission-item__description">
+                갤럭시 캠퍼스 라이프
+              </p>
+            </div>
+
+            <span class="mission-item__reward">
+              <img class="mission-item__reward-icon" src="imgs/coin.svg" alt="" />
+              <span class="mission-item__reward-value">30,000</span>
+            </span>
+          </a>
+        </li>
+
+        <li class="mission-list__item" data-category="shopping" data-coin="30000" data-status="available" >
+          <a href="#" class="mission-item">
+            <img class="mission-item__image" src="imgs/product/02.png" alt="" />
+
+            <div class="mission-item__info">
+              <strong class="mission-item__title">
+                방송 알림 신청하기
+              </strong>
+
+              <p class="mission-item__description">
+                갤럭시 캠퍼스 라이프
+              </p>
+            </div>
+
+            <span class="mission-item__reward">
+              <img class="mission-item__reward-icon" src="imgs/coin.svg" alt="" />
+              <span class="mission-item__reward-value">30,000</span>
+            </span>
+          </a>
+        </li>
+
+        <li class="mission-list__item" data-category="shopping" data-coin="30000" data-status="available" >
+          <a href="#" class="mission-item">
+            <img class="mission-item__image" src="imgs/product/06.png" alt="" />
+
+            <div class="mission-item__info">
+              <strong class="mission-item__title">
+                방송 알림 신청하기
+              </strong>
+
+              <p class="mission-item__description">
+                갤럭시 캠퍼스 라이프
+              </p>
+            </div>
+
+            <span class="mission-item__reward">
+              <img class="mission-item__reward-icon" src="imgs/coin.svg" alt="" />
+              <span class="mission-item__reward-value">30,000</span>
+            </span>
+          </a>
+        </li>
+
+        <li class="mission-list__item" data-category="shopping" data-coin="30000" data-status="available" >
+          <a href="#" class="mission-item">
+            <img class="mission-item__image" src="imgs/product/02.png" alt="" />
+
+            <div class="mission-item__info">
+              <strong class="mission-item__title">
+                방송 알림 신청하기
+              </strong>
+
+              <p class="mission-item__description">
+                갤럭시 캠퍼스 라이프
+              </p>
+            </div>
+
+            <span class="mission-item__reward">
+              <img class="mission-item__reward-icon" src="imgs/coin.svg" alt="" />
+              <span class="mission-item__reward-value">30,000</span>
+            </span>
+          </a>
+        </li>
+
+        <li class="mission-list__item" data-category="shopping" data-coin="30000" data-status="available" >
+          <a href="#" class="mission-item">
+            <img class="mission-item__image" src="imgs/product/03.png" alt="" />
+
+            <div class="mission-item__info">
+              <strong class="mission-item__title">
+                방송 알림 신청하기
+              </strong>
+
+              <p class="mission-item__description">
+                갤럭시 캠퍼스 라이프
+              </p>
+            </div>
+
+            <span class="mission-item__reward">
+              <img class="mission-item__reward-icon" src="imgs/coin.svg" alt="" />
+              <span class="mission-item__reward-value">30,000</span>
+            </span>
+          </a>
+        </li>
+
+        <li class="mission-list__item" data-category="shopping" data-coin="30000" data-status="available" >
+          <a href="#" class="mission-item">
+            <img class="mission-item__image" src="imgs/product/04.png" alt="" />
+
+            <div class="mission-item__info">
+              <strong class="mission-item__title">
+                방송 알림 신청하기
+              </strong>
+
+              <p class="mission-item__description">
+                갤럭시 캠퍼스 라이프
+              </p>
+            </div>
+
+            <span class="mission-item__reward">
+              <img class="mission-item__reward-icon" src="imgs/coin.svg" alt="" />
+              <span class="mission-item__reward-value">30,000</span>
+            </span>
+          </a>
+        </li>
+
+        <li class="mission-list__item" data-category="shopping" data-coin="30000" data-status="available" >
+          <a href="#" class="mission-item">
+            <img class="mission-item__image" src="imgs/product/05.png" alt="" />
+
+            <div class="mission-item__info">
+              <strong class="mission-item__title">
+                방송 알림 신청하기
+              </strong>
+
+              <p class="mission-item__description">
+                갤럭시 캠퍼스 라이프
+              </p>
+            </div>
+
+            <span class="mission-item__reward">
+              <img class="mission-item__reward-icon" src="imgs/coin.svg" alt="" />
+              <span class="mission-item__reward-value">30,000</span>
+            </span>
+          </a>
+        </li>
+
+        <li class="mission-list__item" data-category="shopping" data-coin="30000" data-status="available" >
+          <a href="#" class="mission-item">
+            <img class="mission-item__image" src="imgs/product/06.png" alt="" />
+
+            <div class="mission-item__info">
+              <strong class="mission-item__title">
+                방송 알림 신청하기
+              </strong>
+
+              <p class="mission-item__description">
+                갤럭시 캠퍼스 라이프
+              </p>
+            </div>
+
+            <span class="mission-item__reward">
+              <img class="mission-item__reward-icon" src="imgs/coin.svg" alt="" />
+              <span class="mission-item__reward-value">30,000</span>
+            </span>
+          </a>
+        </li>
+
+        <li class="mission-list__item" data-category="shopping" data-coin="30000" data-status="available" >
+          <a href="#" class="mission-item">
+            <img class="mission-item__image" src="imgs/product/07.png" alt="" />
+
+            <div class="mission-item__info">
+              <strong class="mission-item__title">
+                방송 알림 신청하기
+              </strong>
+
+              <p class="mission-item__description">
+                갤럭시 캠퍼스 라이프
+              </p>
+            </div>
+
+            <span class="mission-item__reward">
+              <img class="mission-item__reward-icon" src="imgs/coin.svg" alt="" />
+              <span class="mission-item__reward-value">30,000</span>
+            </span>
+          </a>
+        </li>
+
+        <li class="mission-list__item" data-category="shopping" data-coin="30000" data-status="available" >
+          <a href="#" class="mission-item">
+            <img class="mission-item__image" src="imgs/product/01.png" alt="" />
+
+            <div class="mission-item__info">
+              <strong class="mission-item__title">
+                방송 알림 신청하기
+              </strong>
+
+              <p class="mission-item__description">
+                갤럭시 캠퍼스 라이프
+              </p>
+            </div>
+
+            <span class="mission-item__reward">
+              <img class="mission-item__reward-icon" src="imgs/coin.svg" alt="" />
+              <span class="mission-item__reward-value">30,000</span>
+            </span>
+          </a>
+        </li>
+
+        <li class="mission-list__item" data-category="shopping" data-coin="30000" data-status="available" >
+          <a href="#" class="mission-item">
+            <img class="mission-item__image" src="imgs/product/02.png" alt="" />
+
+            <div class="mission-item__info">
+              <strong class="mission-item__title">
+                방송 알림 신청하기
+              </strong>
+
+              <p class="mission-item__description">
+                갤럭시 캠퍼스 라이프
+              </p>
+            </div>
+
+            <span class="mission-item__reward">
+              <img class="mission-item__reward-icon" src="imgs/coin.svg" alt="" />
+              <span class="mission-item__reward-value">30,000</span>
+            </span>
+          </a>
+        </li>
+
+        <li class="mission-list__item" data-category="shopping" data-coin="30000" data-status="available" >
+          <a href="#" class="mission-item">
+            <img class="mission-item__image" src="imgs/product/03.png" alt="" />
+
+            <div class="mission-item__info">
+              <strong class="mission-item__title">
+                방송 알림 신청하기
+              </strong>
+
+              <p class="mission-item__description">
+                갤럭시 캠퍼스 라이프
+              </p>
+            </div>
+
+            <span class="mission-item__reward">
+              <img class="mission-item__reward-icon" src="imgs/coin.svg" alt="" />
+              <span class="mission-item__reward-value">30,000</span>
+            </span>
+          </a>
+        </li>
+
+        <li class="mission-list__item" data-category="shopping" data-coin="30000" data-status="available" >
+          <a href="#" class="mission-item">
+            <img class="mission-item__image" src="imgs/product/04.png" alt="" />
+
+            <div class="mission-item__info">
+              <strong class="mission-item__title">
+                방송 알림 신청하기
+              </strong>
+
+              <p class="mission-item__description">
+                갤럭시 캠퍼스 라이프
+              </p>
+            </div>
+
+            <span class="mission-item__reward">
+              <img class="mission-item__reward-icon" src="imgs/coin.svg" alt="" />
+              <span class="mission-item__reward-value">30,000</span>
+            </span>
+          </a>
+        </li>
+
+        <li class="mission-list__item" data-category="shopping" data-coin="30000" data-status="available" >
+          <a href="#" class="mission-item">
+            <img class="mission-item__image" src="imgs/product/05.png" alt="" />
+
+            <div class="mission-item__info">
+              <strong class="mission-item__title">
+                방송 알림 신청하기
+              </strong>
+
+              <p class="mission-item__description">
+                갤럭시 캠퍼스 라이프
+              </p>
+            </div>
+
+            <span class="mission-item__reward">
+              <img class="mission-item__reward-icon" src="imgs/coin.svg" alt="" />
+              <span class="mission-item__reward-value">30,000</span>
+            </span>
+          </a>
+        </li>
+
+        <li class="mission-list__item" data-category="shopping" data-coin="30000" data-status="available" >
+          <a href="#" class="mission-item">
+            <img class="mission-item__image" src="imgs/product/02.png" alt="" />
+
+            <div class="mission-item__info">
+              <strong class="mission-item__title">
+                방송 알림 신청하기
+              </strong>
+
+              <p class="mission-item__description">
+                갤럭시 캠퍼스 라이프
+              </p>
+            </div>
+
+            <span class="mission-item__reward">
+              <img class="mission-item__reward-icon" src="imgs/coin.svg" alt="" />
+              <span class="mission-item__reward-value">30,000</span>
+            </span>
+          </a>
+        </li>
+
+        <li class="mission-list__item" data-category="shopping" data-coin="30000" data-status="available" >
+          <a href="#" class="mission-item">
+            <img class="mission-item__image" src="imgs/product/06.png" alt="" />
+
+            <div class="mission-item__info">
+              <strong class="mission-item__title">
+                방송 알림 신청하기
+              </strong>
+
+              <p class="mission-item__description">
+                갤럭시 캠퍼스 라이프
+              </p>
+            </div>
+
+            <span class="mission-item__reward">
+              <img class="mission-item__reward-icon" src="imgs/coin.svg" alt="" />
+              <span class="mission-item__reward-value">30,000</span>
+            </span>
+          </a>
+        </li>
+        <li class="mission-list__item" data-category="shopping" data-coin="30000" data-status="available" >
+          <a href="#" class="mission-item">
+            <img class="mission-item__image" src="imgs/product/02.png" alt="" />
+
+            <div class="mission-item__info">
+              <strong class="mission-item__title">
+                방송 알림 신청하기
+              </strong>
+
+              <p class="mission-item__description">
+                갤럭시 캠퍼스 라이프
+              </p>
+            </div>
+
+            <span class="mission-item__reward">
+              <img class="mission-item__reward-icon" src="imgs/coin.svg" alt="" />
+              <span class="mission-item__reward-value">30,000</span>
+            </span>
+          </a>
+        </li>
+
+        <li class="mission-list__item" data-category="shopping" data-coin="30000" data-status="available" >
+          <a href="#" class="mission-item">
+            <img class="mission-item__image" src="imgs/product/03.png" alt="" />
+
+            <div class="mission-item__info">
+              <strong class="mission-item__title">
+                방송 알림 신청하기
+              </strong>
+
+              <p class="mission-item__description">
+                갤럭시 캠퍼스 라이프
+              </p>
+            </div>
+
+            <span class="mission-item__reward">
+              <img class="mission-item__reward-icon" src="imgs/coin.svg" alt="" />
+              <span class="mission-item__reward-value">30,000</span>
+            </span>
+          </a>
+        </li>
+
+        <li class="mission-list__item" data-category="shopping" data-coin="30000" data-status="available" >
+          <a href="#" class="mission-item">
+            <img class="mission-item__image" src="imgs/product/04.png" alt="" />
+
+            <div class="mission-item__info">
+              <strong class="mission-item__title">
+                방송 알림 신청하기
+              </strong>
+
+              <p class="mission-item__description">
+                갤럭시 캠퍼스 라이프
+              </p>
+            </div>
+
+            <span class="mission-item__reward">
+              <img class="mission-item__reward-icon" src="imgs/coin.svg" alt="" />
+              <span class="mission-item__reward-value">30,000</span>
+            </span>
+          </a>
+        </li>
+
+        <li class="mission-list__item" data-category="shopping" data-coin="30000" data-status="available" >
+          <a href="#" class="mission-item">
+            <img class="mission-item__image" src="imgs/product/05.png" alt="" />
+
+            <div class="mission-item__info">
+              <strong class="mission-item__title">
+                방송 알림 신청하기
+              </strong>
+
+              <p class="mission-item__description">
+                갤럭시 캠퍼스 라이프
+              </p>
+            </div>
+
+            <span class="mission-item__reward">
+              <img class="mission-item__reward-icon" src="imgs/coin.svg" alt="" />
+              <span class="mission-item__reward-value">30,000</span>
+            </span>
+          </a>
+        </li>
+
+        <li class="mission-list__item" data-category="shopping" data-coin="30000" data-status="available" >
+          <a href="#" class="mission-item">
+            <img class="mission-item__image" src="imgs/product/06.png" alt="" />
+
+            <div class="mission-item__info">
+              <strong class="mission-item__title">
+                방송 알림 신청하기
+              </strong>
+
+              <p class="mission-item__description">
+                갤럭시 캠퍼스 라이프
+              </p>
+            </div>
+
+            <span class="mission-item__reward">
+              <img class="mission-item__reward-icon" src="imgs/coin.svg" alt="" />
+              <span class="mission-item__reward-value">30,000</span>
+            </span>
+          </a>
+        </li>
+
+        <li class="mission-list__item" data-category="shopping" data-coin="30000" data-status="available" >
+          <a href="#" class="mission-item">
+            <img class="mission-item__image" src="imgs/product/07.png" alt="" />
+
+            <div class="mission-item__info">
+              <strong class="mission-item__title">
+                방송 알림 신청하기
+              </strong>
+
+              <p class="mission-item__description">
+                갤럭시 캠퍼스 라이프
+              </p>
+            </div>
+
+            <span class="mission-item__reward">
+              <img class="mission-item__reward-icon" src="imgs/coin.svg" alt="" />
+              <span class="mission-item__reward-value">30,000</span>
+            </span>
+          </a>
+        </li>
+
+        <li class="mission-list__item" data-category="shopping" data-coin="30000" data-status="available" >
+          <a href="#" class="mission-item">
+            <img class="mission-item__image" src="imgs/product/01.png" alt="" />
+
+            <div class="mission-item__info">
+              <strong class="mission-item__title">
+                방송 알림 신청하기
+              </strong>
+
+              <p class="mission-item__description">
+                갤럭시 캠퍼스 라이프
+              </p>
+            </div>
+
+            <span class="mission-item__reward">
+              <img class="mission-item__reward-icon" src="imgs/coin.svg" alt="" />
+              <span class="mission-item__reward-value">30,000</span>
+            </span>
+          </a>
+        </li>
+
+        <li class="mission-list__item" data-category="shopping" data-coin="30000" data-status="available" >
+          <a href="#" class="mission-item">
+            <img class="mission-item__image" src="imgs/product/02.png" alt="" />
+
+            <div class="mission-item__info">
+              <strong class="mission-item__title">
+                방송 알림 신청하기
+              </strong>
+
+              <p class="mission-item__description">
+                갤럭시 캠퍼스 라이프
+              </p>
+            </div>
+
+            <span class="mission-item__reward">
+              <img class="mission-item__reward-icon" src="imgs/coin.svg" alt="" />
+              <span class="mission-item__reward-value">30,000</span>
+            </span>
+          </a>
+        </li>
+
+        <li class="mission-list__item" data-category="shopping" data-coin="30000" data-status="available" >
+          <a href="#" class="mission-item">
+            <img class="mission-item__image" src="imgs/product/03.png" alt="" />
+
+            <div class="mission-item__info">
+              <strong class="mission-item__title">
+                방송 알림 신청하기
+              </strong>
+
+              <p class="mission-item__description">
+                갤럭시 캠퍼스 라이프
+              </p>
+            </div>
+
+            <span class="mission-item__reward">
+              <img class="mission-item__reward-icon" src="imgs/coin.svg" alt="" />
+              <span class="mission-item__reward-value">30,000</span>
+            </span>
+          </a>
+        </li>
+
+        <li class="mission-list__item" data-category="shopping" data-coin="30000" data-status="available" >
+          <a href="#" class="mission-item">
+            <img class="mission-item__image" src="imgs/product/04.png" alt="" />
+
+            <div class="mission-item__info">
+              <strong class="mission-item__title">
+                방송 알림 신청하기
+              </strong>
+
+              <p class="mission-item__description">
+                갤럭시 캠퍼스 라이프
+              </p>
+            </div>
+
+            <span class="mission-item__reward">
+              <img class="mission-item__reward-icon" src="imgs/coin.svg" alt="" />
+              <span class="mission-item__reward-value">30,000</span>
+            </span>
+          </a>
+        </li>
+
+        <li class="mission-list__item" data-category="shopping" data-coin="30000" data-status="available" >
+          <a href="#" class="mission-item">
+            <img class="mission-item__image" src="imgs/product/05.png" alt="" />
+
+            <div class="mission-item__info">
+              <strong class="mission-item__title">
+                방송 알림 신청하기
+              </strong>
+
+              <p class="mission-item__description">
+                갤럭시 캠퍼스 라이프
+              </p>
+            </div>
+
+            <span class="mission-item__reward">
+              <img class="mission-item__reward-icon" src="imgs/coin.svg" alt="" />
+              <span class="mission-item__reward-value">30,000</span>
+            </span>
+          </a>
+        </li>
+
+        <li class="mission-list__item" data-category="shopping" data-coin="30000" data-status="available" >
+          <a href="#" class="mission-item">
+            <img class="mission-item__image" src="imgs/product/02.png" alt="" />
+
+            <div class="mission-item__info">
+              <strong class="mission-item__title">
+                방송 알림 신청하기
+              </strong>
+
+              <p class="mission-item__description">
+                갤럭시 캠퍼스 라이프
+              </p>
+            </div>
+
+            <span class="mission-item__reward">
+              <img class="mission-item__reward-icon" src="imgs/coin.svg" alt="" />
+              <span class="mission-item__reward-value">30,000</span>
+            </span>
+          </a>
+        </li>
+
+        <li class="mission-list__item" data-category="shopping" data-coin="30000" data-status="available" >
+          <a href="#" class="mission-item">
+            <img class="mission-item__image" src="imgs/product/06.png" alt="" />
+
+            <div class="mission-item__info">
+              <strong class="mission-item__title">
+                방송 알림 신청하기
+              </strong>
+
+              <p class="mission-item__description">
+                갤럭시 캠퍼스 라이프
+              </p>
+            </div>
+
+            <span class="mission-item__reward">
+              <img class="mission-item__reward-icon" src="imgs/coin.svg" alt="" />
+              <span class="mission-item__reward-value">30,000</span>
+            </span>
+          </a>
+        </li>
+
+        <li class="mission-list__item" data-category="shopping" data-coin="30000" data-status="available" >
+          <a href="#" class="mission-item">
+            <img class="mission-item__image" src="imgs/product/08.png" alt="" />
+
+            <div class="mission-item__info">
+              <strong class="mission-item__title">
+                방송 알림 신청하기
+              </strong>
+
+              <p class="mission-item__description">
+                갤럭시 캠퍼스 라이프
+              </p>
+            </div>
+
+            <span class="mission-item__reward">
+              <img class="mission-item__reward-icon" src="imgs/coin.svg" alt="" />
+              <span class="mission-item__reward-value">30,000</span>
+            </span>
+          </a>
+        </li>
+      </ul>
+
+<!--
+    현재 퍼블에서는 전체 li 개수를 기준으로 16개씩 나누어 표시합니다.
+    -->
+    <nav class="mission-pagination"  id="missionPagination"  aria-label="미션 목록 페이지" >
+      <button type="button"   class="mission-pagination__arrow mission-pagination__arrow--prev"   id="missionPagePrev"    aria-label="이전 페이지" >
+        <span aria-hidden="true"></span>
+      </button>
+
+      <div class="mission-pagination__pages" id="missionPaginationPages"></div>
+
+      <button type="button" class="mission-pagination__arrow mission-pagination__arrow--next"  id="missionPageNext"  aria-label="다음 페이지" >
+        <span aria-hidden="true"></span>
+      </button>
+    </nav>
+      </div>
+
+
+<!--
+  공통 비정상 접근 오류 UI 
+  특정 탭 전용 화면이 아닙니다.
+  비정상적인 접근이 감지된 경우 사용할 수 있는 공통 오류 화면입니다.
+  현재는 퍼블리싱 확인을 위해 '쇼핑 미션' 탭에 임시 연결했습니다.
+-->
+
+<!-- 오류 로딩 화면 -->
+  <div class="mission-state" id="missionLoading" aria-live="polite" hidden >
+    <img class="mission-state__image" src="imgs/search.png" alt="" />
+    <div class="mission-state__content">
+      <p class="mission-state__message">
+        광고 불러오는 중...
+      </p>
+
+      <div class="mission-state__dots" aria-hidden="true">
+        <span class="mission-state__dot"></span>
+        <span class="mission-state__dot"></span>
+        <span class="mission-state__dot"></span>
+      </div>
+    </div>
+    </div>
+
+<!-- 오류 화면 새로고침 1 -->
+<div class="mission-state mission-state--error" id="missionError" role="status" aria-live="polite" hidden >
+  <img class="mission-state__image mission-state__image--error" src="imgs/error.png" alt=""  />
+
+  <div class="mission-state__content">
+    <p class="mission-state__message mission-state__message--error">
+      서비스 연결에 문제가 발생했습니다.<br />
+      잠시 후 다시 시도해주세요.
+    </p>
+
+    <button type="button" class="mission-state__refresh" id="missionRetry" >
+      새로 고침
+    </button>
+  </div>
+</div>
+
+<!-- 오류 화면 새로고침 2 -->
+<div class="mission-state mission-state--error" id="missionAccessError" role="status" aria-live="polite" hidden >
+  <img class="mission-state__image mission-state__image--error" src="imgs/error.png" alt=""  />
+
+  <div class="mission-state__content">
+    <p class="mission-state__message mission-state__message--error">
+      비정상적인 접근이 감지되었습니다.<br />
+      잠시 후 다시 시도해주세요.
+    </p>
+
+    <button type="button" class="mission-state__refresh" id="missionAccessRetry" >
+      새로 고침
+    </button>
+  </div>
+</div>
+    </section>
+
+  </div>
+</main>
+
+<!-- 하단 -->
+<footer class="footer-sign">
+  <p class="footer-sign__copy">
+    © NHN Corp. All rights reserved.
+  </p>
+</footer>
+
+    </div>
+  </div>
+
+
+
+
+<!-- 참여 방법 안내 팝업 -->
+<div class="mission-modal" id="missionModal" hidden>
+  <!-- 딤드 배경 -->
+  <div class="mission-modal__backdrop" data-modal-close aria-hidden="true"></div>
+
+  <section class="mission-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="missionModalTitle" aria-describedby="missionModalDescription" >
+    <!-- 팝업 상단 -->
+    <header class="mission-modal__header">
+      <h2 class="mission-modal__title" id="missionModalTitle">
+        참여 방법 안내
+      </h2>
+
+      <p class="mission-modal__description" id="missionModalDescription">
+        리워드 지급 시기, 조건을 다시 한번 잘 확인하세요!
+      </p>
+    </header>
+
+    <!-- 팝업 스크롤 콘텐츠 -->
+<div class="mission-modal__content">
+  <p class="mission-modal__text">
+[참여 방법]
+1. 광고 참여 버튼을 터치하여 마켓으로 이동
+2. App 최초 오픈 후 광고 추적 허용 동의 (iOS 필수)
+3. 레벨 45를 완료
+
+[유의사항]
+· 최초 참여자 대상입니다.
+· 30일 이내 참여해야 리워드가 지급됩니다.
+· 리워드 지급까지 최대 10분 정도 소요될 수 있습니다.
+· Wi-Fi가 아닌 환경에서는 데이터 이용료가 발생할 수 있습니다.
+· 광고 추적 허용에 동의하지 않은 경우 적립되지 않습니다. (iOS 한정)
+
+참여 완료 후 리워드 지급까지 최대 1시간가량 지연될 수 있습니다.
+이미 다른 방법으로 참여한 이력이 있는 사용자는 지급 대상에서 제외됩니다.
+본 광고는 사전 공지 없이 내용이 변경되거나 조기 종료될 수 있습니다.
+</p>
+</div>
+
+    <!-- 팝업 버튼 -->
+    <footer class="mission-modal__footer">
+      <button type="button" class="mission-modal__button mission-modal__button--secondary" id="missionModalClose" >
+        닫기
+      </button>
+
+      <button type="button" class="mission-modal__button mission-modal__button--primary" id="missionModalParticipate" >
+        참여하기
+      </button>
+    </footer>
+  </section>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    /* =====================================================
+       공통 요소
+    ===================================================== */
+
+    const categoryTabs = document.querySelectorAll(".offer-tab");
+
+    const sortButtons = document.querySelectorAll(
+      ".offer-sort__button"
+    );
+
+    /* 모바일 페이지 이동 시 스크롤 기준이 되는 상단 탭 */
+    const offerTabs = document.querySelector(".offer-tabs");
+
+    /* 리스트 + 페이지네이션 묶음 */
+    const missionListView = document.querySelector(
+      "#missionListView"
+    );
+
+    const missionList = document.querySelector(
+      "#missionList"
+    );
+
+    /* 페이지네이션 */
+    const missionPagination = document.querySelector(
+      "#missionPagination"
+    );
+
+    const missionPaginationPages = document.querySelector(
+      "#missionPaginationPages"
+    );
+
+    const missionPagePrev = document.querySelector(
+      "#missionPagePrev"
+    );
+
+    const missionPageNext = document.querySelector(
+      "#missionPageNext"
+    );
+
+    /* 공통 로딩 화면 */
+    const missionLoading = document.querySelector(
+      "#missionLoading"
+    );
+
+    /* 오류 화면 1: 서비스 연결 오류 */
+    const missionError = document.querySelector(
+      "#missionError"
+    );
+
+    const missionRetry = document.querySelector(
+      "#missionRetry"
+    );
+
+    /* 오류 화면 2: 비정상 접근 오류 */
+    const missionAccessError = document.querySelector(
+      "#missionAccessError"
+    );
+
+    const missionAccessRetry = document.querySelector(
+      "#missionAccessRetry"
+    );
+
+    let retryTimer = null;
+
+    /* =====================================================
+       페이지네이션 설정
+    ===================================================== */
+
+    /* 한 페이지당 최대 노출 개수 */
+    const ITEMS_PER_PAGE = 16;
+
+    /* 화면에 표시할 최대 페이지 번호 개수 */
+    const MAX_PAGE_BUTTONS = 9;
+
+    let currentMissionPage = 1;
+
+    /*
+      추천순 복원을 위한 최초 리스트 순서 저장
+
+      실제 개발 연동 시에는 서버에서 전달받은
+      추천순 데이터를 기준으로 구성해주세요.
+    */
+    const originalMissionItems = getMissionItems();
+
+    originalMissionItems.forEach(function (item, index) {
+      item.dataset.originalIndex = String(index);
+    });
+
+    /* 전체 미션 li 가져오기 */
+    function getMissionItems() {
+      if (!missionList) return [];
+
+      return Array.from(missionList.children).filter(
+        function (item) {
+          return item.classList.contains(
+            "mission-list__item"
+          );
+        }
+      );
+    }
+
+    /* 전체 페이지 수 계산 */
+    function getMissionTotalPages() {
+      const itemCount = getMissionItems().length;
+
+      return Math.max(
+        1,
+        Math.ceil(itemCount / ITEMS_PER_PAGE)
+      );
+    }
+
+    /* =====================================================
+       모바일 페이지 변경 시 상단 탭으로 이동
+
+       PC에서는 현재 스크롤 위치 유지
+       모바일 767px 이하에서만 실행
+    ===================================================== */
+
+    function scrollToOfferTabsOnMobile() {
+      const isMobile = window.matchMedia(
+        "(max-width: 47.9375rem)"
+      ).matches;
+
+      if (!isMobile || !offerTabs) return;
+
+      /*
+        리스트가 새 페이지로 변경된 다음
+        상단 카테고리 탭 위치를 계산합니다.
+      */
+      requestAnimationFrame(function () {
+        const currentScrollTop =
+          window.scrollY || window.pageYOffset;
+
+        const offerTabsTop =
+          offerTabs.getBoundingClientRect().top +
+          currentScrollTop;
+
+        window.scrollTo({
+          top: offerTabsTop,
+          behavior: "smooth"
+        });
+      });
+    }
+
+    /* 지정한 페이지의 리스트만 노출 */
+    function renderMissionPage(page) {
+      if (!missionList) return;
+
+      const missionItems = getMissionItems();
+      const totalPages = getMissionTotalPages();
+
+      currentMissionPage = Math.min(
+        Math.max(page, 1),
+        totalPages
+      );
+
+      const startIndex =
+        (currentMissionPage - 1) * ITEMS_PER_PAGE;
+
+      const endIndex =
+        startIndex + ITEMS_PER_PAGE;
+
+      missionItems.forEach(function (item, index) {
+        item.hidden =
+          index < startIndex || index >= endIndex;
+      });
+
+      renderMissionPagination(totalPages);
+    }
+
+    /* 페이지 번호 렌더링 */
+    function renderMissionPagination(totalPages) {
+      if (
+        !missionPagination ||
+        !missionPaginationPages ||
+        !missionPagePrev ||
+        !missionPageNext
+      ) {
+        return;
+      }
+
+      missionPaginationPages.innerHTML = "";
+
+      /*
+        페이지가 9개를 넘으면 현재 페이지를 기준으로
+        최대 9개까지만 표시합니다.
+      */
+      let startPage = Math.max(
+        1,
+        currentMissionPage -
+          Math.floor(MAX_PAGE_BUTTONS / 2)
+      );
+
+      let endPage = Math.min(
+        totalPages,
+        startPage + MAX_PAGE_BUTTONS - 1
+      );
+
+      startPage = Math.max(
+        1,
+        endPage - MAX_PAGE_BUTTONS + 1
+      );
+
+      for (
+        let page = startPage;
+        page <= endPage;
+        page += 1
+      ) {
+        const pageButton =
+          document.createElement("button");
+
+        pageButton.type = "button";
+
+        pageButton.className =
+          "mission-pagination__page";
+
+        pageButton.textContent = String(page);
+        pageButton.dataset.page = String(page);
+
+        pageButton.setAttribute(
+          "aria-label",
+          page + "페이지"
+        );
+
+        if (page === currentMissionPage) {
+          pageButton.classList.add("is-active");
+
+          pageButton.setAttribute(
+            "aria-current",
+            "page"
+          );
+        }
+
+        /*
+          숫자 페이지 클릭
+
+          PC     : 화면 위치 유지
+          모바일 : 상단 카테고리 탭으로 이동
+        */
+        pageButton.addEventListener(
+          "click",
+          function () {
+            /* 현재 페이지를 다시 누른 경우 아무 동작 없음 */
+            if (page === currentMissionPage) return;
+
+            renderMissionPage(page);
+            scrollToOfferTabsOnMobile();
+          }
+        );
+
+        missionPaginationPages.appendChild(
+          pageButton
+        );
+      }
+
+      /* 첫 페이지에서는 이전 버튼 비활성화 */
+      missionPagePrev.disabled =
+        currentMissionPage === 1;
+
+      /* 마지막 페이지에서는 다음 버튼 비활성화 */
+      missionPageNext.disabled =
+        currentMissionPage === totalPages;
+    }
+
+    /* 이전 페이지 */
+    if (missionPagePrev) {
+      missionPagePrev.addEventListener(
+        "click",
+        function () {
+          if (currentMissionPage <= 1) return;
+
+          renderMissionPage(
+            currentMissionPage - 1
+          );
+
+          scrollToOfferTabsOnMobile();
+        }
+      );
+    }
+
+    /* 다음 페이지 */
+    if (missionPageNext) {
+      missionPageNext.addEventListener(
+        "click",
+        function () {
+          const totalPages =
+            getMissionTotalPages();
+
+          if (
+            currentMissionPage >= totalPages
+          ) {
+            return;
+          }
+
+          renderMissionPage(
+            currentMissionPage + 1
+          );
+
+          scrollToOfferTabsOnMobile();
+        }
+      );
+    }
+
+    /* =====================================================
+       미션 영역 화면 전환
+
+       아래 상태 UI는 특정 탭 전용 화면이 아닙니다.
+       현재 퍼블리싱 확인을 위해 각 빈 탭에 임시 연결했습니다.
+
+       list         : 기본 리스트 + 페이지네이션
+       loading      : 공통 로딩 화면
+       error        : 서비스 연결 오류
+       access-error : 비정상 접근 오류
+
+       실제 개발 시에는 탭 종류가 아니라
+       API 요청 결과와 오류 유형에 따라 노출해주세요.
+    ===================================================== */
+
+    function showMissionView(view) {
+      if (missionListView) {
+        missionListView.hidden =
+          view !== "list";
+      }
+
+      if (missionLoading) {
+        missionLoading.hidden =
+          view !== "loading";
+      }
+
+      if (missionError) {
+        missionError.hidden =
+          view !== "error";
+      }
+
+      if (missionAccessError) {
+        missionAccessError.hidden =
+          view !== "access-error";
+      }
+
+      if (view === "list") {
+        renderMissionPage(
+          currentMissionPage
+        );
+      }
+    }
+
+    /* =====================================================
+       카테고리 탭
+
+       퍼블리싱 확인용 임시 연결
+
+       전체      → 기본 리스트
+       참여 미션 → 공통 로딩 화면
+       금융 미션 → 오류 화면 1
+       쇼핑 미션 → 오류 화면 2
+    ===================================================== */
+
+    categoryTabs.forEach(function (tab) {
+      tab.addEventListener("click", function () {
+        categoryTabs.forEach(function (item) {
+          item.classList.remove("is-active");
+
+          item.setAttribute(
+            "aria-selected",
+            "false"
+          );
+        });
+
+        tab.classList.add("is-active");
+
+        tab.setAttribute(
+          "aria-selected",
+          "true"
+        );
+
+        const selectedCategory =
+          tab.dataset.category;
+
+        /* 실행 중인 새로 고침 타이머 제거 */
+        if (retryTimer) {
+          window.clearTimeout(retryTimer);
+          retryTimer = null;
+        }
+
+        /* 참여 미션: 공통 로딩 UI 확인 */
+        if (
+          selectedCategory ===
+          "participation"
+        ) {
+          showMissionView("loading");
+
+          console.log(
+            "선택된 카테고리:",
+            selectedCategory
+          );
+
+          return;
+        }
+
+        /* 금융 미션: 오류 화면 1 확인 */
+        if (
+          selectedCategory === "finance"
+        ) {
+          showMissionView("error");
+
+          console.log(
+            "선택된 카테고리:",
+            selectedCategory
+          );
+
+          return;
+        }
+
+        /* 쇼핑 미션: 오류 화면 2 확인 */
+        if (
+          selectedCategory === "shopping"
+        ) {
+          showMissionView(
+            "access-error"
+          );
+
+          console.log(
+            "선택된 카테고리:",
+            selectedCategory
+          );
+
+          return;
+        }
+
+        /*
+          전체 탭: 리스트 1페이지 표시
+
+          실제 개발 시 카테고리별 데이터를
+          조회한 후 1페이지부터 표시해주세요.
+        */
+        currentMissionPage = 1;
+        showMissionView("list");
+
+        console.log(
+          "선택된 카테고리:",
+          selectedCategory
+        );
+      });
+    });
+
+    /* =====================================================
+       오류 화면 1 새로 고침
+       서비스 연결 오류
+    ===================================================== */
+
+    if (missionRetry) {
+      missionRetry.addEventListener(
+        "click",
+        function () {
+          if (retryTimer) {
+            window.clearTimeout(retryTimer);
+          }
+
+          showMissionView("loading");
+
+          /*
+            퍼블 확인용:
+            1.2초 후 오류 화면 1을 다시 표시합니다.
+
+            실제 개발 시 API 결과에 따라:
+            성공 → showMissionView("list")
+            실패 → showMissionView("error")
+          */
+          retryTimer = window.setTimeout(
+            function () {
+              showMissionView("error");
+              retryTimer = null;
+
+              missionRetry.focus();
+            },
+            1200
+          );
+        }
+      );
+    }
+
+    /* =====================================================
+       오류 화면 2 새로 고침
+       비정상 접근 오류
+    ===================================================== */
+
+    if (missionAccessRetry) {
+      missionAccessRetry.addEventListener(
+        "click",
+        function () {
+          if (retryTimer) {
+            window.clearTimeout(retryTimer);
+          }
+
+          showMissionView("loading");
+
+          /*
+            퍼블 확인용:
+            1.2초 후 오류 화면 2를 다시 표시합니다.
+
+            실제 개발 시 API 결과에 따라:
+            성공 → showMissionView("list")
+            실패 → showMissionView("access-error")
+          */
+          retryTimer = window.setTimeout(
+            function () {
+              showMissionView(
+                "access-error"
+              );
+
+              retryTimer = null;
+
+              missionAccessRetry.focus();
+            },
+            1200
+          );
+        }
+      );
+    }
+
+    /* =====================================================
+       정렬 메뉴
+    ===================================================== */
+
+    sortButtons.forEach(function (button) {
+      button.addEventListener(
+        "click",
+        function () {
+          sortButtons.forEach(function (item) {
+            item.classList.remove(
+              "is-active"
+            );
+
+            item.setAttribute(
+              "aria-pressed",
+              "false"
+            );
+          });
+
+          button.classList.add(
+            "is-active"
+          );
+
+          button.setAttribute(
+            "aria-pressed",
+            "true"
+          );
+
+          const selectedSort =
+            button.dataset.sort;
+
+          sortMissionItems(selectedSort);
+
+          console.log(
+            "선택된 정렬:",
+            selectedSort
+          );
+        }
+      );
+    });
+
+    /* 리스트 실제 정렬 */
+    function sortMissionItems(sortType) {
+      if (!missionList) return;
+
+      const missionItems =
+        getMissionItems();
+
+      missionItems.sort(function (
+        itemA,
+        itemB
+      ) {
+        if (sortType === "coin-desc") {
+          return (
+            Number(
+              itemB.dataset.coin || 0
+            ) -
+            Number(
+              itemA.dataset.coin || 0
+            )
+          );
+        }
+
+        if (sortType === "coin-asc") {
+          return (
+            Number(
+              itemA.dataset.coin || 0
+            ) -
+            Number(
+              itemB.dataset.coin || 0
+            )
+          );
+        }
+
+        /* 추천순: 최초 HTML 순서로 복원 */
+        return (
+          Number(
+            itemA.dataset.originalIndex || 0
+          ) -
+          Number(
+            itemB.dataset.originalIndex || 0
+          )
+        );
+      });
+
+      missionItems.forEach(function (item) {
+        missionList.appendChild(item);
+      });
+
+      currentMissionPage = 1;
+      renderMissionPage(1);
+    }
+
+    /* =====================================================
+       미션 참여 팝업
+    ===================================================== */
+
+    const missionModal =
+      document.querySelector(
+        "#missionModal"
+      );
+
+    const missionModalClose =
+      document.querySelector(
+        "#missionModalClose"
+      );
+
+    const missionModalParticipate =
+      document.querySelector(
+        "#missionModalParticipate"
+      );
+
+    const missionModalBackdrop =
+      missionModal
+        ? missionModal.querySelector(
+            "[data-modal-close]"
+          )
+        : null;
+
+    /* 현재 팝업을 연 미션 */
+    let selectedMission = null;
+
+    /* 팝업을 열기 전에 포커스된 요소 */
+    let previousFocusedElement = null;
+
+    if (
+      missionList &&
+      missionModal &&
+      missionModalClose &&
+      missionModalParticipate
+    ) {
+      /* 미션 리스트 클릭 */
+      missionList.addEventListener(
+        "click",
+        function (event) {
+          const missionItem =
+            event.target.closest(
+              ".mission-item"
+            );
+
+          if (!missionItem) return;
+
+          if (
+            !missionList.contains(
+              missionItem
+            )
+          ) {
+            return;
+          }
+
+          const listItem =
+            missionItem.closest(
+              ".mission-list__item"
+            );
+
+          if (!listItem) return;
+
+          /* 완료된 항목은 팝업을 열지 않음 */
+          if (
+            listItem.dataset.status ===
+            "complete"
+          ) {
+            return;
+          }
+
+          event.preventDefault();
+
+          selectedMission = listItem;
+          previousFocusedElement =
+            missionItem;
+
+          openMissionModal();
+        }
+      );
+
+      /* 닫기: 팝업만 닫기 */
+      missionModalClose.addEventListener(
+        "click",
+        function () {
+          closeMissionModal();
+        }
+      );
+
+      /* 참여하기: 참여 완료 후 닫기 */
+      missionModalParticipate.addEventListener(
+        "click",
+        function () {
+          /*
+            실제 개발 시 광고 이동 또는
+            참여 API 성공 응답 후 실행해주세요.
+          */
+          closeMissionModal({
+            complete: true
+          });
+        }
+      );
+
+      /* 딤드 클릭 */
+      if (missionModalBackdrop) {
+        missionModalBackdrop.addEventListener(
+          "click",
+          function () {
+            closeMissionModal();
+          }
+        );
+      }
+
+      /* ESC 키 */
+      document.addEventListener(
+        "keydown",
+        function (event) {
+          if (event.key !== "Escape") {
+            return;
+          }
+
+          if (missionModal.hidden) {
+            return;
+          }
+
+          closeMissionModal();
+        }
+      );
+    }
+
+    /* 팝업 열기 */
+    function openMissionModal() {
+      if (
+        !missionModal ||
+        !missionModalParticipate
+      ) {
+        return;
+      }
+
+      missionModal.hidden = false;
+
+      document.body.classList.add(
+        "is-modal-open"
+      );
+
+      requestAnimationFrame(function () {
+        missionModalParticipate.focus();
+      });
+    }
+
+    /*
+      팝업 닫기
+
+      complete: false → 팝업만 닫기
+      complete: true  → 참여 완료 처리 후 닫기
+    */
+    function closeMissionModal(
+      options = {}
+    ) {
+      if (!missionModal) return;
+
+      const complete =
+        options.complete === true;
+
+      if (
+        complete &&
+        selectedMission
+      ) {
+        setMissionComplete(
+          selectedMission
+        );
+      }
+
+      missionModal.hidden = true;
+
+      document.body.classList.remove(
+        "is-modal-open"
+      );
+
+      if (
+        !complete &&
+        previousFocusedElement &&
+        document.contains(
+          previousFocusedElement
+        )
+      ) {
+        previousFocusedElement.focus();
+      }
+
+      selectedMission = null;
+      previousFocusedElement = null;
+    }
+
+    /* =====================================================
+       미션 참여 완료 처리
+    ===================================================== */
+
+    function setMissionComplete(listItem) {
+      const missionItem =
+        listItem.querySelector(
+          ".mission-item"
+        );
+
+      const reward =
+        listItem.querySelector(
+          ".mission-item__reward"
+        );
+
+      if (!missionItem || !reward) {
+        return;
+      }
+
+      /* 상태 및 코인값 변경 */
+      listItem.dataset.status =
+        "complete";
+
+      listItem.dataset.coin = "0";
+
+      /* 완료 디자인 적용 */
+      missionItem.classList.add(
+        "mission-item--complete"
+      );
+
+      reward.classList.add(
+        "mission-item__reward--complete"
+      );
+
+      /* 링크 제거 및 재클릭 방지 */
+      missionItem.removeAttribute(
+        "href"
+      );
+
+      missionItem.setAttribute(
+        "aria-disabled",
+        "true"
+      );
+
+      missionItem.setAttribute(
+        "tabindex",
+        "-1"
+      );
+
+      /* 코인 영역을 참여 완료로 변경 */
+      reward.innerHTML = `
+        <span class="mission-item__reward-value">
+          참여 완료
+        </span>
+      `;
+    }
+
+    /* =====================================================
+       최초 화면 실행
+    ===================================================== */
+
+    showMissionView("list");
+    renderMissionPage(1);
+  });
+</script>
+
+
+
+
+
+</body>
+</html>
