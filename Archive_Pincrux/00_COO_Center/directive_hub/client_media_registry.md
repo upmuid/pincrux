@@ -1,7 +1,7 @@
 ---
 node: 총총(Orchestrator / COO) 전용
-version: 1.3.0
-last_updated: 2026-07-20
+version: 1.4.0
+last_updated: 2026-07-22
 role: 광고주(Client)·매체/제휴사(Media_Partner)·인하우스(In-house) 이중 역할 판단 기준·유지보수 절차·폴더링 정책을 총총이 직접 소유·관리하는 거버넌스 문서
 ---
 
@@ -23,6 +23,8 @@ role: 광고주(Client)·매체/제휴사(Media_Partner)·인하우스(In-house)
 
 ## 4. 애매한 케이스 및 이중 역할 판단 기준
 
+**2026-07-22 신설 — Media_Partner ↔ Partner(제휴사) 분리**: 기존에 "매체/제휴사"로 뭉뚱그려 관리하던 카테고리를 Media_Partner(매체, 광고 인벤토리 거래)와 Partner(제휴사, 사업 협력·공급 관계, 폴더 215416833)로 분리했다. 쿠프마케팅(쿠폰 공급사)이 최초 이관 사례. 판단 기준: 핀크럭스 광고가 상대방 앱/플랫폼에 노출되고 매체비를 받는 구조 = Media_Partner. 광고 인벤토리 거래 없이 쿠폰·상품 공급, 컨텐츠 제휴 등만 있으면 = Partner. 신규 엔티티가 이 경계에서 애매하면 `human_action_required`로 총총에게 보고.
+
 **핵심 원칙**: 하나의 엔티티가 항상 하나의 역할만 갖는 것은 아니다. 특히 아래 유형은 광고주(Client)와 매체(Media_Partner) 역할을 문맥에 따라 바꿔가며 등장할 수 있으므로, `entity_manifest.json`의 고정값을 기계적으로 따르기 전에 **이번 대화가 어떤 역할로 등장했는지** 확인해야 한다.
 
 - **자체 트래픽/인벤토리를 보유한 대형 사업자**(카드사·통신사·포털 등)는 (a) 자사 서비스 홍보를 위해 핀크럭스에 비용을 지불하는 광고주로 등장할 수도 있고, (b) 자사 앱/플랫폼에 핀크럭스 광고 인벤토리(오퍼월 등)를 태워주는 매체로 등장할 수도 있다. 예: KT(엠모바일=매체로 등장, 프로젝트K/혜택플랫폼=제휴 구조가 매체에 가까움), SK플래닛(광고주로 등록되어 있으나 자체 커머스 플랫폼 성격도 있어 재확인 필요).
@@ -35,7 +37,7 @@ role: 광고주(Client)·매체/제휴사(Media_Partner)·인하우스(In-house)
 - 오분류 발견 시 `entity_manifest.json`의 값(major_category 등)을 정정하고, 정정 사유·일자·근거는 `entity_history.md`의 해당 엔티티 항목에 기록한 후 Jason 확인을 받아 페이지 이동(parentId 변경) 및 라벨 수정을 진행한다.
 
 ## 6. 폴더링 체계 및 사명 표기 규칙
-- **폴더 구조**: 실제 구조는 Client(210665474) / Media_Partner(210894849) / In-house(210698241, 하위 IH_Policy=210796545, IH_Product=210763777)이다. In-house만 정책류(IH_Policy)/제품류(IH_Product)로 구분한다.
+- **폴더 구조**: 실제 구조는 Client(210665474) / Media_Partner(210894849) / Partner(215416833, 2026-07-22 신설) / In-house(210698241, 하위 IH_Policy=210796545, IH_Product=210763777)이다. In-house만 정책류(IH_Policy)/제품류(IH_Product)로 구분한다.
 - **minor_category(Project/Product) 개념 폐기**: Client/Media_Partner는 Project/Product 하위분류를 사용하지 않는다. "Product"라는 명명은 오직 In-house 하위 폴더명(IH_Product)에만 존속하며, 이는 폴더 이름일 뿐 개별 엔티티에 부여하는 분류 필드가 아니다.
 - **사명 표기 고정**: 회사명은 반드시 "핀크럭스"로만 표기하며 "핑크럭스" 등 오탈자를 금지한다. 전 노드(v0~v4) 지침에 공통 반영됨. 기존 발행 콘텐츠 전수 정정은 완료됨(57개 페이지 전수 확인, 오탈자 0건 — `CHANGELOG.md` v0_coo.md 섹션 참조).
 

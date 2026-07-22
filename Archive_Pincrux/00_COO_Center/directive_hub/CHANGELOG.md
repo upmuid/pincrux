@@ -1,7 +1,7 @@
 ---
 document: 지침 변경 이력 (Directive Changelog)
 version: 1.0.0
-last_updated: 2026-07-20
+last_updated: 2026-07-21
 owner: 총총(COO)
 ---
 
@@ -36,6 +36,7 @@ owner: 총총(COO)
 | 2026-07-14 | 이중 역할 주의 규칙 신설(카드사·통신사 등 Client/Media_Partner 겸업 케이스). |
 | 2026-07-15 | 데이터 스캔 2단계 전략 신설(토큰/시간 절감, 전체 스레드 미리 다 펼쳐읽지 않음). 핵심 사실 원문 근거 인용 범위를 "핵심 문장 1~2개"로 축소 조정. |
 | 2026-07-16 | Client/Media_Partner의 minor_category(Project/Product) 구분 폐지, In-house만 유지. 사명 표기 고정 규칙 신설. |
+| 2026-07-22 | Major Category에 "제휴사(Partner)" 신설(Jason 지시). 기존 "매체/제휴사" 통합 카테고리를 매체(Media_Partner, 광고 인벤토리 거래)와 제휴사(Partner, 사업 협력·공급 관계, 폴더 215416833)로 분리. 판단 기준 신설. |
 
 ## v2_writer.md
 | 일자 | 변경 |
@@ -44,6 +45,8 @@ owner: 총총(COO)
 | 2026-07-15 | Step 2.5 PINCRUX/CLUV 콘텐츠 라우팅 신설. "발행 수준 완성도 필수" 규칙 신설(다시쓰미 생략 가능성 대비). |
 | 2026-07-16 | Step 2.5 2차 갱신: PINCRUX 잔여 섹션(멤버십 팬 서비스 등) 재분류 이관 완료 반영. 폴더 명명 규칙 최종본 확정(Client/Media_Partner 단일 폴더, In-house는 IH_Policy/IH_Product). 사명 표기 고정 규칙 신설. |
 | 2026-07-20 | Step 2.5를 `routing_pincrux_cluv.md`로 분리, 조건부 트리거 문구로 축소(해당 엔티티 없는 배치는 안 읽어도 됨). |
+| 2026-07-21 | Step 2/신규 페이지 템플릿에 구분선(`---`) 규칙 신설: 서로 다른 업무(프로젝트·캠페인) 섹션이 나뉘는 지점마다 시각적 구분을 위해 마크다운 수평 구분선을 넣도록 함(Jason 지시, 페이앤드 페이지 가독성 피드백 반영). 이번에 새로 추가하는 섹션에만 적용, 과거 발행 섹션은 소급 정정하지 않음. |
+| 2026-07-22 | 섹션 4 부모 카테고리 표에 Partner(제휴사, 폴더 215416833) 행 추가. Media_Partner vs Partner 판단 기준 신설. |
 
 ## v3_validator.md
 | 일자 | 변경 |
@@ -55,6 +58,7 @@ owner: 총총(COO)
 | 일자 | 변경 |
 |---|---|
 | 2026-07-16 | 사명 오탈자 정정 규칙 신설(정제 중 발견 시 즉시 "핀크럭스"로 정정). |
+| 2026-07-21 | 구조화 항목에 "구분선 확인" 규칙 추가 — 쓰미가 넣은 섹션 간 `---` 구분선 누락 여부 확인·보완(v2_writer.md 신규 규칙과 짝). |
 
 ## interface_spec.md
 | 일자 | 변경 |
@@ -68,6 +72,7 @@ owner: 총총(COO)
 | 2026-07-14 | 신설: 애매한 케이스 및 이중 역할 판단 기준 정의. |
 | 2026-07-16 | 폴더링 체계 개편 및 사명 표기 규칙 반영. minor_category(Project/Product) 개념 전면 폐기. |
 | 2026-07-20 | 엔티티 리스트업 표(구 2절)·정정 이력 로그(구 3절)를 entity_manifest.json/entity_history.md로 이관하고 제거(중복 제거). 이후 entity_manifest.json 자체도 조회용/이력용으로 재분리. |
+| 2026-07-22 | Media_Partner ↔ Partner(제휴사) 분리 기준 신설(4절). Jason이 Confluence에 Partner 네이티브 폴더(215416833) 직접 생성. |
 
 ## entity_manifest.json
 | 일자 | 변경 |
@@ -75,3 +80,4 @@ owner: 총총(COO)
 | 2026-07-13 | 신설: 모으미/쓰미가 CQL 탐색 없이 즉시 참조하는 고정 엔티티 목록 도입. |
 | 2026-07-16 | 폴더 구조 3차 갱신(Client/Media_Partner/IH_Policy/IH_Product 실제 ID 반영), minor_category 필드 전량 제거. |
 | 2026-07-20 | registry 정정 이력을 이 파일의 note 필드로 흡수 → 다시 `entity_history.md`로 분리(조회 전용 파일을 가볍게 유지하기 위함). `known_sections` 필드(사실상 미사용) 제거. |
+| 2026-07-22 | parent_category_pages/folder_naming_convention에 Partner_root(215416833) 추가. 쿠프마케팅을 Media_Partner→Partner로 재분류. 피플카를 Client→Media_Partner로 재분류(확정). SPC를 섹타나인으로 개명·통합(SPC는 alias), Media_Partner 확정. 오사라마켓/롯데멤버스 human_action_required 해제(Media_Partner 확정). 카카오페이지를 카카오페이와 별개 엔티티로 참고 등록(페이지 미생성). |

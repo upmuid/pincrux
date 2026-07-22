@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.1",
+  "node": "writer",
+  "run_date": "2020-10-31",
+  "source_file": "Archive_Pincrux/01_Collector/2020-10-31.json",
+  "node_status": "success",
+  "processed_tasks": [
+    {
+      "task_id": "T001",
+      "entity_name": "어니스트펀드",
+      "project_name": "카카오페이지 오퍼월 투자유치 캠페인",
+      "page_scope": "child",
+      "target_name": "어니스트펀드 > 카카오페이지 오퍼월 투자유치 캠페인",
+      "context_status": "new",
+      "action_taken": "created_new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/215810049",
+      "confluence_page_id": "215810049",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/210665474",
+      "confluence_parent_page_id": "210665474",
+      "updated_sections": [
+        "## 엔티티 개요",
+        "## 카카오페이지 오퍼월 투자유치 캠페인 (2020)",
+        "## FAQ 및 트러블슈팅",
+        "## 주요 담당자"
+      ]
+    },
+    {
+      "task_id": "T002",
+      "entity_name": "NH멤버스",
+      "project_name": "네이버페이 직접운영 채널",
+      "page_scope": "child",
+      "target_name": "NH멤버스 > 네이버페이 직접운영 채널",
+      "context_status": "new",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/199491593/NH",
+      "confluence_page_id": "199491593",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/210894849",
+      "confluence_parent_page_id": "210894849",
+      "updated_sections": [
+        "## 네이버페이 직접운영 채널 (2020)"
+      ]
+    }
+  ],
+  "skipped_tasks": []
+}

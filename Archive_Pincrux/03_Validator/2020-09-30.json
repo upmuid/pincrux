@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.1",
+  "node": "validator",
+  "run_date": "2020-09-30",
+  "source_files": {
+    "collector": "Archive_Pincrux/01_Collector/2020-09-30.json",
+    "writer": "Archive_Pincrux/02_Writer/2020-09-30.json"
+  },
+  "node_status": "success",
+  "review_summary": {
+    "total_reviewed": 7,
+    "passed_cnt": 7,
+    "failed_cnt": 0,
+    "slack_reread_cnt": 3
+  },
+  "validation_results": [
+    {
+      "task_id": "T001",
+      "target_name": "오퍼월",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151821",
+      "confluence_page_id": "192151821",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "1패스(JSON vs 컨플루언스)만 수행. 트리거 조건(불일치/단문과요약/액션아이템누락) 미해당으로 슬랙 예방적 재조회 없음. '오퍼월 iOS14 IDFA 정책 변경 대응 일정 취합 (2020-08)' 기존 섹션 내부에 9/11 SDK/API 매체향 중단 공지 내용이 정확히 병합됨(운영 히스토리/의사결정/액션 아이템 모두 모으미 JSON과 일치). 기존 하위 섹션(PG계약, 인프라구성, 하나멤버스, 카포인트, 플랫폼운영, 소재제작, SDK 다이렉트진입)은 변경 없이 보존됨. 사명 표기(핀크럭스) 오탈자 없음."
+    },
+    {
+      "task_id": "T002",
+      "target_name": "쿠프마케팅 > SPC 상품권 공급",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/213286923",
+      "confluence_page_id": "213286923",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "1패스만 수행. 신규 프로젝트 섹션 'SPC 상품권 공급(2020-09)'이 모으미 decision/action_items와 정확히 일치(공급조건 유효기간2개월, 사용분정산 유지, 팀장 방문 시 공유 협의). 기존 '쿠프마케팅 신규 계약 체결(2020-08)' 섹션은 손실 없이 보존됨. 구분선(---) 규칙: 신규 섹션 제목 앞에 구분선이 정상 삽입되어 있음(참고사항)."
+    },
+    {
+      "task_id": "T003",
+      "target_name": "CPS 기획전 플랫폼 > 우리원 장바구니 기획전(네이버웹툰향)",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/206012417/CPS",
+      "confluence_page_id": "206012417",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "1패스만 수행. 기존 '우리원 장바구니 기획전(네이버웹툰향)(2020-08)' 섹션 내부에 9/8 경기도(주) 신규 공급사 추가 및 핀크럭스 계약주체 건이 왜곡 없이 반영됨(운영업무는 우리원, 계약주체는 핀크럭스 — 모으미 decision과 일치). 8/5 기존 히스토리·의사결정 손실 없음. 이 섹션은 기존 섹션 내부 갱신이라 신규 구분선 미적용이며 이는 정상(소급 미적용 방침)."
+    },
+    {
+      "task_id": "T004",
+      "target_name": "CPS 기획전 플랫폼",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/206012417/CPS",
+      "confluence_page_id": "206012417",
+      "slack_reread": true,
+      "slack_reread_trigger": "context_status: new — 신규 매체 확장 전략 섹션 신설이므로 슬랙 원본 확인",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "슬랙 원문(G0113KM3KK2, p1600753553012900) 직접 대조 완료. 피망/카카오페이지 즉시진행, 네이버페이(2만원↑ 20%리워드/수수료10%vat별도), OCB참여적립(3만원↑ 리워드5000원, 75/25 배분), 오사라마켓·롯데멤버스 신규입점(수수료15~20%), 다음카카오쇼핑 추석이후 진행 — 모두 원문과 일치하며 왜곡 없음. 참고: 원문에는 네이버페이 리워드가 즉시적립이 아닌 '구매신호 확인 후 문자링크 클릭 시 적립'되는 방식이라는 세부 메커니즘과, OCB는 '구매 즉시 적립'이라는 대조, 다음카카오쇼핑 지연 사유('추석 배송 안됨/B2B 상품 B2C 판매 불가')가 언급되어 있으나 컨플루언스·JSON 모두 이 세부사항은 생략됨. 핵심 결정(요율·구조·진행여부)에는 왜곡이 없어 FAILED 처리 대상은 아니며 참고로만 남김. 액션아이템 4건(오사라마켓/롯데멤버스/다음카카오/카카오페이지 표기 확인) 모두 정확히 매핑됨. 구분선(---) 신규 섹션 제목 앞 정상 삽입 확인(참고사항)."
+    },
+    {
+      "task_id": "T005",
+      "target_name": "오사라마켓",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/215089153",
+      "confluence_page_id": "215089153",
+      "slack_reread": true,
+      "slack_reread_trigger": "context_status: new — 신규 페이지 생성이므로 슬랙 원본 확인",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "슬랙 원문(G0113KM3KK2, p1600753553012900, 항목3) 대조 완료. '상품 리스트 전달 완료, 기획전 이미지 질의 중, 수수료 15~20%, 상품등록 어드민·기획전 이미지 확인 후 진행 예정' 내용이 신규 페이지 decision/action_items와 정확히 일치. 신규 엔티티(Media_Partner 잠정)로 정상 생성, human_action_required_summary에도 반영됨. 구분선(---)이 엔티티개요-첫섹션 사이, 마지막섹션-FAQ 사이 모두 정상 적용됨(참고사항)."
+    },
+    {
+      "task_id": "T006",
+      "target_name": "롯데멤버스",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/215121921",
+      "confluence_page_id": "215121921",
+      "slack_reread": true,
+      "slack_reread_trigger": "context_status: new — 신규 페이지 생성이므로 슬랙 원본 확인",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "슬랙 원문(G0113KM3KK2, p1600753553012900, 항목4) 대조 완료. '오사라마켓과 동일 형식으로 날마다가게 입점 예정, 날마다가게 모니터링 중, 우리원 상품 선정 완료 후 프로세스 확정 예정' 내용이 신규 페이지 decision/action_items와 정확히 일치. alias(L.POINT) 정확히 반영됨. 신규 엔티티(Media_Partner 잠정)로 정상 생성. 구분선(---) 엔티티개요-첫섹션/마지막섹션-FAQ 사이 모두 정상 적용됨(참고사항)."
+    },
+    {
+      "task_id": "T007",
+      "target_name": "CLUV > 클럽샵 나이스페이 PG 연동",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/211320841/CLUV",
+      "confluence_page_id": "211320841",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "1패스만 수행. 신규 프로젝트 섹션 '클럽샵 나이스페이 PG 연동(2020-09)'이 모으미 decision과 정확히 일치(9/16 PG 최종승인, 약200만원 정산처리, 지급보류분 보증보험 가입비율 협의, 취소율 약10% 언급 포함). 기존 '프로젝트 히스토리', 'PINCRUX 멤버십 팬 서비스' 섹션은 변경 없이 보존됨. 구분선(---) 신규 섹션 제목 앞 정상 삽입 확인(참고사항)."
+    }
+  ]
+}

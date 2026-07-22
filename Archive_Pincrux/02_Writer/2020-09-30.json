@@ -1,0 +1,149 @@
+{
+  "schema_version": "1.1",
+  "node": "writer",
+  "run_date": "2020-09-30",
+  "source_file": "Archive_Pincrux/01_Collector/2020-09-30.json",
+  "node_status": "success",
+  "processed_tasks": [
+    {
+      "task_id": "T001",
+      "entity_name": "오퍼월",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "오퍼월",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151821",
+      "confluence_page_id": "192151821",
+      "updated_sections": [
+        "## 오퍼월 iOS14 IDFA 정책 변경 대응 일정 취합 (2020-08) > ### 운영 히스토리",
+        "### 의사결정 사항",
+        "### 액션 아이템"
+      ],
+      "note": "manifest 등록 엔티티(오퍼월, alias Tracking SDK). 8월 배치에서 신설된 iOS14 IDFA 대응 일정 취합 섹션과 동일 맥락으로 판단하여 해당 섹션 내부(운영 히스토리/의사결정/액션 아이템)에 9월 11일 SDK/API 매체향 중단 공지 내용을 병합함. 신규 섹션이 아니므로 구분선(---) 추가 없음."
+    },
+    {
+      "task_id": "T002",
+      "entity_name": "쿠프마케팅",
+      "project_name": "SPC 상품권 공급",
+      "page_scope": "child",
+      "target_name": "쿠프마케팅 > SPC 상품권 공급",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/213286923",
+      "confluence_page_id": "213286923",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/213286923",
+      "confluence_parent_page_id": "213286923",
+      "updated_sections": [
+        "## 쿠프마케팅 — SPC 상품권 공급 (2020-09) [신규 섹션]"
+      ],
+      "note": "manifest 등록 엔티티(쿠프마케팅, status human_action_required 유지). 'SPC 상품권 공급' 프로젝트에 대한 기존 섹션이 없어 신규 프로젝트 섹션으로 추가하고, 섹션 제목 바로 위에 구분선(---)을 삽입함(2026-07-21 신설 규칙 적용)."
+    },
+    {
+      "task_id": "T003",
+      "entity_name": "CPS 기획전 플랫폼",
+      "project_name": "우리원 장바구니 기획전(네이버웹툰향)",
+      "page_scope": "child",
+      "target_name": "CPS 기획전 플랫폼 > 우리원 장바구니 기획전(네이버웹툰향)",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/206012417/CPS",
+      "confluence_page_id": "206012417",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/206012417/CPS",
+      "confluence_parent_page_id": "206012417",
+      "updated_sections": [
+        "## CPS 기획전 플랫폼 — 우리원 장바구니 기획전(네이버웹툰향) (2020-08) > ### 운영 히스토리",
+        "### 의사결정 사항"
+      ],
+      "note": "8월 배치에서 신설된 기존 '우리원 장바구니 기획전(네이버웹툰향)' 섹션의 후속 내용(경기도 주식회사 신규 공급사 추가, 핀크럭스 계약주체 진행)을 해당 섹션 내부에 추가함. 섹션 제목의 연도 표기(2020-08)는 최초 생성 시점 그대로 유지하고 내부 히스토리만 갱신. 기존 섹션 내부 갱신이므로 신규 구분선 추가 없음(소급 정정 미실시)."
+    },
+    {
+      "task_id": "T004",
+      "entity_name": "CPS 기획전 플랫폼",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "CPS 기획전 플랫폼",
+      "context_status": "new",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/206012417/CPS",
+      "confluence_page_id": "206012417",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/206012417/CPS",
+      "confluence_parent_page_id": "206012417",
+      "updated_sections": [
+        "## CPS 기획전 플랫폼 — 신규 매체 확장 전략 (2020-09) [신규 섹션]"
+      ],
+      "note": "기존 CPS 기획전 플랫폼 엔티티 페이지에 신규 매체 확장 전략(오사라마켓·롯데멤버스 입점 추진, 네이버페이·OCB 리워드구조 확정) 섹션을 최상단(최신순)에 추가함. 섹션 제목 바로 위에 구분선(---) 삽입."
+    },
+    {
+      "task_id": "T005",
+      "entity_name": "오사라마켓",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "오사라마켓",
+      "context_status": "new",
+      "action_taken": "created_new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/215089153",
+      "confluence_page_id": "215089153",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/210894849",
+      "confluence_parent_page_id": "210894849",
+      "updated_sections": [
+        "## 엔티티 개요",
+        "## 오사라마켓 — CPS 기획전 입점 추진 (2020-09) [신규 페이지 최초 섹션]",
+        "## FAQ 및 트러블슈팅",
+        "## 주요 담당자"
+      ],
+      "note": "신규 엔티티. entity_manifest.json 미등록 확인. CPS 기획전 플랫폼의 신규 입점처로 Media_Partner 잠정 분류(총총 확인 필요)하여 Media_Partner 폴더(210894849) 하위에 신규 페이지 생성함. 엔티티 개요-첫 프로젝트 섹션 사이, 마지막 프로젝트 섹션-FAQ 사이에 구분선(---) 적용."
+    },
+    {
+      "task_id": "T006",
+      "entity_name": "롯데멤버스",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "롯데멤버스",
+      "context_status": "new",
+      "action_taken": "created_new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/215121921",
+      "confluence_page_id": "215121921",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/210894849",
+      "confluence_parent_page_id": "210894849",
+      "updated_sections": [
+        "## 엔티티 개요",
+        "## 롯데멤버스 — CPS 기획전 입점(날마다가게) 추진 (2020-09) [신규 페이지 최초 섹션]",
+        "## FAQ 및 트러블슈팅",
+        "## 주요 담당자"
+      ],
+      "note": "신규 엔티티(alias: L.POINT). entity_manifest.json 미등록 확인. CPS 기획전 플랫폼의 신규 입점처로 Media_Partner 잠정 분류(총총 확인 필요)하여 Media_Partner 폴더(210894849) 하위에 신규 페이지 생성함. 엔티티 개요-첫 프로젝트 섹션 사이, 마지막 프로젝트 섹션-FAQ 사이에 구분선(---) 적용."
+    },
+    {
+      "task_id": "T007",
+      "entity_name": "CLUV",
+      "project_name": "클럽샵 나이스페이 PG 연동",
+      "page_scope": "child",
+      "target_name": "CLUV > 클럽샵 나이스페이 PG 연동",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/211320841/CLUV",
+      "confluence_page_id": "211320841",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/211320841/CLUV",
+      "confluence_parent_page_id": "211320841",
+      "updated_sections": [
+        "## CLUV — 클럽샵 나이스페이 PG 연동 (2020-09) [신규 섹션]"
+      ],
+      "note": "manifest 등록 엔티티(CLUV, alias '클럽'). '클럽샵 나이스페이 PG 연동' 프로젝트에 대한 기존 섹션이 없어 신규 프로젝트 섹션을 엔티티 개요 바로 아래(최상단)에 추가하고, 섹션 제목 바로 위에 구분선(---)을 삽입함."
+    }
+  ],
+  "skipped_tasks": [],
+  "human_action_required_summary": [
+    "T005(오사라마켓): 신규 엔티티 manifest 등록 필요. major_category(Media_Partner 추정) 확정 필요",
+    "T006(롯데멤버스): 신규 엔티티 manifest 등록 필요. major_category(Media_Partner 추정), alias(L.POINT) 확정 필요",
+    "T004: '카카오페이지' 표기가 기존 매체 '카카오페이'와 동일 개체인지 총총 확인 필요",
+    "T001(오퍼월): iOS14 IDFA 대응 중단 사유 및 재개 일정 원문상 미기재 — 총총/담당자 추가 확인 필요"
+  ]
+}

@@ -1,11 +1,12 @@
 {
-  "version": "1.5",
-  "last_updated": "2026-07-21",
+  "version": "1.8",
+  "last_updated": "2026-07-22",
   "purpose": "모으미/쓰미가 이미 확립된 엔티티를 매번 CQL 검색·카테고리 재판단 없이 즉시 참조하기 위한 고정 매니페스트(조회 전용, 가벼움 유지). 여기 없는 엔티티만 LLM 판단(신규 생성 여부, major 분류)을 수행한다. 신규 엔티티가 확정될 때마다 총총(COO)이 이 파일에 추가한다.",
   "history_ref": "2026-07-20부로 엔티티별 정정 사유·배경 서술은 이 파일에서 entity_history.md로 이관했다. 이 파일은 모으미/쓰미가 매 실행 로드하는 조회 전용 테이블이므로 entity_name/major_category/confluence_page_id/aliases/status만 유지한다. 특정 엔티티의 분류 배경이나 오분류 정정 이력이 궁금하면 entity_history.md에서 entity_name으로 찾을 것(총총 감사·검토 시에만 필요, 모으미/쓰미는 평시 참조 불필요).",
   "parent_category_pages": {
     "Client_root": "210665474",
     "Media_Partner_root": "210894849",
+    "Partner_root": "215416833",
     "In-house_root": "210698241",
     "In-house_Policy": "210796545",
     "In-house_Product": "210763777"
@@ -13,6 +14,7 @@
   "folder_naming_convention": {
     "Client": "단일 폴더(210665474) 바로 하위. Project/Product 구분 없음.",
     "Media_Partner": "단일 폴더(210894849) 바로 하위. Project/Product 구분 없음. (MP_Product=210927617은 빈 유산 폴더 — 사용 금지)",
+    "Partner": "단일 폴더(215416833) 바로 하위(2026-07-22 Jason 신설). 광고 인벤토리 거래가 아닌 사업 제휴/공급 협력 관계사(쿠폰·상품 공급, 컨텐츠 제휴 등). Project/Product 구분 없음. Media_Partner에 있던 순수 제휴 성격 엔티티(예: 쿠프마케팅)는 이 폴더로 이관.",
     "In-house": "IH_Policy(210796545, 정책·조직·프로세스류) / IH_Product(210763777, 제품·서비스류)로만 구분",
     "deprecated_do_not_use": ["190349313", "190152706", "190447637", "190414849", "190447617", "190382081"],
     "history_ref": "폴더 구조 변경 배경은 CHANGELOG.md 참조."
@@ -60,6 +62,7 @@
     { "entity_name": "모바일팝", "major_category": "Media_Partner", "confluence_page_id": "196608001" },
     { "entity_name": "KT", "major_category": "Media_Partner", "confluence_page_id": "196575233", "aliases": ["프로젝트K", "KT클립", "KT슈퍼리워드"] },
     { "entity_name": "카카오페이", "major_category": "Media_Partner", "confluence_page_id": "192446504" },
+    { "entity_name": "카카오페이지", "major_category": "Media_Partner", "confluence_page_id": null, "reason": "2026-07-22 Jason 확인: 카카오페이지(kakaopage, 콘텐츠 플랫폼)는 카카오페이(kakao pay, 결제 서비스, 192446504)와 별개 엔티티. 아직 독립 페이지 없음(CPS 기획전 플랫폼 206012417 내 채널 언급으로만 등장) — 향후 별도 프로젝트/이슈로 등장 시 신규 페이지 생성 필요" }
     { "entity_name": "샌드박스네트워크", "major_category": "Media_Partner", "confluence_page_id": "192348202" },
     { "entity_name": "오케이캐쉬백", "major_category": "Media_Partner", "confluence_page_id": "198311937" },
     { "entity_name": "다날", "major_category": "Media_Partner", "confluence_page_id": "198213640" },
@@ -68,9 +71,12 @@
     { "entity_name": "OCB", "major_category": "Media_Partner", "confluence_page_id": "196509697" },
     { "entity_name": "톡소다", "major_category": "Media_Partner", "confluence_page_id": "192151842" },
     { "entity_name": "네오위즈", "major_category": "Media_Partner", "confluence_page_id": "209518599", "aliases": ["애디스콥", "Adiscope", "피망"] },
-    { "entity_name": "SPC", "major_category": "Media_Partner", "confluence_page_id": "204603424", "status": "human_action_required", "reason": "사업 주체 성격(광고주 vs 매체) 미확정, 총총 재확인 전까지 현 분류 유지" },
-    { "entity_name": "피플카", "major_category": "Client", "confluence_page_id": "212631553", "status": "human_action_required", "reason": "쓰미가 슬랙 원문 맥락상 Client로 추정 분류. major_category 확정은 Jason 재확인 필요" },
-    { "entity_name": "쿠프마케팅", "major_category": "Media_Partner", "confluence_page_id": "213286923", "aliases": ["쿠포마케팅"], "status": "human_action_required", "reason": "2020-08 배치 신규 발견 쿠폰 공급사. 정식 명칭은 '쿠프마케팅'으로 Jason 확정(2026-07-21, '쿠포마케팅'은 원문 혼용 표기로 alias 유지). major_category(Media_Partner 잠정)만 재확인 필요" }
+    { "entity_name": "섹타나인", "major_category": "Media_Partner", "confluence_page_id": "204603424", "aliases": ["SPC"] },
+    { "entity_name": "피플카", "major_category": "Media_Partner", "confluence_page_id": "212631553" },
+    { "entity_name": "쿠프마케팅", "major_category": "Partner", "confluence_page_id": "213286923", "aliases": ["쿠포마케팅"] },
+    { "entity_name": "오사라마켓", "major_category": "Media_Partner", "confluence_page_id": "215089153" },
+    { "entity_name": "롯데멤버스", "major_category": "Media_Partner", "confluence_page_id": "215121921", "aliases": ["L.POINT"] },
+    { "entity_name": "어니스트펀드", "major_category": "Client", "confluence_page_id": "215810049", "status": "human_action_required" }
   ],
   "usage_instructions": {
     "collector": "슬랙 원문에서 언급된 대상이 위 entities 목록의 entity_name 또는 aliases와 일치하면, major_category를 재판단하지 말고 이 표의 값을 그대로 사용한다. context_status만 원문 맥락으로 판단(matched가 기본값이며, 완전히 새로운 하위 프로젝트/캠페인이면 new). 목록에 없는 이름만 처음부터 판단(major_category, 신규 여부)한다.",
