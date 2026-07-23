@@ -1,11 +1,12 @@
 {
-  "last_completed_period": "2020-12-31",
-  "next_period_start": "2021-01-01",
+  "last_completed_period": "2021-03-31",
+  "next_period_start": "2021-04-01",
   "completed_weeks": 69,
-  "last_run_date": "2026-07-22",
+  "last_run_date": "2026-07-23",
   "batch_cadence": "monthly (2026-07-13부터 반달→월단위 전환, Jason 지시)",
-  "hold_note": "2026-07-22 Jason 지시: 2021년도(2021-01~) 배치는 진행 대기 상태. 별도 지시 있을 때까지 다음 정기/예외 실행에서 2021-01 배치를 자동 진행하지 말 것.",
+  "hold_note": "2026-07-23 Jason 지시로 2021년도 백필 재개 승인('21년도 진행'). 2021-01~03 배치 완료(아래 history 참조). 2021-04 배치부터는 별도 재확인 없이 정기/예외 실행에서 자동 진행.",
   "pending_review": [
+    {"item": "리메세(217088010) major_category 및 엔티티 구조 확정 필요 — 니베아·차올 부속계약 대행 에이전시로 추정, 니베아/차올 개별 엔티티 분리 여부 포함", "batch": "2021-01-31", "status": "open", "note": "2026-07-23 백필 배치에서 모으미가 신규 발견. 쓰미가 잠정 Client로 분류하여 Client 폴더(210665474) 하위에 신규 페이지 생성. entity_manifest.json에 human_action_required 상태로 임시 등록. Jason 확인 필요. 참고: 이번 배치에서 읽어봄이가 1차 검증 시 CONTEXT_DISTORTION(원문에 없는 이벤트 단가·취소환불 세부조건 기재)을 FAILED 처리 → 쓰미 재실행으로 해당 세부조건 삭제 및 '확인 필요'로 명확화 → 재검증 PASSED → 다시쓰미 최종 발행 완료. **[2026-07-23 정정, 2021-03 배치 중 발견]**: 위 CONTEXT_DISTORTION 판정 자체가 오류였음(DATA_LOSS) — 슬랙 원문을 재확인한 결과 단가 1만원·취소환불 조건이 실제로 원문에 있었음. 원문 인용 복원 완료(01_Collector/2026-07-23.json, 03_Validator/2026-07-23.json, 컨플루언스 217088010). 엔티티 구조(리메세 vs 니베아/차올 분리) 확정 여부는 여전히 Jason 확인 대기 중(open 유지)."},
     {"item": "사이다뱅크(엔티티 정체성 불명) — 웰컴저축은행 산하 브랜드 vs 독립 신규 엔티티", "batch": "2020-12-31", "status": "resolved", "note": "2026-07-22 Jason 확인: 사이다뱅크는 SBI저축은행이 운영하는 모바일 뱅킹 브랜드이며 웰컴저축은행과 무관한 독립 광고주로 최종 확정. entity_name을 'SBI저축은행'으로 하고 '사이다뱅크'는 별칭 처리. Client 폴더(210665474) 하위 신규 페이지(215973896) 생성 완료 — 읽어봄이 PASSED, 다시쓰미 최종 발행 완료. entity_manifest.json 갱신 완료."},
     {"item": "세틀뱅크 계좌등록 CPA 계약 체결 여부 확정 필요 — '계약서 확인 완료' 표현의 의미", "batch": "2020-12-31", "status": "open", "note": "2026-07-22 배치에서 12/3 '소재 및 계약서 확인 완료' 원문이 정식 체결을 의미하는지 검토 완료만 의미하는지 불명확하여 체결로 단정하지 않고 그대로 반영함. 후속 배치(2021-01)에서 실제 캠페인 오픈 여부로 재확인 예정."},
     {"item": "코나투스(반반택시, 신규 엔티티) major_category 확정 필요", "batch": "2020-11-30", "status": "resolved", "note": "2026-07-22 Jason 확인으로 Client 최종 확정. entity_manifest.json 갱신 완료(216039425)."},
@@ -63,6 +64,9 @@
     {"period_end": "2020-09-30", "weeks": 69, "run_date": "2026-07-22"},
     {"period_end": "2020-10-31", "weeks": 69, "run_date": "2026-07-22", "note": "Jason 지시로 당일 2회차 예외 실행(backfill_checkpoint.json last_run_date와 동일 날짜지만 별도 배치)"},
     {"period_end": "2020-11-30", "weeks": 69, "run_date": "2026-07-22", "note": "Jason 지시로 당일 3회차 예외 실행"},
-    {"period_end": "2020-12-31", "weeks": 69, "run_date": "2026-07-22", "note": "Jason 지시로 당일 4회차 예외 실행. 2020년도 전체 백필 완료(2019-01~2020-12). 전 항목 matched/merged_into_existing이라 읽어봄이·다시쓰미 모두 생략(v0_coo.md 4-C절), 쓰미 완료 시점에 published 인정."}
+    {"period_end": "2020-12-31", "weeks": 69, "run_date": "2026-07-22", "note": "Jason 지시로 당일 4회차 예외 실행. 2020년도 전체 백필 완료(2019-01~2020-12). 전 항목 matched/merged_into_existing이라 읽어봄이·다시쓰미 모두 생략(v0_coo.md 4-C절), 쓰미 완료 시점에 published 인정."},
+    {"period_end": "2021-01-31", "weeks": 69, "run_date": "2026-07-23", "note": "Jason 지시('21년도 진행')로 2021년도 백필 재개. T002(리메세, 신규 페이지 생성)가 있어 읽어봄이·다시쓰미 모두 가동(v0_coo.md 4-C절). 읽어봄이가 T002에서 CONTEXT_DISTORTION 1건 발견·정정 후 재검증 PASSED, 다시쓰미가 3건 전체 최종 발행 완료. 리메세 엔티티 분류는 human_action_required로 보류."},
+    {"period_end": "2021-02-28", "weeks": 69, "run_date": "2026-07-23", "note": "Jason 지시('2월 3월 한번에')로 연속 실행. 전 4건(웰컴저축은행, 하나금융투자, PINCRUX 조직·인사 정책, PINCRUX 사업·정책 결정 히스토리) context_status: matched / action_taken: merged_into_existing이라 읽어봄이·다시쓰미 모두 생략(v0_coo.md 4-C절), 쓰미 완료 시점에 published 인정."},
+    {"period_end": "2021-03-31", "weeks": 69, "run_date": "2026-07-23", "note": "Jason 지시('2월 3월 한번에')로 연속 실행. T001(리메세-차올 CPA 캠페인 실집행) 1건, matched/merged_into_existing이라 읽어봄이·다시쓰미 생략(v0_coo.md 4-C절). 단, 이 배치 작업 중 2021-01 배치 T002(리메세)의 이전 CONTEXT_DISTORTION 정정이 실제로는 DATA_LOSS(정상 원문 삭제) 오류였음을 발견 — 총총이 자체 감사로 즉시 원문 기준 복원 조치(01_Collector/2026-07-23.json, 03_Validator/2026-07-23.json, 컨플루언스 217088010 갱신). 상세는 pending_review 리메세 항목 참조."}
   ]
 }

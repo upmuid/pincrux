@@ -1,6 +1,6 @@
 {
-  "version": "1.11",
-  "last_updated": "2026-07-22",
+  "version": "1.13",
+  "last_updated": "2026-07-23",
   "purpose": "모으미/쓰미가 이미 확립된 엔티티를 매번 CQL 검색·카테고리 재판단 없이 즉시 참조하기 위한 고정 매니페스트(조회 전용, 가벼움 유지). 여기 없는 엔티티만 LLM 판단(신규 생성 여부, major 분류)을 수행한다. 신규 엔티티가 확정될 때마다 총총(COO)이 이 파일에 추가한다.",
   "history_ref": "2026-07-20부로 엔티티별 정정 사유·배경 서술은 이 파일에서 entity_history.md로 이관했다. 이 파일은 모으미/쓰미가 매 실행 로드하는 조회 전용 테이블이므로 entity_name/major_category/confluence_page_id/aliases/status만 유지한다. 특정 엔티티의 분류 배경이나 오분류 정정 이력이 궁금하면 entity_history.md에서 entity_name으로 찾을 것(총총 감사·검토 시에만 필요, 모으미/쓰미는 평시 참조 불필요).",
   "parent_category_pages": {
@@ -62,7 +62,7 @@
     { "entity_name": "모바일팝", "major_category": "Media_Partner", "confluence_page_id": "196608001" },
     { "entity_name": "KT", "major_category": "Media_Partner", "confluence_page_id": "196575233", "aliases": ["프로젝트K", "KT클립", "KT슈퍼리워드"] },
     { "entity_name": "카카오페이", "major_category": "Media_Partner", "confluence_page_id": "192446504" },
-    { "entity_name": "카카오페이지", "major_category": "Media_Partner", "confluence_page_id": null, "reason": "2026-07-22 Jason 확인: 카카오페이지(kakaopage, 콘텐츠 플랫폼)는 카카오페이(kakao pay, 결제 서비스, 192446504)와 별개 엔티티. 아직 독립 페이지 없음(CPS 기획전 플랫폼 206012417 내 채널 언급으로만 등장) — 향후 별도 프로젝트/이슈로 등장 시 신규 페이지 생성 필요" }
+    { "entity_name": "카카오페이지", "major_category": "Media_Partner", "confluence_page_id": null, "reason": "2026-07-22 Jason 확인: 카카오페이지(kakaopage, 콘텐츠 플랫폼)는 카카오페이(kakao pay, 결제 서비스, 192446504)와 별개 엔티티. 아직 독립 페이지 없음(CPS 기획전 플랫폼 206012417 내 채널 언급으로만 등장) — 향후 별도 프로젝트/이슈로 등장 시 신규 페이지 생성 필요" },
     { "entity_name": "샌드박스네트워크", "major_category": "Media_Partner", "confluence_page_id": "192348202" },
     { "entity_name": "오케이캐쉬백", "major_category": "Media_Partner", "confluence_page_id": "198311937" },
     { "entity_name": "다날", "major_category": "Media_Partner", "confluence_page_id": "198213640" },
@@ -80,7 +80,8 @@
     { "entity_name": "코나투스", "major_category": "Client", "confluence_page_id": "216039425", "aliases": ["반반택시"] },
     { "entity_name": "DGB유페이", "major_category": "Client", "confluence_page_id": "216072193", "reason": "2026-07-22 Jason 확인으로 Client 최종 확정. 충전소(티켓모아) 연동은 2021년 계획 논의 단계로 아직 미확정 — 향후 실제 연동 시점에 Media_Partner 이중역할 여부 재검토" },
     { "entity_name": "세틀뱅크", "major_category": "Client", "confluence_page_id": "216104961" },
-    { "entity_name": "SBI저축은행", "major_category": "Client", "confluence_page_id": "215973896", "aliases": ["사이다뱅크"], "reason": "2026-07-22 Jason 확인: 사이다뱅크는 SBI저축은행이 운영하는 모바일 뱅킹 브랜드이며 웰컴저축은행과 무관한 독립 광고주로 최종 확정" }
+    { "entity_name": "SBI저축은행", "major_category": "Client", "confluence_page_id": "215973896", "aliases": ["사이다뱅크"], "reason": "2026-07-22 Jason 확인: 사이다뱅크는 SBI저축은행이 운영하는 모바일 뱅킹 브랜드이며 웰컴저축은행과 무관한 독립 광고주로 최종 확정" },
+    { "entity_name": "리메세", "major_category": "Client", "confluence_page_id": "217088010", "aliases": ["차울"], "status": "human_action_required", "reason": "2026-07-23 백필(2021-01) 신규 발견. 한덕천 대표가 대표하는 에이전시로 추정되며, 니베아·차올(슬랙 표기 혼용: '차울') 브랜드 캠페인을 부속계약서 형태로 대행, 단가 1만원(2021-03 배치에서 재확인). 리메세를 단일 엔티티로 유지할지, 니베아/차올을 별도 엔티티로 분리할지 Jason 확인 필요." }
   ],
   "usage_instructions": {
     "collector": "슬랙 원문에서 언급된 대상이 위 entities 목록의 entity_name 또는 aliases와 일치하면, major_category를 재판단하지 말고 이 표의 값을 그대로 사용한다. context_status만 원문 맥락으로 판단(matched가 기본값이며, 완전히 새로운 하위 프로젝트/캠페인이면 new). 목록에 없는 이름만 처음부터 판단(major_category, 신규 여부)한다.",

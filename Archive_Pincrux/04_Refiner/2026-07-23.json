@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.1",
+  "node": "refiner",
+  "run_date": "2026-07-23",
+  "source_file": "Archive_Pincrux/03_Validator/2026-07-23.json",
+  "node_status": "success",
+  "published_tasks": [
+    {
+      "task_id": "T001",
+      "target_name": "DB손해보험 > 1월 캠페인 실적 보고 (2021)",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955049/DB",
+      "confluence_page_id": "191955049",
+      "refined_points": [
+        "핵심 수치(10,529건, 약 120건 상승)를 볼드체로 강조 처리",
+        "신규 섹션 앞 구분선(---) 배치 확인 완료"
+      ],
+      "published_at": "2026-07-23T13:07:11+09:00"
+    },
+    {
+      "task_id": "T002",
+      "target_name": "리메세 > 니베아·차올 첫결제 이벤트 (2021)",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/217088010",
+      "confluence_page_id": "217088010",
+      "refined_points": [
+        "읽어봄이가 지적한 원문 미근거 세부조건(단가·취소환불) 삭제 및 '확인 필요' 상태로 명확화",
+        "액션 아이템에 단가·취소 정책 확인 항목 추가",
+        "엔티티 분류 확인 필요 경고문을 패널 형태(blockquote)로 최상단에 유지"
+      ],
+      "published_at": "2026-07-23T13:05:00+09:00"
+    },
+    {
+      "task_id": "T003",
+      "target_name": "티켓모아 > 스코어888(유시스템) 충전소 연동 (2021)",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/200835080",
+      "confluence_page_id": "200835080",
+      "refined_points": [
+        "구어체 표현 없음 확인, 비즈니스 문어체 유지",
+        "액션 아이템 체크리스트 형식 확인 완료",
+        "신규 섹션 앞 구분선(---) 배치 확인 완료"
+      ],
+      "published_at": "2026-07-23T13:02:50+09:00"
+    }
+  ]
+}

@@ -1,27 +1,39 @@
 {
   "pipeline_execution": {
-    "date": "2026-07-22",
-    "run_mode": "backfill_correction",
-    "run_note": "Jason 지시로 2020-12-31 배치의 skipped_tasks(T007 사이다뱅크) 재처리. Jason이 엔티티 정체성(SBI저축은행 산하 독립 브랜드, 웰컴저축은행과 무관)을 직접 확정해줌에 따라 쓰미→읽어봄이→다시쓰미 전 과정 재실행.",
-    "period": "2020-12-01 to 2020-12-31 (T007 단건 재처리)",
+    "date": "2026-07-23",
+    "run_mode": "backfill",
+    "period": "2021-02-01 to 2021-03-31",
     "total_status": "success",
     "metrics": {
-      "created_new_contexts": 1,
-      "reviewer_run": true,
-      "refiner_run": true,
-      "reviewer_review_summary": {"total_reviewed": 1, "passed_cnt": 1, "failed_cnt": 0, "slack_reread_cnt": 1},
-      "refiner_published_tasks": 1
+      "collected_threads": 5,
+      "updated_matched_contexts": 5,
+      "created_new_contexts": 0,
+      "uncategorized_inquiries": 0,
+      "reviewer_run": false,
+      "refiner_run": false,
+      "refiner_published_tasks": 5
     },
-    "conditional_execution_rationale": "context_status: new, action_taken: created_new이므로 v0_coo.md 4-C절에 따라 읽어봄이·다시쓰미 모두 필수 가동."
+    "conditional_execution_rationale": "2021-02(4건)·2021-03(1건) 배치 전 항목 context_status: matched, action_taken: merged_into_existing이며 모으미↔쓰미 간 재분류 없음. v0_coo.md 4-C절에 따라 두 배치 모두 읽어봄이·다시쓰미 생략, 쓰미 완료 시점에 published 인정."
   },
   "published_pages": [
-    {"task_id": "T007", "entity_name": "SBI저축은행", "confluence_page_id": "215973896", "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/215973896", "note": "구 '사이다뱅크'. 웰컴저축은행과 무관한 독립 광고주로 확정, Client 폴더(210665474) 하위 신규 생성. 12월 예산 1.8억원 증액·매체 확장 히스토리 반영. 읽어봄이 PASSED, 다시쓰미 최종 발행 완료."}
+    {"task_id": "2021-02 T001", "entity_name": "웰컴저축은행", "confluence_page_id": "192151790", "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151790", "note": "네이버페이 CPM 캠페인(2021-02, 첫거래우대) 섹션 추가. 광고비 1,000만원, 혜택 상단배너 100만/메인 60만/구매확정 50만."},
+    {"task_id": "2021-02 T002", "entity_name": "하나금융투자", "confluence_page_id": "205062145", "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/205062145", "note": "네이버페이 프리미엄패키지 캠페인(2021-02) 2회차 섹션 추가. 1,000만원 패키지 2회 집행, 클릭시 30원."},
+    {"task_id": "2021-02 T003", "entity_name": "PINCRUX 조직·인사 정책", "confluence_page_id": "209321985", "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/209321985", "note": "2021년 연봉계약 체결 방식 변경(개별미팅 폐지, 대표 결정·통보 + 모두싸인 온라인서명) 섹션 추가."},
+    {"task_id": "2021-02 T004", "entity_name": "PINCRUX 사업·정책 결정 히스토리", "confluence_page_id": "211550226", "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/211550226", "note": "계약·정산 프로세스 정비(허성원 중심 재편, 계약체결 4단계 절차) 섹션 추가."},
+    {"task_id": "2021-03 T001", "entity_name": "리메세", "confluence_page_id": "217088010", "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/217088010", "note": "리메세-차올 첫결제 CPA 캠페인 실집행(3/11~3/12, 단가 1만원) 섹션 추가. 아울러 2021-01 배치 T002의 이전 CONTEXT_DISTORTION 정정이 실제로는 DATA_LOSS 오류였음을 발견해 원문 기준으로 복원(아래 참고 항목 참조)."}
   ],
   "error_logs": [],
+  "self_correction_notice": {
+    "title": "2021-01 배치 T002(리메세) 검증 판정 정정 — DATA_LOSS 발견 및 복원",
+    "detail": "2021-01 배치 당시 읽어봄이가 '이벤트 건당 1만원 광고비 지급', '취소 시 리워드 환불' 문구를 원문에 없는 CONTEXT_DISTORTION으로 오판하여 삭제했음. 2021-03 배치에서 동일 슬랙 링크(https://pincrux.slack.com/archives/G0113KM3KK2/p1611635568009600)를 재확인한 결과 해당 문구가 원문에 실제로 존재했음을 확인 — 삭제 조치 자체가 정상 데이터를 지운 DATA_LOSS였음. 총총이 즉시 원문 기준으로 컨플루언스 페이지(217088010)와 01_Collector/2026-07-23.json, 03_Validator/2026-07-23.json을 정정·투명 기록함. 리메세 CPA 단가(1만원)는 2021-03월 실제 캠페인에서도 동일하게 재확인되어 정합성 확보.",
+    "affected_records": ["Archive_Pincrux/01_Collector/2026-07-23.json (T002)", "Archive_Pincrux/03_Validator/2026-07-23.json (T002)", "Confluence 217088010"]
+  },
   "human_action_required": [
-    "세틀뱅크 계좌등록 CPA 계약 체결 완료 여부 확정 필요(2020-12-31 배치부터 계속 보류 중)",
-    "DGB유페이 충전소(티켓모아) 연동 — 12월 슬랙 언급 없음, 계속 모니터링",
+    "리메세(217088010) 엔티티 분류 확정 필요 — 니베아·차올 부속계약 대행 에이전시로 유지할지, 니베아/차올을 별도 엔티티로 분리할지 (2021-03 CPA 캠페인 실집행으로 실질 운영은 확인되었으나 구조 확정은 여전히 미결)",
+    "리메세 CPA 단가(1만원) 중 카페24 결제수수료 배분 여부 확정 필요 (2021-03-11 정빈희 질문, 회신 미확인)",
+    "세틀뱅크 계좌등록 CPA 계약 체결 완료 여부 — 2021-03 배치에서도 '연동 문의'만 확인되어 계속 보류 중",
+    "DGB유페이 충전소(티켓모아) 연동 — 2021-03 배치에서도 관련 슬랙 언급 없어 계속 모니터링",
     "PINCRUX(191987714) 허브 페이지 타이틀 유지/변경 여부 — v0_coo.md 4-D절 대기열 4번, 계속 보류 중",
-    "2021년도(2021-01~) 배치는 Jason 지시로 진행 대기 상태 — 별도 지시 전까지 자동 진행하지 않음"
+    "2021-04 배치는 다음 정기 실행부터 별도 재확인 없이 자동 진행 예정"
   ]
 }
