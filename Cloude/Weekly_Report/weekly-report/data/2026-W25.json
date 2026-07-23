@@ -1,0 +1,63 @@
+{
+  "week": "2026-W25",
+  "period": "2026-06-13 ~ 2026-06-19",
+  "generated_at": "2026-06-19T02:34:00",
+  "subject": "[6월 3주] 기획파트 주간 업무 공유",
+  "to": "jyjeong@pincrux.com",
+  "cc": "pl@pincrux.com",
+  "highlights": [
+    { "badge": "이슈", "content": "KB PAY × G마켓 — 대행사 미승인 코드 발급으로 송출 중단 / G마켓 CPS 예산 축소" },
+    { "badge": "펜딩", "content": "쇼핑플러스 신규버전(쿠플/쇼플) 오픈 홀딩 — 쿠팡 정책 모니터링 강화" },
+    { "badge": "펜딩", "content": "키움 쿠팡 SDK — 개발 70% 진행, 키움측 요청으로 펜딩" }
+  ],
+  "sections": {
+    "shopping_plus": {
+      "advertisers": [
+        "INL 쿠팡: ADID API → SA API 전환으로 파라미터 미전송 이슈 해결 (수수료 4.5% → 4%)",
+        "나스미디어: 계약 검토 및 날인 진행중, 7월 중 연동 목표"
+      ],
+      "general_advertisers": [],
+      "media": [
+        { "name": "키움증권", "status": "네이버쇼핑 부속계약서 검토·날인 진행중 / 쿠팡 SDK → SDK 없이 웹개발 방식으로 변경, 웹개발 대기중", "note": "" },
+        { "name": "KB PAY", "status": "G마켓 대행사 미승인 코드 발급 → 광고주측 송출 중단 요청", "note": "[이슈]" },
+        { "name": "우리투자증권", "status": "MTS 7.2 오픈 목표, 네이버쇼핑·G마켓 중단 이슈로 일정 조율중", "note": "" },
+        { "name": "버즈빌(스타뱅킹)", "status": "버즈빌과 연동 테스트 진행 중", "note": "" },
+        { "name": "부산은행", "status": "포스트백 개발 완료, 상용 테스트 병행 시작 (자동차보험 포함)", "note": "" },
+        { "name": "카카오페이지", "status": "7월 중 개발완료 목표, 개발 진행중 (애드팝콘 DA 적용 포함)", "note": "" },
+        { "name": "KT M모바일", "status": "개발 미팅 및 API 전달 완료, 요건 확정 후 개발 착수 예정", "note": "" }
+      ],
+      "pipeline": {
+        "waiting": "키움(쿠팡) SDK, 아파트아이, M모바일",
+        "discussing": "국민은행, 페이코, 카카오페이지, 시럽",
+        "pending_reply": "DB증권, 교보증권"
+      }
+    },
+    "reward_app": {
+      "geomsa": [
+        "회원가입 CPA 집행 (6.17)",
+        "쿠팡 참여 불가 이슈: 신규 코드로 교체 후 모니터링중"
+      ],
+      "samproCash": [
+        "테스트 앱 배포 완료"
+      ],
+      "lim_hanae": []
+    },
+    "shopping_live_cps": [
+      "NF 측 API 검토 및 개발 테스트 시작",
+      "포스트백 등 내부 QA 시작"
+    ],
+    "ad_platform": [
+      "빌레터: NF 측 API 검토 및 개발 테스트 시작",
+      "네이버페이 SDK 고도화: 네이버측 사유로 펜딩"
+    ],
+    "next_week": []
+  },
+  "jira_pipeline": {
+    "total": 0,
+    "summary": "Jira 데이터 미수집 (이메일 베이스라인)",
+    "in_progress": [],
+    "done": [],
+    "design": [],
+    "planning_done": []
+  }
+}

@@ -1,39 +1,27 @@
 {
   "pipeline_execution": {
     "date": "2026-07-22",
-    "run_mode": "backfill",
-    "run_note": "Jason 지시로 당일 2회차 예외 실행 (1일 1채팅방 원칙에 따라 최초 배치(2020-09-30)와 별개 세션으로 진행)",
-    "period": "2020-10-01 to 2020-10-31",
+    "run_mode": "backfill_correction",
+    "run_note": "Jason 지시로 2020-12-31 배치의 skipped_tasks(T007 사이다뱅크) 재처리. Jason이 엔티티 정체성(SBI저축은행 산하 독립 브랜드, 웰컴저축은행과 무관)을 직접 확정해줌에 따라 쓰미→읽어봄이→다시쓰미 전 과정 재실행.",
+    "period": "2020-12-01 to 2020-12-31 (T007 단건 재처리)",
     "total_status": "success",
     "metrics": {
-      "collected_threads": 2,
-      "updated_matched_contexts": 0,
-      "created_new_contexts": 2,
-      "uncategorized_inquiries": 0,
+      "created_new_contexts": 1,
       "reviewer_run": true,
       "refiner_run": true,
-      "reviewer_review_summary_pass1": {"total_reviewed": 2, "passed_cnt": 1, "failed_cnt": 1, "slack_reread_cnt": 2},
-      "reviewer_review_summary_pass2_correction": {"total_reviewed": 1, "passed_cnt": 1, "failed_cnt": 0, "slack_reread_cnt": 1},
-      "refiner_published_tasks": 2
+      "reviewer_review_summary": {"total_reviewed": 1, "passed_cnt": 1, "failed_cnt": 0, "slack_reread_cnt": 1},
+      "refiner_published_tasks": 1
     },
-    "conditional_execution_rationale": "T001/T002 모두 context_status: new이므로 v0_coo.md 4-C절에 따라 읽어봄이 필수 가동(2건 모두 2패스). T001이 action_taken: created_new이므로 다시쓰미도 필수 가동.",
-    "fail_fast_incident": {
-      "detected_at": "읽어봄이(v3) 1차 검증",
-      "node": "writer(T001 어니스트펀드) 산출물",
-      "error_type": "CONTEXT_DISTORTION",
-      "detail": "존재하지 않는 '2020-10-27 리워드 사전 언급' 날짜 생성 + 매체비 인상분(13,000원→25,000원 Gross) 최종 결정에 미반영",
-      "action": "v0_coo.md 3-B절 Fail-Fast 정책에 따라 다시쓰미(v4) 즉시 차단, Jason에게 즉시 보고 및 처리 방침 확인",
-      "resolution": "Jason 승인 하에 쓰미 재실행(02_Writer/2020-10-31_2.json)으로 Confluence 페이지 215810049 정정 → 읽어봄이 재검증(03_Validator/2020-10-31_2.json) PASSED → 다시쓰미 정상 진행 및 최종 퍼블리싱 완료"
-    }
+    "conditional_execution_rationale": "context_status: new, action_taken: created_new이므로 v0_coo.md 4-C절에 따라 읽어봄이·다시쓰미 모두 필수 가동."
   },
   "published_pages": [
-    {"task_id": "T001", "entity_name": "어니스트펀드", "confluence_page_id": "215810049", "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/215810049", "note": "신규 엔티티(Client 잠정). Client 폴더(210665474) 하위 신규 생성. 1차 검증 실패 후 정정·재검증 통과·다시쓰미 최종 폴리싱 완료"},
-    {"task_id": "T002", "entity_name": "NH멤버스", "confluence_page_id": "199491593", "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/199491593/NH", "note": "기존 엔티티, 네이버페이 직접운영 채널 신규 섹션 추가, 다시쓰미 최종 폴리싱 완료"}
+    {"task_id": "T007", "entity_name": "SBI저축은행", "confluence_page_id": "215973896", "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/215973896", "note": "구 '사이다뱅크'. 웰컴저축은행과 무관한 독립 광고주로 확정, Client 폴더(210665474) 하위 신규 생성. 12월 예산 1.8억원 증액·매체 확장 히스토리 반영. 읽어봄이 PASSED, 다시쓰미 최종 발행 완료."}
   ],
   "error_logs": [],
   "human_action_required": [
-    "어니스트펀드(215810049) 신규 엔티티 major_category(현재 Client로 잠정 등록) 확정 필요 — entity_manifest.json에 human_action_required로 등록됨",
-    "PINCRUX(191987714) 허브 페이지 타이틀 유지/변경 여부 — v0_coo.md 4-D절 대기열 4번, 계속 보류 중(이번 배치와 무관)",
-    "checkpoint next_period_start가 2020-11-01로 갱신됨 — 다음 정기 실행 시 2020-11 배치가 이어서 진행됨"
+    "세틀뱅크 계좌등록 CPA 계약 체결 완료 여부 확정 필요(2020-12-31 배치부터 계속 보류 중)",
+    "DGB유페이 충전소(티켓모아) 연동 — 12월 슬랙 언급 없음, 계속 모니터링",
+    "PINCRUX(191987714) 허브 페이지 타이틀 유지/변경 여부 — v0_coo.md 4-D절 대기열 4번, 계속 보류 중",
+    "2021년도(2021-01~) 배치는 Jason 지시로 진행 대기 상태 — 별도 지시 전까지 자동 진행하지 않음"
   ]
 }

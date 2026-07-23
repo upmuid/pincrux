@@ -1,0 +1,131 @@
+{
+  "schema_version": "1.0",
+  "node": "daily_report",
+  "report_date": "2026-07-07",
+  "day_of_week": "화",
+  "department": "기획파트",
+  "author": "지리산",
+  "section1": {
+    "자동차보험사업": [
+      {
+        "jira_key": "PL-61",
+        "client_name": "부산은행",
+        "project_title": "쇼핑플러스/자동차보험",
+        "progress_pct": 100,
+        "progress_label": "확정",
+        "start_date": "미정",
+        "due_date": "미정(CBT 7.9 예정)",
+        "change_yn": "있음",
+        "today_update": "Jira 상태 \"개발 완료\"로 전환 확인. 부산은행 \"쇼핑하러가기\" URL 호출 오류(URL 인코딩/디코딩) 건 — iOS측 자체 처리 완료 회신 수신, 안드로이드 수정 불필요 확인. CBT 일정(7/9) 준비 지속"
+      }
+    ],
+    "광고사업": [
+      { "jira_key": "PL-65", "client_name": "한게임", "project_title": "PC 오퍼월 기획안", "progress_pct": 100, "progress_label": "확정", "start_date": "미정", "due_date": "미정", "change_yn": "없음", "today_update": "(활동 없음, 7/8 리뷰 예정 유지 — 칠전팔기 미팅룸 예약 완료)" },
+      { "jira_key": "PL-10", "client_name": "카카오페이지", "project_title": "쇼핑·게임 오퍼월 적용", "progress_pct": 100, "progress_label": "확정", "start_date": "미정", "due_date": "미정", "change_yn": "있음", "today_update": "Jira 필드 업데이트 감지(세부 변경 사항 확인 필요), 7/8(수) 14시 리뷰 예정 유지 — 칠전팔기 미팅룸 예약 완료" },
+      { "jira_key": "PL-30", "client_name": "KT M모바일", "project_title": "쇼핑플러스 (플러스콘+통신비할인)", "progress_pct": 100, "progress_label": "확정", "start_date": "미정", "due_date": "미정", "change_yn": "없음", "today_update": "(활동 없음)" },
+      { "jira_key": "PL-31", "client_name": "겸사겸사", "project_title": "게임 오퍼월 추가 적용", "progress_pct": 100, "progress_label": "확정", "start_date": "미정", "due_date": "미정", "change_yn": "없음", "today_update": "(활동 없음)" },
+      { "jira_key": "PL-6", "client_name": "원스토어", "project_title": "웹 오퍼월 연동", "progress_pct": 30, "progress_label": "초안", "start_date": "미정", "due_date": "미정", "change_yn": "없음", "today_update": "(활동 없음)" },
+      { "jira_key": "PL-11", "client_name": "HI5", "project_title": "게임 연동", "progress_pct": 30, "progress_label": "초안", "start_date": "미정", "due_date": "미정", "change_yn": "없음", "today_update": "(활동 없음)" },
+      { "jira_key": "PL-7", "client_name": "애드팝콘", "project_title": "미니미니박스·겸사겸사 컨텐츠형 광고", "progress_pct": 0, "progress_label": "착수 전", "start_date": "미정", "due_date": "미정", "change_yn": "없음", "today_update": "(활동 없음)" },
+      { "jira_key": "PL-2", "client_name": "-", "project_title": "포인트 통계·포인트 소멸 기능 (오퍼월 포함)", "progress_pct": 0, "progress_label": "착수 전", "start_date": "미정", "due_date": "2026.09.30", "change_yn": "없음", "today_update": "(활동 없음)" }
+    ],
+    "커머스사업": [
+      { "jira_key": "PL-75", "client_name": "키움", "project_title": "쿠팡 ADID 연동", "progress_pct": 30, "progress_label": "초안", "start_date": "미정", "due_date": "미정", "change_yn": "없음", "today_update": "(활동 없음)" },
+      { "jira_key": "미등록", "client_name": "키움증권", "project_title": "쿠팡 적립 정책 변경 대응", "progress_pct": 60, "progress_label": "수정중", "start_date": "2026.07.07", "due_date": "미정", "change_yn": "있음", "today_update": "쿠팡 일일 적립 한도(결제금액 기준 50만원) 정책, 키움을 시작으로 적용 — 상세페이지 안내 문구 등록 완료(고지 우선, 즉시 제한 아님), 향후 쇼핑플러스 쿠팡 전 지면 확대 검토 중. 금일 최초 기재" },
+      { "jira_key": "PL-78", "client_name": "W컨셉(에코마케팅)", "project_title": "CPS 연동", "progress_pct": 30, "progress_label": "초안", "start_date": "미정", "due_date": "미정", "change_yn": "없음", "today_update": "(활동 없음, Jira 조회 실패 지속, 수동 확인 필요)" },
+      { "jira_key": "PL-73", "client_name": "나스미디어", "project_title": "CPS 연동", "progress_pct": 30, "progress_label": "초안", "start_date": "2026.06.08", "due_date": "미정", "change_yn": "없음", "today_update": "(활동 없음)" },
+      { "jira_key": "PL-67", "client_name": "LGE·트립닷컴·마리트", "project_title": "확정 대기 추가 개발", "progress_pct": 100, "progress_label": "확정", "start_date": "미정", "due_date": "미정", "change_yn": "없음", "today_update": "(활동 없음)" },
+      { "jira_key": "PL-70", "client_name": "마리트", "project_title": "CPS 연동 개발 (구매/구매확정)", "progress_pct": 30, "progress_label": "초안", "start_date": "미정", "due_date": "미정", "change_yn": "없음", "today_update": "(활동 없음)" },
+      { "jira_key": "PL-69", "client_name": "트립닷컴", "project_title": "구매확정 추가 개발", "progress_pct": 100, "progress_label": "확정", "start_date": "미정", "due_date": "미정", "change_yn": "없음", "today_update": "(활동 없음)" },
+      { "jira_key": "PL-39", "client_name": "-", "project_title": "분양몰 IN 쇼핑플러스", "progress_pct": 0, "progress_label": "착수 전", "start_date": "미정", "due_date": "미정", "change_yn": "없음", "today_update": "(활동 없음)" },
+      { "jira_key": "PL-9", "client_name": "시럽", "project_title": "CPS 연동 (LG전자, 알리, 에이블리)", "progress_pct": 30, "progress_label": "초안", "start_date": "미정", "due_date": "미정", "change_yn": "없음", "today_update": "(활동 없음)" },
+      { "jira_key": "PL-8", "client_name": "PASS", "project_title": "쇼핑플러스 일반버전 연동 (쿠팡 제외)", "progress_pct": 100, "progress_label": "확정", "start_date": "2026.07.03", "due_date": "2026.07.31", "change_yn": "있음", "today_update": "bliss 코멘트 — \"매체코드 발급 및 셋팅 필요\", 개발 진행 지속을 위한 후속 조치 필요" },
+      { "jira_key": "미등록", "client_name": "키움증권·네이버쇼핑", "project_title": "수수료율 정책 변경 대응", "progress_pct": 100, "progress_label": "확정", "start_date": "2026.06.30", "due_date": "미정", "change_yn": "없음", "today_update": "(활동 없음, 정책 반영 여부 후속 확인 필요)" },
+      { "jira_key": "미등록", "client_name": "우리투자증권", "project_title": "MTS 오픈 준비", "progress_pct": 90, "progress_label": "수정중", "start_date": "미정", "due_date": "2026.07.07(화)", "change_yn": "없음", "today_update": "오픈 예정일 도래 — 별도 오픈 결과 공유 확인 안됨, 확인 필요" },
+      { "jira_key": "미등록", "client_name": "SBI저축은행", "project_title": "쇼핑플러스 매체 운영", "progress_pct": 90, "progress_label": "수정중", "start_date": "미정", "due_date": "미정", "change_yn": "없음", "today_update": "(활동 없음, 추가 업데이트 없음)" },
+      { "jira_key": "PL-71", "client_name": "NBT", "project_title": "ADNET 연동", "progress_pct": 90, "progress_label": "수정중", "start_date": "미정", "due_date": "2026.07.07", "change_yn": "있음", "today_update": "담당자 bliss로 재배정(이관) 확인 — Jason 개인 트래킹 종료(향후 보고 제외 예정)" }
+    ],
+    "신규사업": [
+      { "jira_key": "PL-12", "client_name": "겸사겸사", "project_title": "구매적립 특정 상품 다이렉트 진입 (통계)", "progress_pct": 30, "progress_label": "초안", "start_date": "미정", "due_date": "미정", "change_yn": "없음", "today_update": "(활동 없음)" },
+      { "jira_key": "PL-44", "client_name": "애드팝콘", "project_title": "노출형 광고 - 미니미니박스 ver", "progress_pct": 0, "progress_label": "착수 전", "start_date": "미정", "due_date": "미정", "change_yn": "없음", "today_update": "(활동 없음)" },
+      { "jira_key": "PL-43", "client_name": "넵튠", "project_title": "동영상 광고 - 미니미니박스 ver", "progress_pct": 0, "progress_label": "착수 전", "start_date": "미정", "due_date": "미정", "change_yn": "없음", "today_update": "(활동 없음)" },
+      { "jira_key": "PL-5", "client_name": "-", "project_title": "콘텐츠형 광고 적용 (MBTI, 퀴즈/겸사겸사, 오퍼월)", "progress_pct": 30, "progress_label": "초안", "start_date": "미정", "due_date": "미정", "change_yn": "없음", "today_update": "(활동 없음)" },
+      { "jira_key": "미등록", "client_name": "겸사겸사", "project_title": "앱 오픈 일정 조정", "progress_pct": 90, "progress_label": "수정중", "start_date": "미정", "due_date": "2026.07.06(경과)", "change_yn": "있음", "today_update": "당초 조정 목표일(7/6)이 경과했음에도 진행 여부 여전히 미확인 — 담당자 확인 시급. (참고) 오퍼월 리워드 단가 조정(5원) 8/1 적용 예정, 9월분 전달 필요(frank) — 쿠팡 CPC 발생 적립은 겸사겸사 매체분으로 구분 처리, 출첵→일반 미션 전환에 따른 정산 반영 방식 확인 중" },
+      { "jira_key": "미등록", "client_name": "삼프로TV", "project_title": "앱 오픈 일정", "progress_pct": 90, "progress_label": "수정중", "start_date": "미정", "due_date": "2026.07.14(조정)", "change_yn": "있음", "today_update": "쿠팡 연동용 URL 설정 요청 및 등록 완료(sarah, 겸사겸사와 동일 포맷). 상품권 관련 코드 테스트 진행 중(rowan)" },
+      { "jira_key": "미등록", "client_name": "삼프로캐시", "project_title": "주식상품권 제휴 제안서 검토", "progress_pct": 10, "progress_label": "초안", "start_date": "미정", "due_date": "미정", "change_yn": "없음", "today_update": "(활동 없음, 리뷰 진행 예정 유지)" },
+      { "jira_key": "미등록", "client_name": "오버테이크", "project_title": "신규 파트너십 계약 검토", "progress_pct": 90, "progress_label": "수정중", "start_date": "미정", "due_date": "미정(날인 대기)", "change_yn": "없음", "today_update": "(활동 없음, 날인 대기 지속)" },
+      { "jira_key": "미등록", "client_name": "GS엠비즈", "project_title": "쿠폰 신규 제휴 검토", "progress_pct": 0, "progress_label": "착수 전", "start_date": "미정", "due_date": "미정", "change_yn": "없음", "today_update": "(활동 없음)" },
+      { "jira_key": "미등록", "client_name": "DB증권", "project_title": "신규 제휴 제안서 검토", "progress_pct": 10, "progress_label": "초안", "start_date": "미정", "due_date": "미정", "change_yn": "없음", "today_update": "(활동 없음)" },
+      { "jira_key": "미등록", "client_name": "티맵모빌리티", "project_title": "쇼핑플러스 제휴 제안", "progress_pct": 30, "progress_label": "초안", "start_date": "미정", "due_date": "미정", "change_yn": "없음", "today_update": "(활동 없음, 회신 준비 중 지속)" },
+      { "jira_key": "미등록", "client_name": "다로", "project_title": "신규 업체 도입 검토", "progress_pct": 0, "progress_label": "착수 전", "start_date": "미정", "due_date": "미정", "change_yn": "없음", "today_update": "(활동 없음)" }
+    ]
+  },
+  "section2": {
+    "immediate": [],
+    "today": [
+      { "content": "겸사겸사 앱 오픈 예정일(7/6) 경과, 진행 여부 여전히 미확인 — 담당자 확인 시급" },
+      { "content": "오버테이크 최종 계약서 날인 여전히 미완료 — 라이브 목표(7월 중순) 임박, 서명 지연 시 개발 착수 일정 블로킹 위험 지속" }
+    ],
+    "monitoring": [
+      { "content": "우리투자증권 MTS 오픈(7/7 예정) 결과 미확인 — 확인 필요" },
+      { "content": "부산은행 자동차보험 프로젝트 Jira 상태 \"개발 완료\" 전환, CBT(7/9) 준비 지속" },
+      { "content": "부산은행 \"쇼핑하러가기\" URL 인코딩 오류 — iOS 자체 처리로 해결 완료" },
+      { "content": "쿠팡 적립 정책 변경(일 50만원 한도, 키움 시작) — 전 매체 확대 여부·시점 지속 확인 필요" },
+      { "content": "KB PAY 경유쇼핑 4~5월 정산분 세금계산서 발행 완료(온누리몰만 8월초 이월 처리)" }
+    ]
+  },
+  "section3": {
+    "auto_insurance": [
+      {
+        "subject": "부산은행",
+        "summary": "Jira 상태 \"개발 완료\"로 전환 확인",
+        "details": ["\"쇼핑하러가기\" URL 호출 오류(URL 인코딩/디코딩) 건 — iOS측 자체 처리 완료 회신, 안드로이드 수정 불필요 확인", "CBT 일정(7/9) 준비 지속"]
+      }
+    ],
+    "ad_client": [
+      { "subject": "LG전자(SK커머스플랫폼팀 경유)", "summary": "CPS 구독·구매 캠페인 연동 진행(담당 juke, 참조)", "details": ["appkey 343431 / pubkey 912278 / 랜딩 URL 전달 완료(sarah 회신)"] }
+    ],
+    "ad_media": [
+      { "subject": "한게임", "summary": "PC 오퍼월 7/8 리뷰 예정 유지, 금일 특이사항 없음. 리뷰룸(칠전팔기) 예약 완료", "details": [] },
+      { "subject": "카카오페이지", "summary": "오퍼월·쇼핑플러스 7/8(수) 14시 리뷰 예정 유지, 리뷰룸(칠전팔기) 예약 완료", "details": [] },
+      { "subject": "KT M모바일", "summary": "금일 특이사항 없음", "details": [] },
+      { "subject": "금 채굴기(신규 문의 매체, jessica 경유)", "summary": "오퍼월 \"간편적립 미션\" 참여 횟수별(20회 미만/이상) 분리 노출 기능 문의", "details": ["현재 기술적으로 불가 회신, 공통 기능화 시 SDK 자체 업데이트 필요 안내"] }
+    ],
+    "commerce_shopping": {
+      "clients": [
+        { "subject": "LG전자(SK커머스플랫폼팀)", "summary": "appkey/pubkey/랜딩URL 전달 완료", "details": ["담당 juke, Jason 참조"] }
+      ],
+      "media": [
+        {
+          "subject": "키움증권",
+          "summary": "쿠팡 적립 정책 변경 — 결제금액 기준 일 50만원 한도 적용 시작(공지 우선, 즉시 제한 아님)",
+          "details": ["상세페이지 안내 문구(\"포인트 적립은 일일 결제 인정 금액(최대 50만 원) 기준 적용되며, 초과분은 적립 대상에서 제외\") 등록 완료", "예시: 100만원 결제 시 고객 적립 10,000P(2%), 정산 대상 100만원, 정산 금액 24,000원(2.4%)", "쇼핑플러스 쿠팡 전 지면 확대 적용 검토 중(구버전 제외)"]
+        },
+        { "subject": "부산은행", "summary": "\"쇼핑하러가기\" URL 인코딩/디코딩 오류 — iOS 자체 처리 완료, 안드로이드 수정 불필요 확인", "details": [] },
+        { "subject": "우리투자증권", "summary": "MTS 오픈 예정일(7/7) 도래 — 결과 확인 안됨, 확인 필요", "details": [] },
+        { "subject": "PASS", "summary": "bliss 코멘트로 매체코드 발급 및 셋팅 필요사항 확인 — 개발 진행 지속", "details": [] },
+        { "subject": "NBT", "summary": "ADNET 연동 담당자 bliss로 재배정(이관) 확인", "details": [] }
+      ]
+    },
+    "commerce_reward": [],
+    "new_business": [
+      { "subject": "겸사겸사", "summary": "앱 오픈 예정일(7/6) 경과, 진행 여부 여전히 미확인 — 확인 시급", "details": ["오퍼월 리워드 단가 조정(5원) 8/1부터 적용 예정, 9월분 전달 필요(frank)", "쿠팡 CPC로 발생한 적립건은 겸사겸사 매체분으로 구분 처리", "출첵 미션 → 일반 미션 전환에 따른 정산 반영 방식 확인 중(frank)"] },
+      { "subject": "삼프로TV", "summary": "쿠팡 연동용 URL 설정 요청 및 등록 완료(sarah, 겸사겸사와 동일 포맷)", "details": ["상품권 관련 코드 테스트 진행 중(rowan), 팀 내 신중 검토 분위기"] },
+      { "subject": "오버테이크", "summary": "최종 계약서 날인 대기 지속(jessica/법무 검토)", "details": [] }
+    ],
+    "etc": [
+      { "subject": "주간회의", "summary": "기획파트 주간회의 진행(10:30~11:30, 칠전팔기 미팅룸)", "details": ["rowan, huey, 정진영 이사 참석"] },
+      { "subject": "개발 리뷰 일정", "summary": "사내 개발 리뷰 일정 공지: 내일(7/8) 오후 2시, 칠전팔기 미팅룸 예약 완료", "details": ["한게임·카카오페이지 건"] },
+      { "subject": "KB PAY 정산", "summary": "KB PAY 경유쇼핑 4~5월 정산분 세금계산서 발행 완료(7/7, KB국민카드 이형주 과장)", "details": ["온누리몰(소액)은 8월초 5~6월분 합산 청구로 이월 처리(회계팀 공유 예정, sarah)"] },
+      { "subject": "회사소개서 고도화", "summary": "회사소개서·상품소개서 고도화(PL-3, 담당 huey/임한애) — 통합 소개서(pptx/pdf) 완료 공유", "details": ["참고용"] }
+    ]
+  },
+  "section4": [
+    { "content": "오버테이크 최종 계약서 날인 필요(jessica/법무 검토 후 진행)" },
+    { "content": "겸사겸사 앱 오픈 지연 관련 담당자 확인 필요(예정일 경과)" },
+    { "content": "쿠팡 적립 한도 정책(일 50만원) 전 매체 확대 여부·시점 — 의사결정 필요 시 공유 예정" }
+  ],
+  "section5": [
+    { "content": "(없음)" }
+  ]
+}

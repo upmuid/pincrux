@@ -1,10 +1,16 @@
 {
-  "last_completed_period": "2020-10-31",
-  "next_period_start": "2020-11-01",
+  "last_completed_period": "2020-12-31",
+  "next_period_start": "2021-01-01",
   "completed_weeks": 69,
   "last_run_date": "2026-07-22",
   "batch_cadence": "monthly (2026-07-13부터 반달→월단위 전환, Jason 지시)",
+  "hold_note": "2026-07-22 Jason 지시: 2021년도(2021-01~) 배치는 진행 대기 상태. 별도 지시 있을 때까지 다음 정기/예외 실행에서 2021-01 배치를 자동 진행하지 말 것.",
   "pending_review": [
+    {"item": "사이다뱅크(엔티티 정체성 불명) — 웰컴저축은행 산하 브랜드 vs 독립 신규 엔티티", "batch": "2020-12-31", "status": "resolved", "note": "2026-07-22 Jason 확인: 사이다뱅크는 SBI저축은행이 운영하는 모바일 뱅킹 브랜드이며 웰컴저축은행과 무관한 독립 광고주로 최종 확정. entity_name을 'SBI저축은행'으로 하고 '사이다뱅크'는 별칭 처리. Client 폴더(210665474) 하위 신규 페이지(215973896) 생성 완료 — 읽어봄이 PASSED, 다시쓰미 최종 발행 완료. entity_manifest.json 갱신 완료."},
+    {"item": "세틀뱅크 계좌등록 CPA 계약 체결 여부 확정 필요 — '계약서 확인 완료' 표현의 의미", "batch": "2020-12-31", "status": "open", "note": "2026-07-22 배치에서 12/3 '소재 및 계약서 확인 완료' 원문이 정식 체결을 의미하는지 검토 완료만 의미하는지 불명확하여 체결로 단정하지 않고 그대로 반영함. 후속 배치(2021-01)에서 실제 캠페인 오픈 여부로 재확인 예정."},
+    {"item": "코나투스(반반택시, 신규 엔티티) major_category 확정 필요", "batch": "2020-11-30", "status": "resolved", "note": "2026-07-22 Jason 확인으로 Client 최종 확정. entity_manifest.json 갱신 완료(216039425)."},
+    {"item": "DGB유페이(신규 엔티티) major_category 확정 필요 — Media_Partner 이중역할 가능성", "batch": "2020-11-30", "status": "resolved", "note": "2026-07-22 Jason 확인으로 Client 최종 확정(216072193). 단, 충전소(티켓모아) 연동이 2021년 계획 논의 단계로 아직 미확정이라 향후 실제 연동 시 Media_Partner 이중역할 여부는 재검토 대상으로 entity_manifest.json에 남겨둠."},
+    {"item": "세틀뱅크(신규 엔티티) major_category 확정 필요", "batch": "2020-11-30", "status": "resolved", "note": "2026-07-22 Jason 확인으로 Client 최종 확정. entity_manifest.json 갱신 완료(216104961)."},
     {"item": "어니스트펀드(신규 엔티티, 잠정 Client) major_category 확정 필요", "batch": "2020-10-31", "status": "open", "note": "2026-07-22 예외 재실행(1일 2회차) 배치에서 모으미가 신규 발견. 쓰미가 잠정 Client로 분류하여 Client 폴더(210665474) 하위에 신규 페이지(215810049) 생성. entity_manifest.json에 human_action_required 상태로 임시 등록. Jason 확인 필요. 참고: 이번 배치에서 읽어봄이가 1차 검증 시 CONTEXT_DISTORTION(없는 날짜 생성, 매체비 인상분 미반영)을 FAILED 처리 → 쓰미 재실행으로 정정(매체비 13,000원→25,000원 Gross 반영, 10-27 오기 제거) → 재검증 PASSED → 다시쓰미 최종 발행 완료."},
     {"item": "오사라마켓(215089153) 신규 엔티티 major_category 확정", "batch": "2020-09-30", "status": "resolved", "note": "2026-07-22 Jason 확인으로 Media_Partner 최종 확정. entity_manifest.json/Confluence 페이지 갱신 완료."},
     {"item": "롯데멤버스(215121921, alias L.POINT) 신규 엔티티 major_category 확정", "batch": "2020-09-30", "status": "resolved", "note": "2026-07-22 Jason 확인으로 Media_Partner 최종 확정. entity_manifest.json/Confluence 페이지 갱신 완료."},
@@ -55,6 +61,8 @@
     {"period_end": "2020-07-31", "weeks": 69, "run_date": "2026-07-20"},
     {"period_end": "2020-08-31", "weeks": 69, "run_date": "2026-07-21"},
     {"period_end": "2020-09-30", "weeks": 69, "run_date": "2026-07-22"},
-    {"period_end": "2020-10-31", "weeks": 69, "run_date": "2026-07-22", "note": "Jason 지시로 당일 2회차 예외 실행(backfill_checkpoint.json last_run_date와 동일 날짜지만 별도 배치)"}
+    {"period_end": "2020-10-31", "weeks": 69, "run_date": "2026-07-22", "note": "Jason 지시로 당일 2회차 예외 실행(backfill_checkpoint.json last_run_date와 동일 날짜지만 별도 배치)"},
+    {"period_end": "2020-11-30", "weeks": 69, "run_date": "2026-07-22", "note": "Jason 지시로 당일 3회차 예외 실행"},
+    {"period_end": "2020-12-31", "weeks": 69, "run_date": "2026-07-22", "note": "Jason 지시로 당일 4회차 예외 실행. 2020년도 전체 백필 완료(2019-01~2020-12). 전 항목 matched/merged_into_existing이라 읽어봄이·다시쓰미 모두 생략(v0_coo.md 4-C절), 쓰미 완료 시점에 published 인정."}
   ]
 }

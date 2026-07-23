@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>[7월 1주] 기획파트 주간 업무 공유</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body class="in-iframe">
+
+<!-- 편집 툴바 -->
+<div class="edit-toolbar">
+  <button class="edit-btn" id="editToggle" onclick="toggleEdit()">✏️ 편집 모드</button>
+  <span class="edit-notice">클릭하여 직접 수정 → 전체 선택(Ctrl+A) 후 복사하여 메일에 붙여넣기</span>
+</div>
+
+<script>
+// 편집 가능한 선택자: 텍스트 내용이 있는 요소만
+const EDITABLE_SEL = [
+  '.report-title', '.report-meta',
+  '.hl-row span:last-child',
+  '.item', '.tag-line',
+  '.jira-name', '.jira-owner',
+  '.jira-summary', '.section-title'
+].join(', ');
+
+function toggleEdit() {
+  const body = document.body;
+  const btn = document.getElementById('editToggle');
+  const isEdit = body.classList.toggle('edit-mode');
+  btn.classList.toggle('active', isEdit);
+  btn.textContent = isEdit ? '✅ 편집 완료' : '✏️ 편집 모드';
+  document.querySelectorAll(EDITABLE_SEL).forEach(el => {
+    el.contentEditable = isEdit ? 'true' : 'false';
+  });
+}
+</script>
+
+<!-- 헤더 -->
+<div class="report-header">
+  <div class="report-title editable">[7월 1주] 기획파트 주간 업무 공유</div>
+  <div class="report-meta editable">2026-06-26 ~ 2026-07-02 &nbsp;·&nbsp; To: jyjeong@pincrux.com &nbsp;·&nbsp; CC: pl@pincrux.com</div>
+</div>
+
+<!-- 섹션 1: 주요 이슈 및 성과 -->
+<div class="section">
+  <div class="section-title">1. 금주 주요 이슈 및 성과</div>
+
+  <div class="hl-row">
+    <span class="badge badge-change">일정변경</span>
+    <span>우리투자증권 오픈 7/2 → 7/7 연기 (임시코드 3% 세팅·디자인 배포 지연)</span>
+  </div>
+  <div class="hl-row">
+    <span class="badge badge-change">일정변경</span>
+    <span>부산은행 오픈 ~7/1 → 7/9 재확정 (자동차보험 심의 결과에 따라 추가 변동 가능)</span>
+  </div>
+  <div class="hl-row">
+    <span class="badge badge-change">일정변경</span>
+    <span>삼프로TV 앱 오픈 1주 추가 연기 → 7/14 타겟</span>
+  </div>
+  <div class="hl-row">
+    <span class="badge badge-new">신규</span>
+    <span>디자인팀 김은기 합류 (7/1) / 겸사겸사 배터리 급방전 원인 조사 착수 (삼성전자 VOC 계기)</span>
+  </div>
+  <div class="hl-row">
+    <span class="badge badge-pending">펜딩</span>
+    <span>모비두 '숏폼 보고 적립' 협업: SaaS 비용 부담 이슈로 진행 보류</span>
+  </div>
+</div>
+
+<!-- 섹션 2: 쇼핑플러스 -->
+<div class="section">
+  <div class="section-title">2. 쇼핑플러스 제휴처 영업 및 개발 현황</div>
+
+  <div class="sub-label">쇼핑플러스 광고주</div>
+  <div class="text-block">
+    <p class="item">나스미디어: CPS 연동 기획 100% 유지, 네이버쇼핑·오늘의집·SSG 추가 연동 정책·계약서 검토 지속 (변동 없음).</p>
+    <p class="item">W컨셉: CPS 미진행으로 팬딩</p>
+    <p class="item">트립닷컴: 구매확정 추가 개발 기획 완료 (PL-69).</p>
+    <p class="item">마이리얼트립: CPS 연동 개발(구매/구매확정) 기획 진행 중 (PL-70).</p>
+    <p class="item">삼프로캐시 쿠팡: 코드 승인 완료. 발급 대기중</p>
+  </div>
+
+  <div class="sub-label">매체</div>
+  <div class="text-block">
+    <p class="item">키움증권: 네이버쇼핑 1.5% 변경 및 디자인 수정건으로 오픈 지연, 개발 완료, 8월 네이버쇼핑 수수료 차등 적용 사전 공지 발송 완료(6/30). 담당자 변경(김혜경 과장 → 김현정 대리).</p>
+    <p class="item">우리투자증권: [일정변경] 오픈 7/2 → 7/7 연기. 임시코드 3% 세팅 진행, 디자인 7/7 18시 배포 예정. 네이버쇼핑 수수료 정책 변경 사전 공지 발송 후 부속계약서 보완·업무프로세스 정립 요청 회신 수신, 대응 검토 필요.</p>
+    <p class="item">부산은행: 오픈 일정 7/9 재확정(자동차보험 심의 결과에 따라 변동 가능).</p>
+    <p class="item">버즈빌(스타뱅킹): 특이 업데이트 없음. 스타뱅킹 오픈 7/23 목표 유지.</p>
+    <p class="item">KT M모바일: 쇼핑플러스 커스텀 작업·예외처리·데이터 검증 지속. 개발 마감 7/3 → 7/6 연장.</p>
+    <p class="item">카카오페이지: 7.8 착수 예정 (PL-10).</p>
+  </div>
+
+  <div class="tag-line">
+    <strong>연동 대기:</strong> 카카오페이지, 아파트아이 &nbsp;|&nbsp;
+    <strong>협의 중:</strong> W컨셉, 나스미디어, 원스토어, PASS, 시럽, 국민은행, 마리트 &nbsp;|&nbsp;
+    <strong>회신 대기:</strong> DB증권, 교보증권
+  </div>
+</div>
+
+<!-- 섹션 3: 리워드앱 -->
+<div class="section">
+  <div class="section-title">3. 리워드앱 개발 현황 및 이슈</div>
+
+  <div class="sub-label">겸사겸사</div>
+  <div class="text-block">
+    <p class="item">겸사겸사 보겸 전용 어드민 개발 신규 착수: 30% 진행, 마감 7/6. (정창식/heah)</p>
+    <p class="item">배터리 급방전 원인 조사 착수: 삼성전자 VOC 계기로 AOS 걸음수 로직 점검, 마감 7/3. (정준형)</p>
+    <p class="item">당첨자 인증 플로우 기획 착수 (6/29, 홍세림)</p>
+    <p class="item">AppLovin 광고 이중화 마무리 작업 80% 진행, 마감 7/2. (정준형)</p>
+  </div>
+
+  <div class="sub-label">삼프로캐시</div>
+  <div class="text-block">
+    <p class="item">프로또 당첨금 조정 확정: 2등 500만→300만캐시, 3등 300만→200만캐시(1등·4~5등 유지). 개발 반영 완료, 다음 주 자동 생성 시 검증 예정.</p>
+    <p class="item">app-ads.txt 파일 혼용 문제 해결 완료: 서브도메인 물리 분할 완료. (김지영, 안호수)</p>
+    <p class="item">[일정변경] 삼프로TV 앱 오픈 1주 추가 연기 → 7/14 타겟.</p>
+    <p class="item">AdMob 광고 승인 완료.</p>
+    <p class="item">삼프로캐시 사용 정책(주식상품권) 변경: 허용완료. DB증권 상품권 사용을 위한 제안 준비</p>
+  </div>
+
+  <div class="sub-label">임한애</div>
+  <div class="text-block">
+    <p class="item">온보딩 지속: 리워드앱 모니터링 데이터 정리, 회사·상품소개서 리뷰 반복. 6/30 디벨로퍼 시스템 교육 수강.</p>
+    <p class="item">유튜브 CPA, 상품소개서 고도화: 본업무 착수 시점 계속 순연 중.</p>
+  </div>
+</div>
+
+<!-- 섹션 4: 쇼핑라이브 CPS -->
+<div class="section">
+  <div class="section-title">4. 쇼핑라이브 부스터 CPS</div>
+  <div class="text-block">
+    <p class="item">[이슈] 구매 전환 시 클릭키(clickKey) 유효성·중복 검사 이슈로 이중화 처리 진행 중. (서준영 (6/22~))</p>
+  </div>
+</div>
+
+<!-- 섹션 5: 광고플랫폼 -->
+<div class="section">
+  <div class="section-title">5. 광고플랫폼 개발 현황</div>
+  <div class="text-block">
+    <p class="item">NBT ADNET 연동: 마감 7/7 유지. attp 광고 참여 API 에러 테스트 진행 중, NBT측에 광고 종류별 데이터 요청 대기. (서준영)</p>
+    <p class="item">KT M모바일 FTP: 65%→70% 진행 (마감 7/3 → 7/6 연장). 쇼핑플러스 커스텀·페이지 예외처리 지속. (정창식)</p>
+    <p class="item">올원뱅크 할인쿠폰: 개발 완료 (PL-40).</p>
+    <p class="item">빌레터: 모바일 웹 커스텀 충전소 개발 완료 유지 (PL-35).</p>
+    <p class="item">페이북 자동차보험 기획전: 매체 포스트백 개발 완료 (6/26).</p>
+    <p class="item">모비두 광고 상품 협업: SaaS 비용 부담 이슈로 진행 보류 [펜딩].</p>
+    <p class="item">네이버페이 SDK 고도화: 네이버측 사유로 펜딩 유지.</p>
+  </div>
+</div>
+
+<!-- 섹션 6: 다음주 예정 -->
+<div class="section">
+  <div class="section-title">6. 다음주 주요 예정 사항</div>
+
+  <table class="jira-table" style="margin-top:4px;">
+    <thead>
+      <tr>
+        <th>항목</th>
+        <th>예정 일자</th>
+        <th>담당</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>우리투자증권 오픈</td>
+        <td>7/7</td>
+        <td>Jason</td>
+      </tr>
+      <tr>
+        <td>부산은행 CBT 오픈</td>
+        <td>7/9 목표</td>
+        <td>Jason</td>
+      </tr>
+      <tr>
+        <td>KT M모바일 FTP 개발 완료</td>
+        <td>7/6</td>
+        <td>정창식</td>
+      </tr>
+      <tr>
+        <td>NBT ADNET 연동 개발 완료</td>
+        <td>7/7</td>
+        <td>서준영</td>
+      </tr>
+      <tr>
+        <td>리워드앱 출석 배치·디벨로퍼·쿠팡 CPC 웹뷰 개발</td>
+        <td>7/15</td>
+        <td>안호수</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Jira 파이프라인 -->
+<div class="section">
+  <div class="section-title">Jira 파이프라인</div>
+  <div class="jira-summary">기준일: 2026년 7월 2일 &nbsp;|&nbsp; 전체 49건 &nbsp;|&nbsp; 개발완료 8 / 개발 7 / 디자인완료 2 / 디자인 1 / 기획완료 12 / 기획 13 / 할일 6</div>
+
+  <table class="jira-table">
+    <thead>
+      <tr>
+        <th>구분</th>
+        <th>프로젝트명</th>
+        <th>상태</th>
+        <th>담당자</th>
+        <th>비고</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- 할 일 -->
+      <tr>
+        <td class="jira-cat">어드민</td>
+        <td class="jira-name">커머스 어드민 보안 대응</td>
+        <td><span class="st st-todo">할 일</span></td>
+        <td class="jira-owner">-</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="jira-cat">플랫폼</td>
+        <td class="jira-name">GS엠비즈 쿠폰API</td>
+        <td><span class="st st-todo">할 일</span></td>
+        <td class="jira-owner">-</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="jira-cat">플랫폼</td>
+        <td class="jira-name">[SBI] 오퍼월 연동</td>
+        <td><span class="st st-todo">할 일</span></td>
+        <td class="jira-owner">-</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="jira-cat">플랫폼</td>
+        <td class="jira-name">[애드팝콘] 미니미니박스, 겸사겸사 컨텐츠형 광고</td>
+        <td><span class="st st-todo">할 일</span></td>
+        <td class="jira-owner">지리산</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="jira-cat">리워드앱</td>
+        <td class="jira-name">[겸사겸사] 미니게임</td>
+        <td><span class="st st-todo">할 일</span></td>
+        <td class="jira-owner">-</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="jira-cat">리워드앱</td>
+        <td class="jira-name">[겸사겸사] 오늘의 적립</td>
+        <td><span class="st st-todo">할 일</span></td>
+        <td class="jira-owner">-</td>
+        <td></td>
+      </tr>
+      <!-- 기획 -->
+      <tr>
+        <td class="jira-cat">쇼핑플러스</td>
+        <td class="jira-name">[키움] 쿠팡 ADID 연동</td>
+        <td><span class="st st-plan">기획</span></td>
+        <td class="jira-owner">지리산</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="jira-cat">쇼핑플러스</td>
+        <td class="jira-name">[나스미디어] CPS 연동</td>
+        <td><span class="st st-plan">기획</span></td>
+        <td class="jira-owner">지리산</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="jira-cat">쇼핑플러스</td>
+        <td class="jira-name">[마리트] CPS 연동 개발 (구매/구매확정)</td>
+        <td><span class="st st-plan">기획</span></td>
+        <td class="jira-owner">지리산</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="jira-cat">쇼핑플러스</td>
+        <td class="jira-name">[시럽] CPS 연동 (LG전자, 알리, 에이블리)</td>
+        <td><span class="st st-plan">기획</span></td>
+        <td class="jira-owner">지리산</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="jira-cat">쇼핑플러스</td>
+        <td class="jira-name">[PASS] 쇼핑플러스 일반버전 연동 (쿠팡 X)</td>
+        <td><span class="st st-plan">기획</span></td>
+        <td class="jira-owner">지리산</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="jira-cat">리워드앱</td>
+        <td class="jira-name">친구추천 고도화 (카톡으로 보내기)</td>
+        <td><span class="st st-plan">기획</span></td>
+        <td class="jira-owner">홍세림</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="jira-cat">리워드앱</td>
+        <td class="jira-name">[겸사겸사] 파트너스 추천인 코드 (B2B)</td>
+        <td><span class="st st-plan">기획</span></td>
+        <td class="jira-owner">홍세림</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="jira-cat">리워드앱</td>
+        <td class="jira-name">[겸사겸사] 구매적립 특정 상품 다이렉트 진입 (통계)</td>
+        <td><span class="st st-plan">기획</span></td>
+        <td class="jira-owner">지리산</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="jira-cat">리워드앱</td>
+        <td class="jira-name">HI5 게임 연동</td>
+        <td><span class="st st-plan">기획</span></td>
+        <td class="jira-owner">지리산</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="jira-cat">플랫폼</td>
+        <td class="jira-name">[원스토어] 웹 오퍼월 연동</td>
+        <td><span class="st st-plan">기획</span></td>
+        <td class="jira-owner">지리산</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="jira-cat">플랫폼</td>
+        <td class="jira-name">콘텐츠형 광고 적용 (MBTI, 퀴즈/겸사겸사, 오퍼월)</td>
+        <td><span class="st st-plan">기획</span></td>
+        <td class="jira-owner">지리산</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="jira-cat">플랫폼</td>
+        <td class="jira-name">유튜브 CPA 광고</td>
+        <td><span class="st st-plan">기획</span></td>
+        <td class="jira-owner">임한애</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="jira-cat">공통</td>
+        <td class="jira-name">회사소개서, 상품소개서 고도화</td>
+        <td><span class="st st-plan">기획</span></td>
+        <td class="jira-owner">임한애</td>
+        <td></td>
+      </tr>
+      <!-- 기획 완료 -->
+      <tr>
+        <td class="jira-cat">쇼핑플러스</td>
+        <td class="jira-name">[트립닷컴] 구매확정 추가 개발</td>
+        <td><span class="st st-plan-done">기획 완료</span></td>
+        <td class="jira-owner">지리산</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="jira-cat">쇼핑플러스</td>
+        <td class="jira-name">확정 대기 추가 개발</td>
+        <td><span class="st st-plan-done">기획 완료</span></td>
+        <td class="jira-owner">지리산</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="jira-cat">플랫폼</td>
+        <td class="jira-name">[한게임] PC 오퍼월</td>
+        <td><span class="st st-plan-done">기획 완료</span></td>
+        <td class="jira-owner">지리산</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="jira-cat">리워드앱</td>
+        <td class="jira-name">[겸사겸사] 행운스크래치</td>
+        <td><span class="st st-plan-done">기획 완료</span></td>
+        <td class="jira-owner">홍세림</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="jira-cat">리워드앱</td>
+        <td class="jira-name">[겸사겸사] 뽑기권 교환소 재화 추가</td>
+        <td><span class="st st-plan-done">기획 완료</span></td>
+        <td class="jira-owner">홍세림</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="jira-cat">리워드앱</td>
+        <td class="jira-name">[겸사겸사] 보너스 미션 UI 개편</td>
+        <td><span class="st st-plan-done">기획 완료</span></td>
+        <td class="jira-owner">홍세림</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="jira-cat">리워드앱</td>
+        <td class="jira-name">[겸사겸사] 푸시 알림 추가 (수동)</td>
+        <td><span class="st st-plan-done">기획 완료</span></td>
+        <td class="jira-owner">홍세림</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="jira-cat">리워드앱</td>
+        <td class="jira-name">[겸사겸사] 게임 오퍼월 (웹)</td>
+        <td><span class="st st-plan-done">기획 완료</span></td>
+        <td class="jira-owner">홍세림</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="jira-cat">리워드앱</td>
+        <td class="jira-name">[겸사겸사] 쇼핑플러스 프로모션 (+1%)</td>
+        <td><span class="st st-plan-done">기획 완료</span></td>
+        <td class="jira-owner">홍세림</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="jira-cat">리워드앱</td>
+        <td class="jira-name">[삼프로] 주식 예측</td>
+        <td><span class="st st-plan-done">기획 완료</span></td>
+        <td class="jira-owner">홍세림</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="jira-cat">리워드앱</td>
+        <td class="jira-name">[공통] 메인 공지 팝업 기능</td>
+        <td><span class="st st-plan-done">기획 완료</span></td>
+        <td class="jira-owner">홍세림</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="jira-cat">쇼핑플러스</td>
+        <td class="jira-name">[카카오페이지] 쇼핑, 게임 오퍼월 적용</td>
+        <td><span class="st st-plan-done">기획 완료</span></td>
+        <td class="jira-owner">지리산</td>
+        <td></td>
+      </tr>
+      <!-- 디자인 -->
+      <tr>
+        <td class="jira-cat">리워드앱</td>
+        <td class="jira-name">[겸사겸사] 퀴즈적립</td>
+        <td><span class="st st-design">디자인</span></td>
+        <td class="jira-owner">홍세림</td>
+        <td></td>
+      </tr>
+      <!-- 디자인 완료 -->
+      <tr>
+        <td class="jira-cat">리워드앱</td>
+        <td class="jira-name">알림 센터</td>
+        <td><span class="st st-design-done">디자인 완료</span></td>
+        <td class="jira-owner">홍세림</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="jira-cat">리워드앱</td>
+        <td class="jira-name">[겸사겸사] 당첨자 촬영 고지</td>
+        <td><span class="st st-design-done">디자인 완료</span></td>
+        <td class="jira-owner">홍세림</td>
+        <td></td>
+      </tr>
+      <!-- 개발 -->
+      <tr>
+        <td class="jira-cat">리워드앱</td>
+        <td class="jira-name">삼프로 TV 오픈(쇼핑 포함)</td>
+        <td><span class="st st-dev">개발</span></td>
+        <td class="jira-owner">-</td>
+        <td>7/14 타겟(연기)</td>
+      </tr>
+      <tr>
+        <td class="jira-cat">리워드앱</td>
+        <td class="jira-name">[겸사겸사] 쿠팡CPC 추가</td>
+        <td><span class="st st-dev">개발</span></td>
+        <td class="jira-owner">홍세림</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="jira-cat">플랫폼</td>
+        <td class="jira-name">NBT ADNET 연동</td>
+        <td><span class="st st-dev">개발</span></td>
+        <td class="jira-owner">지리산</td>
+        <td>53%, ~7/7</td>
+      </tr>
+      <tr>
+        <td class="jira-cat">플랫폼</td>
+        <td class="jira-name">[쇼라부스터] 브랜드 CPS</td>
+        <td><span class="st st-dev">개발</span></td>
+        <td class="jira-owner">홍세림</td>
+        <td>클릭키 이중화 대응 중</td>
+      </tr>
+      <tr>
+        <td class="jira-cat">리워드앱</td>
+        <td class="jira-name">[겸사겸사] 게임 오퍼월 추가 적용</td>
+        <td><span class="st st-dev">개발</span></td>
+        <td class="jira-owner">지리산</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="jira-cat">쇼핑플러스</td>
+        <td class="jira-name">[KT M모바일] 쇼핑플러스 (플러스콘+통신비할인)</td>
+        <td><span class="st st-dev">개발</span></td>
+        <td class="jira-owner">지리산</td>
+        <td>70%, 마감 7/6</td>
+      </tr>
+      <tr>
+        <td class="jira-cat">리워드앱</td>
+        <td class="jira-name">[겸사겸사] 출석체크 이벤트 및 고도화</td>
+        <td><span class="st st-dev">개발</span></td>
+        <td class="jira-owner">홍세림</td>
+        <td>금주 완료</td>
+      </tr>
+      <!-- 개발 완료 -->
+      <tr>
+        <td class="jira-cat">쇼핑플러스</td>
+        <td class="jira-name">부산은행 쇼핑플러스/자동차보험</td>
+        <td><span class="st st-dev-done">개발 완료</span></td>
+        <td class="jira-owner">지리산</td>
+        <td>오픈 7/9 재확정, iOS 오류 대응중</td>
+      </tr>
+      <tr>
+        <td class="jira-cat">플랫폼</td>
+        <td class="jira-name">[올원뱅크] 할인쿠폰</td>
+        <td><span class="st st-dev-done">개발 완료</span></td>
+        <td class="jira-owner">지리산</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="jira-cat">쇼핑플러스</td>
+        <td class="jira-name">[우리투자증권] MTS, 우리은행</td>
+        <td><span class="st st-dev-done">개발 완료</span></td>
+        <td class="jira-owner">지리산</td>
+        <td>오픈 7/7로 연기</td>
+      </tr>
+      <tr>
+        <td class="jira-cat">쇼핑플러스</td>
+        <td class="jira-name">플러스콘A 버전 (쿠팡 전용 포인트·매체사용)</td>
+        <td><span class="st st-dev-done">개발 완료</span></td>
+        <td class="jira-owner">홍세림</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="jira-cat">리워드앱</td>
+        <td class="jira-name">[겸사겸사] 회원가입 CPA 진행</td>
+        <td><span class="st st-dev-done">개발 완료</span></td>
+        <td class="jira-owner">홍세림</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="jira-cat">플랫폼</td>
+        <td class="jira-name">[빌레터] 모바일 웹 커스텀 충전소</td>
+        <td><span class="st st-dev-done">개발 완료</span></td>
+        <td class="jira-owner">지리산</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="jira-cat">쇼핑플러스</td>
+        <td class="jira-name">[키움] 네이버 쇼핑 연동</td>
+        <td><span class="st st-dev-done">개발 완료</span></td>
+        <td class="jira-owner">지리산</td>
+        <td>수수료·정산 이슈 대응중</td>
+      </tr>
+      <tr>
+        <td class="jira-cat">리워드앱</td>
+        <td class="jira-name">[삼프로] 기본 구성 + 쇼핑몰</td>
+        <td><span class="st st-dev-done">개발 완료</span></td>
+        <td class="jira-owner">홍세림</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>

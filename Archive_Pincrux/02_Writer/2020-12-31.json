@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.1",
+  "node": "writer",
+  "run_date": "2020-12-31",
+  "source_file": "Archive_Pincrux/01_Collector/2020-12-31.json",
+  "node_status": "success",
+  "processed_tasks": [
+    {
+      "task_id": "T001",
+      "entity_name": "코나투스",
+      "project_name": "반반택시 회원가입 CPA 캠페인",
+      "page_scope": "child",
+      "target_name": "코나투스 > 반반택시 회원가입 CPA 캠페인",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/216039425",
+      "confluence_page_id": "216039425",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/210665474",
+      "confluence_parent_page_id": "210665474",
+      "updated_sections": ["## 반반택시 회원가입 CPA 캠페인 (2020) > 운영 히스토리", "의사결정 사항", "액션 아이템"]
+    },
+    {
+      "task_id": "T002",
+      "entity_name": "세틀뱅크",
+      "project_name": "계좌등록 CPA 캠페인",
+      "page_scope": "child",
+      "target_name": "세틀뱅크 > 계좌등록 CPA 캠페인",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/216104961",
+      "confluence_page_id": "216104961",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/210665474",
+      "confluence_parent_page_id": "210665474",
+      "updated_sections": ["## 계좌등록 CPA 캠페인 (2020) > 운영 히스토리", "의사결정 사항", "액션 아이템"]
+    },
+    {
+      "task_id": "T003",
+      "entity_name": "KT",
+      "project_name": "KT클립 충전소",
+      "page_scope": "child",
+      "target_name": "KT > KT클립 충전소",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/196575233/KT",
+      "confluence_page_id": "196575233",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/210894849",
+      "confluence_parent_page_id": "210894849",
+      "updated_sections": ["## KT클립 충전소 재오픈 추진 (2020-12) (신규 섹션, 기존 섹션 위에 추가)"]
+    },
+    {
+      "task_id": "T004",
+      "entity_name": "CLUV",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "CLUV",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/211320841/CLUV",
+      "confluence_page_id": "211320841",
+      "updated_sections": ["## CLUV — 클럽샵 나이스페이 PG 연동 (2020-09) > 프로젝트 히스토리 > 운영 히스토리", "의사결정 사항", "액션 아이템"],
+      "note": "routing_pincrux_cluv.md 라우팅 규칙에 따라 CLUV 관련 콘텐츠로 판단, entity_manifest.json 등록 페이지(211320841)에 그대로 반영함(라우팅 변경 없음). iOS 앱스토어 리젝 대응은 기존 'CLUV 정식 오픈' 진행 히스토리의 연속 사안으로 판단하여 신규 섹션이 아닌 기존 '프로젝트 히스토리' 섹션 내 타임라인에 추가함."
+    },
+    {
+      "task_id": "T005",
+      "entity_name": "피플카",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "피플카",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/212631553",
+      "confluence_page_id": "212631553",
+      "updated_sections": ["## 피플카 광고주 서버 중복 필터링 오류 대응 (2020-12) (신규 섹션, 기존 섹션 위에 추가)"]
+    },
+    {
+      "task_id": "T006",
+      "entity_name": "CPS 기획전 플랫폼",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "CPS 기획전 플랫폼",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/206012417/CPS",
+      "confluence_page_id": "206012417",
+      "updated_sections": ["## CPS 기획전 플랫폼 — CJ제일제당 2차 벤더사 공급계약 종료 및 상품 판매 종료 (2020-12) (신규 섹션, 기존 섹션 위에 추가)"]
+    }
+  ],
+  "skipped_tasks": [
+    {
+      "task_id": "T007",
+      "reason": "entity_manifest.json 미등록(context_status: unknown). 5-D 절차에 따라 Confluence AR 전체를 CQL로 탐색(title~\"사이다뱅크\", text~\"사이다뱅크\") 하였으나 0건 반환됨. 웰컴저축은행(192151790) 페이지 본문 전체를 직접 확인하였으나 '사이다뱅크' 언급이 전혀 없어, 웰컴저축은행의 브랜드/자회사로 간주할 80% 이상의 매칭 근거를 확보하지 못함. 신규 독립 페이지 임의 생성도 금지 사항이므로 이번 배치에서는 작업을 패스함. 총총(COO) 확인 후 (1) 웰컴저축은행 산하 브랜드인지, (2) 독립 신규 엔티티(Client 추정)인지 확정하고 entity_manifest.json 갱신이 필요함."
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "schema_version": "1.0",
+  "node": "daily_report",
+  "report_date": "2026-07-21",
+  "day_of_week": "화",
+  "department": "기획파트",
+  "author": "지리산",
+  "section1": {
+    "자동차보험사업": [],
+    "광고사업": [
+      { "jira_key": "PL-65", "client_name": "한게임", "project_title": "PC 오퍼월", "progress_pct": 100, "progress_label": "기획완료(개발대기)", "start_date": "미정", "due_date": "2026.07.22", "change_yn": "있음", "today_update": "마감일 7/22로 신규 등록 확인. 그룹DM(임진혁·강민지)에서 한게임 관련 참고 링크 공유, jessica에게 전달" },
+      { "jira_key": "PL-30", "client_name": "KT M모바일", "project_title": "쇼핑플러스 (플러스콘+통신비할인)", "progress_pct": 100, "progress_label": "확정(개발중)", "start_date": "미정", "due_date": "미정", "change_yn": "없음", "today_update": "(활동 없음, 매체측 개발팀 일정 미확정 지연 지속)" },
+      { "jira_key": "PL-10", "client_name": "카카오페이지", "project_title": "쇼핑·게임 오퍼월 적용", "progress_pct": 100, "progress_label": "확정(디자인 진행중)", "start_date": "미정", "due_date": "2026.07.29", "change_yn": "있음", "today_update": "마감일 7/29로 신규 등록 확인, 그 외 활동 없음" },
+      { "jira_key": "PL-31", "client_name": "겸사겸사", "project_title": "게임 오퍼월 추가 적용", "progress_pct": 100, "progress_label": "확정(개발중)", "start_date": "미정", "due_date": "미정", "change_yn": "없음", "today_update": "(활동 없음)" },
+      { "jira_key": "PL-6", "client_name": "원스토어", "project_title": "웹 오퍼월 연동", "progress_pct": 30, "progress_label": "초안", "start_date": "미정", "due_date": "미정", "change_yn": "없음", "today_update": "(활동 없음)" },
+      { "jira_key": "PL-7", "client_name": "애드팝콘", "project_title": "미니미니박스·겸사겸사 컨텐츠형 광고", "progress_pct": 0, "progress_label": "착수 전", "start_date": "미정", "due_date": "미정", "change_yn": "없음", "today_update": "(활동 없음)" },
+      { "jira_key": "PL-2", "client_name": "-", "project_title": "포인트 통계·포인트 소멸 기능 (오퍼월 포함)", "progress_pct": 0, "progress_label": "착수 전", "start_date": "미정", "due_date": "2026.09.30", "change_yn": "없음", "today_update": "(활동 없음)" },
+      { "jira_key": "PL-74", "client_name": "-", "project_title": "광고 네트워크 appkey 테이블 삭제 배치 대응", "progress_pct": 0, "progress_label": "착수 전", "start_date": "미정", "due_date": "미정", "change_yn": "없음", "today_update": "(활동 없음, 상세 요건 여전히 확인 필요)" }
+    ],
+    "커머스사업": [
+      { "jira_key": "PL-8", "client_name": "PASS", "project_title": "쇼핑플러스 일반버전 연동 (쿠팡 제외)", "progress_pct": 100, "progress_label": "확정(개발중)", "start_date": "2026.07.03", "due_date": "2026.07.27", "change_yn": "있음", "today_update": "마감일이 7/31에서 7/27로 앞당겨진 것을 Jira에서 확인, 그 외 활동 없음(일정 영향 확인 필요)" },
+      { "jira_key": "PL-75", "client_name": "키움", "project_title": "쿠팡 ADID 연동", "progress_pct": 30, "progress_label": "초안", "start_date": "미정", "due_date": "미정", "change_yn": "없음", "today_update": "(활동 없음)" },
+      { "jira_key": "PL-73", "client_name": "나스미디어", "project_title": "CPS 연동", "progress_pct": 30, "progress_label": "초안", "start_date": "2026.06.08", "due_date": "미정", "change_yn": "있음", "today_update": "사내 대화 중 나스미디어측 계약 종료로 개발 착수가 안되고 있는 상황 재확인(계약 재개 여부 판단 필요)" },
+      { "jira_key": "PL-67", "client_name": "LGE·트립닷컴·마리트", "project_title": "확정 대기 추가 개발", "progress_pct": 100, "progress_label": "확정", "start_date": "미정", "due_date": "미정", "change_yn": "없음", "today_update": "(활동 없음)" },
+      { "jira_key": "PL-70", "client_name": "마리트", "project_title": "CPS 연동 개발 (구매/구매확정)", "progress_pct": 30, "progress_label": "초안", "start_date": "미정", "due_date": "미정", "change_yn": "없음", "today_update": "(활동 없음)" },
+      { "jira_key": "PL-69", "client_name": "트립닷컴", "project_title": "구매확정 추가 개발", "progress_pct": 100, "progress_label": "확정", "start_date": "미정", "due_date": "미정", "change_yn": "없음", "today_update": "(활동 없음)" },
+      { "jira_key": "PL-39", "client_name": "-", "project_title": "분양몰 IN 쇼핑플러스", "progress_pct": 0, "progress_label": "착수 전", "start_date": "미정", "due_date": "미정", "change_yn": "없음", "today_update": "(활동 없음)" },
+      { "jira_key": "PL-105", "client_name": "에이블리", "project_title": "중개 API 연동 (시럽 PL-9에서 분리)", "progress_pct": 10, "progress_label": "기획 착수", "start_date": "미정", "due_date": "미정", "change_yn": "없음", "today_update": "(활동 없음)" },
+      { "jira_key": "PL-92", "client_name": "네이버페이(NF)", "project_title": "쇼핑라이브 부스터 CPS", "progress_pct": 100, "progress_label": "개발완료", "start_date": "미정", "due_date": "2026.07.22 (NF 운영배포 목표)", "change_yn": "있음", "today_update": "NF(황현민)로부터 운영환경 테스트 가이드 수신 — 베타 인증GW 리다이렉트 제약으로 운영환경에서 테스트 진행 필요(테스트 기간 7/29~7/31), 이슈 여부 문의 옴. 7/22 NF 운영배포 목표 유지. ※ Jira 상태는 완료 카테고리이나 실제 오픈(운영배포) 미확인으로 트래킹 유지" },
+      { "jira_key": "PL-106", "client_name": "네이버페이(NF)", "project_title": "쇼핑라이브 쇼라부 - 리워드 랜덤 지급", "progress_pct": 0, "progress_label": "착수 전", "start_date": "미정", "due_date": "미정", "change_yn": "없음", "today_update": "(활동 없음, 상세 요건 여전히 확인 필요)" },
+      { "jira_key": "PL-34", "client_name": "네이버페이(NF)", "project_title": "쇼라부스터 브랜드 CPS (금일 최초 기재)", "progress_pct": 100, "progress_label": "확정(개발중)", "start_date": "미정", "due_date": "2026.08.07", "change_yn": "있음(신규)", "today_update": "신규 Jira 이슈 확인(상태: 개발) — NF 트랙 API 검토 및 개발 테스트 시작 단계, 목표 완료일 8/7" }
+    ],
+    "신규사업": [
+      { "jira_key": "PL-12", "client_name": "겸사겸사", "project_title": "구매적립 특정 상품 다이렉트 진입 (통계)", "progress_pct": 30, "progress_label": "초안", "start_date": "미정", "due_date": "미정", "change_yn": "없음", "today_update": "(활동 없음)" },
+      { "jira_key": "PL-44", "client_name": "애드팝콘", "project_title": "노출형 광고 - 미니미니박스 ver", "progress_pct": 0, "progress_label": "착수 전", "start_date": "미정", "due_date": "미정", "change_yn": "없음", "today_update": "(활동 없음)" },
+      { "jira_key": "PL-43", "client_name": "넵튠", "project_title": "동영상 광고 - 미니미니박스 ver", "progress_pct": 0, "progress_label": "착수 전", "start_date": "미정", "due_date": "미정", "change_yn": "없음", "today_update": "(활동 없음)" }
+    ]
+  },
+  "section2": {
+    "immediate": [],
+    "today": [
+      { "content": "키움증권(김현정) 네이버쇼핑혜택 보도자료 사전 확인 요청 수신 — 쿠팡 혜택 내용 포함 여부까지 검토 후 회신 필요" }
+    ],
+    "monitoring": [
+      { "content": "PL-8(PASS) 마감일 7/31 → 7/27로 앞당겨진 것 확인 — 일정 영향 확인 필요" },
+      { "content": "PL-65(한게임)·PL-10(카카오페이지) 마감일 신규 등록 확인(각 7/22, 7/29)" },
+      { "content": "PL-92(NF 부스터 CPS) 운영환경 테스트 가이드 수신, 7/29~7/31 테스트 진행 예정, 7/22 운영배포 목표 유지" },
+      { "content": "PL-34(NF 쇼라부스터 브랜드 CPS) 신규 확인 — 개발 테스트 착수, 목표완료 8/7" },
+      { "content": "나스미디어(PL-73) 계약 종료로 개발 착수 지연 지속 재확인" },
+      { "content": "경쟁 리워드앱(허니딜, com.sortSelect.honeyDealApp)의 쿠팡 적립한도(50만원) 미적용 정황 관련 논의(김지영) — 세부 확인 필요, 당사 PL-91 종료 처리 건과는 별개 사안으로 추정" },
+      { "content": "쿠팡 SA(검색광고) AFID 코드(AF1177509) 사용처 조사 진행 중(고현복·정진영과 협업, 118587·118586은 아님을 확인)" },
+      { "content": "빌레터(포니링크) 빌머니 서비스 오픈 8/5 확정, 신규가입·출석체크 프로모션용 포인트 지급 API 개발 필요 요청 수신(연동 문서 회신 완료)" },
+      { "content": "다날 — SKT 소액결제서버(ISAS) DB 스토리지 작업공지 수신(7/26), 영향도 모니터링 필요(기존 KT 작업(7/23)에 이은 추가 공지)" },
+      { "content": "쿠프마케팅 과거 계약서·사용분 히스토리 확인 요청(bliss, 회신 대기)" },
+      { "content": "겸사겸사 앱 내 상점(매장) 명칭·색상·위치 변경 관련 문의(rowan) — 온라인 논의 어려워 오프라인 논의 예정" },
+      { "content": "삼프로 앱 스크린 캡처링 버그 확인 필요(rowan에게 재확인 요청, 겸사겸사 앱 오픈 지연 건과 연계)" },
+      { "content": "다날 KT 본인확인서비스(KMAS) 작업(7/23) 영향도 확인 및 모니터링 필요(carry-over)" }
+    ]
+  },
+  "section3": {
+    "auto_insurance": [],
+    "ad_client": [
+      { "subject": "지마켓(INL 경유)", "summary": "경쟁 플랫폼 적립률 벤치마크 비교 논의(김지영)", "details": ["카카오페이지·페이북·폴센트 등 타 플랫폼 대비 적립률 수준 확인", "지마켓 CPS는 INL 경유로 진행 확인"] }
+    ],
+    "ad_media": [
+      { "subject": "한게임", "summary": "마감일 7/22 신규 등록 확인", "details": ["그룹DM(임진혁·강민지)에서 참고 링크 공유, jessica에게 전달"] },
+      { "subject": "카카오페이지", "summary": "마감일 7/29 신규 등록 확인, 그 외 활동 없음", "details": [] }
+    ],
+    "commerce_shopping": {
+      "clients": [],
+      "media": [
+        { "subject": "키움증권", "summary": "6~7월 실적 비교 자료 공유 및 보도자료 사전 확인 요청 수신", "details": ["키움X쿠팡 전월 대비 4.6억 감소 지속(-5%→-7%), 키움X네이버쇼핑 7/9 신규 오픈으로 일부 방어(일 평균 2,500만)", "KB PAY 노출 순위 하락에 따른 LGE 영향 언급, 전체적으로는 4.7% 하락", "네이버쇼핑혜택 보도자료 사전 확인 요청 수신(김현정) — 쿠팡 혜택 내용 포함 여부 검토 후 회신 필요", "개인신용정보 파기확인서 요청 회신 완료(1~3월분), 8월부터 매월 초 전월분 요청 예정 확인 필요"] },
+        { "subject": "PASS", "summary": "마감일 7/31 → 7/27로 조정 확인", "details": ["일정 영향 확인 필요"] },
+        { "subject": "네이버페이(NF)", "summary": "운영환경 테스트 가이드 수신 및 신규 브랜드 CPS 개발 착수 확인", "details": ["황현민으로부터 운영환경 테스트 가이드 수신(테스트 기간 7/29~7/31)", "신규 브랜드 CPS(PL-34) 개발 테스트 착수 확인", "쇼핑라이브 CPS 상품 소개서 추가 수신(서지수)"] },
+        { "subject": "나스미디어", "summary": "계약 종료로 개발 착수 지연 재확인", "details": [] }
+      ]
+    },
+    "commerce_reward": [],
+    "new_business": [
+      { "subject": "삼프로TV", "summary": "앱 스크린 캡처링 버그 확인 요청", "details": ["정진영·홍세림·임한애 그룹DM에서 논의, 세림에게 재확인 요청"] },
+      { "subject": "겸사겸사", "summary": "앱 내 상점(매장) 명칭·색상·위치 변경 문의", "details": ["홍세림과 논의, 온라인 논의 어려워 오프라인 논의 예정"] }
+    ],
+    "etc": [
+      { "subject": "쇼핑플러스 입점제안서", "summary": "7월 버전 공유(#with-기획파트)", "details": ["목업 업데이트, 리워드샵 소개 페이지 추가"] },
+      { "subject": "쿠프마케팅", "summary": "계약 히스토리 확인 요청(bliss)", "details": ["2020년경 계약 이력 관련 계약서·사용분 히스토리 보유 여부 문의"] },
+      { "subject": "빌레터(포니링크)", "summary": "빌머니 서비스 8/5 오픈 확정, 프로모션 API 연동 문서 회신", "details": ["신규가입·출석체크 프로모션용 포인트 지급 API 연동 문서 회신", "유저키 암호화 미적용 시 즉시 제공 가능, 암호화 적용 시 추가 개발 필요 안내"] },
+      { "subject": "다날", "summary": "SKT 소액결제서버(ISAS) 작업공지 수신(7/26 예정)", "details": [] },
+      { "subject": "쿠팡", "summary": "SA(검색광고) AFID 코드(AF1177509) 사용처 조사", "details": ["고현복·정진영과 협업, 118587·118586은 아님을 확인"] },
+      { "subject": "정기 미팅", "summary": "정기 마케팅 미팅 참석(10:30~11:30)", "details": [] }
+    ]
+  },
+  "section4": [
+    { "content": "키움증권 네이버쇼핑혜택 보도자료(쿠팡 혜택 포함 여부) 검토 회신 필요" },
+    { "content": "PL-8(PASS) 마감일 앞당겨짐(7/27) 관련 일정 영향 확인 필요" },
+    { "content": "쿠프마케팅 계약서·사용분 히스토리 보유 여부 확인 필요(bliss)" },
+    { "content": "겸사겸사 앱 상점 UI(명칭·색상·위치) 변경 관련 오프라인 논의 필요(rowan)" },
+    { "content": "삼프로 앱 스크린 캡처링 버그 확인 필요(rowan)" },
+    { "content": "나스미디어 계약 재개 여부 판단 필요(개발 지속 중단 상태)" },
+    { "content": "다날 SKT 작업(7/26)·KT 작업(7/23) 영향도 확인 및 모니터링 필요" }
+  ],
+  "section4_unregistered_projects": [
+    { "client_name": "키움증권·네이버쇼핑", "project_title": "수수료율 정책 변경 대응" },
+    { "client_name": "우리투자증권", "project_title": "MTS 오픈 및 매체비·정산 운영" },
+    { "client_name": "SBI저축은행", "project_title": "쇼핑플러스 매체 운영" },
+    { "client_name": "전체 매체 공통", "project_title": "이커머스 캠페인 적립한도 상향" },
+    { "client_name": "삼성전자", "project_title": "쇼핑플러스 CPS 연동 (에이스)" },
+    { "client_name": "롯데멤버스(LGE)", "project_title": "정산 데이터 문의 대응" },
+    { "client_name": "5F(BDSO, 버즈빌 경유)", "project_title": "쇼핑플러스 매체 제안서 공유" },
+    { "client_name": "4F(Nike, 버즈빌 경유)", "project_title": "커머스 정산 연동 HMAC 검증 도입" },
+    { "client_name": "마켓컬리", "project_title": "CPS 실적 미인정 품목 정책 업데이트" },
+    { "client_name": "KB PAY", "project_title": "포인트리 적립 스테이징 거래테스트" },
+    { "client_name": "빗썸", "project_title": "쇼핑플러스(쿠팡) 제휴" },
+    { "client_name": "어워드블록스", "project_title": "PC 오퍼월 신규 연동" },
+    { "client_name": "업사이드", "project_title": "신규 매체 펏키 생성" },
+    { "client_name": "Hi5Games(타이니셀)", "project_title": "게임 콘텐츠 연동 검토" },
+    { "client_name": "겸사겸사", "project_title": "앱 오픈 일정 조정" },
+    { "client_name": "겸사겸사", "project_title": "HODE 광고 연동 제안 (쿠팡 배너)" },
+    { "client_name": "겸사겸사", "project_title": "8월 출석체크 이벤트 경품구매 품의" },
+    { "client_name": "겸사겸사", "project_title": "앱 내 상점(매장) 명칭·색상·위치 변경 검토" },
+    { "client_name": "삼프로TV", "project_title": "앱 오픈 일정" },
+    { "client_name": "삼프로캐시", "project_title": "주식상품권 제휴 제안서 검토" },
+    { "client_name": "DB증권", "project_title": "신규 제휴 제안서 검토" },
+    { "client_name": "GS엠비즈", "project_title": "쿠폰 신규 제휴 검토" },
+    { "client_name": "티맵모빌리티", "project_title": "쇼핑플러스 제휴 제안" },
+    { "client_name": "다로", "project_title": "신규 업체 도입 검토" },
+    { "client_name": "코지마망(가칭)", "project_title": "오퍼월 제휴 제안" },
+    { "client_name": "빌레터(포니링크)", "project_title": "마이빌머니 페이지 커스텀 개발·유지보수" },
+    { "client_name": "국민은행(스타뱅킹)", "project_title": "HMAC 커스텀 포스트백 신규 연동" },
+    { "client_name": "다날", "project_title": "KT/SKT 작업 모니터링 (7/23, 7/26)" },
+    { "client_name": "쿠팡", "project_title": "SA(검색광고) AFID 코드(AF1177509) 사용처 조사" },
+    { "client_name": "허니딜(경쟁 리워드앱)", "project_title": "쿠팡 적립한도(50만원) 미적용 정황 확인" }
+  ],
+  "section4_jira_migration_candidates": [
+    { "client_name": "오버테이크", "title": "신규 파트너십 계약 검토", "background": "부속계약서 특약 협의(jessica/강유나) 완료 후 최종 계약서 날인만 남은 상태로 여러 날 지속 대기 중" },
+    { "client_name": "겸사겸사", "title": "앱 오픈 일정", "background": "오픈 지연 사유·담당자 확인이 수 일째 미확인 상태" },
+    { "client_name": "삼프로TV", "title": "앱 오픈 결과", "background": "오픈 여부 미확인 상태 지속, 금일 확인된 스크린 캡처링 버그 건과 연계하여 확인 필요" }
+  ],
+  "section5": [
+    { "content": "(없음)" }
+  ]
+}

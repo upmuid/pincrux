@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.1",
+  "node": "validator",
+  "run_date": "2020-11-30",
+  "source_files": {
+    "collector": "Archive_Pincrux/01_Collector/2020-11-30.json",
+    "writer": "Archive_Pincrux/02_Writer/2020-11-30.json"
+  },
+  "node_status": "success",
+  "review_summary": {
+    "total_reviewed": 3,
+    "passed_cnt": 3,
+    "failed_cnt": 0,
+    "slack_reread_cnt": 3
+  },
+  "validation_results": [
+    {
+      "task_id": "T001",
+      "target_name": "코나투스 > 반반택시 회원가입 CPA 캠페인",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/216039425",
+      "confluence_page_id": "216039425",
+      "slack_reread": true,
+      "slack_reread_trigger": "context_status: new — 신규 페이지이므로 슬랙 원본 확인",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "컨플루언스 페이지의 3단계 예산 증액 히스토리(600만원→500만원 추가→1천만원)가 모으미 summary/decision과 일치. 슬랙 원본 스레드(2020-11-25 18:54, 정빈희, G0113KM3KK2/p1606298048018700) 3번 항목 '코나투스 : 반반택시 CPA 예산 증액 / 예산 1천만원 / ~11월 30일까지'와도 정확히 일치하며 왜곡 없음. 액션 아이템(entity_manifest 등록 대기, 12월 모니터링) 2건 모두 페이지 체크박스로 정확히 매핑됨. 사명 표기는 '핀크럭스'로 정상 기재, 오탈자 없음."
+    },
+    {
+      "task_id": "T002",
+      "target_name": "DGB유페이 > 원패스 CPA 캠페인",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/216072193",
+      "confluence_page_id": "216072193",
+      "slack_reread": true,
+      "slack_reread_trigger": "context_status: new — 신규 페이지이므로 슬랙 원본 확인",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "슬랙 원본 스레드(동일 permalink, 2번 항목) 'DGB유페이 : 원패스 CPA 수량 달성 종료 / 일 30만원 매출 하락 예정 / 충전소 연동은 21년도 계획 논의중'과 대조 결과, 원패스 CPA 종료(완료형 사실)와 충전소(티켓모아) 연동(예정형·논의 단계, 미확정)의 구분이 모으미 decision과 컨플루언스 페이지 모두에서 정확히 유지됨 — '확정'으로 오기재되지 않고 '논의 단계'로 명시. 완료형/예정형 혼동 없음. 액션 아이템 2건 매핑 정상. 사명 표기 '핀크럭스' 정상, 오탈자 없음."
+    },
+    {
+      "task_id": "T003",
+      "target_name": "세틀뱅크 > 계좌등록 CPA 캠페인",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/216104961",
+      "confluence_page_id": "216104961",
+      "slack_reread": true,
+      "slack_reread_trigger": "context_status: new — 신규 페이지이므로 슬랙 원본 확인",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "슬랙 원본 스레드(동일 permalink, 6번 항목) '세틀뱅크 : 계좌등록 CPA 계약서 검토 중(선입 500만원 진행 후, 내년 1월부터 1천만원 집행 예정)'과 대조 결과, 계약서 상태가 '체결 완료'가 아닌 '검토 중(단계)'으로, 2021년 1월 예산 확대는 '계획/예정' 단계로 정확히 구분되어 모으미·컨플루언스 양쪽 모두에 반영됨. 완료형/예정형 혼동 없음. 액션 아이템 2건(등록 대기, 체결·집행 여부 후속 확인) 매핑 정상. 회사명 언급 없어 사명 표기 이슈 해당 없음."
+    }
+  ]
+}

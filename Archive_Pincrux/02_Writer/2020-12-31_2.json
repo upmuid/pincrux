@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.1",
+  "node": "writer",
+  "run_date": "2020-12-31",
+  "source_file": "Archive_Pincrux/01_Collector/2020-12-31.json",
+  "node_status": "success",
+  "processed_tasks": [
+    {
+      "task_id": "T007",
+      "entity_name": "SBI저축은행",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "SBI저축은행",
+      "context_status": "new",
+      "action_taken": "created_new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/215973896",
+      "confluence_page_id": "215973896",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/210665474",
+      "confluence_parent_page_id": "210665474",
+      "updated_sections": [
+        "## 엔티티 개요",
+        "## 사이다뱅크 예산 확대 (2020)",
+        "## FAQ 및 트러블슈팅",
+        "## 주요 담당자"
+      ]
+    }
+  ],
+  "skipped_tasks": []
+}

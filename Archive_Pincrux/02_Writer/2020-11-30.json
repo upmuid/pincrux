@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.1",
+  "node": "writer",
+  "run_date": "2020-11-30",
+  "source_file": "Archive_Pincrux/01_Collector/2020-11-30.json",
+  "node_status": "success",
+  "processed_tasks": [
+    {
+      "task_id": "T001",
+      "entity_name": "코나투스",
+      "project_name": "반반택시 회원가입 CPA 캠페인",
+      "page_scope": "child",
+      "target_name": "코나투스 > 반반택시 회원가입 CPA 캠페인",
+      "context_status": "new",
+      "action_taken": "created_new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/216039425",
+      "confluence_page_id": "216039425",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/folder/210665474",
+      "confluence_parent_page_id": "210665474",
+      "updated_sections": ["## 엔티티 개요", "## 반반택시 회원가입 CPA 캠페인 (2020)", "## FAQ 및 트러블슈팅", "## 주요 담당자"]
+    },
+    {
+      "task_id": "T002",
+      "entity_name": "DGB유페이",
+      "project_name": "원패스 CPA 캠페인",
+      "page_scope": "child",
+      "target_name": "DGB유페이 > 원패스 CPA 캠페인",
+      "context_status": "new",
+      "action_taken": "created_new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/216072193",
+      "confluence_page_id": "216072193",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/folder/210665474",
+      "confluence_parent_page_id": "210665474",
+      "updated_sections": ["## 엔티티 개요", "## 원패스 CPA 캠페인 (2020)", "## FAQ 및 트러블슈팅", "## 주요 담당자"]
+    },
+    {
+      "task_id": "T003",
+      "entity_name": "세틀뱅크",
+      "project_name": "계좌등록 CPA 캠페인",
+      "page_scope": "child",
+      "target_name": "세틀뱅크 > 계좌등록 CPA 캠페인",
+      "context_status": "new",
+      "action_taken": "created_new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/216104961",
+      "confluence_page_id": "216104961",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/folder/210665474",
+      "confluence_parent_page_id": "210665474",
+      "updated_sections": ["## 엔티티 개요", "## 계좌등록 CPA 캠페인 (2020)", "## FAQ 및 트러블슈팅", "## 주요 담당자"]
+    }
+  ],
+  "skipped_tasks": [],
+  "manifest_registration_pending": [
+    { "entity_name": "코나투스", "major_category_proposed": "Client", "confluence_page_id": "216039425" },
+    { "entity_name": "DGB유페이", "major_category_proposed": "Client (충전소 연동 확정 시 Media_Partner 이중역할 재검토 필요)", "confluence_page_id": "216072193" },
+    { "entity_name": "세틀뱅크", "major_category_proposed": "Client", "confluence_page_id": "216104961" }
+  ]
+}

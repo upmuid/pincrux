@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.1",
+  "node": "refiner",
+  "run_date": "2020-12-31",
+  "source_file": "Archive_Pincrux/03_Validator/2020-12-31_2.json",
+  "node_status": "success",
+  "published_tasks": [
+    {
+      "task_id": "T007",
+      "target_name": "SBI저축은행",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/215973896",
+      "confluence_page_id": "215973896",
+      "refined_points": [
+        "'사이다뱅크 예산 확대 (2020)' 섹션의 '운영 히스토리' 및 '의사결정 사항' 항목에서 미강조 상태였던 핵심 예산 수치 '1.8억 원'을 볼드체(**1.8억 원**)로 강조 처리",
+        "액션 아이템('매체 확장 이후 실적 및 예산 추이 지속 모니터링 필요')이 이미 체크리스트 형식(- [ ])으로 되어 있음을 확인, 형식 이상 없어 유지",
+        "'엔티티 개요' 섹션과 신규 추가 섹션('사이다뱅크 예산 확대 (2020)') 사이, 그리고 해당 섹션과 'FAQ 및 트러블슈팅' 섹션 사이의 구분선(---)이 정상 배치되어 있음을 확인, 누락 없어 유지",
+        "슬랙 잔재(이모지, 구어체 추임새) 및 불명확한 지시대명사 검색 결과 없음 — 문체는 이미 확정형 비즈니스 문어체로 작성되어 있어 별도 교정 불요",
+        "회사명 표기('핀크럭스') 정오 확인 — 오탈자 없음"
+      ],
+      "published_at": "2026-07-22T18:13:46+09:00"
+    }
+  ]
+}
