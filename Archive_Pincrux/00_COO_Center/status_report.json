@@ -1,39 +1,40 @@
 {
   "pipeline_execution": {
-    "date": "2026-07-23",
+    "date": "2026-07-24",
     "run_mode": "backfill",
-    "period": "2021-02-01 to 2021-03-31",
+    "period": "2021-04-01 to 2021-04-30",
     "total_status": "success",
     "metrics": {
-      "collected_threads": 5,
+      "collected_threads": 8,
       "updated_matched_contexts": 5,
-      "created_new_contexts": 0,
+      "created_new_contexts": 2,
       "uncategorized_inquiries": 0,
-      "reviewer_run": false,
-      "refiner_run": false,
-      "refiner_published_tasks": 5
+      "skipped_unknown": 1,
+      "reviewer_run": true,
+      "refiner_run": true,
+      "refiner_published_tasks": 7
     },
-    "conditional_execution_rationale": "2021-02(4건)·2021-03(1건) 배치 전 항목 context_status: matched, action_taken: merged_into_existing이며 모으미↔쓰미 간 재분류 없음. v0_coo.md 4-C절에 따라 두 배치 모두 읽어봄이·다시쓰미 생략, 쓰미 완료 시점에 published 인정."
+    "conditional_execution_rationale": "2021-04 배치는 context_status: new 2건(그라운드X, 틱톡)이 있어 읽어봄이 가동 필수(v0_coo.md 4-C절), 동일 2건이 action_taken: created_new이므로 다시쓰미도 가동 필수. 읽어봄이 검증 결과 7건 전원 PASSED(FAILED 0건)로 다시쓰미 진행 차단 사유 없었음."
   },
   "published_pages": [
-    {"task_id": "2021-02 T001", "entity_name": "웰컴저축은행", "confluence_page_id": "192151790", "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151790", "note": "네이버페이 CPM 캠페인(2021-02, 첫거래우대) 섹션 추가. 광고비 1,000만원, 혜택 상단배너 100만/메인 60만/구매확정 50만."},
-    {"task_id": "2021-02 T002", "entity_name": "하나금융투자", "confluence_page_id": "205062145", "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/205062145", "note": "네이버페이 프리미엄패키지 캠페인(2021-02) 2회차 섹션 추가. 1,000만원 패키지 2회 집행, 클릭시 30원."},
-    {"task_id": "2021-02 T003", "entity_name": "PINCRUX 조직·인사 정책", "confluence_page_id": "209321985", "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/209321985", "note": "2021년 연봉계약 체결 방식 변경(개별미팅 폐지, 대표 결정·통보 + 모두싸인 온라인서명) 섹션 추가."},
-    {"task_id": "2021-02 T004", "entity_name": "PINCRUX 사업·정책 결정 히스토리", "confluence_page_id": "211550226", "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/211550226", "note": "계약·정산 프로세스 정비(허성원 중심 재편, 계약체결 4단계 절차) 섹션 추가."},
-    {"task_id": "2021-03 T001", "entity_name": "리메세", "confluence_page_id": "217088010", "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/217088010", "note": "리메세-차올 첫결제 CPA 캠페인 실집행(3/11~3/12, 단가 1만원) 섹션 추가. 아울러 2021-01 배치 T002의 이전 CONTEXT_DISTORTION 정정이 실제로는 DATA_LOSS 오류였음을 발견해 원문 기준으로 복원(아래 참고 항목 참조)."}
+    {"task_id": "T001", "entity_name": "그라운드X", "confluence_page_id": "218365953", "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/218365953", "note": "신규 엔티티 페이지 생성. 카카오 '클립' 서비스, DB손해보험 CPA·핀크럭스 충전소 단독 제휴 협의(2021-04-26 어드민/펍키 발급 완료). human_action_required."},
+    {"task_id": "T002", "entity_name": "틱톡", "confluence_page_id": "218398721", "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/218398721", "note": "신규 엔티티 페이지 생성. 대표 미팅(2021-04-29)으로 핀크럭스 충전소 SDK 단독 탑재 협의 완료, 세부조건 미기재. human_action_required."},
+    {"task_id": "T004", "entity_name": "리메세", "confluence_page_id": "217088010", "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/217088010", "note": "차올 CPA 캠페인 섹션에 2021-04 후속 정보(단가 재확인, 결제오류·중단 우려, 최저가 캡 미적용) 추가."},
+    {"task_id": "T005", "entity_name": "PINCRUX 조직·인사 정책", "confluence_page_id": "209321985", "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/209321985", "note": "임직원 복지포인트(리워드샵) 지급 정책 신설 섹션 추가."},
+    {"task_id": "T006", "entity_name": "CLUV", "confluence_page_id": "211320841", "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/211320841", "note": "인플루언서(셀럽) 입점 계약서 초안 완성 및 정산 구조 논의 섹션 추가."},
+    {"task_id": "T007", "entity_name": "PINCRUX 사업·정책 결정 히스토리", "confluence_page_id": "211550226", "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/211550226", "note": "앱스플라이어 발표 고성장 애드테크 기업 랭킹(글로벌 4위/국내 2위) 섹션 추가. routing_pincrux_cluv.md에 따라 PINCRUX 허브(191987714)가 아닌 본 페이지로 라우팅."},
+    {"task_id": "T008", "entity_name": "DB금융투자", "confluence_page_id": "192151759", "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151759", "note": "광고주 예산 이슈로 삼성페이·카카오페이 외 전 매체 off 처리(2021-04-30) 섹션 추가."}
   ],
   "error_logs": [],
   "self_correction_notice": {
-    "title": "2021-01 배치 T002(리메세) 검증 판정 정정 — DATA_LOSS 발견 및 복원",
-    "detail": "2021-01 배치 당시 읽어봄이가 '이벤트 건당 1만원 광고비 지급', '취소 시 리워드 환불' 문구를 원문에 없는 CONTEXT_DISTORTION으로 오판하여 삭제했음. 2021-03 배치에서 동일 슬랙 링크(https://pincrux.slack.com/archives/G0113KM3KK2/p1611635568009600)를 재확인한 결과 해당 문구가 원문에 실제로 존재했음을 확인 — 삭제 조치 자체가 정상 데이터를 지운 DATA_LOSS였음. 총총이 즉시 원문 기준으로 컨플루언스 페이지(217088010)와 01_Collector/2026-07-23.json, 03_Validator/2026-07-23.json을 정정·투명 기록함. 리메세 CPA 단가(1만원)는 2021-03월 실제 캠페인에서도 동일하게 재확인되어 정합성 확보.",
-    "affected_records": ["Archive_Pincrux/01_Collector/2026-07-23.json (T002)", "Archive_Pincrux/03_Validator/2026-07-23.json (T002)", "Confluence 217088010"]
+    "title": "T008(DB금융투자) 다시쓰미 1차 업데이트 시 기존 섹션 일시 유실 — 즉시 감지·복원",
+    "detail": "다시쓰미가 DB금융투자(192151759) 페이지를 정제·업데이트하는 과정에서 HTML 태그 누락으로 '소재 심의 및 정산(2019-06)', 'CJONE OCB 캠페인(2019-05)' 두 기존 섹션의 내용이 일시적으로 유실되는 사고가 발생했다. 다시쓰미가 업데이트 직후 자체 재조회로 즉시 발견하여 원본 내용을 전량 복원했고, 총총이 별도로 getConfluencePage를 통해 페이지 전체를 재조회하여 모든 기존 섹션(2019-03~2019-12 전체)이 정상 복구된 것을 독립적으로 검증했다. 최종적으로 데이터 손실 없이 정상 발행 완료된 상태다.",
+    "affected_records": ["Confluence 192151759 (일시적 사고, 즉시 복원 완료)"]
   },
   "human_action_required": [
-    "리메세(217088010) 엔티티 분류 확정 필요 — 니베아·차올 부속계약 대행 에이전시로 유지할지, 니베아/차올을 별도 엔티티로 분리할지 (2021-03 CPA 캠페인 실집행으로 실질 운영은 확인되었으나 구조 확정은 여전히 미결)",
-    "리메세 CPA 단가(1만원) 중 카페24 결제수수료 배분 여부 확정 필요 (2021-03-11 정빈희 질문, 회신 미확인)",
-    "세틀뱅크 계좌등록 CPA 계약 체결 완료 여부 — 2021-03 배치에서도 '연동 문의'만 확인되어 계속 보류 중",
-    "DGB유페이 충전소(티켓모아) 연동 — 2021-03 배치에서도 관련 슬랙 언급 없어 계속 모니터링",
-    "PINCRUX(191987714) 허브 페이지 타이틀 유지/변경 여부 — v0_coo.md 4-D절 대기열 4번, 계속 보류 중",
-    "2021-04 배치는 다음 정기 실행부터 별도 재확인 없이 자동 진행 예정"
+    "사명 미상 신규 회사(전 넷마블·피망 TF팀, 04-30 오픈 예정) — 채수범에게 실제 회사명 확인 후 재처리 필요 (미반영 상태로 보류 중, 유일한 미해결 항목)",
+    "2026-07-24 Jason 확인으로 해결 완료: 그라운드X/틱톡 Media_Partner 확정, 리메세 단일 엔티티 유지, PINCRUX 허브 타이틀 유지, 복지포인트 지급주기(1·4·7·10월) 인정",
+    "계속 보류 중(별도 사안): 세틀뱅크 CPA 계약 체결 여부(Jason 지시로 추가 배치 진행하며 재확인), DGB유페이-티켓모아 연동 시 이중역할 재검토(현재 관련 슬랙 언급 없음, 모니터링 계속)",
+    "2021-05 배치는 다음 정기 실행부터 별도 재확인 없이 자동 진행 예정"
   ]
 }

@@ -1,6 +1,6 @@
 {
-  "version": "1.13",
-  "last_updated": "2026-07-23",
+  "version": "1.15",
+  "last_updated": "2026-07-24",
   "purpose": "모으미/쓰미가 이미 확립된 엔티티를 매번 CQL 검색·카테고리 재판단 없이 즉시 참조하기 위한 고정 매니페스트(조회 전용, 가벼움 유지). 여기 없는 엔티티만 LLM 판단(신규 생성 여부, major 분류)을 수행한다. 신규 엔티티가 확정될 때마다 총총(COO)이 이 파일에 추가한다.",
   "history_ref": "2026-07-20부로 엔티티별 정정 사유·배경 서술은 이 파일에서 entity_history.md로 이관했다. 이 파일은 모으미/쓰미가 매 실행 로드하는 조회 전용 테이블이므로 entity_name/major_category/confluence_page_id/aliases/status만 유지한다. 특정 엔티티의 분류 배경이나 오분류 정정 이력이 궁금하면 entity_history.md에서 entity_name으로 찾을 것(총총 감사·검토 시에만 필요, 모으미/쓰미는 평시 참조 불필요).",
   "parent_category_pages": {
@@ -81,7 +81,9 @@
     { "entity_name": "DGB유페이", "major_category": "Client", "confluence_page_id": "216072193", "reason": "2026-07-22 Jason 확인으로 Client 최종 확정. 충전소(티켓모아) 연동은 2021년 계획 논의 단계로 아직 미확정 — 향후 실제 연동 시점에 Media_Partner 이중역할 여부 재검토" },
     { "entity_name": "세틀뱅크", "major_category": "Client", "confluence_page_id": "216104961" },
     { "entity_name": "SBI저축은행", "major_category": "Client", "confluence_page_id": "215973896", "aliases": ["사이다뱅크"], "reason": "2026-07-22 Jason 확인: 사이다뱅크는 SBI저축은행이 운영하는 모바일 뱅킹 브랜드이며 웰컴저축은행과 무관한 독립 광고주로 최종 확정" },
-    { "entity_name": "리메세", "major_category": "Client", "confluence_page_id": "217088010", "aliases": ["차울"], "status": "human_action_required", "reason": "2026-07-23 백필(2021-01) 신규 발견. 한덕천 대표가 대표하는 에이전시로 추정되며, 니베아·차올(슬랙 표기 혼용: '차울') 브랜드 캠페인을 부속계약서 형태로 대행, 단가 1만원(2021-03 배치에서 재확인). 리메세를 단일 엔티티로 유지할지, 니베아/차올을 별도 엔티티로 분리할지 Jason 확인 필요." }
+    { "entity_name": "리메세", "major_category": "Client", "confluence_page_id": "217088010", "aliases": ["차울"], "reason": "2026-07-23 백필(2021-01) 신규 발견, 니베아·차올(슬랙 표기 혼용: '차울') 브랜드 캠페인을 부속계약서 형태로 대행하는 에이전시. 2026-07-24 Jason 확인: 리메세 단일 엔티티로 유지, 니베아/차올은 별도 분리하지 않고 리메세 하위 프로젝트(캠페인)로 계속 관리. human_action_required 해제." },
+    { "entity_name": "그라운드X", "major_category": "Media_Partner", "confluence_page_id": "218365953", "reason": "2026-07-24 백필(2021-04) 신규 발견. 카카오톡 '클립' 서비스 운영사. DB손해보험 CPA 및 핀크럭스 충전소(티켓모아) 단독 제휴 협의(04-26 어드민/펍키 발급 완료). 2026-07-24 Jason 확인으로 Media_Partner 최종 확정." },
+    { "entity_name": "틱톡", "major_category": "Media_Partner", "confluence_page_id": "218398721", "reason": "2026-07-24 백필(2021-04) 신규 발견. 대표 미팅(04-29)으로 핀크럭스 충전소(SDK) 단독 탑재 협의 완료. 세부 계약조건·개발일정은 슬랙 원문 미기재로 후속 배치에서 계속 확인. 2026-07-24 Jason 확인으로 Media_Partner 최종 확정." }
   ],
   "usage_instructions": {
     "collector": "슬랙 원문에서 언급된 대상이 위 entities 목록의 entity_name 또는 aliases와 일치하면, major_category를 재판단하지 말고 이 표의 값을 그대로 사용한다. context_status만 원문 맥락으로 판단(matched가 기본값이며, 완전히 새로운 하위 프로젝트/캠페인이면 new). 목록에 없는 이름만 처음부터 판단(major_category, 신규 여부)한다.",
