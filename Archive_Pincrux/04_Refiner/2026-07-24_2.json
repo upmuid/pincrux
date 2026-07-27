@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.1",
+  "node": "refiner",
+  "run_date": "2026-07-24",
+  "source_file": "Archive_Pincrux/03_Validator/2026-07-24_2.json",
+  "node_status": "success",
+  "published_tasks": [
+    {
+      "task_id": "T001",
+      "target_name": "헬릭스미스 > 카페24 첫 결제 캠페인",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/219152393",
+      "confluence_page_id": "219152393",
+      "refined_points": [
+        "이미 확정형 비즈니스 문어체·체크리스트·구분선이 적용되어 있음을 확인",
+        "05-03 운영 히스토리 첫 불릿의 장문 문장을 2문장으로 분리하여 가독성 개선",
+        "사명 표기('핀크럭스') 정상 확인, 추가 정정 불필요"
+      ],
+      "published_at": "2026-07-24T18:36:57+09:00"
+    },
+    {
+      "task_id": "T002",
+      "target_name": "BC카드",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/218398750",
+      "confluence_page_id": "218398750",
+      "refined_points": [
+        "05-14 운영 히스토리 불릿 중 장문 문장을 2문장으로 분리하여 가독성 개선",
+        "의사결정 사항 볼드 처리 및 구분선 정상 확인",
+        "사명 표기 정상 확인, 추가 정정 불필요"
+      ],
+      "published_at": "2026-07-24T18:37:17+09:00"
+    },
+    {
+      "task_id": "T003",
+      "target_name": "페이코인",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/219119618",
+      "confluence_page_id": "219119618",
+      "refined_points": [
+        "①②③ 구조의 05-26 불릿 내 ③ 항목 장문 문장을 2문장으로 분리하여 가독성 개선",
+        "엔티티 개요 표 내 '엔티명' 오탈자를 '엔티티명'으로 정정(다시쓰미 자체 편집 과정에서 발생한 오탈자를 재수정 완료, 원본 콘텐츠 오류 아님)",
+        "액션 아이템 체크리스트 및 구분선 정상 확인, 사명 표기 정상"
+      ],
+      "published_at": "2026-07-24T18:38:06+09:00"
+    },
+    {
+      "task_id": "T004",
+      "target_name": "시럽월렛",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/218988561",
+      "confluence_page_id": "218988561",
+      "refined_points": [
+        "읽어봄이 지적 사항 반영: 2021-05-04 불릿의 출처 링크(p1620778466286100)가 실제로는 05-12 재공지 메시지였음이 확인되어, 해당 링크를 05-12 불릿으로 이동하고 05-04 불릿은 '(출처: Slack, 정확한 개별 링크 미상)'으로 표기 정정",
+        "날짜별 사실관계(5/17·5/18~24·5/25)는 변경 없이 그대로 유지",
+        "SK플래닛 이중역할 관련 human_action_required 문구 및 인용구(blockquote) 서식 정상 확인"
+      ],
+      "published_at": "2026-07-24T18:36:01+09:00"
+    },
+    {
+      "task_id": "T005",
+      "target_name": "세틀뱅크 > 010제로페이 회원가입 CPA",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/216104961",
+      "confluence_page_id": "216104961",
+      "refined_points": [
+        "신규 섹션(010제로페이 회원가입 CPA)의 05-06 불릿 내 조건 나열 문장을 '상세 조건은 다음과 같음' 구조로 정리하여 가독성 개선",
+        "기존 '계좌등록 CPA 캠페인 (2020)' 섹션은 원문 그대로 보존(수정 없음)",
+        "단가·예산·수량·기간 등 수치는 원문 그대로 유지"
+      ],
+      "published_at": "2026-07-24T18:38:45+09:00"
+    },
+    {
+      "task_id": "T006",
+      "target_name": "그라운드X > DB손해보험 KLAY Promotion(Klip 지갑 연동)",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/218365953",
+      "confluence_page_id": "218365953",
+      "refined_points": [
+        "신규 섹션(KLAY Promotion) 05-12 불릿의 장문 문장을 3문장으로 분리하여 가독성 개선",
+        "기존 '그라운드X 매체 제휴 개시 (2021-04)' 섹션 및 상단 확정(Jason) 인용구는 원문 그대로 보존(수정 없음)",
+        "의사결정 사항 볼드 처리 및 구분선 정상 확인"
+      ],
+      "published_at": "2026-07-24T18:41:18+09:00"
+    },
+    {
+      "task_id": "T007",
+      "target_name": "CPS 기획전 플랫폼",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/206012417",
+      "confluence_page_id": "206012417",
+      "refined_points": [
+        "신규 섹션(이상거래(중복구매) 차단 정책 확정)의 05-13 장문 불릿을 정책 상세 내용과 후속 논의 의견 2개 불릿으로 분리",
+        "'매출 규모를 감안한 차단 방식 결정이 추가로 필요'라는 미해결 논점을 볼드 처리하여 강조",
+        "기존 CJ제일제당/신규매체확장/우리원/컬처랜드/OCB 등 과거 섹션은 원문 그대로 보존(수정 없음)"
+      ],
+      "published_at": "2026-07-24T18:40:44+09:00"
+    },
+    {
+      "task_id": "T008",
+      "target_name": "DB손해보험 > 네이버페이/티머니·페이코인 CPA",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955049",
+      "confluence_page_id": "191955049",
+      "refined_points": [
+        "신규 섹션(5월 CPA 실적 보고)의 05-31 불릿에서 3개 매체(네이버페이/티머니·페이코인/OK캐시백) 수치를 문장 단위로 분리하여 다른 날짜 불릿과 형식 통일 및 가독성 개선",
+        "05-07·05-20 수치 및 의사결정 문구는 변경 없이 유지",
+        "기존 다수의 과거 섹션(2019~2021-01 등)은 원문 그대로 보존(수정 없음)"
+      ],
+      "published_at": "2026-07-24T18:43:20+09:00"
+    }
+  ]
+}

@@ -74,6 +74,7 @@ owner: 총총(COO)
 | 2026-07-16 | 폴더링 체계 개편 및 사명 표기 규칙 반영. minor_category(Project/Product) 개념 전면 폐기. |
 | 2026-07-20 | 엔티티 리스트업 표(구 2절)·정정 이력 로그(구 3절)를 entity_manifest.json/entity_history.md로 이관하고 제거(중복 제거). 이후 entity_manifest.json 자체도 조회용/이력용으로 재분리. |
 | 2026-07-22 | Media_Partner ↔ Partner(제휴사) 분리 기준 신설(4절). Jason이 Confluence에 Partner 네이티브 폴더(215416833) 직접 생성. |
+| 2026-07-24 | 4절의 KT 이중역할 예시가 오류였음을 정정(KT 엠모바일은 KT와 별개 법인, 이중역할 사례 아님). 4-1절 "브랜드명 유사·별개 법인 주의" 신설(KT/KT엠모바일, 카카오페이/카카오페이지 사례). |
 
 ## entity_manifest.json
 | 일자 | 변경 |
@@ -82,3 +83,4 @@ owner: 총총(COO)
 | 2026-07-16 | 폴더 구조 3차 갱신(Client/Media_Partner/IH_Policy/IH_Product 실제 ID 반영), minor_category 필드 전량 제거. |
 | 2026-07-20 | registry 정정 이력을 이 파일의 note 필드로 흡수 → 다시 `entity_history.md`로 분리(조회 전용 파일을 가볍게 유지하기 위함). `known_sections` 필드(사실상 미사용) 제거. |
 | 2026-07-22 | parent_category_pages/folder_naming_convention에 Partner_root(215416833) 추가. 쿠프마케팅을 Media_Partner→Partner로 재분류. 피플카를 Client→Media_Partner로 재분류(확정). SPC를 섹타나인으로 개명·통합(SPC는 alias), Media_Partner 확정. 오사라마켓/롯데멤버스 human_action_required 해제(Media_Partner 확정). 카카오페이지를 카카오페이와 별개 엔티티로 참고 등록(페이지 미생성). |
+| 2026-07-24 | KT(196575233)/KT 엠모바일(192151605) 엔티티에 "별개 법인" 명시 reason 추가(Jason 확인). Confluence 페이지에서도 KT CLIP 관련 콘텐츠를 KT 엠모바일→KT로 이관 완료. |
