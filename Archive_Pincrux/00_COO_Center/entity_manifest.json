@@ -1,6 +1,6 @@
 {
-  "version": "1.18",
-  "last_updated": "2026-07-24",
+  "version": "1.19",
+  "last_updated": "2026-07-27",
   "purpose": "모으미/쓰미가 이미 확립된 엔티티를 매번 CQL 검색·카테고리 재판단 없이 즉시 참조하기 위한 고정 매니페스트(조회 전용, 가벼움 유지). 여기 없는 엔티티만 LLM 판단(신규 생성 여부, major 분류)을 수행한다. 신규 엔티티가 확정될 때마다 총총(COO)이 이 파일에 추가한다.",
   "history_ref": "2026-07-20부로 엔티티별 정정 사유·배경 서술은 이 파일에서 entity_history.md로 이관했다. 이 파일은 모으미/쓰미가 매 실행 로드하는 조회 전용 테이블이므로 entity_name/major_category/confluence_page_id/aliases/status만 유지한다. 특정 엔티티의 분류 배경이나 오분류 정정 이력이 궁금하면 entity_history.md에서 entity_name으로 찾을 것(총총 감사·검토 시에만 필요, 모으미/쓰미는 평시 참조 불필요).",
   "parent_category_pages": {
@@ -53,7 +53,7 @@
     { "entity_name": "저스텀", "major_category": "Media_Partner", "confluence_page_id": "192086020" },
     { "entity_name": "인터파크 투어", "major_category": "Media_Partner", "confluence_page_id": "191955029" },
     { "entity_name": "KT 엠모바일", "major_category": "Media_Partner", "confluence_page_id": "192151605", "reason": "2026-07-24 Jason 확인: 알뜰폰(MVNO) 서비스를 제공하는 별도 법인이며 'KT'(196575233)와는 브랜드명 연관만 있을 뿐 다른 회사임. KT CLIP 앱 관련 콘텐츠가 이 페이지에 잘못 병합돼 있던 것을 KT 페이지로 이관 완료." },
-    { "entity_name": "이노클릭", "major_category": "Media_Partner", "confluence_page_id": "192086040" },
+    { "entity_name": "이노클릭", "major_category": "Partner", "confluence_page_id": "192086040", "reason": "2026-07-27 Jason 지시로 Media_Partner에서 Partner(폴더 215416833)로 재분류·페이지 이관 완료. 향후 모으미/쓰미는 이 엔티티를 Partner 기준으로 처리할 것." },
     { "entity_name": "코인제스트", "major_category": "Media_Partner", "confluence_page_id": "190185474" },
     { "entity_name": "NH멤버스", "major_category": "Media_Partner", "confluence_page_id": "199491593" },
     { "entity_name": "SSG(신세계)", "major_category": "Media_Partner", "confluence_page_id": "204636161", "aliases": ["신세계", "SSG"] },
@@ -71,7 +71,7 @@
     { "entity_name": "OCB", "major_category": "Media_Partner", "confluence_page_id": "196509697" },
     { "entity_name": "톡소다", "major_category": "Media_Partner", "confluence_page_id": "192151842" },
     { "entity_name": "네오위즈", "major_category": "Media_Partner", "confluence_page_id": "209518599", "aliases": ["애디스콥", "Adiscope", "피망"] },
-    { "entity_name": "섹타나인", "major_category": "Media_Partner", "confluence_page_id": "204603424", "aliases": ["SPC"] },
+    { "entity_name": "섹타나인", "major_category": "Media_Partner", "confluence_page_id": "204603424", "aliases": ["SPC", "해피포인트"], "reason": "2026-07-27 Jason 확인: '해피포인트'는 섹타나인(SPC)과 동일 엔티티(브랜드명). 기존 Media_Partner '해피머니'(196870145)와는 무관한 별개 엔티티이므로 혼동 금지." },
     { "entity_name": "피플카", "major_category": "Media_Partner", "confluence_page_id": "212631553" },
     { "entity_name": "쿠프마케팅", "major_category": "Partner", "confluence_page_id": "213286923", "aliases": ["쿠포마케팅"] },
     { "entity_name": "오사라마켓", "major_category": "Media_Partner", "confluence_page_id": "215089153" },
@@ -99,7 +99,12 @@
     { "entity_name": "델리오", "major_category": "Client", "confluence_page_id": "219840520", "reason": "2026-07-24 백필(2021-06) 신규 발견. 회원가입 CPA 캠페인 신규 라이브." },
     { "entity_name": "현대그린푸드", "major_category": "Client", "confluence_page_id": "219774986", "reason": "2026-07-24 백필(2021-06) 신규 발견. 그리팅 인스타그램 회원가입 캠페인 신규 라이브." },
     { "entity_name": "LG프로모타", "major_category": "Client", "confluence_page_id": "219938817", "reason": "2026-07-24 백필(2021-06) 신규 발견. 대행사 PTBWA, 회원가입 캠페인 예산 단계적 증액." },
-    { "entity_name": "애드미글로벌", "major_category": "Client", "confluence_page_id": "218726402", "reason": "2026-07-24 백필(2021-06) 신규 발견. '숨은보험금찾아줌' 신규 캠페인 라이브." }
+    { "entity_name": "애드미글로벌", "major_category": "Client", "confluence_page_id": "218726402", "reason": "2026-07-24 백필(2021-06) 신규 발견. '숨은보험금찾아줌' 신규 캠페인 라이브." },
+    { "entity_name": "삼성자산운용", "major_category": "Client", "confluence_page_id": "220659713", "reason": "2026-07-27 백필(2021-07) 신규 발견. 펀드슈퍼마켓 앱가입 캠페인이 캐시슬라이드/네이버시리즈/카카오페이지 등 다매체에서 운영 중임을 확인. 역할 모호성 없어 Client로 바로 등록." },
+    { "entity_name": "펫프렌즈", "major_category": "Client", "confluence_page_id": "220692481", "reason": "2026-07-27 백필(2021-07) 신규 발견. 첫구매 캠페인 광고주 요청 종료 건. 2026-07-27 Jason 확인으로 광고주(Client) 신규 엔티티로 최종 확정, human_action_required 해제(계약 지속 여부 등 세부 배경은 별도 확인 없이 종결)." },
+    { "entity_name": "요기요", "major_category": "Client", "confluence_page_id": "220528657", "reason": "2026-07-27 백필(2021-08) 신규 발견. 첫구매 CPA 캠페인 온보딩(단가 13,000원/예산 1,000만원/769건, 8.19~8.31). 광고 인벤토리 거래 없이 CPA 비용을 지불하는 광고주 구조로 역할 모호성 없어 Client로 바로 등록." },
+    { "entity_name": "라온라이프", "major_category": "Client", "confluence_page_id": "221413377", "reason": "2026-07-27 백필(2021-08) 신규 발견. DB수집(자동차보험 상담신청) 캠페인 8/30 예산소진 종료. 2026-07-27 Jason 확인으로 신규 Client로 최종 확정, human_action_required 해제(계약관계 세부 확인은 생략)." },
+    { "entity_name": "삼성페이", "major_category": "Client", "confluence_page_id": "220921877", "reason": "2026-07-27 백필(2021-08) 발견 시 기존 Client '삼성카드'(204603393)와 동일 법인 관계인지 불확실하여 uncategorized 처리됐던 건. 2026-07-27 Jason 확인: 삼성페이와 삼성카드는 서로 별개 엔티티. 신규 독립 Client로 등록, Confluence 페이지 신규 생성 완료(220921877)." }
   ],
   "usage_instructions": {
     "collector": "슬랙 원문에서 언급된 대상이 위 entities 목록의 entity_name 또는 aliases와 일치하면, major_category를 재판단하지 말고 이 표의 값을 그대로 사용한다. context_status만 원문 맥락으로 판단(matched가 기본값이며, 완전히 새로운 하위 프로젝트/캠페인이면 new). 목록에 없는 이름만 처음부터 판단(major_category, 신규 여부)한다.",

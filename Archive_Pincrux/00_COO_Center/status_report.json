@@ -1,41 +1,41 @@
 {
   "pipeline_execution": {
-    "date": "2026-07-24",
+    "date": "2026-07-27",
     "run_mode": "backfill",
     "total_status": "success",
-    "batches": [
-      {
-        "period": "2021-04-01 to 2021-04-30",
-        "files_suffix": "2026-07-24.json",
-        "metrics": {"collected_threads": 8, "updated_matched_contexts": 5, "created_new_contexts": 2, "skipped_unknown": 1, "reviewer_run": true, "refiner_run": true, "refiner_published_tasks": 7}
-      },
-      {
-        "period": "2021-05-01 to 2021-05-31",
-        "files_suffix": "2026-07-24_2.json",
-        "metrics": {"collected_threads": 8, "updated_matched_contexts": 4, "created_new_contexts": 4, "skipped_unknown": 0, "reviewer_run": true, "refiner_run": true, "refiner_published_tasks": 8}
-      },
-      {
-        "period": "2021-06-01 to 2021-06-30",
-        "files_suffix": "2026-07-24_3.json",
-        "metrics": {"collected_threads": 26, "updated_matched_contexts": 13, "created_new_contexts": 13, "uncategorized_inquiries": 2, "reviewer_run": true, "refiner_run": true, "refiner_published_tasks": 26}
-      }
-    ],
-    "conditional_execution_rationale": "3개 배치 모두 context_status:new 및 action_taken:created_new 항목이 1건 이상 존재하여 v0_coo.md 4-C절에 따라 읽어봄이·다시쓰미를 전부 가동함. 3개 배치 전원 읽어봄이 PASSED(FAILED 0건)로 다시쓰미 진행 차단 사유 없었음.",
-    "note": "Jason 지시(2026-07-24, 토큰 여유분 활용)로 당일 3개 배치(2021-04·05·06)를 연속 실행. 2021년 상반기(01~06월) 백필 완료, next_period_start는 2021-07-01."
+    "period": "2021-08-01 to 2021-08-31",
+    "metrics": {
+      "collected_threads": 6,
+      "updated_matched_contexts": 3,
+      "created_new_contexts": 2,
+      "uncategorized_inquiries": 1,
+      "refiner_published_tasks": 6
+    },
+    "conditional_execution_rationale": "context_status:new 2건(T003 요기요, T006 라온라이프) 및 action_taken:created_new 2건이 존재하여 v0_coo.md 4-C절에 따라 읽어봄이·다시쓰미를 모두 가동함.",
+    "note": "Jason 지시('오늘거 한번 더 돌리자')로 당일 2회차 예외 실행. 원래는 '오늘 진행 이력이 있으면 미진행' 원칙에 따라 스킵 예정이었으나, Jason의 명시적 지시로 예외 처리(과거 전례와 동일하게 총총 자체 판단이 아닌 Jason 지시 기반 예외). last_completed_period(2021-07-31) 기준 다음 1개월(2021-08) 아카이빙 완료."
   },
-  "error_logs": [],
+  "error_logs": [
+    {
+      "node": "읽어봄이(Validator)",
+      "error_code": "CONTEXT_DISTORTION",
+      "message": "T005(오퍼월>리워드샵 연동, context_status:unknown 병합건)의 의사결정 사항에 슬랙 원문에 없는 도메인 전환 타임라인('8~9월 병행운영 후 10월 단독운영')이 기재됨. node_status를 fail로 설정하여 다시쓰미 진행을 1차 차단."
+    }
+  ],
   "incidents_self_corrected": [
-    {"batch": "2021-04-30", "node": "다시쓰미(Refiner)", "detail": "DB금융투자(192151759) 페이지 업데이트 시 HTML 태그 누락으로 기존 2019년 섹션 2개 일시 유실 → 즉시 자체 복원, 총총이 재조회로 검증 완료."},
-    {"batch": "2021-05-31", "node": "쓰미(Writer)/읽어봄이(Validator)", "detail": "Confluence 커넥터 병렬 호출 시 응답이 뒤섞이는 버그 발견(세틀뱅크 페이지 내용이 다른 페이지 조회에 잘못 반환됨) → 순차 호출로 전환, 총총이 재조회로 실제 데이터 무결성 확인. 시럽월렛 인용 출처 오귀속 1건, 페이코인 표 헤더 오탈자 1건을 다시쓰미가 정정."},
-    {"batch": "2021-06-30", "node": "모으미(Collector)/읽어봄이(Validator)", "detail": "T009(토스) slack_thread_link의 채널ID가 잘못 기재되어 읽어봄이의 슬랙 재확인이 실패 → 총총이 직접 슬랙을 재조회하여 실제 채널(C018GBM3ESC)을 확인하고 01_Collector 원본을 정정. 내용 자체는 원래부터 정확했음(메타데이터 오류만)."},
-    {"batch": "2021-06-30", "node": "다시쓰미(Refiner)", "detail": "DB손해보험(191955049) 페이지 '주요 담당자' 표 헤더 중복 삽입 → 즉시 자체 복구, 총총이 재조회로 검증 완료."}
+    {
+      "task_id": "T005",
+      "entity": "오퍼월",
+      "confluence_page_id": "192151821",
+      "detection": "읽어봄이 1차 검증(2패스 슬랙 재확인)에서 발견",
+      "correction": "쓰미가 해당 문장을 슬랙 원문 근거 문구('리워드샵 네임서버 변경 및 신규 서브도메인 연결을 진행하기로 확인됨')로 정정, Confluence 페이지 재업데이트(version 19)",
+      "reverification": "읽어봄이가 Confluence·슬랙 원본 재대조로 정정 확인, T005 PASSED 처리, node_status success로 전환"
+    }
   ],
   "human_action_required": [
-    "사명 미상 신규 회사(전 넷마블·피망 TF팀, 2021-04-30 오픈 예정) — 채수범에게 실제 회사명 확인 필요 (2021-05·06 배치에도 관련 언급 없어 계속 보류)",
-    "한화자산운용(218398779) — 예산 9천만원 협의 중, 최종 계약 체결 여부 후속 확인 필요",
-    "이지세이브(218759184) — 광고주(Client)/매체(Media_Partner) 역할 불명확, Jason 확인 필요(7월 라이브 예정이므로 후속 배치에서 명확화 기대)",
-    "SSG(신세계, 204636161) — 2021-06 아울렛 회원가입 건에서 광고주 역할로 등장, 기존 Media_Partner 고정분류와 이중역할 여부 확인 필요",
-    "그 외 기존 미해결 항목 계속 보류: 세틀뱅크 CPA 계약 체결 여부, DGB유페이-티켓모아 연동 이중역할",
-    "2021-07 배치는 다음 정기 실행부터 별도 재확인 없이 자동 진행 예정"
+    "라온라이프(221413377) — 신규 Client, DB수집 캠페인 종료 건 1개 메시지만 근거라 정식 계약관계 불명확. Jason 확인 필요",
+    "삼성페이 캠페인 재오픈(8/25, 예산 7천만원) — 기존 Client '삼성카드'와 동일 법인 관계인지 원문만으로 판단 불가, uncategorized 처리(후속 배치 확인)",
+    "오퍼월>리워드샵(링크프라이스 연동) — 오퍼월 하위 과제인지 별도 신규 프로덕트인지 구조적 확정 필요 (사실관계 정정과는 별개로 여전히 미해결)",
+    "기존 미해결 항목 계속 보류: 펫프렌즈(계약배경), 해피포인트(반복장애), KB손해보험(단가확정), 이지세이브, 세틀뱅크, DGB유페이-티켓모아, SSG 이중역할, 사명 미상 신규회사, 헬릭스미스/BC카드/페이코인/시럽월렛(각 human_action_required)",
+    "2021-09 배치는 다음 정기 실행부터 별도 재확인 없이 자동 진행 예정"
   ]
 }
