@@ -1,7 +1,7 @@
 ---
 node: 총총(Orchestrator / COO) 전용
-version: 1.5.0
-last_updated: 2026-07-24
+version: 1.6.0
+last_updated: 2026-07-28
 role: 광고주(Client)·매체/제휴사(Media_Partner)·인하우스(In-house) 이중 역할 판단 기준·유지보수 절차·폴더링 정책을 총총이 직접 소유·관리하는 거버넌스 문서
 ---
 
@@ -37,6 +37,19 @@ role: 광고주(Client)·매체/제휴사(Media_Partner)·인하우스(In-house)
 - **판단 가이드**: 슬랙 원문에 등장하는 이름이 manifest의 entity_name과 유사하지만 사업 영역(통신/금융/커머스 등)이 이질적으로 느껴지면, 곧바로 manifest 값으로 병합하지 말고 실제로 동일 법인인지 원문 문맥(계약 주체, 서비스 성격)으로 재확인한다. 확신이 없으면 `human_action_required`로 보류.
 - **판단 기준**: 이번 대화에서 핀크럭스가 "비용을 지불받는 쪽"(광고 인벤토리를 제공하고 리워드/매체비를 받음)인지, "비용을 지불하는 쪽"(캠페인을 의뢰하고 광고비를 지불함)인지로 구분한다. 비용 흐름 방향이 명확하지 않으면 함부로 manifest 값을 재판단하지 말고, major_category 불일치 가능성을 `human_action_required` 플래그로 남겨 총총에게 보고한다.
 - **manifest 우선 원칙과의 관계**: entity_manifest.json의 고정값은 기본으로 신뢰하되, 이번 대화 내용이 고정값과 명백히 다른 역할(예: 늘 매체였던 엔티티가 이번엔 광고주로 비용을 지불하는 캠페인을 시작)로 등장하면 재판단을 보류하지 말고 즉시 총총에게 플래그. **임의로 major_category를 바꾸지 않는다** — 오직 COO만 이 레지스트리와 entity_manifest.json을 함께 갱신할 권한을 가진다.
+
+## 4-2. 이중역할 엔티티 페이지 분리 정책 (2026-07-28 Jason 지시로 신설)
+
+기존에는 이중역할이 확인되면 하나의 페이지 안에서 역할 상충 사실을 경고 패널로만 표시하고 major_category는 고정값을 유지했다(4절 참조). **2026-07-28부로 정책을 다음과 같이 변경한다**: 동일 회사가 실제로 복수 역할(Client/Media_Partner/Partner)로 활동하는 것이 확인되면, **역할별로 별도 Confluence 페이지를 생성**하고 **양쪽 페이지에 상호참조 링크를 넣어 탐색을 용이하게** 한다.
+
+**적용 절차**:
+1. 각 역할에 맞는 폴더(Client=210665474 / Media_Partner=210894849 / Partner=215416833) 하위에 역할별 페이지를 각각 생성·유지한다.
+2. **제목 규칙 예외**: v2_writer.md 4절의 "엔티티명만 사용, 접미사 금지" 원칙은 단일 역할 엔티티에 계속 적용되지만, 이중역할로 페이지가 분리된 경우에 한해 예외적으로 `{엔티티명} ({역할})` 형식(예: `GS엠비즈 (Client)`, `GS엠비즈 (Partner)`)을 허용한다. Confluence는 같은 스페이스 내 제목 중복을 허용하지 않으므로 이 예외가 기술적으로 불가피하다.
+3. 각 페이지의 "엔티티 개요" 섹션 바로 아래에 `panel-note` 매크로로 상호참조 안내를 삽입한다: "이 회사는 {반대 역할} 역할로도 등장합니다 — {반대 역할} 히스토리는 [엔티티명 (반대역할) 페이지] 참조."
+4. `entity_manifest.json`에는 역할별로 별도 엔트리를 등록한다. 각 엔트리는 `entity_name`(동일), `role`(Client/Media_Partner/Partner), `major_category`(해당 역할과 동일값), `confluence_page_id`(해당 역할 페이지), `related_role_pages`(배열, 다른 역할의 confluence_page_id 목록)를 포함한다. 모으미/쓰미는 슬랙 원문에서 어떤 역할로 등장했는지 문맥으로 판단하여 해당 role의 엔트리(페이지)를 사용한다 — 판단이 애매하면 4절 기준대로 human_action_required로 보류.
+5. 기존에 한 페이지에 몰려 있던 콘텐츠 중 반대 역할에 속하는 섹션은 **사실관계를 변경하지 않고 그대로** 새 페이지로 이동한다.
+
+**최초 적용 사례**: GS엠비즈(219873281, Partner 쿠폰공급 / 222756865, Client CPA캠페인) — 2026-07-28, 2021-11 백필 배치에서 이중역할 확인 후 Jason 지시로 분리 완료.
 
 ## 5. 유지보수 절차
 - 신규 엔티티가 새로 생성될 때마다(쓰미가 `action_taken: created_new` 보고) 총총이 `entity_manifest.json`의 `entities` 배열에 조회용 항목을 추가한다(entity_name/major_category/confluence_page_id, 필요 시 aliases/status). 배경 설명이 필요하면 `entity_history.md`에 별도 항목을 추가한다.

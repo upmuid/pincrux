@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.1",
+  "node": "validator",
+  "run_date": "2026-07-27",
+  "source_files": {
+    "collector": "Archive_Pincrux/01_Collector/2026-07-27_5.json",
+    "writer": "Archive_Pincrux/02_Writer/2026-07-27_5.json"
+  },
+  "node_status": "success",
+  "review_summary": {
+    "total_reviewed": 4,
+    "passed_cnt": 4,
+    "failed_cnt": 0,
+    "slack_reread_cnt": 2
+  },
+  "validation_results": [
+    {
+      "task_id": "T001",
+      "target_name": "우리종합금융",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/221380610",
+      "confluence_page_id": "221380610",
+      "slack_reread": true,
+      "slack_reread_trigger": "context_status: new — 신규 페이지(created_new)이므로 슬랙 원본 확인 필수",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "슬랙 원본(G0113KM3KK2/p1634199590012000, 2021-10-14 백상현)에서 '카카오페이 광고주 예산이슈로 종료' 및 '네이버페이도 종료예정이나 아직 정확한 일정 미확인' 발언을 확인함 — 컨플루언스/JSON의 카카오페이 10/14 종료 기술과 정합. entity_manifest 미등록·Client 역할 판단도 원문과 부합. 다만 collector의 context_reference가 인용한 10/19(네이버페이 22시 종료 확정) 및 10/20(#웹개발팀_개발요청, 지급누락 알럿→익일 재처리) 두 발언은 제공된 단일 slack_thread_link(10/14자 스레드, 답글 없음)의 범위 밖에 있어 이번 검증에서 직접 대조 불가함(채널 전체 스캔 금지 원칙상 추가 조회 미실시). 확인 가능한 범위 내에서는 왜곡·날조 정황 없음. 참고: 슬랙 원문에 '추후 진행은 올해는 힘들 것으로 확인, 내년 S2S로 진행 제안'이라는 후속 논의가 있으며, JSON action_item '향후 배치에서 재계약/재개 캠페인 여부 모니터링'이 이를 포괄적으로 커버하고 있어 왜곡은 아니나 구체성은 낮음. 회사명 '핀크럭스' 표기 정상.",
+      "suggested_fix": "차기 배치부터는 하나의 task_id에 여러 날짜/채널의 원문을 인용할 경우 각 인용에 대응하는 slack_thread_link를 복수로 병기하도록 모으미(v1) 프로세스 보완 권고(총총 검토 필요). 현재 배치 자체는 접근 가능한 자료 범위 내 정합성 문제 없어 PASS 유지."
+    },
+    {
+      "task_id": "T002",
+      "target_name": "오퍼월 > 리워드샵",
+      "context_status": "unknown",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151821",
+      "confluence_page_id": "192151821",
+      "slack_reread": true,
+      "slack_reread_trigger": "unknown 항목 추가 주의 + 기존 pending_review 연장선 이슈 — 슬랙 원본 재확인 권고",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "슬랙 원본(C02AY0MMTU1/p1635473913049500, 2021-10-29 김지영, #핀크럭스샵)에서 '고도몰 시스템이 NHN커머스로 이관, 11/4(목)부터 약 1일간 서비스 중지, 11/1 이전 모든 서비스 이관 목표'를 확인함 — 컨플루언스에 반영된 NHN커머스 이관·11/4 서비스중지 내용과 정확히 일치. 개인정보 처리방침 도메인 갱신(pincrux.shop→rewardshop.net) 문구는 동일 스레드 답글에는 없으나 동일 공지 맥락과 상충되지 않음. 오퍼월-리워드샵 구조적 관계(하위과제 vs 별도관리)는 여전히 미확정 상태로 기존 action_item이 유지되고 있으며 임의 재분류 없음 확인. 기존 [추론된 컨텍스트] 섹션의 2021-08/09 히스토리(링크프라이스, 매출정산 개선, PG수수료 등) 및 그 외 모든 과거 섹션(2019~2021-06)은 문구 변경 없이 그대로 보존됨 — 이번 배치는 해당 섹션 말미에 2021-10-29 항목 1건만 추가. 회사명 '핀크럭스' 표기 정상.",
+      "suggested_fix": null
+    },
+    {
+      "task_id": "T003",
+      "target_name": "KB손해보험 > 매트라이프 DB수집 캠페인",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192086208/KB",
+      "confluence_page_id": "192086208",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "1패스(JSON vs 컨플루언스) 대조 결과 완전 일치: 단가 2,500원→2,250원(VAT별도/net) 조정, 대행수수료 10% 협의 완료 내용이 신규 섹션 '매트라이프 DB수집 캠페인 단가 조정 (2021-10)'에 정확히 반영됨. 불일치 없어 슬랙 재조회 트리거 미해당. 기존 섹션(신규 매체 확장, 네이버페이 CPM 계약위반, SPC 충전소, IT담당자 연락처, 클립 랜딩페이지, 해피머니 랜딩페이지, 네이버페이 적립금 KB다이렉트) 모두 문구 변경 없이 보존됨. 회사명 '핀크럭스' 오탈자 없음.",
+      "suggested_fix": null
+    },
+    {
+      "task_id": "T004",
+      "target_name": "CPS 기획전 플랫폼 > G마켓 기획전",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/206012417/CPS",
+      "confluence_page_id": "206012417",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "1패스(JSON vs 컨플루언스) 대조 결과 완전 일치: G마켓 기획전(충전소형 CPA) 라이브, 일반 직광고 CPA 대부분 라이브 처리, 금융 카테고리는 david 별도 협의, 캐시팝토리 오라이브 사고 및 즉시 홀딩 내용이 신규 섹션에 정확히 반영됨. 불일치 없어 슬랙 재조회 트리거 미해당. 기존 섹션(이상거래 차단정책, CJ제일제당 벤더 종료, 신규 매체 확장전략, 우리원 장바구니 기획전, 개발착수·컬처랜드, 오케이캐시백)은 문구 변경 없이 보존됨. 회사명 '핀크럭스' 표기(우리원 섹션 내 언급 포함) 정상.",
+      "suggested_fix": null
+    }
+  ]
+}

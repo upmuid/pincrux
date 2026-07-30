@@ -1,7 +1,7 @@
 ---
 document: 지침 변경 이력 (Directive Changelog)
-version: 1.0.0
-last_updated: 2026-07-21
+version: 1.1.0
+last_updated: 2026-07-28
 owner: 총총(COO)
 ---
 
@@ -48,6 +48,7 @@ owner: 총총(COO)
 | 2026-07-20 | Step 2.5를 `routing_pincrux_cluv.md`로 분리, 조건부 트리거 문구로 축소(해당 엔티티 없는 배치는 안 읽어도 됨). |
 | 2026-07-21 | Step 2/신규 페이지 템플릿에 구분선(`---`) 규칙 신설: 서로 다른 업무(프로젝트·캠페인) 섹션이 나뉘는 지점마다 시각적 구분을 위해 마크다운 수평 구분선을 넣도록 함(Jason 지시, 페이앤드 페이지 가독성 피드백 반영). 이번에 새로 추가하는 섹션에만 적용, 과거 발행 섹션은 소급 정정하지 않음. |
 | 2026-07-22 | 섹션 4 부모 카테고리 표에 Partner(제휴사, 폴더 215416833) 행 추가. Media_Partner vs Partner 판단 기준 신설. |
+| 2026-07-28 | 페이지 제목 규칙에 예외 신설: 이중역할 엔티티 페이지 분리 시 `{엔티티명} ({역할})` 형식 허용(client_media_registry.md 4-2절과 연동). GS엠비즈(Partner/Client) 최초 적용. |
 
 ## v3_validator.md
 | 일자 | 변경 |
@@ -75,6 +76,7 @@ owner: 총총(COO)
 | 2026-07-20 | 엔티티 리스트업 표(구 2절)·정정 이력 로그(구 3절)를 entity_manifest.json/entity_history.md로 이관하고 제거(중복 제거). 이후 entity_manifest.json 자체도 조회용/이력용으로 재분리. |
 | 2026-07-22 | Media_Partner ↔ Partner(제휴사) 분리 기준 신설(4절). Jason이 Confluence에 Partner 네이티브 폴더(215416833) 직접 생성. |
 | 2026-07-24 | 4절의 KT 이중역할 예시가 오류였음을 정정(KT 엠모바일은 KT와 별개 법인, 이중역할 사례 아님). 4-1절 "브랜드명 유사·별개 법인 주의" 신설(KT/KT엠모바일, 카카오페이/카카오페이지 사례). |
+| 2026-07-28 | 4-2절 신설: "이중역할 엔티티 페이지 분리 정책". 기존에는 단일 페이지에 경고 패널만 표시하던 방식에서, 역할별(Client/Media_Partner/Partner) 별도 페이지 생성 + 상호참조 링크 삽입 방식으로 전환(Jason 지시). GS엠비즈(Partner/Client) 최초 적용. entity_manifest.json에 `role`/`related_role_pages` 필드 도입. |
 
 ## entity_manifest.json
 | 일자 | 변경 |
@@ -84,3 +86,4 @@ owner: 총총(COO)
 | 2026-07-20 | registry 정정 이력을 이 파일의 note 필드로 흡수 → 다시 `entity_history.md`로 분리(조회 전용 파일을 가볍게 유지하기 위함). `known_sections` 필드(사실상 미사용) 제거. |
 | 2026-07-22 | parent_category_pages/folder_naming_convention에 Partner_root(215416833) 추가. 쿠프마케팅을 Media_Partner→Partner로 재분류. 피플카를 Client→Media_Partner로 재분류(확정). SPC를 섹타나인으로 개명·통합(SPC는 alias), Media_Partner 확정. 오사라마켓/롯데멤버스 human_action_required 해제(Media_Partner 확정). 카카오페이지를 카카오페이와 별개 엔티티로 참고 등록(페이지 미생성). |
 | 2026-07-24 | KT(196575233)/KT 엠모바일(192151605) 엔티티에 "별개 법인" 명시 reason 추가(Jason 확인). Confluence 페이지에서도 KT CLIP 관련 콘텐츠를 KT 엠모바일→KT로 이관 완료. |
+| 2026-07-28 | 하나캐피탈(222560257)·예가람저축은행(222593025)·AXA손해보험(222363650)·애드맥스(222822410)·탑툰(222887937) 신규 등록(2021-11 백필). GS엠비즈를 `role` 필드를 가진 두 엔트리(Partner 219873281 / Client 222756865)로 분리, `related_role_pages`로 상호참조. |

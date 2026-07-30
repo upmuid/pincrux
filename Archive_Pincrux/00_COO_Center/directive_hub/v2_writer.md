@@ -102,6 +102,8 @@ role: 엔티티 단일 페이지 원칙 기반 위키 문서 생성, 병합 및 
 - 올바른 예: `DB손해보험`, `KT 엠모바일`, `페이앤드`
 - 잘못된 예: `DB손해보험 (Client)`, `KT 엠모바일 (Media)`
 
+**예외(2026-07-28 신설)**: 동일 회사가 이중역할(Client/Media_Partner/Partner)로 확인되어 client_media_registry.md 4-2절 정책에 따라 역할별로 페이지를 분리하는 경우에는 `{엔티티명} ({역할})` 형식을 예외적으로 허용한다(예: `GS엠비즈 (Client)`, `GS엠비즈 (Partner)`). entity_manifest.json에 해당 엔티티가 `role` 필드와 함께 복수 엔트리로 등록되어 있으면 이 예외가 적용된 상태임을 인지하고, 어느 role의 페이지를 써야 하는지 슬랙 원문 문맥으로 판단할 것.
+
 ---
 
 ## 5. 컨텍스트 기반 업데이트 전략 (Context-Level Processing)
