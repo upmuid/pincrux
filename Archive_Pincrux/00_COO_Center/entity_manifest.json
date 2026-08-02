@@ -1,6 +1,6 @@
 {
-  "version": "1.22",
-  "last_updated": "2026-07-30",
+  "version": "1.23",
+  "last_updated": "2026-08-02",
   "purpose": "모으미/쓰미가 이미 확립된 엔티티를 매번 CQL 검색·카테고리 재판단 없이 즉시 참조하기 위한 고정 매니페스트(조회 전용, 가벼움 유지). 여기 없는 엔티티만 LLM 판단(신규 생성 여부, major 분류)을 수행한다. 신규 엔티티가 확정될 때마다 총총(COO)이 이 파일에 추가한다.",
   "history_ref": "2026-07-20부로 엔티티별 정정 사유·배경 서술은 이 파일에서 entity_history.md로 이관했다. 이 파일은 모으미/쓰미가 매 실행 로드하는 조회 전용 테이블이므로 entity_name/major_category/confluence_page_id/aliases/status만 유지한다. 특정 엔티티의 분류 배경이나 오분류 정정 이력이 궁금하면 entity_history.md에서 entity_name으로 찾을 것(총총 감사·검토 시에만 필요, 모으미/쓰미는 평시 참조 불필요).",
   "parent_category_pages": {
@@ -118,7 +118,16 @@
     { "entity_name": "홈쏘쏘몰", "major_category": "Client", "confluence_page_id": "226394113", "status": "human_action_required", "reason": "2026-07-30 백필(2022-01) 신규 발견. 'SKP 연동' 표현이 기존 Client 'SK플래닛'(206077953)을 지칭하는지, 홈쏘쏘몰이 별개 독립 엔티티인지 원문만으로 불명확 — Jason 확인 필요." },
     { "entity_name": "코나카드", "major_category": "Client", "confluence_page_id": "226099209", "status": "human_action_required", "reason": "2026-07-30 백필(2022-01) 신규 발견. 'SKP 연동' 코나카드 CPA 캠페인. 명칭 표기 및 사업 성격 확인 필요 — Jason 확인 필요." },
     { "entity_name": "KCC글라스", "major_category": "Client", "confluence_page_id": "226426881", "reason": "2026-07-30 백필(2022-01) 신규 발견. 회원가입 캠페인 추가 예산 오픈. 역할 모호성 없어 Client로 바로 등록." },
-    { "entity_name": "임직원몰", "major_category": "In-house", "confluence_page_id": "226426901", "reason": "2026-07-30 백필(2022-01) 신규 발견. 임직원 전용 복지 쇼핑몰(cost.pincrux.shop) 구축 완료. IH_Product 폴더 하위 등록." }
+    { "entity_name": "임직원몰", "major_category": "In-house", "confluence_page_id": "226426901", "reason": "2026-07-30 백필(2022-01) 신규 발견. 임직원 전용 복지 쇼핑몰(cost.pincrux.shop) 구축 완료. IH_Product 폴더 하위 등록." },
+    { "entity_name": "미래마케팅", "major_category": "Client", "confluence_page_id": "228130817", "status": "human_action_required", "reason": "2026-08-02 백필(2022-02) 신규 발견. 피플라이프 보험 상담신청 CPA 캠페인. 리메세·애드맥스와 유사한 대행사형 구조로 추정되나 확정 필요." },
+    { "entity_name": "마라나타엔터테인먼트", "major_category": "Client", "confluence_page_id": "228163585", "status": "human_action_required", "reason": "2026-08-02 백필(2022-02) 신규 발견. 하이퍼탱크/요고모고 리워드형 게임 CPA 캠페인 2건 대행. 사업 성격(대행사 여부) 확정 필요." },
+    { "entity_name": "나트리스", "major_category": "Client", "confluence_page_id": "227934218", "status": "human_action_required", "reason": "2026-08-02 백필(2022-02) 신규 발견. 무한돌파삼국지 리버스L CPA 캠페인. 사업 성격(대행사 여부) 확정 필요." },
+    { "entity_name": "루키즈커뮤니케이션즈", "major_category": "Client", "confluence_page_id": "227966992", "status": "human_action_required", "reason": "2026-08-02 백필(2022-02) 신규 발견. 캐시백#매일매일 포인트적립 CPA 캠페인. 사업 성격 및 major_category 확정 필요. 참고: 동일 배치에서 광고주가 합의 단가(90/70원)를 무단으로 100원 변경한 사고가 발생, 당사가 원복 요청 및 개발팀에 단가변경 제한 조치 요청함(읽어봄이 CONTEXT_DISTORTION 검증·정정 완료, 컨플루언스 반영됨)." },
+    { "entity_name": "와이즈솔루션", "major_category": "Client", "confluence_page_id": "228032520", "status": "human_action_required", "reason": "2026-08-02 백필(2022-02) 신규 발견. 투데이 마인드케어 유료 부가서비스 가입 CPA 캠페인. 기존 Client '와이즈버즈'(226197512)와 명칭이 유사하나 CQL 검색 결과 별개 회사로 판단하여 독립 등록 — 동일법인 여부 Jason 확인 필요." },
+    { "entity_name": "쏘카", "major_category": "Client", "confluence_page_id": "228065288", "status": "human_action_required", "reason": "2026-08-02 백필(2022-02) 신규 발견. 회원가입 CPA 3월 캠페인 확정(매체: 매드핏). major_category 확정 및 '매드핏' 매체와의 관계 확인 필요." },
+    { "entity_name": "부산일보", "major_category": "Client", "confluence_page_id": "228130838", "status": "human_action_required", "reason": "2026-08-02 백필(2022-02) 신규 발견. 네이버 채널 구독하기 캠페인 예산 조정. '2차'라는 표현으로 미루어 이전(1차) 집행 이력 존재 가능성 — 확인 필요." },
+    { "entity_name": "쿠팡", "major_category": "Media_Partner", "confluence_page_id": "228229121", "status": "human_action_required", "reason": "2026-08-02 백필(2022-02) 신규 발견. 신규매체 라이브 준비(제휴코드 삽입 완료, 2/14). 예외오픈 처리 및 정식 계약조건은 원문상 미확인 — 후속 확인 필요." },
+    { "entity_name": "한국선불카드", "major_category": "Media_Partner", "confluence_page_id": "228229142", "aliases": ["팔라고"], "status": "human_action_required", "reason": "2026-08-02 백필(2022-02) 신규 발견. 팔라고 AOS/IOS 충전소 신규 오픈(실적 정상 발생 확인). 정식 법인명이 '한국선불카드'인지 '팔라고'가 서비스 브랜드명인지 확인 필요." }
   ],
   "usage_instructions": {
     "collector": "슬랙 원문에서 언급된 대상이 위 entities 목록의 entity_name 또는 aliases와 일치하면, major_category를 재판단하지 말고 이 표의 값을 그대로 사용한다. context_status만 원문 맥락으로 판단(matched가 기본값이며, 완전히 새로운 하위 프로젝트/캠페인이면 new). 목록에 없는 이름만 처음부터 판단(major_category, 신규 여부)한다.",
