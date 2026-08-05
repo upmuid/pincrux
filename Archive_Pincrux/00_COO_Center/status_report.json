@@ -1,27 +1,89 @@
 {
   "pipeline_execution": {
-    "date": "2026-08-04",
+    "date": "2026-08-05",
     "run_mode": "backfill",
     "total_status": "success",
-    "period": "2022-04-01 to 2022-04-30",
-    "metrics": {
-      "collected_threads": 19,
-      "updated_matched_contexts": 12,
-      "created_new_contexts": 7,
-      "uncategorized_inquiries": 0,
-      "refiner_published_tasks": 19
-    },
-    "conditional_execution_rationale": "수집 19건 중 7건이 context_status:new/action_taken:created_new(신규 엔티티 페이지 생성: SC제일은행·이베스트투자증권·SK증권·KB차차차·키움증권·NBT·글링크미디어)이므로 v0_coo.md 4-C절에 따라 읽어봄이·다시쓰미를 모두 가동함.",
-    "note": "정기 백필 자동 실행(전일 실행 이력 있으나 당일 실행 이력 없음, 예외 조건 해당 없음). last_completed_period(2022-03-31) 기준 다음 1개월(2022-04) 아카이빙 완료, next_period_start를 2022-05-01로 갱신. 실행 시점(2026-08)의 직전 년/월(2026-07)과는 아직 거리가 있어 backfill 중단 조건에 해당하지 않음."
+    "batches": [
+      {
+        "period": "2022-05-01 to 2022-05-31",
+        "file_suffix": "(none)",
+        "metrics": {
+          "collected_threads": 15,
+          "updated_matched_contexts": 9,
+          "created_new_contexts": 6,
+          "uncategorized_inquiries": 0,
+          "refiner_published_tasks": 15
+        },
+        "validator_refiner": "가동 (context_status:new 6건, action_taken:created_new 존재)",
+        "self_corrected": "T013 엑스티(한화호텔&리조트) 단가 오류(1,500원→1,300원) 발견·정정"
+      },
+      {
+        "period": "2022-06-01 to 2022-06-30",
+        "file_suffix": "_2",
+        "metrics": {
+          "collected_threads": 18,
+          "updated_matched_contexts": 12,
+          "created_new_contexts": 6,
+          "uncategorized_inquiries": 0,
+          "refiner_published_tasks": 18
+        },
+        "validator_refiner": "가동 (context_status:new 8건, action_taken:created_new 6건 존재)",
+        "self_corrected": "T008 유진투자증권(웰컴저축은행 예산 오귀속), T010 웰컴저축은행(라이브 확정 과대서술), T017 공감엔에스(수량·기간 왜곡 인용) 총 3건 발견·정정"
+      },
+      {
+        "period": "2022-07-01 to 2022-07-31",
+        "file_suffix": "_3",
+        "metrics": {
+          "collected_threads": 16,
+          "updated_matched_contexts": 16,
+          "created_new_contexts": 0,
+          "uncategorized_inquiries": 0,
+          "refiner_published_tasks": 16
+        },
+        "validator_refiner": "생략 (전건 matched/merged_into_existing, v0_coo.md 4-C절). 쓰미 완료 시점에 published 인정.",
+        "self_corrected": "없음"
+      }
+    ],
+    "note": "2026-08-05 정기 실행(2022-05)에 이어, Jason 지시(토큰 여유분 활용)로 당일 2회차(2022-06)·3회차(2022-07) 배치를 연속 실행. next_period_start를 2022-08-01로 갱신. 실행 시점(2026-08)의 직전 년/월(2026-07)과는 아직 거리가 있어 backfill 중단 조건 미해당. 세 배치 모두 사고는 파이프라인 내에서 자체 발견·정정되어 최종 발행본에는 영향 없음. 랭킹닭컴(2022-05 신규 발견)은 Jason 확인으로 Client(광고주) 최종 확정, 이노션은 대행 파트너사로 확인되어 human_action_required 해제 및 컨플루언스 페이지 배너 정정 완료."
   },
   "error_logs": [],
-  "incidents_self_corrected": [],
+  "incidents_self_corrected": [
+    {
+      "batch": "2022-05-31",
+      "task_id": "T013",
+      "entity_name": "엑스티(한화호텔&리조트)",
+      "error_type": "CONTEXT_DISTORTION",
+      "resolution": "단가 1,500원(초안)→1,300원(슬랙 회신 기준 최종 협의가)으로 정정, 01_Collector JSON 및 컨플루언스 페이지(231276545) 반영, 재검증 PASSED."
+    },
+    {
+      "batch": "2022-06-30",
+      "task_id": "T008",
+      "entity_name": "유진투자증권",
+      "error_type": "CONTEXT_DISTORTION",
+      "resolution": "웰컴저축은행 소관 7월 예산 수치(4,400만→5,900만원)가 slack_thread_link 오기재로 유진투자증권에 잘못 반영된 것을 발견, 해당 서술 삭제. 준법감시인 심의필 갱신 사실만 유지."
+    },
+    {
+      "batch": "2022-06-30",
+      "task_id": "T010",
+      "entity_name": "웰컴저축은행",
+      "error_type": "CONTEXT_DISTORTION",
+      "resolution": "매체 그린피의 '진행 가능여부 문의·단가협의 중' 상태를 '라이브 확정'으로 과대서술한 것을 '문의·협의 중(라이브 미확정)'으로 정정."
+    },
+    {
+      "batch": "2022-06-30",
+      "task_id": "T017",
+      "entity_name": "공감엔에스",
+      "error_type": "CONTEXT_DISTORTION",
+      "resolution": "원문 '일 1,500건/별도요청시까지'를 '총 1,500건/달성시까지'로 왜곡 인용한 것을 원문 기준으로 정정."
+    }
+  ],
   "human_action_required": [
-    "KB차차차(229212161, 신규 엔티티) — 기존 Client 'KB손해보험'·'KB증권'과 별개 법인·서비스(마이데이터 연동 중고차 플랫폼)인지 확정 필요. 04-27·04-28 리워드 미지급 CS 약 290여건 발생, 원인 미확인.",
-    "NBT(229277697, 신규 엔티티) — 매체(Media_Partner)/네트워크 중개사 역할 및 계약 형태 확정 필요. 키움증권 리워드 지급 캠페인 경유 제휴 구조로 추정.",
-    "글링크미디어(229310465, 신규 엔티티) — 직접 광고주 vs 리메세·애드맥스 유사 대행사형 구조 확정 필요.",
-    "키움증권(229244929) T015 — 01_Collector의 slack_thread_link가 실제 슬랙 메시지와 매칭되지 않음(thread_not_found). 내용 왜곡 증거는 없어 PASSED 유지했으나 모으미(v1)의 링크 기록 신뢰성 점검 권고.",
-    "기존 미해결 항목 계속 보류(신규 발생 아님, 상세는 backfill_checkpoint.json pending_review 참조): LGU+ 역할 확정, 배민B마트 대행사 불일치, 2022-02 신규 엔티티 9건 major_category 확정, 하나멤버스 보험사 4곳 연동 반영, 티켓모아 섹션 통합 여부, 오퍼월>리워드샵 구조 등.",
-    "2022-05 배치는 다음 정기 실행부터 별도 재확인 없이 자동 진행 예정."
+    "라이나생명(231309316, 2022-06 신규) — 매체(Media_Partner) 역할과 광고주 계정 등장의 이중역할 여부 확정 필요.",
+    "NH나무증권(231931905, 2022-06 신규) — 정식 법인명 확인 필요(NH투자증권 계열 vs 별개 법인). 참고: 2022-07 배치 원문에서 '나무계좌' 캠페인이 'NH투자증권' 소속으로 지칭된 단서 포착, 참고자료로 pending_review에 기록.",
+    "SSG(신세계) — 2022-07 배치에서 광고주형 역할 재등장 재확인(2021-06부터 이어진 이중역할 의심). 정식 등록 여부 Jason 확인 필요.",
+    "엑스티(한화호텔&리조트) — 로컬라이브 캠페인 네이버페이 매체 단가 표기(1,500원)가 5월 정정단가(1,300원)와 상이, 매체별 차이 여부 확인 필요.",
+    "웰컴저축은행 — 2022-06 확정된 7월 예산(5,900만원) 실제 집행 여부, 2022-07 원문에 언급 없어 미반영. 후속 배치에서 계속 확인 필요.",
+    "기존 미해결 항목 계속 보류(신규 발생 아님, 상세는 backfill_checkpoint.json pending_review 참조): KB차차차/NBT/글링크미디어 major_category 확정, LGU+ 역할 확정, 배민B마트 대행사 불일치, 2022-02 신규 엔티티 9건 major_category 확정, 하나멤버스 보험사 4곳 연동 반영, 티켓모아 섹션 통합 여부, 오퍼월>리워드샵 구조 등.",
+    "2022-08 배치는 다음 정기 실행부터 별도 재확인 없이 자동 진행 예정."
   ]
 }
