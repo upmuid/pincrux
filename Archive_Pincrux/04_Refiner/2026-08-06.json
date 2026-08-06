@@ -1,0 +1,309 @@
+{
+  "schema_version": "1.1",
+  "node": "refiner",
+  "run_date": "2026-08-06",
+  "source_file": "Archive_Pincrux/03_Validator/2026-08-06.json",
+  "node_status": "success",
+  "published_tasks": [
+    {
+      "task_id": "T001",
+      "target_name": "AK몰",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/233242634",
+      "confluence_page_id": "233242634",
+      "refined_points": [
+        "신규 페이지 '광고정책 변경 리스크 (2022-08)' 섹션 검수: 확정형 문어체, human_action_required 패널, 액션 아이템 체크리스트, 섹션 앞 구분선(---)이 모두 규정에 부합함을 확인",
+        "미확정 상태(정책 변경 확정 여부·9월 중 재확인 예정)를 과단정 없이 그대로 서술한 부분 유지, 추가 수정 없이 최종 확정"
+      ],
+      "published_at": "2026-08-06T14:12:00+09:00"
+    },
+    {
+      "task_id": "T002",
+      "target_name": "NHN AD > GS SHOP 첫구매 CPA 캠페인",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/226361345",
+      "confluence_page_id": "226361345",
+      "refined_points": [
+        "이번 배치 신규 추가분(8/1 재개, 8월 예산 추후 확정)만 검수 대상으로 확인, 기존 1~7월 히스토리는 재포맷하지 않고 그대로 보존",
+        "볼드 강조·체크리스트 형식이 이미 규정에 부합하여 추가 수정 없이 최종 확정"
+      ],
+      "published_at": "2026-08-06T14:14:00+09:00"
+    },
+    {
+      "task_id": "T003",
+      "target_name": "이베스트투자증권 > 페이북 캠페인",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/229179393",
+      "confluence_page_id": "229179393",
+      "refined_points": [
+        "신규 섹션 '페이북 캠페인 (2022)' 검수: 확정형 문어체, 볼드 강조(단가·리워드), 섹션 앞 구분선(---)이 모두 규정에 부합함을 확인",
+        "기존 '페이코 경유' 섹션과 명확히 분리 보존되어 있어 추가 수정 없이 최종 확정"
+      ],
+      "published_at": "2026-08-06T14:16:00+09:00"
+    },
+    {
+      "task_id": "T004",
+      "target_name": "한화투자증권 > 요기요 캠페인",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/228458504",
+      "confluence_page_id": "228458504",
+      "refined_points": [
+        "신규 섹션 '요기요 캠페인 (2022)' 검수: 확정형 문어체, 볼드 강조(기간·단가), 체크리스트, 구분선(---)이 모두 규정에 부합함을 확인",
+        "'요기요' 이중역할 human_action_required 플래그를 임의 판단 없이 그대로 유지, 추가 수정 없이 최종 확정"
+      ],
+      "published_at": "2026-08-06T14:18:00+09:00"
+    },
+    {
+      "task_id": "T005",
+      "target_name": "와이즈버즈 > 증권플러스 계좌연동 CPA 캠페인",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/226197512",
+      "confluence_page_id": "226197512",
+      "refined_points": [
+        "context_status: unknown 항목으로 1패스 검수만 수행(선택과 집중 원칙)",
+        "[추론된 컨텍스트] 라벨 및 엔티티 구조 미확정 안내(두나무 vs 와이즈버즈)를 사실관계 변경 없이 그대로 보존, 추가 수정 없이 최종 확정"
+      ],
+      "published_at": "2026-08-06T14:20:00+09:00"
+    },
+    {
+      "task_id": "T006",
+      "target_name": "메리츠증권 > 계좌개설 캠페인",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/232816642",
+      "confluence_page_id": "232816642",
+      "refined_points": [
+        "신규 페이지 '계좌개설 캠페인 (2022)' 섹션 검수: 확정형 문어체, 볼드 강조(KPI 2,000구좌), 체크리스트, 구분선(---)이 모두 규정에 부합함을 확인",
+        "사명 오탈자 '매리츠증권'→'메리츠증권' 정정 이력이 엔티티 개요에 이미 명확히 반영되어 있음을 확인, 추가 수정 없이 최종 확정"
+      ],
+      "published_at": "2026-08-06T14:22:00+09:00"
+    },
+    {
+      "task_id": "T007",
+      "target_name": "KB차차차 > 마이데이터 연동 회원가입 캠페인",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/229212161",
+      "confluence_page_id": "229212161",
+      "refined_points": [
+        "이번 배치 신규 추가분(8/11 어뷰징 약 6,000건 확인, 8/16 네오위즈 ADID 루프홀 원인 분석)만 검수 대상으로 확인",
+        "볼드 강조·체크리스트 형식이 이미 규정에 부합하여 추가 수정 없이 최종 확정"
+      ],
+      "published_at": "2026-08-06T14:24:00+09:00"
+    },
+    {
+      "task_id": "T008",
+      "target_name": "웰컴저축은행 > 토스 캠페인",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151790",
+      "confluence_page_id": "192151790",
+      "refined_points": [
+        "이번 배치 신규 추가분(8/11 재라이브, 8월 예산 5,900만원 확정)만 검수 대상으로 확인, 방대한 기존 히스토리(2019~2022)는 재포맷하지 않고 보존",
+        "볼드 강조·구분선 형식이 이미 규정에 부합하여 추가 수정 없이 최종 확정"
+      ],
+      "published_at": "2026-08-06T14:26:00+09:00"
+    },
+    {
+      "task_id": "T009",
+      "target_name": "KB리브메이트",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/233209866",
+      "confluence_page_id": "233209866",
+      "refined_points": [
+        "읽어봄이(v3) 1차 FAILED(CONTEXT_DISTORTION) 후 총총 지시로 쓰미가 정정한 08-22 변경 프로세스 서술을 그대로 승계, 재변경하지 않음",
+        "정정된 섹션의 확정형 문어체, 볼드 강조, 체크리스트, 구분선(---), human_action_required 패널이 모두 규정에 부합함을 확인하여 추가 수정 없이 최종 확정"
+      ],
+      "published_at": "2026-08-06T14:28:00+09:00"
+    },
+    {
+      "task_id": "T010",
+      "target_name": "랭킹닭컴 > 랭킹닭컴 회원가입 CPA",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/231047178",
+      "confluence_page_id": "231047178",
+      "refined_points": [
+        "이번 배치 신규 추가분(8/16 신규오픈, 예산 1,200만원)만 검수 대상으로 확인",
+        "분류 확정 패널(panel-success)·볼드 강조·체크리스트 형식이 이미 규정에 부합하여 추가 수정 없이 최종 확정"
+      ],
+      "published_at": "2026-08-06T14:30:00+09:00"
+    },
+    {
+      "task_id": "T011",
+      "target_name": "챌스토어",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/233373697",
+      "confluence_page_id": "233373697",
+      "refined_points": [
+        "신규 페이지 '캠페인 일시 홀딩 (2022-08)' 섹션 검수: 확정형 문어체, human_action_required 패널, 체크리스트, 구분선(---)이 모두 규정에 부합함을 확인",
+        "일시 홀딩·재오픈 예정이라는 미확정 상태를 과단정 없이 그대로 서술, 추가 수정 없이 최종 확정"
+      ],
+      "published_at": "2026-08-06T14:32:00+09:00"
+    },
+    {
+      "task_id": "T012",
+      "target_name": "티모넷",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/233406465",
+      "confluence_page_id": "233406465",
+      "refined_points": [
+        "신규 페이지 '신규 분양몰 결제수단 연동 협의(댄댄) (2022-08)' 섹션 검수: 확정형 문어체, human_action_required 패널, 체크리스트, 구분선(---)이 모두 규정에 부합함을 확인",
+        "수익 구조 미확정 상태를 과단정 없이 그대로 서술, 추가 수정 없이 최종 확정"
+      ],
+      "published_at": "2026-08-06T14:34:00+09:00"
+    },
+    {
+      "task_id": "T013",
+      "target_name": "오퍼월",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151821",
+      "confluence_page_id": "192151821",
+      "refined_points": [
+        "신규 섹션 'Android 충전소 2.0 정식 릴리즈 (2022-08)' 검수: 확정형 문어체, 볼드 강조, 섹션 앞 구분선(---)이 모두 규정에 부합함을 확인",
+        "추가 수정 없이 최종 확정"
+      ],
+      "published_at": "2026-08-06T14:36:00+09:00"
+    },
+    {
+      "task_id": "T014",
+      "target_name": "DB손해보험 > 카카오페이 경유 쿠폰 발송 대행(감사제)",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955049",
+      "confluence_page_id": "191955049",
+      "refined_points": [
+        "읽어봄이(v3) 1차 FAILED(CONTEXT_DISTORTION) 후 총총 지시로 쓰미가 정정한 '별도 자사 수익(마진)은 없으나, 매출(거래량) 측면에 도움' 문구를 그대로 승계, 재변경하지 않음",
+        "정정된 섹션의 확정형 문어체, 볼드 강조, 구분선(---)이 모두 규정에 부합함을 확인하여 추가 수정 없이 최종 확정"
+      ],
+      "published_at": "2026-08-06T14:38:00+09:00"
+    },
+    {
+      "task_id": "T015",
+      "target_name": "DB금융투자",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151759",
+      "confluence_page_id": "192151759",
+      "refined_points": [
+        "신규 섹션 '순차 재라이브 및 실적 상승 (2022-08)' 검수: 확정형 문어체, 볼드 강조, 섹션 앞 구분선(---)이 모두 규정에 부합함을 확인",
+        "구체 수치 미기재 상태를 과단정 없이 그대로 서술, 추가 수정 없이 최종 확정"
+      ],
+      "published_at": "2026-08-06T14:40:00+09:00"
+    },
+    {
+      "task_id": "T016",
+      "target_name": "오퍼월",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151821",
+      "confluence_page_id": "192151821",
+      "refined_points": [
+        "신규 섹션 '매체별 경쟁사 광고 자동제외 키워드 기능 개발 (2022-08)' 검수: 확정형 문어체, 볼드 강조, 섹션 앞 구분선(---)이 모두 규정에 부합함을 확인 — T013과 동일 페이지, 두 섹션 모두 정상 분리",
+        "추가 수정 없이 최종 확정"
+      ],
+      "published_at": "2026-08-06T14:41:00+09:00"
+    },
+    {
+      "task_id": "T017",
+      "target_name": "컬처랜드 > t데이터쿠폰 판매",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192217197",
+      "confluence_page_id": "192217197",
+      "refined_points": [
+        "신규 섹션 't데이터쿠폰 판매 (2022)' 검수: 확정형 문어체, 볼드 강조, 체크리스트, 구분선(---)이 모두 규정에 부합함을 확인",
+        "브이피 페이지에 별도 반영하지 않기로 한 판단·사유가 액션 아이템에 명확히 기록되어 있음을 확인, 추가 수정 없이 최종 확정"
+      ],
+      "published_at": "2026-08-06T14:43:00+09:00"
+    },
+    {
+      "task_id": "T018",
+      "target_name": "네오위즈 > 현대백화점카드 리워드 캠페인(1개월)",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/209518599",
+      "confluence_page_id": "209518599",
+      "refined_points": [
+        "신규 섹션 '현대백화점카드 리워드 캠페인(1개월) (2022-08)' 검수: 확정형 문어체, 볼드 강조, 체크리스트, 구분선(---)이 모두 규정에 부합함을 확인",
+        "human_action_required 플래그(현대백화점카드-현대백화점 동일법인 여부 미확정)를 임의 판단 없이 그대로 유지, 추가 수정 없이 최종 확정"
+      ],
+      "published_at": "2026-08-06T14:45:00+09:00"
+    },
+    {
+      "task_id": "T019",
+      "target_name": "현대그린푸드 > 그리팅 인스타그램 회원가입 캠페인",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/219774986",
+      "confluence_page_id": "219774986",
+      "refined_points": [
+        "이번 배치 신규 추가분(8/29~9/11, 예산 400만원)만 검수 대상으로 확인, 기존 2021-06/2022-01 히스토리는 재포맷하지 않고 보존",
+        "볼드 강조·구분선 형식이 이미 규정에 부합하여 추가 수정 없이 최종 확정"
+      ],
+      "published_at": "2026-08-06T14:47:00+09:00"
+    },
+    {
+      "task_id": "T020",
+      "target_name": "마일벌스",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/233308168",
+      "confluence_page_id": "233308168",
+      "refined_points": [
+        "신규 페이지 '충전소 신규 오픈 (2022-08)' 섹션 검수: 확정형 문어체, 볼드 강조, 체크리스트, 구분선(---)이 모두 규정에 부합함을 확인",
+        "추가 수정 없이 최종 확정"
+      ],
+      "published_at": "2026-08-06T14:49:00+09:00"
+    },
+    {
+      "task_id": "T021",
+      "target_name": "KB차차차 > 마이데이터 연동 회원가입 캠페인",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/229212161",
+      "confluence_page_id": "229212161",
+      "refined_points": [
+        "이번 배치 신규 추가분(8/30~8/31 시정조치 3단계: 제휴매체 외 종료·단가하향·네이버페이 프리미엄패키지 보상성 진행)만 검수 대상으로 확인 — T007과 동일 페이지",
+        "볼드 강조로 3단계 조치가 명확히 구분 서술되어 있어 추가 수정 없이 최종 확정"
+      ],
+      "published_at": "2026-08-06T14:51:00+09:00"
+    },
+    {
+      "task_id": "T022",
+      "target_name": "피플카 > 회원가입 CPA 캠페인",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/212631553",
+      "confluence_page_id": "212631553",
+      "refined_points": [
+        "신규 섹션 '회원가입 CPA 캠페인 (2022)' 검수: 확정형 문어체, 볼드 강조(9월 예산 5,930,000원), 구분선(---)이 모두 규정에 부합함을 확인",
+        "major_category 재분류(Client→Media_Partner, 2026-07-22 Jason 확인) 이력을 재변경하지 않고 그대로 보존, 추가 수정 없이 최종 확정"
+      ],
+      "published_at": "2026-08-06T14:53:00+09:00"
+    },
+    {
+      "task_id": "T023",
+      "target_name": "SSG(신세계) (Client) > SSG.com/이마트몰 멤버십 구독 캠페인",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/231407654",
+      "confluence_page_id": "231407654",
+      "refined_points": [
+        "이번 배치 신규 추가분(9월 예산 9,600,000원, 단가 12,000원, 800건)만 검수 대상으로 확인",
+        "볼드 강조·블록쿼트 형식이 이미 규정에 부합하고, 이중역할(Media_Partner/Client) 분리 페이지 간 상호참조가 정상 유지됨을 확인하여 추가 수정 없이 최종 확정"
+      ],
+      "published_at": "2026-08-06T14:55:00+09:00"
+    },
+    {
+      "task_id": "T024",
+      "target_name": "랭킹닭컴 > 랭킹닭컴 회원가입 CPA",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/231047178",
+      "confluence_page_id": "231047178",
+      "refined_points": [
+        "이번 배치 신규 추가분(9월 예약 셋팅, 예산 20,000,000원)만 검수 대상으로 확인 — T010과 동일 페이지",
+        "볼드 강조 형식이 이미 규정에 부합하여 추가 수정 없이 최종 확정"
+      ],
+      "published_at": "2026-08-06T14:57:00+09:00"
+    },
+    {
+      "task_id": "T025",
+      "target_name": "웰컴저축은행 > 토스 캠페인",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151790",
+      "confluence_page_id": "192151790",
+      "refined_points": [
+        "이번 배치 신규 추가분(9월 예산 6,250만원, 8월 대비 증액)만 검수 대상으로 확인 — T008과 동일 페이지",
+        "볼드 강조 형식이 이미 규정에 부합하여 추가 수정 없이 최종 확정"
+      ],
+      "published_at": "2026-08-06T14:59:00+09:00"
+    }
+  ]
+}

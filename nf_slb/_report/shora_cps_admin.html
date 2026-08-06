@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쇼핑라이브 부스터 통계 & 광고주 리포트 프로토타입</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+        body { background-color: #f5f6f8; color: #333; line-height: 1.5; padding: 20px; }
+        .container { max-width: 1400px; margin: 0 auto; }
+        
+        /* Navigation Tabs */
+        .nav-tabs { display: flex; gap: 10px; margin-bottom: 20px; border-bottom: 2px solid #e0e0e0; padding-bottom: 10px; }
+        .tab-btn { padding: 12px 24px; font-size: 15px; font-weight: bold; border: none; background-color: #e9ecef; color: #495057; border-radius: 6px; cursor: pointer; transition: all 0.2s; }
+        .tab-btn.active { background-color: #03c75a; color: white; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+
+        /* Card Container */
+        .card { background: white; border-radius: 8px; padding: 24px; margin-bottom: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+        .card-title { font-size: 18px; font-weight: bold; margin-bottom: 16px; color: #111; display: flex; justify-content: space-between; align-items: center; }
+
+        /* KPI Grid */
+        .kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 24px; }
+        .kpi-card { background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 8px; padding: 16px; }
+        .kpi-label { font-size: 13px; color: #666; margin-bottom: 6px; }
+        .kpi-value { font-size: 22px; font-weight: bold; color: #111; }
+        .kpi-sub { font-size: 12px; color: #03c75a; margin-top: 4px; }
+
+        /* Filter Section */
+        .filter-section { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 20px; padding: 16px; background: #f8f9fa; border-radius: 6px; align-items: center; }
+        .filter-group { display: flex; align-items: center; gap: 8px; }
+        .filter-label { font-size: 13px; font-weight: bold; color: #495057; }
+        select, input[type="date"], input[type="text"] { padding: 8px 12px; border: 1px solid #ced4da; border-radius: 4px; font-size: 14px; }
+        .btn-search { padding: 8px 16px; background: #03c75a; color: white; border: none; border-radius: 4px; font-weight: bold; cursor: pointer; }
+
+        /* Table Styling */
+        .table-responsive { overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; font-size: 13px; text-align: right; }
+        th, td { padding: 12px 10px; border: 1px solid #e9ecef; }
+        th { background-color: #f1f3f5; color: #333; font-weight: bold; text-align: center; white-space: nowrap; }
+        th.group-header { background-color: #e9ecef; border-bottom: 2px solid #dee2e6; }
+        td.text-center { text-align: center; }
+        td.text-left { text-align: left; }
+        tr:hover { background-color: #f8f9fa; }
+        .total-row { background-color: #f1f8f5; font-weight: bold; }
+
+        /* Badge Styling */
+        .badge { display: inline-block; padding: 4px 8px; font-size: 11px; font-weight: bold; border-radius: 4px; text-align: center; }
+        .badge-success { background: #e6fcf5; color: #0ca678; }
+        .badge-warning { background: #fff9db; color: #f59f00; }
+        .badge-secondary { background: #f1f3f5; color: #868e96; }
+        .badge-primary { background: #e7f5ff; color: #1c7ed6; }
+
+        /* Header Info Box */
+        .info-header { display: flex; justify-content: space-between; border-bottom: 1px solid #eee; padding-bottom: 16px; margin-bottom: 16px; }
+        .info-meta { font-size: 14px; color: #555; }
+        .info-meta span { font-weight: bold; color: #111; margin-right: 15px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1 style="font-size: 24px; font-weight: bold; margin-bottom: 20px; color: #111;">쇼핑라이브 부스터 통합 통계 & 리포트 시스템</h1>
+
+    <!-- 탭 네비게이션 -->
+    <div class="nav-tabs">
+        <button class="tab-btn active" onclick="openTab('tab1')">리포트 2: 쇼라부 CPS 광고주 리포트</button>
+        <button class="tab-btn" onclick="openTab('tab2')">통합 통계 어드민 (쇼라부 + CPS)</button>
+    </div>
+
+    <!-- ================= TAB 1: 쇼라부 CPS 광고주 리포트 ================= -->
+    <div id="tab1" class="tab-content active">
+        <div class="card">
+            <div class="card-title">
+                <span>쇼핑라이브 부스터 CPS 성과 리포트 (종료/소진 리포트)</span>
+                <span class="badge badge-success" style="font-size: 14px;">집행 완료 (7일)</span>
+            </div>
+
+            <!-- 캠페인 기본 정보 -->
+            <div class="info-header">
+                <div class="info-meta">
+                    <span>광고주명:</span> 아로마티카 &nbsp;|&nbsp;
+                    <span>스토어명:</span> 아로마티카 공식스토어 &nbsp;|&nbsp;
+                    <span>방송 ID:</span> 817048 &nbsp;|&nbsp;
+                    <span>집행 기간:</span> 2026.04.16 ~ 2026.04.22 (7일간)
+                </div>
+                <div>
+                    <button class="btn-search" style="background: #495057;">Excel 다운로드</button>
+                </div>
+            </div>
+
+            <!-- 요약 KPI (카드) -->
+            <div class="kpi-grid">
+                <div class="kpi-card">
+                    <div class="kpi-label">총 결제 금액 (전환)</div>
+                    <div class="kpi-value">12,500,000 원</div>
+                    <div class="kpi-sub">총 320 건 결제</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-label">예상 발생 광고비 (20%)</div>
+                    <div class="kpi-value">2,500,000 원</div>
+                    <div class="kpi-sub">CAP 3,000,000원 대비 83.3% 소진</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-label">예상 ROAS</div>
+                    <div class="kpi-value">500.0 %</div>
+                    <div class="kpi-sub" style="color:#1c7ed6;">목표 ROAS 달성</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-label">고객 총 리워드 적립금 (10%)</div>
+                    <div class="kpi-value">1,250,000 원</div>
+                    <div class="kpi-sub">구매확정 시 포인트 지급</div>
+                </div>
+            </div>
+
+            <!-- 일자별 상세 성과 테이블 -->
+            <h3 style="font-size: 16px; font-weight: bold; margin-bottom: 12px;">일자별 집행 성과 상세</h3>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th rowspan="2">날짜</th>
+                            <th colspan="3" class="group-header">트래픽 / 시청 지표</th>
+                            <th colspan="5" class="group-header">구매 전환 성과 (CPS)</th>
+                            <th colspan="3" class="group-header">광고비 및 정산 요약</th>
+                        </tr>
+                        <tr>
+                            <th>뷰어 노출수</th>
+                            <th>클릭수</th>
+                            <th>시청 적립수</th>
+                            <th>CPS 참여자수</th>
+                            <th>결제 건수</th>
+                            <th>CVR</th>
+                            <th>총 결제 금액</th>
+                            <th>취소 금액</th>
+                            <th>소진 광고비 (20%)</th>
+                            <th>고객 적립금 (10%)</th>
+                            <th>정산 예정 광고비</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="total-row">
+                            <td class="text-center">합계 / 평균</td>
+                            <td>123,516</td>
+                            <td>12,350</td>
+                            <td>4,414</td>
+                            <td>4,100</td>
+                            <td>320</td>
+                            <td>2.59%</td>
+                            <td>12,500,000</td>
+                            <td>650,000</td>
+                            <td>2,500,000</td>
+                            <td>1,250,000</td>
+                            <td>2,370,000</td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">2026-04-16 (당일)</td>
+                            <td>45,200</td>
+                            <td>4,800</td>
+                            <td>1,850</td>
+                            <td>1,720</td>
+                            <td>140</td>
+                            <td>2.92%</td>
+                            <td>5,600,000</td>
+                            <td>200,000</td>
+                            <td>1,120,000</td>
+                            <td>560,000</td>
+                            <td>1,080,000</td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">2026-04-17 (D+1)</td>
+                            <td>18,500</td>
+                            <td>1,900</td>
+                            <td>620</td>
+                            <td>580</td>
+                            <td>45</td>
+                            <td>2.37%</td>
+                            <td>1,800,000</td>
+                            <td>150,000</td>
+                            <td>360,000</td>
+                            <td>180,000</td>
+                            <td>330,000</td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">2026-04-18 (D+2)</td>
+                            <td>15,100</td>
+                            <td>1,450</td>
+                            <td>480</td>
+                            <td>450</td>
+                            <td>38</td>
+                            <td>2.62%</td>
+                            <td>1,450,000</td>
+                            <td>100,000</td>
+                            <td>290,000</td>
+                            <td>145,000</td>
+                            <td>270,000</td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">2026-04-19 (D+3)</td>
+                            <td>12,800</td>
+                            <td>1,200</td>
+                            <td>410</td>
+                            <td>380</td>
+                            <td>30</td>
+                            <td>2.50%</td>
+                            <td>1,150,000</td>
+                            <td>80,000</td>
+                            <td>230,000</td>
+                            <td>115,000</td>
+                            <td>214,000</td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">2026-04-20 (D+4)</td>
+                            <td>11,200</td>
+                            <td>1,100</td>
+                            <td>380</td>
+                            <td>350</td>
+                            <td>25</td>
+                            <td>2.27%</td>
+                            <td>950,000</td>
+                            <td>50,000</td>
+                            <td>190,000</td>
+                            <td>95,000</td>
+                            <td>180,000</td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">2026-04-21 (D+5)</td>
+                            <td>10,900</td>
+                            <td>1,000</td>
+                            <td>350</td>
+                            <td>330</td>
+                            <td>23</td>
+                            <td>2.30%</td>
+                            <td>850,000</td>
+                            <td>40,000</td>
+                            <td>170,000</td>
+                            <td>85,000</td>
+                            <td>162,000</td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">2026-04-22 (D+6)</td>
+                            <td>9,816</td>
+                            <td>900</td>
+                            <td>324</td>
+                            <td>290</td>
+                            <td>19</td>
+                            <td>2.11%</td>
+                            <td>700,000</td>
+                            <td>30,000</td>
+                            <td>140,000</td>
+                            <td>70,000</td>
+                            <td>134,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- 인기 전환 상품 TOP 3 -->
+            <h3 style="font-size: 16px; font-weight: bold; margin-top: 28px; margin-bottom: 12px;">CPS 기간 내 인기 결제 상품 TOP 3</h3>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="text-center">순위</th>
+                            <th class="text-left">상품명</th>
+                            <th>결제 건수</th>
+                            <th>총 결제 금액</th>
+                            <th>고객 적립 리워드 (10%)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-center">1</td>
+                            <td class="text-left">아로마티카 대용량 샴푸 2L 세트 (로즈마리)</td>
+                            <td>182 건</td>
+                            <td>6,552,000 원</td>
+                            <td>655,200 원</td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">2</td>
+                            <td class="text-left">아로마티카 두피 헤어 토닉 2종 세트</td>
+                            <td>85 건</td>
+                            <td>3,060,000 원</td>
+                            <td>306,000 원</td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">3</td>
+                            <td class="text-left">아로마티카 서큘레이팅 바디오일 100ml</td>
+                            <td>53 건</td>
+                            <td>2,888,000 원</td>
+                            <td>288,800 원</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= TAB 2: 쇼핑라이브 부스터 통합 통계 어드민 ================= -->
+    <div id="tab2" class="tab-content">
+        <div class="card">
+            <div class="card-title">
+                <span>쇼핑라이브 부스터 통합 통계 어드민</span>
+            </div>
+
+            <!-- 검색 및 필터 영역 -->
+            <div class="filter-section">
+                <div class="filter-group">
+                    <span class="filter-label">기간:</span>
+                    <input type="date" value="2026-04-01"> ~ <input type="date" value="2026-04-30">
+                </div>
+                <div class="filter-group">
+                    <span class="filter-label">캠페인 유형:</span>
+                    <select>
+                        <option>전체 (부스터 + CPS)</option>
+                        <option>쇼핑라이브 부스터 단독</option>
+                        <option>쇼라부 CPS 연계</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <span class="filter-label">방송 상태:</span>
+                    <select>
+                        <option>전체</option>
+                        <option>방송 중 (ONAIR)</option>
+                        <option>CPS 진행 중</option>
+                        <option>집행 종료 (END)</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <input type="text" placeholder="광고주명 / 방송ID / 스토어명 검색" style="width: 220px;">
+                </div>
+                <button class="btn-search">조회</button>
+            </div>
+
+            <!-- 전체 집행 요약 KPI -->
+            <div class="kpi-grid">
+                <div class="kpi-card">
+                    <div class="kpi-label">총 집행 캠페인 수</div>
+                    <div class="kpi-value">24 건</div>
+                    <div class="kpi-sub">CPS 연계 집행 18건</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-label">총 쇼라부 PV (시청수)</div>
+                    <div class="kpi-value">1,420,500 회</div>
+                    <div class="kpi-sub">방송 중 5원 적립 중심</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-label">총 CPS 결제액</div>
+                    <div class="kpi-value">185,400,000 원</div>
+                    <div class="kpi-sub">총 4,820건 결제</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-label">총 집행 광고비 (소진)</div>
+                    <div class="kpi-value">48,250,000 원</div>
+                    <div class="kpi-sub">부스터 고정비 + CPS 20%</div>
+                </div>
+            </div>
+
+            <!-- 통합 통계 데이터 테이블 -->
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th rowspan="2">캠페인 ID</th>
+                            <th rowspan="2">방송 일시</th>
+                            <th rowspan="2" class="text-left">광고주 / 스토어명</th>
+                            <th rowspan="2">상태</th>
+                            <th colspan="3" class="group-header">쇼핑라이브 부스터 (PV)</th>
+                            <th colspan="4" class="group-header">쇼라부 CPS (전환)</th>
+                            <th colspan="2" class="group-header">광고비 현황</th>
+                        </tr>
+                        <tr>
+                            <th>방송전(1원)</th>
+                            <th>방송중(5원)</th>
+                            <th>방송후(1원)</th>
+                            <th>D+1~6 PV</th>
+                            <th>결제 건수</th>
+                            <th>총 결제 금액</th>
+                            <th>CAP 소진율</th>
+                            <th>쇼라부 광고비</th>
+                            <th>CPS 예상광고비</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-center">C20260416-01</td>
+                            <td class="text-center">04.16 19:00</td>
+                            <td class="text-left">아로마티카<br><small style="color:#777;">아로마티카 공식스토어</small></td>
+                            <td class="text-center"><span class="badge badge-secondary">집행종료</span></td>
+                            <td>12,500</td>
+                            <td>85,000</td>
+                            <td>8,200</td>
+                            <td>17,816</td>
+                            <td>320 건</td>
+                            <td>12,500,000</td>
+                            <td>83.3%</td>
+                            <td>11,000,000</td>
+                            <td>2,500,000</td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">C20260418-02</td>
+                            <td class="text-center">04.18 11:00</td>
+                            <td class="text-left">종근당건강<br><small style="color:#777;">종근당건강 락토핏</small></td>
+                            <td class="text-center"><span class="badge badge-success">CPS진행중</span></td>
+                            <td>18,200</td>
+                            <td>120,500</td>
+                            <td>11,000</td>
+                            <td>24,100</td>
+                            <td>510 건</td>
+                            <td>21,420,000</td>
+                            <td>95.2%</td>
+                            <td>15,000,000</td>
+                            <td>4,284,000</td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">C20260420-01</td>
+                            <td class="text-center">04.20 20:00</td>
+                            <td class="text-left">LG전자<br><small style="color:#777;">LG전자 브랜드스토어</small></td>
+                            <td class="text-center"><span class="badge badge-primary">ONAIR</span></td>
+                            <td>25,400</td>
+                            <td>145,000</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>85 건</td>
+                            <td>68,000,000</td>
+                            <td>45.3%</td>
+                            <td>20,000,000</td>
+                            <td>13,600,000</td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">C20260422-03</td>
+                            <td class="text-center">04.22 15:00</td>
+                            <td class="text-left">다이슨 코리아<br><small style="color:#777;">다이슨 공식 몰</small></td>
+                            <td class="text-center"><span class="badge badge-warning">방송예정</span></td>
+                            <td>3,200</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>0.0%</td>
+                            <td>15,000,000</td>
+                            <td>0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function openTab(tabId) {
+        var contents = document.querySelectorAll('.tab-content');
+        contents.forEach(function(content) {
+            content.classList.remove('active');
+        });
+
+        var buttons = document.querySelectorAll('.tab-btn');
+        buttons.forEach(function(button) {
+            button.classList.remove('active');
+        });
+
+        document.getElementById(tabId).classList.add('active');
+        event.currentTarget.classList.add('active');
+    }
+</script>
+
+</body>
+</html>

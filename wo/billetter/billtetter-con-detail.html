@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta
+            name="viewport"
+            content="user-scalable=no, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0,width=device-width">
+        <meta name="autocomplete" content="off">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="apple-mobile-web-app-capable" content="no">
+        <meta name="apple-touch-fullscreen" content="YES">
+        <link rel="stylesheet" type="text/css" href="css/style_m.css">
+        <title>빌레터콘 쿠폰교환</title>
+    </head>
+
+    <body>
+        <div id="wrap">
+            <div class="bg01 offer-coupon-detail">
+
+                <!-- 상단 바 -->
+                <header class="header" id="note-header">
+                    <button type="button" class="btn-back" onclick="history.back()"></button>
+                    <!-- 타이틀변경가능 -->
+                    <h1 class="header-title">빌레터콘</h1>
+                </header>
+
+                <!-- 메인 콘텐츠 -->
+                <!-- 썸네일 -->
+                <div class="center-container" style="display: block;">
+                <div class="bill-thum detail-thum">
+                    <img src="imgs/bill_thum_01.png" alt="sk모바일주유권"></div>
+                <div class="title-wrap">
+                <!-- 상품 브랜드 -->
+                    <p class="item-sub">sk 에너지</p>
+                <!-- 상품 타이틀 -->
+                    <p class="title-name" style="text-align: center;">sk모바일주유권 1억 5천만원권</p>
+                </div>
+                <!-- 결제 리스트 -->
+                <div class="divider"></div>
+                <main class="content-inner">
+                    <div class="detail-wrap">
+                        <!--타이틀-->
+                        <div class="item-title">결제 금액</div>
+                        <div class="detail-inner">
+                            <div class="item-row">
+                            <div class="item-name">보유 빌머니</div>
+                        <!--보유 금액-->
+                            <div class="item-point">
+                                <span class="money-hold">123,456,789</span>
+                                원</div>
+                        </div>
+                        <div class="item-row">
+                            <div class="item-sub bill-money-sub">차감 빌머니</div>
+                        <!--차감 금액-->
+                            <div class="item-point expire-point">
+                                <span class="money-used">-10,000</span>
+                                원</div>
+                        </div>
+                        <div class="divider" style="height: 1px;"></div>
+                        <div class="item-row">
+                            <div class="item-sub bill-money-sub">잔여 빌머니</div>
+                        <!--잔여 금액-->
+                            <div class="item-point" style="color: #333333;">
+                                <span class="money-info">123,456,789</span>
+                                원</div>
+                        </div>
+                        </div>
+                    </div>
+                </main>
+                <div class="divider"></div>
+                <main class="content-inner">
+                    <div class="detail-wrap">
+                        <div class="item-title">모바일 쿠폰을 받으실<br>휴대폰 번호를 입력하세요</div>
+                        <!--휴대폰 번호 입력-->
+                        <input
+                            type="tel"
+                            class="coupon-form__input"
+                            placeholder="010-0000-0000"
+                            maxlength="13"></div>
+                        <!--체크박스-->
+                    <div class="coupon-form__agree-wrap">
+                        <label class="coupon-form__checkbox-label">
+                            <input type="checkbox" class="coupon-form__checkbox">
+                            <span class="coupon-form__checkbox-text">쿠폰 발송을 위한 휴대폰 번호 수집 및 이용 동의</span>
+                        </label>
+                        <button type="button" class="coupon-form__detail-btn">
+                            <img src="imgs/arrow-right.svg" alt="상세보기"></button>
+                    </div>
+                </div>
+                </main>
+                <!-- CTA 버튼 -->
+                <!-- CTA 버튼 스타일 조정 -->
+                    <button class="btn-cta coupon-cta" id="disable" style="background-color: #412DCE;">
+                        교환하기
+                    </button>
+                <!-- 푸터 -->
+                <footer class="footer">
+                    <div class="footer__left">
+                        <p class="footer__title">PINCRUX OFFERWALL</p>
+                        <p class="footer__copy">COPYRIGHT © PINCRUX</p>
+                    </div>
+                    <div class="footer__right">
+                        <a href="#" class="footer__link">이용문의 및 약관</a>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>
