@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>주간 업무 공유</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body class="in-iframe">
+
+<!-- 편집 툴바 -->
+<div class="edit-toolbar">
+  <button class="edit-btn" id="editToggle" onclick="toggleEdit()">✏️ 편집 모드</button>
+  <span class="edit-notice">클릭하여 직접 수정 → 전체 선택(Ctrl+A) 후 복사하여 메일에 붙여넣기</span>
+</div>
+
+<script>
+const EDITABLE_SEL = [
+  '.report-title', '.report-meta',
+  '.hl-row span:last-child',
+  '.item', '.tag-line',
+  '.jira-name', '.jira-owner',
+  '.jira-summary', '.section-title'
+].join(', ');
+
+function toggleEdit() {
+  const body = document.body;
+  const btn = document.getElementById('editToggle');
+  const isEdit = body.classList.toggle('edit-mode');
+  btn.classList.toggle('active', isEdit);
+  btn.textContent = isEdit ? '✅ 편집 완료' : '✏️ 편집 모드';
+  document.querySelectorAll(EDITABLE_SEL).forEach(el => {
+    el.contentEditable = isEdit ? 'true' : 'false';
+  });
+}
+</script>
+
+<!-- 헤더 -->
+<div class="report-header">
+  <div class="report-title editable"></div>
+  <div class="report-meta editable"></div>
+</div>
+
+<!-- 섹션 1: 주요 이슈 및 성과 -->
+<div class="section">
+  <div class="section-title">1. 금주 주요 이슈 및 성과</div>
+  <div id="section-highlights"></div>
+</div>
+
+<!-- 섹션 2: 쇼핑플러스 -->
+<div class="section">
+  <div class="section-title">2. 쇼핑플러스 제휴처 영업 및 개발 현황</div>
+  <div id="section-shopping-plus"></div>
+</div>
+
+<!-- 섹션 3: 리워드앱 -->
+<div class="section">
+  <div class="section-title">3. 리워드앱 개발 현황 및 이슈</div>
+  <div id="section-reward-app"></div>
+</div>
+
+<!-- 섹션 4: 쇼핑라이브 CPS -->
+<div class="section">
+  <div class="section-title">4. 쇼핑라이브 부스터 CPS</div>
+  <div class="text-block" id="section-shopping-live-cps"></div>
+</div>
+
+<!-- 섹션 5: 광고플랫폼 -->
+<div class="section">
+  <div class="section-title">5. 광고플랫폼 개발 현황</div>
+  <div class="text-block" id="section-ad-platform"></div>
+</div>
+
+<!-- 섹션 6: 다음주 예정 -->
+<div class="section">
+  <div class="section-title">6. 다음주 주요 예정 사항</div>
+  <table class="jira-table" style="margin-top:4px;">
+    <thead>
+      <tr>
+        <th>항목</th>
+        <th>예정 일자</th>
+        <th>담당</th>
+      </tr>
+    </thead>
+    <tbody id="section-next-week-body"></tbody>
+  </table>
+</div>
+
+<!-- 프로젝트 현황 -->
+<div class="section">
+  <div class="section-title">프로젝트 현황</div>
+  <div class="jira-summary" id="jira-summary"></div>
+
+  <table class="jira-table">
+    <thead>
+      <tr>
+        <th>구분</th>
+        <th>프로젝트명</th>
+        <th>상태</th>
+        <th>담당자</th>
+        <th>비고</th>
+      </tr>
+    </thead>
+    <tbody id="jira-table-body"></tbody>
+  </table>
+</div>
+
+<script src="../assets/render.js"></script>
+<script>
+const DATA = {
+  "week": "2026-W32",
+  "period": "2026-07-31 ~ 2026-08-06",
+  "generated_at": "2026-08-06T18:00:00",
+  "subject": "[8월 1주] 기획파트 주간 업무 공유",
+  "to": "jyjeong@pincrux.com",
+  "cc": "pl@pincrux.com",
+  "highlights": [  
+    { "badge": "완료", "content": "카카오페이지 쇼핑플러스 및 게임 오퍼월 개발 완료" },
+    { "badge": "완료", "content": "겸사겸사 앱 1.0.18 정식 배포 완료(7/29), 삼프로캐시 1.0.4 심사완료·출시대기(마감 7/31)" },
+    ":",
+    "KT 내부 개발 오나료 매체사 연동"
+   ],
+  "sections": {
+    "shopping_plus": {
+      "advertisers": [
+        "나스미디어(오늘의집·SSG·이마트몰·마켓컬리·마이리얼트립): 오늘의집 3.4%->4.0%, SSG/이마트몰 2.8% -> 3.1%, 마켓컬리 3.9% -> 4.6%",
+        "에이블리(PL-105, 중개 API·시럽 PL-9에서 분리): 기획완료 → 개발 단계 진입",
+        "LS증권: 쇼핑플러스 신규버전 및 추가 광고주 제안 메일 발송 [신규]"
+      ],
+      "media": [
+        "키움증권:",
+        "ㄴ 쿠팡 50만원 한도 적용(PL-91) 개발완료 유지 — 담당자 변경(서민수 과장) 확인 완료, 반영일자 리마인드 필요",
+        "ㄴ 6월분 개인신용정보 파기확인서 법인인감 날인 및 발송 완료, 7월분 매월 초 정례 대응 지속",
+        "빗썸(PL-109, 쇼핑플러스 연동·쿠팡 제외): 기획완료 100% 유지, 수수료율 3.3% 확정 후 매체측 내부 의사결정 대기 지속(변동 없음)",
+        "PASS(오버테이크, PL-8): 개발완료 전환 — 3개 통신사 대상 포스트백 테스트 진행 중(~8/7)",
+        "카카오페이지(PL-10): 개발완료 전환 — 게임 오퍼월 DT버전 스테이징 배포 완료, 마감 8/3 경과 후 개발완료 처리",
+        "부산은행(PL-61): 개발완료 — 3사(삼성·DB·KB) 광고심의 최종완료(7/30), 자동차보험 가입건은 '광고대행수수료' 항목으로 합산 처리 확정, 서비스 오픈일정 8/12 확정 [완료]",
+        "우리투자증권: N+스토어 수수료율 1.7%(6개월)→1.5%(1년) 변경 합의 완료, 계좌개설 CPA 진행 위한 부속계약서 송부, 소수점 구매 연동 신규 제안(PL-124) 컨셉 논의 착수",
+        "KT M모바일(PL-30): 9/1 오픈 목표로 매체 개발중, KT FTP 시스템 테스트 일정이 정해지지 않아서 최종 일정 미확정(내부 개발은 완료됨)"
+      ]
+    },
+    "reward_app": {
+      "geomsa": [
+        "일일 미션(PL-14): 기획 30%, 참여율 대비 수익 분석 진행 중",
+        "오퍼월·쇼핑플러스 재화 소멸(PL-111): 기획 40%",
+        "[리워드앱] 랜덤게임(PL-122, 신규): 기획 30% — 게임별 상세정책·진입점 설계·수익 시뮬레이션·보상형 광고 정책 재검증 진행 중, 진행률 상승 속도 빠름",
+        "부적절 광고 신고하기 기능(PL-118): 기획 50% — 마감 8/6 → 8/14 연장 [일정변경, 사유: PL-126 급건 업무 우선 수행]",
+        "[쇼핑플러스] 쿠팡용 재화 신설(PL-126, 신규·우선순위 긴급): 8/6 신규 착수, 레퍼런스 확보 및 정책 제안 작성 중",
+        "사행성 방지 문구 추가: 당첨화면·참여방법 문구 100% 완료",
+        "미니게임 신규기능: 진행률 50% — 게임 상세페이지 레이아웃 및 출석체크 API 연동 테스트 진행 중",
+      ],
+      "samproCash": [
+        "[삼프로캐시 특화] 금융투자상품권 주당등록제한 안내 기획(PL-117): 기획완료 100% — 개발요청 등록·QA 완료, 8/5 운영배포",
+        "DB증권 금융투자상품권 제휴: 마케팅업무대행 부속계약서 수정본 내부검토 완료, DB증권측 진행요청 전달 — 법무검토 단계 [협의중]",
+        "캐시탭 상점 진입지점 UX 개선: 이용자 피드백 반영해 개선방향 논의 중, 디자인 시안 검토 진행 — 배치안 미확정",
+        "캐시뽑기 교환소(겸사겸사 공용기능): 개발 90% — 앱 반영 목표 8/7(금)",
+      ],
+      "parpuuri": [
+        "[파뿌리TV] 앱 개발(PL-112): 할일 단계 유지, 착수 일정 미정"
+      ]
+    },
+    "shopping_live_cps": [
+      "네이버페이(NF) 쇼핑라이브 부스터 CPS(PL-92): 개발완료 — QA 마감 8/7, 8/10 배포 → 8/11 가오픈 → 8/12 오픈 확정",
+      "쇼라부-리워드 랜덤지급(PL-106): 기획완료 → 개발 단계 진입",
+      "쇼핑라이브 CPS 통계 및 리포트(PL-125, 신규): 기획완료 — 리포트 발송시점·정산주기 협의 중"
+    ],
+    "ad_platform": [
+      "[빌레터] 모바일 웹 커스텀 충전소(PL-35): 개발완료 — 8/5 10시 오픈 완료",
+      "[한게임] PC오퍼월(PL-65): 개발완료 — 매체측 세팅 대기",
+      "[WEB/PC오퍼월] 적립 암호화·프리미엄 타입(PL-108): 기획 진입 — 프리미엄 타입 적용 시 광고 노출 감소 우려로 리스트형·배너형 병행 방안 검토 중 [펜딩성]",
+      "애드네트워크 appkey 테이블 삭제 배치(PL-74): 착수 지연 — 인력 우선순위 문제로 진행률 정체(2%), 마감 8/14",
+      "[원스토어] 웹 오퍼월 연동(PL-6): 할일 단계 유지"
+    ],
+    "next_week": [
+      { "item": "KT M모바일 회원정보 동기화 API 운영 배포", "date": "8/7(금)", "owner": "thomas" },
+      { "item": "행운스크래치·뽑기권 교환소 앱 반영 완료", "date": "8/7(금)", "owner": "jimmy/damon" },
+      { "item": "네이버페이 쇼라부 CPS·슈퍼적립 배포~오픈", "date": "8/10~8/12", "owner": "Jason/bliss" },
+      { "item": "부산은행 쇼핑플러스/자동차보험 서비스 오픈", "date": "8/12", "owner": "Jason/frank" }
+    ]
+  },
+  "jira_pipeline": {
+    "total": 64,
+    "summary": "기준일: 2026년 8월 6일 | 전체 64건 | 개발완료 9 / 개발 12 / 디자인완료 2 / 디자인 1 / 기획완료 14 / 기획 11 / 할일 15",
+    "items": [
+      { "key": "PL-110", "category": "공통", "name": "리워드앱 포인트 소멸안내 기획", "status": "할 일", "owner": "홍세림", "note": "" },
+      { "key": "PL-112", "category": "리워드앱", "name": "[파뿌리TV] 앱 개발", "status": "할 일", "owner": "임한애", "note": "" },
+      { "key": "PL-121", "category": "리워드앱", "name": "행운스크래치 개선", "status": "할 일", "owner": "홍세림", "note": "[신규]" },
+      { "key": "PL-126", "category": "쇼핑플러스", "name": "[쇼핑플러스] 쿠팡용 재화 신설", "status": "할 일", "owner": "홍세림", "note": "[신규] 우선순위 긴급, 8/6 착수" },
+      { "key": "PL-4", "category": "플랫폼", "name": "유튜브 CPA 광고", "status": "할 일", "owner": "임한애", "note": "" },
+      { "key": "PL-49", "category": "어드민", "name": "커머스 어드민 보안 대응", "status": "할 일", "owner": "zepeto", "note": "" },
+      { "key": "PL-6", "category": "플랫폼", "name": "[원스토어] 웹 오퍼월 연동", "status": "할 일", "owner": "지리산", "note": "" },
+      { "key": "PL-64", "category": "플랫폼", "name": "[SBI] 오퍼월 연동", "status": "할 일", "owner": "정빈희", "note": "" },
+      { "key": "PL-70", "category": "쇼핑플러스", "name": "[마리트] CPS 연동 개발(구매/구매확정)", "status": "할 일", "owner": "지리산", "note": "[신규]" },
+      { "key": "PL-81", "category": "리워드앱", "name": "뽑기권 API&배치 개발", "status": "할 일", "owner": "미배정", "note": "[신규]" },
+      { "key": "PL-87", "category": "리워드앱", "name": "행운스크래치 API 개발", "status": "할 일", "owner": "미배정", "note": "[신규]" },
+      { "key": "PL-88", "category": "리워드앱", "name": "행운스크래치 앱 개발", "status": "할 일", "owner": "미배정", "note": "[신규]" },
+      { "key": "PL-96", "category": "리워드앱", "name": "[겸사겸사] 호드 웹 광고 적용(CPP)", "status": "할 일", "owner": "홍세림", "note": "" },
+      { "key": "PL-97", "category": "리워드앱", "name": "[겸사겸사] 승부 예측", "status": "할 일", "owner": "임한애", "note": "[펜딩]" },
+      { "key": "PL-99", "category": "리워드앱", "name": "[애드매니저 도입 검토]", "status": "할 일", "owner": "홍세림", "note": "기획20%, 변동없음 지속" },
+      { "key": "PL-108", "category": "플랫폼", "name": "[WEB오퍼월] 적립 암호화, 프리미엄 타입", "status": "기획", "owner": "지리산", "note": "할일→기획, 리스트형·배너형 병행 검토 [펜딩성]" },
+      { "key": "PL-111", "category": "리워드앱,쇼핑플러스", "name": "[오퍼월, 쇼핑플러스] 재화 소멸", "status": "기획", "owner": "임한애", "note": "기획40%, 변동없음" },
+      { "key": "PL-12", "category": "리워드앱", "name": "[겸사겸사] 구매적립 특정상품 다이렉트 진입(통계)", "status": "기획", "owner": "지리산", "note": "" },
+      { "key": "PL-122", "category": "리워드앱", "name": "[리워드앱] 랜덤게임", "status": "기획", "owner": "임한애", "note": "[신규] 기획30%, 빠른 진행" },
+      { "key": "PL-124", "category": "리워드앱", "name": "[우리투자증권] 소수점 구매 연동(제안)", "status": "기획", "owner": "지리산", "note": "[신규] 컨셉 논의, 상위보고 검토중" },
+      { "key": "PL-13", "category": "리워드앱", "name": "[겸사겸사] 파트너스 추천인 코드(B2B)", "status": "기획", "owner": "홍세림", "note": "" },
+      { "key": "PL-14", "category": "리워드앱", "name": "[겸사겸사] 일일 미션", "status": "기획", "owner": "임한애", "note": "기획30%" },
+      { "key": "PL-16", "category": "리워드앱", "name": "친구추천 고도화(카톡으로 보내기)", "status": "기획", "owner": "홍세림", "note": "기획5%, 마감연장(급건우선) [일정변경]" },
+      { "key": "PL-7", "category": "플랫폼", "name": "[애드팝콘] 미니미니박스, 겸사겸사 컨텐츠형 광고", "status": "기획", "owner": "임한애", "note": "할일→기획" },
+      { "key": "PL-75", "category": "쇼핑플러스", "name": "[키움] 쿠팡 ADID 연동", "status": "기획", "owner": "지리산", "note": "기획30% 유지 [펜딩]" },
+      { "key": "PL-69", "category": "쇼핑플러스", "name": "[트립닷컴] 구매확정 추가 개발", "status": "기획완료", "owner": "지리산", "note": "기획완료 유지(9월 개발 이동 중 상태값 오표기 정정)" },
+      { "key": "PL-109", "category": "쇼핑플러스", "name": "[빗썸] 쇼핑플러스 연동(쿠팡 제외)", "status": "기획완료", "owner": "지리산", "note": "수수료율3.3% 확정, 매체 의사결정 대기" },
+      { "key": "PL-116", "category": "리워드앱", "name": "[only 웹개발] 서브토픽 개선 개발", "status": "기획완료", "owner": "홍세림", "note": "[신규]" },
+      { "key": "PL-117", "category": "리워드앱", "name": "[삼프로캐시 특화] 금융투자상품 주당등록제한 안내 기획", "status": "기획완료", "owner": "홍세림", "note": "할일→기획완료, 8/5 운영배포" },
+      { "key": "PL-119", "category": "리워드앱", "name": "[출석체크 수정]", "status": "기획완료", "owner": "홍세림", "note": "[신규]" },
+      { "key": "PL-120", "category": "리워드앱", "name": "[리워드앱 공통] FAQ신설", "status": "기획완료", "owner": "홍세림", "note": "[신규] [완료]" },
+      { "key": "PL-125", "category": "플랫폼", "name": "[쇼핑라이브] CPS 통계 및 리포트", "status": "기획완료", "owner": "미배정", "note": "[신규]" },
+      { "key": "PL-15", "category": "리워드앱", "name": "[겸사겸사] 미니게임", "status": "기획완료", "owner": "임한애", "note": "변동없음" },
+      { "key": "PL-19", "category": "리워드앱", "name": "[삼프로] 주식 예측", "status": "기획완료", "owner": "홍세림", "note": "" },
+      { "key": "PL-20", "category": "리워드앱", "name": "[겸사겸사] 쇼핑플러스 프로모션(+1%)", "status": "기획완료", "owner": "홍세림", "note": "" },
+      { "key": "PL-21", "category": "리워드앱", "name": "[겸사겸사] 게임 오퍼월(웹)", "status": "기획완료", "owner": "홍세림", "note": "" },
+      { "key": "PL-22", "category": "리워드앱", "name": "[겸사겸사] 푸시 알림 추가(수동)", "status": "기획완료", "owner": "홍세림", "note": "" },
+      { "key": "PL-79", "category": "리워드앱", "name": "[겸사겸사] 당첨자 후기", "status": "기획완료", "owner": "홍세림", "note": "" },
+      { "key": "PL-93", "category": "리워드앱", "name": "[겸사겸사 특화] 당첨인증 안내 추가", "status": "기획완료", "owner": "홍세림", "note": "" },
+      { "key": "PL-95", "category": "리워드앱", "name": "[리워드앱 공통] CI수집 정책 폐기 회원전환", "status": "기획완료", "owner": "홍세림", "note": "드림시큐리티 회신 대기 지속" },
+      { "key": "PL-67", "category": "쇼핑플러스", "name": "확정 대기 추가 개발", "status": "디자인", "owner": "지리산", "note": "디자인90%, LGE·트립닷컴·마리트 대상" },
+      { "key": "PL-28", "category": "리워드앱", "name": "알림 센터", "status": "디자인완료", "owner": "홍세림", "note": "" },
+      { "key": "PL-29", "category": "리워드앱", "name": "[겸사겸사] 퀴즈적립", "status": "디자인완료", "owner": "홍세림", "note": "" },
+      { "key": "PL-105", "category": "쇼핑플러스", "name": "[에이블리] 중개 API", "status": "개발", "owner": "지리산", "note": "기획완료→개발" },
+      { "key": "PL-106", "category": "플랫폼", "name": "[쇼핑라이브] 쇼라부-리워드 랜덤 지급", "status": "개발", "owner": "지리산", "note": "기획완료→개발" },
+      { "key": "PL-18", "category": "리워드앱", "name": "[공통] 메인 공지 팝업 기능", "status": "개발", "owner": "홍세림", "note": "" },
+      { "key": "PL-23", "category": "리워드앱", "name": "[겸사겸사] 보너스 미션 UI 개편", "status": "개발", "owner": "홍세림", "note": "100% 완료, 코드롤백 이슈 후속과제화" },
+      { "key": "PL-24", "category": "리워드앱", "name": "[겸사겸사] 뽑기권 교환소 재화 추가", "status": "개발", "owner": "홍세림", "note": "90%, 앱반영목표 8/7" },
+      { "key": "PL-25", "category": "리워드앱", "name": "[겸사겸사] 행운스크래치", "status": "개발", "owner": "홍세림", "note": "90%, 앱반영목표 8/7" },
+      { "key": "PL-30", "category": "쇼핑플러스", "name": "[KT M모바일] 쇼핑플러스(플러스콘+통신비할인)", "status": "개발", "owner": "지리산", "note": "이슈해소, 8/7 오전 운영배포예정 [완료 임박]" },
+      { "key": "PL-31", "category": "리워드앱", "name": "[겸사겸사] 게임 오퍼월 추가 적용", "status": "개발", "owner": "홍세림", "note": "" },
+      { "key": "PL-72", "category": "플랫폼", "name": "GS엠비즈 쿠폰API", "status": "개발", "owner": "정빈희", "note": "[신규]" },
+      { "key": "PL-73", "category": "쇼핑플러스", "name": "[나스미디어] CPS 연동", "status": "개발", "owner": "지리산", "note": "[신규]" },
+      { "key": "PL-74", "category": "플랫폼", "name": "애드네트워크 appkey 테이블 삭제 배치 대응", "status": "개발", "owner": "정빈희", "note": "[신규] 착수지연, 마감8/14" },
+      { "key": "PL-9", "category": "쇼핑플러스", "name": "[시럽] LG전자 연동", "status": "개발", "owner": "정빈희", "note": "" },
+      { "key": "PL-10", "category": "쇼핑플러스", "name": "[카카오페이지] 쇼핑, 게임 오퍼월 적용", "status": "개발완료", "owner": "지리산", "note": "개발→개발완료 [완료]" },
+      { "key": "PL-32", "category": "리워드앱", "name": "[삼프로] 기본 구성+쇼핑몰", "status": "개발완료", "owner": "홍세림", "note": "" },
+      { "key": "PL-35", "category": "플랫폼", "name": "[빌레터] 모바일 웹 커스텀 충전소", "status": "개발완료", "owner": "지리산", "note": "8/5 오픈 완료 [완료]" },
+      { "key": "PL-37", "category": "쇼핑플러스", "name": "플러스콘A버전(쿠팡 전용 포인트·매체사용)", "status": "개발완료", "owner": "홍세림", "note": "" },
+      { "key": "PL-61", "category": "쇼핑플러스,플랫폼", "name": "부산은행 쇼핑플러스/자동차보험", "status": "개발완료", "owner": "지리산", "note": "오픈일정 8/12 확정 [완료]" },
+      { "key": "PL-65", "category": "플랫폼", "name": "[한게임] PC 오퍼월", "status": "개발완료", "owner": "지리산", "note": "개발→개발완료, 매체 세팅대기 [완료]" },
+      { "key": "PL-8", "category": "쇼핑플러스", "name": "[PASS] 쇼핑플러스 일반버전 연동(쿠팡 X)", "status": "개발완료", "owner": "지리산", "note": "개발→개발완료 [완료]" },
+      { "key": "PL-91", "category": "쇼핑플러스", "name": "쿠팡 50만원 한도 적용", "status": "개발완료", "owner": "지리산", "note": "담당자 변경 확인, 반영일자 리마인드 필요" },
+      { "key": "PL-92", "category": "플랫폼", "name": "[쇼핑라이브] 부스터 CPS", "status": "개발완료", "owner": "지리산", "note": "8/10 배포→8/12 오픈 확정 [완료]" }
+    ]
+  }
+};
+
+renderReport(DATA);
+</script>
+
+</body>
+</html>
