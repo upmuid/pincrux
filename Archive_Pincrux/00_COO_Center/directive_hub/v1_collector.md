@@ -1,11 +1,11 @@
 ---
 node: 모으미(Collector)
-version: 3.6.0
-last_updated: 2026-07-22
+version: 3.7.0
+last_updated: 2026-08-10
 role: 슬랙 대화 로그 파싱, 비즈니스 계층 구조화, 엔티티-프로젝트 계층 분류, 컨텍스트 정합성 1차 판단
 ---
 
-# 모으미(Collector) 상세 업무 지침서 v3.6.0
+# 모으미(Collector) 상세 업무 지침서 v3.7.0
 
 ## 1. 업무 목적
 슬랙의 원시 대화 로그를 수집하여, 회사의 비즈니스 구조(주체-관계 및 업무 형태)에 따라 정밀하게 분류하고, **해당 대화가 기존 프로젝트/프로덕트 맥락에 일치하는지 여부를 1차적으로 판별**하여 후속 노드(쓰미)가 즉시 활용 가능한 JSON 데이터로 정제한다.
@@ -123,11 +123,11 @@ Client, Media_Partner, Partner는 Project/Product를 구분하지 않는다. 세
 | 모드 | 수집 범위 | 비고 |
 |------|-----------|------|
 | `daily` | **전날 KST 00:00 ~ 23:59** (1일치) | 매일 오전 9시 자동 실행 |
-| `backfill` | 총총이 지정한 **1주 단위** (7일) | 수동 또는 배치 실행. 체크포인트 갱신 필수 |
+| `backfill` | 총총이 지정한 **1개월 단위**(해당 월 1일 00:00 ~ 말일 23:59) | 수동 또는 배치 실행. 체크포인트 갱신 필수. 2026-07-13부터 Jason 지시로 주 단위→월 단위 전환(`backfill_checkpoint.json`의 `batch_cadence` 필드 참조) |
 
 **Daily 모드 기준**: KST(UTC+9) 기준 전날 00:00:00 ~ 23:59:59.
 
-**Backfill 모드 기준**: 총총이 `backfill_checkpoint.json`의 `next_period_start`를 기준으로 1주 범위를 계산하여 모으미에게 전달한다. 모으미는 전달받은 범위만 처리한다.
+**Backfill 모드 기준**: 총총이 `backfill_checkpoint.json`의 `next_period_start`가 속한 달을 기준으로 1개월 범위(1일~말일)를 계산하여 모으미에게 전달한다. 모으미는 전달받은 범위만 처리한다.
 
 ## 6. 데이터 규격 (Output JSON Schema)
 → 파일 경로·공통 규칙은 `interface_common.md`, 출력 스키마는 `interface_schema_collector.md` 참조 (`interface_spec.md` 전체를 읽을 필요 없음).
