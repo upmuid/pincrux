@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.1",
+  "node": "validator",
+  "run_date": "2019-11-14",
+  "source_files": {
+    "collector": "Archive_Pincrux/01_Collector/2019-11-14.json",
+    "writer": "Archive_Pincrux/02_Writer/2019-11-14.json"
+  },
+  "node_status": "success",
+  "review_summary": {
+    "total_reviewed": 5,
+    "passed_cnt": 5,
+    "failed_cnt": 0,
+    "slack_reread_cnt": 5
+  },
+  "validation_results": [
+    {
+      "task_id": "T001",
+      "target_name": "KB증권 > 롯데홈쇼핑",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/198279169/KB",
+      "confluence_page_id": "198279169",
+      "slack_reread": true,
+      "slack_reread_trigger": "전체 permalink 대조 검증(4건: p1572920978045100, p1572921005045700, p1573005861047400, p1573006631054900)",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "4개 permalink 전수 대조 결과 인용문·발신자(정회훈) 모두 원문과 정확히 일치. 컨플루언스는 '11월 미집행' 언급을 확정 결정이 아닌 (미확정) 가능성으로 정확히 표기하여 왜곡 없음. 액션아이템 3건 매핑 일치."
+    },
+    {
+      "task_id": "T002",
+      "target_name": "KB증권",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/198279169/KB",
+      "confluence_page_id": "198279169",
+      "slack_reread": true,
+      "slack_reread_trigger": "전체 permalink 대조 검증(3건: p1573605541065800, p1573605632067000, p1573605758068300)",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "3개 permalink 전수 대조 결과 정회훈·고현복 발화 인용 정확히 일치. 카카오페이 중도 이탈 가능성이 미확정 사항으로 정확히 반영됨. 액션아이템 3건 매핑 일치."
+    },
+    {
+      "task_id": "T003",
+      "target_name": "미래에셋대우",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955009",
+      "confluence_page_id": "191955009",
+      "slack_reread": true,
+      "slack_reread_trigger": "context_status: matched이나 병합 히스토리 보존 여부 특별 검증 대상 + permalink 대조(p1572853715009400)",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "정회훈 발화 원문과 인용 정확히 일치. '11/1 라이브 매체수 감소 우려' 기존 섹션에 신규 섹션 생성 없이 후속 병합됨을 확인. 기존 10/18·10/24·10/31 히스토리 및 액션아이템 손실 없이 보존, 11/4 카카오페이·캐시슬라이드 사유가 순서대로 이어붙음. DATA_LOSS/OVERWRITE_ERROR 없음."
+    },
+    {
+      "task_id": "T004",
+      "target_name": "PINCRUX > 멤버십 팬 서비스(CJE&M·다이아)",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "slack_reread": true,
+      "slack_reread_trigger": "여러 발신자·다중 permalink 정합성 전체 대조(7건: p1573546632005000/김판근, p1573695573007200/김지훈, p1573700027015300/서정철, p1573707247016100/지리산, p1573717105016400/김상원, p1573717976017200/지리산, p1573718384017600/김지훈)",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "7개 permalink 전수 대조 결과 발신자·인용문 모두 원문과 일치(단, 01_Collector JSON 원문 인용 중 '인플루언서 어필리케이션'은 실제 슬랙 원문 '어플리케이션'의 오탈자이나 컨플루언스 페이지에는 정확한 표기로 반영되어 최종 산출물에는 영향 없음). 10월 '멤버십 커뮤니티(가칭)' 히스토리(80% 완료 등)가 삭제되지 않고 보존된 채 [명칭 확정 이력] 안내와 함께 11-12~11-14 신규 내용이 이어붙음. 개인정보 수집정책 4개 항목(회원가입/팬심충전소/굿즈구매/할인쿠폰)이 서정철·지리산 원문과 정확히 일치. DATA_LOSS 없음."
+    },
+    {
+      "task_id": "T005",
+      "target_name": "PINCRUX > 포인트 통합 쇼핑몰(가칭)",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "slack_reread": true,
+      "slack_reread_trigger": "context_status: new — 신규 페이지/섹션이므로 슬랙 원본 필수 확인 + 정정된 permalink(p1572851064038800) 및 DM 채널(DPDRHKYL9) 2019-11-04 15:33~18:13 전체 대화 재확인 (COO 정정 후 재검증)",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "COO 정정 조치 재검증 완료. 01_Collector(T005) decision 필드의 인용구가 '포인트를 두루 사용하게 되면 저희 입장에서는 좋긴 할텐데'로 정정되었으며, DM 채널(DPDRHKYL9) 재조회 결과 해당 발화는 2019-11-04 16:04:24 KST, 발신자 지리산(jason@pincrux.com, UPL8YRP96), permalink https://pincrux.slack.com/archives/DPDRHKYL9/p1572851064038800 에서 워딩·발신자·타임스탬프 모두 정확히 일치함을 확인함. 컨플루언스 PINCRUX 페이지(191987714) '포인트 통합 쇼핑몰(가칭)' 섹션의 의사결정 사항 문단도 '(2026-07-09 정정)' 표기와 함께 동일 인용구·permalink로 정확히 반영되어 있으며, 정정 이력 문구('이전 버전에 기재된... 원문과 워딩·발신자가 달라 위 문구로 정정함')도 명시되어 투명성 확보됨. 이전 FAILED 사유였던 출처 불명 인용문 문제가 해소됨. 김지훈의 CPS 쇼핑몰 아이디어 및 BM 구조 설명, '방향 미확정' 서술 등 나머지 내용은 이전 검증에서 이미 원문과 일치 확인된 부분으로 변경 없음. DATA_LOSS/OVERWRITE_ERROR 없음."
+    }
+  ]
+}

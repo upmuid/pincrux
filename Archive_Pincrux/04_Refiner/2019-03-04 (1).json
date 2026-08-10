@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.1",
+  "node": "refiner",
+  "run_date": "2019-03-04",
+  "run_mode": "backfill",
+  "period": "2019-02-19 to 2019-03-04",
+  "node_status": "success",
+  "published_at": "2026-06-28T04:05:00Z",
+  "pages_published": [
+    {
+      "entity_name": "페이앤드",
+      "confluence_page_id": "192053250",
+      "confluence_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192053250",
+      "version": 8,
+      "polish_actions": [
+        "슬랙 구어체 잔재 없음 — 기존 문어체 기준 충족",
+        "의사결정 사항 전체 볼드체 적용 확인",
+        "액션 아이템 체크리스트 형식 정상",
+        "h2/h3 계층 구조 일관성 확인",
+        "마크다운 문법 오류 없음"
+      ],
+      "status": "published"
+    },
+    {
+      "entity_name": "DB손해보험",
+      "confluence_page_id": "191955049",
+      "confluence_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955049",
+      "version": 7,
+      "polish_actions": [
+        "구어체 교정 확인 — '효율이 망가져서 쉬었다가 재개' → '효율 저하로 일시 중단 후 재개 예정' 반영됨",
+        "의사결정 사항 전체 볼드체 적용 확인",
+        "액션 아이템 체크리스트 형식 정상",
+        "h2/h3 계층 구조 일관성 확인",
+        "마크다운 문법 오류 없음"
+      ],
+      "status": "published"
+    }
+  ],
+  "summary": {
+    "total_pages": 2,
+    "published": 2,
+    "failed": 0
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.1",
+  "node": "refiner",
+  "run_date": "2019-09-14",
+  "source_file": "Archive_Pincrux/03_Validator/2019-09-14.json",
+  "node_status": "success",
+  "refinement_summary": {
+    "total_tasks": 5,
+    "pages_updated": 1,
+    "style_corrections": 1,
+    "hallucination_check": "PASS — 5건 전체에서 수치·일정·의사결정 사항 변경 없음. T001/T002(미래에셋대우, 방금 분리된 두 섹션)·T003(웰컴저축은행, 출처 재표기 섹션)·T004(티켓모아 명칭변경 섹션)를 이번 실행 정정분으로 한정하여 중점 재검수함. T002 섹션에서 '동일 캠페인 여부 판단 근거' 서술이 중첩 괄호를 포함한 장문 단일 문장으로 되어 있어 3개 문장으로 분리하는 가독성 교정 1건을 수행(컨플루언스 191955009 페이지 업데이트, 사실관계·날짜·수치 변경 없음). T001·T003·T004는 이미 비즈니스 문어체, 볼드체 강조, 체크리스트 형식이 정확히 적용되어 있어 추가 교정 없이 확인만 수행. T005는 이번 실행 정정 대상이 아니며 기존 승인 내용을 그대로 승계."
+  },
+  "published_tasks": [
+    {
+      "task_id": "T001",
+      "target_name": "미래에셋대우 > 주식거래수수료 무료 이벤트",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955009",
+      "confluence_page_id": "191955009",
+      "refined_points": [
+        "T002와 분리된 '전체 매체 종료 및 재라이브 준비 (2019-09)' 독립 섹션만 검수 대상으로 한정",
+        "종료 사유·일자(9/3 증권업협회 공문, 삼성페이 9/3 10시 종료)와 재라이브 예정 문구가 이미 볼드체로 명확히 강조되어 있어 추가 교정 없이 확인만 수행",
+        "액션 아이템 3건이 이미 체크리스트 형식(완료 1건 체크 포함)으로 반영되어 있음을 확인"
+      ],
+      "published_at": "2026-07-07T00:00:00+09:00"
+    },
+    {
+      "task_id": "T002",
+      "target_name": "미래에셋대우 > 이벤트 소재 진행일자 수정",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955009",
+      "confluence_page_id": "191955009",
+      "refined_points": [
+        "T001과 분리된 '이벤트 소재 진행일자 수정 (2019-09)' 독립 섹션만 검수 대상으로 한정",
+        "'개요 및 배경' 중 T001과의 동일 캠페인 여부 판단 근거를 서술한 중첩 괄호 포함 장문 단일 문장을 3개 문장으로 분리하여 가독성 개선 (날짜·심의번호 유지 여부 등 사실관계 변경 없음)",
+        "진행일자(9.17~10.31), 심의번호 유지, 9/18 라이브 등 수치·일정은 기존 볼드체 강조를 그대로 유지",
+        "액션 아이템 2건이 이미 체크리스트 형식으로 반영되어 있음을 확인"
+      ],
+      "published_at": "2026-07-07T00:00:00+09:00"
+    },
+    {
+      "task_id": "T003",
+      "target_name": "웰컴저축은행 > LMS 발송 DB수집 이벤트",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151790",
+      "confluence_page_id": "192151790",
+      "refined_points": [
+        "출처가 2개 항목(11:21/17:46 메시지)으로 재표기된 'LMS 발송 DB수집 이벤트 (2019-09)' 섹션만 검수 대상으로 한정",
+        "실적 인정기준(LGu+ 고객정보), 예산·단가(1천만원/500원/건/2만건 소진) 등 핵심 수치가 이미 볼드체로 정확히 강조되어 있어 추가 교정 없이 확인만 수행",
+        "출처 링크 2건이 각 운영 히스토리 항목에 정확히 병기되어 있음을 확인, 액션 아이템 2건도 이미 체크리스트 형식으로 반영되어 있음을 확인"
+      ],
+      "published_at": "2026-07-07T00:00:00+09:00"
+    },
+    {
+      "task_id": "T004",
+      "target_name": "티켓충전소",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/200835080",
+      "confluence_page_id": "200835080",
+      "refined_points": [
+        "명칭변경 반영 섹션 '티켓모아(구 티켓충전소) 서비스명 변경 및 정책 페이지 갱신 (2019-09)' 및 엔티티 개요 비고 문구만 검수 대상으로 한정",
+        "명칭 변경 확정 사항(티켓충전소→티켓모아)과 개인정보 취급방침·약관 갱신 완료 문구가 이미 볼드체로 명확히 강조되어 있어 추가 교정 없이 확인만 수행",
+        "액션 아이템이 이미 체크리스트 형식으로 반영되어 있음을 확인, 2019-08 이전 히스토리는 원문 그대로 보존됨을 재확인"
+      ],
+      "published_at": "2026-07-07T00:00:00+09:00"
+    },
+    {
+      "task_id": "T005",
+      "target_name": "PINCRUX",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714",
+      "confluence_page_id": "191987714",
+      "refined_points": [
+        "이번 실행 정정 대상(T001~T003)에 포함되지 않아 기존 승인 내용을 그대로 승계",
+        "'PINCRUX 벤처기업 인증 및 이노비즈 인증 획득 (2019-09)' 섹션은 이미 비즈니스 문어체, 볼드체, 체크리스트 형식을 충족함을 재확인"
+      ],
+      "published_at": "2026-07-07T00:00:00+09:00"
+    }
+  ]
+}

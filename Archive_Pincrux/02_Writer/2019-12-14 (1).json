@@ -1,0 +1,107 @@
+{
+  "schema_version": "1.1",
+  "node": "writer",
+  "run_date": "2019-12-14",
+  "source_file": "Archive_Pincrux/01_Collector/2019-12-14.json",
+  "node_status": "success",
+  "processed_tasks": [
+    {
+      "task_id": "T001",
+      "entity_name": "페이앤드",
+      "project_name": "티켓 충전소",
+      "page_scope": "child",
+      "target_name": "페이앤드 > 티켓 충전소",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192053250",
+      "confluence_page_id": "192053250",
+      "updated_sections": [
+        "## 페이앤드 티켓 충전소 지급비율 및 포인트 전환가치 확정 (2019-12) — 신규 프로젝트 섹션 추가(기존 동명 섹션 없어 새 섹션 생성)"
+      ]
+    },
+    {
+      "task_id": "T002",
+      "entity_name": "페이앤드",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "페이앤드",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192053250",
+      "confluence_page_id": "192053250",
+      "updated_sections": [
+        "## 페이앤드 신규 버전 출시(자동로그인·QR코드 간소화 기능 추가) (2019-12) — 신규 엔티티 레벨 섹션 추가"
+      ]
+    },
+    {
+      "task_id": "T003",
+      "entity_name": "PINCRUX",
+      "project_name": "인플루언서 앱 개발(공용 플랫폼 인프라)",
+      "page_scope": "child",
+      "target_name": "PINCRUX > 인플루언서 앱 개발(공용 플랫폼 인프라)",
+      "context_status": "new",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "updated_sections": [
+        "## PINCRUX 인플루언서 앱 개발(공용 플랫폼 인프라) (2019-12) — 신규 섹션 추가",
+        "## PINCRUX Creator Membership Community(대청자, 대도서관) (2019-11) — 상단에 '인플루언서 앱' 관련 프로젝트 참고 비고 추가(기존 내용 삭제 없음)",
+        "## PINCRUX 멤버십 팬 서비스(CJE&M·다이아) 기획 (2019-10~11) — 상단에 '인플루언서 앱' 관련 프로젝트 참고 비고 추가(기존 내용 삭제 없음)"
+      ],
+      "writer_judgment_note": "모으미는 entity_name을 '인플루언서'(page_scope: root, 독립 엔티티 추정)로 분류했으나, 총총 지시에 따라 PINCRUX(191987714) 페이지의 기존 두 섹션(멤버십 팬 서비스(CJE&M·다이아)/Creator Membership Community(대청자))과의 관계를 판단함. 판단 근거: (1) 11월 배치 원문 '대기중인 업무들: 페이앤드/SPC/인플루언서/저작권'과 12월 SPC 배치 원문 '인플루언서 프로젝트와 SPC와 컬처랜드 SDK가 겹쳤습니다'가 동일한 상위 프로젝트를 지칭, (2) 12월 논의된 앱 명칭 후보(my influencer/plai/celuv/Cluv)가 이미 확정된 두 프로젝트명(멤버십 팬 서비스, Creator Membership Community 대청자) 어느 쪽과도 불일치, (3) 개발 체크사항(회원가입/로그인, 채널정보/초대코드, 게시판)이 멀티채널(복수 크리에이터) 수용 가능한 공용 플랫폼 구조로 해석됨. 이에 따라 '인플루언서 앱'을 두 프로젝트를 아우르는 공용 플랫폼 인프라 개발로 판단하여 PINCRUX 페이지 하위 신규 섹션으로 기록하고, 기존 두 섹션에는 상호 연결 비고만 추가함(기존 내용 무손실). 원문상 명시적 확인이 아닌 문맥·시점 추론 기반 판단이므로 재검토 필요."
+    },
+    {
+      "task_id": "T004",
+      "entity_name": "SPC",
+      "project_name": "출석체크+충전소 연동",
+      "page_scope": "child",
+      "target_name": "SPC > 출석체크+충전소 연동",
+      "context_status": "new",
+      "action_taken": "created_new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/204603424/SPC",
+      "confluence_page_id": "204603424",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/190414849",
+      "confluence_parent_page_id": "190414849",
+      "updated_sections": [
+        "## SPC 출석체크+충전소 연동 개발 (2019-12) — 신규 페이지 최초 생성"
+      ],
+      "human_action_required": "모으미가 major_category를 추정치(Media_Partner)로 표기함에 따라, 쓰미도 이를 확정하지 못하고 CQL 검색(기존 페이지 없음) 후 Media_Partner > Project(부모 190414849) 하위에 우선 생성함. 페이지 내 비고에도 동일 내용 기재. 총총(COO) 및 후속 검증 단계에서 SPC의 정확한 사업 주체 성격(광고주 vs 매체/제휴사) 재확인 필요."
+    },
+    {
+      "task_id": "T005",
+      "entity_name": "PINCRUX",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "PINCRUX",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "updated_sections": [
+        "## PINCRUX 개발팀 업무 프로세스 정비 (2019) — 운영 히스토리/의사결정 사항/액션 아이템에 신규 항목 병합"
+      ],
+      "writer_judgment_note": "모으미가 context_status를 unknown으로 표기(원문의 '[재안내]' 표현으로 보아 기존 유사 공지 존재 가능성 시사)했던 항목. PINCRUX 페이지 확인 결과 2019-01-23 확정된 '주간 업무 보고 구글 스프레드시트 관리' 정책(섹션: PINCRUX 개발팀 업무 프로세스 정비)이 목적·대상이 동일한 기존 정책으로 확인되어, 쓰미 최종 판단으로 context_status를 matched로 확정하고 해당 섹션에 신규 히스토리로 병합함(작성주기를 매주 금요일→매일로 변경, 리소스 투입량 측정 목적 명시). 기존 섹션 내용 삭제 없음."
+    },
+    {
+      "task_id": "T006",
+      "entity_name": "컬처랜드",
+      "project_name": "SDK 연동",
+      "page_scope": "child",
+      "target_name": "컬처랜드 > SDK 연동",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192217197",
+      "confluence_page_id": "192217197",
+      "updated_sections": [
+        "## 컬처랜드 SDK 연동 (2019-12) — 신규 프로젝트 섹션 추가(기존 동명 섹션 없어 새 섹션 생성)"
+      ]
+    }
+  ],
+  "skipped_tasks": []
+}

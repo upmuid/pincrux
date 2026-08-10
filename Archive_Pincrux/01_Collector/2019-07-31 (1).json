@@ -1,0 +1,165 @@
+{
+  "schema_version": "1.1",
+  "node": "collector",
+  "run_date": "2019-07-31",
+  "run_mode": "backfill",
+  "period": "2019-07-15 to 2019-07-31",
+  "status": "success",
+  "data_summaries": [
+    {
+      "task_id": "T001",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "네오위즈 게임별 배너/랜딩 구성을 KB증권 방식과 동일하게 적용",
+      "entity_name": "미래에셋대우",
+      "project_name": "네오위즈 캠페인",
+      "page_scope": "child",
+      "target_name": "네오위즈",
+      "issue_title": "네오위즈 캠페인 배너·랜딩 구조를 KB증권 방식으로 통일",
+      "summary": "정회훈이 웰컴저축은행 SB 보드 관련 소재 구성을 논의하던 중, KB증권처럼 배너만 구분하고 랜딩은 통일하는 대신, 미래에셋대우 네오위즈 캠페인에서는 배너와 랜딩을 모두 KB증권과 동일하게 리뉴얼 제작하여 심의 진행하기로 결정했다. 리뉴얼 대상 캠페인은 뉴맥고/섯다(5억냥), 포커(5조골드), 슬롯(1천만 코인), 블랙잭/바카라(1천만 칩), 마이베가스(5천만 크레딧)이다.",
+      "decision": "미래에셋대우 네오위즈 배너·랜딩을 KB증권 구성 방식과 동일하게 신규 제작 후 심의 진행하기로 확정",
+      "action_items": [
+        "뉴맥고/섯다, 포커, 슬롯, 블랙잭/바카라, 마이베가스 배너·랜딩 신규 제작",
+        "심의 완료 및 라이브 후 맞고나 포커를 통해 주 1백만원짜리(대행수수료 20% 포함) CPM 진행"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CJP8CLM36/p1563280340151700"
+    },
+    {
+      "task_id": "T002",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "해피포인트 랜딩시안 거래 이벤트 리워드 지급 문구 정정",
+      "entity_name": "미래에셋대우",
+      "project_name": "해피포인트 이벤트",
+      "page_scope": "child",
+      "target_name": "해피포인트",
+      "issue_title": "해피포인트 이벤트 리워드 지급 문구 오류 수정 (다른 이벤트와 지급 방식 혼동)",
+      "summary": "해피포인트 랜딩시안 거래 이벤트 내용 중 \"(매월 5천원씩 지급)\" 문구가 실수로 삽입되어 있었다. 다른 이벤트는 7월에 시작했으나 해피포인트는 8월에 시작하므로 해당 매월 지급 문구는 잘못 삽입된 것으로 확인되어 삭제 조치하기로 했다.",
+      "decision": "해피포인트 이벤트 안내 문구에서 \"매월 5천원씩 지급\" 문구를 삭제하고 미래에셋 측에 재전달",
+      "action_items": [
+        "해당 문구 삭제 후 미래에셋대우 측에 수정본 재송부"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CJP8CLM36/p1563943840012100"
+    },
+    {
+      "task_id": "T003",
+      "major_category": "Client",
+      "minor_category": "Product",
+      "context_status": "matched",
+      "context_reference": "삼성증권 실적 저조, 매체 확대 필요성 논의",
+      "entity_name": "삼성증권",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "삼성증권",
+      "issue_title": "삼성증권 실적 부진에 따른 매체 확대 검토",
+      "summary": "삼성증권은 현재 삼성페이 매체에서만 라이브 중인데, 다른 증권사 대비 실적이 매우 저조하여(7/17 기준 신규 3900건 목표 중 약 600건 부족) 삼성페이 측에서 같은 계열사만 밀어주는 것 아니냐는 의혹이 제기되었다. 이에 맘카페나 컨슈머 등 신규 매체 확대 필요성이 내부적으로 논의되었으나 삼성페이 측에는 별도 문의하지 않기로 했다.",
+      "decision": "당장 삼성페이 측에 매체 편중 관련 별도 문의는 하지 않되, 실적 개선을 위한 신규 매체(맘카페/컨슈머 등) 확대를 검토하기로 함",
+      "action_items": [
+        "삼성증권 실적 부진 원인 추가 모니터링",
+        "맘카페/컨슈머 등 신규 매체 확대 검토"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CKHKH3KC5/p1563441512006300"
+    },
+    {
+      "task_id": "T004",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "삼성증권 x 삼성페이 랜딩페이지 준법감시인 심의필 승인",
+      "entity_name": "삼성증권",
+      "project_name": "삼성페이 랜딩 캠페인",
+      "page_scope": "child",
+      "target_name": "삼성페이",
+      "issue_title": "삼성증권 x 삼성페이 랜딩페이지 준법감시인 심의필 갱신 (2019.07.22~2020.07.21)",
+      "summary": "삼성증권 x 삼성페이 랜딩페이지 내 심의번호 하단에 문구를 추가하여 준법감시인 심의필(제19-B2282호, 2019.07.22~2020.07.21) 승인을 받아 공유되었다.",
+      "decision": "삼성증권 준법감시인 심의필 제19-B2282호(2019.07.22~2020.07.21) 갱신 확정",
+      "action_items": [],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTJWKH0C/p1563783527010100"
+    },
+    {
+      "task_id": "T005",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "삼성증권 8월 1일부터 캠페인 잠정 중단, 8/5~12 라이브 예정",
+      "entity_name": "삼성증권",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "삼성증권",
+      "issue_title": "삼성증권 캠페인 8월 초 잠정 중단 및 재개 일정 확정",
+      "summary": "삼성증권은 8월 1일부터 캠페인을 잠정 진행하지 않기로 했으며, 빠르면 8월 5일 또는 늦어도 8월 12일경 재라이브될 예정이다. 정확한 일정은 다음 주 중 확정 예정이며, 삼성페이 측에 메일로 회신을 요청했다.",
+      "decision": "삼성증권 캠페인 8/1부터 잠정 중단, 8/5~8/12 사이 재라이브 예정",
+      "action_items": [
+        "차주중 정확한 재라이브 일정 확정 및 업무 참고",
+        "삼성페이 측 메일 회신 확인"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CKHKH3KC5/p1563943692001500"
+    },
+    {
+      "task_id": "T006",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "KB증권 x 네이버페이 소재수정 셋팅 어려움으로 7/31 종료 예정",
+      "entity_name": "KB증권",
+      "project_name": "네이버페이 캠페인",
+      "page_scope": "child",
+      "target_name": "네이버페이",
+      "issue_title": "KB증권 x 네이버페이 캠페인 종료 결정 (소재 수정·셋팅 난항)",
+      "summary": "KB증권 x 네이버페이 캠페인은 7월 중 소재 수정 및 셋팅이 어려운 관계로, 7월 31일까지 진행 후 종료하기로 결정되었다.",
+      "decision": "KB증권 x 네이버페이 캠페인은 2019.07.31자로 종료",
+      "action_items": [],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CJPA1CBD2/p1564364787009500"
+    },
+    {
+      "task_id": "T007",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "웰컴저축은행 7/22~31 비대면 계좌개설 실적 목표 10만건",
+      "entity_name": "웰컴저축은행",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "웰컴저축은행",
+      "issue_title": "웰컴저축은행 비대면 계좌개설 실적 목표(10만건) 설정 및 네오위즈 매체 제안",
+      "summary": "웰컴저축은행에서 7월 22일~31일까지 비대면 계좌개설 실적 10만건을 목표로 진행하길 원한다는 요청이 있었다. 이와 관련하여 원래 광고주가 고포류라 하지 않으려 했던 네오위즈 진행을 제안했으며, 배너 및 랜딩 진행 관련 웰컴저축은행에 심의 받을 수 있게 PPT 전달이 필요한 상황이었다.",
+      "decision": "웰컴저축은행 비대면 계좌개설 10만건 목표(7/22~31) 확정, 네오위즈 매체 활용 제안",
+      "action_items": [
+        "네오위즈 진행 관련 PPT를 웰컴저축은행 백선우 과장에게 전달",
+        "디자인은 금주중 제작"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CJCD15KJN/p1563330192017000"
+    },
+    {
+      "task_id": "T008",
+      "major_category": "In-house",
+      "minor_category": "Product",
+      "context_status": "matched",
+      "context_reference": "페이앤드(Payand) 8/1부터 신규 회원사 확대 적용 공지",
+      "entity_name": "PINCRUX",
+      "project_name": "페이앤드",
+      "page_scope": "child",
+      "target_name": "페이앤드",
+      "issue_title": "페이앤드 정산 시스템 8월 1일부로 신규 회원사(핀크럭스, 블랙홀릭 등) 확대 적용",
+      "summary": "사내 정산 시스템 페이앤드가 8월 1일부터 신규 회원사로 확대 적용된다. 대상은 5~7호(창비 및 계열사 전사 확대), 8호(핀크럭스), 9호(블랙홀릭)이다. 이에 앞서 7월 22일 앱 업데이트 필요성 논의(앱개발팀·디자인팀 리소스 확인 후 진행)와 7월 26일 iOS 사용자 주문 API 중복 처리 오류에 대한 확인 요청이 있었다.",
+      "decision": "페이앤드 8/1부로 5~9호 회원사(창비/계열사, 핀크럭스, 블랙홀릭) 확대 적용 확정",
+      "action_items": [
+        "8/1 확대 적용 관련 회원사별 공지 완료 확인",
+        "iOS 주문 API 중복건 클라이언트단 재확인 (김현우 담당)"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTGBP78F/p1564566475006600"
+    }
+  ],
+  "uncategorized": [
+    {
+      "raw_text": "DB금융투자 채널에서 '현대백화점카드신청이벤트-컬쳐랜드에서 실적 요청, 이거 매주 하기로 하지 않았나요?' 관련 대화 (2019-07-25)",
+      "reason": "특정 이벤트의 정기 데이터 공유 요청으로, 구조적 정책 변경인지 단순 실행 확인인지 문맥상 불명확하여 uncategorized 처리함."
+    },
+    {
+      "raw_text": "DB금융투자 채널 '신호관련해서 이슈 어떻게 진행되었는지 현황 공유 부탁드립니다' (2019-07-16)",
+      "reason": "'신호 관련 이슈'가 무엇을 지칭하는지 문맥이 제공되지 않아 구체적 프로젝트로 치환 불가하며 후속 스레드도 확인되지 않아 unknown 처리."
+    }
+  ]
+}

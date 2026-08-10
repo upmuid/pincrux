@@ -1,0 +1,122 @@
+{
+  "schema_version": "1.1",
+  "node": "validator",
+  "run_date": "2026-07-24",
+  "source_files": {
+    "collector": "Archive_Pincrux/01_Collector/2026-07-24_2.json",
+    "writer": "Archive_Pincrux/02_Writer/2026-07-24_2.json"
+  },
+  "node_status": "success",
+  "review_summary": {
+    "total_reviewed": 8,
+    "passed_cnt": 8,
+    "failed_cnt": 0,
+    "slack_reread_cnt": 4
+  },
+  "validation_results": [
+    {
+      "task_id": "T001",
+      "target_name": "헬릭스미스 > 카페24 첫 결제 캠페인",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/219152393",
+      "confluence_page_id": "219152393",
+      "slack_reread": true,
+      "slack_reread_trigger": "context_status: new — 신규 페이지이므로 슬랙 원본 확인",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "슬랙 원문(2021-05-03, 정빈희)과 대조 결과 '핀크럭스의 직접 계약 상대가 헬릭스미스인지 링크러스 경유인지 원문만으로 불명확'이라는 모으미의 해석이 왜곡 없이 컨플루언스에 그대로 반영됨. action_items의 human_action_required 항목도 매핑 확인됨. 참고: 확인된 슬랙 스레드(17개 답신)는 카페24 연동 세팅(cubyn.co.kr 도메인) 테스트 대화로, 콜렉터가 언급한 '같은 날 18:19 카카오톡 채널 추가/캠페인 오픈' 메시지는 이 스레드 범위(09:45~14:17) 밖이라 이번 핀포인트 조회로는 직접 확인 불가(별도 메시지로 추정, 채널 스캔 금지 지침상 추가 조회하지 않음). 컨플루언스 서술은 콜렉터 JSON 내용과 일치하므로 결과에는 영향 없음. 사명 표기('핀크럭스') 정상."
+    },
+    {
+      "task_id": "T002",
+      "target_name": "BC카드",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/218398750",
+      "confluence_page_id": "218398750",
+      "slack_reread": true,
+      "slack_reread_trigger": "context_status: new — 신규 페이지이므로 슬랙 원본 확인",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "슬랙 원문(2021-05-14, 채수범)과 대조 결과 비딩 참여, 경쟁사(TNK/NBT/버즈빌/링크러스) 동향, '비딩 결과와 무관하게 직접계약으로 CPA 편입 예정' 방침이 왜곡 없이 반영됨. 경미한 사항: 원문은 '네이버페이지, 카카오페이지와 마찬가지로'라고 두 사례를 언급하나 컨플루언스는 '카카오페이지 사례'만 언급하고 '네이버페이지'는 생략됨. 다만 콜렉터 JSON의 decision 필드에도 동일하게 '카카오페이지 방식처럼'로만 기재되어 있어 쓰미가 콜렉터 요약을 충실히 따른 것이며 의사결정의 의미 자체는 왜곡되지 않음(예시 사례 하나 생략 수준). FAILED 처리 대상 아님. 사명 표기 정상."
+    },
+    {
+      "task_id": "T003",
+      "target_name": "페이코인",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/219119618",
+      "confluence_page_id": "219119618",
+      "slack_reread": true,
+      "slack_reread_trigger": "context_status: new — 신규 페이지이므로 슬랙 원본 확인",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "슬랙 원문(2021-05-26, 채수범)과 대조 결과 ①퀵트래커 연동(2,500원) ②충전소 제휴 수익 5% ③다날 경유 인하우스 등록 수수료 1% 구조가 원문 그대로 정확히 반영됨. 액션 아이템 3건 모두 컨플루언스 태스크 리스트와 1:1 매핑 확인. 사명 표기 정상."
+    },
+    {
+      "task_id": "T004",
+      "target_name": "시럽월렛",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/218988561",
+      "confluence_page_id": "218988561",
+      "slack_reread": true,
+      "slack_reread_trigger": "context_status: new — 신규 페이지이므로 슬랙 원본 확인",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "SK플래닛과의 이중역할 의심 건: 컨플루언스 엔티티 개요에 'SK플래닛(Client)과의 관계는 총총 확인 필요, 임의 병합하지 않고 별도 엔티티로 우선 등록'이라는 문구가 명확히 반영되었고 action_items의 human_action_required 항목도 매핑됨 — 왜곡 없음. 경미한 발견: 콜렉터 slack_thread_link(ts 1620778466)로 조회한 실제 슬랙 메시지는 '2021-05-12 재공지'(상용서버반영 5/17·상용테스트 5/18~24·일반오픈 5/25) 내용인데, 컨플루언스는 이 동일 링크를 '2021-05-04 최초 공유(5/25 앱 배포 예정)' 불릿의 출처로 표기함. 즉 출처 링크가 05-04가 아닌 05-12 메시지를 가리키는 인용 오귀속(citation misattribution)이며, 이는 콜렉터 JSON 단계에서 하나의 slack_thread_link만 대표로 제공된 데서 기인함(쓰미가 그대로 승계). 날짜별 사실관계(5/17·5/18~24·5/25) 자체는 정확하여 의사결정 왜곡은 없으므로 FAILED로 격상하지 않았으나, 다시쓰미 단계에서 05-04 불릿의 출처 표기를 05-12로 정정하거나 출처 미상으로 두는 것을 권고함. 사명 표기 정상."
+    },
+    {
+      "task_id": "T005",
+      "target_name": "세틀뱅크 > 010제로페이 회원가입 CPA",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/216104961",
+      "confluence_page_id": "216104961",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "이번 실행에서 추가된 '010제로페이 회원가입 CPA (2021-05)' 섹션만 검증. 단가/예산/수량/기간 등 콜렉터 JSON과 컨플루언스 내용 완전 일치, 액션 아이템 매핑 정상. 트리거 조건(불일치/과요약/액션아이템 누락) 미해당으로 슬랙 재조회하지 않음. 기존 '계좌등록 CPA 캠페인 (2020)' 섹션은 변경 없이 보존됨(맥락 누수 없음). 사명 표기 정상."
+    },
+    {
+      "task_id": "T006",
+      "target_name": "그라운드X > DB손해보험 KLAY Promotion(Klip 지갑 연동)",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/218365953",
+      "confluence_page_id": "218365953",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "이번 실행에서 추가된 'DB손해보험 KLAY Promotion(Klip 지갑 연동) (2021-05)' 섹션만 검증. Klip 지갑 인증 기반 참여, 리워드 수동(엑셀) 지급, 05-18 1차 테스트 완료 사실이 콜렉터 JSON과 일치. 트리거 미해당으로 슬랙 재조회 없음. 기존 '그라운드X 매체 제휴 개시 (2021-04)' 섹션은 훼손 없이 보존됨. 사명 표기 정상."
+    },
+    {
+      "task_id": "T007",
+      "target_name": "CPS 기획전 플랫폼",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/206012417",
+      "confluence_page_id": "206012417",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "이번 실행에서 추가된 '이상거래(중복구매) 차단 정책 확정 (2021-05)' 섹션만 검증. 차단범위/체크기간/차단방법/차단지표 및 '매출 규모 고려 필요' 논의가 콜렉터 JSON과 일치. 트리거 미해당으로 슬랙 재조회 없음. 기존 CJ제일제당/신규매체확장/우리원/컬처랜드/OCB 등 기존 섹션들은 변경 없이 보존됨. 사명 표기 정상."
+    },
+    {
+      "task_id": "T008",
+      "target_name": "DB손해보험 > 네이버페이/티머니·페이코인 CPA",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955049",
+      "confluence_page_id": "191955049",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "이번 실행에서 추가된 '네이버페이/티머니·페이코인 CPA 실적 보고 (2021-05)' 섹션만 검증. 05-07/05-20/05-31 3개 시점의 매체별 등락 수치가 콜렉터 JSON과 정확히 일치하며 '단건 원인 규명 없이 수치 반복 보고'라는 뉘앙스도 과장 없이 반영됨. 트리거 미해당으로 슬랙 재조회 없음. 기존 다수의 과거 섹션(2019~2021-01 등)은 변경 없이 보존됨. 사명 표기 정상."
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.1",
+  "node": "collector",
+  "run_date": "2019-07-14",
+  "run_mode": "backfill",
+  "period": "2019-07-01 to 2019-07-14",
+  "status": "success",
+  "data_summaries": [
+    {
+      "task_id": "T001",
+      "major_category": "Media_Partner",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "원문: '미래에셋대우X삼성페이 합쳐진거래수정한거'. 7/10 대화에서 고현복이 '7월 거래 (8월 지급 예정) 8월 거래 (9월 지급 예정으로 수정되어야합니다.)'라고 정산 주기 변경을 공지함.",
+      "entity_name": "미래에셋대우",
+      "project_name": "삼성페이 CPS 정산",
+      "page_scope": "child",
+      "target_name": "미래에셋대우 > 삼성페이 CPS 정산",
+      "issue_title": "미래에셋대우 x 삼성페이 정산 지급 주기 변경",
+      "summary": "삼성페이 정산 지급월을 1개월씩 순연 조정",
+      "decision": "기존 정산 방식(7월 거래분 8월 지급)에서 7월 거래분은 8월 지급 유지, 8월 거래분부터는 9월 지급으로 한 달씩 순연하는 방식으로 정산 주기를 수정하기로 함.",
+      "action_items": [
+        "정산 지급 주기 변경 사항을 관련 매체(삼성페이) 및 내부 정산 담당자에게 공유"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTJWKH0C/p1562748111284300?thread_ts=1562748111.284300&cid=CBTJWKH0C"
+    },
+    {
+      "task_id": "T002",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "원문: '삼성증권 x 삼성페이 랜딩페이지 수정 요청. 이벤트기간은 2019.07.10 ~ 07.31 로 수정 부탁드리겠습니다.' 및 '삼성증권 캠페인 7월 매체 심의번호 삽입 요청. 한국금융투자협회 심사필 제19-B2125호(2019.07.10 - 2020.07.09)'. 데일리캡 관련: '삼성증권 측에서 전매체 통합 데일리캡 200건으로 진행해달라고하여, 데일리캡 감소 시, 매체 축소가 불가피하다고 내용 전달하니, 전매체 각각 100건씩으로 수정해서진행해달라고 합니다.' CPA 단가: 'CPA건당 20,000 VAT포함가입니다.'",
+      "entity_name": "삼성증권",
+      "project_name": "삼성페이 제휴 캠페인",
+      "page_scope": "child",
+      "target_name": "삼성증권 > 삼성페이 제휴 캠페인",
+      "issue_title": "삼성증권 x 삼성페이 캠페인 조건 확정(기간·데일리캡·단가)",
+      "summary": "삼성페이 캠페인 기간 7/10~7/31, 매체별 데일리캡 100건, CPA 2만원 확정",
+      "decision": "이벤트 기간을 2019.07.10~07.31로 확정. 삼성증권 측 요청으로 전매체 통합 데일리캡 200건 대신 매체별 각각 100건으로 축소 조정. CPA 단가는 건당 20,000원(VAT포함)으로 확정. 심사필 제19-B2125호(2019.07.10~2020.07.09) 심의번호 적용.",
+      "action_items": [
+        "매체별 데일리캡 100건 적용 후 라이브 진행",
+        "네이버페이 등 매체별 라이브 가능 일정 회신받기"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CKHKH3KC5/p1562559005074100"
+    },
+    {
+      "task_id": "T003",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "원문: '이수연 이라고 위메프 쿠폰을 못받았다고 합니다', '어제 네이버페이 320건이 넘었는데 .... 그렇게 원래대로였으면 쿠폰이 모두소진이 안되었어야 정상입니다. 별도로 광고주나 매체측에 이슈 공유받으신거 있으신가요?', '리워드 못받은 참여자들 있을것으로 사료되는데 kb증권의 경우 cs에 대해 많이 민감해하니 개발팀과 이야기 해서 네이버페이 쿠폰 수령하는대로 바로 lms 보낼수 있게 진행해주시고, 지금은 리워드 2~3일정도 뒤에 준다는 팝업 문구 혹시 적용하였나요?', '어제 320건이 넘은것은 우리가 바로 알아차리지 못할수 있으나 개발팀을 통해 팝업문구 적용은 바로 할수 있는 부분이니 요청드렸습니다'",
+      "entity_name": "KB증권",
+      "project_name": "네이버페이 제휴 이벤트",
+      "page_scope": "child",
+      "target_name": "KB증권 > 네이버페이 제휴 이벤트",
+      "issue_title": "KB증권 네이버페이 쿠폰 320건 초과소진 리워드 미지급 이슈 및 재발방지 대책",
+      "summary": "쿠폰 예정치 초과소진으로 리워드 미지급 CS 발생, 팝업 문구로 대응",
+      "decision": "네이버페이 쿠폰이 하루 만에 320건 초과 소진되어 리워드를 받지 못한 참여자 다수 발생. KB증권 측이 CS에 민감하게 반응하여, 재발 방지를 위해 개발팀 협의 후 리워드 지급까지 2~3일 소요됨을 안내하는 팝업 문구를 적용하기로 함. 초과 소진 원인은 명확히 파악되지 않았으나 광고주/매체 외부 요인(커뮤니티 등) 가능성 언급됨.",
+      "action_items": [
+        "네이버페이 쿠폰 수령 즉시 LMS 발송되도록 개발팀과 프로세스 개선",
+        "리워드 지급 지연 안내 팝업 문구 적용",
+        "리워드 미수령 참여자 파악 및 CS 대응"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CJPA1CBD2/p1562113185046300"
+    },
+    {
+      "task_id": "T004",
+      "major_category": "Media_Partner",
+      "minor_category": "Product",
+      "context_status": "new",
+      "context_reference": "원문: '[공유] NH멤버십 트래킹 SDK. NH멤버스 개발이 시작되어 몇가지 요청사항이 접수되었습니다. 요청사항 - 중복방지용 단말정보 수집대상 제한 : android id, google ad id 2개만 수집 - 개발용 SDK제공 : 개발용 SDK는 별도로 없음'. NH멤버스 APPCODE: PIN10000022 발급 완료.",
+      "entity_name": "NH멤버스",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "NH멤버스",
+      "issue_title": "NH멤버스 트래킹 SDK 신규 개발 착수 및 데이터 수집 정책 확정",
+      "summary": "신규 매체 NH멤버스 SDK 개발 시작, 수집정보 범위 확정",
+      "decision": "신규 매체 NH멤버스와의 트래킹 SDK 연동 개발을 시작하기로 함. 중복 참여 방지를 위한 단말 정보 수집 대상을 android_id, google ad id(adid) 2개로 제한하고, referrer 값도 함께 수집. 별도의 개발용 SDK는 제공하지 않으며, APPCODE(PIN10000022) 발급 후 광고 오픈 전 개발 테스트용으로 활용 가능하도록 처리.",
+      "action_items": [
+        "NH멤버스용 Tracking SDK 개발 진행",
+        "APPCODE(PIN10000022)를 활용한 개발 테스트 진행",
+        "이소프팅 측과 APPCODE 연동 확인"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBU0PHP3P/p1562808435081900?thread_ts=1562808435.081900&cid=CBU0PHP3P"
+    }
+  ],
+  "uncategorized": []
+}

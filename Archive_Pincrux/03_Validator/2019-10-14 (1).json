@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.1",
+  "node": "validator",
+  "run_date": "2019-10-14",
+  "source_files": {
+    "collector": "Archive_Pincrux/01_Collector/2019-10-14.json",
+    "writer": "Archive_Pincrux/02_Writer/2019-10-14.json"
+  },
+  "node_status": "success",
+  "review_summary": {
+    "total_reviewed": 5,
+    "passed_cnt": 5,
+    "failed_cnt": 0,
+    "slack_reread_cnt": 5
+  },
+  "validation_results": [
+    {
+      "task_id": "T001",
+      "target_name": "웰컴저축은행 > 체크플러스2 M정기적금",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151790",
+      "confluence_page_id": "192151790",
+      "slack_reread": true,
+      "slack_reread_trigger": "context_status: new(모으미 최초 분류) — 신규 맥락 오판 여부 확인 + 단가 상충(19,091원/25,000원) 쟁점 원문 재확인",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "채널(CJCD15KJN) 15:40~16:02 전체 대화(6건) 원문 재확인 완료. 15:43 리워드+수수료 포함 19,091원(VAT별도) 안내, 15:53 고현복 'gross는 2만5천원인가요?' 질의, 16:02 정회훈 '그로스 25,000원 VAT별도' 답변 및 고현복 '넹 알겠습니다' 확인까지 페이지 인용이 원문과 정확히 일치함(창작된 인과관계 없음). 두 수치 모두 페이지에 보존되었고 human_action_required 코멘트(재확인 권고)가 인용구로 명확히 표기되어 있어 임의 단정 없음 — 이는 문제가 아니라 올바른 처리. 액션 아이템 2건 모두 원문(15:43~15:44 지시)과 일치."
+    },
+    {
+      "task_id": "T002",
+      "target_name": "웰컴저축은행 > 계좌개설",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151790",
+      "confluence_page_id": "192151790",
+      "slack_reread": true,
+      "slack_reread_trigger": "지시에 따른 전건 슬랙 원문 재확인",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "10-08 10:28(URL 차단 및 김대영 팀장 공유 요청)·18:01(전매체 종료 완료 보고) 원문 재확인 결과 페이지 내용과 정확히 일치. '완료' 표현이 실제 완료된 종료 조치에만 적용되고 URL 차단·담당자 공유는 액션 아이템으로 미완료 처리되어 완료/예정 시제 구분 정확함. 기존 2019-03-19 세팅 이력 등 다른 섹션 훼손 없음(OVERWRITE_ERROR 없음)."
+    },
+    {
+      "task_id": "T003",
+      "target_name": "NH멤버스 > CPA 매체별 잔존율 분석",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/199491593/NH",
+      "confluence_page_id": "199491593",
+      "slack_reread": true,
+      "slack_reread_trigger": "지시에 따른 전건 슬랙 원문 재확인",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "채널(CBU0PHP3P) 10-10 11:25 원문(당사적용 완료, 서버반영 10/10·APP배포 10/14) 및 10-14 14:43 후속 답글(배포버전 테스트 이상없어 앱배포 진행) 재확인. 페이지는 '공유됨'으로만 서술하고 액션 아이템을 미완료로 남겨 실제 완료 확정 전 상태를 정확히 구분함. 기존 SDK 개발/배포 히스토리 섹션 훼손 없음."
+    },
+    {
+      "task_id": "T004",
+      "target_name": "KB증권 > 비대면 계좌개설 이벤트",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/198279169/KB",
+      "confluence_page_id": "198279169",
+      "slack_reread": true,
+      "slack_reread_trigger": "지시에 따른 전건 슬랙 원문 재확인",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "채널(CJPA1CBD2) 10-11 17:25 원문(특별우대수수료 이벤트 문구 전매체 삭제 요청, 페이코 차주 반영예정/홀딩중, 네이버웹툰·시리즈 반영중) 재확인. 페이지·모으미 JSON 모두 '페이코·네이버웹툰·시리즈 외 매체 수정완료, 페이코 홀딩'으로 일관되게 요약되어 있고 액션 아이템에 네이버웹툰/시리즈 확인 항목이 포함되어 누락 아님. 기존 5~8월 섹션 훼손 없음."
+    },
+    {
+      "task_id": "T005",
+      "target_name": "미스터블루 > AOS/iOS 충전소",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/196902913",
+      "confluence_page_id": "196902913",
+      "slack_reread": true,
+      "slack_reread_trigger": "모으미 unknown → 쓰미 matched 재분류 + 기존 엔티티 병합이므로 원문 확인",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "채널(CBT7G5RUN) 10-14 18:07 원문('구글플레이 이슈건 관련 4개 지면 중 AOS 및 IOS 충전소 진행을 이번주 중 홀딩, 이슈 해결 후 재라이브')과 페이지 내용이 정확히 일치. 완료 아닌 예정 상태로 정확히 서술됨. 기존 페이지(196902913, Media_Partner>Product) 카테고리 유지, '[추론된 컨텍스트]' 말머리 정상 부여, 기존 '미스터블루 연동(2019)' 섹션 및 FAQ 훼손 없음."
+    }
+  ]
+}

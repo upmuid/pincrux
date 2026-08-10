@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.1",
+  "node": "refiner",
+  "run_date": "2019-07-14",
+  "source_file": "Archive_Pincrux/03_Validator/2019-07-14.json",
+  "node_status": "success",
+  "refinement_summary": {
+    "total_tasks": 4,
+    "pages_updated": 0,
+    "style_corrections": "4건 모두 신규 추가 섹션이 이미 비즈니스 문어체(확정형 종결어미), 핵심 수치/의사결정 볼드체 강조, HTML task-list 체크리스트 형식을 준수하고 있어 별도 교정 없이 확인만 완료함. 이모지 및 마크다운/HTML 문법 오류 없음.",
+    "hallucination_check": "PASSED — 읽어봄이(v3) 승인 수치·일정·결정 사항 변경 없음"
+  },
+  "published_tasks": [
+    {
+      "task_id": "T001",
+      "target_name": "미래에셋대우 > 삼성페이 CPS 정산",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955009",
+      "confluence_page_id": "191955009",
+      "refined_points": [
+        "신규 섹션 '미래에셋대우 x 삼성페이 정산 지급 주기 변경 (2019-07)' 검수 완료",
+        "종결어미 확정형 문어체('협의함', '공지됨', '수정하기로 함') 확인 — 교정 불필요",
+        "핵심 결정(7월 거래분 8월 지급 유지, 8월 거래분부터 9월 지급 순연) 볼드체 강조 확인 — 교정 불필요",
+        "액션 아이템 HTML task-list 체크리스트 형식 확인 — 교정 불필요"
+      ],
+      "published_at": "2026-07-06T00:00:00+09:00"
+    },
+    {
+      "task_id": "T002",
+      "target_name": "삼성증권 > 삼성페이 제휴 캠페인",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192086150",
+      "confluence_page_id": "192086150",
+      "refined_points": [
+        "신규 섹션 '삼성증권 x 삼성페이 캠페인 조건 확정(기간·데일리캡·단가) (2019-07)' 검수 완료",
+        "핵심 수치(이벤트 기간 2019.07.10~07.31, 데일리캡 100건, CPA 단가 20,000원(VAT포함), 심의번호 제19-B2125호) 볼드체 강조 확인 — 교정 불필요",
+        "종결어미 확정형 문어체('확정됨', '진행하기로 함') 확인 — 교정 불필요",
+        "액션 아이템 HTML task-list 체크리스트 형식 확인 — 교정 불필요"
+      ],
+      "published_at": "2026-07-06T00:00:00+09:00"
+    },
+    {
+      "task_id": "T003",
+      "target_name": "KB증권 > 네이버페이 제휴 이벤트",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/198279169",
+      "confluence_page_id": "198279169",
+      "refined_points": [
+        "신규 섹션 'KB증권 네이버페이 쿠폰 320건 초과소진 리워드 미지급 이슈 및 재발방지 대책 (2019-07)' 검수 완료",
+        "핵심 수치(320건 초과 소진, 지급 지연 2~3일 소요 안내) 볼드체 강조 확인 — 교정 불필요",
+        "종결어미 확정형 문어체('발생함', '적용하기로 함', '추진 확정') 확인 — 교정 불필요",
+        "액션 아이템 HTML task-list 체크리스트 형식 확인 — 교정 불필요"
+      ],
+      "published_at": "2026-07-06T00:00:00+09:00"
+    },
+    {
+      "task_id": "T004",
+      "target_name": "NH멤버스",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/199491593",
+      "confluence_page_id": "199491593",
+      "refined_points": [
+        "신규 페이지 섹션 'NH멤버스 트래킹 SDK 신규 개발 착수 및 데이터 수집 정책 확정 (2019-07)' 검수 완료",
+        "핵심 사실(android_id/google ad id(adid) 2개 제한, referrer 추가 수집, APPCODE(PIN10000022)) 볼드체 강조 확인 — 교정 불필요",
+        "종결어미 확정형 문어체('공유됨', '확정함', '완료함') 확인 — 교정 불필요",
+        "신규 페이지 템플릿(엔티티 개요/운영 히스토리/의사결정 사항/액션 아이템/FAQ/주요 담당자) 구조 및 task-list 체크리스트 정상 확인 — 교정 불필요"
+      ],
+      "published_at": "2026-07-06T00:00:00+09:00"
+    }
+  ]
+}

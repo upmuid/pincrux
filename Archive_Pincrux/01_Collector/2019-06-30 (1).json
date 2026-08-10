@@ -1,0 +1,414 @@
+{
+  "schema_version": "1.1",
+  "node": "collector",
+  "run_date": "2019-06-30",
+  "run_mode": "backfill",
+  "period": "2019-06-15 to 2019-06-30",
+  "status": "success",
+  "data_summaries": [
+    {
+      "task_id": "T001",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "#03_pincrux_디자인업무 및 #v_삼성증권 채널 — 삼성증권 소재 내 심의번호 삽입 요청(11번가/페이코/삼성페이, OCB/카카오페이/카카오페이지, 네이버페이/시리즈 각 심의필 번호), 이후 카카오페이지 CPM 광고 진행, 6/25 라이브 완료",
+      "entity_name": "삼성증권",
+      "project_name": "삼성증권 카카오페이지 CPM 광고",
+      "page_scope": "child",
+      "target_name": "삼성증권 > 삼성증권 카카오페이지 CPM 광고",
+      "issue_title": "삼성증권 소재 심의번호 삽입 및 카카오페이지 CPM 라이브",
+      "summary": "심의번호 삽입 후 카카오페이지 CPM 광고 6/25 라이브 완료, 단가 GROSS 14,300원/NET 12,155원",
+      "decision": "삼성증권 x 카카오페이지 CPM 소재 수정 후 심의 재진행, 6/25 라이브",
+      "action_items": [
+        "심의번호 삽입 요청 처리 (11번가/페이코/삼성페이, OCB/카카오페이/카카오페이지, 네이버페이/시리즈)",
+        "카카오페이지 CPM 소재 문구 수정 후 광고주 공유",
+        "삼성증권 x 카카오페이지 CPM 라이브 확인 (6/25)"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CKHKH3KC5/p1561342897006200"
+    },
+    {
+      "task_id": "T002",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "#v_미래에셋대우 채널 — 미래에셋대우 카카오페이지 CPM 진행 관련, 6/18 오전 11시 라이브 예정이었으나 매체측 이미지 지연으로 라이브 지연 발생. 7~8월 소재 제작 요청 및 전 매체 심의 진행",
+      "entity_name": "미래에셋대우",
+      "project_name": "미래에셋대우 7~8월 소재 제작 및 전매체 심의",
+      "page_scope": "child",
+      "target_name": "미래에셋대우 > 미래에셋대우 7~8월 소재 제작 및 전매체 심의",
+      "issue_title": "미래에셋대우 CPM 라이브 지연 및 7~8월 소재 제작 착수",
+      "summary": "카카오페이지 CPM 라이브 지연(매체 이미지 지연), 7~8월 전매체 소재 제작 요청",
+      "decision": "네이버페이 제작 우선 착수, 7/1 종료 전 집행 가능 매체 우선 심의 진행",
+      "action_items": [
+        "미래에셋대우 카카오페이지 CPM 라이브 재확인",
+        "7~8월 소재 전매체(OCB/카카오페이/카카오페이지/캐시슬라이드/네오위즈/네이버웹툰·시리즈/티머니/엘포인트/CJONE/쿨쳐랜드/코나카드/SPC/중고나라/SSG페이/삼성페이/11번가/KT클립 등) 제작",
+        "티머니 6월 20만건 5만건씩 푸시 일정 수령",
+        "코나카드 푸시 진행 일정 협의",
+        "CJONE 18·19일 푸시 10만씩 진행 여부 확인"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CJP8CLM36/p1560910594022600"
+    },
+    {
+      "task_id": "T003",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "#v_웰컴저축은행 채널 — 웰컴저축은행 x 쿨쳐랜드 CPS 캠페인 종료 관련 광고주 공유 확인 요청, 6/21 네이버페이 외 전 매체 캠페인 종료 예정",
+      "entity_name": "웰컴저축은행",
+      "project_name": "웰컴저축은행 계좌개설 CPS 캠페인",
+      "page_scope": "child",
+      "target_name": "웰컴저축은행 > 웰컴저축은행 계좌개설 CPS 캠페인",
+      "issue_title": "웰컴저축은행 쿨쳐랜드 CPS 종료 및 네이버페이 단독 운영 전환",
+      "summary": "주말까지 계좌개설 캠페인 후 네이버페이 외 전 매체 종료 예정",
+      "decision": "광고주 요청으로 주말까지만 계좌개설 캠페인 진행 후 네이버페이 외 전 매체 캠페인 종료",
+      "action_items": [
+        "쿨쳐랜드 CPS 캠페인 종료 광고주 공유 확인",
+        "네이버페이 캠페인 지속 여부 확인"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CJCD15KJN/p1561102771009100"
+    },
+    {
+      "task_id": "T004",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "#03_pincrux_디자인업무 채널 — DB손해보험 x 롯데홈쇼핑 배너 제작 요청(PSD/가이드/SB 포함), DB손해보험 x 아시아나 소재 수정 및 신규 제작, DB손해보험 CI 흰색배경 없는 버전 공유, DB손해보험 x 우리은행 신규 소재 제작(6/27), 심의번호 삽입(손보협회 심의필 제18214호, 2019.06.25)",
+      "entity_name": "DB손해보험",
+      "project_name": "DB손해보험 복수 매체 소재 제작",
+      "page_scope": "child",
+      "target_name": "DB손해보험 > DB손해보험 복수 매체 소재 제작",
+      "issue_title": "DB손해보험 롯데홈쇼핑·아시아나·우리은행 소재 제작 및 심의번호 삽입",
+      "summary": "DB손해보험 롯데홈쇼핑·아시아나·우리은행 신규/수정 소재 제작, 심의필 삽입",
+      "decision": "손보협회 심의필 제18214호(2019.06.25) 삽입 후 각 매체 소재 전달",
+      "action_items": [
+        "DB손해보험 x 롯데홈쇼핑 배너 제작",
+        "DB손해보험 x 아시아나 소재 수정 및 신규 제작",
+        "DB손해보험 x 우리은행 소재 신규 제작(기존 소재 톤 변경·모델컷 변경)",
+        "심의번호 삽입(손보협회 심의필 제18214호) 후 매체 전달"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTJWKH0C/p1561617110170700"
+    },
+    {
+      "task_id": "T005",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "#v_db금융투자 채널 — DB금융투자 소재 심의 시 3~5영업일 소요, 금주 내 공유 요청(7월 캠페인 종료 처리 필요). 6/28 DB금융투자 OCB 5월 실적 정산 관련(적립액 19,168,000원) CS·추가거래 내용 확인 요청",
+      "entity_name": "DB금융투자",
+      "project_name": "DB금융투자 소재 심의 및 정산",
+      "page_scope": "child",
+      "target_name": "DB금융투자 > DB금융투자 소재 심의 및 정산",
+      "issue_title": "DB금융투자 소재 심의 지연 및 OCB 5월 실적 정산 이슈",
+      "summary": "소재 심의 3~5영업일 소요로 7월 캠페인 종료 위기, OCB 5월 적립액 정산 확인",
+      "decision": "금주 내 수정 소재 공유 불가 시 7월 전체 캠페인 종료 처리, OCB 정산 내역 재검토",
+      "action_items": [
+        "DB금융투자 소재 수정본 금주 내 광고주 공유",
+        "7월 캠페인 종료 처리 여부 결정",
+        "OCB 5월 실적 정산 내역(적립액 19,168,000원) CS·추가거래 확인"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CJHG7D12M/p1560825481005200"
+    },
+    {
+      "task_id": "T006",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "#v_kb증권 채널 — KB증권 x 티머니 이벤트 협의 완료, 금융몰 내 우선 진행, KB증권 x 위메프 소재 버튼 코딩 요청(6/24) 및 수정, KB증권 x 윈더쇼핑 배너 컨펌 요청(6/27)",
+      "entity_name": "KB증권",
+      "project_name": "KB증권 티머니·위메프·윈더쇼핑 이벤트",
+      "page_scope": "child",
+      "target_name": "KB증권 > KB증권 티머니·위메프·윈더쇼핑 이벤트",
+      "issue_title": "KB증권 티머니 이벤트 협의 완료 및 위메프·윈더쇼핑 소재 제작",
+      "summary": "티머니 이벤트 금융몰 내 우선 진행 합의, 위메프·윈더쇼핑 소재 제작 중",
+      "decision": "티머니와 KB증권 이벤트 협의 완료, 수수료 없이 금융몰 내 진행 결정",
+      "action_items": [
+        "KB증권 x 티머니 이벤트 디자인 제작 요청",
+        "KB증권 x 위메프 랜딩페이지 코딩 작업",
+        "KB증권 x 윈더쇼핑 배너 컨펌 후 최종 전달"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CJPA1CBD2/p1560991493013500"
+    },
+    {
+      "task_id": "T007",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "#03_pincrux_디자인업무 — 교보라이프플래닛(바른보장 분석받기) 캠페인, 매체: 카카오페이, 리워드: 카카오페이머니 1,000원, 기존 카카오페이지 소재 활용 제작 요청(6/17)",
+      "entity_name": "교보라이프플래닛",
+      "project_name": "교보라이프플래닛 카카오페이 캠페인",
+      "page_scope": "child",
+      "target_name": "교보라이프플래닛 > 교보라이프플래닛 카카오페이 캠페인",
+      "issue_title": "교보라이프플래닛 바른보장 분석받기 카카오페이 소재 제작",
+      "summary": "카카오페이 소재 제작 요청, 리워드 카카오페이머니 1,000원, 기존 소재 활용",
+      "decision": "기존 카카오페이지 소재 활용하여 카카오페이 소재 제작",
+      "action_items": [
+        "교보라이프플래닛 카카오페이 소재 제작 (기존 소재 활용, 유의사항 동일)"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTJWKH0C/p1560758216080500"
+    },
+    {
+      "task_id": "T008",
+      "major_category": "In-house",
+      "minor_category": "Product",
+      "context_status": "matched",
+      "context_reference": "#03_pincrux_개발업무 채널 — 오퍼월 탭 추가 버전 기획안 공유(광고 영역 침해 최소화 중심), iOS는 coordinatorlayout 미지원으로 탭버전1 구현 불가, AOS/iOS 풀탭(세분화)·요약탭(간단) 버전 구조 정의",
+      "entity_name": "PINCRUX",
+      "project_name": "오퍼월 탭 추가 버전",
+      "page_scope": "child",
+      "target_name": "PINCRUX > 오퍼월 탭 추가 버전",
+      "issue_title": "오퍼월 탭 추가 버전 기획안 검토 및 AOS/iOS 구현 방향 결정",
+      "summary": "광고 영역 침해 최소화 오퍼월 탭 추가 버전 기획, iOS 탭버전1 구현 불가 확인",
+      "decision": "AOS: 풀탭(설치·참여·소셜·구매·예매) + 요약탭, iOS: 탭버전1 제외하고 3탭(참여·구매·예매) 구성으로 진행",
+      "action_items": [
+        "오퍼월 탭 추가 버전 디자인 프로토타입 완료 후 의견 체크",
+        "iOS 탭 구성 변경 방향 확정",
+        "예매적립 탭 추후 오픈 일정 논의"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBU0PHP3P/p1560736618036400"
+    },
+    {
+      "task_id": "T009",
+      "major_category": "In-house",
+      "minor_category": "Product",
+      "context_status": "new",
+      "context_reference": "#03_pincrux_개발업무 채널 — NH멤버스 CPA광고(Android Tracker SDK 연동, 리워드조건: 앱설치+회원가입+마케팅동의) 6월 말 개발 시작 예정, KT멤버십 앱채널 자동차보험가입 CPA광고(7/8 오픈 목표) 보험사와 계약 진행 중",
+      "entity_name": "PINCRUX",
+      "project_name": "NH멤버스·KT멤버십 CPA 광고 신규 개발",
+      "page_scope": "child",
+      "target_name": "PINCRUX > NH멤버스·KT멤버십 CPA 광고 신규 개발",
+      "issue_title": "NH멤버스 CPA 광고 및 KT멤버십 자동차보험 CPA 광고 신규 개발 착수",
+      "summary": "NH멤버스 Android Tracker SDK 연동 CPA 광고 6월 말 개발 시작, KT 7/8 오픈 목표",
+      "decision": "NH멤버스 개발 미팅 금주 우선협상자로 진행, KT멤버십 보험사 계약 후 7/8 오픈",
+      "action_items": [
+        "NH멤버스 CPA 광고 개발 미팅 진행",
+        "KT멤버십 APP채널 자동차보험 보험사와 계약 완료",
+        "KT멤버십 7/8 오픈 일정 맞춰 개발 착수"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBU0PHP3P/p1560833791062900"
+    },
+    {
+      "task_id": "T010",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "#03_pincrux_개발업무 채널 — KB손해보험 신규 이벤트로 해피머니 내 CPS 캠페인 진행 예정, 단가: 보험료의 11%, 리워드: 구글기프트카드 3만원, CPS 포스트백으로 변경 필요, 매체비 1만원(CPA건당/VAT별도)",
+      "entity_name": "KB증권",
+      "project_name": "KB손해보험 해피머니 CPS 캠페인",
+      "page_scope": "child",
+      "target_name": "KB증권 > KB손해보험 해피머니 CPS 캠페인",
+      "issue_title": "KB손해보험 해피머니 CPS 캠페인 신규 진행 문의",
+      "summary": "KB손해보험 해피머니 내 CPS 캠페인, 단가 보험료 11%, 리워드 구글기프트카드 3만원",
+      "decision": "CPS 포스트백으로 변경, 광고주 개발팀에 연동 필요 내용 전달 후 진행",
+      "action_items": [
+        "KB손해보험 CPS 포스트백 변경 광고주 개발팀 전달",
+        "리워드(구글기프트카드 3만원/한국선불카드 구매대행) 방식 확인"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBU0PHP3P/p1560750812054300"
+    },
+    {
+      "task_id": "T011",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "#03_pincrux_디자인업무 채널 — 우리원 CPS 캠페인 네오위즈 슬롯 소재 제작 요청(6/17), 6/24 2차 소재 제작(총 2개)",
+      "entity_name": "웰컴저축은행",
+      "project_name": "우리원 CPS 네오위즈 슬롯 소재",
+      "page_scope": "child",
+      "target_name": "웰컴저축은행 > 우리원 CPS 네오위즈 슬롯 소재",
+      "issue_title": "우리원 CPS 캠페인 네오위즈 슬롯 소재 제작(1·2차)",
+      "summary": "우리원 CPS 캠페인 네오위즈 슬롯용 소재 2차 제작 완료",
+      "decision": "1차 PSD 없이 이미지 파일로 전달, 2차 총 2개 제작",
+      "action_items": [
+        "우리원 CPS 네오위즈 슬롯 2차 소재(총 2개) 제작 완료 및 전달"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTJWKH0C/p1561341111129100"
+    },
+    {
+      "task_id": "T012",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "#v_삼성증권 채널 — 삼성증권 x 카카오페이지 CPM 추가 진행, 기존 소재 이벤트 기간·리워드만 변경하여 추가 심의, 6/26 카카오페이지 CPM 가능 확인 후 삼성증권 배너 시안 전달 요청",
+      "entity_name": "삼성증권",
+      "project_name": "삼성증권 카카오페이지 CPM 추가 심의",
+      "page_scope": "child",
+      "target_name": "삼성증권 > 삼성증권 카카오페이지 CPM 추가 심의",
+      "issue_title": "삼성증권 카카오페이지 CPM 이벤트 기간 변경 추가 심의",
+      "summary": "이벤트 기간 2019.6.25~7.31로 변경, 추가 심의 후 삼성증권 보고 예정",
+      "decision": "이벤트 기간·리워드만 수정한 추가 심의안 삼성증권에 보고, 컨펌 후 라이브",
+      "action_items": [
+        "삼성증권 카카오페이지 CPM 추가 심의 진행(기간 2019.6.25~7.31)",
+        "삼성증권 최종 시안 전달 및 컨펌",
+        "카카오페이지 CPM 라이브 진행"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CKHKH3KC5/p1561509138029600"
+    },
+    {
+      "task_id": "T013",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "#03_pincrux_디자인업무 채널 — 미래에셋대우 x 티머니 PUSH 소재 제작 요청(6/19), 5~6월 소재 상단 활용 제작, 미래에셋대우 7~8월 소재 네이버웹툰·시리즈 우선 작업",
+      "entity_name": "미래에셋대우",
+      "project_name": "미래에셋대우 티머니 PUSH 소재 제작",
+      "page_scope": "child",
+      "target_name": "미래에셋대우 > 미래에셋대우 티머니 PUSH 소재 제작",
+      "issue_title": "미래에셋대우 티머니 PUSH 및 7~8월 네이버웹툰·시리즈 소재 제작",
+      "summary": "티머니 PUSH 소재(5~6월 소재 활용) 제작, 7~8월 네이버웹툰·시리즈 우선 작업",
+      "decision": "네이버웹툰·시리즈 → 카카오페이지 → 카카오페이 → 엘포인트 순서로 소재 제작 진행",
+      "action_items": [
+        "미래에셋대우 x 티머니 PUSH 소재 제작(5~6월 소재 상단 활용)",
+        "7~8월 소재 네이버웹툰·시리즈 우선 제작 및 광고주 전달"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTJWKH0C/p1560920803102800"
+    },
+    {
+      "task_id": "T014",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "#v_db금융투자 채널 — CJONE 6/17 오전 10시 라이브 완료 보고",
+      "entity_name": "DB금융투자",
+      "project_name": "DB금융투자 CJONE 라이브",
+      "page_scope": "child",
+      "target_name": "DB금융투자 > DB금융투자 CJONE 라이브",
+      "issue_title": "DB금융투자 CJONE 라이브 완료",
+      "summary": "CJONE 6/17 오전 10시 라이브 완료",
+      "decision": "라이브 완료 확인 후 정상 운영",
+      "action_items": [],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CJHG7D12M/p1560737308004200"
+    },
+    {
+      "task_id": "T015",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "#03_pincrux_디자인업무 채널 — 미래에셋대우 7~8월 SB 수정 요청(6/17, 문구 수정), 광고주 급작스러운 요청으로 문구 수정, 미래에셋대우 광고주 심의용 랜딩페이지 1ea 수정 제작 요청(6/17)",
+      "entity_name": "미래에셋대우",
+      "project_name": "미래에셋대우 SB 문구 수정 및 랜딩페이지",
+      "page_scope": "child",
+      "target_name": "미래에셋대우 > 미래에셋대우 SB 문구 수정 및 랜딩페이지",
+      "issue_title": "미래에셋대우 7~8월 SB 문구 수정 및 심의용 랜딩페이지 제작",
+      "summary": "광고주 급요청으로 SB 문구 수정, 심의용 랜딩페이지 1개 수정 제작",
+      "decision": "수정 소재 베리에이션 작업 후 광고주 공유",
+      "action_items": [
+        "미래에셋대우 7~8월 SB 문구 수정 작업",
+        "심의용 랜딩페이지 수정 제작 및 광고주 공유"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTJWKH0C/p1560748142074900"
+    },
+    {
+      "task_id": "T016",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "#03_pincrux_디자인업무 채널 — 웰컴저축은행 x 쿨쳐랜드 CPS 소재 가이드에 맞게 사이즈 수정 요청(6/19, MO 뷰배너 구성 변경), PC/MO 버전 각각 제작",
+      "entity_name": "웰컴저축은행",
+      "project_name": "웰컴저축은행 쿨쳐랜드 CPS 소재 수정",
+      "page_scope": "child",
+      "target_name": "웰컴저축은행 > 웰컴저축은행 쿨쳐랜드 CPS 소재 수정",
+      "issue_title": "웰컴저축은행 쿨쳐랜드 CPS 소재 PC/MO 사이즈 수정",
+      "summary": "MO 뷰배너 구성 변경으로 PC/MO 버전 소재 사이즈 수정 요청",
+      "decision": "PC/MO 버전 각각 제작하여 전달",
+      "action_items": [
+        "웰컴저축은행 x 쿨쳐랜드 CPS 소재 PC/MO 버전 수정 제작"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTJWKH0C/p1560904630094200"
+    },
+    {
+      "task_id": "T017",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "new",
+      "context_reference": "#03_pincrux_디자인업무 채널 — 추가 프리미엄 소재 제작 요청(튜브캐시프로, 6/18), 알바몬 앱 추가 프리미엄 소재 제작 요청(6/19)",
+      "entity_name": "PINCRUX",
+      "project_name": "프리미엄 소재 신규 제작(튜브캐시프로·알바몬)",
+      "page_scope": "root",
+      "target_name": "PINCRUX",
+      "issue_title": "튜브캐시프로·알바몬 프리미엄 소재 신규 제작",
+      "summary": "튜브캐시프로·알바몬 앱 프리미엄 소재 신규 제작 요청",
+      "decision": "기존 소재 활용하여 프리미엄 소재 신규 제작",
+      "action_items": [
+        "튜브캐시프로 프리미엄 소재 제작",
+        "알바몬 프리미엄 소재 제작"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTJWKH0C/p1560839913088800"
+    },
+    {
+      "task_id": "T018",
+      "major_category": "In-house",
+      "minor_category": "Product",
+      "context_status": "matched",
+      "context_reference": "#03_pincrux_개발업무 채널 — 오퍼월 예매적립 탭 노출/비노출 여부를 서버에서 flag(tic_view_flag)로 내려드리고, 광고 리스트에서 예매 적립 플래그(tic_flag) 추가, 865번 계정 104695번 캠페인 901613 매체 리포팅 확인 설정 요청",
+      "entity_name": "PINCRUX",
+      "project_name": "오퍼월 예매적립 탭 서버 플래그 처리",
+      "page_scope": "child",
+      "target_name": "PINCRUX > 오퍼월 예매적립 탭 서버 플래그 처리",
+      "issue_title": "오퍼월 예매적립 탭 노출 서버 flag 추가 및 캠페인 매체 리포팅 설정",
+      "summary": "예매적립 탭 노출을 서버 flag로 제어, 광고 리스트에 예매 적립 플래그 추가",
+      "decision": "tic_view_flag(메인)·tic_flag(광고리스트) 서버 내려주기 방식으로 구현",
+      "action_items": [
+        "오퍼월 예매적립 flag(tic_view_flag, tic_flag) 서버 구현",
+        "865번 계정 104695번 캠페인 901613 매체 리포팅 확인 설정"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBU0PHP3P/p1560754849054700"
+    },
+    {
+      "task_id": "T019",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "#03_pincrux_디자인업무 채널 — DB금융투자 카카오페이 소재 수정 요청(6/24), DB금융투자 전 매체 배너 및 랜딩 수정 요청(6/24), DB금융투자 카카오페이 수정본 6/26 공유",
+      "entity_name": "DB금융투자",
+      "project_name": "DB금융투자 카카오페이 소재 수정",
+      "page_scope": "child",
+      "target_name": "DB금융투자 > DB금융투자 카카오페이 소재 수정",
+      "issue_title": "DB금융투자 전 매체 소재 및 카카오페이 수정",
+      "summary": "DB금융투자 전 매체 배너·랜딩 및 카카오페이 소재 수정 요청, 6/26 공유",
+      "decision": "전 매체 소재 및 카카오페이 수정본 제작 후 광고주 공유",
+      "action_items": [
+        "DB금융투자 전 매체 배너·랜딩 수정 제작",
+        "DB금융투자 카카오페이 수정본 6/26 공유"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTJWKH0C/p1561343513131600"
+    },
+    {
+      "task_id": "T020",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "#v_kb증권 채널 — KT클립 지면은 미래에셋대우 영역으로 논의 중, 정확한 지면 확인 후 연락 대기",
+      "entity_name": "KB증권",
+      "project_name": "KB증권 KT클립 지면 협의",
+      "page_scope": "child",
+      "target_name": "KB증권 > KB증권 KT클립 지면 협의",
+      "issue_title": "KB증권 KT클립 지면 미래에셋대우 영역 중복 이슈 확인",
+      "summary": "KT클립 지면이 미래에셋대우 영역으로 협의 중, 정확한 지면 확인 필요",
+      "decision": "KB증권 KT클립 지면 확인 후 연락 대기",
+      "action_items": [
+        "KT클립 지면 정확한 영역 확인",
+        "확인 후 KB증권 x KT클립 배너·랜딩 제작 요청"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CJPA1CBD2/p1561101746017800"
+    },
+    {
+      "task_id": "T021",
+      "major_category": "In-house",
+      "minor_category": "Project",
+      "context_status": "new",
+      "context_reference": "#03_pincrux_디자인업무 채널 — 카카오페이 내 모든 캠페인 제작 시 리워드명칭을 '카카오페이머니' or '페이머니'로 기재 요청(6/28, 향후 전체 적용)",
+      "entity_name": "PINCRUX",
+      "project_name": "카카오페이 리워드 명칭 표준화",
+      "page_scope": "root",
+      "target_name": "PINCRUX",
+      "issue_title": "카카오페이 캠페인 소재 내 리워드 명칭 표준화 결정",
+      "summary": "향후 카카오페이 내 캠페인 소재 리워드 명칭 '카카오페이머니' 또는 '페이머니'로 통일",
+      "decision": "카카오페이 캠페인 소재 리워드 명칭을 '카카오페이머니' 또는 '페이머니'로 표준화",
+      "action_items": [
+        "향후 모든 카카오페이 캠페인 소재 제작 시 리워드 명칭 '카카오페이머니' or '페이머니' 적용"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTJWKH0C/p1561711516186500"
+    }
+  ],
+  "uncategorized": []
+}

@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.1",
+  "node": "validator",
+  "run_date": "2019-07-14",
+  "source_files": {
+    "collector": "Archive_Pincrux/01_Collector/2019-07-14.json",
+    "writer": "Archive_Pincrux/02_Writer/2019-07-14.json"
+  },
+  "node_status": "success",
+  "review_summary": {
+    "total_reviewed": 4,
+    "passed_cnt": 4,
+    "failed_cnt": 0,
+    "slack_reread_cnt": 1
+  },
+  "validation_results": [
+    {
+      "task_id": "T001",
+      "target_name": "미래에셋대우 > 삼성페이 CPS 정산",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955009",
+      "confluence_page_id": "191955009",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "7월 거래분 8월 지급 유지, 8월 거래분부터 9월 지급 순연 결정이 원본과 동일하게 반영됨. 기존 섹션(7~8월 소재 제작, 카카오페이지 CPM 캠페인)이 삭제/훼손 없이 그대로 보존됨. 액션 아이템 누락 없음.",
+      "suggested_fix": null
+    },
+    {
+      "task_id": "T002",
+      "target_name": "삼성증권 > 삼성페이 제휴 캠페인",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192086150",
+      "confluence_page_id": "192086150",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "이벤트 기간(07.10~07.31), 데일리캡(매체별 100건), CPA 단가(20,000원 VAT포함), 심의번호(제19-B2125호)가 원본과 정확히 일치. 기존 섹션(카카오페이지 CPM, 계좌개설 CPA, 소재 작업 2019) 모두 보존됨. 액션 아이템 2건 모두 반영됨.",
+      "suggested_fix": null
+    },
+    {
+      "task_id": "T003",
+      "target_name": "KB증권 > 네이버페이 제휴 이벤트",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/198279169",
+      "confluence_page_id": "198279169",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "320건 초과소진, 리워드 미지급, 팝업 문구(2~3일 안내), LMS 프로세스 개선 결정이 왜곡/누락 없이 반영됨. 위메프 쿠폰 미수령 사례도 히스토리에 포함됨. 기존 섹션(티머니·위메프·윈더쇼핑, KB손보 해피머니, 다음웹툰 CPI, 비대면 계좌개설) 모두 보존됨. 액션 아이템 3건 모두 반영됨.",
+      "suggested_fix": null
+    },
+    {
+      "task_id": "T004",
+      "target_name": "NH멤버스",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/199491593",
+      "confluence_page_id": "199491593",
+      "slack_reread": true,
+      "slack_reread_trigger": "신규(new) 페이지이므로 원본 슬랙 스레드(CBU0PHP3P, ts=1562808435.081900)를 재확인하여 수집 정책 및 APPCODE 발급 내용을 교차 검증함.",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "슬랙 원본 재확인 결과, android_id/google ad id(adid) 2개 수집 제한, referrer 추가 수집, 개발용 SDK 미제공, APPCODE(PIN10000022) 발급 내용이 모두 정확히 일치. 날짜(2019-07-11)도 스레드 타임스탬프와 일치. 신규 페이지 템플릿(엔티티 개요/FAQ/담당자 섹션) 정상 생성됨.",
+      "suggested_fix": null
+    }
+  ]
+}

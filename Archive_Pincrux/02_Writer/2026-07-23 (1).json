@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.1",
+  "node": "writer",
+  "run_date": "2026-07-23",
+  "source_file": "Archive_Pincrux/01_Collector/2026-07-23.json",
+  "node_status": "success",
+  "processed_tasks": [
+    {
+      "task_id": "T001",
+      "entity_name": "DB손해보험",
+      "project_name": "1월 캠페인 실적 보고 (2021)",
+      "page_scope": "child",
+      "target_name": "DB손해보험 > 1월 캠페인 실적 보고 (2021)",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955049/DB",
+      "confluence_page_id": "191955049",
+      "updated_sections": ["## DB손해보험 1월 캠페인 실적 보고 (2021)"]
+    },
+    {
+      "task_id": "T002",
+      "entity_name": "리메세",
+      "project_name": "니베아·차올 첫결제 이벤트 (2021)",
+      "page_scope": "root",
+      "target_name": "리메세",
+      "context_status": "new",
+      "action_taken": "created_new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/217088010",
+      "confluence_page_id": "217088010",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/210665474",
+      "confluence_parent_page_id": "210665474",
+      "updated_sections": ["## 엔티티 개요", "## 니베아·차올 첫결제 이벤트 (2021)", "## FAQ 및 트러블슈팅", "## 주요 담당자"]
+    },
+    {
+      "task_id": "T003",
+      "entity_name": "티켓모아",
+      "project_name": "스코어888(유시스템) 충전소 연동 (2021)",
+      "page_scope": "child",
+      "target_name": "티켓모아 > 스코어888(유시스템) 충전소 연동 (2021)",
+      "context_status": "new",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/200835080",
+      "confluence_page_id": "200835080",
+      "updated_sections": ["## 스코어888(유시스템) 충전소 연동 (2021)"]
+    }
+  ],
+  "skipped_tasks": []
+}

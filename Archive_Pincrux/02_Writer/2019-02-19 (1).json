@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.1",
+  "node": "writer",
+  "run_date": "2019-02-19",
+  "run_mode": "backfill",
+  "period": "2019-02-19 to 2019-02-25",
+  "status": "success",
+  "source_collector_file": "Archive_Pincrux/01_Collector/2019-02-19.json",
+  "pages_processed": [
+    {
+      "entity": "DB손해보험",
+      "page_id": "191955049",
+      "action": "updated",
+      "version": 5,
+      "items_applied": ["T001", "T003", "T004", "T012"],
+      "summary": "이벤트 기간 변경(02.19~03.19, 당첨자 발표 03.20), 레진코믹스 쿠폰 신규 200매 발행 요청, 페이코 배너 수정(상단 원→P, 하단 3만 포인트), 코나 소재 등록 요청 이력 추가"
+    },
+    {
+      "entity": "미래에셋대우",
+      "page_id": "191955009",
+      "action": "updated",
+      "version": 3,
+      "items_applied": ["T010", "T011"],
+      "summary": "L포인트 소재 제작 요청(차주 월요일까지), 코나카드 소재 제작 요청(배너 1ea + 모바일랜딩 1ea) 이력 추가"
+    },
+    {
+      "entity": "페이앤드",
+      "page_id": "192053250",
+      "action": "updated",
+      "version": 6,
+      "items_applied": ["T007", "T008", "T009", "T013", "T014"],
+      "summary": "기능 개선 4가지 확정(함께쓰기 2안, N빵, 거래취소 텍스트, 거래관리 검색), iOS 심사 완료 및 마켓 업데이트, 이크레더블 2호 회원사 오픈 공지+QR 인쇄 이슈, API 18번·20번 항목 추가, 제플린 업로드 완료 이력 추가"
+    },
+    {
+      "entity": "하나멤버스",
+      "page_id": "192151700",
+      "action": "created",
+      "version": 1,
+      "parent_id": "190152706",
+      "items_applied": ["T002"],
+      "summary": "신규 페이지 생성(Client>Project). 소재 심의번호 삽입(2019-01-15) 및 소재 수정사항 안내(2019-02-20) 이력 포함"
+    },
+    {
+      "entity": "레진코믹스",
+      "page_id": "192348161",
+      "action": "created",
+      "version": 1,
+      "parent_id": "190447617",
+      "items_applied": ["T003", "T006"],
+      "summary": "신규 페이지 생성(Media>Product). DB손해보험 제휴 쿠폰(50코인) 신규 200매 발행 요청, 테스트계 API Unknown column 'appgrp' 오류 이력 포함"
+    },
+    {
+      "entity": "SK브로드밴드",
+      "page_id": "192217151",
+      "action": "created",
+      "version": 1,
+      "parent_id": "190152706",
+      "items_applied": ["T005"],
+      "summary": "신규 페이지 생성(Client>Project). 26세~60세 참여 제한 적용 완료 이력 포함"
+    },
+    {
+      "entity": "스테들러 코리아",
+      "page_id": "192086101",
+      "action": "created",
+      "version": 1,
+      "parent_id": "190152706",
+      "items_applied": ["T015"],
+      "summary": "신규 페이지 생성(Client>Project). 인스타그램 소재 제작 요청 이력 포함"
+    }
+  ],
+  "items_skipped": [],
+  "stats": {
+    "total_items": 15,
+    "items_applied": 15,
+    "items_skipped": 0,
+    "pages_updated": 3,
+    "pages_created": 4
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "schema_version": "1.1",
+  "node": "refiner",
+  "run_date": "2026-08-02",
+  "source_file": "Archive_Pincrux/03_Validator/2026-08-02.json",
+  "node_status": "success",
+  "published_tasks": [
+    {
+      "task_id": "T001",
+      "target_name": "NHN AD > 달리살다 오가닉 라이프 스토어 멤버십가입 CPA",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/226361345/NHN+AD",
+      "confluence_page_id": "226361345",
+      "refined_points": [
+        "신규 섹션(달리살다 멤버십가입 CPA) 앞 구분선(---) 정상 배치 및 볼드체/인용구/체크리스트 형식 확인 — 슬랙 구어체 잔재 없어 추가 수정 불요",
+        "기존 GS SHOP/GS프레시몰 섹션은 소급 수정 없이 그대로 보존"
+      ],
+      "published_at": "2026-08-02T23:49:00+09:00"
+    },
+    {
+      "task_id": "T002",
+      "target_name": "NHN AD > GS샵 첫구매 이벤트 CPA",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/226361345/NHN+AD",
+      "confluence_page_id": "226361345",
+      "refined_points": [
+        "기존 섹션에 추가된 2022-02-25 운영 히스토리 항목의 문어체·볼드체 형식 확인 — 추가 수정 불요"
+      ],
+      "published_at": "2026-08-02T23:49:00+09:00"
+    },
+    {
+      "task_id": "T003",
+      "target_name": "와이즈버즈 > 증권플러스 계좌연동/비상장 CPA·CPE",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/226197512",
+      "confluence_page_id": "226197512",
+      "refined_points": [
+        "계좌연동/비상장 두 섹션 모두 인용구·체크리스트 형식 정상 확인 — 추가 수정 불요",
+        "기존 히스토리 손실 없음, 액션 아이템(엔티티 성격 확인) 체크리스트 형식 유지"
+      ],
+      "published_at": "2026-08-02T23:49:00+09:00"
+    },
+    {
+      "task_id": "T005",
+      "target_name": "애드맥스 > 청소연구소 CPA",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/222822410",
+      "confluence_page_id": "222822410",
+      "refined_points": [
+        "신규 섹션(청소연구소 CPA) 앞 구분선 정상 배치 확인, 슬랙 구어체 잔재 없음",
+        "엔티티 개요의 안내문구(ℹ️)는 이전 배치에서 작성된 기존 섹션 소관으로 이번 회차에서 소급 수정하지 않음"
+      ],
+      "published_at": "2026-08-02T23:49:00+09:00"
+    },
+    {
+      "task_id": "T006",
+      "target_name": "미래마케팅 > 피플라이프 보험 상담신청 CPA",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/228130817",
+      "confluence_page_id": "228130817",
+      "refined_points": [
+        "신규 페이지 전체(엔티티 개요·개요 및 배경·운영 히스토리·의사결정 사항·액션 아이템·FAQ·담당자) 문어체 및 마크다운 형식 확인 — 수정 불요",
+        "human_action_required 배지 및 체크리스트 액션 아이템 표준 형식 유지 확인"
+      ],
+      "published_at": "2026-08-02T23:49:00+09:00"
+    },
+    {
+      "task_id": "T007",
+      "target_name": "마라나타엔터테인먼트 > 하이퍼탱크 900다이아 모으기 CPA",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/228163585",
+      "confluence_page_id": "228163585",
+      "refined_points": [
+        "신규 페이지 내 하이퍼탱크 섹션 앞 구분선 및 체크리스트/인용구 형식 확인 — 수정 불요",
+        "T008(요고모고) 섹션과의 병존 구조 및 구분선 정상 확인"
+      ],
+      "published_at": "2026-08-02T23:49:00+09:00"
+    },
+    {
+      "task_id": "T008",
+      "target_name": "마라나타엔터테인먼트 > 요고모고 900달란트 모으기 CPA",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/228163585",
+      "confluence_page_id": "228163585",
+      "refined_points": [
+        "신규 페이지 내 요고모고 섹션 앞 구분선 및 인용구 형식 확인 — 수정 불요"
+      ],
+      "published_at": "2026-08-02T23:49:00+09:00"
+    },
+    {
+      "task_id": "T009",
+      "target_name": "나트리스 > 무한돌파삼국지 리버스L CPA",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/227934218",
+      "confluence_page_id": "227934218",
+      "refined_points": [
+        "신규 페이지 전체 문어체·구분선·체크리스트 형식 확인 — 수정 불요"
+      ],
+      "published_at": "2026-08-02T23:49:00+09:00"
+    },
+    {
+      "task_id": "T010",
+      "target_name": "루키즈커뮤니케이션즈 > 캐시백#매일매일 손쉽게 포인트 적립 CPA",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/227966992",
+      "confluence_page_id": "227966992",
+      "refined_points": [
+        "읽어봄이 재검증(2026-08-02, PASSED) 시 이미 반영된 정정 내용(취소선 처리, 단가 임의 변경 경위 명시, 원복 요청, 개발팀 조치 요청, 후속 확인 액션 아이템)의 문체·서식 최종 확인 — 추가 수정 불요",
+        "사실관계(단가 90/70원→100원 임의 변경 경위, 2022-02-25 조치 요청) 변경 없음 확인"
+      ],
+      "published_at": "2026-08-02T23:49:00+09:00"
+    },
+    {
+      "task_id": "T011",
+      "target_name": "와이즈솔루션 > 투데이 마인드케어 유료 부가서비스 가입 CPA",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/228032520",
+      "confluence_page_id": "228032520",
+      "refined_points": [
+        "신규 페이지 전체 문어체·구분선·체크리스트 형식 확인 — 수정 불요",
+        "와이즈버즈와의 혼동 방지 안내문 및 human_action_required 배지 표준 형식 유지 확인"
+      ],
+      "published_at": "2026-08-02T23:49:00+09:00"
+    },
+    {
+      "task_id": "T012",
+      "target_name": "쏘카 > 쏘카 회원가입 CPA",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/228065288",
+      "confluence_page_id": "228065288",
+      "refined_points": [
+        "엔티티 개요 표 라벨 오탈자 정정: '엔티명' → '엔티티명' (사실관계 변경 아님, 표기 정정)",
+        "그 외 운영 히스토리·의사결정 사항·액션 아이템 문체 및 서식은 표준과 일치하여 추가 수정 없이 컨플루언스 반영(버전 2)"
+      ],
+      "published_at": "2026-08-02T23:48:46+09:00"
+    },
+    {
+      "task_id": "T013",
+      "target_name": "부산일보 > 부산일보 네이버 채널 구독하기",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/228130838",
+      "confluence_page_id": "228130838",
+      "refined_points": [
+        "신규 페이지 전체 문어체·구분선·체크리스트 형식 확인 — 수정 불요",
+        "'1차' 집행 이력 미확인 사항의 액션 아이템 표기 적절성 확인"
+      ],
+      "published_at": "2026-08-02T23:49:00+09:00"
+    },
+    {
+      "task_id": "T014",
+      "target_name": "쿠팡",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/228229121",
+      "confluence_page_id": "228229121",
+      "refined_points": [
+        "신규 Media_Partner 페이지 전체 문어체·구분선·체크리스트 형식 확인 — 수정 불요",
+        "예외오픈 미확정 상태를 과장 없이 보류 처리한 표현 유지 확인"
+      ],
+      "published_at": "2026-08-02T23:49:00+09:00"
+    },
+    {
+      "task_id": "T015",
+      "target_name": "한국선불카드",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/228229142",
+      "confluence_page_id": "228229142",
+      "refined_points": [
+        "신규 Media_Partner 페이지 전체 문어체·구분선·체크리스트 형식 확인 — 수정 불요"
+      ],
+      "published_at": "2026-08-02T23:49:00+09:00"
+    },
+    {
+      "task_id": "T016",
+      "target_name": "오퍼월 > 포스트백 종료캠페인 처리 정책",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151821",
+      "confluence_page_id": "192151821",
+      "refined_points": [
+        "신규 섹션(포스트백 종료캠페인 처리 정책 확정) 앞 구분선 정상 배치 및 인용구 형식 확인 — 수정 불요",
+        "기존 히스토리 섹션(참여적립 리워드율, 리워드샵, TNK 연동 등)은 소급 수정 없이 보존"
+      ],
+      "published_at": "2026-08-02T23:49:00+09:00"
+    },
+    {
+      "task_id": "T017",
+      "target_name": "오퍼월 > Pincrux+ SDK 신규버전 출시",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151821",
+      "confluence_page_id": "192151821",
+      "refined_points": [
+        "신규 섹션(Pincrux+ SDK 신규버전 출시) 앞 구분선 및 인용구 형식 확인 — 수정 불요",
+        "읽어봄이 재검증(2026-08-02, PASSED)으로 복구된 'FAQ 및 트러블슈팅'/'주요 담당자' 표준 placeholder 문구가 타 신규 페이지와 동일하게 유지됨을 확인"
+      ],
+      "published_at": "2026-08-02T23:49:00+09:00"
+    }
+  ]
+}

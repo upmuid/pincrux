@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.1",
+  "node": "validator",
+  "run_date": "2019-08-31",
+  "source_files": {
+    "collector": "Archive_Pincrux/01_Collector/2019-08-31.json",
+    "writer": "Archive_Pincrux/02_Writer/2019-08-31.json"
+  },
+  "node_status": "success",
+  "review_summary": {
+    "total_reviewed": 4,
+    "passed_cnt": 4,
+    "failed_cnt": 0,
+    "slack_reread_cnt": 1
+  },
+  "validation_results": [
+    {
+      "task_id": "T001",
+      "target_name": "NH멤버스",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/199491593/NH",
+      "confluence_page_id": "199491593",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "이전 회차(2026-07-07) 전수 재검증에서 PASSED 확정, 데이터 변경 없어 결과 승계. 슬랙 원문(8/27 공유~8/30 17:47 재배포 완료 공지)과 컨플루언스/JSON의 일정(8/28 검수, 8/29 배포, 8/30 16:00 수정, 9/6 예정), REFERRER 오류 사유까지 문구 단위로 일치했으며, 기존 2019-07 히스토리 섹션 보존 및 카테고리 정정(Client>Product→Media_Partner>Product)도 타당함을 확인함."
+    },
+    {
+      "task_id": "T002",
+      "target_name": "티켓충전소",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/200835080",
+      "confluence_page_id": "200835080",
+      "slack_reread": true,
+      "slack_reread_trigger": "직전 회차 CONTEXT_DISTORTION FAILED 판정 이후 총총 정정 지시에 따른 재검증",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "컨플루언스 페이지(200835080)를 재조회한 결과, '의사결정 사항' 및 '운영 히스토리' 섹션 모두 수집항목이 CI를 제외한 '회원관리번호·광고이용내역'으로 정확히 정정되어 있음을 확인. 8/27 서정철의 CI 제외 요청, 조혁의 코딩본 수정 확정, 8/28 김지훈 최종 승인 경위가 히스토리 섹션에 명시되어 원본 슬랙 스레드(CBU0PHP3P, ts=1566810603.044800)의 최종 합의 내용과 완전히 일치함. 모으미(01_Collector) JSON의 decision 필드 역시 동일하게 정정되어 collector-writer-page 3자 간 정합성 확보됨. 이전 FAILED의 원인이었던 CI 포함 오기재는 해소됨.",
+      "correction_verified": true
+    },
+    {
+      "task_id": "T003",
+      "target_name": "미래에셋대우",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955009",
+      "confluence_page_id": "191955009",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "이전 회차(2026-07-07) 전수 재검증에서 PASSED 확정, 데이터 변경 없어 결과 승계. 심의번호(제19-03517호, 2019.08.29~2019.10.31), 8개 매체 코딩 요청, 코나카드 확장 내용이 슬랙 원문 및 기존 히스토리 보존 상태와 정확히 일치함을 확인함."
+    },
+    {
+      "task_id": "T004",
+      "target_name": "DB금융투자",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151759/DB",
+      "confluence_page_id": "192151759",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "이전 회차(2026-07-07) 전수 재검증에서 PASSED 확정, 데이터 변경 없어 결과 승계. 심사필 제19-03396호(2019.08.22~2019.12.31), 랜딩페이지 2종 코딩 요청 내용 및 기존 히스토리 보존이 슬랙 원문과 일치하고, new→matched 재분류의 타당성도 확인됨."
+    }
+  ]
+}

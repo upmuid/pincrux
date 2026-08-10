@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.1",
+  "node": "writer",
+  "run_date": "2026-07-29",
+  "source_file": "Archive_Pincrux/01_Collector/2026-07-29.json",
+  "node_status": "success",
+  "processed_tasks": [
+    {
+      "task_id": "T001",
+      "entity_name": "티켓모아",
+      "project_name": "충전소 매체 연동 어뷰징 이슈 및 정책 정비",
+      "page_scope": "root",
+      "target_name": "티켓모아",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/200835080",
+      "confluence_page_id": "200835080",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/200835080",
+      "confluence_parent_page_id": "210763777",
+      "updated_sections": ["## 충전소 매체 연동 어뷰징 이슈 및 정책 정비 (2021-12)"],
+      "notes": "1차 편집 시 슬랙 출처 링크에 임시 placeholder(p1639646270XXXXXX)를 기재하는 오류가 있어, 정확한 message_ts(1639646270.061200)를 재조회하여 실제 permalink로 즉시 정정(version 8). 기존 섹션(충전소 API 개발, 스코어888 연동, 명칭 변경, 개인정보 동의 약관 등)은 변경 없이 보존."
+    },
+    {
+      "task_id": "T002",
+      "entity_name": "카카오페이",
+      "project_name": "금융사 캠페인 리워드 지급방식 변경(카카오페이머니→카카오페이포인트)",
+      "page_scope": "root",
+      "target_name": "카카오페이",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192446504",
+      "confluence_page_id": "192446504",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192446504",
+      "confluence_parent_page_id": "210894849",
+      "updated_sections": ["## 금융사 캠페인 리워드 지급방식 변경: 카카오페이머니 → 카카오페이포인트 (2021-12)"],
+      "notes": "슬랙 스레드(원 메시지 + 답글 5건) 전체를 재확인하여 추가 결정사항 없음을 검증 후 반영(version 4). 기존 섹션(카카오페이 가이드 PSD 파일 요청)은 변경 없이 보존."
+    }
+  ],
+  "skipped_tasks": []
+}

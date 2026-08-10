@@ -1,0 +1,166 @@
+{
+  "schema_version": "1.1",
+  "node": "validator",
+  "run_date": "2019-06-14",
+  "run_mode": "backfill",
+  "collection_period": {"start": "2019-06-01", "end": "2019-06-14"},
+  "source_collector": "Archive_Pincrux/01_Collector/2019-06-14.json",
+  "source_writer": "Archive_Pincrux/02_Writer/2019-06-14.json",
+  "status": "success",
+  "metrics": {
+    "total_tasks": 8,
+    "passed": 8,
+    "failed": 0,
+    "warnings": 1
+  },
+  "validation_results": [
+    {
+      "task_id": "T001",
+      "entity_name": "DB손해보험",
+      "confluence_page_id": "191955049",
+      "verdict": "PASSED",
+      "checks": {
+        "section_present": true,
+        "key_facts_aligned": true,
+        "history_preserved": true,
+        "no_hallucination": true
+      },
+      "key_facts_verified": [
+        "이벤트 기간 2019-06-03 ~ 2019-06-09 확인",
+        "리워드 에쏘일(soil) 확인",
+        "혜택발송일 2019-07-11 확인",
+        "DB금융투자 CJONE 월 1만원×5개월, 2019-07-01 적용 확인"
+      ],
+      "note": "기존 타이어뱅크·자동차동호회·친구소개·월별가입 섹션 모두 보존 확인"
+    },
+    {
+      "task_id": "T002",
+      "entity_name": "미래에셋대우",
+      "confluence_page_id": "191955009",
+      "verdict": "PASSED",
+      "checks": {
+        "section_present": true,
+        "key_facts_aligned": true,
+        "history_preserved": true,
+        "no_hallucination": true
+      },
+      "key_facts_verified": [
+        "카카오페이지 CPM 집행 기간 2019-06-10~2019-06-16 확인",
+        "6/18 OCB 브랜드데이 일정 충돌 방지 제외 확인",
+        "CJONE 라이브 완료 2019-06-04 확인"
+      ],
+      "note": "신규 섹션으로 추가됨, 기존 내용 없음으로 히스토리 충돌 없음"
+    },
+    {
+      "task_id": "T003",
+      "entity_name": "KB증권",
+      "confluence_page_id": "198279169",
+      "verdict": "PASSED",
+      "checks": {
+        "section_present": true,
+        "key_facts_aligned": true,
+        "history_preserved": true,
+        "no_hallucination": true
+      },
+      "key_facts_verified": [
+        "더크림유니언(5/1~13) 16,000원 확인",
+        "애드히어꼼뻔(5/14~31) 제휴 19,000원·충전소 15,000원 확인",
+        "네이버페이 혜택1 쿠폰 변경 불가(앱 개발 이슈) 확인"
+      ],
+      "note": "기존 다음웹툰 CPI 5월 운영 내역 보존, 6월 정산 항목 정확히 추가됨"
+    },
+    {
+      "task_id": "T004",
+      "entity_name": "웰컴저축은행",
+      "confluence_page_id": "192151790",
+      "verdict": "PASSED",
+      "checks": {
+        "section_present": true,
+        "key_facts_aligned": true,
+        "history_preserved": true,
+        "no_hallucination": true
+      },
+      "key_facts_verified": [
+        "카카오페이 라이브 완료 2019-06-11 확인",
+        "네이버페이(네이버웹툰) 라이브 완료 2019-06-05 확인",
+        "컬쳐+해피머니 대체 매체 전환 결정 확인"
+      ],
+      "note": "기존 OCB 참여적립·비대면계좌개설 섹션 보존 확인"
+    },
+    {
+      "task_id": "T005",
+      "entity_name": "삼성증권",
+      "confluence_page_id": "192086150",
+      "verdict": "PASSED",
+      "checks": {
+        "section_present": true,
+        "key_facts_aligned": true,
+        "history_preserved": true,
+        "no_hallucination": true
+      },
+      "key_facts_verified": [
+        "#v_삼성증권 전용 채널 신규 개설 2019-06-13 확인",
+        "1차 라이브: 카카오페이지/OCB(참여적립)/네이버웹툰/네이버시리즈 확인",
+        "2차 라이브(차주 중): 네이버페이/카카오페이/11번가/삼성페이/페이코 확인",
+        "카카오머니 쿠폰 입금 처리 방식 확인"
+      ],
+      "note": "collector context_status=new였으나 페이지 192086150 기존 존재 확인, writer가 matched로 정정 처리. 기존 소재작업 섹션 보존 확인",
+      "warning": "collector context_status 불일치(new→matched 정정) — 차기 collector 지침에 CQL 선확인 로직 강화 권고"
+    },
+    {
+      "task_id": "T006",
+      "entity_name": "오퍼월",
+      "confluence_page_id": "192151821",
+      "verdict": "PASSED",
+      "checks": {
+        "section_present": true,
+        "key_facts_aligned": true,
+        "history_preserved": true,
+        "no_hallucination": true
+      },
+      "key_facts_verified": [
+        "카포인트 x 후후: 공용페이지 커스텀 방식, 후후 브랜드 컬러 적용 확인",
+        "카포인트 x 차차차: 기존 OCB 진행 페이지 동일 반영 확인",
+        "사용계약 건 펑키 앞 B: 코드 적용 필수 확인"
+      ],
+      "note": "기존 오퍼월 플랫폼 운영·천령/엘롯데 소재제작 섹션 보존 확인"
+    },
+    {
+      "task_id": "T007",
+      "entity_name": "PINCRUX",
+      "confluence_page_id": "191987714",
+      "verdict": "PASSED",
+      "checks": {
+        "section_present": true,
+        "key_facts_aligned": true,
+        "history_preserved": true,
+        "no_hallucination": true
+      },
+      "key_facts_verified": [
+        "스탬프모아 공용화 SDK 개발 착수 2019-06-11 확인",
+        "기본 시나리오: 시럽월렛 UI 기반 확인",
+        "담당: API설계 김판근 / UI설계 조혁+김지훈 / 개발총괄 김상원 확인",
+        "완료 목표: 6월 내 (약 2주) 확인"
+      ],
+      "note": "T008과 동일 페이지, 단일 업데이트로 처리됨. 기존 PINCRUX 모든 섹션 보존 확인"
+    },
+    {
+      "task_id": "T008",
+      "entity_name": "PINCRUX",
+      "confluence_page_id": "191987714",
+      "verdict": "PASSED",
+      "checks": {
+        "section_present": true,
+        "key_facts_aligned": true,
+        "history_preserved": true,
+        "no_hallucination": true
+      },
+      "key_facts_verified": [
+        "www.pincrux.com AWS 이전 완료 2019-06-11 확인",
+        "이후 서버 변경 작업 담당: 강수현 매니저 확인"
+      ],
+      "note": "T007과 동일 페이지 191987714. 프로젝트 히스토리 섹션에도 두 항목 모두 기록됨 확인"
+    }
+  ],
+  "node_status": "success"
+}

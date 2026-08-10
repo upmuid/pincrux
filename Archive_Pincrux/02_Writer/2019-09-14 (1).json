@@ -1,0 +1,95 @@
+{
+  "schema_version": "1.1",
+  "node": "writer",
+  "run_date": "2019-09-14",
+  "source_file": "Archive_Pincrux/01_Collector/2019-09-14.json",
+  "node_status": "success",
+  "processed_tasks": [
+    {
+      "task_id": "T001",
+      "entity_name": "미래에셋대우",
+      "project_name": "주식거래수수료 무료 이벤트",
+      "page_scope": "child",
+      "target_name": "미래에셋대우 > 주식거래수수료 무료 이벤트",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955009",
+      "confluence_page_id": "191955009",
+      "updated_sections": [
+        "## 미래에셋대우 주식거래수수료 무료 이벤트 전체 매체 종료 및 재라이브 준비 (2019-09)"
+      ],
+      "notes": "T002(entity_name '미래에셋', context_status unknown)와 동일 캠페인으로 판단되어 하나의 섹션으로 병합함. 근거: (1) 슬랙 채널 CBTJWKH0C가 기존 미래에셋대우 심의번호 논의(2019-08-29 섹션 출처)와 동일 채널임, (2) T001의 '10월초 재라이브 예정'과 T002의 '9.17~10.31 진행일자·9/18 라이브'가 동일 재라이브 준비 흐름상 자연스럽게 이어짐(목표 시점이 논의 과정에서 9/18로 앞당겨진 것으로 해석). entity_name은 '미래에셋대우'로 통일하고, T002 유래 항목에는 [추론된 컨텍스트] 말머리와 원문 표기('미래에셋')를 명시함.",
+      "correction_note": "[COO 정정, 2026-07-08] 읽어봄이 FAILED(CONTEXT_DISTORTION) 판정: 위 notes의 병합 근거(9/18로 앞당겨짐 등)는 두 슬랙 스레드 어디에도 근거가 없는 창작된 인과관계로 확인됨. 총총이 두 스레드를 재확인한 결과 상호 참조가 없고, T002가 '심의번호 기존 그대로 유지'를 명시해 신규 심의가 필요한 T001의 재라이브와는 모순되므로 별개 프로젝트로 최종 판정함. 컨플루언스 페이지(191955009)를 '미래에셋대우 주식거래수수료 무료 이벤트 전체 매체 종료 및 재라이브 준비 (2019-09)'(T001만)와 '미래에셋대우 이벤트 소재 진행일자 수정 (2019-09)'(T002만) 두 개의 독립 섹션으로 분리하고, 인과관계 서술을 제거함. updated_sections는 분리 후 첫 번째 섹션명만 유지."
+    },
+    {
+      "task_id": "T002",
+      "entity_name": "미래에셋대우",
+      "project_name": "이벤트 소재 진행일자 수정",
+      "page_scope": "child",
+      "target_name": "미래에셋대우 > 이벤트 소재 진행일자 수정",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955009",
+      "confluence_page_id": "191955009",
+      "updated_sections": [
+        "## 미래에셋대우 이벤트 소재 진행일자 수정 (2019-09)"
+      ],
+      "notes": "T001과 동일 건으로 최종 판단(unknown → matched). entity_name을 원문 '미래에셋'에서 '미래에셋대우'로 정규화함. 근거는 T001 processed_tasks 항목 참조.",
+      "correction_note": "[COO 정정, 2026-07-08] 읽어봄이 FAILED(CONTEXT_DISTORTION) 판정에 따라 T001과 동일 캠페인이라는 판단을 철회함. entity_name은 '미래에셋대우'로 정규화 유지(채널 이력 근거 타당)하되, project_name/target_name/updated_sections는 T001과 분리하여 '이벤트 소재 진행일자 수정'으로 독립 기록함. 컨플루언스 페이지 내 별도 섹션으로 분리 완료. 사실관계(날짜·결정) 자체는 변경 없음."
+    },
+    {
+      "task_id": "T003",
+      "entity_name": "웰컴저축은행",
+      "project_name": "LMS 발송 DB수집 이벤트",
+      "page_scope": "child",
+      "target_name": "웰컴저축은행 > LMS 발송 DB수집 이벤트",
+      "context_status": "new",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151790",
+      "confluence_page_id": "192151790",
+      "updated_sections": [
+        "## 웰컴저축은행 LMS 발송 DB수집 이벤트 (2019-09)"
+      ],
+      "notes": "웰컴저축은행 엔티티 페이지가 이미 존재하므로 신규 캠페인 섹션을 기존 페이지 상단(엔티티 개요 바로 아래)에 추가함.",
+      "correction_note": "[COO 정정, 2026-07-08] 읽어봄이 FAILED(CONTEXT_DISTORTION) 판정에 따라 총총이 슬랙 채널(CJCD15KJN) 재조사. LGu+ 고객정보 인정기준·제3자 제공 사전공유 문구는 허구가 아니라 같은 날 채널의 별도 메시지(2019-09-10 11:21:23, ts=1568082083.001700)에서 확인된 실제 발언으로 밝혀짐. 컨플루언스 페이지(192151790) 해당 섹션의 출처 링크를 예산/단가 메시지(p1568105186003800)와 LGu+/제3자제공 메시지(p1568082083001700) 둘 다로 분리 표기하도록 수정함. 본문 내용(사실관계)은 변경하지 않음."
+    },
+    {
+      "task_id": "T004",
+      "entity_name": "티켓모아",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "티켓모아",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/200835080",
+      "confluence_page_id": "200835080",
+      "updated_sections": [
+        "## 엔티티 개요 (엔티티명: 티켓충전소 → 티켓모아(구: 티켓충전소) 갱신)",
+        "## 티켓모아(구 티켓충전소) 서비스명 변경 및 정책 페이지 갱신 (2019-09)"
+      ],
+      "notes": "서비스명이 '티켓충전소'에서 '티켓모아'로 변경됨에 따라 엔티티명 정규화 원칙에 따라 페이지 제목을 'title' 파라미터로 '티켓모아'로 변경함. 엔티티 개요 표에도 '티켓모아 (구: 티켓충전소)'로 별칭 병기. 2019-08 이전 히스토리 본문은 원문 그대로 '티켓충전소' 명칭 유지(사실관계 보존)."
+    },
+    {
+      "task_id": "T005",
+      "entity_name": "PINCRUX",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "PINCRUX",
+      "context_status": "new",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714",
+      "confluence_page_id": "191987714",
+      "updated_sections": [
+        "## PINCRUX 벤처기업 인증 및 이노비즈 인증 획득 (2019-09)",
+        "## 프로젝트 히스토리 (2019-09-05 항목 추가)"
+      ],
+      "notes": "PINCRUX 엔티티 페이지가 이미 존재하므로(collector의 context_status: new는 이슈 자체의 신규성을 의미) 기존 페이지에 신규 섹션으로 병합함. 페이지 자체 관행인 '프로젝트 히스토리' 요약 리스트에도 동일 항목을 추가하여 일관성 유지."
+    }
+  ],
+  "skipped_tasks": []
+}

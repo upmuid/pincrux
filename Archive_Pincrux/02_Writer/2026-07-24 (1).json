@@ -1,0 +1,119 @@
+{
+  "schema_version": "1.1",
+  "node": "writer",
+  "run_date": "2026-07-24",
+  "source_file": "Archive_Pincrux/01_Collector/2026-07-24.json",
+  "node_status": "success",
+  "processed_tasks": [
+    {
+      "task_id": "T001",
+      "entity_name": "그라운드X",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "그라운드X",
+      "context_status": "new",
+      "action_taken": "created_new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/218365953",
+      "confluence_page_id": "218365953",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/210894849",
+      "confluence_parent_page_id": "210894849",
+      "updated_sections": ["## 엔티티 개요", "## 그라운드X 매체 제휴 개시 (2021-04)", "## FAQ 및 트러블슈팅", "## 주요 담당자"]
+    },
+    {
+      "task_id": "T002",
+      "entity_name": "틱톡",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "틱톡",
+      "context_status": "new",
+      "action_taken": "created_new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/218398721",
+      "confluence_page_id": "218398721",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/210894849",
+      "confluence_parent_page_id": "210894849",
+      "updated_sections": ["## 엔티티 개요", "## 틱톡 충전소 SDK 단독 탑재 협의 (2021-04)", "## FAQ 및 트러블슈팅", "## 주요 담당자"]
+    },
+    {
+      "task_id": "T004",
+      "entity_name": "리메세",
+      "project_name": "차올 CPA 캠페인",
+      "page_scope": "child",
+      "target_name": "리메세 > 차올 CPA 캠페인",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/217088010",
+      "confluence_page_id": "217088010",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/217088010",
+      "confluence_parent_page_id": "217088010",
+      "updated_sections": ["## 리메세-차올 첫결제 CPA 캠페인 실집행 (2021-03)"]
+    },
+    {
+      "task_id": "T005",
+      "entity_name": "PINCRUX 조직·인사 정책",
+      "project_name": "복지포인트(리워드샵) 지급 정책",
+      "page_scope": "child",
+      "target_name": "PINCRUX 조직·인사 정책 > 복지포인트(리워드샵) 지급 정책",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/209321985",
+      "confluence_page_id": "209321985",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/209321985",
+      "confluence_parent_page_id": "209321985",
+      "updated_sections": ["## 복지포인트(리워드샵) 지급 정책 (2021-04)"]
+    },
+    {
+      "task_id": "T006",
+      "entity_name": "CLUV",
+      "project_name": "인플루언서(셀럽) 입점 계약 및 정산 구조",
+      "page_scope": "child",
+      "target_name": "CLUV > 인플루언서(셀럽) 입점 계약 및 정산 구조",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/211320841",
+      "confluence_page_id": "211320841",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/211320841",
+      "confluence_parent_page_id": "211320841",
+      "updated_sections": ["## 인플루언서(셀럽) 입점 계약 및 정산 구조 (2021-04)"]
+    },
+    {
+      "task_id": "T007",
+      "entity_name": "PINCRUX",
+      "project_name": "앱스플라이어 업계 랭킹/수상 뉴스",
+      "page_scope": "child",
+      "target_name": "PINCRUX > 앱스플라이어 업계 랭킹/수상 뉴스",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/211550226",
+      "confluence_page_id": "211550226",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/211550226",
+      "confluence_parent_page_id": "211550226",
+      "updated_sections": ["## PINCRUX 앱스플라이어 업계 랭킹/수상 뉴스 (2021-04)"],
+      "routing_note": "routing_pincrux_cluv.md 규칙에 따라 PINCRUX 허브 페이지(191987714)가 아닌 'PINCRUX 사업·정책 결정 히스토리'(211550226) 페이지로 라우팅됨"
+    },
+    {
+      "task_id": "T008",
+      "entity_name": "DB금융투자",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "DB금융투자",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151759",
+      "confluence_page_id": "192151759",
+      "updated_sections": ["## DB금융투자 매체 운영 현황 (2021-04)"]
+    }
+  ],
+  "skipped_tasks": [
+    {
+      "task_id": "T003",
+      "reason": "회사명 미상(전 넷마블·피망 TF팀 출신 신규 회사)으로 entity_name 확정 불가. Confluence AR 스페이스 전체에서 관련 키워드('넷마블', '피망' 등)로 CQL 탐색을 수행했으나 매칭되는 기존 페이지 없음(매칭확률 80% 미만으로 unknown 처리 기준 미충족). 페이지 생성/병합 보류. COO가 채수범에게 실제 회사명 확인 후 재처리 필요."
+    }
+  ]
+}

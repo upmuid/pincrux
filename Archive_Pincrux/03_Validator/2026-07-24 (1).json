@@ -1,0 +1,122 @@
+{
+  "schema_version": "1.1",
+  "node": "validator",
+  "run_date": "2026-07-24",
+  "source_files": {
+    "collector": "Archive_Pincrux/01_Collector/2026-07-24.json",
+    "writer": "Archive_Pincrux/02_Writer/2026-07-24.json"
+  },
+  "node_status": "success",
+  "review_summary": {
+    "total_reviewed": 7,
+    "passed_cnt": 7,
+    "failed_cnt": 0,
+    "slack_reread_cnt": 2
+  },
+  "validation_results": [
+    {
+      "task_id": "T001",
+      "target_name": "그라운드X",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/218365953",
+      "confluence_page_id": "218365953",
+      "slack_reread": true,
+      "slack_reread_trigger": "context_status: new — 신규 페이지이므로 슬랙 원본 확인",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "슬랙 원문(2021-04-26 채수범 스레드, 정빈희 회신) 대조 결과 그라운드X-DB손해보험 CPA·핀크럭스 충전소 단독 제휴 협의, 계약서 검토 단계, AOS/IOS/CPA 펍키(R/S 80) 발급 완료 등 핵심 사실이 모으미 요약 및 컨플루언스 반영 내용과 일치함. 액션아이템(상품소개서 수령/금융 리스트 정리/펍키 세팅 확인) 모두 원문 요청과 매핑됨. 사명 표기(핀크럭스) 오류 없음. 단, '충전소(티켓모아)'라는 부연 명칭은 이번 슬랙 스레드 원문에는 등장하지 않아 별도 사내 지식(entity_manifest 등)에 근거한 추정 표기로 보이며, 결정 자체를 왜곡하지는 않으나 총총 확인 시 참고 요망."
+    },
+    {
+      "task_id": "T002",
+      "target_name": "틱톡",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/218398721",
+      "confluence_page_id": "218398721",
+      "slack_reread": true,
+      "slack_reread_trigger": "context_status: new — 신규 페이지이므로 슬랙 원본 확인",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "슬랙 원문(2021-04-29 채수범, 단일 메시지·스레드 답글 없음) 대조 결과 '대표 미팅 후 틱톡 충전소 단독 탑재 협의 완료' 핵심 사실이 모으미·쓰미 반영 내용과 일치함. 원문에 세부 계약조건·일정이 없다는 점을 모으미·쓰미 모두 투명하게 명시하여 임의 추정을 하지 않음. 액션아이템(개발일정 확인, SDK 연동범위·계약조건 후속확인)도 정보 부재 상태를 정확히 반영한 적절한 후속과제로 판단됨. 사명 표기 오류 없음."
+    },
+    {
+      "task_id": "T004",
+      "target_name": "리메세 > 차올 CPA 캠페인",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/217088010",
+      "confluence_page_id": "217088010",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "쓰미가 업데이트한 '리메세-차올 첫결제 CPA 캠페인 실집행(2021-03)' 섹션에 04-02(단가 1만~1만5천 재확인), 04-05(결제오류·중단 가능성, 완료여부 미확정), 04-28(최저가 2만원 캡 미적용 사실 및 판근실장 앞 별도요청 필요) 내용이 모으미 JSON과 정확히 일치하게 반영됨. 기존 03월 운영 히스토리·의사결정·액션아이템은 훼손 없이 유지되고 신규 내용만 추가(merged)됨. 액션아이템 3건 모두 컨플루언스 태스크리스트에 매핑됨. JSON-컨플루언스 불일치, 단문 과요약, 액션아이템 누락 등 트리거 조건에 해당하지 않아 슬랙 재조회 생략."
+    },
+    {
+      "task_id": "T005",
+      "target_name": "PINCRUX 조직·인사 정책 > 복지포인트(리워드샵) 지급 정책",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/209321985",
+      "confluence_page_id": "209321985",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "'복지포인트(리워드샵) 지급 정책(2021-04)' 섹션에 04-13 초안(1P=1원, 양도불가, 연 1,000만P 상한, 1·3·6·9월 25만P), 수정본(최초지급 4월 50만P 일시지급), 서정철 확인 발언까지 모으미 JSON과 컨플루언스가 정확히 일치함. 액션아이템 2건 모두 매핑됨. 참고: 모으미 JSON·컨플루언스 모두 '연 100만P 한도 지급주기를 1·4·7·10월로 확정(초안은 1·3·6·9월)'이라고 기술하나, 모으미가 인용한 context_reference 원문 발췌에는 1·3·6·9월 초안과 4월 일시지급(1·3월분 50만P) 언급만 있고 '1·4·7·10월 확정'을 직접 뒷받침하는 원문 인용이 없음. JSON과 컨플루언스 간 불일치는 아니므로(둘 다 동일하게 기술) 트리거 조건에는 해당하지 않아 FAILED 처리하지 않으나, 모으미 단계의 원 슬랙 해석 정확도에 대해 총총 확인을 권고함."
+    },
+    {
+      "task_id": "T006",
+      "target_name": "CLUV > 인플루언서(셀럽) 입점 계약 및 정산 구조",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/211320841",
+      "confluence_page_id": "211320841",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "'인플루언서(셀럽) 입점 계약 및 정산 구조(2021-04)' 섹션에 04-20 정산기준(쇼핑몰 판매분 PG수수료 차감/외부몰 별도정산 없음), 개인·개인사업자 정산이슈, 샌드박스 경유 대안 논의, 04-27 계약서 초안 완성·검토요청까지 모으미 JSON과 정확히 일치. 액션아이템 3건 모두 매핑됨. 기존 CLUV 프로젝트 히스토리(대청자/인플루언서앱/Cluv 통합) 등 기존 섹션은 훼손 없이 유지됨. 트리거 조건 미해당으로 슬랙 재조회 생략."
+    },
+    {
+      "task_id": "T007",
+      "target_name": "PINCRUX > 앱스플라이어 업계 랭킹/수상 뉴스",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/211550226",
+      "confluence_page_id": "211550226",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "'PINCRUX 앱스플라이어 업계 랭킹/수상 뉴스(2021-04)' 섹션에 04-12(코차바·앱스플라이어 글로벌4위/국내2위 언급) 및 04-20(고성장 애드테크 기업 선정 기사) 내용이 모으미 JSON과 일치. 라우팅 노트대로 PINCRUX 허브 페이지(191987714)가 아닌 'PINCRUX 사업·정책 결정 히스토리'(211550226) 페이지로 정확히 라우팅됨. 액션아이템 1건 매핑됨. 기존 페이지의 방대한 기존 프로젝트 히스토리 섹션들은 훼손 없이 그대로 유지됨."
+    },
+    {
+      "task_id": "T008",
+      "target_name": "DB금융투자",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151759",
+      "confluence_page_id": "192151759",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "'DB금융투자 매체 운영 현황(2021-04)' 섹션에 04-30 광고주 예산이슈로 삼성페이·카카오페이 제외 전 매체 off 처리 사실이 모으미 JSON과 정확히 일치. 액션아이템 2건 매핑됨. 기존 DB금융투자 히스토리 섹션들(2019 심의필/정산 등)은 훼손 없이 유지됨."
+    },
+    {
+      "task_id": "T003",
+      "target_name": "미상(전 넷마블·피망 TF팀 출신 신규 회사)",
+      "context_status": "unknown",
+      "confluence_space": null,
+      "confluence_page_url": null,
+      "confluence_page_id": null,
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "쓰미의 skip 처리는 적절함. 모으미가 이미 context_status: unknown(사명 미상)으로 1차 판단했고, 쓰미가 컨플루언스 AR 스페이스 CQL로 '넷마블'·'피망' 키워드 탐색을 시도했으나 매칭 실패(80% 미만)를 근거로 페이지 생성/병합을 보류한 것은 신규 엔티티 오생성 리스크를 회피한 안전한 처리임. COO가 채수범에게 실제 회사명을 확인한 후 재처리가 필요하다는 후속 조치도 명확히 남겨짐."
+    }
+  ]
+}

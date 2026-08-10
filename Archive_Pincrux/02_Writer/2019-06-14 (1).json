@@ -1,0 +1,116 @@
+{
+  "schema_version": "1.1",
+  "node": "writer",
+  "run_date": "2019-06-14",
+  "run_mode": "backfill",
+  "collection_period": {"start": "2019-06-01", "end": "2019-06-14"},
+  "source_file": "Archive_Pincrux/01_Collector/2019-06-14.json",
+  "status": "success",
+  "metrics": {
+    "total_tasks": 8,
+    "pages_updated": 6,
+    "pages_created": 0,
+    "sections_added": 8,
+    "skipped": 0
+  },
+  "results": [
+    {
+      "task_id": "T001",
+      "context_status": "matched",
+      "entity_name": "DB손해보험",
+      "confluence_page_id": "191955049",
+      "page_scope": "child",
+      "action": "section_added",
+      "section_title": "DB손해보험 6월 신규 가입 이벤트 (2019-06)",
+      "confluence_version": 11,
+      "result": "success",
+      "note": "이벤트 기간·리워드·혜택발송일 확정, DB금융투자 CJONE 단가 변경 사항 병기"
+    },
+    {
+      "task_id": "T002",
+      "context_status": "matched",
+      "entity_name": "미래에셋대우",
+      "confluence_page_id": "191955009",
+      "page_scope": "child",
+      "action": "section_added",
+      "section_title": "미래에셋대우 카카오페이지 CPM 캠페인 (2019-06)",
+      "confluence_version": 10,
+      "result": "success",
+      "note": "CPM 집행 기간 2019-06-10~06-16 확정, CJONE 라이브 완료 기록"
+    },
+    {
+      "task_id": "T003",
+      "context_status": "matched",
+      "entity_name": "KB증권",
+      "confluence_page_id": "198279169",
+      "page_scope": "child",
+      "action": "section_updated",
+      "section_title": "다음웹툰 CPI 캠페인 (2019) — 5월 정산 내역 추가",
+      "confluence_version": 3,
+      "result": "success",
+      "note": "5월 정산 구분(더크림유니언 16,000원 / 애드히어꼼뻔 19,000원·15,000원) 및 네이버페이 쿠폰 변경 불가 사항 기록"
+    },
+    {
+      "task_id": "T004",
+      "context_status": "matched",
+      "entity_name": "웰컴저축은행",
+      "confluence_page_id": "192151790",
+      "page_scope": "child",
+      "action": "section_added",
+      "section_title": "웰컴저축은행 첫거래우대 정기적금 가입 이벤트 (2019-06)",
+      "confluence_version": 4,
+      "result": "success",
+      "note": "카카오페이·네이버페이 라이브 완료, 네이버웹툰/시리즈 불가 → 컬쳐+해피머니 대체 매체 전환 결정 기록"
+    },
+    {
+      "task_id": "T005",
+      "context_status": "matched",
+      "entity_name": "삼성증권",
+      "confluence_page_id": "192086150",
+      "page_scope": "child",
+      "action": "section_added",
+      "section_title": "삼성증권 계좌개설 CPA 캠페인 (2019-06)",
+      "confluence_version": 4,
+      "result": "success",
+      "note": "collector 분류 new였으나 페이지 192086150 기존 존재 확인 → matched 처리. 1차·2차 라이브 매체 및 카카오머니 쿠폰 처리 방식 기록",
+      "collector_status_override": "matched (원래 new, 기존 페이지 존재 확인으로 수정)"
+    },
+    {
+      "task_id": "T006",
+      "context_status": "matched",
+      "entity_name": "오퍼월",
+      "confluence_page_id": "192151821",
+      "page_scope": "child",
+      "action": "section_added",
+      "section_title": "카포인트 x 후후·차차차 신규 캠페인 (2019-06)",
+      "confluence_version": 5,
+      "result": "success",
+      "note": "후후 공용페이지 커스텀·차차차 OCB 동일 반영·B: 코드 필수 적용 확정 기록"
+    },
+    {
+      "task_id": "T007",
+      "context_status": "new",
+      "entity_name": "PINCRUX",
+      "confluence_page_id": "191987714",
+      "page_scope": "child",
+      "action": "section_added",
+      "section_title": "스탬프모아 공용화 SDK 개발 (2019-06)",
+      "confluence_version": 9,
+      "result": "success",
+      "note": "신규 섹션 추가. 시럽월렛 UI 기반, 담당자 지정(김판근/조혁+김지훈/김상원), 6월 내 완료 목표 기록"
+    },
+    {
+      "task_id": "T008",
+      "context_status": "matched",
+      "entity_name": "PINCRUX",
+      "confluence_page_id": "191987714",
+      "page_scope": "child",
+      "action": "section_added",
+      "section_title": "www.pincrux.com AWS 인프라 전환 (2019-06)",
+      "confluence_version": 9,
+      "result": "success",
+      "note": "T007과 동일 페이지(191987714) 단일 업데이트로 처리. AWS 이전 완료 및 강수현 매니저 담당 확정 기록"
+    }
+  ],
+  "node_status": "success"
+}

@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.1",
+  "node": "writer",
+  "run_date": "2019-10-31",
+  "source_file": "Archive_Pincrux/01_Collector/2019-10-31.json",
+  "node_status": "success",
+  "processed_tasks": [
+    {
+      "task_id": "T001",
+      "entity_name": "웰컴저축은행",
+      "project_name": "롯데홈쇼핑 첫거래적금",
+      "page_scope": "child",
+      "target_name": "웰컴저축은행 > 롯데홈쇼핑 첫거래적금",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151790",
+      "confluence_page_id": "192151790",
+      "updated_sections": ["## 웰컴저축은행 롯데홈쇼핑 첫거래적금 담당자 변경 (2019-10)"]
+    },
+    {
+      "task_id": "T002",
+      "entity_name": "KB증권",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "KB증권",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/198279169/KB",
+      "confluence_page_id": "198279169",
+      "updated_sections": ["## KB증권 캠페인 이벤트 기간 및 11월 지속 여부 확인 (2019-10)"],
+      "correction_note": "[COO 정정 2026-07-09] 읽어봄이 FAILED(CONTEXT_DISTORTION) 판정 대응. '삼성페이 등 일부 매체 문구 변경 논의' 문구의 실제 출처를 확인하여 컨플루언스 KB증권 페이지(v10)에 정확한 슬랙 출처 링크(https://pincrux.slack.com/archives/CJPA1CBD2/p1571731915007400 등)를 보강함. 사실관계 내용 자체는 변경하지 않음."
+    },
+    {
+      "task_id": "T003",
+      "entity_name": "KB증권",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "KB증권",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/198279169/KB",
+      "confluence_page_id": "198279169",
+      "updated_sections": ["## KB증권 네이버페이·카카오페이 리워드 미지급 정책 확인 (2019-10)"]
+    },
+    {
+      "task_id": "T004",
+      "entity_name": "미래에셋대우",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "미래에셋대우",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955009",
+      "confluence_page_id": "191955009",
+      "updated_sections": ["## 미래에셋대우 11월 1일 캠페인 라이브 매체수 감소 우려 및 심의 진행 경과 (2019-10)"],
+      "correction_note": "[COO 정정 2026-07-09] 읽어봄이 FAILED(CONTEXT_DISTORTION) 판정 대응. 10-18/10-24/10-31 3개 날짜 인용문의 실제 출처를 채널 CJP8CLM36에서 개별 확인하여 컨플루언스 미래에셋대우 페이지(v21)에 날짜별 정확한 슬랙 출처 링크로 재매핑함. 사실관계 내용 자체는 변경하지 않음."
+    },
+    {
+      "task_id": "T005",
+      "entity_name": "PINCRUX",
+      "project_name": "멤버십 커뮤니티(가칭, 원문 표기 불확실)",
+      "page_scope": "child",
+      "target_name": "PINCRUX > 멤버십 커뮤니티(가칭)",
+      "context_status": "new",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "updated_sections": ["## PINCRUX 신규 인하우스 프로덕트 앱 기획 진행 상황 (가칭: 멤버십 커뮤니티, 원문 표기 불확실) (2019-10)"],
+      "writer_note": "정식 프로젝트명 원문 표기 불확실. PINCRUX 페이지 내 유사 신규앱 기획 섹션 부재 확인 후 신규 섹션으로 추가. 제목에 표기 불확실 명시하여 향후 명칭 확정 시 갱신 가능하도록 처리함."
+    },
+    {
+      "task_id": "T006",
+      "entity_name": "PINCRUX",
+      "project_name": "제우스 리뉴얼(프리캐시 교환 서비스)",
+      "page_scope": "child",
+      "target_name": "PINCRUX > 제우스 리뉴얼",
+      "context_status": "new",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "updated_sections": ["## PINCRUX 제우스 리뉴얼(프리캐시 교환 서비스) (2019-10)"],
+      "writer_note": "CQL 'title ~ \"제우스\" AND space = \"AR\"' 검색 결과 0건, PINCRUX 페이지 본문 전체 검토에서도 기존 '제우스' 섹션 미확인(2026-07-08 기준). 컨플루언스 AR 내 기존 페이지/섹션 부재로 판단하여 PINCRUX 페이지 내 신규 하위 프로젝트 섹션으로 추가함(별도 페이지 미생성, 엔티티 단일페이지 원칙 준수). 최종판단값을 unknown에서 new로 확정."
+    }
+  ],
+  "skipped_tasks": []
+}

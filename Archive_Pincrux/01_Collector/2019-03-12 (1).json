@@ -1,0 +1,239 @@
+{
+  "schema_version": "1.1",
+  "period": "2019-03-12",
+  "week": "W11",
+  "generated_at": "2026-06-28T03:30:00Z",
+  "agent": "collector_v1",
+  "collection_criteria": "v3.1.0",
+  "data_summaries": [
+    {
+      "id": "T001",
+      "date": "2019-03-12",
+      "channel": "#03_pincrux_디자인업무",
+      "entity": "미래에셋대우",
+      "sub_entity": "미래에셋대우 다수 캠페인 심의번호 삽입",
+      "category": "Client+Project",
+      "type": "matched",
+      "summary": "미래에셋대우 4개 캠페인 심의번호 삽입 요청. 코나카드: 한국금융투자협회 심사필 제19-00972호(2019.03.12~2019.04.30). 롯데멤버스: 제19-00971호(2019.03.12~2019.04.30). 와디즈: 제19-00967호(2019.03.11~2019.04.30). KT클립: 제19-00966호(2019.03.11~2019.04.30). 추가로 클립 랜딩페이지 소재 코딩본 전달 및 코딩 요청.",
+      "action_items": [
+        "미래에셋대우 코나카드 소재 심의번호(제19-00972호) 삽입",
+        "미래에셋대우 롯데멤버스 소재 심의번호(제19-00971호) 삽입",
+        "미래에셋대우 와디즈 소재 심의번호(제19-00967호) 삽입",
+        "미래에셋대우 KT클립 소재 심의번호(제19-00966호) 삽입",
+        "클립 랜딩페이지 소재 코딩본 기반 코딩 진행"
+      ],
+      "participants": ["고현복(frank)", "조혁(hill)"]
+    },
+    {
+      "id": "T002",
+      "date": "2019-03-15",
+      "channel": "#03_pincrux_디자인업무",
+      "entity": "미래에셋대우",
+      "sub_entity": "미래에셋대우 랜딩페이지 소재 일괄 수정",
+      "category": "Client+Project",
+      "type": "matched",
+      "summary": "미래에셋대우 다수 매체 랜딩페이지 소재 일괄 수정 요청. 대상 매체: 네이버웹툰/카카오페이지/OCB/OCB iOS/클립/티머니/와디즈/엘포인트/코나카드. 핀크럭스 서버 직접 수정 가능: OCB(910264)/OCB iOS(910028)/클립(910280, 910305). 나머지 매체는 PSD 포함 수정본 전달 요청.",
+      "action_items": [
+        "OCB(910264)/OCB iOS(910028)/클립(910280, 910305) 서버 직접 수정",
+        "나머지 매체 소재 PSD 포함 수정본 전달"
+      ],
+      "participants": ["고현복(frank)", "조혁(hill)"]
+    },
+    {
+      "id": "T003",
+      "date": "2019-03-15",
+      "channel": "#03_pincrux_디자인업무",
+      "entity": "미래에셋대우",
+      "sub_entity": "미래에셋대우 엘포인트 소재 수정",
+      "category": "Client+Project",
+      "type": "matched",
+      "summary": "미래에셋대우 엘포인트 소재 배경 투명 처리 후 PNG로 전달 요청.",
+      "action_items": ["미래에셋대우 엘포인트 소재 배경 투명 처리 후 PNG 전달"],
+      "participants": ["고현복(frank)", "조혁(hill)"]
+    },
+    {
+      "id": "T004",
+      "date": "2019-03-15",
+      "channel": "#03_pincrux_디자인업무",
+      "entity": "미래에셋대우",
+      "sub_entity": "미래에셋대우 × 네이버 시리즈 소재",
+      "category": "Client+Project",
+      "type": "matched",
+      "summary": "미래에셋대우 × 네이버 시리즈 소재 제작 요청. 기존 네이버웹툰 소재와 리워드 동일, 기존 소재 수정하여 수정본 전달. 3/15 최초 요청, 3/18 심의 진행을 위해 참여방법+상세페이지 합친 소재로 재수정 요청.",
+      "action_items": [
+        "미래에셋대우 × 네이버 시리즈 소재 제작 (기존 네이버웹툰 소재 수정)",
+        "심의용 참여방법+상세페이지 합친 소재로 재수정"
+      ],
+      "participants": ["고현복(frank)", "조혁(hill)"]
+    },
+    {
+      "id": "T005",
+      "date": "2019-03-13",
+      "channel": "#03_pincrux_디자인업무",
+      "entity": "삼성증권",
+      "sub_entity": "삼성증권 헤드이미지 소재",
+      "category": "Client+Project",
+      "type": "matched",
+      "summary": "삼성증권 헤드이미지 소재 사이즈 확정 및 긴급 전달 요청. PC: 960×450, 모바일: 650×450. 광고주 측과 협의 완료. 금일(3/13) 오후 3시 이전 전달 필요.",
+      "action_items": ["삼성증권 헤드이미지 소재 제작 (PC 960×450, 모바일 650×450), 오후 3시 이전 전달"],
+      "participants": ["고현복(frank)", "조혁(hill)"]
+    },
+    {
+      "id": "T006",
+      "date": "2019-03-14",
+      "channel": "#03_pincrux_디자인업무",
+      "entity": "삼성증권",
+      "sub_entity": "삼성증권 소재 수정 — OCB랙/네이버웹툰/카카오페이지",
+      "category": "Client+Project",
+      "type": "matched",
+      "summary": "삼성증권 다수 소재 수정 요청. 1) OCB랙: 유의사항 삼총사 문구 크기 변경 및 위치 수정. 2) 네이버웹툰: 상세페이지(예시) 내 문구 수정. 3) 네이버웹툰: 배너 내 유의문구 삼총사 삽입. PPT 확인 후 오전 중 전달 요청.",
+      "action_items": [
+        "삼성증권 OCB랙 유의사항 삼총사 문구 크기 및 위치 수정",
+        "삼성증권 네이버웹툰 상세페이지 문구 수정",
+        "삼성증권 네이버웹툰 배너 유의문구 삼총사 삽입"
+      ],
+      "participants": ["고현복(frank)", "조혁(hill)"]
+    },
+    {
+      "id": "T007",
+      "date": "2019-03-12",
+      "channel": "#03_pincrux_디자인업무",
+      "entity": "삼성증권",
+      "sub_entity": "카카오페이지 × 삼성증권 소재 수정",
+      "category": "Client+Project",
+      "type": "matched",
+      "summary": "카카오페이지 × 삼성증권 소재 수정 요청 (3/12).",
+      "action_items": ["카카오페이지 × 삼성증권 소재 수정"],
+      "participants": ["고현복(frank)", "조혁(hill)"]
+    },
+    {
+      "id": "T008",
+      "date": "2019-03-18",
+      "channel": "#03_pincrux_디자인업무",
+      "entity": "삼성증권",
+      "sub_entity": "삼성증권 × 11번가 PC ver. 랜딩페이지",
+      "category": "Client+Project",
+      "type": "matched",
+      "summary": "삼성증권 × 11번가 PC ver. 랜딩페이지 제작 요청. 기존 MO ver. 소재 활용. 유의사항 내 추가 문구 삽입 여부는 11번가 확인 전으로 후에 추가될 수 있음. 현재 심의 넘겼으나 아직 회신 못받은 상태. PC ver. 완성되면 수정사항 함께 바꿀 예정.",
+      "action_items": ["삼성증권 × 11번가 PC ver. 랜딩페이지 제작 (기존 MO ver. 소재 활용)"],
+      "participants": ["고현복(frank)", "조혁(hill)"]
+    },
+    {
+      "id": "T009",
+      "date": "2019-03-14",
+      "channel": "#03_pincrux_디자인업무",
+      "entity": "KB손해보험",
+      "sub_entity": "KB손해보험 다이렉트 랜딩페이지 교체",
+      "category": "Client+Project",
+      "type": "new",
+      "summary": "KB손해보험 다이렉트 랜딩페이지 교체 요청. APPKEY: 100269, PUBKEY: 910240(네오위즈). 3개 이벤트페이지 URL(1: 4억낙, 2: 4조골드 sub1=gold, 3: 800만칩 sub1=chip) — 앱키/펍키 동일, sub1 파라미터만 다름. MO 랜딩페이지만 변경. 기존 소재 대비 심의번호/블랙박스 요율 및 할인 문구 변경됨.",
+      "action_items": [
+        "KB손해보험 다이렉트 MO 랜딩페이지 교체 (APPKEY 100269, PUBKEY 910240)",
+        "3개 이벤트페이지 URL 각각 적용 (sub1 파라미터 구분)"
+      ],
+      "participants": ["고현복(frank)", "조혁(hill)"]
+    },
+    {
+      "id": "T010",
+      "date": "2019-03-18",
+      "channel": "#03_pincrux_개발업무",
+      "entity": "핀크럭스 플랫폼",
+      "sub_entity": "어드민센터 계정 탈퇴 기능",
+      "category": "In-house",
+      "type": "new",
+      "summary": "developer.pincrux.com 어드민센터에 계정 탈퇴 기능 신규 생성 완료. 프로필 사진 아래 버튼 클릭 > Close Account > 계정삭제 버튼 > 계정 아이디 입력 시 삭제 가능.",
+      "action_items": [],
+      "participants": ["강수현(emily)"]
+    },
+    {
+      "id": "T011",
+      "date": "2019-03-12",
+      "channel": "#03_pincrux_개발업무",
+      "entity": "캐치랜드",
+      "sub_entity": "캐치랜드 광고리스트 맨위이동 버튼 완료",
+      "category": "In-house",
+      "type": "matched",
+      "summary": "캐치랜드 광고리스트 맨위이동 Floating Action Button 구현 완료. 아이콘 SVG 전달 완료, colorFilter 색상 버그 수정 완료. Android/iOS(김현우 작업중) 배포 완료.",
+      "action_items": [],
+      "participants": ["김상원(mason)", "박보경(lucia)", "김지훈(eric)", "김현우(jerry)"]
+    },
+    {
+      "id": "T012",
+      "date": "2019-03-13",
+      "channel": "#02_pincrux_매체사업무",
+      "entity": "핀크럭스 플랫폼",
+      "sub_entity": "핀크럭스 프리미엄 충전소 리뉴얼 검토",
+      "category": "In-house",
+      "type": "new",
+      "summary": "애드팝콘 리뉴얼된 충전소와 핀크럭스 프리미엄 충전소A타입 비교 공유. 애드팝콘 충전소가 더 깔끔하다는 의견. 핀크럭스 충전소도 리뉴얼 필요. 디자인 개선 방향: 사용자 경험 중심, 네이버/카카오/토스와 같이 범용적인 디자인 벤치마킹 필요.",
+      "action_items": ["핀크럭스 프리미엄 충전소 리뉴얼 검토 (애드팝콘 벤치마킹)"],
+      "participants": ["정빈희(bliss)", "김상원(mason)", "박보경(lucia)", "채수범(peter)"]
+    },
+    {
+      "id": "T013",
+      "date": "2019-03-14",
+      "channel": "#03_pincrux_디자인업무",
+      "entity": "트라메 스튜디오",
+      "sub_entity": "트라메 스튜디오 오퍼월 소재",
+      "category": "Client+Product",
+      "type": "new",
+      "summary": "오퍼월 소재 제작 요청 (트라메 스튜디오 유튜브). URL: https://www.youtube.com/channel/UC2hzrZSZqaJyxMIxWXjWL8w",
+      "action_items": ["트라메 스튜디오 오퍼월 소재 제작"],
+      "participants": ["정빈희(bliss)", "조혁(hill)"]
+    },
+    {
+      "id": "T014",
+      "date": "2019-03-14",
+      "channel": "#03_pincrux_디자인업무",
+      "entity": "대성마이맥",
+      "sub_entity": "대성마이맥 오퍼월 소재",
+      "category": "Client+Product",
+      "type": "new",
+      "summary": "오퍼월 소재 제작 요청 (대성마이맥 유튜브 및 페이스북). 유튜브: https://www.youtube.com/channel/UCKziRqbw2AvmAJ5wcYXRaMw, 페이스북: https://www.facebook.com/mimac88/",
+      "action_items": ["대성마이맥 유튜브 및 페이스북 오퍼월 소재 제작"],
+      "participants": ["정빈희(bliss)", "조혁(hill)"]
+    },
+    {
+      "id": "T015",
+      "date": "2019-03-14",
+      "channel": "#03_pincrux_디자인업무",
+      "entity": "퍼펙트레이드",
+      "sub_entity": "퍼펙트레이드 오퍼월 소재",
+      "category": "Client+Product",
+      "type": "new",
+      "summary": "오퍼월 소재 제작 요청 (퍼펙트레이드). URL: https://play.google.com/store/apps/details?id=com.noblegames.goddess.g",
+      "action_items": ["퍼펙트레이드 오퍼월 소재 제작"],
+      "participants": ["정빈희(bliss)", "조혁(hill)"]
+    },
+    {
+      "id": "T016",
+      "date": "2019-03-18",
+      "channel": "#03_pincrux_디자인업무",
+      "entity": "히든프라이스",
+      "sub_entity": "히든프라이스 오퍼월 소재",
+      "category": "Client+Product",
+      "type": "new",
+      "summary": "오퍼월 소재 제작 요청 (히든프라이스). URL: https://play.google.com/store/apps/details?id=com.wemakeprice.hiddenprice",
+      "action_items": ["히든프라이스 오퍼월 소재 제작"],
+      "participants": ["정빈희(bliss)", "조혁(hill)"]
+    },
+    {
+      "id": "T017",
+      "date": "2019-03-14",
+      "channel": "#03_pincrux_개발업무",
+      "entity": "핀크럭스 플랫폼",
+      "sub_entity": "이노클릭 인프라 긴급조치 가이드",
+      "category": "In-house",
+      "type": "new",
+      "summary": "이노클릭 인프라 관련 긴급조치 방법 공유. 긴급조치 내용: 서버 재기동. 요청 방법: 요청 메일 작성 후 운영실 전화 요청(급할 땐 전화 먼저). 연락처: 070-8795-0790, tech@daou.co.kr. 서버 목록: INNOCLICK_Web(1) 115.71.1.202, INNOCLICK_Web(2) 115.71.1.201, SDKCENTER_Web/DB 115.71.1.210, INNOCLICK_WITHIN 115.71.1.225, INNOCLICK_DB 115.71.1.227.",
+      "action_items": [],
+      "participants": ["김천두(tom)"]
+    }
+  ],
+  "stats": {
+    "total": 17,
+    "matched": 9,
+    "new": 8,
+    "inquiry": 0
+  }
+}

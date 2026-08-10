@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.1",
+  "node": "refiner",
+  "run_date": "2019-02-19",
+  "run_mode": "backfill",
+  "period": "2019-02-19 to 2019-02-25",
+  "node_status": "success",
+  "source_validator_file": "Archive_Pincrux/03_Validator/2019-02-19.json",
+  "published_at": "2026-06-28T01:50:00Z",
+  "refinement_log": [
+    {
+      "page_id": "191955049",
+      "entity": "DB손해보험",
+      "action": "updated",
+      "style_corrections": "구어체 없음. 비즈니스 문어체 유지. 날짜 형식(YYYY-MM-DD) 통일 확인.",
+      "markdown_check": "PASS",
+      "published": true
+    },
+    {
+      "page_id": "191955009",
+      "entity": "미래에셋대우",
+      "action": "updated",
+      "style_corrections": "구어체 없음. 소재 규격 수치(720*720 등) 명시 유지.",
+      "markdown_check": "PASS",
+      "published": true
+    },
+    {
+      "page_id": "192053250",
+      "entity": "페이앤드",
+      "action": "updated",
+      "style_corrections": "구어체 없음. 기능 개선 4가지 번호 매기기(① ② ③ ④) 유지. 액션 아이템 체크리스트 포맷 확인.",
+      "markdown_check": "PASS",
+      "published": true
+    },
+    {
+      "page_id": "192151700",
+      "entity": "하나멤버스",
+      "action": "created",
+      "style_corrections": "신규 생성 페이지. 표준 템플릿 준수.",
+      "markdown_check": "PASS",
+      "published": true
+    },
+    {
+      "page_id": "192348161",
+      "entity": "레진코믹스",
+      "action": "created",
+      "style_corrections": "신규 생성 페이지. FAQ 섹션에 API 오류 내용 분리 기재 확인.",
+      "markdown_check": "PASS",
+      "published": true
+    },
+    {
+      "page_id": "192217151",
+      "entity": "SK브로드밴드",
+      "action": "created",
+      "style_corrections": "신규 생성 페이지. 표준 템플릿 준수.",
+      "markdown_check": "PASS",
+      "published": true
+    },
+    {
+      "page_id": "192086101",
+      "entity": "스테들러 코리아",
+      "action": "created",
+      "style_corrections": "신규 생성 페이지. 표준 템플릿 준수.",
+      "markdown_check": "PASS",
+      "published": true
+    }
+  ],
+  "summary": {
+    "total_pages": 7,
+    "pages_updated": 3,
+    "pages_created": 4,
+    "style_issues_found": 0,
+    "markdown_errors_found": 0
+  }
+}

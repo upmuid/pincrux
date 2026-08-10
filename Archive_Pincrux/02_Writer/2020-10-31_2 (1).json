@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.1",
+  "node": "writer",
+  "run_date": "2020-10-31",
+  "source_file": "Archive_Pincrux/01_Collector/2020-10-31.json",
+  "node_status": "success",
+  "processed_tasks": [
+    {
+      "task_id": "T001",
+      "entity_name": "어니스트펀드",
+      "project_name": "카카오페이지 오퍼월 투자유치 캠페인",
+      "page_scope": "child",
+      "target_name": "어니스트펀드 > 카카오페이지 오퍼월 투자유치 캠페인",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/215810049",
+      "confluence_page_id": "215810049",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/210665474",
+      "confluence_parent_page_id": "210665474",
+      "updated_sections": [
+        "## 카카오페이지 오퍼월 투자유치 캠페인 (2020) > ### 운영 히스토리",
+        "## 카카오페이지 오퍼월 투자유치 캠페인 (2020) > ### 의사결정 사항"
+      ]
+    }
+  ],
+  "skipped_tasks": []
+}

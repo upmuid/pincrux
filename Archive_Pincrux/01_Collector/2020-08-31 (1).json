@@ -1,0 +1,163 @@
+{
+  "schema_version": "1.1",
+  "node": "collector",
+  "run_date": "2020-08-31",
+  "run_mode": "backfill",
+  "period": "2020-08-01 to 2020-08-31",
+  "status": "success",
+  "data_summaries": [
+    {
+      "task_id": "T001",
+      "major_category": "Media_Partner",
+      "context_status": "matched",
+      "context_reference": "manifest 고정 분류 유지(entity_manifest.json: SPC, status human_action_required — 사업주체 성격 미확정, 총총 재확인 대기 중). 7월 배치(2020-07-31.json T001) '8월1일 SPC 오픈 예정' 후속. 원문(2020-08-01, #웹개발팀_개발요청, [PII_REDACTED] 작성): '금일 spc 캠페인 오픈 되었습니다.'",
+      "entity_name": "SPC",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "SPC",
+      "issue_title": "SPC 캠페인 8/1 공식 오픈",
+      "summary": "SPC 캠페인 8월1일 공식 오픈됨",
+      "decision": "7월 예고되었던 SPC 매체향 캠페인이 8월 1일 공식 오픈되어 정식 운영 시작됨",
+      "action_items": [
+        "SPC측 API 1분단위 레이턴시 증가 원인 확인 필요(원문상 미해결)"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/C018GBM3ESC/p1596208455088000"
+    },
+    {
+      "task_id": "T002",
+      "major_category": "Client",
+      "context_status": "new",
+      "context_reference": "원문(2020-08-11, #운영1팀, [PII_REDACTED] 작성): 'DB손보 - 네이버페이 CPM 진행 확정 되어 내용 공유 드립니다. 기간:8월17일~ IMP:100만 단가:900만원(vat별도) 자사 부담금액:450만원(vat별도)'",
+      "entity_name": "DB손해보험",
+      "project_name": "네이버페이 CPM 캠페인",
+      "page_scope": "child",
+      "target_name": "DB손해보험 > 네이버페이 CPM 캠페인",
+      "issue_title": "DB손해보험 네이버페이 CPM 캠페인 조건 확정(8/17~)",
+      "summary": "DB손해보험 네이버페이 CPM 조건 확정(단가900만원)",
+      "decision": "기간 8/17~, IMP 100만/푸시 100만(35세 이상 남성), 단가 900만원(vat별도), 자사 부담금액 450만원(vat별도)으로 진행 확정. 소재는 기존 네이버페이 소재 활용",
+      "action_items": [],
+      "slack_thread_link": "https://pincrux.slack.com/archives/G0113KM3KK2/p1597121325044700"
+    },
+    {
+      "task_id": "T003",
+      "major_category": "Client",
+      "context_status": "new",
+      "context_reference": "원문(2020-08-13, #운영1팀, [PII_REDACTED] 작성): 'KB손해보험 - SPC 충전소 진행예정입니다. 소재 - 네트워크 소재 사용, 단가 - 1만원(vat포함), RS - 1,100원(vat포함) 이외 비용은 매체비로 내릴 예정입니다'",
+      "entity_name": "KB손해보험",
+      "project_name": "SPC 충전소 캠페인",
+      "page_scope": "child",
+      "target_name": "KB손해보험 > SPC 충전소 캠페인",
+      "issue_title": "KB손해보험 SPC 충전소 캠페인 단가/RS 조건 확정",
+      "summary": "KB손해보험 SPC충전소 단가1만원/RS1,100원 확정",
+      "decision": "네트워크 소재 사용, 단가 1만원(vat포함), RS 1,100원(vat포함)으로 진행 확정. 이외 비용은 매체비로 별도 처리 예정",
+      "action_items": [],
+      "slack_thread_link": "https://pincrux.slack.com/archives/G0113KM3KK2/p1597284040009200"
+    },
+    {
+      "task_id": "T004",
+      "major_category": "Client",
+      "context_status": "matched",
+      "context_reference": "원문(2020-08-26, #운영1팀, [PII_REDACTED] 작성): '웰컴저축은행 - 룰렛뽑기 게임 관련 8월 말까지 진행되도록 셋팅(9월에는 잠시 휴지기 입니다. / 적립금은 변동X)'",
+      "entity_name": "웰컴저축은행",
+      "project_name": "룰렛뽑기 게임",
+      "page_scope": "child",
+      "target_name": "웰컴저축은행 > 룰렛뽑기 게임",
+      "issue_title": "웰컴저축은행 룰렛뽑기 게임 8월 말까지 진행 후 9월 휴지 결정",
+      "summary": "웰컴저축은행 룰렛뽑기 8월말까지, 9월 휴지",
+      "decision": "룰렛뽑기 게임을 8월 말까지 진행하도록 셋팅하고 9월에는 잠시 휴지기로 결정(적립금 조건은 변동 없음)",
+      "action_items": [],
+      "slack_thread_link": "https://pincrux.slack.com/archives/G0113KM3KK2/p1598436633060500"
+    },
+    {
+      "task_id": "T005",
+      "major_category": "In-house",
+      "minor_category": "Product",
+      "context_status": "matched",
+      "context_reference": "원문(2020-08-26, 그룹DM(운영/개발 담당자), [PII_REDACTED] 작성): 'Adscope iOS 14 IDFA 대응 일정 - FAN: 미확정, 애드몹: 취합완료, 벙글: 9/14 전달 예정. 현재 저희가 적용되어 있는 영상 광고 SDK iOS 14 대응 관련 일정 회신입니다.'",
+      "entity_name": "오퍼월",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "오퍼월",
+      "issue_title": "iOS14 IDFA 정책 변경 대응 일정 회신 취합(오퍼월/Tracking SDK)",
+      "summary": "iOS14 IDFA 대응 일정 회신 공유(FAN/애드몹/벙글)",
+      "decision": "Apple iOS14 IDFA 정책 변경에 따른 영상광고 SDK(Adscope) 대응 일정을 각 네트워크로부터 회신받아 공유함 — FAN 미확정, 애드몹 취합완료, 벙글 9/14 전달 예정",
+      "action_items": [
+        "FAN 대응 일정 확정 필요(원문상 미확정)",
+        "벙글 9/14 전달 예정 건 후속 확인 필요"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/G018ZCHMYBX/p1598423083034700"
+    },
+    {
+      "task_id": "T006",
+      "major_category": "In-house",
+      "minor_category": "Product",
+      "context_status": "new",
+      "context_reference": "원문(2020-08-05, #운영1팀, [PII_REDACTED] 작성): '쿠키오버 - 우리원 기획전 진행 내용 히스토리: 네이버웹툰 쪽에 CPS 캠페인 CPA형식으로 노출 진행하고자 했으나 이미 동일한 형식으로 진행하고 있어 CPA로는 집행이 불가능. 그렇다면 쿠폰,마켓컬리 장바구니 기획전처럼 장바구니에 담은 상품 3/5/7/10만원 이상 결제 시 각 금액대 별로 리워드를 지급하는 형식으로 진행하자고 협의하였습니다.'",
+      "entity_name": "CPS 기획전 플랫폼",
+      "project_name": "우리원 장바구니 기획전(네이버웹툰향)",
+      "page_scope": "child",
+      "target_name": "CPS 기획전 플랫폼 > 우리원 장바구니 기획전(네이버웹툰향)",
+      "issue_title": "네이버웹툰향 CPS 캠페인 집행방식 협의(CPA 불가→장바구니 금액대별 리워드 지급 방식 전환)",
+      "summary": "네이버웹툰향 CPS, 장바구니 금액대별 리워드로 전환",
+      "decision": "네이버웹툰 쪽 CPA 형식 집행이 이미 동일 형식으로 진행 중이라 불가하여, 장바구니에 담은 상품 3/5/7/10만원 이상 결제 시 금액대별로 리워드를 지급하는 방식으로 진행하기로 협의 완료",
+      "action_items": [
+        "우리원 제작 판매페이지 QA 후 캠페인 라이브 예정",
+        "3만원 이상 구간 우선 오픈 후 5/7/10만원 구간 추가 오픈 예정"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/G0113KM3KK2/p1596604791011900"
+    },
+    {
+      "task_id": "T007",
+      "major_category": "Media_Partner",
+      "context_status": "matched",
+      "context_reference": "원문(2020-08-07, #운영1팀, [PII_REDACTED] 작성): '전월 동기간대비 OCB 실적이 감소하였습니다. 전월에는 OCB에서 HOT배너 등록하여 진행하였는데, 금월에는 만기라 실적이슈로 부득이 핫배너 종료처리하였습니다. 노출순위가 조정된 관계로 실적이 감소한것으로 사료되며... 다시 교체처리하겠습니다.'",
+      "entity_name": "OCB",
+      "project_name": "HOT배너 프로모션",
+      "page_scope": "child",
+      "target_name": "OCB > HOT배너 프로모션",
+      "issue_title": "OCB HOT배너 만기 종료로 실적 감소, 원인 파악 후 재교체 예정",
+      "summary": "OCB HOT배너 만기종료로 실적감소, 재교체 예정",
+      "decision": "전월 OCB HOT배너 등록 진행 대비 금월은 만기로 핫배너가 종료 처리되어 노출순위 조정으로 실적이 감소한 것으로 파악, 재교체 처리하기로 함",
+      "action_items": [
+        "OCB 배너 재교체 처리 필요"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/G0113KM3KK2/p1596761547000800"
+    },
+    {
+      "task_id": "T008",
+      "major_category": "Client",
+      "context_status": "matched",
+      "context_reference": "원문(2020-08-21, #운영1팀, [PII_REDACTED] 작성): '[8/21 이슈] 1. 삼성카드 다이렉트 오토 종료 : 일 매출 약 45만원' / 원문(2020-08-28, 동일 채널, [PII_REDACTED] 작성): '[8/28 이슈] ... 삼성카드 다이렉트 오토 : 9월 1일부터 재오픈 예정(일 500건) / 일예산 125만원'",
+      "entity_name": "삼성카드",
+      "project_name": "다이렉트 오토 캠페인",
+      "page_scope": "child",
+      "target_name": "삼성카드 > 다이렉트 오토 캠페인",
+      "issue_title": "삼성카드 다이렉트 오토 캠페인 8/21 종료 후 9/1 재오픈 확정",
+      "summary": "삼성카드 다이렉트오토 9/1 재오픈(일500건/125만원)",
+      "decision": "8/21 삼성카드 다이렉트 오토 캠페인이 종료(당시 일 매출 약 45만원 수준)되었으며, 8/28 공유 기준 9월 1일부로 재오픈 예정(일 500건, 일예산 125만원)으로 확정됨",
+      "action_items": [],
+      "slack_thread_link": "https://pincrux.slack.com/archives/G0113KM3KK2/p1598607986012600"
+    },
+    {
+      "task_id": "T009",
+      "major_category": "Media_Partner",
+      "context_status": "new",
+      "context_reference": "[신규 엔티티 후보] entity_manifest.json 미등록 상태. 원문(2020-08-04, #운영1팀, [PII_REDACTED] 작성, 표기 원문 그대로 '쿠프마케팅'/'쿠포마케팅' 혼용): '쿠프마케팅이라는 쿠폰 공급사와 계약 후 진행 예정입니다. 쿠포마케팅은 현재 우리쪽에 쿠폰을 공급해주고 있는 페이투스와 스마트콘의 상위 공급사이며, 여기 업체는 계약 체결 및 보증보험 가입 후 api 형태로 쿠폰을 내려 받는 형태로 캠페인 진행이 가능합니다.' 기존 소소잉(Media_Partner, 쿠폰/포인트 공급) 사례에 준하여 Media_Partner로 잠정 분류(총총 확인 필요, 정식 명칭도 '쿠프마케팅'/'쿠포마케팅' 중 확인 필요).",
+      "entity_name": "쿠프마케팅",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "쿠프마케팅",
+      "issue_title": "신규 쿠폰 공급사 '쿠프마케팅'과 계약 체결 예정(신규 엔티티)",
+      "summary": "신규 쿠폰공급사 쿠프마케팅과 계약 예정",
+      "decision": "기존 쿠폰 공급사(페이투스/스마트콘)의 상위 공급사인 쿠프마케팅과 계약 체결 및 보증보험 가입 후 API 형태로 쿠폰을 공급받아 캠페인을 진행하기로 함. 계약서 및 사용방법은 추후 정리하여 전달받기로 함",
+      "action_items": [
+        "계약서 및 API 사용방법 문서 수령 필요",
+        "연동 개발 일정 협의 필요(개발2팀_개발요청 채널 공유 예정)",
+        "총총 확인 후 entity_manifest.json에 신규 엔티티 등록 필요(major_category: Media_Partner 추정, 정식 명칭 확인 필요)"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/G0113KM3KK2/p1596504691006200",
+      "new_entity_flag": true
+    }
+  ],
+  "uncategorized": []
+}

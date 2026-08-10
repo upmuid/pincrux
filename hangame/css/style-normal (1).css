@@ -1,0 +1,121 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* FONT 프리텐다드 CDN */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css");
+
+/* FONT 산돌 애플 고딕 neo CDN */
+@import url('https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo.css');
+
+/* ========== Reset / Base ========== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  background: #ffffff;
+}
+
+body, div, p, ul, li, h1, h2, h3, h4, h5, h6, dl, dt, dd, form, fieldset, input, legend, ol {
+  margin: 0;
+  padding: 0;
+}
+
+ul, li { list-style: none; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+}
+
+img, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  width: 100%;
+  background: #ffffff;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  letter-spacing: -0.03rem;
+  -webkit-text-size-adjust: 100%;
+  word-break: keep-all;
+}
+
+/* ========== Layout Skeleton ========== */
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  background: #ffffff;
+}
+
+body {
+  min-width: 320px;
+}
+
+#index.index {
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background: #ffffff;
+}
+
+/*
+  PC 기준 전체 페이지 너비 960px
+  화면이 960px보다 작아지면 width: 100%로 자동 축소
+*/
+#index.index > .wrap {
+  width: 100%;
+  max-width: 60rem; /* 960px */
+  min-height: 100vh;
+  min-height: 100dvh;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+
+  background: #ffffff;
+}
+
+/*
+  좌우 30px 공통 여백
+  960px - 60px = 실제 콘텐츠 너비 900px
+*/
+.layout-inner {
+  width: 100%;
+  padding-right: 1.875rem; /* 30px */
+  padding-left: 1.875rem;
+}
+
+.content {
+  flex: 1 1 auto;
+  width: 100%;
+}
+
+.footer-sign {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+/* 모바일 */
+@media (max-width: 47.9375rem) {
+  .layout-inner {
+    padding-right: 1rem; /* 16px */
+    padding-left: 1rem;
+  }
+}

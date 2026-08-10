@@ -1,0 +1,146 @@
+{
+  "schema_version": "1.1",
+  "node": "writer",
+  "run_date": "2019-07-31",
+  "source_file": "Archive_Pincrux/01_Collector/2019-07-31.json",
+  "node_status": "success",
+  "processed_tasks": [
+    {
+      "task_id": "T001",
+      "entity_name": "미래에셋대우",
+      "project_name": "네오위즈 캠페인",
+      "page_scope": "child",
+      "target_name": "네오위즈",
+      "context_status": "matched",
+      "action_taken": "merged",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955009",
+      "confluence_page_id": "191955009",
+      "updated_sections": [
+        "미래에셋대우 네오위즈 캠페인 배너·랜딩 구조 KB증권 방식 통일 (2019-07)"
+      ]
+    },
+    {
+      "task_id": "T002",
+      "entity_name": "미래에셋대우",
+      "project_name": "해피포인트 이벤트",
+      "page_scope": "child",
+      "target_name": "해피포인트",
+      "context_status": "matched",
+      "action_taken": "merged",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955009",
+      "confluence_page_id": "191955009",
+      "updated_sections": [
+        "미래에셋대우 해피포인트 이벤트 리워드 지급 문구 오류 수정 (2019-07)"
+      ]
+    },
+    {
+      "task_id": "T003",
+      "entity_name": "삼성증권",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "삼성증권",
+      "context_status": "matched",
+      "action_taken": "merged",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192086150",
+      "confluence_page_id": "192086150",
+      "updated_sections": [
+        "삼성증권 실적 부진에 따른 매체 확대 검토 (2019-07)"
+      ]
+    },
+    {
+      "task_id": "T004",
+      "entity_name": "삼성증권",
+      "project_name": "삼성페이 랜딩 캠페인",
+      "page_scope": "child",
+      "target_name": "삼성페이",
+      "context_status": "matched",
+      "action_taken": "merged",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192086150",
+      "confluence_page_id": "192086150",
+      "updated_sections": [
+        "삼성증권 x 삼성페이 랜딩페이지 준법감시인 심의필 갱신 (2019-07)"
+      ]
+    },
+    {
+      "task_id": "T005",
+      "entity_name": "삼성증권",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "삼성증권",
+      "context_status": "matched",
+      "action_taken": "merged",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192086150",
+      "confluence_page_id": "192086150",
+      "updated_sections": [
+        "삼성증권 캠페인 8월 초 잠정 중단 및 재개 일정 확정 (2019-07)"
+      ]
+    },
+    {
+      "task_id": "T006",
+      "entity_name": "KB증권",
+      "project_name": "네이버페이 캠페인",
+      "page_scope": "child",
+      "target_name": "네이버페이",
+      "context_status": "matched",
+      "action_taken": "merged",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/198279169",
+      "confluence_page_id": "198279169",
+      "updated_sections": [
+        "KB증권 x 네이버페이 캠페인 종료 결정 (2019-07)"
+      ]
+    },
+    {
+      "task_id": "T007",
+      "entity_name": "웰컴저축은행",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "웰컴저축은행",
+      "context_status": "matched",
+      "action_taken": "merged",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151790",
+      "confluence_page_id": "192151790",
+      "updated_sections": [
+        "웰컴저축은행 비대면 계좌개설 실적 목표(10만건) 설정 및 네오위즈 매체 제안 (2019-07)"
+      ]
+    },
+    {
+      "task_id": "T008",
+      "entity_name": "PINCRUX",
+      "project_name": "페이앤드",
+      "page_scope": "child",
+      "target_name": "페이앤드",
+      "context_status": "matched",
+      "action_taken": "merged",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714",
+      "confluence_page_id": "191987714",
+      "updated_sections": [
+        "사내 정산 시스템 페이앤드 신규 회원사 확대 적용 (2019-07)"
+      ],
+      "special_review": {
+        "issue": "entity_name=PINCRUX(In-house), project_name=페이앤드로 분류된 T008과 기존 별도 엔티티 페이지 '페이앤드'(192053250, Client > Product) 간 명칭 충돌 여부 검토",
+        "existing_page_192053250_content": "인터파크 4개 채널(투어/도서/쇼핑/티켓) 연동 및 CLIP 플랫폼 운영 서비스. 외부 광고주 대상 Client > Product 성격의 서비스.",
+        "t008_content": "사내 정산(회원사 정산) 시스템으로, 창비/계열사·핀크럭스·블랙홀릭 등 신규 회원사에 8/1부로 확대 적용되는 내부 시스템.",
+        "judgment": "동명이인(서로 다른 대상)으로 판단함. 기존 페이앤드(192053250) 페이지는 외부 광고주향 서비스(인터파크 연동/CLIP)를 다루는 반면, T008은 사내 정산 시스템을 지칭하며 사업 성격·이해관계자가 전혀 다름.",
+        "action": "PINCRUX(191987714) 페이지 하위에 별도 섹션 '사내 정산 시스템 페이앤드 신규 회원사 확대 적용 (2019-07)'으로 추가하고, 기존 페이앤드(192053250)와는 무관함을 명시하는 비고(panel-note)를 섹션 내 삽입함. 기존 페이앤드 페이지(192053250)는 변경하지 않음."
+      }
+    }
+  ],
+  "skipped_tasks": [
+    {
+      "raw_text": "DB금융투자 채널 '현대백화점카드신청이벤트-컬쳐랜드에서 실적 요청, 이거 매주 하기로 하지 않았나요?' 관련 대화 (2019-07-25)",
+      "reason": "모으미 단계에서 uncategorized 처리됨 — 구조적 정책 변경인지 단순 실행 확인인지 문맥상 불명확하여 위키 반영 대상에서 제외."
+    },
+    {
+      "raw_text": "DB금융투자 채널 '신호관련해서 이슈 어떻게 진행되었는지 현황 공유 부탁드립니다' (2019-07-16)",
+      "reason": "모으미 단계에서 uncategorized 처리됨 — '신호 관련 이슈'의 구체적 프로젝트 특정 불가 및 후속 스레드 미확인으로 위키 반영 대상에서 제외."
+    }
+  ]
+}

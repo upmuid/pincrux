@@ -1,0 +1,161 @@
+{
+  "schema_version": "1.0",
+  "node": "validator",
+  "run_date": "2026-06-25",
+  "source_files": {
+    "collector": "Archive_Pincrux/01_Collector/2026-06-25.json",
+    "writer": "Archive_Pincrux/02_Writer/2026-06-25.json"
+  },
+  "node_status": "success",
+  "review_summary": {
+    "total_reviewed": 11,
+    "passed_cnt": 11,
+    "failed_cnt": 0,
+    "slack_reread_cnt": 6
+  },
+  "validation_results": [
+    {
+      "task_id": "T001",
+      "target_name": "핑크럭스 플랫폼 2.0",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/190480385",
+      "confluence_page_id": "190480385",
+      "slack_reread": true,
+      "slack_reread_trigger": "context_status: new — 신규 페이지이므로 슬랙 원본 확인",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "슬랙 원본(CBU0PHP3P/p1546421520009500) 확인. pizzu 카포인트 컨디션 조건부 참여, 2019년 과제 미확정 시 방법론1 우선 진행 결정이 JSON 및 컨플루언스에 정확히 반영됨. 액션 아이템 4건(TNK/IGAW/ADSYNC 오픈 검토, SDK 일원화, 서버 모듈화, AWS 안정 도입 후 SDK 2.0 착수) 모두 정합."
+    },
+    {
+      "task_id": "T002",
+      "target_name": "핑크럭스 플랫폼 모니터링",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/190513154",
+      "confluence_page_id": "190513154",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "AR 스페이스 최초 구축으로 created_new 처리. log_idx_day → 클릭테이블 마지막 idx 비교 방식 변경 결정이 정확히 반영됨. 액션 아이템 2건(TNK 싱크 문제 확인 완료 표시, 2시 이후 TNK 체크 미완) 체크 상태 포함 정합."
+    },
+    {
+      "task_id": "T003",
+      "target_name": "핑크럭스 개발 인프라",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/190218243",
+      "confluence_page_id": "190218243",
+      "slack_reread": true,
+      "slack_reread_trigger": "context_status: new — 신규 페이지이므로 슬랙 원본 확인",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "슬랙 원본(CBU0PHP3P/p1546944025013100) 확인. sftp/ftp 폐지 및 Git 전면 도입 방침, 운영 배포 프로세스 별도 논의 결정이 정확히 반영됨. '최초 설정 서울 시연' 항목은 슬랙 스레드 본문에 직접 확인되지 않으나, 핵심 의사결정 및 나머지 액션 아이템 정합성에 이상 없음."
+    },
+    {
+      "task_id": "T004",
+      "target_name": "코인제스트",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/190185474",
+      "confluence_page_id": "190185474",
+      "slack_reread": true,
+      "slack_reread_trigger": "context_status: new — 신규 페이지이므로 슬랙 원본 확인",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "슬랙 원본(CBT7G5RUN/p1546411257006700) 확인. 컬처랜드 CPA 연동(컬처캐시 충전 담당)과 투믹스 제휴 연동 가이드 전달받기 결정이 정확히 반영됨. 액션 아이템 4건 모두 정합."
+    },
+    {
+      "task_id": "T005",
+      "target_name": "저스트엔",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/189300746",
+      "confluence_page_id": "189300746",
+      "slack_reread": true,
+      "slack_reread_trigger": "context_status: new + action_items 비어있으나 decision 존재 — 슬랙 원본으로 태스크 누락 여부 확인",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "슬랙 원본(CBT7G5RUN/p1546935216010500) 확인. PUBKEY 생성 완료 통보 및 운영팀 인지 요청이 전부로, 추가 액션 아이템 없음이 슬랙 원본에서 확인됨. action_items 빈 처리 정당. 컨플루언스의 '액션 아이템 없음' 처리 정확."
+    },
+    {
+      "task_id": "T006",
+      "target_name": "인터파트 투어 (웹충전소)",
+      "context_status": "inquiry",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/190545921",
+      "confluence_page_id": "190545921",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "inquiry 경량 확인. usrkey 미전달 HTTP 500 오류 내용이 FAQ 및 트러블슈팅 섹션에 올바르게 격리됨. 프로젝트 메인 본문 오염 없음. Q&A 누적 섹션 정상 구성."
+    },
+    {
+      "task_id": "T007",
+      "target_name": "페이앤드",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/189300769",
+      "confluence_page_id": "189300769",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "AR 스페이스 최초 구축으로 created_new 처리. JS 오류/SMS 정책위반 해결, git 도입, iOS TestFlight 베타 개시 의사결정 정확히 반영. 액션 아이템 4건(UI 변경, TestFlight 등록, QR코드 생성, 비밀번호 정책 검토) 모두 정합."
+    },
+    {
+      "task_id": "T008",
+      "target_name": "미래에셋대우",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/190382101",
+      "confluence_page_id": "190382101",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "AR 스페이스 최초 구축으로 created_new 처리. OCB 랜딩페이지 교체, 네이버웹툰 소재 수정, 심사필 삽입 완료가 컨플루언스에 JSON보다 오히려 더 상세하게(appkey/pubkey, 심사필 번호 포함) 정확히 반영됨. 정보 손실 없음. 액션 아이템 4건 체크 상태 정합."
+    },
+    {
+      "task_id": "T009",
+      "target_name": "KT M모바일",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/190578689",
+      "confluence_page_id": "190578689",
+      "slack_reread": true,
+      "slack_reread_trigger": "decision이 '수정 완료' 단문으로 과도하게 요약된 경우 — 슬랙 원본으로 맥락 확인",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "슬랙 원본(CBTJWKH0C/p1546924092027900) 확인. 김민희 '수정완료하였습니다' 답변 확인. JSON decision의 단문 요약은 사실 관계에 부합하며, 컨플루언스에서 appkey:100409/pubkey:910058 및 컬처랜드 pubkey:910070 포함 상세 내용으로 정확히 복원됨. 왜곡 없음. 참고: 동일 슬랙 스레드 내 교보 라이프플래닛(T010) 내용도 혼재하나 각 컨플루언스 페이지에 분리 정확히 반영됨."
+    },
+    {
+      "task_id": "T010",
+      "target_name": "교보 라이프플래닛",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/189792270",
+      "confluence_page_id": "189792270",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "AR 스페이스 최초 구축으로 created_new 처리. 어드민 랜딩 URL을 randing.pincrux.com/kyobo/M/index.html 경유로 변경 완료 내용 정확히 반영. action_items 없음은 URL 변경 완료 상태로 맥락상 타당. T009 슬랙 스레드에서 부수 확인됨(강수현 '교보라이프플래닛 M저축 랜딩 적용되었습니다' 답변 + 변경 전후 URL 명시)."
+    },
+    {
+      "task_id": "T011",
+      "target_name": "DB손해보험",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/190382124",
+      "confluence_page_id": "190382124",
+      "slack_reread": true,
+      "slack_reread_trigger": "context_status: new — 신규 페이지이므로 슬랙 원본 확인",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "슬랙 원본(CFCGF3CNQ/p1547429903001400) 확인. 2019-01-14~01-31 자동차동호회 가입이벤트 쪽지 발송, 혜택 동일 유지, 발송 완료 후 리스트 및 PPT 확인 요청이 JSON 및 컨플루언스에 정확히 반영됨."
+    }
+  ]
+}

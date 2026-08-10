@@ -1,0 +1,224 @@
+{
+  "schema_version": "1.1",
+  "node": "collector",
+  "run_date": "2019-06-14",
+  "run_mode": "backfill",
+  "collection_period": {
+    "start": "2019-06-01",
+    "end": "2019-06-14"
+  },
+  "status": "success",
+  "metrics": {
+    "total_threads_scanned": 180,
+    "collected": 8,
+    "filtered_out": 172
+  },
+  "data_summaries": [
+    {
+      "task_id": "T001",
+      "context_status": "matched",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "entity_name": "DB손해보험",
+      "confluence_page_id": "191955049",
+      "project_name": "신규 가입 이벤트 (6월)",
+      "page_scope": "child",
+      "slack_channel": "#03_pincrux_디자인업무",
+      "slack_channel_id": "CBTJWKH0C",
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTJWKH0C/p1559522588020900",
+      "message_ts": "1559522588.020900",
+      "date_range": "2019-06-03 ~ 2019-06-11",
+      "summary": "DB손해보험 6월 신규 가입 이벤트 런칭. 이벤트 기간 6/3~6/9, 리워드 soil. DB금융투자 CJONE 캠페인용 매체별 소재 조건(리워드 문구, 지급일 기준) 변경 확정 후 6월 소재 집행 시작. DB손해보험 SSG페이·벤처·다이렉트 등 다수 매체에 소재 업데이트 진행(6/3~6/11).",
+      "decision": [
+        "DB손해보험 6월 신규 가입 이벤트: 이벤트 기간 2019-06-03~2019-06-09, 리워드 soil, 발송일 2019-07-11 확정",
+        "DB금융투자 CJONE 캠페인: 리워드 월 1만원씩 5개월 지급(7/1 적용), OCB 리워드 신세계상품권→OCB포인트 변경(7/1 적용), 월말일 기준→매월 마지막 목요일 기준으로 변경(7/1 적용)",
+        "DB손해보험 SSG페이 직접 연동 캠페인: 산출 이벤트 가입 시 3만원 혜택으로 조건 변경",
+        "대상 매체: OCB(OC601), 핀크럭스매체(NE601), 삼성페이(SP601), 시럽월렛(SR601), 네이버웹툰(WT601), 카카오페이(KP601), 네이버시리즈(Navse), CJ ONE(오픈예정)"
+      ],
+      "action_items": [
+        "DB금융투자 CJONE OCB 소재 심의 완료 후 코딩 및 매체 공유 (6/2주 예상)",
+        "DB손해보험 SSG페이 랜딩페이지 리워드 문구 수정 반영",
+        "DB손해보험 벤처 소재 내 참여하기 버튼 강조 수정 적용"
+      ]
+    },
+    {
+      "task_id": "T002",
+      "context_status": "matched",
+      "major_category": "Media_Partner",
+      "minor_category": "Product",
+      "entity_name": "미래에셋대우",
+      "confluence_page_id": "191955009",
+      "project_name": "카카오페이지 CPM 캠페인",
+      "page_scope": "child",
+      "slack_channel": "#v_미래에셋대우",
+      "slack_channel_id": "CJP8CLM36",
+      "slack_thread_link": "https://pincrux.slack.com/archives/CJP8CLM36/p1559608122003500",
+      "message_ts": "1559608122.003500",
+      "date_range": "2019-06-04 ~ 2019-06-11",
+      "summary": "미래에셋대우 카카오페이지 CPM 신규 캠페인 집행 결정. 일정 6/10~6/16 확정. 6/18 OCB 브랜드데이와 겹치지 않도록 조정. CJONE 캠페인 6/4 라이브 완료(매체 설정 완료 확인). 11번가 6/1 라이브 이후 클릭수 대비 실적 0건 이상 발생하여 시스템 점검 요청. 중고나라·레진코믹스 소재 신규 코딩 요청.",
+      "decision": [
+        "미래에셋대우 카카오페이지 CPM 캠페인: 일정 2019-06-10~2019-06-16 확정",
+        "6/18 OCB 브랜드데이와 일정 겹침 방지를 위해 해당 기간 제외하여 집행 결정",
+        "카카오페이지 CPM 집행을 위한 부킹 일정 OHC 통해 확인 요청",
+        "CJONE 라이브: 2019-06-04 완료 (매체 측 설정 완료 확인)"
+      ],
+      "action_items": [
+        "미래에셋대우 카카오페이지 CPM 문구(최초 신규 제외 문구 수정) 전달",
+        "11번가 클릭수 대비 실적 0건 원인 시스템 점검",
+        "카카오페이지 CPM 부킹 일정 OHC 통해 확인"
+      ]
+    },
+    {
+      "task_id": "T003",
+      "context_status": "matched",
+      "major_category": "Media_Partner",
+      "minor_category": "Project",
+      "entity_name": "KB증권",
+      "confluence_page_id": "198279169",
+      "project_name": "다음웹툰 CPI 캠페인",
+      "page_scope": "child",
+      "slack_channel": "#v_kb증권",
+      "slack_channel_id": "CJPA1CBD2",
+      "slack_thread_link": "https://pincrux.slack.com/archives/CJPA1CBD2/p1559872835001800",
+      "message_ts": "1559872835.001800",
+      "date_range": "2019-06-07 ~ 2019-06-11",
+      "summary": "KB증권 5월 정산 내역 송부. 5/1~5/13은 더크림유니언 단가(16,000원), 5/14~5/31은 애드히어꼼뻔 단가(제휴 19,000원/충전소 15,000원)로 정산. 네이버페이 혜택1 변경 불가(앱 내 개발 이슈로) 통보 수신, 차기 앱 업데이트 시 네이버페이 쿠폰 적용 검토 협의.",
+      "decision": [
+        "KB증권 5월 정산: 더크림유니언(5/1~13, 16,000원) + 애드히어꼼뻔(5/14~31, 제휴 19,000원/충전소 15,000원) 구분 정산",
+        "네이버페이 혜택1 쿠폰 변경: 앱 내 개발 이슈로 현재 불가, 차기 업데이트 시 재논의"
+      ],
+      "action_items": [
+        "회계팀 컨펌 후 애드히어꼼뻔 통해 정산 진행",
+        "차기 앱 업데이트 시 네이버페이 쿠폰 적용 가능 여부 재논의"
+      ]
+    },
+    {
+      "task_id": "T004",
+      "context_status": "matched",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "entity_name": "웰컴저축은행",
+      "confluence_page_id": "192151790",
+      "project_name": "첫거래우대 정기적금 가입 이벤트",
+      "page_scope": "child",
+      "slack_channel": "#v_웰컴저축은행",
+      "slack_channel_id": "CJCD15KJN",
+      "slack_thread_link": "https://pincrux.slack.com/archives/CJCD15KJN/p1560144456004100",
+      "message_ts": "1560144456.004100",
+      "date_range": "2019-06-05 ~ 2019-06-11",
+      "summary": "웰컴저축은행 첫거래우대 정기적금 가입 이벤트 신규 진행 결정. 기존 네이버웹툰/시리즈 진행 불가(6/12 내부 보고 일정)로 컬쳐와 해피머니 대체 매체로 라이브 긴급 전환. 네이버페이(네이버웹툰) 라이브 완료(6/5). 카카오페이지 라이브 완료(6/11). 해피머니 배너·랜딩시안 당일 오후 제작 후 라이브 요청.",
+      "decision": [
+        "웰컴저축은행 정기적금 이벤트: 카카오페이 라이브 완료 (2019-06-11)",
+        "네이버웹툰/시리즈 진행 불가(6/12 담당자 보고 일정)로 컬쳐 + 해피머니 대체 매체로 전환 결정",
+        "네이버페이(네이버웹툰) 라이브 완료: 2019-06-05"
+      ],
+      "action_items": [
+        "해피머니 배너 및 랜딩시안 오후 중 제작 후 매체 공유 및 라이브 진행",
+        "컬쳐 매체 게재지면 광고주 공유"
+      ]
+    },
+    {
+      "task_id": "T005",
+      "context_status": "new",
+      "major_category": "Media_Partner",
+      "minor_category": "Project",
+      "entity_name": "삼성증권",
+      "confluence_page_id": null,
+      "project_name": "계좌개설 CPA 캠페인",
+      "page_scope": "root",
+      "slack_channel": "#v_삼성증권",
+      "slack_channel_id": "CKHKH3KC5",
+      "slack_thread_link": "https://pincrux.slack.com/archives/CKHKH3KC5/p1560391430001500",
+      "message_ts": "1560391430.001500",
+      "date_range": "2019-06-13 ~ 2019-06-14",
+      "summary": "삼성증권 계좌개설 CPA 캠페인 전용 슬랙 채널 신규 개설(2019-06-13). 캠페인 집행 방향 확정: 6/14(금) 오후 늦게 또는 6/17(월) 배너·랜딩 심의 완료 예정. 집행 결정이 6/17(월) 예정이므로 심의 완료 시 카카오페이지/OCB(참여적립)/네이버웹툰/네이버시리즈는 바로 라이브, 네이버페이/카카오페이/11번가/삼성페이/페이코는 차주 중 라이브 진행 방향 결정. 카카오페이지 CPM 1천만원 집행을 위해 부킹 일정 OHC 통해 확인 요청.",
+      "decision": [
+        "삼성증권 계좌개설 CPA 캠페인 전용 채널 신규 개설: 2019-06-13",
+        "1차 라이브 우선 매체(심의 완료 즉시): 카카오페이지/OCB(참여적립)/네이버웹툰/네이버시리즈",
+        "2차 라이브 매체(차주 중): 네이버페이/카카오페이/11번가/삼성페이/페이코",
+        "카카오머니 쿠폰: 삼성증권에서 집행 결정 확정 후 입금 처리 방식으로 진행",
+        "카카오페이지 CPM 1천만원 집행 검토 중 — 부킹 일정 OHC 통해 확인 중"
+      ],
+      "action_items": [
+        "삼성증권 배너 및 랜딩 심의 완료 후 1차 매체 라이브 진행 (6/14 오후 또는 6/17)",
+        "카카오페이지 CPM 부킹 일정 OHC 통해 확인",
+        "카카오머니 쿠폰 구매 입금 처리 진행"
+      ]
+    },
+    {
+      "task_id": "T006",
+      "context_status": "matched",
+      "major_category": "Media_Partner",
+      "minor_category": "Product",
+      "entity_name": "오퍼월",
+      "confluence_page_id": "192151821",
+      "project_name": "카포인트 x 후후/차차차 신규 캠페인",
+      "page_scope": "child",
+      "slack_channel": "#03_pincrux_개발업무",
+      "slack_channel_id": "CBU0PHP3P",
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBU0PHP3P/p1560154540008400",
+      "message_ts": "1560154540.008400",
+      "date_range": "2019-06-10 ~ 2019-06-10",
+      "summary": "카포인트 x 후후 캠페인 및 카포인트 x 차차차 캠페인 신규 오퍼월 브릿지페이지 반영 요청. 후후는 기존 공용페이지 커스텀 진행(후후 브랜드 컬러 적용), 차차차는 기존 OCB 진행 페이지와 동일하게 반영. 사용계약 건으로 펑키 앞에 B: 코드 적용 필수. AppKey 104695(후후) / 104739(차차차), 펑키 910613 / 910450.",
+      "decision": [
+        "카포인트 x 후후 캠페인: 공용페이지 커스텀 방식으로 진행 (후후 브랜드 컬러 적용)",
+        "카포인트 x 차차차 캠페인: 기존 OCB 진행 페이지와 동일하게 반영",
+        "두 캠페인 모두 사용계약 건으로 펑키 앞에 B: 코드 적용 필수"
+      ],
+      "action_items": [
+        "후후 캠페인 브릿지페이지 반영 완료 확인 (적용 완료: 2019-06-05)",
+        "차차차 캠페인 브릿지페이지 반영 완료 확인"
+      ]
+    },
+    {
+      "task_id": "T007",
+      "context_status": "new",
+      "major_category": "In-house",
+      "minor_category": "Product",
+      "entity_name": "PINCRUX",
+      "confluence_page_id": "191987714",
+      "project_name": "스탬프모아 공용화 SDK 개발",
+      "page_scope": "child",
+      "slack_channel": "#03_pincrux_개발업무",
+      "slack_channel_id": "CBU0PHP3P",
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBU0PHP3P/p1560241811015500",
+      "message_ts": "1560241811.015500",
+      "date_range": "2019-06-11 ~ 2019-06-13",
+      "summary": "페이앤드 내 오퍼월을 통한 마이포인트(신설) 적립 기획안 논의 및 스탬프모아 공용화 버전 SDK 개발 착수 결정. 기본 시나리오는 시럽월렛을 토대로 하되 UI 디자인 설계 진행. API 설계 담당(김판근), 디자인+개발 가이드(조혁+김지훈), 디자인 완료 및 API 완료 시 김상원에게 공유 후 토대로 가이드 및 개발 진행. 전체 일정 넉넉하게 금월 안에 진행 예정(약 2주).",
+      "decision": [
+        "스탬프모아 공용화 버전 SDK 개발 착수 결정 (2019-06-11)",
+        "기본 시나리오: 시럽월렛 UI 토대로 설계",
+        "담당: API 설계 — 김판근, UI 디자인 설계 — 조혁+김지훈, 개발 총괄 — 김상원",
+        "전체 일정: 금월(6월) 내 완료 목표 (약 2주 예상)"
+      ],
+      "action_items": [
+        "시럽월렛 기반 UI 디자인 설계 진행",
+        "서버단 API 설계 진행 (김판근)",
+        "디자인 및 API 완료 시 김상원에게 공유 후 개발 착수"
+      ]
+    },
+    {
+      "task_id": "T008",
+      "context_status": "matched",
+      "major_category": "In-house",
+      "minor_category": "Product",
+      "entity_name": "PINCRUX",
+      "confluence_page_id": "191987714",
+      "project_name": "AWS 인프라 전환",
+      "page_scope": "child",
+      "slack_channel": "#03_pincrux_개발업무",
+      "slack_channel_id": "CBU0PHP3P",
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBU0PHP3P/p1559707958000300",
+      "message_ts": "1559707958.000300",
+      "date_range": "2019-06-05 ~ 2019-06-11",
+      "summary": "www.pincrux.com 도메인 AWS 서버로 이전 완료(2019-06-11). 와일드 카드 인증서 KSIDC에 설정 완료. 이후 변경 작업 또는 서버 업로드 작업이 필요할 경우 강수현 매니저에게 요청하도록 공지.",
+      "decision": [
+        "www.pincrux.com AWS 이전 완료: 2019-06-11",
+        "이후 서버 관련 변경 작업 담당: 강수현 매니저"
+      ],
+      "action_items": []
+    }
+  ],
+  "skipped_tasks": [],
+  "human_action_required": []
+}

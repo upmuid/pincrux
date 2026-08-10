@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.1",
+  "node": "collector",
+  "run_date": "2020-04-30",
+  "run_mode": "backfill",
+  "period": "2020-04-01 to 2020-04-30",
+  "status": "success",
+  "data_summaries": [
+    {
+      "task_id": "T001",
+      "major_category": "In-house",
+      "minor_category": "Product",
+      "context_status": "matched",
+      "context_reference": "원문(김판근,4/21 15:55): \"오퍼월 인프라 구성에 대해서 아래 사항 체크해주세요. 1. 한 카피 뜨는 방식 2. 기존 시스템에서 인하우스로 컨트롤 하는 방법 1번은 웹/DB서버를 분리하고 새로운 회사처럼 진행 ㄴ자사 광고 송출 불가능 ㄴ자사 광고 진행하려면 또 새로운 회사처럼 연동 작업 진행 ㄴ웹서버 / DB서버 별도 구축 ㄴ프로그램 오퓨즈에 맞게 변경 ㄴcpi와 소셜 광고에 대한 예외처리 개발 추가 ㄴ관리자모드 개발 변경 추가 2번은 기존 모델 그대로 활용 ㄴtps 테스트에 대한 리스크 존재 ㄴ별도 개발 리소스 안들어감\" (https://pincrux.slack.com/archives/CBU0PHP3P/p1587452141044700); 같은 스레드 후속(채수범,4/21 16:47): \"1번 모델로 진행하는 것 아닌지요?\" (https://pincrux.slack.com/archives/CBU0PHP3P/p1587455257044900) — 질문 형태의 반문일 뿐 스레드 내 최종 확정 답변은 확인되지 않음. ※ '오퍼월'은 manifest 확립 In-house/Product 엔티티로 major/minor category 재판단 없이 그대로 사용. 이 건은 오퍼월 제품 자체의 인프라 구조를 좌우하는 근본적 기술 검토(자사광고 송출 가능여부에 직접 영향)이므로 특정 캠페인 귀속이 아닌 엔티티 레벨 이슈로 page_scope=root, project_name=null 처리. 기존 오퍼월 제품의 연장선 논의이므로 context_status=matched.",
+      "entity_name": "오퍼월",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "오퍼월",
+      "issue_title": "오퍼월 인프라 구성 방식 검토 착수(방식1: 웹/DB서버 분리한 신규 회사형 구축 vs 방식2: 기존 모델 그대로 활용) — 자사광고 송출 가능여부 좌우, 스레드 내 최종 확정 답변 없음",
+      "summary": "오퍼월 인프라구성 2안 검토요청, 미확정",
+      "decision": "김판근이 오퍼월 인프라 구성 방식을 두 가지 안(1. 웹/DB서버 분리하여 새로운 회사처럼 진행 — 자사광고 송출 불가능해지며 자사광고 진행 시 별도 연동 개발 필요, 웹/DB서버 별도 구축, 프로그램 오퓨즈 변경, cpi·소셜광고 예외처리 개발 추가, 관리자모드 개발 변경 추가 필요 / 2. 기존 모델 그대로 활용 — tps 테스트 리스크는 있으나 별도 개발 리소스 불필요)으로 나누어 검토를 요청함(4/21). 채수범이 \"1번 모델로 진행하는 것 아닌지요?\"라고 반문했으나, 확인 가능한 스레드 범위 내에서 최종 확정 답변은 없어 미확정 상태로 남음.",
+      "action_items": ["오퍼월 인프라 구성 방식(1안/2안) 최종 확정 필요", "확정 방식에 따른 개발 리소스 및 일정 산정"],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBU0PHP3P/p1587452141044700"
+    },
+    {
+      "task_id": "T002",
+      "major_category": "In-house",
+      "minor_category": "Product",
+      "context_status": "new",
+      "context_reference": "원문(지리산,4/23 19:19): \"24일 공유 목표 분량 공유 드립니다. 기존 전달드린 항목에서 '펀딩' 부분 기획 추가되었습니다.\" (첨부파일명: 핀크럭스_Cluv_v0.7_개별(고도화)항목_0423.pptx) (https://pincrux.slack.com/archives/GQR8C4UN8/p1587637154064100); 원문(지리산,4/28 17:39): \"+ 클럽 기획 1) 진행 일정 - 5월 13일 이전 전달 -> 개발 검토 - 검토 진행간에 디자인, UX, 상세기획 추가 2) 13일 결과물 내 추가 - 메인 화면 레이아웃 수정 - 마이페이지 컨트롤 항목들 정리 a. 채널별 닉네임 b. 팬심 캐시 - 기획안을 우선 순위기준으로 재배치 - 굿즈몰 레이아웃 중심으로 추가 기획 a. 고도몰 관리자 및 레이아웃 참고 b. 클럽 앱 내 접점 추가\" (https://pincrux.slack.com/archives/GQR8C4UN8/p1588063174004400). ※ 대표(지리산)가 직접 공유한 신규 프로덕트 기획으로, entity_name=PINCRUX(manifest 확립 In-house/Product 엔티티, major/minor category 재판단 없이 그대로 사용). 'Cluv(클럽)' 앱은 기존 PINCRUX known_sections(멤버십 팬 서비스, 인플루언서 앱 등)에 없던 신규 하위 프로젝트명으로 처음 확인되어 context_status=new, page_scope=child로 처리.",
+      "entity_name": "PINCRUX",
+      "project_name": "Cluv(클럽) 앱 기획",
+      "page_scope": "child",
+      "target_name": "PINCRUX > Cluv(클럽) 앱 기획",
+      "issue_title": "PINCRUX 신규 프로덕트 'Cluv(클럽)' 앱 기획 v0.7 고도화 — 펀딩 기획 추가, 진행일정(5/13 개발검토) 및 메인화면·마이페이지 컨트롤(채널별 닉네임/팬심캐시)·굿즈몰 레이아웃 추가기획 확정",
+      "summary": "Cluv 앱 기획 고도화, 펀딩·굿즈몰 등 추가",
+      "decision": "지리산(대표)이 4/23 기존 전달 항목에 '펀딩' 부분 기획이 추가된 Cluv(클럽) v0.7 개별(고도화) 항목 문서를 공유함. 이어 4/28에는 클럽 기획 방향으로 1) 진행 일정을 5월 13일 이전 전달 후 개발 검토로 진행하되 검토 기간 중 디자인·UX·상세기획을 추가하고, 2) 13일 결과물 내에 메인화면 레이아웃 수정, 마이페이지 컨트롤 항목(채널별 닉네임, 팬심 캐시) 정리, 기획안의 우선순위 기준 재배치, 굿즈몰 레이아웃 중심의 추가 기획(고도몰 관리자·레이아웃 참고, 클럽 앱 내 접점 추가)을 반영하기로 결정함.",
+      "action_items": ["Cluv 앱 개발검토(5/13 이전 전달분 기준) 진행", "메인화면 레이아웃 및 마이페이지 컨트롤(채널별 닉네임/팬심캐시) 반영", "굿즈몰 레이아웃 중심 추가기획(고도몰 참고, 클럽 앱 내 접점) 진행", "펀딩 기획 상세화"],
+      "slack_thread_link": "https://pincrux.slack.com/archives/GQR8C4UN8/p1588063174004400"
+    },
+    {
+      "task_id": "T003",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "원문(고현복,4/14 15:31): \"KB손해보험 - 네이버페이 쿠폰 재발송 기능 개발 요청 드립니다. 요청 드리는 이유 : 광고주측에 재발송 CS건 대량 발생 계정 : KB다이렉트(43번)\" (https://pincrux.slack.com/archives/CBU0PHP3P/p1586845873022700); 후속(강수현,4/16 09:31): \"요청하신 기능 추가되었습니다.\" (https://pincrux.slack.com/archives/CBU0PHP3P/p1586997070025400); 후속(고현복,4/20 09:39): \"일전에 말씀드렸던 KB손해보험 - 네이버페이 쿠폰 연결요청 드립니다. appkey: 100269 pubkey: 910290 쿠폰명: KB손해보험 - 네이버페이 1만원(251번) ... 추가로, 일전에 연결되어있던 (146번) 쿠폰은 연결 해지 부탁드리며\" (https://pincrux.slack.com/archives/CBU0PHP3P/p1587343160031800); 후속(강수현,4/20 10:56~14:03): \"1. 리워드 지급 251번으로 변경 완료 2. 광고주 계정에서 재전송 시에도 251번 나가도록 설정 완료\", \"넵 테스트해보니 1만원 나갑니다~\", \"kb 다이렉트 x 네이버페이 유입 고객 중 전화번호 수집 시간이 [특정시각] 이전이면 146번 쿠폰 발송되고 이후면 251번 쿠폰 발송됩니다. kb 어드민 재발송 기능만 해당합니다\" (https://pincrux.slack.com/archives/CBU0PHP3P/p1587359022033900). ※ 'KB손해보험'은 entity_manifest.json(v1.1)에는 등재되어 있지 않으나, 총총 전용 client_media_registry.md 3-A절(광고주 확정 리스트)에는 이미 Client>Project(페이지ID 192086208)로 등재되어 있는 기존 확립 엔티티임. manifest 누락으로 판단하여 registry 기준과 동일하게 major/minor category를 Client/Project로 처리하고, manifest_registration_needed 플래그를 남겨 총총이 entity_manifest.json에 KB손해보험(192086208)을 동기화하도록 요청함. 이번 건은 기존 진행 중인 KB손해보험 캠페인의 기능 개선(재발송 CS 대응)이므로 context_status=matched. 원문 내 전화번호(01050406771, 01028141463 등)는 PII이므로 인용에서 제외함.",
+      "entity_name": "KB손해보험",
+      "project_name": "네이버페이 적립금 캠페인(KB다이렉트)",
+      "page_scope": "child",
+      "target_name": "KB손해보험 > 네이버페이 적립금 캠페인(KB다이렉트)",
+      "issue_title": "KB손해보험(KB다이렉트) 네이버페이 쿠폰 재발송 기능 개발 완료, 리워드 쿠폰 7천원(146번)→1만원(251번) 전환 적용 및 구쿠폰 연결 해지",
+      "summary": "KB손보 쿠폰재발송기능 개발, 251번 쿠폰 전환 완료",
+      "decision": "고현복이 광고주측 재발송 CS 대량 발생을 이유로 KB손해보험(KB다이렉트, 43번 계정) 네이버페이 쿠폰 재발송 기능 개발을 요청(4/14)했고, 강수현이 4/16 오전 해당 기능 추가 완료를 확인함. 이어 4/20 리워드 지급 쿠폰을 기존 146번(7천원)에서 신규 251번(1만원)으로 변경 완료하고, 광고주측에서 재전송 요청 시에도 251번이 발송되도록 설정을 완료했으며 테스트 결과 1만원이 정상 지급됨을 확인함. 기존 146번 쿠폰은 이력 삭제(연결 해지) 처리함(강수현, 4/20). KB다이렉트x네이버페이 유입 고객의 전화번호 수집 시점을 기준으로 이전 고객은 146번, 이후 고객은 251번 쿠폰이 발송되며 이는 KB 어드민 재발송 기능에만 해당됨을 공유함(강수현, 4/20).",
+      "action_items": ["신규 251번 쿠폰 리워드 지급 정상 여부 지속 모니터링", "구 146번 쿠폰 완전 정리(이력 삭제) 확인", "entity_manifest.json에 KB손해보험(confluence_page_id 192086208, Client/Project) 등록 동기화 필요"],
+      "manifest_registration_needed": true,
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBU0PHP3P/p1586845873022700"
+    }
+  ],
+  "uncategorized": []
+}

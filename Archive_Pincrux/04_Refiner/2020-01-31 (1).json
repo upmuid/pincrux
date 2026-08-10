@@ -1,0 +1,110 @@
+{
+  "schema_version": "1.1",
+  "node": "refiner",
+  "run_date": "2020-01-31",
+  "source_file": "Archive_Pincrux/03_Validator/2020-01-31.json",
+  "node_status": "success",
+  "published_tasks": [
+    {
+      "task_id": "T001",
+      "target_name": "PINCRUX > Creator Membership Community(대청자,대도서관)",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "refined_points": [
+        "신규 반영분(1/16 충전소→shop 명칭변경 및 캐시-팬심 전환기능, 1/22 추가 필요 항목, 1/29 UI/기획 최종 수정사항 8건 확정)이 이미 볼드체·확정형 문어체 기준을 충족하여 실질 교정 없이 검수만 완료",
+        "액션 아이템이 이미 체크리스트(task-item) 형식으로 정리되어 있음을 확인"
+      ],
+      "published_at": "2026-07-13T14:10:00+09:00"
+    },
+    {
+      "task_id": "T002",
+      "target_name": "PINCRUX > 개발팀 업무프로세스",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "refined_points": [
+        "신규 반영분(2020-01-21 메인서버 장애 3단계 대응절차: apache/mysql 재시작→DNS 확인→호스팅업체 물리 재시작)이 이미 볼드체·확정형 문어체 기준을 충족하여 실질 교정 없이 검수만 완료"
+      ],
+      "published_at": "2026-07-13T14:10:20+09:00"
+    },
+    {
+      "task_id": "T003",
+      "target_name": "KT > 프로젝트K(혜택플랫폼/제휴할인)",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/196575233/KT",
+      "confluence_page_id": "196575233",
+      "refined_points": [
+        "신규 반영분(서비스모델, K포인트 연동방식, KPI, 명칭변경 예정, 분할적립금 개발, 개발일정 2/3~4월)이 이미 볼드체·확정형 문어체·체크리스트 기준을 충족하여 실질 교정 없이 검수만 완료",
+        "'new→matched' 재분류 판단 근거 문단([쓰미 판단 근거])이 이미 명확한 문어체로 기록되어 있음을 확인"
+      ],
+      "published_at": "2026-07-13T14:10:40+09:00"
+    },
+    {
+      "task_id": "T004",
+      "target_name": "PINCRUX > 조직·인사정책",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "refined_points": [
+        "신규 반영분(2020-01-28 인사평가 관련 면담 일정: 부산 2/4, 서울 2/5~2/6, 대표이사 보고→연봉확정→개별통보 절차)이 이미 대괄호 소제목·볼드체·체크리스트 기준을 충족하여 실질 교정 없이 검수만 완료"
+      ],
+      "published_at": "2026-07-13T14:11:00+09:00"
+    },
+    {
+      "task_id": "T005",
+      "target_name": "PINCRUX > 조직·인사정책",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "refined_points": [
+        "신규 반영분(2020-01-28 코로나19(우한폐렴) 방역 공지 3항목: 마스크 착용, 손소독제 비치, 이상증세 보고)이 T004와 동일 섹션 내 별도 대괄호 소제목([코로나19 방역])으로 구분되어 이미 볼드체·체크리스트 기준을 충족하여 실질 교정 없이 검수만 완료"
+      ],
+      "published_at": "2026-07-13T14:11:00+09:00"
+    },
+    {
+      "task_id": "T006",
+      "target_name": "DB손해보험 > 장기보험 CPS 캠페인",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955049/DB",
+      "confluence_page_id": "191955049",
+      "refined_points": [
+        "신규 반영분(2020-01-29 장기보험 2종 CPA 연동방식, 중복가입방지정책 2단계, 희망일정)이 이미 볼드체·체크리스트·확정형 문어체 기준을 충족하여 실질 교정 없이 검수만 완료"
+      ],
+      "published_at": "2026-07-13T14:11:20+09:00"
+    },
+    {
+      "task_id": "T007",
+      "target_name": "오퍼월",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151821",
+      "confluence_page_id": "192151821",
+      "refined_points": [
+        "신규 반영분(Offerwall SDK appkey 기반 광고 상세화면 다이렉트 진입 기능, 제약사항 3건, CLUV 최초 적용)이 이미 볼드체·체크리스트 기준을 충족하여 실질 교정 없이 검수만 완료"
+      ],
+      "published_at": "2026-07-13T14:11:40+09:00"
+    },
+    {
+      "task_id": "T008",
+      "target_name": "PINCRUX > 인플루언서 앱",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "refined_points": [
+        "신규 반영분(2020-01-29 할인쿠폰 카테고리 상세진입 기능 추가, 인플루언서 앱 우선 적용)이 이미 볼드체·확정형 문어체·체크리스트 기준을 충족하여 실질 교정 없이 검수만 완료"
+      ],
+      "published_at": "2026-07-13T14:12:00+09:00"
+    },
+    {
+      "task_id": "T009",
+      "target_name": "CPS 기획전 플랫폼 > 오케이캐시백 적용",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/206012417/CPS",
+      "confluence_page_id": "206012417",
+      "refined_points": [
+        "신규 반영분(계정번호 1301(admin@ocb.co.kr)/PUBKEY 910841, 기한 2월말 등 연동 가이드 접수 내용)이 이미 볼드체·체크리스트 기준을 충족하여 실질 교정 없이 검수만 완료"
+      ],
+      "published_at": "2026-07-13T14:12:20+09:00"
+    }
+  ]
+}

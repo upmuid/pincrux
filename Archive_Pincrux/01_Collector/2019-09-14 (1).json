@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.1",
+  "node": "collector",
+  "run_date": "2019-09-14",
+  "run_mode": "backfill",
+  "period": "2019-09-01 to 2019-09-14",
+  "status": "success",
+  "data_summaries": [
+    {
+      "task_id": "T001",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "2018년 11월부터 진행 중인 미래에셋대우 이벤트(정회훈 확인, 원본 슬랙 표기 '미래에셋대우'). 증권업협회의 '평생무료' 문구 과장광고 지적에 따른 전체 매체 종료 조치.",
+      "entity_name": "미래에셋대우",
+      "project_name": "주식거래수수료 무료 이벤트",
+      "page_scope": "child",
+      "target_name": "미래에셋대우 > 주식거래수수료 무료 이벤트",
+      "issue_title": "미래에셋대우 이벤트 전체 매체 종료 및 재라이브 계획",
+      "summary": "협회 과장광고 지적으로 전체매체 종료, 10월초 재라이브 예정",
+      "decision": "증권업협회에서 '평생무료' 표현을 과장광고로 공문 발송함에 따라 전체 매체 즉시 종료 결정. '2025년말 주식수수료 무료' 문구로 변경한 버전으로 10월초 재라이브 진행 예정. 크리티컬 소재는 즉시 노출 중단 처리.",
+      "action_items": [
+        "매체사 오프 요청 메일 발송 후 디벨로퍼에서 순차 종료 처리",
+        "삼성페이는 9/3 10시 종료 처리 및 종료사유 공문 요청",
+        "전체 종료 완료 후 결과 공유"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CJP8CLM36/p1567470302006900",
+      "correction_note": "[COO 정정, 2026-07-08] 읽어봄이가 CONTEXT_DISTORTION으로 FAILED 판정(쓰미가 T002와 병합하며 '10월초→9/18로 앞당겨짐'이라는 근거없는 인과관계를 창작함)하여 총총이 두 슬랙 스레드(CJP8CLM36/T001, CBTJWKH0C/T002)를 재확인함. 두 스레드 간 상호 참조가 전혀 없고, T002는 '심의번호 기존 그대로 유지'를 명시해 신규 심의가 필요한 본 건(T001)의 재라이브와는 성격이 다름을 확인, 별개 프로젝트로 최종 판단함. 본 항목(T001) 사실관계(날짜·결정) 자체는 변경 없음."
+    },
+    {
+      "task_id": "T002",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "unknown",
+      "context_reference": "원문에 '미래에셋'으로만 표기되어 T001(미래에셋대우) 건과 동일 캠페인인지 슬랙 문맥만으로는 확정 불가. entity_name은 원문 그대로 기입하며, 쓰미가 후속 판단 필요.",
+      "entity_name": "미래에셋",
+      "project_name": "이벤트 소재 진행일자 수정",
+      "page_scope": "child",
+      "target_name": "미래에셋 > 이벤트 소재 진행일자 수정",
+      "issue_title": "미래에셋 소재 진행일자 변경(9.17~10.31) 및 라이브 일정(9/18) 확정",
+      "summary": "이벤트 진행일자 9.17~10.31 수정, 심의결과 확인시 9/18 라이브 반영",
+      "decision": "소재 내 이벤트 진행일자를 9.17~10.31로 수정하고 심의번호는 기존 그대로 유지하기로 확정. 코딩 반영은 심의 결과가 확인되는 대로 9/18 라이브 전까지 반영하기로 함.",
+      "action_items": [
+        "금일 수정 완료 후 미래에셋 측 전달",
+        "심의 결과 확인 후 코딩 반영"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTJWKH0C/p1568166685023900",
+      "correction_note": "[COO 정정, 2026-07-08] 읽어봄이 FAILED(CONTEXT_DISTORTION) 판정에 따른 재검증 결과, T001과 동일 캠페인이라는 근거가 슬랙 원문에 없음(채널 상이, 상호 참조 없음, 심의번호 유지 vs 신규 재라이브의 모순)이 확인되어 T001과는 별개의 프로젝트로 최종 판단함. entity_name '미래에셋'은 원문 표기 그대로 유지하되 컨플루언스 엔티티명은 '미래에셋대우'로 정규화됨(동일 채널 이력 기준). 사실관계(날짜·결정) 자체는 변경 없음."
+    },
+    {
+      "task_id": "T003",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "new",
+      "context_reference": "웰컴저축은행 LMS 발송 DB수집 이벤트 신규 조건 확정 건.",
+      "entity_name": "웰컴저축은행",
+      "project_name": "LMS 발송 DB수집 이벤트",
+      "page_scope": "child",
+      "target_name": "웰컴저축은행 > LMS 발송 DB수집 이벤트",
+      "issue_title": "웰컴저축은행 LMS DB수집 이벤트 실적기준 및 예산·단가 확정",
+      "summary": "예산 1천만원, 단가 500원/건, 2만건 소진시 종료, LGu+고객만 실적인정",
+      "decision": "실적 인정기준은 LGu+ 고객정보만 가능하며, 입력 페이지에 제3자 제공(웰컴저축은행) 내용이 들어가는 부분을 웰컴 측에 사전 공유하기로 함. 예산은 1천만원(VAT 별도), 진행단가는 500원/건(VAT 별도)이며 2만개 소진 후 종료. 데일리 캡은 없고, 모두 소진 이후에만 종료 처리하기로 확정.",
+      "action_items": [
+        "입력 페이지 제3자 제공 고지 문구 웰컴저축은행 측 사전 공유",
+        "2만건 소진 여부 모니터링 후 종료 처리"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CJCD15KJN/p1568105186003800",
+      "additional_source_link": "https://pincrux.slack.com/archives/CJCD15KJN/p1568082083001700",
+      "correction_note": "[COO 정정, 2026-07-08] 읽어봄이가 CONTEXT_DISTORTION으로 FAILED 판정(LGu+ 고객정보 인정기준·제3자 제공 사전공유 문구의 출처를 slack_thread_link 스레드에서 찾을 수 없음)하여 총총이 채널(CJCD15KJN) 전후 맥락을 재조사함. 재확인 결과 해당 문구는 허위 삽입이 아니라, 같은 날 같은 채널의 별도 메시지(2019-09-10 11:21:23, ts=1568082083.001700, 정회훈)에 실제로 존재하는 내용이며, 모으미가 두 메시지(예산/단가 메시지와 LGu+/제3자제공 메시지)를 하나의 task로 병합하면서 slack_thread_link를 한쪽 메시지로만 표기해 출처 누락이 발생한 것으로 확인됨. 내용은 그대로 유지하고 additional_source_link를 추가함."
+    },
+    {
+      "task_id": "T004",
+      "major_category": "In-house",
+      "minor_category": "Product",
+      "context_status": "matched",
+      "context_reference": "PINCRUX 오퍼월 내 자체 포인트 전환 서비스 '티켓충전소'가 '티켓모아'로 명칭 변경됨. 원문 슬랙 표기 병기.",
+      "entity_name": "티켓충전소",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "티켓충전소",
+      "issue_title": "오퍼월 내 '티켓충전소' 서비스명 '티켓모아'로 변경 및 정책 페이지 갱신",
+      "summary": "서비스명 티켓충전소→티켓모아 변경, 개인정보취급방침·이용약관 갱신",
+      "decision": "오퍼월 내 '티켓충전소' 명칭을 '티켓모아'로 변경(메인 상단 텍스트 등 단순 텍스트 교체). 개인정보 취급방침(withprivacy.html) 및 개인정보 수집이용 동의·이용약관 문구도 함께 수정하여 업로드 완료.",
+      "action_items": [
+        "티켓모아 명칭 변경 후후용 확인(진행 중)"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBU0PHP3P/p1568024516028300"
+    },
+    {
+      "task_id": "T005",
+      "major_category": "In-house",
+      "minor_category": "Product",
+      "context_status": "new",
+      "context_reference": "회사 차원 벤처기업 인증 및 이노비즈 인증 신규 승인 통보.",
+      "entity_name": "PINCRUX",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "PINCRUX",
+      "issue_title": "PINCRUX 벤처기업 인증 및 이노비즈 인증 획득",
+      "summary": "벤처기업 인증 및 이노비즈 인증 신규 승인",
+      "decision": "PINCRUX가 벤처기업 인증 및 이노비즈 인증을 승인받았다는 연락을 받음. 관련 부서에 인증 관련 준비 협조 요청.",
+      "action_items": [
+        "인증 관련 후속 서류·절차 준비"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBRLA2LGL/p1567674428002200"
+    }
+  ],
+  "uncategorized": []
+}

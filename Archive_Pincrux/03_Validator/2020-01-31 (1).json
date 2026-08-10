@@ -1,0 +1,135 @@
+{
+  "schema_version": "1.1",
+  "node": "validator",
+  "run_date": "2020-01-31",
+  "source_files": {
+    "collector": "Archive_Pincrux/01_Collector/2020-01-31.json",
+    "writer": "Archive_Pincrux/02_Writer/2020-01-31.json"
+  },
+  "node_status": "success",
+  "review_summary": {
+    "total_reviewed": 9,
+    "passed_cnt": 9,
+    "failed_cnt": 0,
+    "slack_reread_cnt": 1
+  },
+  "validation_results": [
+    {
+      "task_id": "T001",
+      "target_name": "PINCRUX > Creator Membership Community(대청자,대도서관)",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "1패스(JSON-컨플루언스 대조): '## PINCRUX Creator Membership Community(대청자, 대도서관) (2019-11~12)' 섹션에 1/16(charge→shop 명칭변경, 캐시-팬심 전환), 1/22(추가 필요 항목), 1/29(UI/기획 수정 8건 확정) 운영 히스토리·의사결정·액션아이템이 모으미 summary/decision/action_items와 일치. 트리거 조건(불일치·단문과요약·액션아이템누락) 해당 없어 슬랙 재조회 불필요. 기존 2019-11~12월 초기 히스토리(가칭 확정, 도메인 구매 등)는 손실 없이 유지됨(Overwrite 없음)."
+    },
+    {
+      "task_id": "T002",
+      "target_name": "PINCRUX > 개발팀 업무프로세스",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "1패스: '## PINCRUX 개발팀 업무 프로세스 정비 (2019)' 섹션에 2020-01-21 메인서버 장애 3단계 대응절차(apache/mysql재시작→DNS확인→호스팅업체 물리재시작)가 정확히 반영됨. action_items('3단계 체크리스트 순서대로 대응')도 일치. 기존 2019-01-23, 2019-12-05 히스토리 손실 없음."
+    },
+    {
+      "task_id": "T003",
+      "target_name": "KT > 프로젝트K(혜택플랫폼/제휴할인)",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/196575233/KT",
+      "confluence_page_id": "196575233",
+      "slack_reread": true,
+      "slack_reread_trigger": "context_status: new(모으미) → matched(쓰미) 재분류 — 신규/재분류 항목 2패스 대상",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "2패스(슬랙 원본 재확인) 완료: slack_read_thread(CBU0PHP3P, ts 1580447690.023100)로 원문 전체 대조 결과, 모으미의 decision(서비스모델, K포인트 연동방식, KPI, 고객소구점, 명칭변경 예정, 분할적립금 개발, 일정 2/3~4월 오픈)과 action_items가 원문과 정확히 일치하며 왜곡·누락 없음. 쓰미의 'new→matched' 재분류는 타당함: 기존 KT 엔티티(196575233, Media_Partner>Project)에 이미 'KT 클립 미니충전소'·'KT CLIP SDK 통합' 섹션이 확립되어 있고, 원문 '프로젝트K 앱 = KT클립앱 업데이트 버전'이 동일 KT클립 라인의 후속사업임을 명시적으로 뒷받침함. 신규 섹션이 기존 두 섹션을 덮어쓰지 않고 하단에 추가되어 히스토리 손실 없음. 기존 카테고리(Media_Partner>Project)도 임의 변경 없이 유지됨."
+    },
+    {
+      "task_id": "T004",
+      "target_name": "PINCRUX > 조직·인사정책",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "1패스: '## PINCRUX 조직·인사 정책 (2019-12~2020-01)' 섹션에 2020-01-28 인사평가 면담 일정(부산 2/4, 서울 2/5~2/6) 및 후속 절차(대표이사 보고→연봉확정→개별통보)가 정확히 반영됨. action_items 일치. 기존 5건(경조규정, 연말보너스 등) 히스토리 유지."
+    },
+    {
+      "task_id": "T005",
+      "target_name": "PINCRUX > 조직·인사정책",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "1패스: 동일 섹션 내 2020-01-28 코로나19(우한폐렴) 방역 공지 3항목(마스크 착용, 손소독제 비치, 이상증세 보고)이 정확히 반영됨. action_items 일치. T004와 같은 섹션에 병합되었으나 두 항목 모두 개별 항목으로 구분되어 기록되어 혼선 없음."
+    },
+    {
+      "task_id": "T006",
+      "target_name": "DB손해보험 > 장기보험 CPS 캠페인",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955049/DB",
+      "confluence_page_id": "191955049",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "1패스: '## 장기보험 CPS 캠페인 (2020-01)' 섹션에 2020-01-29 개발미팅 내용(장기보험 2종 CPA 연동방식, 중복가입방지정책 2단계, 희망일정)이 정확히 반영됨. action_items 일치. 기존 2020-01-08 캠페인 확정 히스토리 손실 없이 유지됨."
+    },
+    {
+      "task_id": "T007",
+      "target_name": "오퍼월",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151821",
+      "confluence_page_id": "192151821",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "1패스: '## Offerwall SDK 광고 상세화면 다이렉트 진입 기능 추가 (2020-01)' 섹션에 appkey 기반 기능 및 제약사항 3건, CLUV 최초 적용이 정확히 반영됨. action_items 일치. 기존 섹션들(카포인트x후후·차차차, 오퍼월 플랫폼 운영 등) 손실 없음."
+    },
+    {
+      "task_id": "T008",
+      "target_name": "PINCRUX > 인플루언서 앱",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "1패스: '## PINCRUX 인플루언서 앱 개발(공용 플랫폼 인프라) (2019-12)' 섹션에 2020-01-29 할인쿠폰 카테고리 상세진입 기능 추가(인플루언서 앱 우선 적용) 히스토리가 정확히 반영됨. action_items 일치. 기존 2019-12 개발 히스토리 손실 없음."
+    },
+    {
+      "task_id": "T009",
+      "target_name": "CPS 기획전 플랫폼 > 오케이캐시백 적용",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/206012417/CPS",
+      "confluence_page_id": "206012417",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "1패스: '## CPS 기획전 플랫폼 — 오케이캐시백 적용 (2020-01)' 섹션에 계정번호 1301(admin@ocb.co.kr)/PUBKEY 910841, 기한 2월말 등 연동 가이드 접수 내용이 정확히 반영됨. action_items 일치. 기존 컬처랜드 최초 적용 섹션(2020-01-08) 손실 없이 유지됨."
+    }
+  ]
+}

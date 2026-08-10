@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.1",
+  "node": "writer",
+  "run_date": "2026-07-23",
+  "source_file": "Archive_Pincrux/01_Collector/2026-07-23_3.json",
+  "node_status": "success",
+  "processed_tasks": [
+    {
+      "task_id": "T001",
+      "entity_name": "리메세",
+      "project_name": "리메세-차올 첫결제 CPA 캠페인 (2021-03)",
+      "page_scope": "child",
+      "target_name": "리메세 > 리메세-차올 첫결제 CPA 캠페인 (2021-03)",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/217088010",
+      "confluence_page_id": "217088010",
+      "updated_sections": ["## 리메세-차올 첫결제 CPA 캠페인 실집행 (2021-03)"]
+    }
+  ],
+  "skipped_tasks": [],
+  "out_of_band_correction_note": "본 배치 작업 중 동일 페이지(217088010)의 2021-01 섹션에서 이전 배치의 DATA_LOSS 오류(정상 원문 내용을 CONTEXT_DISTORTION으로 오판·삭제)를 발견하여 총총이 즉시 원문 기준으로 복원 조치함. 상세 내역은 03_Validator/2026-07-23.json의 T002 항목 내 'post_hoc_correction_2026-07-23' 필드 및 01_Collector/2026-07-23.json T002 context_reference 참조.",
+  "conditional_execution_note": "본 배치(T001) context_status: matched, action_taken: merged_into_existing이며 모으미↔쓰미 간 재분류 없음. v0_coo.md 4-C절에 따라 읽어봄이·다시쓰미 모두 생략 가능 — 총총이 생략 처리하고 본 배치는 쓰미 완료 시점에 published로 인정함. (단, 위 out_of_band_correction_note에 기술된 2021-01 배치분 정정은 4-C절의 '조건부 실행'과 별개로, 총총(COO)의 자체 감사·재검증 권한(v0_coo.md 6절 자기교정 선례)에 따라 이번 배치 진행 중 발견 즉시 처리한 것임.)"
+}

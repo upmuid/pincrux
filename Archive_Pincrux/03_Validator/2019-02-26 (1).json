@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.1",
+  "node": "validator",
+  "run_date": "2019-02-26",
+  "run_mode": "backfill",
+  "period": "2019-02-26 to 2019-03-04",
+  "node_status": "success",
+  "source_collector_file": "Archive_Pincrux/01_Collector/2019-02-26.json",
+  "source_writer_file": "Archive_Pincrux/02_Writer/2019-02-26.json",
+  "validation_results": [
+    {"task_id": "T001", "entity": "미래에셋대우", "page_id": "191955009", "verdict": "PASSED", "note": "티머니 펑키 910502 생성 수치 일치"},
+    {"task_id": "T002", "entity": "오퍼월(삼국지)", "page_id": "SKIPPED", "verdict": "SKIPPED", "note": "오퍼월 소재 제작 요청 — 별도 엔티티 페이지 미생성. 기록 생략 처리"},
+    {"task_id": "T003", "entity": "에몬스", "page_id": "192217173", "verdict": "PASSED", "note": "신규 페이지 생성. 인스타그램 소재 요청 이력 반영 확인"},
+    {"task_id": "T004", "entity": "난세", "page_id": "SKIPPED", "verdict": "SKIPPED", "note": "소재 제작 요청 — 별도 엔티티 페이지 미생성. 기록 생략 처리"},
+    {"task_id": "T005", "entity": "미래에셋대우", "page_id": "191955009", "verdict": "PASSED", "note": "심의번호 제19-00759호·제19-00760호, 유효기간 2019.02.22~04.30 수치 일치"},
+    {"task_id": "T006", "entity": "미래에셋대우", "page_id": "191955009", "verdict": "PASSED", "note": "L포인트 소재 수정 이력 반영 확인"},
+    {"task_id": "T007", "entity": "교보라이프플래닛", "page_id": "191954989", "verdict": "PASSED", "note": "몬테일 640×160 사이즈, 배송비 할인쿠폰 2$ 수치 일치"},
+    {"task_id": "T008", "entity": "아이테마니아", "page_id": "192151734", "verdict": "PASSED", "note": "신규 페이지 생성. 롤링배너 778×256, 고정배너 303×86 수치 일치"},
+    {"task_id": "T009", "entity": "DOMA", "page_id": "192315400", "verdict": "PASSED", "note": "신규 페이지 생성. 캠페인 ID 103690, CDN CNAME 구조 내용 일치"},
+    {"task_id": "T010", "entity": "페이앤드", "page_id": "192053250", "verdict": "PASSED", "note": "거래관리 탭별 독립 검색(1안) 확정 이력 — W8 페이앤드 페이지에 기반 반영됨"},
+    {"task_id": "T011", "entity": "페이앤드", "page_id": "192053250", "verdict": "PASSED", "note": "차이홍 QR 이슈 내용 반영 확인"},
+    {"task_id": "T012", "entity": "페이앤드", "page_id": "192053250", "verdict": "PASSED", "note": "iOS/Android 릴리즈 일정 내용 반영 확인"},
+    {"task_id": "T013", "entity": "DB손해보험", "page_id": "191955049", "verdict": "PASSED", "note": "GS주유권 발송 완료 이력 확인"},
+    {"task_id": "T014", "entity": "DB손해보험", "page_id": "191955049", "verdict": "PASSED", "note": "3월 이벤트 기간 3/4~3/10, 신규 3만원/갱신 2만원, 혜택발송 4/11 수치 일치"},
+    {"task_id": "T015", "entity": "미래에셋대우", "page_id": "191955009", "verdict": "PASSED", "note": "OCB 심의번호 제19-00802호, 티머니 제19-00825호 수치 일치"},
+    {"task_id": "T016", "entity": "미래에셋대우", "page_id": "191955009", "verdict": "PASSED", "note": "OCB 랜딩 appkey:101913, pubkey:910264(AOS)/910028(iOS) 수치 일치"},
+    {"task_id": "T017", "entity": "페이앤드", "page_id": "192053250", "verdict": "PASSED", "note": "iOS QR결제 버그 수정 AppStore 심사 제출 이력 확인"}
+  ],
+  "summary": {
+    "total_items": 17,
+    "passed": 15,
+    "failed": 0,
+    "skipped": 2,
+    "new_items_checked": 3,
+    "matched_items_checked": 12
+  }
+}

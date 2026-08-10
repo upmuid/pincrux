@@ -1,0 +1,182 @@
+{
+  "schema_version": "1.1",
+  "node": "writer",
+  "run_date": "2020-01-14",
+  "source_file": "Archive_Pincrux/01_Collector/2020-01-14.json",
+  "node_status": "success",
+  "processed_tasks": [
+    {
+      "task_id": "T001",
+      "entity_name": "PINCRUX",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "PINCRUX",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "updated_sections": [
+        "PINCRUX 2020년 1분기 개발 우선순위 확정 (2020-01) (신규 섹션 추가: 쇼핑몰 구매 포스트백 연동 결정 기록)",
+        "PINCRUX 인플루언서 앱 개발(공용 플랫폼 인프라) (2019-12) (운영 히스토리/의사결정/액션아이템에 인플루언서 미개발 항목·정식 오픈 개발 관련 항목 병합)"
+      ],
+      "writer_judgment_note": "모으미 원문상 '쇼핑몰 구매 포스트백 연동'과 T005(CPS 기획전 플랫폼)의 명시적 연결이 없다는 판단을 존중하여 별개 사실로 기록하되, PINCRUX 페이지 내에서는 '개발 우선순위/로드맵' 성격의 신규 소항목으로 분리 배치함. '인플루언서 미개발 항목'/'인플루언서 정식 오픈 개발'은 기존 확립된 'PINCRUX 인플루언서 앱 개발(공용 플랫폼 인프라)' 섹션에 진행 히스토리로 병합함."
+    },
+    {
+      "task_id": "T002",
+      "entity_name": "모바일팝",
+      "project_name": "우리원 기획전",
+      "page_scope": "child",
+      "target_name": "모바일팝 > 우리원 기획전",
+      "context_status": "new",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/196608001",
+      "confluence_page_id": "196608001",
+      "updated_sections": [
+        "모바일팝 우리원 기획전 (2020-01) (신규 섹션 추가)"
+      ]
+    },
+    {
+      "task_id": "T003",
+      "entity_name": "SSG(신세계)",
+      "project_name": "충전소·할인쿠폰 연동",
+      "page_scope": "child",
+      "target_name": "SSG(신세계) > 충전소·할인쿠폰 연동",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/204636161/SSG",
+      "confluence_page_id": "204636161",
+      "updated_sections": [
+        "SSG PAY 충전소·할인쿠폰 연동 (2020-01) (신규 섹션 추가, 기존 'SSG 제휴 3종(할인쿠폰/리워드몰/충전소) 업무 착수' 섹션의 후속 논의로 교차 참조 명시)"
+      ],
+      "writer_judgment_note": "project_name('충전소·할인쿠폰 연동')과 문자열이 정확히 일치하는 기존 섹션이 없어(가장 유사한 기존 섹션은 'SSG 제휴 3종(할인쿠폰/리워드몰/충전소) 업무 착수'), 워크플로우 4항에 따라 신규 섹션을 추가하고 본문에 후속 논의임을 명시함."
+    },
+    {
+      "task_id": "T004",
+      "entity_name": "DB손해보험",
+      "project_name": "장기보험 CPS 캠페인",
+      "page_scope": "child",
+      "target_name": "DB손해보험 > 장기보험 CPS 캠페인",
+      "context_status": "new",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955049/DB",
+      "confluence_page_id": "191955049",
+      "updated_sections": [
+        "장기보험 CPS 캠페인 (2020-01) (신규 섹션 추가)"
+      ]
+    },
+    {
+      "task_id": "T005",
+      "entity_name": "CPS 기획전 플랫폼",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "CPS 기획전 플랫폼",
+      "context_status": "new",
+      "action_taken": "created_new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/206012417/CPS",
+      "confluence_page_id": "206012417",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/190382081",
+      "confluence_parent_page_id": "190382081",
+      "updated_sections": [
+        "엔티티 개요",
+        "CPS 기획전 플랫폼 개발 착수(컬처랜드 최초 적용) (2020-01)",
+        "FAQ 및 트러블슈팅",
+        "주요 담당자"
+      ],
+      "writer_judgment_note": "CQL 검색('CPS' 제목 포함, space=AR, type=page) 결과 0건으로 기존 페이지 부재를 확인 후 신규 생성함. 카테고리는 원문상 자사 CPS 상품 기획전으로 In-house > Product(부모 190382081) 하위에 배치함."
+    },
+    {
+      "task_id": "T006",
+      "entity_name": "PINCRUX",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "PINCRUX",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "updated_sections": [
+        "PINCRUX 조직·인사 정책 (2019-12→2019-12~2020-01로 섹션 제목 갱신, 운영 히스토리/의사결정/액션아이템에 2020 교육계획·인사평가가이드·1분기 개발계획 일정 병합)"
+      ]
+    },
+    {
+      "task_id": "T007",
+      "entity_name": "PINCRUX",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "PINCRUX",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "updated_sections": [
+        "PINCRUX Creator Membership Community(대청자, 대도서관) (2019-11~12) (운영 히스토리/의사결정/액션아이템에 캐시·팬심 화폐체계 확정 내용 병합)"
+      ],
+      "writer_judgment_note": "총총 지침에 따라 entity_name을 모으미의 1차분류 '멤버미'에서 'PINCRUX'로 재정정함. 2019-12-31 배치에서 이미 '멤버미'는 독립 엔티티가 아닌 외부 벤치마크 서비스명(memberme.net)이며, 관련 논의는 'PINCRUX Creator Membership Community(대청자, 대도서관)' 프로젝트의 진행 히스토리임이 확인된 선례가 있음. 이번 캐시·팬심 2종 화폐체계 확정(1:1 가치, 팬심→캐시 역전환 시 10% 수수료) 논의도 동일 프로젝트의 후속 진행 사항으로 판단하여 해당 섹션에 병합하고, context_status는 matched로 유지함."
+    },
+    {
+      "task_id": "T008",
+      "entity_name": "소소짐",
+      "project_name": "무브캐시",
+      "page_scope": "child",
+      "target_name": "소소짐 > 무브캐시",
+      "context_status": "new",
+      "action_taken": "created_new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/206045185",
+      "confluence_page_id": "206045185",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/190382081",
+      "confluence_parent_page_id": "190382081",
+      "updated_sections": [
+        "엔티티 개요",
+        "무브캐시 (2020-01)",
+        "FAQ 및 트러블슈팅",
+        "주요 담당자"
+      ],
+      "writer_judgment_note": "CQL 검색('소소짐' 제목 포함, space=AR, type=page) 결과 0건으로 신규 생성함. major_category는 원문상 '자사 매체'로 명시되어 In-house > Product(부모 190382081)로 확정(모으미 분류 재확인)."
+    },
+    {
+      "task_id": "T009",
+      "entity_name": "SK플래닛",
+      "project_name": "핏케어 부가서비스 연동",
+      "page_scope": "child",
+      "target_name": "SK플래닛 > 핏케어 부가서비스 연동",
+      "context_status": "new",
+      "action_taken": "created_new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/206077953/SK",
+      "confluence_page_id": "206077953",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/190152706",
+      "confluence_parent_page_id": "190152706",
+      "updated_sections": [
+        "엔티티 개요",
+        "핏케어 부가서비스 연동 (2020-01)",
+        "FAQ 및 트러블슈팅",
+        "주요 담당자"
+      ],
+      "writer_judgment_note": "CQL 검색('SK플래닛' 제목 포함, space=AR, type=page) 결과 0건으로 신규 생성함. Client(광고주) > Project(부모 190152706) 하위에 배치."
+    },
+    {
+      "task_id": "T010",
+      "entity_name": "PINCRUX",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "PINCRUX",
+      "context_status": "inquiry",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "updated_sections": [
+        "FAQ 및 트러블슈팅 (티켓 충전소 포인트 소멸 기준 Q&A 추가)"
+      ]
+    }
+  ],
+  "skipped_tasks": []
+}

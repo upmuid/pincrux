@@ -1,0 +1,420 @@
+{
+  "schema_version": "1.1",
+  "node": "collector",
+  "run_date": "2026-06-28",
+  "run_mode": "backfill",
+  "period": "2019-03-26 to 2019-04-01",
+  "status": "success",
+  "data_summaries": [
+    {
+      "task_id": "T001",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "삼성증권 소재 제작·수정 요청이 이전 주부터 지속 진행 중인 캠페인의 후속 작업임",
+      "entity_name": "삼성증권",
+      "project_name": "삼성증권 X 레진코믹스 프리미엄A 광고 소재",
+      "page_scope": "child",
+      "target_name": "삼성증권 > 삼성증권 X 레진코믹스 프리미엄A 광고 소재",
+      "issue_title": "삼성증권 X 레진코믹스(프리미엄A) 소재 제작 요청",
+      "summary": "삼성증권 X 레진코믹스 프리미엄A 타입 소재 신규 제작 요청. 문구: 신규 비대면 주식계좌개설 시 코인 지급 기본, 신세계상품권 5천원 추가 지급. 레진용으로만 노출, 리워드 확정 후 공유 예정. 사이즈: 720*360/720*780. 심의용 및 매체 전달용 2종 분리 제작.",
+      "decision": "소재 내 심의번호 삭제 후 전달, 리워드(코인) 여부 확인 후 상세문구 포함하여 제작",
+      "action_items": [
+        "레진코믹스 프리미엄A 타입 소재 제작 (720*360, 720*780)",
+        "심의번호 삭제본 전달",
+        "리워드 코인 여부 확인 후 문구 최종 반영"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTJWKH0C/p1553577569172700"
+    },
+    {
+      "task_id": "T002",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "삼성증권 네이버시리즈 소재는 이전 주부터 진행 중인 캠페인 소재 수정 요청",
+      "entity_name": "삼성증권",
+      "project_name": "삼성증권 네이버시리즈 소재 수정",
+      "page_scope": "child",
+      "target_name": "삼성증권 > 삼성증권 네이버시리즈 소재 수정",
+      "issue_title": "삼성증권 네이버시리즈 소재 수정 및 11번가 소재 전달 요청",
+      "summary": "삼성증권 네이버 웹툰 활용 소재 수정 제작 요청. 추가로 네이버웹툰/시리즈/11번가 소재 전달 요청. 소재 내 CI는 삼성증권 로고 형식으로 진행. 배너는 모서리 방향으로 심볼 배치 가이드에 따라야 함. 심볼 위치 수정 확인 완료.",
+      "decision": "기존 소재 활용하여 수정 제작, 심볼 위치 모서리 방향 배치 적용",
+      "action_items": [
+        "삼성증권 네이버시리즈 소재 수정 완료",
+        "네이버웹툰/시리즈/11번가 소재 전달"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTJWKH0C/p1553575614167900"
+    },
+    {
+      "task_id": "T003",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "DB손해보험 시리즈 소재는 이전 기간에도 진행된 클라이언트",
+      "entity_name": "DB손해보험",
+      "project_name": "DB손해보험 시리즈 소재 수정",
+      "page_scope": "child",
+      "target_name": "DB손해보험 > DB손해보험 시리즈 소재 수정",
+      "issue_title": "DB손해보험 시리즈 소재 재수정 요청 (제공처 표기)",
+      "summary": "DB손해보험 상세페이지 내 제공처에 '네이버 시리즈'가 아닌 '시리즈'로 수정 요청. 기존 소재에서 제공처 표기만 변경.",
+      "decision": "제공처 '네이버 시리즈' → '시리즈'로 수정 후 전달",
+      "action_items": [
+        "DB손해보험 시리즈 소재 내 제공처 표기 수정",
+        "수정본 매체 전달"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTJWKH0C/p1553576165168800"
+    },
+    {
+      "task_id": "T004",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "KB손해보험은 이전 기간부터 진행 중인 클라이언트",
+      "entity_name": "KB손해보험",
+      "project_name": "KB손해보험 클립 진행 랜딩페이지",
+      "page_scope": "child",
+      "target_name": "KB손해보험 > KB손해보험 클립 진행 랜딩페이지",
+      "issue_title": "KB손해보험 클립 진행을 위한 페이지 버튼 코딩 요청",
+      "summary": "KB손해보험 클립 진행을 위한 페이지 버튼 코딩 최대한 빠르게 요청. 방화벽 허용 이슈로 인해 아이피 변경 시 개발을 처음부터 다시 진행해야 한다는 KB손해보험 측 통보. 관련 실장 연락처 요청 받음.",
+      "decision": "방화벽 허용 이슈 대응을 위해 실장 연락처 공유 및 관련 개발 협의 진행",
+      "action_items": [
+        "KB손해보험 클립 페이지 버튼 코딩",
+        "방화벽 허용 이슈 관련 KB 측 실장 연락처 확인 및 공유"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTJWKH0C/p1553577457171100"
+    },
+    {
+      "task_id": "T005",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "KB손해보험 해피머니 랜딩페이지는 기존 KB손해보험 캠페인의 연속",
+      "entity_name": "KB손해보험",
+      "project_name": "KB손해보험 해피머니 랜딩페이지",
+      "page_scope": "child",
+      "target_name": "KB손해보험 > KB손해보험 해피머니 랜딩페이지",
+      "issue_title": "KB손해보험 해피머니 랜딩페이지 코딩본 전달 요청",
+      "summary": "KB손해보험 해피머니 랜딩페이지 코딩본 전달 요청. 완료 확인.",
+      "decision": "랜딩페이지 코딩본 전달 완료",
+      "action_items": [
+        "KB손해보험 해피머니 랜딩페이지 코딩본 전달 완료"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTJWKH0C/p1553737297206700"
+    },
+    {
+      "task_id": "T006",
+      "major_category": "In-house",
+      "minor_category": "Product",
+      "context_status": "new",
+      "context_reference": "AWS 서버 이전 계획 및 도메인 전략은 이 시기에 처음 구체적으로 논의됨",
+      "entity_name": "PINCRUX",
+      "project_name": "AWS 서버 이전 및 realpincrux.com 도메인 전략",
+      "page_scope": "root",
+      "target_name": "PINCRUX > AWS 서버 이전 및 realpincrux.com 도메인 전략",
+      "issue_title": "AWS 서버 이전 전 금융 광고주 방화벽 정책 대응 방안 논의",
+      "summary": "pincrux.com을 AWS B서버 IP로 전환 시, 금융 광고주(예: KB손해보험)처럼 도메인+IP를 강제 고정하는 업체는 포스트백 변경이 불가능함. 해결책으로 realpincrux.com 도메인 사용: 광고주에게 realpincrux.com 포스트백 변경 요청 → KSIDC 내 etc서버 → AWS B서버로 신호 중계. 이렇게 하면 AWS 이전 후에도 pinkey 정상 작동 가능.",
+      "decision": "realpincrux.com 도메인을 중계용으로 사용하여 AWS 이전 시 금융 광고주 포스트백 문제 해결",
+      "action_items": [
+        "realpincrux.com 도메인 설정 및 etc서버 → AWS 중계 구성",
+        "KB손해보험 등 금융 광고주에 포스트백 변경 사전 요청",
+        "AWS 이전 일정 및 다운타임 최소화 방안 수립"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBU0PHP3P/p1553591532060200"
+    },
+    {
+      "task_id": "T007",
+      "major_category": "In-house",
+      "minor_category": "Product",
+      "context_status": "matched",
+      "context_reference": "캐시슬라이드는 기존에 연동 진행 중인 매체 파트너",
+      "entity_name": "PINCRUX",
+      "project_name": "캐시슬라이드 연동 토큰 기능",
+      "page_scope": "child",
+      "target_name": "PINCRUX > 캐시슬라이드 연동 토큰 기능",
+      "issue_title": "캐시슬라이드 연동 토큰 기능 추가 – 포스트백 고정값 요청",
+      "summary": "캐시슬라이드에서 연동 토큰 기능이 추가되어 포스트백 송신 시 고정값으로 보내달라는 요청 접수. 업데이트된 연동 가이드 첨부. 팝키 910423, 910537 두 개 설정 요청. 포스트백 URL 파라미터 변경 완료: appkey={appkey}&pubkey={pubkey}&click_key={cruxkey}&advertiser_token=AyqRBwPiak2FvkFwQwVE9HmN",
+      "decision": "팝키 2개(910423, 910537)에 advertiser_token 고정값 포스트백 URL 파라미터 변경 적용",
+      "action_items": [
+        "팝키 910423, 910537 포스트백 URL 파라미터 변경 완료"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBU0PHP3P/p1553659920061900"
+    },
+    {
+      "task_id": "T008",
+      "major_category": "Media_Partner",
+      "minor_category": "Product",
+      "context_status": "matched",
+      "context_reference": "톡소다는 기존에 연동 운영 중인 매체 파트너",
+      "entity_name": "톡소다",
+      "project_name": "톡소다 iOS 렌더링 버그 대응",
+      "page_scope": "child",
+      "target_name": "톡소다 > 톡소다 iOS 렌더링 버그 대응",
+      "issue_title": "톡소다 iOS 적립 가능 금액 노출 후 충전소 진입 시 흰 화면 렌더링 오류",
+      "summary": "톡소다 iOS에서 적립 가능 금액 노출 후 충전소 진입 시 흰 화면만 뜨는 현상 발생. api/ad_info.pin 경로 찾을 수 없다는 에러 발생. 테스트 앱에서는 정상 노출되나 톡소다 측에서 잘못 붙인 게 아닌지 확인 필요. 톡소다 측 확인 결과 별도 변경 내용 없다고 회신. 이후 팝업이 정상 작동되어 해결.",
+      "decision": "톡소다 측 변경 없음 확인, 이후 자연 해결 — 원인은 톡소다 측 잘못된 연동으로 추정",
+      "action_items": [
+        "country 코드 처리 로직 개선 (iOS ko-Kore_KR 대응)",
+        "톡소다 iOS 재발 모니터링"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBT7G5RUN/p1553677676018700"
+    },
+    {
+      "task_id": "T009",
+      "major_category": "In-house",
+      "minor_category": "Product",
+      "context_status": "new",
+      "context_reference": "country 코드 필터링 로직 개선은 이 시기 iOS 버그 대응으로 처음 논의됨",
+      "entity_name": "PINCRUX",
+      "project_name": "Pinkey iOS country 코드 처리 개선",
+      "page_scope": "root",
+      "target_name": "PINCRUX > Pinkey iOS country 코드 처리 개선",
+      "issue_title": "어뷰징 처리 country 코드 iOS 예외 대응 (ko-Kore_KR)",
+      "summary": "어뷰징 처리 시 country 코드 필터에서 KR, ko_KR, en_KR을 허용하도록 설정했으나, iOS에서 ko-Kore_KR 형식으로 오고 있어 에러 발생. displayCountry 기준 KR / ko만 통과하도록 로직 수정.",
+      "decision": "country 코드 필터를 displayCountry 기준 KR, ko만 통과하도록 수정 적용",
+      "action_items": [
+        "country 필터 로직 displayCountry 기준으로 변경 완료"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBU0PHP3P/p1553736708064800"
+    },
+    {
+      "task_id": "T010",
+      "major_category": "Media_Partner",
+      "minor_category": "Project",
+      "context_status": "inquiry",
+      "context_reference": "컬쳐랜드 모바일웹 클릭/실적 누락은 단발성 이슈 확인 요청",
+      "entity_name": "컬쳐랜드",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "컬쳐랜드",
+      "issue_title": "컬쳐랜드 모바일웹 인벤토리 클릭 및 실적 누락 이슈 확인",
+      "summary": "전날 컬쳐랜드 모바일웹 910231 인벤토리에서 클릭 8건 및 실적 1건이 나오지 않는 문제 발생. 금일은 정상 집계됨. 오류 및 이슈사항 확인 요청.",
+      "decision": "금일 정상 확인, 전날 일시적 이슈로 추정",
+      "action_items": [
+        "컬쳐랜드 모바일웹 910231 전날 누락 건 원인 파악"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBT7G5RUN/p1553739299023800"
+    },
+    {
+      "task_id": "T011",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "DB금융투자는 이전 기간부터 진행 중인 클라이언트",
+      "entity_name": "DB금융투자",
+      "project_name": "DB금융투자 SKP 제휴 피드 심의필 반영",
+      "page_scope": "child",
+      "target_name": "DB금융투자 > DB금융투자 SKP 제휴 피드 심의필 반영",
+      "issue_title": "DB금융투자 준법감시인 심사필 19-176호 반영 소재 수정 요청",
+      "summary": "DB금융투자 SKP 제휴 피드 심의필 19-176호(2019.04.01~04.30) 반영 요청. 제휴 배너 중 07_금융홈배너_732*400 파일 내 14만원 → 14만P로 변경.",
+      "decision": "소재 내 14만원 표기를 14만P로 수정하여 전달",
+      "action_items": [
+        "DB금융투자 07_금융홈배너_732*400 파일 내 14만원 → 14만P 수정",
+        "수정본 전달"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTJWKH0C/p1553650445187600"
+    },
+    {
+      "task_id": "T012",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "DB금융투자 삼성페이 소재는 기존 DB금융투자 캠페인 연속",
+      "entity_name": "DB금융투자",
+      "project_name": "DB금융투자 삼성페이 소재",
+      "page_scope": "child",
+      "target_name": "DB금융투자 > DB금융투자 삼성페이 소재",
+      "issue_title": "DB금융투자 X 삼성페이 로고 소재 가이드 맞춤 전달 요청",
+      "summary": "DB금융투자 X 삼성페이 로고 소재를 가이드에 맞게 전달 요청. 삼성증권 CI png 파일 여부 확인 → 인터넷 소스로 스크린 처리하여 전달.",
+      "decision": "삼성페이 CI 인터넷 소스 스크린 처리본 전달",
+      "action_items": [
+        "DB금융투자 X 삼성페이 로고 소재 가이드 맞춤 제작 및 전달"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTJWKH0C/p1553567286163800"
+    },
+    {
+      "task_id": "T013",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "미래에셋대우는 이전 기간부터 진행 중인 클라이언트",
+      "entity_name": "미래에셋대우",
+      "project_name": "미래에셋대우 이지원 소재",
+      "page_scope": "child",
+      "target_name": "미래에셋대우 > 미래에셋대우 이지원 소재",
+      "issue_title": "미래에셋대우 이지원 소재 수정 요청 (매체 전달용, 단순 문구 추가)",
+      "summary": "미래에셋대우 이지원(계좌개설/연금이전) 이벤트 관련 배너 수정 요청. 매체 전달용으로 단순 문구 추가. 사내게시판 배너는 금일 중 전달, 이외 소재는 익일까지 전달 예정. 4/1에는 사내게시판 배너 단순 문구 수정 추가 요청.",
+      "decision": "단순 문구 추가 적용 후 순차 전달",
+      "action_items": [
+        "미래에셋대우 이지원 사내게시판 배너 수정 완료",
+        "이지원 계좌개설/연금이전 이벤트 배너 수정 완료"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTJWKH0C/p1553735723204900"
+    },
+    {
+      "task_id": "T014",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "DB손해보험 신라아이파크 소재는 기존 DB손해보험 캠페인 연속",
+      "entity_name": "DB손해보험",
+      "project_name": "DB손해보험 신라아이파크 소재",
+      "page_scope": "child",
+      "target_name": "DB손해보험 > DB손해보험 신라아이파크 소재",
+      "issue_title": "DB손해보험 신라아이파크 소재 신규 심의용 전달 요청",
+      "summary": "DB손해보험 신라아이파크 소재를 신규 심의를 위해 전달. 심의번호 삭제 및 금번 이벤트와 동일한 할인 기재 요청.",
+      "decision": "심의번호 삭제 및 할인 내용 동일하게 기재 후 전달",
+      "action_items": [
+        "DB손해보험 신라아이파크 소재 심의번호 삭제 및 수정 전달"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTJWKH0C/p1553845654010000"
+    },
+    {
+      "task_id": "T015",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "삼성증권 삼성페이 OCB/페이코 소재는 기존 삼성증권 캠페인 연속",
+      "entity_name": "삼성증권",
+      "project_name": "삼성증권 OCB/페이코 하단 이벤트 기간 수정",
+      "page_scope": "child",
+      "target_name": "삼성증권 > 삼성증권 OCB/페이코 하단 이벤트 기간 수정",
+      "issue_title": "삼성증권 OCB/페이코 하단 이벤트 기간 영역 수정 (2019.04.01~04.30)",
+      "summary": "삼성증권 OCB/페이코 랜딩 하단 이벤트 기간 영역 수정 요청. 기간: 2019.04.01~2019.04.30.",
+      "decision": "이벤트 기간 영역 2019.04.01~04.30으로 수정 후 전달",
+      "action_items": [
+        "삼성증권 OCB/페이코 랜딩 이벤트 기간 수정 완료"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTJWKH0C/p1553655079196900"
+    },
+    {
+      "task_id": "T016",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "삼성증권 삼성페이 소재는 기존 삼성증권 캠페인 연속",
+      "entity_name": "삼성증권",
+      "project_name": "삼성증권 삼성페이 소재 최종 수정",
+      "page_scope": "child",
+      "target_name": "삼성증권 > 삼성증권 삼성페이 소재 최종 수정",
+      "issue_title": "삼성증권 삼성페이 소재 최종 수정 요청 (심의용/매체 전달용 분리)",
+      "summary": "삼성증권 삼성페이 소재 최종 수정 요청. 광고주 컨펌 최종본으로 매체 검수 예정. 배너의 경우 비대면 계좌개설 문구가 꼭 들어갈 필요 없음을 타사집행예시로 확인. 심의용(문구 있고 랜딩페이지 자르지 않은 버전) 및 매체 전달용(문구 없고 랜딩페이지 자른 버전) 2종 분리.",
+      "decision": "심의용·매체 전달용 2종 분리 제작 후 전달, 비대면계좌개설 문구 제거 확정",
+      "action_items": [
+        "삼성증권 삼성페이 소재 심의용/매체 전달용 2종 제작",
+        "매체 검수 제출"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTJWKH0C/p1553671071201500"
+    },
+    {
+      "task_id": "T017",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "DB금융투자 한국금융투자협회 심사필 건은 기존 DB금융투자 캠페인 연속",
+      "entity_name": "DB금융투자",
+      "project_name": "DB금융투자 한국금융투자협회 심사필 반영",
+      "page_scope": "child",
+      "target_name": "DB금융투자 > DB금융투자 한국금융투자협회 심사필 반영",
+      "issue_title": "DB금융투자 준법감시인 심사필 제19-01241호 삽입 요청 (2019.04.08~12.31)",
+      "summary": "DB금융투자 삼성페이 소재에 한국금융투자협회 심사필 제19-01241호(2019.04.08~2019.12.31) 삽입 요청.",
+      "decision": "심사필 번호 삽입 후 전달",
+      "action_items": [
+        "DB금융투자 소재 심사필 제19-01241호 삽입",
+        "전달 완료"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTJWKH0C/p1553839588008100"
+    },
+    {
+      "task_id": "T018",
+      "major_category": "In-house",
+      "minor_category": "Product",
+      "context_status": "new",
+      "context_reference": "디자인 리소스 운영 정규화는 이 시기에 처음 공식화된 내부 정책",
+      "entity_name": "PINCRUX",
+      "project_name": "디자인 리소스 운영 정규화",
+      "page_scope": "root",
+      "target_name": "PINCRUX > 디자인 리소스 운영 정규화",
+      "issue_title": "디자인팀 업무 요청 채널 일원화 및 정규화 공지",
+      "summary": "디자인 리소스의 효율적 운영을 위해 업무 정규화. 세 가지 규칙 공지: (1) 모든 작업 요청은 슬랙 #디자인업무 채널에서만 진행, 구두·DM 금지 (2) 요청 시 각 요구사항 및 제한점 명확히 문서화 전달, PPT 포함 문서화 형태로 전달, 광고주 컨펌 기획서 포함 권장, 파일명은 광고주-매체-날짜 순 (3) 요청 시 가이드 사항 반드시 확인 후 요청. 업무 스프레드시트 및 구글드라이브 가이드 공유.",
+      "decision": "디자인 업무 요청 채널 #디자인업무로 일원화, 문서화 필수, 가이드 사전 인지 후 요청",
+      "action_items": [
+        "디자인팀 업무 스프레드시트 공유 (https://docs.google.com/spreadsheets/d/1jGywVOk7BysdloiH4N6qKZMWlgmGB_dUQ62lIrionFE/edit#gid=0)",
+        "디자인 가이드 구글드라이브 공유 (https://drive.google.com/drive/folders/15xyPcNAfaOyGVkg8ekFW98BnpM1ZIpk0)",
+        "전 임직원 공지 수신 확인"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTJWKH0C/p1554107037014500"
+    },
+    {
+      "task_id": "T019",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "오퍼월 소재는 이전 기간에도 진행 중인 클라이언트",
+      "entity_name": "오퍼월",
+      "project_name": "오퍼월 소재 제작 (3월, 4월)",
+      "page_scope": "child",
+      "target_name": "오퍼월 > 오퍼월 소재 제작",
+      "issue_title": "오퍼월 소재 제작 요청 (천령, 엘롯데) 2건",
+      "summary": "오퍼월 소재 제작 2건 요청: (1) 3/26 천령(Sword Kingdoms) 소재 제작 요청 (play.google.com 링크 첨부), (2) 4/1 엘롯데(lotte.ellotte) 소재 제작 요청.",
+      "decision": "2건 모두 제작 진행",
+      "action_items": [
+        "천령 오퍼월 소재 제작",
+        "엘롯데 오퍼월 소재 제작"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTJWKH0C/p1553566080162500"
+    },
+    {
+      "task_id": "T020",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "DB손해보험 신규 로고는 기존 DB손해보험 클라이언트 자산 관리의 연속",
+      "entity_name": "DB손해보험",
+      "project_name": "DB손해보험 신규 로고 AI 파일",
+      "page_scope": "child",
+      "target_name": "DB손해보험 > DB손해보험 신규 로고 AI 파일",
+      "issue_title": "DB손해보험 신규 로고 AI(일러스트레이터) 파일 요청",
+      "summary": "DB손해보험 신규 로고 AI 파일 요청. 가이드에는 원래 파일에 같은 색상으로 글만 지정해서 쓰라고 나와있음. 서체 지정 없어 지정해서 만들면 됨.",
+      "decision": "가이드 기준으로 서체 지정하여 신규 로고 파일 제작",
+      "action_items": [
+        "DB손해보험 신규 로고 서체 지정 후 AI 파일 제작 전달"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CFCGF3CNQ/p1554098586000900"
+    },
+    {
+      "task_id": "T021",
+      "major_category": "In-house",
+      "minor_category": "Product",
+      "context_status": "matched",
+      "context_reference": "네이버 웹툰 개발 내용 삭제는 AWS 이전 작업의 후속 조치",
+      "entity_name": "PINCRUX",
+      "project_name": "네이버 웹툰 개발 내용 서버 삭제",
+      "page_scope": "child",
+      "target_name": "PINCRUX > 네이버 웹툰 개발 내용 서버 삭제",
+      "issue_title": "네이버 웹툰 개발 내용 서버에서 모두 삭제 완료",
+      "summary": "네이버 웹툰 개발 내용이 서버에서 모두 삭제되었음을 개발팀에서 공지.",
+      "decision": "서버 삭제 완료",
+      "action_items": [],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBU0PHP3P/p1553742821067600"
+    },
+    {
+      "task_id": "T022",
+      "major_category": "Media_Partner",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "카카오페이 PSD 파일 요청은 기존 카카오페이 연동 가이드 작업의 연속",
+      "entity_name": "카카오페이",
+      "project_name": "카카오페이 가이드 PSD 파일",
+      "page_scope": "child",
+      "target_name": "카카오페이 > 카카오페이 가이드 PSD 파일",
+      "issue_title": "카카오페이 가이드 내 PSD 파일 누락 확인 및 재요청",
+      "summary": "카카오페이 가이드 내 제작에 필요한 PSD 파일 2개가 누락되어 있어 재확인 요청. 담당자가 메일로 요청 후 회신 오면 공유 예정.",
+      "decision": "카카오페이 담당자에게 PSD 파일 메일 요청, 회신 후 공유",
+      "action_items": [
+        "카카오페이 PSD 파일 2개 수령 후 제작팀 공유"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBT7G5RUN/p1554080295000900"
+    }
+  ],
+  "uncategorized": []
+}

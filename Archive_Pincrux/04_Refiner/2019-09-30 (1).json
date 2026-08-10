@@ -1,0 +1,99 @@
+{
+  "schema_version": "1.1",
+  "node": "refiner",
+  "run_date": "2019-09-30",
+  "source_file": "Archive_Pincrux/03_Validator/2019-09-30.json",
+  "node_status": "success",
+  "published_tasks": [
+    {
+      "task_id": "T001",
+      "target_name": "DB금융투자",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151759/DB",
+      "confluence_page_id": "192151759",
+      "refined_points": [
+        "이번 실행에서 추가된 '전 채널 종료 셋팅(2019-09)' 섹션 검수 완료",
+        "구어체·문법 오류 미발견, 볼드체·인용구 형식이 기존 페이지 규격과 부합함을 확인",
+        "추가 교정 불필요 — 컨플루언스 페이지 변경 없음"
+      ],
+      "published_at": "2026-07-08T13:56:00+09:00"
+    },
+    {
+      "task_id": "T002",
+      "target_name": "삼성증권",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192086150",
+      "confluence_page_id": "192086150",
+      "refined_points": [
+        "9/28 운영 히스토리 항목 '광고주요청' → '광고주 요청' 띄어쓰기 교정 (페이지 내 타 표기와 일치시킴)",
+        "COO 정정(2026-07-08) 반영 문장(9/24 출처 재표기, 삼성페이/페이코 진행 조건 정정) 재확인 — 사실관계 왜곡 없이 매끄럽게 서술됨, 정정 이력 블록쿼트 명확히 보존",
+        "볼드체·인용구·체크리스트 형식 기존 규격 부합 확인"
+      ],
+      "published_at": "2026-07-08T13:56:51+09:00"
+    },
+    {
+      "task_id": "T003",
+      "target_name": "웰컴저축은행 > 다음웹툰 SB",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151790",
+      "confluence_page_id": "192151790",
+      "refined_points": [
+        "'웰컴저축은행측' → '웰컴저축은행 측' 띄어쓰기 교정 (운영 히스토리·의사결정 사항 2개소)",
+        "COO 정정(2026-07-08) 반영 문장(전달 완료→전달 요청 시제 정정, 액션 아이템 진행 상태 조정) 재확인 — 표현이 명확하고 정정 이력 블록쿼트 보존됨",
+        "동일 페이지 신규 섹션 '웰컴저축은행 Branch 트래커 실적 소계 불일치 확인(2019-09)' 검수 완료 — 구어체·문법 오류 없음, 정정 이력 명확"
+      ],
+      "published_at": "2026-07-08T13:57:58+09:00"
+    },
+    {
+      "task_id": "T004",
+      "target_name": "딜카",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/203128842",
+      "confluence_page_id": "203128842",
+      "refined_points": [
+        "'포스트백 유실율' → '포스트백 유실률' 맞춤법(율/률 표기) 교정",
+        "COO 정정(2026-07-08) 반영 문장(주체 오귀속 정정 — 딜카가 아닌 웰컴저축은행에서 확인된 사실로 정정) 재확인 — 추정/미확정 수준의 신중한 표현이 그대로 보존되어 사실관계 훼손 없음, 정정 이력 블록쿼트 명확"
+      ],
+      "published_at": "2026-07-08T13:58:22+09:00"
+    },
+    {
+      "task_id": "T005",
+      "target_name": "미래에셋대우",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955009",
+      "confluence_page_id": "191955009",
+      "refined_points": [
+        "이번 실행에서 추가된 '리워드(치킨쿠폰) 정산 방식 재변경(2019-09)' 섹션 검수 완료",
+        "구어체·문법 오류 미발견, 볼드체·체크리스트 형식 기존 규격 부합 확인",
+        "추가 교정 불필요 — 컨플루언스 페이지 변경 없음"
+      ],
+      "published_at": "2026-07-08T13:56:00+09:00"
+    },
+    {
+      "task_id": "T006",
+      "target_name": "NH멤버스 > CPA 매체별 잔존율 분석",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/199491593/NH",
+      "confluence_page_id": "199491593",
+      "refined_points": [
+        "이번 실행에서 추가된 'CPA 매체별 잔존율 분석을 위한 개발 방안 확정(2019-09)' 섹션 검수 완료",
+        "구어체·문법 오류 미발견, 볼드체·체크리스트 형식 기존 규격 부합 확인",
+        "추가 교정 불필요 — 컨플루언스 페이지 변경 없음"
+      ],
+      "published_at": "2026-07-08T13:56:00+09:00"
+    },
+    {
+      "task_id": "T007",
+      "target_name": "페이앤드",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192053250",
+      "confluence_page_id": "192053250",
+      "refined_points": [
+        "이번 실행에서 추가된 '네이버맵 API 마이그레이션 대응 앱 업데이트 준비 완료(2019-09)' 섹션 검수 완료",
+        "구어체·문법 오류 미발견, 볼드체·체크리스트 형식 기존 규격 부합 확인",
+        "추가 교정 불필요 — 컨플루언스 페이지 변경 없음"
+      ],
+      "published_at": "2026-07-08T13:56:00+09:00"
+    }
+  ]
+}

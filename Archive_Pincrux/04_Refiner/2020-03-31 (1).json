@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.1",
+  "node": "refiner",
+  "run_date": "2020-03-31",
+  "source_file": "Archive_Pincrux/03_Validator/2020-03-31.json",
+  "node_status": "success",
+  "published_tasks": [
+    {
+      "task_id": "T001",
+      "target_name": "SK플래닛 > CASK 구독서비스 연동",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/206077953/SK",
+      "confluence_page_id": "206077953",
+      "refined_points": [
+        "신규 반영분(2020-03-11 플랫폼 신규구축 일정 15/30/5/5일·CASK<>PINCRUX 연동+브릿지문서 제공·PINCRUX 로그만 적재)이 이미 볼드체(핵심 일정·결정사항)·체크리스트(액션 아이템 2건)·확정형 문어체 기준을 충족하여 실질 교정 없이 검수만 완료. 기존 '핏케어 부가서비스 연동' 섹션 손상 없음을 확인"
+      ],
+      "published_at": "2026-07-14T14:29:10+09:00"
+    },
+    {
+      "task_id": "T002",
+      "target_name": "컬처랜드",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192217197",
+      "confluence_page_id": "192217197",
+      "refined_points": [
+        "비고(2020-03-23 갱신) 문단에 매체코드 3건(910367/910263/109397) 후속 확인 결과가 하나의 장문으로 압축되어 있어, 사실관계 변경 없이 문장을 분리하고 각 매체코드별 확인 결과를 하위 불릿 리스트로 구조화(가독성 개선)",
+        "액션 아이템 2건은 이미 체크리스트 기준을 충족하여 그대로 유지"
+      ],
+      "published_at": "2026-07-14T14:24:48+09:00"
+    },
+    {
+      "task_id": "T003",
+      "target_name": "오퍼월 > 하나멤버스 연동",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151821",
+      "confluence_page_id": "192151821",
+      "refined_points": [
+        "신규 반영분(2020-03-06 연동방식 확정: 프리미엄A타입+톤앤매너 커스텀, 클립SDK 로딩 스플래시 제거 3/16~최대3주)이 이미 볼드체·체크리스트·확정형 문어체 기준을 충족하여 실질 교정 없이 검수만 완료"
+      ],
+      "published_at": "2026-07-14T14:29:30+09:00"
+    },
+    {
+      "task_id": "T004",
+      "target_name": "미래에셋대우 > 주식거래리워드 CPA 연동(계좌개설 실시간+최초거래 익일)",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955009",
+      "confluence_page_id": "191955009",
+      "refined_points": [
+        "2020-03-02 운영 히스토리 항목의 장문 단일 문장(어드민 화면 개발완료+화면 기능 설명+쿠폰연동 일정)을 사실관계 변경 없이 3개 문단으로 분리하고 핵심 수치(도미노 펍키 910856, 3/3 오전중 완료)에 볼드 강조 추가",
+        "2020-03-03 운영 히스토리 항목의 번호 나열형 문장(1)/2)/3)을 사실관계 변경 없이 하위 불릿 리스트 3건으로 구조화",
+        "의사결정 사항·액션 아이템(체크 완료 1건 포함)은 이미 기준을 충족하여 그대로 유지"
+      ],
+      "published_at": "2026-07-14T14:26:42+09:00"
+    },
+    {
+      "task_id": "T005",
+      "target_name": "SPC > 해피포인트 클로버 충전소(교환소)",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/204603424/SPC",
+      "confluence_page_id": "204603424",
+      "refined_points": [
+        "2020-03-26 운영 히스토리 항목의 번호 나열형 문장(1)/2)/3) 확인필요사항)을 사실관계 변경 없이 하위 불릿 리스트 3건으로 구조화하여 액션 아이템 체크리스트와의 대응관계를 명확화",
+        "엔티티 상단 human_action_required 비고는 이번 배치 대상이 아니므로 원문 그대로 유지"
+      ],
+      "published_at": "2026-07-14T14:27:25+09:00"
+    },
+    {
+      "task_id": "T006",
+      "target_name": "페이앤드",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192053250",
+      "confluence_page_id": "192053250",
+      "refined_points": [
+        "비고(2020-03-18 갱신) 문단의 '이 중 3~5번은/1~2번은' 식 암묵적 번호 참조를 사실관계 변경 없이 약관 5종을 각 파일형식(워드/엑셀)과 함께 번호 목록(ol)으로 명시하여 모호함 제거",
+        "액션 아이템 1건은 이미 체크리스트 기준을 충족하여 그대로 유지"
+      ],
+      "published_at": "2026-07-14T14:28:49+09:00"
+    }
+  ]
+}

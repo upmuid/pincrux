@@ -1,0 +1,161 @@
+{
+  "schema_version": "1.1",
+  "node": "collector",
+  "run_date": "2026-07-24",
+  "run_mode": "backfill",
+  "period": "2021-04-01 to 2021-04-30",
+  "status": "success",
+  "data_summaries": [
+    {
+      "task_id": "T001",
+      "major_category": "Media_Partner",
+      "context_status": "new",
+      "context_reference": "[신규 엔티티, human_action_required] entity_manifest.json에 미등록. 원문(04-26, 채수범, #운영1팀): '그라운드X(카카오 CLIP 서비스)와 DB손해보험 CPA 및 핀크럭스 충전소 제휴 협의 중에 있습니다.' (https://pincrux.slack.com/archives/G0113KM3KK2/p1619428990025100?thread_ts=1619428990.025100&cid=G0113KM3KK2) / 04-26(정빈희, 같은 스레드): '[PUBKEY] - 수수료 R/S 80 세팅 - 그라운드X(AOS):911196 / (IOS):911197 / (CPA):911198' (https://pincrux.slack.com/archives/G0113KM3KK2/p1619429623025500?thread_ts=1619428990.025100&cid=G0113KM3KK2). 핀크럭스 광고 인벤토리(오퍼월/충전소)가 그라운드X 앱에 노출되고 매체비를 지급받는 구조로 보여 major_category를 Media_Partner로 잠정 판단. COO 확인 및 manifest 등록 필요.",
+      "entity_name": "그라운드X",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "그라운드X",
+      "issue_title": "그라운드X(카카오 클립) 신규 매체 제휴 개시",
+      "summary": "그라운드X 신규 매체 제휴, DB손보 CPA·충전소 탑재 협의",
+      "decision": "그라운드X(카카오톡 '클립' 서비스, 머니트리와 유사)와 DB손해보험 CPA 및 핀크럭스 충전소(티켓모아) 단독 제휴를 협의 중. 계약서 검토 단계이며, 04-26 어드민 계정 및 AOS/IOS/CPA 펍키(수수료 R/S 80 세팅) 발급 완료. CPA 이벤트 진행을 위한 연동 및 디자인 가이드 요청 진행 중.",
+      "action_items": [
+        "매체 상품소개서 수령",
+        "관리자 계정으로 진행 가능한 광고(금융 리스트) 정리",
+        "AOS/IOS/CPA 펍키 세팅 완료 확인 및 연동 개발"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/G0113KM3KK2/p1619428990025100?thread_ts=1619428990.025100&cid=G0113KM3KK2"
+    },
+    {
+      "task_id": "T002",
+      "major_category": "Media_Partner",
+      "context_status": "new",
+      "context_reference": "[신규 엔티티, human_action_required] entity_manifest.json에 미등록. 원문(04-29, 채수범, #운영1팀): '그리고 금일 오전에 대표님이 틱톡과 미팅 하고 왔는데 여기도 핀크럭스 충전소 단독 탑재 하는 걸로 협의 완료 되었다고 하네요.' (https://pincrux.slack.com/archives/G0113KM3KK2/p1619678743018200). 세부 계약조건·일정은 원문에 명시되지 않음. COO 확인 및 manifest 등록 필요.",
+      "entity_name": "틱톡",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "틱톡",
+      "issue_title": "틱톡, 핀크럭스 충전소 단독 SDK 탑재 협의 완료",
+      "summary": "틱톡, 핀크럭스 충전소 단독 SDK 탑재 협의 완료",
+      "decision": "04-29 대표 미팅 결과 틱톡 앱에 핀크럭스 충전소(SDK)를 단독으로 탑재하기로 협의 완료. 구체 조건·개발 일정은 후속 확인 필요.",
+      "action_items": [
+        "틱톡 측 개발 일정 확인",
+        "SDK 연동 범위 및 계약 조건 후속 확인"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/G0113KM3KK2/p1619678743018200"
+    },
+    {
+      "task_id": "T003",
+      "major_category": "Media_Partner",
+      "context_status": "unknown",
+      "context_reference": "[신규 엔티티, 사명 미상, human_action_required] 원문(04-29, 채수범, #운영1팀): '넷마블, 피망에서 근무하던 개발자 기획자, 운영자들 tf팀으로 꾸려서 1년 전부터 준비하던 신규 회사가 있었는데 내일 오픈, 핀크럭스 충전소 단독 탑재하는 걸로 협의 완료 되었습니다.' (https://pincrux.slack.com/archives/G0113KM3KK2/p1619678646016500) / 이어서: '쉽게 지금 넷마블, 피망 앱 같은 회사에 핀크럭스 sdk가 단독으로 들어간다고 보시면 되겠습니다.' 슬랙 원문에 실제 회사명이 명시되지 않아 entity_name 확정 불가. COO가 채수범에게 회사명 확인 후 manifest 등록 필요.",
+      "entity_name": "미상(전 넷마블·피망 TF팀 출신 신규 회사)",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "미상(전 넷마블·피망 TF팀 출신 신규 회사)",
+      "issue_title": "사명 미상 신규 회사, 핀크럭스 충전소 단독 SDK 탑재 협의 완료",
+      "summary": "미상 신규사(전 넷마블·피망 TF팀), 충전소 단독 탑재",
+      "decision": "전 넷마블·피망 출신 개발자·기획자·운영자 TF팀이 1년간 준비한 신규 회사가 04-30(내일) 오픈 예정이며, 해당 앱에 핀크럭스 충전소 SDK를 단독 탑재하기로 협의 완료. AOS(유니티 SDK) 우선 진행, iOS는 곧 진행 예정이며 6월 내 라이브 목표.",
+      "action_items": [
+        "회사명(엔티티명) 확인",
+        "상대측 개발 일정 확인 후 SDK 연동 개발 진행",
+        "iOS 라이브 일정 추적"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/G0113KM3KK2/p1619678646016500"
+    },
+    {
+      "task_id": "T004",
+      "major_category": "Client",
+      "context_status": "matched",
+      "context_reference": "entity_manifest.json 기존 human_action_required 엔티티(리메세, 217088010). 04-02(DM 채수범): '차울건에 대해서 따로 얘기하지 않았습니다. 처음 협의할때 1만원~1만5천까지는 언급이 되긴 했습니다.' (https://pincrux.slack.com/archives/DUM9K56KA/p1617330848002500) / 04-05(DM 정빈희): '차올 결제 오류라고 했던거 어케 처리됐는지좀 알수있나요? 앗지 더이상 진행을 안하게된거 같아 보이는데요' (https://pincrux.slack.com/archives/D01NKRWTGEM/p1617588545000800) / 04-28(DM 정빈희): '차올때는 최저가 2만원 캡이 걸려있었는데 상품이 3만원 미만이 없어서 갱 넘어갔거든요. 이 조건도 걸리려면 말씀하시구선 판근실장님한테 요청 드려야합니다.' (https://pincrux.slack.com/archives/D01NKRWTGEM/p1619591005016600). 리메세/차올 엔티티 구조(니베아·차올 분리 여부) 확정은 여전히 Jason 확인 대기 중.",
+      "entity_name": "리메세",
+      "project_name": "차올 CPA 캠페인",
+      "page_scope": "child",
+      "target_name": "리메세 > 차올 CPA 캠페인",
+      "issue_title": "차올 캠페인 단가·최저가 캡 조건 재확인 및 진행 중단 우려",
+      "summary": "차올 캠페인 2만원 캡 이슈 및 결제오류로 중단 우려",
+      "decision": "차올 초기 협의 단가가 1만원~1만5천원 수준이었음을 재확인(04-02). 04-05 결제 오류 관련 문의 중 캠페인이 더 이상 진행되지 않는 것으로 보인다는 언급이 있었음(완료 여부 미확정). 04-28 차올 캠페인에는 최저가 2만원 캡이 설정되어 있었으나 3만원 미만 상품이 없어 해당 조건이 적용되지 못하고 다른 조건으로 처리된 사실 확인, 향후 동일 조건 적용 시 별도 요청 필요하다는 논의 있었음.",
+      "action_items": [
+        "차올 결제 오류 처리 결과 확인",
+        "차올 캠페인 실제 진행/중단 여부 확인",
+        "최저가 캡 조건 적용 정책 문서화"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/D01NKRWTGEM/p1619591005016600"
+    },
+    {
+      "task_id": "T005",
+      "major_category": "In-house",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "entity_manifest.json 기존 엔티티(PINCRUX 조직·인사 정책, 209321985). 04-13(DM 지리산→서정철): '# 기본 정책 - 포인트 단위 1P=1원 - 타인에게 양도 불가 - 상한: 연간 1,000만P # 지급 - 1년 100만P 한도/1,3,6,9월에 각 25만P씩 지급' (https://pincrux.slack.com/archives/DPNJ7CCHL/p1618302853024700) / 04-13(같은 스레드 수정본): '최초 지급: 리워드샵 포인트 오픈 시점인 4월에 1,3월 지급 금액인 50만P 일시지급' (https://pincrux.slack.com/archives/DPNJ7CCHL/p1618306062034700) / 04-13(서정철): '이번달에 오픈하나보네요?' (https://pincrux.slack.com/archives/DPNJ7CCHL/p1618306074034900). 법적 근거로 대법원 판례 링크를 인용, 임금성 시비를 피하도록 설계함.",
+      "entity_name": "PINCRUX 조직·인사 정책",
+      "project_name": "복지포인트(리워드샵) 지급 정책",
+      "page_scope": "child",
+      "target_name": "PINCRUX 조직·인사 정책 > 복지포인트(리워드샵) 지급 정책",
+      "issue_title": "임직원 복지포인트(리워드샵) 지급 정책 신설",
+      "summary": "임직원 복지포인트 신설, 리워드샵 연계 지급",
+      "decision": "임직원 대상 '복지포인트'(리워드샵 전용, 1P=1원, 타인 양도 불가) 제도를 신설. 연 100만P 한도로 1·4·7·10월(초안 단계에서는 1·3·6·9월 논의) 각 25만P 지급, 최초 지급은 리워드샵 오픈 시점인 4월에 1·3월분 50만P 일시지급, 매년 말일 및 퇴사 시 잔여 포인트 소멸. 임금성 시비를 피하기 위해 '선택적 복지제도'에 해당하지 않도록 설계(대법원 판례 참고).",
+      "action_items": [
+        "정책 최종본 사내 공유 및 승인 절차 진행",
+        "리워드샵 오픈 일정과 최초 지급 시점 맞추기"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/DPNJ7CCHL/p1618305953034400"
+    },
+    {
+      "task_id": "T006",
+      "major_category": "In-house",
+      "minor_category": "Product",
+      "context_status": "matched",
+      "context_reference": "entity_manifest.json 기존 엔티티(CLUV, 211320841, alias 대도서관/크리에이터 앱). 04-20(DM 지리산→서정철): '다른건 아니고 오늘 인플루언서 2명이 들어오게 되어서' 및 '팬심 사용 = 셀럽 수익(수수료 0인 경우)' 정산식 공유 (https://pincrux.slack.com/archives/DPNJ7CCHL/p1618901062000500) / 04-20(지리산): '쇼핑몰은 아직 안붙기도 했고 별도로 상품 공급 계약을 해야되니 논외일거같습니다.' (https://pincrux.slack.com/archives/DPNJ7CCHL/p1618902145014400) / 04-27(지리산): '전에 잠깐 얘기했던 셀럽 입점 계약서 초안을 다 만들었는데요.' (https://pincrux.slack.com/archives/DPNJ7CCHL/p1619513161001200).",
+      "entity_name": "CLUV",
+      "project_name": "인플루언서(셀럽) 입점 계약 및 정산 구조",
+      "page_scope": "child",
+      "target_name": "CLUV > 인플루언서(셀럽) 입점 계약 및 정산 구조",
+      "issue_title": "CLUV 인플루언서 입점 계약서 초안 완성 및 정산 구조 논의",
+      "summary": "CLUV 셀럽 입점계약서 초안 완성, 정산기준 논의",
+      "decision": "신규 인플루언서 입점을 계기로 '팬심'(포인트성 사용료) 정산 기준을 논의(쇼핑몰 판매분은 판매금액-PG수수료, 외부몰 직접연결은 별도 정산 없음). 인플루언서 직접계약 시 개인/개인사업자 여부에 따른 현금 정산 이슈를 검토했고, 샌드박스(기존 Media_Partner) 경유 계약도 대안으로 논의됨. 04-27 셀럽 입점 계약서 초안이 완성되어 대표·크리스 검토 요청 진행.",
+      "action_items": [
+        "대표/크리스 계약서 검토 완료",
+        "인플루언서 개인/개인사업자 여부에 따른 정산방식 확정",
+        "상품 공급 계약(쇼핑몰 연동) 별도 진행 여부 결정"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/DPNJ7CCHL/p1618901062000500"
+    },
+    {
+      "task_id": "T007",
+      "major_category": "In-house",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "entity_manifest.json 기존 허브 엔티티(PINCRUX, 191987714) 관련 회사 단위 뉴스. 04-12(#01_공지사항, 채수범): '2019년 코차바에서의 랭킹에 이어 앱스플라이어에서도 2020년 하반기 한국시장 성장 주목받는 국내기업으로 핀크럭스를 순위에 올려놨네요.(글로벌 4위, 국내 2위)' (https://pincrux.slack.com/archives/CBRLA2LGL/p1618193126010900) / 04-20(#01_공지사항, 채수범): '핀크럭스, 앱스플라이어 2020년 고성장 애드테크 기업 선정' 기사 링크 공유 (https://pincrux.slack.com/archives/CBRLA2LGL/p1618915873012900).",
+      "entity_name": "PINCRUX",
+      "project_name": "앱스플라이어 업계 랭킹/수상 뉴스",
+      "page_scope": "child",
+      "target_name": "PINCRUX > 앱스플라이어 업계 랭킹/수상 뉴스",
+      "issue_title": "핀크럭스, 앱스플라이어 발표 국내 고성장 애드테크 기업 랭킹",
+      "summary": "핀크럭스, 앱스플라이어 고성장 애드테크기업 선정",
+      "decision": "앱스플라이어(AppsFlyer) 발표 자료에서 핀크럭스가 2019년 코차바 랭킹에 이어 2020년 하반기 한국 시장 고성장 국내기업으로 재차 언급됨(글로벌 4위, 국내 2위, 카카오프렌즈에 이어 국내 2위). 04-20에는 '2020년 고성장 애드테크 기업' 선정 관련 기사가 추가로 공유됨.",
+      "action_items": [
+        "랭킹 자료를 마케팅/제휴 협의 시 참고자료로 활용"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBRLA2LGL/p1618193126010900"
+    },
+    {
+      "task_id": "T008",
+      "major_category": "Client",
+      "context_status": "matched",
+      "context_reference": "entity_manifest.json 기존 엔티티(DB금융투자, 192151759). 04-30(#운영1팀, 고현복): 'DB금융투자 - 삼성페이,카카오페이 외 모든 매체 off 처리 중입니다. • 사유 : 광고주 예산이슈' (https://pincrux.slack.com/archives/G0113KM3KK2/p1619772746020300).",
+      "entity_name": "DB금융투자",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "DB금융투자",
+      "issue_title": "DB금융투자 광고주 예산 이슈로 전 매체 노출 중단",
+      "summary": "DB금융투자 예산이슈로 전매체 off 처리",
+      "decision": "광고주 측 예산 이슈로 04-30 기준 DB금융투자 캠페인의 삼성페이·카카오페이를 제외한 모든 매체 노출을 off 처리 중.",
+      "action_items": [
+        "광고주 예산 재승인 여부 확인",
+        "매체 재오픈 일정 협의"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/G0113KM3KK2/p1619772746020300"
+    }
+  ],
+  "uncategorized": []
+}

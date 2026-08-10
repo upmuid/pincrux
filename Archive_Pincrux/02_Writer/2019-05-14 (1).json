@@ -1,0 +1,105 @@
+{
+  "schema_version": "1.1",
+  "node": "writer",
+  "run_date": "2019-05-14",
+  "run_mode": "backfill",
+  "period": "2019-05-01 to 2019-05-14",
+  "status": "success",
+  "source_file": "Archive_Pincrux/01_Collector/2019-05-14.json",
+  "results": [
+    {
+      "task_id": "T001",
+      "context_status": "new",
+      "entity_name": "PINCRUX",
+      "page_scope": "child",
+      "action": "section_added",
+      "confluence_page_id": "191987714",
+      "confluence_page_title": "PINCRUX",
+      "section_added": "네이버 동아일보 구독시청 이벤트 솔루션 (2019)",
+      "version_after": 8,
+      "note": "In-house Product 신규 섹션 추가. 스크린샷 분석 비용 구조, 기술 제약 조건, 인스타그램 동일 적용 처리 결정 포함."
+    },
+    {
+      "task_id": "T002",
+      "context_status": "matched",
+      "entity_name": "PINCRUX",
+      "page_scope": "root",
+      "action": "history_updated",
+      "confluence_page_id": "191987714",
+      "confluence_page_title": "PINCRUX",
+      "section_updated": "PINCRUX 보안 및 운영 정책 (2019)",
+      "version_after": 8,
+      "note": "SSL 인증서 용도별 종류 및 연간 비용 정책 운영 히스토리 추가 (2019-05-02)."
+    },
+    {
+      "task_id": "T003",
+      "context_status": "matched",
+      "entity_name": "PINCRUX",
+      "page_scope": "root",
+      "action": "history_updated",
+      "confluence_page_id": "191987714",
+      "confluence_page_title": "PINCRUX",
+      "section_updated": "PINCRUX 보안 및 운영 정책 (2019)",
+      "version_after": 8,
+      "note": "CS 및 제휴사 개인정보 전달 암호화 정책 전사 재공지 운영 히스토리 추가 (2019-05-03)."
+    },
+    {
+      "task_id": "T004",
+      "context_status": "matched",
+      "entity_name": "미스터블루",
+      "page_scope": "child",
+      "action": "history_updated",
+      "confluence_page_id": "196902913",
+      "confluence_page_title": "미스터블루",
+      "section_updated": "미스터블루 연동 (2019)",
+      "version_after": 3,
+      "note": "iOS 모바일웹(MoWeb) 설치형 캠페인 CPI 집행 불가 확인 및 미노출 처리 결정 운영 히스토리 추가 (2019-05-09)."
+    },
+    {
+      "task_id": "T005",
+      "context_status": "matched",
+      "entity_name": "KB증권",
+      "page_scope": "child",
+      "action": "page_created",
+      "confluence_page_id": "198279169",
+      "confluence_page_title": "KB증권",
+      "parent_page_id": "190152706",
+      "version_after": 1,
+      "note": "신규 페이지 생성 (Client > Project). KB증권 비대면 계좌개설 캠페인(103123) 매체 세팅 이력 포함."
+    },
+    {
+      "task_id": "T006",
+      "context_status": "matched",
+      "entity_name": "오케이캐쉬백",
+      "page_scope": "root",
+      "action": "page_created",
+      "confluence_page_id": "198311937",
+      "confluence_page_title": "오케이캐쉬백",
+      "parent_page_id": "190447617",
+      "version_after": 1,
+      "note": "신규 페이지 생성 (Media_Partner > Product). 오케이캐쉬백 광고 연동 인벤토리 세팅 및 집행 환경 점검 이력 포함."
+    },
+    {
+      "task_id": "T007",
+      "context_status": "matched",
+      "entity_name": "DB손해보험",
+      "page_scope": "child",
+      "action": "history_updated",
+      "confluence_page_id": "191955049",
+      "confluence_page_title": "DB손해보험",
+      "section_updated": "DB손해보험 타이어뱅크 제휴 갱신 이벤트 (2019)",
+      "version_after": 10,
+      "note": "타이어뱅크 제휴 갱신 이벤트 1주차 랜딩페이지 날짜 업데이트 운영 히스토리 추가 (2019-05-02). 기간 5/2~5/12, 혜택발송 6/13, 리워드 에쏘일 주유권 2만원."
+    }
+  ],
+  "summary": {
+    "total_tasks": 7,
+    "pages_updated": 3,
+    "pages_created": 2,
+    "actions": {
+      "section_added": 1,
+      "history_updated": 4,
+      "page_created": 2
+    }
+  }
+}

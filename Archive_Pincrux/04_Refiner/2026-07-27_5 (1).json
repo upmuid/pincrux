@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.1",
+  "node": "refiner",
+  "run_date": "2026-07-27",
+  "source_file": "Archive_Pincrux/03_Validator/2026-07-27_5.json",
+  "node_status": "success",
+  "published_tasks": [
+    {
+      "task_id": "T001",
+      "target_name": "우리종합금융",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/221380610",
+      "confluence_page_id": "221380610",
+      "refined_points": [
+        "재검토 결과 신규 섹션이 이미 발행 품질(핵심 일자·의사결정 볼드체 적용, 인용구 처리, 액션 아이템 체크리스트 형식, 신규 페이지 앞뒤 구분선 정상 배치)로 작성되어 있음을 확인",
+        "구어체 잔재, 상대시간 모호 표현, 사명 오탈자 없음 — 편집 불필요로 판단하여 no-op 처리(버전 증가 없이 스킵)"
+      ],
+      "published_at": "2026-07-27T15:16:00+09:00"
+    },
+    {
+      "task_id": "T002",
+      "target_name": "오퍼월 > 리워드샵",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151821",
+      "confluence_page_id": "192151821",
+      "refined_points": [
+        "이번 배치에서 추가된 문장(NHN커머스 이관, 11/4 서비스중지, 도메인 전환)만 검토 — 핵심 일정(NHN커머스, 11월 4일, 약 1일)이 이미 볼드체로 강조되어 있고 문어체 완결형 종결어미 사용 확인",
+        "기존 섹션(2019~2021-09 히스토리)은 손대지 않음 — 편집 불필요로 판단하여 no-op 처리(버전 증가 없이 스킵)"
+      ],
+      "published_at": "2026-07-27T15:16:00+09:00"
+    },
+    {
+      "task_id": "T003",
+      "target_name": "KB손해보험 > 매트라이프 DB수집 캠페인",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192086208/KB",
+      "confluence_page_id": "192086208",
+      "refined_points": [
+        "신규 섹션 '매트라이프 DB수집 캠페인 단가 조정 (2021-10)' 검토 — 단가 수치(2,500원/2,250원) 볼드체 강조, 의사결정 인용구 처리, 구분선 배치 모두 이미 적용됨",
+        "구어체·모호 표현 없음, 액션 아이템 없는 건에 대해 '해당 없음' 명시 문구도 명확 — 편집 불필요로 판단하여 no-op 처리(버전 증가 없이 스킵)"
+      ],
+      "published_at": "2026-07-27T15:16:00+09:00"
+    },
+    {
+      "task_id": "T004",
+      "target_name": "CPS 기획전 플랫폼 > G마켓 기획전",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/206012417/CPS",
+      "confluence_page_id": "206012417",
+      "refined_points": [
+        "운영 히스토리 문장 내 모호한 상대시간 표현 '금일 오후 중 최종 라이브 예정이며, 완료 시 즉시 공유받기로 함'을 절대 일자 기준 '2021-10-06 당일 오후 중 최종 라이브가 예정되었으며, 완료 시 즉시 공유받기로 확인됨'으로 정정(사실관계·일정 변경 없음, 표현만 명확화)",
+        "핵심 사고 사실(캐시팝토리 오라이브) 볼드체 강조 및 액션 아이템 체크리스트 형식은 기존과 동일하게 유지",
+        "컨플루언스 페이지 최종 업데이트 완료(version 13, versionMessage 기록)"
+      ],
+      "published_at": "2026-07-27T15:16:00+09:00"
+    }
+  ]
+}

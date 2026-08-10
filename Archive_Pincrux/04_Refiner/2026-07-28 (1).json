@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.1",
+  "node": "refiner",
+  "run_date": "2026-07-28",
+  "source_file": "Archive_Pincrux/03_Validator/2026-07-28.json",
+  "node_status": "success",
+  "published_tasks": [
+    {
+      "task_id": "T001",
+      "target_name": "하나캐피탈 > 대출실행 NCPS 캠페인",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/222560257",
+      "confluence_page_id": "222560257",
+      "refined_points": [
+        "신규 섹션(대출실행 NCPS 캠페인) 검토 결과 액션 아이템 2건이 이미 체크리스트(- [ ]) 형식으로 반영되어 있음을 확인, 수정 불필요",
+        "핵심 수치(대출실행액 1%, 매체비 70%/자사수익 30%) 볼드체 강조 및 엔티티 개요 뒤 구분선 적용 상태 확인, 슬랙 구어체·이모지 잔재 없음 확인"
+      ],
+      "published_at": "2026-07-28T17:10:00+09:00"
+    },
+    {
+      "task_id": "T002",
+      "target_name": "캐롯손해보험 > 자동차보험 가입 CPS 캠페인(모바일팝/CJONE/하나멤버스/미스터블루)",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/219873321",
+      "confluence_page_id": "219873321",
+      "refined_points": [
+        "신규 섹션(자동차보험 가입 CPS 캠페인) 앞 구분선 적용 및 체크리스트·볼드체 표기 확인, 이미 발행 수준으로 판단되어 문구 변경 없음",
+        "기존 '카카오페이지 CPA/CPS 종료(2021-06)' 히스토리 섹션은 이번 배치 대상이 아니므로 그대로 보존, 손대지 않음"
+      ],
+      "published_at": "2026-07-28T17:12:00+09:00"
+    },
+    {
+      "task_id": "T003",
+      "target_name": "예가람저축은행 > 페이스북 좋아요 캠페인",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/222593025",
+      "confluence_page_id": "222593025",
+      "refined_points": [
+        "쓰미가 보정한 액션 아이템 2건(캠페인 집행결과 후속 확인, 정빈희→이혜민 일별 집행 수량 재확인)이 체크리스트 형식으로 정확히 반영됨을 재확인, 수정 불필요",
+        "핵심 수치(예산 4,000,000원, 단가 320원, 총수량 12,500건, 일정 11/22~11/24) 볼드체 강조 상태 확인"
+      ],
+      "published_at": "2026-07-28T17:14:00+09:00"
+    },
+    {
+      "task_id": "T004",
+      "target_name": "KB손해보험 > CPS 캠페인",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192086208/KB",
+      "confluence_page_id": "192086208",
+      "refined_points": [
+        "신규 섹션(CPS 캠페인 자사 충전소 매체 확장, 2021-11) 앞 구분선 적용 및 체크리스트 액션 아이템 형식 확인",
+        "핵심 수치(보험가입 매출액의 8%, pay/fee 22,000원, 1:1 RS 구조) 볼드체 강조 확인, 기존 다수 히스토리 섹션(매트라이프 단가조정 등)은 그대로 보존"
+      ],
+      "published_at": "2026-07-28T17:16:00+09:00"
+    },
+    {
+      "task_id": "T005",
+      "target_name": "NH멤버스",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/199491593/NH",
+      "confluence_page_id": "199491593",
+      "refined_points": [
+        "신규 섹션(리워드 단가상향 부속계약, 2021-11) 앞 구분선 적용 및 체크리스트 액션 아이템(우선 적용기간 만료 시점 후속 확인) 형식 확인",
+        "핵심 수치(200원 상향, 적용일 11/25 00시, 우선기간 12/31) 볼드체 강조 확인, 기존 히스토리 섹션 보존"
+      ],
+      "published_at": "2026-07-28T17:18:00+09:00"
+    },
+    {
+      "task_id": "T006",
+      "target_name": "GS엠비즈 > GS패널가입 CPA 캠페인",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/219873281/GS",
+      "confluence_page_id": "219873281",
+      "refined_points": [
+        "이중역할 의심 경고 패널(panel-warning) 문구를 사실관계 변경 없이 원문 그대로 보존 확인",
+        "핵심 수치(단가 1,000원, 수량 5,000건, 예산 5,000,000원, 일정 11/23~목표수량 달성 시까지) 볼드체 강조 및 신규 섹션 앞 구분선 적용 확인"
+      ],
+      "published_at": "2026-07-28T17:20:00+09:00"
+    },
+    {
+      "task_id": "T007",
+      "target_name": "AXA손해보험 > 인스타그램 신규 캠페인",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/222363650/AXA",
+      "confluence_page_id": "222363650",
+      "refined_points": [
+        "신규 섹션(인스타그램 신규 캠페인) 앞 구분선 적용 및 체크리스트 액션 아이템(캠페인 집행 결과 후속 확인) 형식 확인",
+        "핵심 수치(총예산 2,000,000원, 단가 320원, 총수량 6,250건, 일정 11/24~11/27) 볼드체 강조 상태 확인"
+      ],
+      "published_at": "2026-07-28T17:22:00+09:00"
+    }
+  ]
+}

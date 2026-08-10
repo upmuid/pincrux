@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.1",
+  "node": "refiner",
+  "run_date": "2019-05-31",
+  "run_mode": "backfill",
+  "node_status": "success",
+  "source_file": "Archive_Pincrux/03_Validator/YYYY-MM-DD.json",
+  "published_at": "2026-07-03T04:20:00Z",
+  "metrics": {
+    "total_tasks": 7,
+    "published": 7,
+    "polishing_applied": 0,
+    "skipped": 0
+  },
+  "refinement_results": [
+    {
+      "task_id": "T001",
+      "entity_name": "미래에셋대우",
+      "project_name": "클립 금융 제휴 캠페인",
+      "confluence_page_id": "191955009",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955009",
+      "polishing_applied": false,
+      "polishing_notes": "추가된 섹션(클립 금융 제휴 캠페인, OCB 참여적립 실적 관리) 문체 검토 — 비즈니스 문어체 준수. 구어체 잔재 없음. Confluence decision-list 컴포넌트는 스토리지 포맷 특성상 텍스트 평탄화가 정상 동작. 사실관계 변경 없음.",
+      "published_at": "2026-07-03T04:20:00Z"
+    },
+    {
+      "task_id": "T002",
+      "entity_name": "KB증권",
+      "project_name": "다음웹툰 CPI 캠페인",
+      "confluence_page_id": "198279169",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/198279169",
+      "polishing_applied": false,
+      "polishing_notes": "추가된 섹션(다음웹툰 CPI 캠페인) 문체 검토 — 비즈니스 문어체 준수. 단가·리워드·앱키 등 수치 정확. 구어체 잔재 없음. 사실관계 변경 없음.",
+      "published_at": "2026-07-03T04:20:00Z"
+    },
+    {
+      "task_id": "T003",
+      "entity_name": "웰컴저축은행",
+      "project_name": "OCB 참여적립 캠페인",
+      "confluence_page_id": "192151790",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151790",
+      "polishing_applied": false,
+      "polishing_notes": "추가된 섹션(OCB 참여적립 캠페인) 문체 검토 — 비즈니스 문어체 준수. 구어체 잔재 없음. 사실관계 변경 없음.",
+      "published_at": "2026-07-03T04:20:00Z"
+    },
+    {
+      "task_id": "T004",
+      "entity_name": "DB금융투자",
+      "project_name": "CJONE OCB 캠페인",
+      "confluence_page_id": "192151759",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151759",
+      "polishing_applied": false,
+      "polishing_notes": "추가된 섹션(CJONE OCB 캠페인) 문체 검토 — 비즈니스 문어체 준수. 구어체 잔재 없음. 사실관계 변경 없음.",
+      "published_at": "2026-07-03T04:20:00Z"
+    },
+    {
+      "task_id": "T005",
+      "entity_name": "미래에셋대우",
+      "project_name": "OCB 참여적립 실적 관리",
+      "confluence_page_id": "191955009",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955009",
+      "polishing_applied": false,
+      "polishing_notes": "T001과 동일 페이지. OCB 참여적립 실적 관리 섹션 문체 검토 — 비즈니스 문어체 준수. 사실관계 변경 없음.",
+      "published_at": "2026-07-03T04:20:00Z"
+    },
+    {
+      "task_id": "T006",
+      "entity_name": "다날",
+      "project_name": "다날 모바일 상품권 CPA 연동",
+      "confluence_page_id": "198213640",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/198213640",
+      "polishing_applied": false,
+      "polishing_notes": "신규 생성 페이지. 전체 문체 검토 — 비즈니스 문어체 준수. 읽어봄이 2패스 suggested_fix(의사결정 표현 완화) 검토 결과: 현행 기재(액션 아이템에 '일정 확인 후 재개 여부 결정' 포함)가 실제 상황을 충분히 반영하고 있어 사실관계 왜곡 수준이 아님으로 판단. 재퍼블리싱 불요.",
+      "published_at": "2026-07-03T04:20:00Z"
+    },
+    {
+      "task_id": "T007",
+      "entity_name": "KT 엠모바일",
+      "project_name": "KT CLIP 오퍼월 미니뷰 Crash 버그 수정",
+      "confluence_page_id": "192151605",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151605",
+      "polishing_applied": false,
+      "polishing_notes": "추가된 섹션(Crash 버그 수정) 문체 검토 — 비즈니스 문어체 준수. 기술 용어(SDK, miniview, 렌더링 오류) 정확. 구어체 잔재 없음. 사실관계 변경 없음.",
+      "published_at": "2026-07-03T04:20:00Z"
+    }
+  ]
+}

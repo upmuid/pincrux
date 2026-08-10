@@ -1,0 +1,106 @@
+{
+  "schema_version": "1.1",
+  "node": "refiner",
+  "run_date": "2019-06-14",
+  "run_mode": "backfill",
+  "collection_period": {"start": "2019-06-01", "end": "2019-06-14"},
+  "source_validator": "Archive_Pincrux/03_Validator/2019-06-14.json",
+  "status": "success",
+  "metrics": {
+    "total_tasks": 8,
+    "pages_polished": 6,
+    "markdown_errors_found": 0,
+    "markdown_errors_fixed": 0,
+    "colloquial_expressions_corrected": 0
+  },
+  "refine_results": [
+    {
+      "task_id": "T001",
+      "entity_name": "DB손해보험",
+      "confluence_page_id": "191955049",
+      "confluence_version": 11,
+      "style_review": "PASS",
+      "markdown_review": "PASS",
+      "changes_made": "없음",
+      "note": "섹션 헤더 계층(## > ###) 정상. 볼드체로 핵심 수치·일정 강조됨. 액션 아이템 체크리스트 형식 준수. 구어체 없음."
+    },
+    {
+      "task_id": "T002",
+      "entity_name": "미래에셋대우",
+      "confluence_page_id": "191955009",
+      "confluence_version": 10,
+      "style_review": "PASS",
+      "markdown_review": "PASS",
+      "changes_made": "없음",
+      "note": "CPM 집행 기간·이유·완료 사항 명확히 서술. 액션 아이템 미완료 3건 체크리스트 정상."
+    },
+    {
+      "task_id": "T003",
+      "entity_name": "KB증권",
+      "confluence_page_id": "198279169",
+      "confluence_version": 3,
+      "style_review": "PASS",
+      "markdown_review": "PASS",
+      "changes_made": "없음",
+      "note": "5월 정산 단가 수치 볼드 강조됨. 정산 업체별 구분 명확. 개발 이슈 사항 정확히 기록."
+    },
+    {
+      "task_id": "T004",
+      "entity_name": "웰컴저축은행",
+      "confluence_page_id": "192151790",
+      "confluence_version": 4,
+      "style_review": "PASS",
+      "markdown_review": "PASS",
+      "changes_made": "없음",
+      "note": "라이브 완료 날짜 볼드 처리. 대체 매체 전환 결정 사항 명확히 기술. 완료/미완료 액션 아이템 구분 정확."
+    },
+    {
+      "task_id": "T005",
+      "entity_name": "삼성증권",
+      "confluence_page_id": "192086150",
+      "confluence_version": 4,
+      "style_review": "PASS",
+      "markdown_review": "PASS",
+      "changes_made": "없음",
+      "note": "1차·2차 라이브 매체 목록 명확히 열거. 카카오머니 쿠폰 처리 방식 간결하게 서술. 기존 소재작업 섹션 히스토리 보존."
+    },
+    {
+      "task_id": "T006",
+      "entity_name": "오퍼월",
+      "confluence_page_id": "192151821",
+      "confluence_version": 5,
+      "style_review": "PASS",
+      "markdown_review": "PASS",
+      "changes_made": "없음",
+      "note": "후후·차차차 캠페인별 진행 방식 구분 명확. B: 코드 필수 적용 강조. 미완료 액션 아이템 3건 체크리스트 정상."
+    },
+    {
+      "task_id": "T007",
+      "entity_name": "PINCRUX",
+      "confluence_page_id": "191987714",
+      "confluence_version": 9,
+      "style_review": "PASS",
+      "markdown_review": "PASS",
+      "changes_made": "없음",
+      "note": "스탬프모아 SDK: 담당자별 역할 분리 명확. 완료 목표 기간 명시. 프로젝트 히스토리 섹션에 6월 항목 2건 추가됨."
+    },
+    {
+      "task_id": "T008",
+      "entity_name": "PINCRUX",
+      "confluence_page_id": "191987714",
+      "confluence_version": 9,
+      "style_review": "PASS",
+      "markdown_review": "PASS",
+      "changes_made": "없음",
+      "note": "T007과 동일 페이지 단일 처리. AWS 이전 완료 및 담당자 지정 항목 명확. 완료 체크박스 정상."
+    }
+  ],
+  "overall_quality": {
+    "style_pass_rate": "8/8 (100%)",
+    "markdown_error_count": 0,
+    "colloquial_count": 0,
+    "bold_emphasis_applied": true,
+    "checklist_format_applied": true
+  },
+  "node_status": "success"
+}

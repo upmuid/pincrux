@@ -1,0 +1,139 @@
+{
+  "schema_version": "1.1",
+  "node": "collector",
+  "run_date": "2020-09-30",
+  "run_mode": "backfill",
+  "period": "2020-09-01 to 2020-09-30",
+  "status": "success",
+  "data_summaries": [
+    {
+      "task_id": "T001",
+      "major_category": "In-house",
+      "minor_category": "Product",
+      "context_status": "matched",
+      "context_reference": "manifest 고정 분류 유지(오퍼월, alias Tracking SDK). 8월 배치(2020-08-31.json T005) iOS14 IDFA 대응 일정 취합 후속. 원문(2020-09-11, #운영1팀, [PII_REDACTED] 작성): '[9/11 이슈] 1. IOS IDFA 변경 대응 중단 공지 - SDK / API 매체'",
+      "entity_name": "오퍼월",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "오퍼월",
+      "issue_title": "iOS14 IDFA 정책 대응 SDK/API 매체향 일시 중단 공지",
+      "summary": "iOS14 IDFA 대응 SDK/API 매체향 중단 공지",
+      "decision": "8월 배치에서 각 네트워크(FAN/애드몹/벙글)로부터 취합 중이던 iOS14 IDFA 대응 일정이 9월 11일 기준 SDK/API 매체 대상으로 중단 공지됨(중단 사유는 원문상 명시되지 않음)",
+      "action_items": [
+        "IDFA 대응 중단 사유 및 재개 일정 확인 필요(원문상 미기재)"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/G0113KM3KK2/p1599816960012500"
+    },
+    {
+      "task_id": "T002",
+      "major_category": "Media_Partner",
+      "context_status": "matched",
+      "context_reference": "manifest 고정 분류 유지(쿠프마케팅, status human_action_required — major_category 재확인 대기 중). 8월 배치(2020-08-31.json T009) 신규 계약 체결 후속. 원문(2020-09-14, DM 팀장-총총, [PII_REDACTED] 작성): '지금 쿠프마케팅에서 SPC 쿠폰을 받아 오는데 유효기간 2개월로 선입으로 받아 오고 있습니다.' / 원문(2020-09-16, 동일 DM): '다음주에 쿠프마케팅 [PII_REDACTED] 팀장님이 한번 오신다는데 일단은 기존과 같이 사용분 정산으로 계속 진행하는 걸로 얘기는 되었는데요.'",
+      "entity_name": "쿠프마케팅",
+      "project_name": "SPC 상품권 공급",
+      "page_scope": "child",
+      "target_name": "쿠프마케팅 > SPC 상품권 공급",
+      "issue_title": "쿠프마케팅발 SPC 상품권 선입 공급조건(유효기간 2개월) 확인 및 정산방식 유지",
+      "summary": "쿠프마케팅 SPC상품권 선입2개월/사용분정산 유지",
+      "decision": "쿠프마케팅으로부터 SPC 상품권을 유효기간 2개월의 선입 방식으로 공급받고 있음을 확인함. 정산방식은 기존과 같이 '사용분 정산' 방식으로 계속 진행하기로 함. 쿠프마케팅 담당 팀장 방문 시 쿠폰 구조 및 향후 판매 예정 내용을 공유받기로 함",
+      "action_items": [
+        "쿠프마케팅 방문 미팅 후 쿠폰 구조/판매계획 공유 후속 확인 필요"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/DUM9K56KA/p1600072035001800"
+    },
+    {
+      "task_id": "T003",
+      "major_category": "In-house",
+      "minor_category": "Product",
+      "context_status": "matched",
+      "context_reference": "8월 배치(2020-08-31.json T006) 우리원 장바구니 기획전(네이버웹툰향) 후속. 원문(2020-09-08, #운영1팀, [PII_REDACTED] 작성): '경기도 주식회사 공정무역 관련 메일은 단순 공급사가 하나 추가되는 것으로 인지하시면 되겠습니다. ... 경기도 주식회사가 플랫폼사와 계약이 필요하여 핀크럭스가 계약하는 형태로 진행 예정이니 참고 부탁드립니다.'",
+      "entity_name": "CPS 기획전 플랫폼",
+      "project_name": "우리원 장바구니 기획전(네이버웹툰향)",
+      "page_scope": "child",
+      "target_name": "CPS 기획전 플랫폼 > 우리원 장바구니 기획전(네이버웹툰향)",
+      "issue_title": "우리원 기획전 신규 공급사 '경기도 주식회사' 추가, 핀크럭스가 계약 주체로 진행",
+      "summary": "우리원 기획전에 경기도(주) 공급사 추가, 핀크럭스가 계약주체",
+      "decision": "우리원 장바구니 기획전에 신규 공급사(경기도 주식회사)가 추가되며, 기획서·보고서를 포함한 전반적 운영업무는 우리원이 담당하되, 경기도 주식회사가 플랫폼사와의 계약이 필요한 구조이므로 핀크럭스가 계약 당사자가 되는 형태로 진행하기로 함",
+      "action_items": [],
+      "slack_thread_link": "https://pincrux.slack.com/archives/G0113KM3KK2/p1599527123004100"
+    },
+    {
+      "task_id": "T004",
+      "major_category": "In-house",
+      "minor_category": "Product",
+      "context_status": "new",
+      "context_reference": "원문(2020-09-22, #운영1팀, [PII_REDACTED] 작성): '기획전 진행 관련 / 0.피망 기획전 바로진행 / 0.카카오페이지 바로진행 / 1.네이버페이 - 2만원 이상 구매 고객 20% 리워드, 수수료는 리워드의 10% 부가세 별도 / 2.OCB 참여적립 내 기획전 - 3만원 이상 구매 시 고객 리워드 5000원(75% 고객/25% OCB 수수료) / 3.오사라마켓 입점 - 상품 리스트 전달, 수수료 15~20%로 책정 / 4.롯데멤버스(L.POINT) 입점 - 오사라마켓과 같은 형식으로 날마다가게 입점 예정 / 5.다음카카오 쇼핑 - 추석 이후 진행'",
+      "entity_name": "CPS 기획전 플랫폼",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "CPS 기획전 플랫폼",
+      "issue_title": "CPS 기획전 플랫폼 신규 매체 확장 전략 정리(오사라마켓·롯데멤버스 입점 추진, 네이버페이·OCB 리워드구조 확정)",
+      "summary": "기획전 플랫폼 신규매체 확장 및 리워드구조 확정",
+      "decision": "기존 피망(네오위즈)·카카오페이지(원문 표기, 기존 매체 '카카오페이'와의 동일 여부는 원문상 확인 불가)는 즉시 진행. 네이버페이는 2만원 이상 구매 고객 20% 리워드/수수료 10%(vat별도) 구조로 세팅 중. OCB 참여적립 내 기획전은 3만원 이상 구매 시 리워드 5000원(고객75%/OCB수수료25%) 구조로 확정. 오사라마켓·롯데멤버스(L.POINT)는 신규 입점을 추진 중(수수료 15~20%). 다음카카오쇼핑은 추석 이후 진행 예정",
+      "action_items": [
+        "오사라마켓 상품등록 어드민/기획전 이미지 확인 후 진행 필요",
+        "롯데멤버스(L.POINT) 날마다가게 입점 프로세스 확정 필요",
+        "다음카카오쇼핑 추석 이후 진행 여부 재확인 필요",
+        "'카카오페이지' 표기가 기존 매체 '카카오페이'와 동일 개체인지 총총 확인 필요"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/G0113KM3KK2/p1600753553012900"
+    },
+    {
+      "task_id": "T005",
+      "major_category": "Media_Partner",
+      "context_status": "new",
+      "context_reference": "[신규 엔티티 후보] entity_manifest.json 미등록 상태. 원문(2020-09-22, #운영1팀, [PII_REDACTED] 작성): '3. 오사라마켓 입점 - 현재 상품 리스트까지 전달 된 상태이며, 기획전 이미지 질의 중. 수수료는 15%~20%로 책정해 상품 전달 완료. 상품 등록 어드민과 기획전 이미지 확인 후 진행 예정'. CPS 기획전 플랫폼(핀크럭스 In-house 상품)의 신규 입점처로 등장. 기존 OCB/카카오페이 사례에 준하여 Media_Partner로 잠정 분류(총총 확인 필요)",
+      "entity_name": "오사라마켓",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "오사라마켓",
+      "issue_title": "CPS 기획전 플랫폼 신규 입점처 '오사라마켓' 추진 중(신규 엔티티)",
+      "summary": "신규 매체 오사라마켓, CPS기획전 입점 추진중",
+      "decision": "CPS 기획전 플랫폼의 신규 입점처로 오사라마켓과 상품 리스트 전달 및 수수료(15~20%) 협의를 완료함. 기획전 이미지 확인 후 정식 진행 예정",
+      "action_items": [
+        "총총 확인 후 entity_manifest.json에 신규 엔티티 등록 필요(major_category: Media_Partner 추정)",
+        "상품 등록 어드민 및 기획전 이미지 확인 후 진행"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/G0113KM3KK2/p1600753553012900",
+      "new_entity_flag": true
+    },
+    {
+      "task_id": "T006",
+      "major_category": "Media_Partner",
+      "context_status": "new",
+      "context_reference": "[신규 엔티티 후보] entity_manifest.json 미등록 상태. 원문(2020-09-22, #운영1팀, [PII_REDACTED] 작성, 원문 표기 '롯데멤버스(L.POINT)'): '4. 롯데멤버스(L.POINT) 입점 - 오사라마켓과 같은 형식으로 날마다가게 입점 예정. 날마다가게 모니터링 중. 우리원 상품 선정이 완료 후 진행 프로세스 확정 예정'. CPS 기획전 플랫폼의 신규 입점처로 등장. Media_Partner로 잠정 분류(총총 확인 필요)",
+      "entity_name": "롯데멤버스",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "롯데멤버스",
+      "issue_title": "CPS 기획전 플랫폼 신규 입점처 '롯데멤버스(L.POINT)' 추진 중(신규 엔티티)",
+      "summary": "신규매체 롯데멤버스(L.POINT), CPS기획전 입점 추진중",
+      "decision": "CPS 기획전 플랫폼의 신규 입점처로 롯데멤버스(L.POINT) 내 '날마다가게'를 통한 입점을 오사라마켓과 동일한 형식으로 추진 중. 우리원 상품 선정 완료 후 진행 프로세스를 확정할 예정",
+      "action_items": [
+        "총총 확인 후 entity_manifest.json에 신규 엔티티 등록 필요(major_category: Media_Partner 추정, alias: L.POINT)",
+        "우리원 상품 선정 완료 후 진행 프로세스 확정 필요"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/G0113KM3KK2/p1600753553012900",
+      "new_entity_flag": true
+    },
+    {
+      "task_id": "T007",
+      "major_category": "In-house",
+      "minor_category": "Product",
+      "context_status": "matched",
+      "context_reference": "manifest 고정 분류 유지(CLUV, alias '클럽' — '클럽샵'은 CLUV 내 샵 서비스로 판단). 원문(2020-09-08, DM 팀장-총총, [PII_REDACTED] 작성): '우선 저희 클럽샵 PG 승인건부터 빨리 처리해달라고 했습니다. 지급보류건은 종합적으로 좀 얘기를 해줘야한다고 해서...' / 원문(2020-09-16, 동일 DM): '퇴근 전에 재성합니다. 클럽샵 이제 PG 승인 되었으니'",
+      "entity_name": "CLUV",
+      "project_name": "클럽샵 나이스페이 PG 연동",
+      "page_scope": "child",
+      "target_name": "CLUV > 클럽샵 나이스페이 PG 연동",
+      "issue_title": "CLUV 클럽샵 나이스페이 PG 신규 승인 및 정산·보증보험 구조 협의",
+      "summary": "클럽샵 나이스페이PG 승인, 정산/보증보험 구조 협의중",
+      "decision": "CLUV 클럽샵의 나이스페이 PG 승인 건이 9월 16일 기준 최종 승인됨. 승인 전 단계에서 현재 약 200만원 정산 처리, 나머지 지급보류분에 대해서는 보증보험 가입 비율을 협의하는 방식으로 진행하기로 함(취소율 약 10% 수준 관련 논의 포함)",
+      "action_items": [
+        "보증보험 가입 비율 확정 및 지급보류분 정산 후속 확인 필요"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/DRLA30FGX/p1600247988014500"
+    }
+  ],
+  "uncategorized": []
+}

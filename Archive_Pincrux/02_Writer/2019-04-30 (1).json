@@ -1,0 +1,120 @@
+{
+  "schema_version": "1.1",
+  "node": "writer",
+  "run_date": "2019-04-30",
+  "source_file": "Archive_Pincrux/01_Collector/2019-04-30.json",
+  "node_status": "success",
+  "processed_tasks": [
+    {
+      "task_id": "T001",
+      "entity_name": "오퍼월",
+      "project_name": "오퍼월 플랫폼 운영",
+      "page_scope": "child",
+      "target_name": "오퍼월 > 오퍼월 플랫폼 운영",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151821",
+      "confluence_page_id": "192151821",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/190447637",
+      "confluence_parent_page_id": "190447637",
+      "updated_sections": ["## 오퍼월 플랫폼 운영 (2019) — 신규 섹션 추가 (Android Tracking SDK 릴리스 이력)"]
+    },
+    {
+      "task_id": "T002",
+      "entity_name": "오퍼월",
+      "project_name": "오퍼월 플랫폼 운영",
+      "page_scope": "child",
+      "target_name": "오퍼월 > 오퍼월 플랫폼 운영",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151821",
+      "confluence_page_id": "192151821",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/190447637",
+      "confluence_parent_page_id": "190447637",
+      "updated_sections": ["## 오퍼월 플랫폼 운영 (2019) — Framework Release 가이드 문서 배포 이력 추가"]
+    },
+    {
+      "task_id": "T003",
+      "entity_name": "KT",
+      "project_name": "KT 클립 미니충전소",
+      "page_scope": "child",
+      "target_name": "KT > KT 클립 미니충전소",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/196575233/KT",
+      "confluence_page_id": "196575233",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/190414849",
+      "confluence_parent_page_id": "190414849",
+      "updated_sections": ["## KT 클립 미니충전소 (2019) — 신규 섹션 추가 (iOS 오픈 일정 5월초중순, SDK 4/26 완료 예정)"]
+    },
+    {
+      "task_id": "T004",
+      "entity_name": "캐시비",
+      "project_name": "캐시비 충전소 연동",
+      "page_scope": "child",
+      "target_name": "캐시비 > 캐시비 충전소 연동",
+      "context_status": "new",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/196542465",
+      "confluence_page_id": "196542465",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/190447617",
+      "confluence_parent_page_id": "190447617",
+      "updated_sections": ["## 캐시비 충전소 연동 (2019) — 4/22~24 개발 미팅 결과 및 5월 계약 진행 결정 이력 추가"]
+    },
+    {
+      "task_id": "T005",
+      "entity_name": "해피머니",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "해피머니",
+      "context_status": "new",
+      "action_taken": "created_new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/196870145",
+      "confluence_page_id": "196870145",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/190447617",
+      "confluence_parent_page_id": "190447617",
+      "updated_sections": ["## 해피머니 충전소 운영 (2019) — 신규 페이지 생성"]
+    },
+    {
+      "task_id": "T006",
+      "entity_name": "미스터블루",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "미스터블루",
+      "context_status": "new",
+      "action_taken": "created_new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/196902913",
+      "confluence_page_id": "196902913",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/190447617",
+      "confluence_parent_page_id": "190447617",
+      "updated_sections": ["## 미스터블루 연동 (2019) — 신규 페이지 생성"]
+    },
+    {
+      "task_id": "T007",
+      "entity_name": "메리츠화재",
+      "project_name": "메리츠화재 포스트백 보험",
+      "page_scope": "child",
+      "target_name": "메리츠화재 > 메리츠화재 포스트백 보험",
+      "context_status": "new",
+      "action_taken": "created_new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/196935681",
+      "confluence_page_id": "196935681",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/190152706",
+      "confluence_parent_page_id": "190152706",
+      "updated_sections": ["## 메리츠화재 포스트백 보험 (2019) — 신규 페이지 생성"]
+    }
+  ],
+  "skipped_tasks": [
+    {
+      "task_id": "T008",
+      "reason": "context_status: inquiry. 미래에셋대우 엔티티 페이지 검색 결과 없음. matched 기준 엔티티 페이지 미존재로 skipped. 총총(COO) 확인 필요 — 미래에셋대우 페이지 신규 생성 또는 기존 페이지 연결 여부 판단 요망."
+    }
+  ]
+}

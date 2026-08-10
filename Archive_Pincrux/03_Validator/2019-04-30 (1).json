@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.1",
+  "node": "validator",
+  "run_date": "2019-04-30",
+  "source_files": {
+    "collector": "Archive_Pincrux/01_Collector/2019-04-30.json",
+    "writer": "Archive_Pincrux/02_Writer/2019-04-30.json"
+  },
+  "node_status": "success",
+  "review_summary": {
+    "total_reviewed": 7,
+    "passed_cnt": 7,
+    "failed_cnt": 0,
+    "slack_reread_cnt": 3
+  },
+  "validation_results": [
+    {
+      "task_id": "T001",
+      "target_name": "오퍼월 > 오퍼월 플랫폼 운영",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151821",
+      "confluence_page_id": "192151821",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "오퍼월 플랫폼 운영 (2019) 신규 섹션에 Android Tracking SDK 릴리스 이력(google play service(ads) 미참조, adid 추출 방식 수정) 정확 반영. 기존 소재 제작 섹션 보존 확인."
+    },
+    {
+      "task_id": "T002",
+      "target_name": "오퍼월 > 오퍼월 플랫폼 운영",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151821",
+      "confluence_page_id": "192151821",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "오퍼월 Framework Release 가이드 문서 배포 이력 정확 반영. 기존 섹션 보존 확인."
+    },
+    {
+      "task_id": "T003",
+      "target_name": "KT > KT 클립 미니충전소",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/196575233/KT",
+      "confluence_page_id": "196575233",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "KT 클립 미니충전소 신규 섹션 추가. iOS 오픈 5월 초중순, SDK 4/26 완료 예정, Android 일정 미정(UNDECIDED) 정확 반영. 기존 KT CLIP SDK 통합 섹션 보존 확인."
+    },
+    {
+      "task_id": "T004",
+      "target_name": "캐시비 > 캐시비 충전소 연동",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/196542465",
+      "confluence_page_id": "196542465",
+      "slack_reread": true,
+      "slack_reread_trigger": "context_status: new — 신규 맥락이므로 슬랙 원본 확인",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "캐시비 충전소 연동 섹션 업데이트. 4/22~24 개발 미팅 결과(UI 리스트형, iOS 탭 없음 Android만, 5월 계약) 정확 반영. 슬랙 원본 대조 결과 의사결정 사항 일치 확인. 기존 4/9 결정 이력 보존 확인."
+    },
+    {
+      "task_id": "T005",
+      "target_name": "해피머니",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/196870145",
+      "confluence_page_id": "196870145",
+      "slack_reread": true,
+      "slack_reread_trigger": "context_status: new — 신규 페이지이므로 슬랙 원본 확인",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "해피머니 신규 페이지 생성. 매체코드(android 910425, iOS 910566) 정확 기록. 광고 미노출 원인(포인트 단위 설정 누락) 및 조치 완료 이력 정확 반영. FAQ 섹션에 재발 방지 가이드 포함. 슬랙 원본 대조 결과 일치 확인."
+    },
+    {
+      "task_id": "T006",
+      "target_name": "미스터블루",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/196902913",
+      "confluence_page_id": "196902913",
+      "slack_reread": true,
+      "slack_reread_trigger": "context_status: new — 신규 페이지이므로 슬랙 원본 확인",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "미스터블루 신규 페이지 생성. 연동 착수 결정 및 이메일 기준 진행 확정 이력 정확 반영. 슬랙 원본에서 세부 스펙이 이메일로 전달된 사항 정확 반영 확인. 향후 이메일 내용 추가 업데이트 필요."
+    },
+    {
+      "task_id": "T007",
+      "target_name": "메리츠화재 > 메리츠화재 포스트백 보험",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/196935681",
+      "confluence_page_id": "196935681",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "메리츠화재 포스트백 보험 신규 페이지 생성. 앱키 105755, 자체 성공포스트백(SK브로드밴드 방식), 유저 식별 3종(전화번호/유저키/adid), 팝업 구성(popup1 성공 고정/popup2 실패) 모두 정확 반영. 액션 아이템 3건(강수현×2, 채수범×1) 매핑 확인."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.1",
+  "period": "2019-03-05",
+  "week": "W10",
+  "generated_at": "2026-06-28T03:05:00Z",
+  "agent": "writer_v2",
+  "source_collector": "Archive_Pincrux/01_Collector/2019-03-05.json",
+  "pages_processed": [
+    {
+      "entity": "미래에셋대우",
+      "confluence_page_id": "191955009",
+      "action": "updated",
+      "version": 5,
+      "items_applied": ["T001", "T002", "T009"],
+      "sections_modified": ["미래에셋대우 × 와디즈 캠페인 (2019)", "미래에셋대우 × 클립 캠페인 (2019)"]
+    },
+    {
+      "entity": "교보라이프플래닛",
+      "confluence_page_id": "191954989",
+      "action": "updated",
+      "version": 4,
+      "items_applied": ["T008"],
+      "sections_modified": ["교보라이프플래닛 × 11번가 저축보험 캠페인 (2019)"]
+    },
+    {
+      "entity": "페이앤드",
+      "confluence_page_id": "192053250",
+      "action": "updated",
+      "version": 7,
+      "items_applied": ["T005", "T006", "T017"],
+      "sections_modified": ["페이앤드 사용점 iOS 앱 (2019)", "페이앤드 DB서버 인프라 (2019)", "페이앤드 2호 회원사 이크레더블 오픈 (2019)"]
+    },
+    {
+      "entity": "DB금융투자",
+      "confluence_page_id": "192151759",
+      "action": "created",
+      "version": 1,
+      "parent_id": "190152706",
+      "items_applied": ["T003", "T004"],
+      "sections_modified": ["DB금융투자 네트워크 오픈 캠페인 (2019)"]
+    },
+    {
+      "entity": "삼성증권",
+      "confluence_page_id": "192086150",
+      "action": "created",
+      "version": 1,
+      "parent_id": "190152706",
+      "items_applied": ["T010"],
+      "sections_modified": ["삼성증권 소재 작업 (2019)"]
+    },
+    {
+      "entity": "캐치랜드",
+      "confluence_page_id": "192217197",
+      "action": "created",
+      "version": 1,
+      "parent_id": "190382081",
+      "items_applied": ["T011", "T012"],
+      "sections_modified": ["캐치랜드 광고리스트 맨위이동 기능 (2019)", "캐치랜드 클립 충전소 개발 (2019)"]
+    }
+  ],
+  "items_skipped": [
+    {"id": "T007", "reason": "CPS 커스텀 오퍼월 — 내부 기술 검토 단계, 별도 엔티티 페이지 미생성"},
+    {"id": "T013", "reason": "굿다이렉트 — 단순 오퍼월 소재 제작 요청"},
+    {"id": "T014", "reason": "아지냥이 — 단순 오퍼월 소재 제작 요청"},
+    {"id": "T015", "reason": "서베이빌리 — 단순 오퍼월 소재 제작 요청"},
+    {"id": "T016", "reason": "나혼자한다 — 단순 오퍼월 소재 제작 요청"}
+  ],
+  "stats": {
+    "total": 17,
+    "applied": 12,
+    "skipped": 5,
+    "updated": 3,
+    "created": 3
+  }
+}

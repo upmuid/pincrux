@@ -1,0 +1,122 @@
+{
+  "schema_version": "1.1",
+  "node": "refiner",
+  "run_date": "2020-01-14",
+  "source_file": "Archive_Pincrux/03_Validator/2020-01-14.json",
+  "node_status": "success",
+  "published_tasks": [
+    {
+      "task_id": "T001",
+      "target_name": "PINCRUX",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "refined_points": [
+        "신규 반영분(1분기 개발 우선순위 확정, 인플루언서 앱 개발 섹션 병합 항목)이 이미 문어체·볼드체·체크리스트 기준을 충족하여 실질 교정 없이 검수만 완료"
+      ],
+      "published_at": "2026-07-13T13:44:00+09:00"
+    },
+    {
+      "task_id": "T002",
+      "target_name": "모바일팝 > 우리원 기획전",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/196608001",
+      "confluence_page_id": "196608001",
+      "refined_points": [
+        "정산조건 핵심 수치(플랫폼 수수료 0%, 매체비 비율 100%, 포인트 지급율 100%)에 볼드 강조 보완"
+      ],
+      "published_at": "2026-07-13T13:45:26+09:00"
+    },
+    {
+      "task_id": "T003",
+      "target_name": "SSG(신세계) > 충전소·할인쿠폰 연동",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/204636161/SSG",
+      "confluence_page_id": "204636161",
+      "refined_points": [
+        "API연동 방식 및 개발 일정(충전소 개발기획 1개월+개발 1개월)에 볼드 강조 보완"
+      ],
+      "published_at": "2026-07-13T13:46:03+09:00"
+    },
+    {
+      "task_id": "T004",
+      "target_name": "DB손해보험 > 장기보험 CPS 캠페인",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955049/DB",
+      "confluence_page_id": "191955049",
+      "refined_points": [
+        "신규 반영분(장기보험 CPS 캠페인 결정사항)이 이미 볼드체·체크리스트 기준을 충족하여 실질 교정 없이 검수만 완료"
+      ],
+      "published_at": "2026-07-13T13:45:00+09:00"
+    },
+    {
+      "task_id": "T005",
+      "target_name": "CPS 기획전 플랫폼",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/206012417/CPS",
+      "confluence_page_id": "206012417",
+      "refined_points": [
+        "신규 페이지 엔티티 개요 표 구조(카테고리/엔티명/유형/최초기록일) 누락 없음 확인 완료",
+        "개발 범위(디자인 커스텀+광고플랫폼 연동+PG연동), 상품 카테고리·속성(기본/NEW/BEST), 최초 적용사(컬처랜드)에 볼드 강조 보완"
+      ],
+      "published_at": "2026-07-13T13:46:24+09:00"
+    },
+    {
+      "task_id": "T006",
+      "target_name": "PINCRUX",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "refined_points": [
+        "신규 반영분(2020 교육계획·인사평가 작성가이드·1분기 개발계획 일정)이 이미 볼드체·대괄호 소제목 구조화 기준을 충족하여 실질 교정 없이 검수만 완료"
+      ],
+      "published_at": "2026-07-13T13:44:00+09:00"
+    },
+    {
+      "task_id": "T007",
+      "target_name": "PINCRUX",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "refined_points": [
+        "캐시·팬심 화폐체계 핵심 수치(캐시·팬심 가치 비율 1:1, 팬심→캐시 역전환 수수료 10%)에 볼드 강조 보완"
+      ],
+      "published_at": "2026-07-13T13:44:00+09:00"
+    },
+    {
+      "task_id": "T008",
+      "target_name": "소소짐 > 무브캐시",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/206045185",
+      "confluence_page_id": "206045185",
+      "refined_points": [
+        "신규 페이지 엔티티 개요 표 구조 누락 없음 확인 완료",
+        "Google Play 정책위반 핵심 사실(기기 및 네트워크 악용 정책, 프로덕션 트랙 버전코드 291, com.mezzomedia.* 코드)에 볼드 강조 보완"
+      ],
+      "published_at": "2026-07-13T13:46:48+09:00"
+    },
+    {
+      "task_id": "T009",
+      "target_name": "SK플래닛 > 핏케어 부가서비스 연동",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/206077953/SK",
+      "confluence_page_id": "206077953",
+      "refined_points": [
+        "신규 페이지 엔티티 개요 표 구조 누락 없음 확인 완료",
+        "핵심 식별정보 및 수치(핏케어회원번호(PK), 부분결제취소 시 차감액 -5,000원)에 볼드 강조 보완"
+      ],
+      "published_at": "2026-07-13T13:47:00+09:00"
+    },
+    {
+      "task_id": "T010",
+      "target_name": "PINCRUX",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "refined_points": [
+        "FAQ 섹션 신규 Q&A(티켓 충전소 포인트 소멸 기준)가 이미 격리·확정형 문어체 기준을 충족하여 실질 교정 없이 검수만 완료"
+      ],
+      "published_at": "2026-07-13T13:44:00+09:00"
+    }
+  ]
+}

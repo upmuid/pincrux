@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.1",
+  "node": "refiner",
+  "run_date": "2019-08-31",
+  "source_file": "Archive_Pincrux/03_Validator/2019-08-31.json",
+  "node_status": "success",
+  "refinement_summary": {
+    "total_tasks": 4,
+    "pages_updated": 0,
+    "style_corrections": 0,
+    "hallucination_check": "PASS — 4건 전체에서 수치·일정·의사결정 사항 변경 없음. T001(NH멤버스 2019-08 섹션), T003(미래에셋대우 심의번호 갱신 섹션), T004(DB금융투자 심의번호 신규취득 섹션)는 이번 실행 추가분만 검수 대상으로 확인했으며, T002(티켓충전소)는 신규 페이지로 전체 검수를 수행함. 4건 모두 쓰미·읽어봄이 단계에서 이미 비즈니스 문어체(확정함/진행함/완료 등 명확한 종결어미), 볼드체 강조(수치·일정·결정사항), 체크리스트 형식(액션 아이템)이 정확히 적용되어 있어 구어체 잔재, 이모지, 모호한 지시대명사, 마크다운/HTML 문법 오류가 발견되지 않음. 추가 교정 없이 확인만 수행하고 컨플루언스 페이지는 현재 상태를 그대로 유지함(불필요한 버전 갱신 방지)."
+  },
+  "published_tasks": [
+    {
+      "task_id": "T001",
+      "target_name": "NH멤버스",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/199491593/NH",
+      "confluence_page_id": "199491593",
+      "refined_points": [
+        "이번 실행 추가분인 '트래킹 SDK CPA 연동 및 앱 배포, referrer 수집 오류 긴급 수정 (2019-08)' 섹션만 검수 대상으로 한정",
+        "일정(8/28 검수→8/29 배포→9/6 예정)과 REFERRER 오류 사유가 이미 볼드체로 명확히 강조되어 있어 추가 교정 없이 검수만 수행",
+        "액션 아이템 2건이 이미 체크리스트 형식으로 반영되어 있음을 확인"
+      ],
+      "published_at": "2026-07-06T00:00:00+09:00"
+    },
+    {
+      "task_id": "T002",
+      "target_name": "티켓충전소",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/200835080",
+      "confluence_page_id": "200835080",
+      "refined_points": [
+        "신규 페이지이므로 전체 섹션(엔티티 개요, 개요 및 배경, 운영 히스토리, 의사결정 사항)을 전수 검수",
+        "CI값 제외 정정 경위(8/27 서정철 요청→조혁 코딩본 수정→8/28 김지훈 최종 승인)가 문어체로 명확히 서술되어 있어 추가 교정 없이 확인만 수행",
+        "수집항목(회원관리번호·광고이용내역)·보유기간 등 개인정보 처리 관련 수치·문구가 볼드체로 정확히 강조되어 있음을 확인",
+        "액션 아이템은 '(해당 없음)'으로 명시되어 있어 체크리스트 강제 변환 대상이 아님을 확인"
+      ],
+      "published_at": "2026-07-06T00:00:00+09:00"
+    },
+    {
+      "task_id": "T003",
+      "target_name": "미래에셋대우",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955009",
+      "confluence_page_id": "191955009",
+      "refined_points": [
+        "이번 실행 추가분인 '심의번호(제19-03517) 갱신 및 코나카드 매체 확장 (2019-08)' 섹션만 검수 대상으로 한정",
+        "심의번호·유효기간·8개 매체명이 볼드체로 명확히 강조되어 있어 추가 교정 없이 검수만 수행",
+        "액션 아이템이 이미 체크리스트 형식으로 반영되어 있음을 확인"
+      ],
+      "published_at": "2026-07-06T00:00:00+09:00"
+    },
+    {
+      "task_id": "T004",
+      "target_name": "DB금융투자",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151759/DB",
+      "confluence_page_id": "192151759",
+      "refined_points": [
+        "이번 실행 추가분인 'DB금융투자 x 네오위즈 심의번호 신규 취득 (2019-08)' 섹션만 검수 대상으로 한정",
+        "심의필 번호·유효기간·랜딩페이지 2종이 볼드체로 명확히 강조되어 있어 추가 교정 없이 검수만 수행",
+        "액션 아이템이 이미 체크리스트 형식으로 반영되어 있음을 확인"
+      ],
+      "published_at": "2026-07-06T00:00:00+09:00"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.1",
+  "node": "validator",
+  "run_date": "2020-07-31",
+  "source_files": {
+    "collector": "Archive_Pincrux/01_Collector/2020-07-31.json",
+    "writer": "Archive_Pincrux/02_Writer/2020-07-31.json"
+  },
+  "node_status": "success",
+  "review_summary": {
+    "total_reviewed": 6,
+    "passed_cnt": 6,
+    "failed_cnt": 0,
+    "slack_reread_cnt": 1
+  },
+  "validation_results": [
+    {
+      "task_id": "T001",
+      "target_name": "SPC",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/204603424/SPC",
+      "confluence_page_id": "204603424",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "JSON의 decision('SPC 매체 오픈 일정이 8월 1일로 확정되어 개발팀에 공유됨')과 action_items가 컨플루언스 'SPC 출석체크+충전소 연동 개발' 섹션의 2020-07-28 운영히스토리·의사결정·액션아이템에 정확히 반영됨. 기존 히스토리(2019-12~2020-03) 손실 없음. 트리거 조건 미해당."
+    },
+    {
+      "task_id": "T002",
+      "target_name": "PINCRUX 조직·인사 정책",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/209321985/PINCRUX",
+      "confluence_page_id": "209321985",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "점심시간 정책(서울 11:30~13:00/부산 12:00~13:30, 각 1시간 자유사용) 문구가 컨플루언스 '[점심시간 운영]' 항목에 그대로 반영됨. T003과 통합 섹션 구성이나 왜곡·손실 없음. action_items 빈 배열은 정책 공지 성격상 타당(트리거 미해당)."
+    },
+    {
+      "task_id": "T003",
+      "target_name": "PINCRUX 조직·인사 정책",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/209321985/PINCRUX",
+      "confluence_page_id": "209321985",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "코로나로 인한 상반기 리뷰 순연 및 6월실적/7월계획 7/10 제출 결정이 컨플루언스 '[상반기 리뷰 순연]' 항목에 정확히 반영. action_items(7/10 오전10시 제출)도 컨플루언스 액션아이템과 일치. 트리거 조건 미해당."
+    },
+    {
+      "task_id": "T004",
+      "target_name": "PINCRUX 개발팀 업무 프로세스",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/209256450/PINCRUX",
+      "confluence_page_id": "209256450",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "Google Play 패키지 가시성 정책(8/12 적용) 공유 및 AOS SDK 영향도 점검 필요 사항이 컨플루언스에 반영됨. 컨플루언스가 '점검 진행하기로 협의함'이라는 표현을 추가했으나 action_items('8/12 적용 전 영향도 점검 필요')와 내용상 부합하며 사실 왜곡 아님. 트리거 조건 미해당."
+    },
+    {
+      "task_id": "T005",
+      "target_name": "PINCRUX 사업·정책 결정 히스토리 > 리워드샵 배송비 정책(공급사별 제주/도서산간)",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/211550226/PINCRUX",
+      "confluence_page_id": "211550226",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "배송비 포함 불가 회신 및 공급사(글로다온/우리원)별 제주·도서산간 추가배송비 정책이 컨플루언스 신규 섹션에 정확히 반영됨. 액션아이템(배송비 조건관리 화면 반영)도 일치. 단일 페이지 원칙에 따라 confluence_parent_page_id가 자기 자신을 가리키는 점은 쓰미 note와 일치하여 문제 없음. 트리거 조건 미해당."
+    },
+    {
+      "task_id": "T006",
+      "target_name": "피플카 > 피플카 CPA 캠페인 운영",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/212631553/피플카",
+      "confluence_page_id": "212631553",
+      "slack_reread": true,
+      "slack_reread_trigger": "context_status: new — 신규 엔티티(피플카) 페이지 생성이므로 슬랙 원본 확인 필수",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "슬랙 원본 스레드(G0113KM3KK2/p1596181594012100, 답글 없음) 직접 확인 결과 '피플카 CPA 8월 예산 4,400만원/total 11,000건/daily 350건/매체비 1,500원 확인 부탁드리겠습니다' 원문과 JSON·컨플루언스 내용이 완전히 일치함. major_category(Client)는 원문에 명시되지 않은 추정치이나 human_action_required로 적절히 격리되어 과도한 확정 서술 없음(과대 해석 없음). 신규 페이지 생성이 원본 맥락을 왜곡하지 않았음을 확인."
+    }
+  ]
+}

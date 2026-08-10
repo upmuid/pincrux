@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.1",
+  "node": "validator",
+  "run_date": "2026-07-28",
+  "source_files": {
+    "collector": "Archive_Pincrux/01_Collector/2026-07-28.json",
+    "writer": "Archive_Pincrux/02_Writer/2026-07-28.json"
+  },
+  "node_status": "success",
+  "review_summary": {
+    "total_reviewed": 7,
+    "passed_cnt": 7,
+    "failed_cnt": 0,
+    "slack_reread_cnt": 6
+  },
+  "validation_results": [
+    {
+      "task_id": "T001",
+      "target_name": "하나캐피탈 > 대출실행 NCPS 캠페인",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/222560257",
+      "confluence_page_id": "222560257",
+      "slack_reread": true,
+      "slack_reread_trigger": "context_status: new — 신규 페이지 생성이므로 슬랙 원본 확인 필수",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "슬랙 원문(2021-11-09, 고현복)·모으미 JSON·컨플루언스 페이지 3자 대조 결과 광고주/대행사/광고대금(대출실행액 1%)/매체비(70%, 자사수익 30%)/정산방식(NCPS)/진행매체(KB리브메이트) 및 금소법 이슈로 NCPS를 채택한 배경까지 정확히 일치. action_items 2건(소재 제작 후 라이브, 실적 저조 시 금리인하 문의)도 슬랙 원문 및 채수범 답글 내용과 부합하며 컨플루언스 액션 아이템 체크리스트에 정확히 매핑됨. 왜곡·누락 없음."
+    },
+    {
+      "task_id": "T002",
+      "target_name": "캐롯손해보험 > 자동차보험 가입 CPS 캠페인(모바일팝/CJONE/하나멤버스/미스터블루)",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/219873321",
+      "confluence_page_id": "219873321",
+      "slack_reread": true,
+      "slack_reread_trigger": "action_items가 비어있으나 decision에 실질적 결정사항이 존재(1패스 중 트리거 조건 해당 확인되어 2패스 상향)",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "슬랙 원문(2021-11-11, 고현복)과 대조 결과 광고주 청구액(50,000원)/4개 매체/매체비(25,000원)/혜택 지급시점/계약해지 고객 처리 방침 모두 일치. 모으미 action_items가 비어있었으나 슬랙 원문에도 별도 지시된 후속 태스크는 없음을 확인함. 컨플루언스가 자체적으로 추가한 '계약해지 고객 리워드 미지급 처리 프로세스 안정화 후속확인' 항목은 슬랙 원문의 명시적 사실은 아니나 기존 decision(리워드는 계약유지 고객에 한함)과 상충되지 않는 합리적 후속 조치로, 사실 왜곡에 해당하지 않음. 기존 '카카오페이지 CPA/CPS 종료' 히스토리 섹션도 그대로 보존되어 맥락 누수 없음."
+    },
+    {
+      "task_id": "T003",
+      "target_name": "예가람저축은행 > 페이스북 좋아요 캠페인",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/222593025",
+      "confluence_page_id": "222593025",
+      "slack_reread": true,
+      "slack_reread_trigger": "context_status: new — 신규 페이지 생성이므로 슬랙 원본 확인 필수",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "쓰미가 액션 아이템 추가 반영, 재확인 결과 정상 반영 확인됨"
+    },
+    {
+      "task_id": "T004",
+      "target_name": "KB손해보험 > CPS 캠페인",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192086208/KB",
+      "confluence_page_id": "192086208",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "1패스 대조 결과 모으미 decision(보험가입매출액의 8%, pay/fee 22,000원, 익월말 지급, 1:1 RS 구조)과 action_items(소재 제작·심의 완료 후 신규 확장 라이브 진행)가 컨플루언스 'CPS 캠페인 자사 충전소 매체 확장 (2021-11)' 섹션에 정확히 반영됨. 기존 매트라이프 단가조정, PASS/네이버페이/카카오페이지 매체확장, SPC충전소, IT담당자 연락처 등 다수의 기존 히스토리 섹션이 모두 그대로 보존되어 맥락 누수(overwrite) 없음. 불일치·단문과요약·액션아이템누락 트리거 미해당으로 2패스 생략."
+    },
+    {
+      "task_id": "T005",
+      "target_name": "NH멤버스",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/199491593/NH",
+      "confluence_page_id": "199491593",
+      "slack_reread": true,
+      "slack_reread_trigger": "action_items가 비어있으나 decision에 실질적 결정사항(단가 200원 상향, 적용일 11/25, 우선기간 12/31)이 존재(1패스 중 트리거 조건 해당 확인되어 2패스 상향)",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "슬랙 원문(2021-11-23, 고현복)과 대조 결과 상향폭(200원), 적용시점(11/25 00시), 자사 충전소 특이사항, 정산반영 기준, 우선기간(12/31)까지 모두 정확히 일치. 슬랙 원문상 추가 지시·요청은 없음(리액션만 존재)이므로 모으미의 action_items 공란 처리는 원문과 부합함. 컨플루언스가 추가한 '우선 적용기간 만료 시점 연장여부 후속확인' 항목은 decision 문구('우선 기간은 12월 31일까지')에서 합리적으로 파생된 것으로 왜곡이 아님. 기존 네이버페이 직접운영채널, CPA 잔존율분석, 트래킹SDK 개발 등 히스토리 섹션 보존 확인."
+    },
+    {
+      "task_id": "T006",
+      "target_name": "GS엠비즈 > GS패널가입 CPA 캠페인",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/219873281/GS",
+      "confluence_page_id": "219873281",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "이중역할 의심 플래그를 집중 검증함: 모으미 context_reference의 '광고주형 역할 상충' 서술이 컨플루언스 섹션 상단 '⚠ 이중역할 의심 플래그' 경고 패널에 거의 동일한 문구로 반영됨. major_category는 entity_manifest.json 고정값(Partner)을 그대로 유지하고 있어 임의 변경 없음을 확인함. decision(단가 1,000원/수량 5,000건/예산 5,000,000원/일정 11/23~수량 달성시까지)도 정확히 일치하며 action_items의 human_action_required 문구도 그대로 매핑됨. 기존 '쿠폰서비스 실시간 발급 연동(2021-06)' 섹션도 그대로 보존되어 맥락 누수 없음. 불일치·과요약·액션아이템누락 트리거 미해당으로 2패스 생략."
+    },
+    {
+      "task_id": "T007",
+      "target_name": "AXA손해보험 > 인스타그램 신규 캠페인",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/222363650/AXA",
+      "confluence_page_id": "222363650",
+      "slack_reread": true,
+      "slack_reread_trigger": "context_status: new — 신규 페이지 생성이므로 슬랙 원본 확인 필수",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "슬랙 원문(2021-11-24, 이혜민)과 대조 결과 캠페인명/APPKEY/집행일정(11/24~27)/총예산(2,000,000원)/단가(320원)/총수량(6,250건) 모두 정확히 일치. 슬랙 원문에 별도 후속조치 지시가 없어 모으미 action_items 공란 처리는 타당함. 컨플루언스가 추가한 '캠페인 집행결과 후속확인' 항목은 범용 후속 확인 문구로 사실 왜곡 없음."
+    }
+  ]
+}

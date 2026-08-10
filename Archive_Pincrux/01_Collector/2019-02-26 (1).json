@@ -1,0 +1,272 @@
+{
+  "schema_version": "1.1",
+  "node": "collector",
+  "run_date": "2019-02-26",
+  "run_mode": "backfill",
+  "period": "2019-02-26 to 2019-03-04",
+  "status": "success",
+  "data_summaries": [
+    {
+      "task_id": "T001",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "미래에셋대우 티머니 계좌개설 이벤트 진행 중. 어드민 펑키 신규 생성.",
+      "entity_name": "미래에셋대우",
+      "project_name": "미래에셋대우 티머니 캠페인",
+      "issue_title": "티머니-미래에셋대우 계좌개설 이벤트 어드민 펑키 910502 생성",
+      "summary": "티머니-미래에셋대우 계좌개설 이벤트 진행을 위해 어드민에 펑키 910502 생성 완료",
+      "decision": "어드민 펑키 910502 생성 완료",
+      "action_items": [],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBT7G5RUN/p1551163279001200"
+    },
+    {
+      "task_id": "T002",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "new",
+      "context_reference": "오퍼월 소재 신규 제작 요청. 삼국지 조운장군전 앱.",
+      "entity_name": "오퍼월",
+      "project_name": "오퍼월 소재 제작",
+      "issue_title": "오퍼월 소재 신규 제작 요청 — 삼국지 조운장군전",
+      "summary": "오퍼월 소재 제작 요청 (삼국지 조운장군전, Google Play: com.kr.sg.apk). 금일 제작 요청.",
+      "decision": "소재 제작 진행",
+      "action_items": ["삼국지 조운장군전 오퍼월 소재 제작"],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTJWKH0C/p1551147677016100"
+    },
+    {
+      "task_id": "T003",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "new",
+      "context_reference": "에몬스 인스타그램 소재 신규 제작 요청.",
+      "entity_name": "에몬스",
+      "project_name": "에몬스 인스타그램 캠페인",
+      "issue_title": "에몬스 인스타그램 소재 신규 제작 요청",
+      "summary": "에몬스 가구(인스타그램: @emons_furniture) 인스타그램 소재 신규 제작 요청. 추가 소재 제작.",
+      "decision": "소재 제작 진행",
+      "action_items": ["에몬스 인스타그램 소재 제작"],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTJWKH0C/p1551155227017400"
+    },
+    {
+      "task_id": "T004",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "new",
+      "context_reference": "난세 소재 신규 제작 요청.",
+      "entity_name": "난세",
+      "project_name": "난세 오퍼월 소재 제작",
+      "issue_title": "난세 소재 신규 제작 요청",
+      "summary": "난세(Google Play: com.netease.dtwsggkr) 소재 신규 제작 요청. 추가 제작 부탁.",
+      "decision": "소재 제작 진행",
+      "action_items": ["난세 소재 제작"],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTJWKH0C/p1551166714018500"
+    },
+    {
+      "task_id": "T005",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "미래에셋대우 소재 심의번호 삽입 운영 중. 네이버웹툰/카카오페이지 신규 심의번호 발급.",
+      "entity_name": "미래에셋대우",
+      "project_name": "미래에셋대우 캠페인 소재 운영",
+      "issue_title": "미래에셋대우 네이버웹툰·카카오페이지 소재 심의번호 삽입 요청",
+      "summary": "네이버웹툰 심의번호: 한국금융투자협회 심사필 제19-00759호(2019.02.22~2019.04.30), 카카오페이지 심의번호: 제19-00760호(2019.02.22~2019.04.30). OCB는 명일 중 전달 예정.",
+      "decision": "네이버웹툰·카카오페이지 소재 우선 심의번호 삽입 후 전달. OCB는 익일 처리.",
+      "action_items": [
+        "미래에셋대우 네이버웹툰 소재 심의번호(제19-00759호) 삽입",
+        "미래에셋대우 카카오페이지 소재 심의번호(제19-00760호) 삽입",
+        "미래에셋대우 OCB 소재 심의번호 삽입(익일)"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTJWKH0C/p1551171984021900"
+    },
+    {
+      "task_id": "T006",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "미래에셋대우 L포인트 소재 제작 완료 후 수정사항 발생.",
+      "entity_name": "미래에셋대우",
+      "project_name": "미래에셋대우 L포인트 캠페인",
+      "issue_title": "미래에셋대우 L포인트 소재 수정 요청",
+      "summary": "일전에 제작한 L포인트(미래에셋대우) 소재 수정사항 발생. 수정 후 재전달 요청.",
+      "decision": "기존 소재 수정 후 재전달",
+      "action_items": ["미래에셋대우 L포인트 소재 수정 완료 후 재전달"],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTJWKH0C/p1551230196024000"
+    },
+    {
+      "task_id": "T007",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "new",
+      "context_reference": "교보라이프플래닛 × 몬테일 소재 신규 제작 요청.",
+      "entity_name": "교보라이프플래닛",
+      "project_name": "교보라이프플래닛 몬테일 캠페인",
+      "issue_title": "교보라이프플래닛 × 몬테일 소재 제작 요청 (MO ver.)",
+      "summary": "교보라이프플래닛(m저축) × 몬테일 MO ver. 소재 제작 요청. 기존 심의받은 소재 활용(재심의 방지). 리워드: 배송비 할인쿠폰 2$. 랜딩페이지 하단 면책 문구 포함. 몬테일 배너 사이즈 640×160으로 수정 확정.",
+      "decision": "기존 심의 소재 활용하여 MO ver. 제작 확정. 몬테일 배너 640×160 사이즈로 수정.",
+      "action_items": [
+        "교보라이프플래닛 × 몬테일 MO ver. 소재 제작",
+        "몬테일 배너 640×160 사이즈 수정 반영"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTJWKH0C/p1551245024027200"
+    },
+    {
+      "task_id": "T008",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "new",
+      "context_reference": "아이테마니아 충전소 내 배너 제작 요청.",
+      "entity_name": "아이테마니아",
+      "project_name": "아이테마니아 충전소 배너 제작",
+      "issue_title": "아이테마니아 충전소 배너 제작 요청 — DB손해보험·SK브로드밴드·전화번호 안심로그인",
+      "summary": "아이테마니아 충전소 내 배너 제작 요청. 롤링배너(778×256), 고정배너(303×86). 3개 배너: 1.DB손해보험 롤링배너 2.SK브로드밴드 롤링배너 3.전화번호 안심로그인 고정배너. PSD 파일 첨부 전달 예정. 금일 오후 전달 가능 여부 확인.",
+      "decision": "아이테마니아 충전소 배너 3개(DB손해보험·SK브로드밴드·전화번호 안심로그인) 제작 진행. 규격: 롤링(778×256), 고정(303×86).",
+      "action_items": [
+        "아이테마니아 충전소 DB손해보험 롤링배너(778×256) 제작",
+        "아이테마니아 충전소 SK브로드밴드 롤링배너(778×256) 제작",
+        "아이테마니아 충전소 전화번호 안심로그인 고정배너(303×86) 제작"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTJWKH0C/p1551241642025000"
+    },
+    {
+      "task_id": "T009",
+      "major_category": "In-house",
+      "minor_category": "Product",
+      "context_status": "matched",
+      "context_reference": "DOMA 캠페인 관리 등록 이미지 아이콘 깨짐 현상 발생.",
+      "entity_name": "DOMA",
+      "project_name": "DOMA 아이콘 이미지 버그",
+      "issue_title": "DOMA 캠페인 관리 등록 이미지 아이콘 깨짐 현상 발생 및 해결",
+      "summary": "캠페인 관리에 등록한 이미지 아이콘이 깨지는 현상 발생(캠페인 ID 103690). 프리미엄 매체 배너도 동일 현상. 아이콘 수동 등록 시에도 등록 안됨. 원인: 이미지 주소가 서버 경로를 찾지 못함(CDN → img.pincrux.com CNAME 구조). CDN에서 오리진서버로 이미지캐싱 처리로 해결. 42/43번 서버에 접속 확인 필요.",
+      "decision": "CDN에서 오리진 서버로 이미지 캐싱 처리 완료. 프리미엄 매체는 미노출 처리.",
+      "action_items": ["42/43번 서버 접속 확인 및 CDN 캐싱 처리 완료 확인"],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBU0PHP3P/p1551224755003400"
+    },
+    {
+      "task_id": "T010",
+      "major_category": "In-house",
+      "minor_category": "Product",
+      "context_status": "matched",
+      "context_reference": "페이앤드 거래관리 검색 기능 컨셉 논의 중.",
+      "entity_name": "페이앤드",
+      "project_name": "페이앤드 기능 개선 v2",
+      "issue_title": "페이앤드 거래관리 검색 UI/UX 방향 — 탭별 독립 검색(1안)으로 확정",
+      "summary": "거래관리 탭에 검색 버튼 공유 시 탭 구분 없이 전체 리스트 검색(현재 UI)이 UX상 부적합. 거래완료 탭과 거래취소 탭에서 각각 독립 검색되는 방식(1안)으로 최종 확정.",
+      "decision": "페이앤드 거래관리 검색: 탭별 독립 검색(1안) 확정 — 거래완료 탭에서 검색 시 거래완료 목록만, 거래취소 탭에서 검색 시 거래취소 목록만 검색.",
+      "action_items": ["페이앤드 거래관리 탭별 독립 검색(1안) 개발 적용"],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTGBP78F/p1551259569050600"
+    },
+    {
+      "task_id": "T011",
+      "major_category": "In-house",
+      "minor_category": "Product",
+      "context_status": "matched",
+      "context_reference": "페이앤드 QR 인쇄 이슈 지속 — 데이브레이크 추가 사용점 차이홍 거치대형 QR 긴급 요청.",
+      "entity_name": "페이앤드",
+      "project_name": "페이앤드 2호 회원사 이크레더블 오픈",
+      "issue_title": "페이앤드 데이브레이크 추가 사용점 차이홍 거치대형 QR 이미지 긴급 요청",
+      "summary": "데이브레이크 추가 사용점 차이홍 3/1부터 사용 예정으로 거치대형 QR 이미지 긴급 요청. 웹 QR 인쇄 품질 이슈 상세 정리: 1) 웹은 RGB, 인쇄는 CMYK 색공간 차이 2) 업체에 AI파일로 보내서 출력 3) AI파일 전달 시 업체가 폰트 미보유 시 깨지므로 도형화 필요 4) 칼선 처리(이미지 전체 테두리) 필요. 품질 포기 시 자동화 가능하나 품질 저하.",
+      "decision": "거치대형 QR 이미지 오전 내 제작. 웹 인쇄 자동화는 품질 포기 시 가능하나, 검토 필요.",
+      "action_items": [
+        "차이홍 사용점 거치대형 QR 이미지 오전 내 제작",
+        "어드민 QR 인쇄 자동화 방향 검토(품질 vs 편의성)"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTGBP78F/p1551271069056800"
+    },
+    {
+      "task_id": "T012",
+      "major_category": "In-house",
+      "minor_category": "Product",
+      "context_status": "matched",
+      "context_reference": "페이앤드 iOS/Android 앱 업데이트 심사 진행 상황.",
+      "entity_name": "페이앤드",
+      "project_name": "페이앤드 기능 개선 v2",
+      "issue_title": "페이앤드 iOS 사용자용·사용점용 심사 완료 및 Android 릴리즈 일정 확정",
+      "summary": "iOS 사용자용 추가기능 적용 후 심사 제출(2/27 저녁). iOS 사용점용 추가기능 오늘 마무리 후 심사 예정. Android는 iOS 동시 오픈 예정으로 사용자용 구현 완료 대기 중. 3/1 iOS/Android 스토어 모두 새버전 릴리즈 완료. Android 사용자용 3/2 신규버전 릴리즈(약 3~4시간 후 마켓 노출 예정).",
+      "decision": "iOS 사용자용·사용점용 동시 오픈 진행. Android 사용자용 3/2 릴리즈, 사용점용 차주 초 릴리즈 예정.",
+      "action_items": [
+        "iOS 사용점용 추가기능 구현 완료 후 심사 제출",
+        "Android 사용점용 차주 초 릴리즈"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTGBP78F/p1551317926060300"
+    },
+    {
+      "task_id": "T013",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "DB손해보험 1월 친구소개 이벤트 리워드 발송 완료.",
+      "entity_name": "DB손해보험",
+      "project_name": "DB손해보험 친구소개 이벤트",
+      "issue_title": "DB손해보험 1월 친구소개 GS주유권 발송 완료",
+      "summary": "DB손해보험 1월 친구소개 관련 GS주유권 금일 발송 완료. 발송 이력 공유.",
+      "decision": "GS주유권 발송 완료 처리",
+      "action_items": [],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CFCGF3CNQ/p1551331229000600"
+    },
+    {
+      "task_id": "T014",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "DB손해보험 가입 이벤트 월별 수정 운영 중.",
+      "entity_name": "DB손해보험",
+      "project_name": "DB손해보험 가입 이벤트",
+      "issue_title": "DB손해보험 3월 가입 이벤트 조건 변경 요청",
+      "summary": "기간: 3/4~3/10. 신규 상품권 3만원(심의필 제14072호, 2019.02.28), 갱신 상품권 2만원(심의필 제14077호, 2018.02.28). 혜택발송일 4/11.",
+      "decision": "DB손해보험 3월 가입 이벤트 조건 변경 확정: 기간 3/4~3/10, 신규 3만원/갱신 2만원, 혜택발송 4/11.",
+      "action_items": ["DB손해보험 3월 가입 이벤트 조건 변경 반영 (기간·리워드·심의번호)"],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CFCGF3CNQ/p1551664491003200"
+    },
+    {
+      "task_id": "T015",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "미래에셋대우 OCB/티머니 소재 심의번호 신규 발급.",
+      "entity_name": "미래에셋대우",
+      "project_name": "미래에셋대우 캠페인 소재 운영",
+      "issue_title": "미래에셋대우 OCB·티머니 소재 심의번호 삽입 요청",
+      "summary": "OCB: 한국금융투자협회 심사필 제19-00802호(2019.02.28~2020.02.25), 티머니: 제19-00825호(2019.02.28~2020.02.27). PSD 파일 함께 전달. 삽입 후 전달 요청.",
+      "decision": "미래에셋대우 OCB·티머니 소재 심의번호 삽입 후 전달 확정",
+      "action_items": [
+        "미래에셋대우 OCB 소재 심의번호(제19-00802호) 삽입",
+        "미래에셋대우 티머니 소재 심의번호(제19-00825호) 삽입"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTJWKH0C/p1551664818000900"
+    },
+    {
+      "task_id": "T016",
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "미래에셋대우 OCB 랜딩페이지 교체 및 네이버웹툰 소재 반려 수정.",
+      "entity_name": "미래에셋대우",
+      "project_name": "미래에셋대우 OCB 캠페인",
+      "issue_title": "미래에셋대우 OCB 참여적립 랜딩페이지 교체 및 네이버웹툰 반려 소재 수정 요청",
+      "summary": "미래에셋대우 OCB 참여적립 랜딩 교체(MO ver. 만 노출). appkey: 101913, pubkey: 910264(AOS)/910028(iOS). 현재 캠페인 홀딩 중. 내일 오전 라이브 예정으로 미리 교체 작업 요청. 네이버웹툰 소재 반려사항 메일 포워딩 — 확인 후 수정 요청.",
+      "decision": "미래에셋대우 OCB MO ver. 랜딩 교체 진행(내일 오전 라이브 전 완료). 서버 경로: 211.117.60.110/home/pincrux/randing/miraeasset/okcashback. 네이버웹툰 반려 소재 수정 후 재전달.",
+      "action_items": [
+        "미래에셋대우 OCB 참여적립 랜딩페이지 교체(MO ver., appkey:101913, pubkey:910264/910028)",
+        "미래에셋대우 네이버웹툰 반려 소재 수정 후 재전달"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTJWKH0C/p1551674236007300"
+    },
+    {
+      "task_id": "T017",
+      "major_category": "In-house",
+      "minor_category": "Product",
+      "context_status": "matched",
+      "context_reference": "페이앤드 iOS 사용자용 QR 결제 버그 발생.",
+      "entity_name": "페이앤드",
+      "project_name": "페이앤드 기능 개선 v2",
+      "issue_title": "페이앤드 iOS 사용자용 QR결제 후 사용인원 추가 버그 발생 — AppStore 심사 제출",
+      "summary": "페이앤드 iOS 현재버전 버그: 메인→QR코드 결제→사용인원 추가 페이지→추가하기 버튼→사용자 추가 후 결제→다시 메인부터 동일 루틴 시 방금 추가한 사용자를 찾을 수 없는 버그. QR 진행으로만 발생(즐겨찾는 사용자 불러오기에는 해당 없음). 수정 버전 TestFlight 등록 완료, AppStore 심사 제출 완료.",
+      "decision": "버그 수정 완료 후 TestFlight 등록 및 AppStore 심사 제출. 심사 통과 즉시 릴리즈 예정.",
+      "action_items": ["페이앤드 iOS QR결제 버그 수정버전 AppStore 심사 통과 후 즉시 릴리즈"],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTGBP78F/p1551681144010600"
+    }
+  ],
+  "uncategorized": []
+}

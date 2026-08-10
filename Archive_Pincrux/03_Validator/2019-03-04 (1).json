@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.1",
+  "node": "validator",
+  "run_date": "2019-03-04",
+  "run_mode": "backfill",
+  "period": "2019-02-19 to 2019-03-04",
+  "node_status": "success",
+  "validation_pass": 1,
+  "results": [
+    {
+      "task_id": "T001",
+      "entity_name": "페이앤드",
+      "context_status": "matched",
+      "validation_status": "PASSED",
+      "checks": [
+        {
+          "check": "기능 개선 우선순위 확정 — 일괄적용→함께쓰기→취소사유→거래관리검색",
+          "result": "PASSED",
+          "note": "Confluence 2019-02-21 이력에 정확히 반영됨"
+        },
+        {
+          "check": "iOS QR 버그 발견 및 수정 버전 TestFlight 심사 등록",
+          "result": "PASSED",
+          "note": "Confluence 2019-03-04 이력에 버그 경로, 증상, 대응 내용 모두 반영됨"
+        },
+        {
+          "check": "Android 사용자용 신규 버전 릴리즈 완료",
+          "result": "PASSED",
+          "note": "Confluence 2019-03-01 이력에 반영됨"
+        }
+      ]
+    },
+    {
+      "task_id": "T002",
+      "entity_name": "페이앤드",
+      "context_status": "matched",
+      "validation_status": "PASSED",
+      "checks": [
+        {
+          "check": "iOS/Android 릴리즈 및 QR 버그 내용 T001과 동일 페이지 반영 확인",
+          "result": "PASSED",
+          "note": "T001과 동일 섹션에 통합 반영됨"
+        }
+      ]
+    },
+    {
+      "task_id": "T003",
+      "entity_name": "페이앤드",
+      "context_status": "matched",
+      "validation_status": "PASSED",
+      "checks": [
+        {
+          "check": "이크레더블 3/4 오픈 예정, 거치대형 QR 긴급 작업 요청",
+          "result": "PASSED",
+          "note": "Confluence 2019-02-21 이력에 반영됨"
+        },
+        {
+          "check": "QR 웹 구현 불가(RGB vs CMYK), 어드민 거치대형 스티커형 인쇄 기능 요청",
+          "result": "PASSED",
+          "note": "Confluence 2019-02-27 이력에 반영됨"
+        }
+      ]
+    },
+    {
+      "task_id": "T004",
+      "entity_name": "DB손해보험",
+      "context_status": "matched",
+      "validation_status": "PASSED",
+      "checks": [
+        {
+          "check": "3월 이벤트 기간(3/4~3/10), 신규 3만원 심의필 제14072호, 갱신 2만원 심의필 제14077호",
+          "result": "PASSED",
+          "note": "Confluence 2019-03-04 이력에 정확히 반영됨"
+        },
+        {
+          "check": "레진코믹스 쿠폰 200매 신규 발행, GS주유권 발송 완료, 페이코 배너 수정",
+          "result": "PASSED",
+          "note": "Confluence 2019-02-20 이력에 반영됨"
+        }
+      ]
+    },
+    {
+      "task_id": "T005",
+      "entity_name": "DB손해보험",
+      "context_status": "matched",
+      "validation_status": "PASSED",
+      "checks": [
+        {
+          "check": "마이나우코믹스 신규 이미지 배너 소재 심의 요청 — 텍스트→이미지 배너 전환, 랜딩페이지 동일",
+          "result": "PASSED",
+          "note": "Confluence 2019-02-25 이력에 반영됨"
+        }
+      ]
+    },
+    {
+      "task_id": "T006",
+      "entity_name": "DB손해보험",
+      "context_status": "matched",
+      "validation_status": "PASSED",
+      "checks": [
+        {
+          "check": "자동차동호회 계약 종료 안내 완료 (카포인트 동호회 연장 안내)",
+          "result": "PASSED",
+          "note": "Confluence 2019-02-25 이력에 반영됨"
+        },
+        {
+          "check": "노티투미 홀딩 완료, 몬테일 소재 교체 미완료 → 재연락 예정",
+          "result": "PASSED",
+          "note": "Confluence 2019-02-25 이력에 반영됨"
+        },
+        {
+          "check": "갱신 리스트 전체 집행 중지 결정 (효율 저하, 일시 중단 후 재개)",
+          "result": "PASSED",
+          "note": "Confluence 월별 가입 이벤트 섹션 2019-02-25 이력에 명시적으로 반영됨 (Collector JSON의 노티투미 홀딩으로 간접 포함된 내용을 상세 기록)"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_tasks": 6,
+    "passed": 6,
+    "failed": 0,
+    "new_context_2pass_required": false
+  }
+}

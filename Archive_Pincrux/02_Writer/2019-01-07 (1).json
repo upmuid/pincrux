@@ -1,0 +1,124 @@
+{
+  "schema_version": "1.1",
+  "node": "writer",
+  "run_date": "2019-01-07",
+  "source_file": "Archive_Pincrux/01_Collector/2019-01-07.json",
+  "node_status": "success",
+  "processed_tasks": [
+    {
+      "task_id": "T1",
+      "entity_name": "PINCRUX",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "PINCRUX",
+      "context_status": "new",
+      "action_taken": "created_root_and_child",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "confluence_parent_page_url": null,
+      "confluence_parent_page_id": null,
+      "updated_sections": [
+        "## 엔티티 개요",
+        "## 팀/조직 현황",
+        "## 팀/조직 현황 > 경영지원실 운영메일 정책",
+        "## 프로젝트 히스토리",
+        "## 주요 담당자"
+      ],
+      "note": "PINCRUX Root 페이지 신규 생성. T1(경영지원실 운영메일 정책)은 page_scope: root이므로 Root 페이지 내 팀/조직 현황 섹션에 직접 기록함. In-house > Product 페이지(190382081) 하위에 배치."
+    },
+    {
+      "task_id": "T2",
+      "entity_name": "페이앤드",
+      "project_name": "페이앤드 앱 구매할인 기능 개발",
+      "page_scope": "child",
+      "target_name": "페이앤드 > 페이앤드 앱 구매할인 기능 개발",
+      "context_status": "new",
+      "action_taken": "created_new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192118785",
+      "confluence_page_id": "192118785",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192053250/Client",
+      "confluence_parent_page_id": "192053250",
+      "updated_sections": [
+        "## 캠페인/프로젝트 개요",
+        "## 목적 및 배경",
+        "## 운영 히스토리",
+        "## 의사결정 사항",
+        "## 액션 아이템",
+        "## FAQ 및 트러블슈팅"
+      ],
+      "note": "페이앤드 Root 페이지(192053250) 신규 생성 후 Child 페이지 배치. 기존 페이앤드 페이지(189300769)는 Client > Product 단일 이슈 형태이므로, 이번 Client > Project 계층과 분리하여 페이앤드 (Client) 제목의 별도 Root 페이지 생성."
+    },
+    {
+      "task_id": "T3",
+      "entity_name": "페이앤드",
+      "project_name": "페이앤드 앱 Google Play 정책 대응",
+      "page_scope": "child",
+      "target_name": "페이앤드 > 페이앤드 앱 Google Play 정책 대응",
+      "context_status": "new",
+      "action_taken": "created_new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151553/Google+Play",
+      "confluence_page_id": "192151553",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192053250/Client",
+      "confluence_parent_page_id": "192053250",
+      "updated_sections": [
+        "## 캠페인/프로젝트 개요",
+        "## 목적 및 배경",
+        "## 운영 히스토리",
+        "## 의사결정 사항",
+        "## 액션 아이템",
+        "## FAQ 및 트러블슈팅"
+      ],
+      "note": "페이앤드 Root 페이지(192053250) 하위에 Child 페이지 생성. 1/9 데드라인 및 APK 버전 정보 FAQ 섹션에 구조화하여 기록."
+    },
+    {
+      "task_id": "T4",
+      "entity_name": "PINCRUX",
+      "project_name": "핀크럭스 광고 플랫폼 클릭/포스트백 연동",
+      "page_scope": "child",
+      "target_name": "PINCRUX > 핀크럭스 광고 플랫폼 클릭/포스트백 연동",
+      "context_status": "new",
+      "action_taken": "created_new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191954947",
+      "confluence_page_id": "191954947",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_parent_page_id": "191987714",
+      "updated_sections": [
+        "## 캠페인/프로젝트 개요",
+        "## 목적 및 배경",
+        "## 운영 히스토리",
+        "## 의사결정 사항",
+        "## 액션 아이템",
+        "## FAQ 및 트러블슈팅"
+      ],
+      "note": "PINCRUX Root 페이지(191987714) 하위에 Child 페이지 생성. 클릭 연동(핀크럭스→광고주) 및 포스트백 연동(광고주→핀크럭스) 양방향 구조 문서화."
+    },
+    {
+      "task_id": "T5",
+      "entity_name": "PINCRUX",
+      "project_name": "핀크럭스 광고 SDK/API 연동 관리",
+      "page_scope": "child",
+      "target_name": "PINCRUX > 핀크럭스 광고 SDK/API 연동 관리",
+      "context_status": "new",
+      "action_taken": "created_new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151574/SDK+API",
+      "confluence_page_id": "192151574",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_parent_page_id": "191987714",
+      "updated_sections": [
+        "## 캠페인/프로젝트 개요",
+        "## 목적 및 배경",
+        "## 운영 히스토리",
+        "## 의사결정 사항",
+        "## 액션 아이템",
+        "## FAQ 및 트러블슈팅"
+      ],
+      "note": "PINCRUX Root 페이지(191987714) 하위에 Child 페이지 생성. 외부 반출 금지 보안 경고 패널 삽입. 보안 등급 Status 로젠지 표시."
+    }
+  ],
+  "skipped_tasks": []
+}

@@ -1,0 +1,153 @@
+{
+  "schema_version": "1.1",
+  "node": "validator",
+  "run_date": "2020-02-29",
+  "source_files": {
+    "collector": "Archive_Pincrux/01_Collector/2020-02-29.json",
+    "writer": "Archive_Pincrux/02_Writer/2020-02-29.json"
+  },
+  "node_status": "success",
+  "review_summary": {
+    "total_reviewed": 10,
+    "passed_cnt": 10,
+    "failed_cnt": 0,
+    "slack_reread_cnt": 0
+  },
+  "validation_results": [
+    {
+      "task_id": "T001",
+      "target_name": "PINCRUX > 멤버십 팬 서비스(CJE&M·다이아)",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "'PINCRUX 멤버십 팬 서비스(CJE&M·다이아) 기획' 섹션에 2020-02-05 항목으로 CJ 다이아 수익쉐어(소유권 PINCRUX, r/s 5:5, 합작법인 검토)가 운영 히스토리·의사결정 사항·액션 아이템 3개 영역에 모두 반영됨. 모으미 summary/decision/action_items와 문구·의미 일치. 기존 2019-10~11월 히스토리(디스크립션 작업, 개인정보정책 등)는 손실 없이 유지됨(Overwrite 없음)."
+    },
+    {
+      "task_id": "T002",
+      "target_name": "PINCRUX > 인플루언서 앱",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "'PINCRUX 인플루언서 앱 개발' 섹션에 2020-02-12 항목(셀럽글/유저게시글 API 구현방식 재확인, 관리자페이지 개발 착수·디자인 2/17까지·기획서 1~2일 검토)이 운영 히스토리·의사결정·액션 아이템 3개 영역 모두에 반영됨. 액션 아이템 3건(디자인 카피, 개발 검토, 개발 착수) 모두 매핑 확인. 기존 2019-12월 히스토리 손실 없음."
+    },
+    {
+      "task_id": "T003",
+      "target_name": "하나금융투자 > 비대면계좌개설 CPA 연동",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/205062145",
+      "confluence_page_id": "205062145",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "오픈일정 변경(2/3→2/17) 반영 확인: 기존 '희망일정 2/3 OPEN, 테스트환경 1/13' 문구와 액션 아이템 '1/13까지 테스트환경 구축 후 2/3 OPEN'이 취소선 처리되고, 그 옆에 2020-02-12 확정 내용(2/16 개발완료, 2/17 운영반영→클로즈테스트→매체오픈→모니터링)이 그대로 추가됨. 원본 왜곡·삭제 없이 변경 이력이 보존됨. PINKEY 14자리 등 기존 결정사항도 유지됨."
+    },
+    {
+      "task_id": "T004",
+      "target_name": "PINCRUX > 조직·인사정책",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "'PINCRUX 조직·인사 정책' 섹션에 2020-02-11 항목(연말정산 결과·이의신청 2/13·환급 3/15·건강보험요율 인상)이 운영 히스토리·의사결정·액션 아이템에 정확히 반영됨. 기존 12월~1월 인사정책 히스토리(경조규정, 연말보너스, 회사목표 등) 손실 없음."
+    },
+    {
+      "task_id": "T005",
+      "target_name": "PINCRUX > 개발팀 업무프로세스",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "'PINCRUX 개발팀 업무 프로세스 정비' 섹션에 2020-02-18 항목(충전소 채널별 pubkey 정책 유지, adiscope 통합 리워드플랫폼 진행 확정)이 반영됨. adiscope 엔티티화 보류 판단(entity_name=PINCRUX)도 모으미 근거와 일치하게 유지됨. 기존 히스토리(Git, IT주간업무, 장애대응 절차 등) 손실 없음."
+    },
+    {
+      "task_id": "T006",
+      "target_name": "KT > 프로젝트K(혜택플랫폼/제휴할인)",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/196575233/KT",
+      "confluence_page_id": "196575233",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "'KT 프로젝트K' 섹션에 2020-02-19 항목(2/18 개발미팅: 혜택존 연동 개발항목, 마이KT 5월·KT멤버십 6월 확장, KT클립 오토멤버십 3월내 개발)이 운영 히스토리·의사결정·액션 아이템에 모두 반영됨. 담당자(김상원/김판근/채수범/정진영) 매핑 정확. 기존 1/31 미팅 히스토리 및 액션 아이템 손실 없이 병기됨."
+    },
+    {
+      "task_id": "T007",
+      "target_name": "PINCRUX > Creator Membership Community(대청자,대도서관)",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "2020-02-27 16:07 항목(QA 포함 개발물량 과다로 하위 페이지 우선순위 하향)이 운영 히스토리·의사결정·액션 아이템에 반영됨. 멤버미=대청자(대도서관) 프로젝트로 판단한 근거가 기존 페이지의 '멤버미 재판단' 이력과 일치."
+    },
+    {
+      "task_id": "T008",
+      "target_name": "PINCRUX > Creator Membership Community(대청자,대도서관)",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "2020-02-27 12:25~12:26 항목(백키 히스토리 관리를 메뉴 대카테고리 단위로 한정)이 운영 히스토리·의사결정·액션 아이템에 반영됨. T007과 동일 섹션 병합이나 각 항목이 개별 bullet으로 구분되어 서로 덮어쓰지 않음."
+    },
+    {
+      "task_id": "T009",
+      "target_name": "PINCRUX > Creator Membership Community(대청자,대도서관)",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "2020-02-28 16:22 항목(광고 적립 UX 정책 4건: 푸시 안내/상세페이지 생략/홈 노출 속도/알림 3종 유지)이 운영 히스토리·의사결정·액션 아이템(4건 모두)에 정확히 반영됨. T007·T008과 같은 섹션 내 병합이나 세 항목 모두 개별 히스토리로 손실 없이 공존."
+    },
+    {
+      "task_id": "T010",
+      "target_name": "미래에셋대우 > 주식거래리워드 CPA 연동(계좌개설 실시간+최초거래 익일)",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955009",
+      "confluence_page_id": "191955009",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "신규 섹션 '미래에셋대우 주식거래리워드 CPA 연동(계좌개설 실시간+최초거래 익일) (2020-02)'이 페이지 최상단에 추가 확인됨. 2020-02-24(도미노피자 pubkey 910856, 라이브 3/6 변경) 및 2020-02-27(거래실적 0/48/48/32건, 최초거래자 데이터 최종반영 예정) 내용이 모으미 JSON과 일치. 기존 미래에셋대우 하위 섹션(11월 캠페인, 치킨쿠폰 정산 등)은 그대로 유지되어 Overwrite 없음."
+    }
+  ],
+  "skipped_task_review": {
+    "source": "uncategorized (아이허브-카카오페이지 OHC)",
+    "verdict": "VALID_HOLD",
+    "comment": "쓰미가 CQL로 '아이허브'/'카카오페이지'/'OHC' 키워드를 검색했으나 관련 기존 엔티티 페이지를 확인하지 못했고(검색 0건), 이를 근거로 entity_name을 임의 확정하지 않고 skipped_tasks로 총총 판단 대기 처리함. 광고주/매체 구분이 원문만으로 특정되지 않는 모으미의 최초 보류 사유와 쓰미의 재확인 결과가 일치하며, 정책(임의 확정 금지)에 부합하는 안전한 격리로 판단함."
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.1",
+  "node": "writer",
+  "run_date": "2026-07-23",
+  "source_file": "Archive_Pincrux/01_Collector/2026-07-23_2.json",
+  "node_status": "success",
+  "processed_tasks": [
+    {
+      "task_id": "T001",
+      "entity_name": "웰컴저축은행",
+      "project_name": "네이버페이 CPM 캠페인 (2021-02)",
+      "page_scope": "child",
+      "target_name": "웰컴저축은행 > 네이버페이 CPM 캠페인 (2021-02)",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151790",
+      "confluence_page_id": "192151790",
+      "updated_sections": ["## 웰컴저축은행 네이버페이 CPM 캠페인 (2021-02)"]
+    },
+    {
+      "task_id": "T002",
+      "entity_name": "하나금융투자",
+      "project_name": "네이버페이 프리미엄패키지 캠페인 (2021-02)",
+      "page_scope": "child",
+      "target_name": "하나금융투자 > 네이버페이 프리미엄패키지 캠페인 (2021-02)",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/205062145",
+      "confluence_page_id": "205062145",
+      "updated_sections": ["## 하나금융투자 네이버페이 프리미엄패키지 캠페인 (2021-02)"]
+    },
+    {
+      "task_id": "T003",
+      "entity_name": "PINCRUX 조직·인사 정책",
+      "project_name": "2021년 연봉계약 체결 방식 변경",
+      "page_scope": "child",
+      "target_name": "PINCRUX 조직·인사 정책 > 2021년 연봉계약 체결 방식 변경",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/209321985/PINCRUX",
+      "confluence_page_id": "209321985",
+      "updated_sections": ["## PINCRUX 조직·인사 정책 (2021-02)"]
+    },
+    {
+      "task_id": "T004",
+      "entity_name": "PINCRUX 사업·정책 결정 히스토리",
+      "project_name": "2월 계약·정산 프로세스 정비",
+      "page_scope": "child",
+      "target_name": "PINCRUX 사업·정책 결정 히스토리 > 2월 계약·정산 프로세스 정비",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/211550226/PINCRUX",
+      "confluence_page_id": "211550226",
+      "updated_sections": ["## PINCRUX 계약·정산 프로세스 정비 (2021-02)"]
+    }
+  ],
+  "skipped_tasks": [],
+  "conditional_execution_note": "전 항목 context_status: matched, action_taken: merged_into_existing이며 모으미↔쓰미 간 재분류 없음. v0_coo.md 4-C절에 따라 읽어봄이·다시쓰미 모두 생략 가능 — 총총이 생략 처리하고 본 배치는 쓰미 완료 시점에 published로 인정함."
+}

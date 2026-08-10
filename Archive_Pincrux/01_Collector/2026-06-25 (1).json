@@ -1,0 +1,185 @@
+{
+  "period": "2019-01-01 to 2019-01-31",
+  "data_summaries": [
+    {
+      "major_category": "In-house",
+      "minor_category": "Product",
+      "context_status": "new",
+      "context_reference": "기존 핑크럭스 플랫폼 아키텍처에서 AWS 기반 2.0 전환 논의가 처음 등장함. 방법론1(이전형) vs 방법론2(재개발형) 두 가지 방향을 비교 검토하는 신규 의사결정 이슈.",
+      "target_name": "핑크럭스 플랫폼 2.0",
+      "issue_title": "AWS 기반 플랫폼 2.0 전환 방향 결정",
+      "summary": "신규 개발자 채용 전제로 AWS 전환 및 플랫폼 2.0 개발 방법론(이전형/재개발형) 논의",
+      "decision": "pizzu 카포인트 컨디션에 따라 참여 여부 결정. 2019년 과제가 아닐 경우 방법론1(서버 이전 우선)으로 진행",
+      "action_items": [
+        "TNK, IGAW, ADSYNC 등 B2B 자동화 플랫폼 오픈 검토",
+        "SDK 일원화 및 효율화",
+        "서버 프로그래밍 모듈화",
+        "AWS 상품군 안정 도입 후 SDK 2.0 계획 착수"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBU0PHP3P/p1546421520009500"
+    },
+    {
+      "major_category": "In-house",
+      "minor_category": "Product",
+      "context_status": "matched",
+      "context_reference": "기존 운영 중인 핑크럭스 플랫폼 모니터링 툴의 DB master/slave 유격으로 인한 로직 변경 이슈. 지속 운영 중인 인프라의 후속 조치.",
+      "target_name": "핑크럭스 플랫폼 모니터링",
+      "issue_title": "DB master/slave 유격에 따른 모니터링 로직 변경",
+      "summary": "master-slave 유격으로 기존 log_idx_day 카운트 방식 → 클릭테이블 마지막 idx 비교 방식으로 변경",
+      "decision": "모니터링 로직을 현재 사용 중인 클릭테이블의 마지막 idx 순번 비교 방식으로 변경 완료",
+      "action_items": [
+        "TNK 광고 목록 싱크 문제 확인 (서버 깨짐 현상으로 전체 삭제 처리)",
+        "2시 이후 TNK 광고 체크 후 복사 및 재오픈 처리"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBU0PHP3P/p1546398290007100"
+    },
+    {
+      "major_category": "In-house",
+      "minor_category": "Product",
+      "context_status": "new",
+      "context_reference": "개발 및 디자인 업무 전반에 Git 형상관리 툴을 최초 도입하는 신규 이슈. 기존에는 sftp/ftp 방식으로 작업.",
+      "target_name": "핑크럭스 개발 인프라",
+      "issue_title": "Git 소스 형상관리 도입",
+      "summary": "전 개발자/디자이너 PC에 Git 형상관리 도입, sftp/ftp 작업 방식 폐지",
+      "decision": "형상관리 툴 적용 후 sftp/ftp 작업 불가 방침 확정. 업무 인수인계자 및 디자이너에게 각 PC에 툴 적용",
+      "action_items": [
+        "git 설치 > 사용자 등록 > sourcetree 툴 설치 > RSA 암호화키 생성 > 환경변수 설정 > local 디렉토리 지정 후 clone",
+        "운영 배포 프로세스 및 공동 테스트 환경 마련 별도 논의",
+        "최초 설정은 서울에서 시연 후 공유 예정"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBU0PHP3P/p1546944025013100"
+    },
+    {
+      "major_category": "Media_Partner",
+      "minor_category": "Project",
+      "context_status": "new",
+      "context_reference": "코인제스트와의 신규 연동 논의. 기존 분류 체계에 없던 신규 매체사 연동 이슈.",
+      "target_name": "코인제스트",
+      "issue_title": "코인제스트 연동 방식 결정",
+      "summary": "핑크럭스 > 컬처랜드 CPA 연동 및 핑크럭스 > 투믹스 제휴 가이드 연동 방식 결정",
+      "decision": "컬처랜드는 CPA 연동으로 컬처캐시 충전 담당. 투믹스는 제휴 연동 가이드 전달받아 진행",
+      "action_items": [
+        "자사가 휴대폰번호 습득 > 문화상품권 발송 로직 구현",
+        "컬처랜드와 CPA 연동으로 컬처캐시 충전 처리",
+        "투믹스 제휴 연동 가이드 전달받기",
+        "코인제스트 광고주/매체사 연동 특이사항 계속 인지"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBT7G5RUN/p1546411257006700"
+    },
+    {
+      "major_category": "Media_Partner",
+      "minor_category": "Product",
+      "context_status": "new",
+      "context_reference": "저스트엔 신규 매체 연동으로 PUBKEY 생성 완료. 기존 체계에 없던 신규 매체사.",
+      "target_name": "저스트엔",
+      "issue_title": "저스트엔 PC/모바일웹/안드로이드 SDK PUBKEY 생성",
+      "summary": "저스트엔 연동을 위한 3개 채널(PC, 모바일웹, 안드로이드 SDK) PUBKEY 생성 완료",
+      "decision": "PUBKEY 생성 완료. 운영팀 인지 후 사용",
+      "action_items": [],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBT7G5RUN/p1546935216010500"
+    },
+    {
+      "major_category": "Media_Partner",
+      "minor_category": "Product",
+      "context_status": "inquiry",
+      "context_reference": "인터파트 투어(웹충전소) 페이지에서 발생한 HTTP 500 오류. 운영 중 버그 제보 성격.",
+      "target_name": "인터파트 투어 (웹충전소)",
+      "issue_title": "인터파트 투어 웹충전소 페이지 HTTP 500 오류",
+      "summary": "usrkey 미전달로 인한 HTTP 500 내부 서버 오류 발생, 로그인 후 재시도에도 동일 증상",
+      "decision": "오류 복구 확인 완료",
+      "action_items": [
+        "오류 원인 공유 요청"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBT7G5RUN/p1547082143013100"
+    },
+    {
+      "major_category": "Client",
+      "minor_category": "Product",
+      "context_status": "matched",
+      "context_reference": "페이앤드 전용 채널(#09_project_페이앤드) 존재. 구매할인 UI 변경, JS오류, iOS 출시, QR코드 등 지속 고도화 중인 기존 프로덕트.",
+      "target_name": "페이앤드",
+      "issue_title": "페이앤드 앱 1월 주요 이슈 대응",
+      "summary": "구매할인 UI변경, JS오류/SMS정책위반 해결, git 도입, iOS TestFlight 시작, 가맹점 QR코드 생성",
+      "decision": "JS 오류 및 SMS 정책위반 해결 완료(비공개 테스트 배포). git 형상관리 적용. iOS TestFlight 베타 테스트 시작",
+      "action_items": [
+        "구매할인 보고 콘텐츠 포함 UI 자유롭게 변경 (1월 중순 업데이트 반영)",
+        "페이앤드 사용자용 iOS TestFlight 등록 (iPhone 번호 및 계정 제출)",
+        "가맹점 고유번호 5번~17번 QR코드 생성 후 공유 (거치대 제작용)",
+        "결제 시나리오 비밀번호 입력 정책 검토 (지문인식/홍채인식 대안 검토)"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTGBP78F/p1546417274005200"
+    },
+    {
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "미래에셋대우 x OCB 캠페인은 기존 진행 중인 캠페인의 소재 수정 및 랜딩페이지 교체 요청. 기존 광고주의 후속 운영 이슈.",
+      "target_name": "미래에셋대우",
+      "issue_title": "미래에셋대우 OCB/페이코/한투/네오위즈 소재 수정 및 제작",
+      "summary": "OCB 랜딩페이지 수정, 미래에셋x페이코 소재 제작, 한투x네오위즈 소재(랜딩/배너) 제작 요청",
+      "decision": "각 소재별 수정 완료 (OCB 랜딩페이지, 네이버웹툰 소재)",
+      "action_items": [
+        "OCB MO ver. 랜딩페이지 교체 (appkey:101913, pubkey:910264)",
+        "미래에셋 x 페이코 소재 제작 (OCB 소재 수정 버전, SB 및 가이드 전달)",
+        "한투 x 네오위즈 소재 제작 (랜딩/배너, SB 및 가이드 전달)",
+        "심사필 제18-00088호(2019.01.09~2020.01.06) 삽입 (네이버웹툰 포함)"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTJWKH0C/p1546924092027900"
+    },
+    {
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "KT M모바일 유심칩 캠페인은 기존 운영 중인 캠페인의 랜딩페이지 수정 요청.",
+      "target_name": "KT M모바일",
+      "issue_title": "KT M모바일 유심칩 랜딩페이지 수정",
+      "summary": "KT M모바일 유심칩 신청 랜딩페이지 PPT 기반 소재 수정 요청 (컬처랜드 제외 전 매체 노출)",
+      "decision": "수정 완료",
+      "action_items": [
+        "랜딩페이지 소재 수정 (appkey:100409, pubkey:910058 기준)",
+        "컬처랜드 별도 랜딩페이지도 동일 프로세스 수정 (pubkey:910070)"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTJWKH0C/p1546924092027900"
+    },
+    {
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "교보 라이프플래닛 캠페인 랜딩페이지 URL 변경. 기존 운영 캠페인의 어드민 URL 변경 후속 조치.",
+      "target_name": "교보 라이프플래닛",
+      "issue_title": "교보 라이프플래닛 랜딩페이지 어드민 URL 변경",
+      "summary": "랜딩 적용을 위해 어드민 랜딩 URL 주소 변경 완료 (randing.pincrux.com/kyobo/M/index.html 경유)",
+      "decision": "랜딩 URL 변경 적용 완료",
+      "action_items": [],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTJWKH0C/p1546924092027900"
+    },
+    {
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "new",
+      "context_reference": "#99_db손해보험업무 채널에서 처음 등장한 자동차동호회 가입이벤트 쪽지 발송 요청. 신규 이벤트 캠페인.",
+      "target_name": "DB손해보험",
+      "issue_title": "자동차동호회 가입이벤트 쪽지 발송",
+      "summary": "1/14~1/31 기간 DB손해보험 자동차동호회 가입이벤트 쪽지 발송 요청",
+      "decision": "발송 진행 결정. 혜택 동일하게 유지",
+      "action_items": [
+        "쪽지 발송 완료 후 리스트 및 PPT 확인 요청"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CFCGF3CNQ/p1547429903001400"
+    }
+  ],
+  "uncategorized": [
+    {
+      "raw_text": "경영지원실 운영메일 변경 공지 (세금계산서: tax@pincrux.com, 업무공유/보고: hsw@pincrux.com)",
+      "reason": "내부 행정 공지사항으로 비즈니스 의사결정/태스크 없음. 분류 불필요."
+    },
+    {
+      "raw_text": "페이앤드 iOS TestFlight 테스트 참여자 연락처 수집 (개인 전화번호 및 이메일) [PII_REDACTED]",
+      "reason": "개인정보(전화번호, 이메일) 포함으로 PII 마스킹 처리. 별도 태스크 없이 테스트 참여자 등록 용도."
+    },
+    {
+      "raw_text": "핑크럭스 SDK 및 각 회사 커스텀 API 연동문서 공유 (Google Drive 링크 내부 기밀)",
+      "reason": "내부 기밀 문서 링크 공유로 외부 반출 금지 대상. 신규 이슈 없음."
+    }
+  ]
+}

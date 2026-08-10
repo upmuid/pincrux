@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.1",
+  "node": "writer",
+  "run_date": "2019-07-14",
+  "source_file": "Archive_Pincrux/01_Collector/2019-07-14.json",
+  "node_status": "success",
+  "processed_tasks": [
+    {
+      "task_id": "T001",
+      "entity_name": "미래에셋대우",
+      "project_name": "삼성페이 CPS 정산",
+      "page_scope": "child",
+      "target_name": "미래에셋대우 > 삼성페이 CPS 정산",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955009",
+      "confluence_page_id": "191955009",
+      "updated_sections": [
+        "미래에셋대우 x 삼성페이 정산 지급 주기 변경 (2019-07) - 신규 섹션 추가"
+      ]
+    },
+    {
+      "task_id": "T002",
+      "entity_name": "삼성증권",
+      "project_name": "삼성페이 제휴 캠페인",
+      "page_scope": "child",
+      "target_name": "삼성증권 > 삼성페이 제휴 캠페인",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192086150",
+      "confluence_page_id": "192086150",
+      "updated_sections": [
+        "삼성증권 x 삼성페이 캠페인 조건 확정(기간·데일리캡·단가) (2019-07) - 신규 섹션 추가"
+      ]
+    },
+    {
+      "task_id": "T003",
+      "entity_name": "KB증권",
+      "project_name": "네이버페이 제휴 이벤트",
+      "page_scope": "child",
+      "target_name": "KB증권 > 네이버페이 제휴 이벤트",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/198279169",
+      "confluence_page_id": "198279169",
+      "updated_sections": [
+        "KB증권 네이버페이 쿠폰 320건 초과소진 리워드 미지급 이슈 및 재발방지 대책 (2019-07) - 신규 섹션 추가"
+      ]
+    },
+    {
+      "task_id": "T004",
+      "entity_name": "NH멤버스",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "NH멤버스",
+      "context_status": "new",
+      "action_taken": "created_new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/199491593",
+      "confluence_page_id": "199491593",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/190447617",
+      "confluence_parent_page_id": "190447617",
+      "updated_sections": [
+        "엔티티 개요",
+        "NH멤버스 트래킹 SDK 신규 개발 착수 및 데이터 수집 정책 확정 (2019-07)",
+        "FAQ 및 트러블슈팅",
+        "주요 담당자"
+      ]
+    }
+  ],
+  "skipped_tasks": []
+}

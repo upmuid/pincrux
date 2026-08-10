@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.1",
+  "node": "writer",
+  "run_date": "2019-08-31",
+  "source_file": "Archive_Pincrux/01_Collector/2019-08-31.json",
+  "node_status": "success",
+  "processed_tasks": [
+    {
+      "task_id": "T001",
+      "entity_name": "NH멤버스",
+      "project_name": "트래킹 SDK CPA 연동",
+      "page_scope": "root",
+      "target_name": "NH멤버스",
+      "context_status": "matched",
+      "action_taken": "merged_existing_page",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/199491593/NH",
+      "confluence_page_id": "199491593",
+      "updated_sections": [
+        "NH멤버스 트래킹 SDK CPA 연동 및 앱 배포, referrer 수집 오류 긴급 수정 (2019-08)"
+      ],
+      "reclassification_note": "모으미가 'new'로 분류했으나 기존 페이지(199491593, Media_Partner>Product) 존재 확인되어 'matched'로 재판단, 기존 페이지에 히스토리 섹션 병합. 카테고리도 Client>Product가 아닌 Media_Partner>Product로 정정."
+    },
+    {
+      "task_id": "T002",
+      "entity_name": "티켓충전소",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "티켓충전소",
+      "context_status": "new",
+      "action_taken": "created_new_page",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/200835080",
+      "confluence_page_id": "200835080",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/190382081/In-house+Product",
+      "confluence_parent_page_id": "190382081",
+      "updated_sections": [
+        "티켓충전소 개인정보 수집·이용 동의 약관 신설 (2019-08)"
+      ],
+      "reclassification_note": "CQL 검색(title~티켓충전소, space=AR) 결과 기존 페이지 없음 확인, 독립 신규 엔티티로 In-house>Product 하위 생성. 웰컴저축은행 계열 추정은 근거 부족으로 채택하지 않았으며, 웰컴저축은행 페이지(192151790)로 상호참조 링크만 추가.",
+      "correction_note": "읽어봄이 FAIL(CONTEXT_DISTORTION) 판정에 따른 총총 정정(2026-07-07). 컨플루언스 페이지(200835080) 및 본 산출물 반영 수집항목을 'CI·회원관리번호·광고이용내역'에서 슬랙 원문 최종 확정본인 '회원관리번호·광고이용내역'(CI 제외)으로 정정. 근거: 8/27 13:07 서정철 CI 제외 요청, 8/27 13:08 조혁 코딩본 수정 확정, 8/28 20:01 김지훈 최종 승인."
+    },
+    {
+      "task_id": "T003",
+      "entity_name": "미래에셋대우",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "미래에셋대우",
+      "context_status": "matched",
+      "action_taken": "merged_existing_page",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955009",
+      "confluence_page_id": "191955009",
+      "updated_sections": [
+        "심의번호(제19-03517) 갱신 및 코나카드 매체 확장 (2019-08)"
+      ]
+    },
+    {
+      "task_id": "T004",
+      "entity_name": "DB금융투자",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "DB금융투자",
+      "context_status": "matched",
+      "action_taken": "merged_existing_page",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151759/DB",
+      "confluence_page_id": "192151759",
+      "updated_sections": [
+        "DB금융투자 x 네오위즈 심의번호 신규 취득 (2019-08)"
+      ],
+      "reclassification_note": "모으미가 'new'로 분류했으나 기존 페이지(192151759, Client>Project) 존재 확인되어 'matched'로 재판단, 기존 페이지에 히스토리 섹션 병합."
+    }
+  ],
+  "skipped_tasks": []
+}

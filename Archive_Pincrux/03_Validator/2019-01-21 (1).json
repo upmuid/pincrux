@@ -1,0 +1,247 @@
+{
+  "schema_version": "1.1",
+  "node": "validator",
+  "run_date": "2019-01-21",
+  "executed_at": "2026-06-28T01:34:30+09:00",
+  "status": "success",
+  "node_status": "success",
+  "validation_results": [
+    {
+      "task_id": "CBTGBP78F_1546938875.011100",
+      "entity_name": "페이앤드",
+      "project_name": "페이앤드 앱 구매할인 기능 개발",
+      "context_status": "matched",
+      "confluence_page_id": "192053250",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192053250/Client",
+      "pass_count": 3,
+      "fail_count": 0,
+      "checks": [
+        {"item": "Git 형상관리 도입 내용 반영 여부", "result": "PASS"},
+        {"item": "ssh://payand@서버IP/home/payand/payand.git 경로 포함", "result": "PASS"},
+        {"item": "W1 기존 히스토리(2019-01-02/03) 보존 여부", "result": "PASS"}
+      ],
+      "overall": "PASSED"
+    },
+    {
+      "task_id": "CBTGBP78F_1546939281.014800",
+      "entity_name": "페이앤드",
+      "project_name": "페이앤드 앱 구매할인 기능 개발",
+      "context_status": "matched",
+      "confluence_page_id": "192053250",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192053250/Client",
+      "pass_count": 2,
+      "fail_count": 0,
+      "checks": [
+        {"item": "가맹점 고유번호 5~17번 명시 여부", "result": "PASS"},
+        {"item": "관리자 화면 QR 출력 기능 수정 완료 반영", "result": "PASS"}
+      ],
+      "overall": "PASSED"
+    },
+    {
+      "task_id": "CBTGBP78F_1546944114.017200",
+      "entity_name": "페이앤드",
+      "project_name": "페이앤드 앱 iOS 출시 준비",
+      "context_status": "matched",
+      "confluence_page_id": "192053250",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192053250/Client",
+      "pass_count": 5,
+      "fail_count": 0,
+      "checks": [
+        {"item": "TestFlight 버전 8 명시", "result": "PASS"},
+        {"item": "6.5인치(1242×2688)/5.5인치(1242×2208) 스크린샷 수치", "result": "PASS"},
+        {"item": "앱 키워드(모바일 법인카드, 식권, 식대) 포함", "result": "PASS"},
+        {"item": "애플 리젝 사유(스크린샷 부재, 테스트 전화번호/인증코드) 반영", "result": "PASS"},
+        {"item": "action_items 5건 전부 매핑 여부", "result": "PASS"}
+      ],
+      "overall": "PASSED"
+    },
+    {
+      "task_id": "CBTGBP78F_1547519482.030500",
+      "entity_name": "페이앤드",
+      "project_name": "페이앤드 앱 iOS 출시 준비",
+      "context_status": "matched",
+      "confluence_page_id": "192053250",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192053250/Client",
+      "pass_count": 3,
+      "fail_count": 0,
+      "checks": [
+        {"item": "약관동의 02·03번 백버튼·종료버튼 삭제 반영", "result": "PASS"},
+        {"item": "07~12번, 13·13-1·14번 종료버튼 삭제 반영", "result": "PASS"},
+        {"item": "제플린 수정 액션아이템 미완료 상태(미체크) 표시", "result": "PASS"}
+      ],
+      "overall": "PASSED"
+    },
+    {
+      "task_id": "CBU0PHP3P_1547530613.025300",
+      "entity_name": "PINCRUX",
+      "project_name": "핀크럭스 광고 SDK/API 연동 관리",
+      "context_status": "matched",
+      "confluence_page_id": "191987714",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "pass_count": 4,
+      "fail_count": 0,
+      "checks": [
+        {"item": "execute + inapp 트래킹 정상 탑재 확인 내용 반영", "result": "PASS"},
+        {"item": "레퍼러 utm_source=pincrux&utm_medium=cpe 파라미터 포함", "result": "PASS"},
+        {"item": "W1 기존 경영지원실 메일정책 섹션 훼손 없음", "result": "PASS"},
+        {"item": "레퍼러 실테스트 환경 액션아이템 미완료 상태 표시", "result": "PASS"}
+      ],
+      "overall": "PASSED"
+    },
+    {
+      "task_id": "CBTJWKH0C_1546924092.027900",
+      "entity_name": "KT 엠모바일",
+      "project_name": "KT 엠모바일 유심칩 신청 캠페인 랜딩페이지 운영",
+      "context_status": "new",
+      "confluence_page_id": "192151605",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151605/KT+Media",
+      "pass_count": 3,
+      "fail_count": 0,
+      "checks": [
+        {"item": "APPKEY 100409 포함 여부", "result": "PASS"},
+        {"item": "pubkey 910058(전매체)/910070(콜채널) 분리 운영 명시", "result": "PASS"},
+        {"item": "엔티티 단일 페이지 구조(개요/운영히스토리/의사결정/액션아이템/FAQ/담당자)", "result": "PASS"}
+      ],
+      "overall": "PASSED"
+    },
+    {
+      "task_id": "CBT7G5RUN_1546935216.010500",
+      "entity_name": "저스텀",
+      "project_name": "저스텀 PC/모바일웹/Android SDK 매체 연동",
+      "context_status": "new",
+      "confluence_page_id": "192086020",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192086020/Media",
+      "pass_count": 2,
+      "fail_count": 0,
+      "checks": [
+        {"item": "PC/모바일웹/Android SDK 3개 매체 명시", "result": "PASS"},
+        {"item": "PUBKEY 생성 및 운영팀 인지 요청 내용 반영", "result": "PASS"}
+      ],
+      "overall": "PASSED"
+    },
+    {
+      "task_id": "CBTJWKH0C_1546937372.029300",
+      "entity_name": "교보라이프플래닛",
+      "project_name": "교보라이프플래닛 M저축 랜딩 운영",
+      "context_status": "new",
+      "confluence_page_id": "191954989",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191954989/Client",
+      "pass_count": 2,
+      "fail_count": 0,
+      "checks": [
+        {"item": "랜딩 URL 변경 전/후 명시 (m.lifeplanet.co.kr → randing.pincrux.com/kyobo/M/index.html)", "result": "PASS"},
+        {"item": "기존 심의 소재 기반 수정 명시", "result": "PASS"}
+      ],
+      "overall": "PASSED"
+    },
+    {
+      "task_id": "CBTJWKH0C_1547011040.031400",
+      "entity_name": "미래에셋대우",
+      "project_name": "미래에셋대우 캠페인 소재 운영 (OCB/네이버웹툰/네오위즈/한투증권)",
+      "context_status": "new",
+      "confluence_page_id": "191955009",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955009/Client",
+      "pass_count": 5,
+      "fail_count": 0,
+      "checks": [
+        {"item": "심사필 번호 제18-00088호, 유효기간 2019.01.09~2020.01.06 정확히 반영", "result": "PASS"},
+        {"item": "appkey:101913, pubkey:910264 수치 정확", "result": "PASS"},
+        {"item": "법인명 수정 (주)핀크럭스애드 → (주) 핀크럭스 반영", "result": "PASS"},
+        {"item": "2019-01-15 소재 수정 4개 항목 동일 페이지 통합", "result": "PASS"},
+        {"item": "한투×네오위즈 미완료 액션아이템 미체크 상태", "result": "PASS"}
+      ],
+      "overall": "PASSED"
+    },
+    {
+      "task_id": "CBT7G5RUN_1547082143.013100",
+      "entity_name": "인터파크 투어",
+      "project_name": "인터파크 투어 웹충전소 운영",
+      "context_status": "new",
+      "confluence_page_id": "191955029",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955029/Media",
+      "pass_count": 3,
+      "fail_count": 0,
+      "checks": [
+        {"item": "아파치 event MPM 환경설정 오류 원인 명시", "result": "PASS"},
+        {"item": "재발 방지 서버 배포 프로세스 점검 액션아이템 미완료 표시", "result": "PASS"},
+        {"item": "FAQ 섹션에 HTTP 500 트러블슈팅 내역 포함", "result": "PASS"}
+      ],
+      "overall": "PASSED"
+    },
+    {
+      "task_id": "CBU0PHP3P_1547522356.019600",
+      "entity_name": "이노클릭",
+      "project_name": "이노클릭 문자 서버 이전",
+      "context_status": "new",
+      "confluence_page_id": "192086040",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192086040/Media",
+      "pass_count": 2,
+      "fail_count": 0,
+      "checks": [
+        {"item": "발신자 번호 02-2055-1756 명시", "result": "PASS"},
+        {"item": "fopen → KSIDC 전환 방향 명시", "result": "PASS"}
+      ],
+      "overall": "PASSED"
+    },
+    {
+      "task_id": "CFCGF3CNQ_1547429903.001400",
+      "entity_name": "DB손해보험",
+      "project_name": "DB손해보험 자동차동호회 가입 이벤트 캠페인",
+      "context_status": "new",
+      "confluence_page_id": "191955049",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955049/DB+Client",
+      "pass_count": 3,
+      "fail_count": 0,
+      "checks": [
+        {"item": "이벤트 기간 1/14~1/31 명시", "result": "PASS"},
+        {"item": "카포인트 포함 전체 쪽지 발송 완료 반영", "result": "PASS"},
+        {"item": "2019-01-15 심의번호 삽입 내용 동일 페이지 통합", "result": "PASS"}
+      ],
+      "overall": "PASSED"
+    },
+    {
+      "task_id": "CBTJWKH0C_1547519342.048000",
+      "entity_name": "G9",
+      "project_name": "G9 트렌드트럭 오퍼월 캠페인",
+      "context_status": "new",
+      "confluence_page_id": "192053296",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192053296/G9+Client",
+      "pass_count": 2,
+      "fail_count": 0,
+      "checks": [
+        {"item": "트렌드트럭(원문: 트렌트트럭) 이벤트 페이지 참조 반영", "result": "PASS"},
+        {"item": "프리미엄 오픈 긴급 일정 맥락 반영", "result": "PASS"}
+      ],
+      "overall": "PASSED",
+      "note": "모으미 JSON에 'G9 트렌트트럭'으로 표기되어 있으나 실제 이벤트명은 'G9 트렌드트럭'(TrendTruck)임. 쓰미가 올바르게 'G9 트렌드트럭'으로 교정하여 반영함 — 맥락 왜곡 없음."
+    },
+    {
+      "task_id": "CBTJWKH0C_1547525990.050000",
+      "entity_name": "DB손해보험",
+      "project_name": "DB손해보험 자동차동호회 가입 이벤트 캠페인",
+      "context_status": "matched",
+      "confluence_page_id": "191955049",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955049/DB+Client",
+      "pass_count": 2,
+      "fail_count": 0,
+      "checks": [
+        {"item": "DB손해보험 소재 심의번호 삽입 액션아이템 완료 표시", "result": "PASS"},
+        {"item": "롯데멤버스/하나멤버스 심의번호 삽입 액션아이템 포함", "result": "PASS"}
+      ],
+      "overall": "PASSED"
+    }
+  ],
+  "summary": {
+    "total_validated": 14,
+    "passed": 14,
+    "failed": 0,
+    "warnings": 1
+  },
+  "warnings": [
+    {
+      "task_id": "CBTJWKH0C_1547519342.048000",
+      "type": "typo_correction",
+      "detail": "모으미 JSON의 '트렌트트럭'은 오타이며 실제 이벤트명 '트렌드트럭'(TrendTruck)으로 쓰미가 올바르게 교정함. 사실관계 왜곡 없음."
+    }
+  ]
+}

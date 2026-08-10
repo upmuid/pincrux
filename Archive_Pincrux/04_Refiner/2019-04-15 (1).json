@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.1",
+  "node": "refiner",
+  "run_date": "2019-04-15",
+  "run_mode": "backfill",
+  "period": "2019-04-02 to 2019-04-15",
+  "node_status": "success",
+  "refined_results": [
+    {
+      "task_id": "T001",
+      "entity_name": "KB손해보험",
+      "confluence_page_id": "192086208",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192086208/KB",
+      "refinement_applied": "구어체 없음. 문체 확인 완료. 비즈니스 문어체 유지.",
+      "published_at": "2026-07-02T01:20:00Z",
+      "verdict": "PUBLISHED"
+    },
+    {
+      "task_id": "T002",
+      "entity_name": "브이피",
+      "confluence_page_id": "196247560",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/196247560",
+      "refinement_applied": "구어체 없음. IP 처리 정책 결정 구조 명확. 비즈니스 문어체 유지.",
+      "published_at": "2026-07-02T01:20:00Z",
+      "verdict": "PUBLISHED"
+    },
+    {
+      "task_id": "T003",
+      "entity_name": "OCB",
+      "confluence_page_id": "196509697",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/196509697/OCB",
+      "refinement_applied": "구어체 없음. 운영 정책 2종 결정 항목 구분 명확. 비즈니스 문어체 유지.",
+      "published_at": "2026-07-02T01:20:00Z",
+      "verdict": "PUBLISHED"
+    },
+    {
+      "task_id": "T004",
+      "entity_name": "캐시비",
+      "confluence_page_id": "196542465",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/196542465",
+      "refinement_applied": "구어체 없음. AOS 탑재 결정 및 후속 일정 구조 명확. 비즈니스 문어체 유지.",
+      "published_at": "2026-07-02T01:20:00Z",
+      "verdict": "PUBLISHED"
+    },
+    {
+      "task_id": "T005",
+      "entity_name": "KT",
+      "confluence_page_id": "196575233",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/196575233/KT",
+      "refinement_applied": "구어체 없음. 기술 결정 6종 번호별 항목화 구조 명확. 비즈니스 문어체 유지.",
+      "published_at": "2026-07-02T01:20:00Z",
+      "verdict": "PUBLISHED"
+    },
+    {
+      "task_id": "T006",
+      "entity_name": "페이앤드",
+      "confluence_page_id": "192053250",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192053250",
+      "refinement_applied": "구어체 없음. 인터파크 연동 기능 4종 리소스 검토 및 합의 방향 명확. 비즈니스 문어체 유지.",
+      "published_at": "2026-07-02T01:20:00Z",
+      "verdict": "PUBLISHED"
+    },
+    {
+      "task_id": "T007",
+      "entity_name": "미래에셋대우",
+      "confluence_page_id": "191955009",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955009",
+      "refinement_applied": "구어체 없음. 심의번호 수치·유효기간 볼드 처리 확인. 비즈니스 문어체 유지.",
+      "published_at": "2026-07-02T01:20:00Z",
+      "verdict": "PUBLISHED"
+    },
+    {
+      "task_id": "T008",
+      "entity_name": "하나멤버스",
+      "confluence_page_id": "192151700",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151700",
+      "refinement_applied": "구어체 없음. 6개사 목록 및 유효기간 수치 정확. 비즈니스 문어체 유지.",
+      "published_at": "2026-07-02T01:20:00Z",
+      "verdict": "PUBLISHED"
+    },
+    {
+      "task_id": "T009",
+      "entity_name": "모바일팝",
+      "confluence_page_id": "196608001",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/196608001",
+      "refinement_applied": "구어체 없음. appkey/pubkey 목록 정확. 비즈니스 문어체 유지.",
+      "published_at": "2026-07-02T01:20:00Z",
+      "verdict": "PUBLISHED"
+    }
+  ],
+  "summary": {
+    "total_tasks": 9,
+    "published": 9,
+    "failed": 0
+  }
+}

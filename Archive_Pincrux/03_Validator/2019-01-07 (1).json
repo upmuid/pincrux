@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.1",
+  "node": "validator",
+  "run_date": "2019-01-07",
+  "source_files": {
+    "collector": "Archive_Pincrux/01_Collector/2019-01-07.json",
+    "writer": "Archive_Pincrux/02_Writer/2019-01-07.json"
+  },
+  "node_status": "success",
+  "review_summary": {
+    "total_reviewed": 5,
+    "passed_cnt": 5,
+    "failed_cnt": 0,
+    "slack_reread_cnt": 0
+  },
+  "validation_results": [
+    {
+      "task_id": "T1",
+      "target_name": "PINCRUX",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "경영지원실 운영메일 정책(tax@pincrux.com, hsw@pincrux.com) 양 이메일 주소 및 적용 기준일(2019년 1월, 12월 정산분)이 모으미 JSON과 정확히 일치. 팀/조직 현황 섹션 내 테이블로 구조화됨. 프로젝트 히스토리에 T1·T4·T5 이벤트 모두 타임라인 순서로 기록됨. 구어체 잔재 없음. action_items 2개 모두 테이블로 반영 완료."
+    },
+    {
+      "task_id": "T2",
+      "target_name": "페이앤드 > 페이앤드 앱 구매할인 기능 개발",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192118785",
+      "confluence_page_id": "192118785",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "action_items 3개(앱 UI 자유 변경, 1월 중순 업데이트 목표, 결제 비밀번호 정책 최종 결정) 모두 체크리스트로 기록됨. iOS 비밀번호 미적용 결정 사항이 '목적 및 배경' 섹션에 명시됨. 구어체 잔재 없음. 계층: 페이앤드 (Client) Root(192053250) 하위 배치 확인. 단, '의사결정 사항' 섹션에 내용 없는 빈 DECIDED 리스트 항목 존재 — 팩트 왜곡은 아니나 다시쓰미(v4) 교정 필요.",
+      "refiner_note": "의사결정 사항 섹션의 빈 DECIDED 항목 제거 또는 실제 결정 내용 채워 넣기 교정 필요"
+    },
+    {
+      "task_id": "T3",
+      "target_name": "페이앤드 > 페이앤드 앱 Google Play 정책 대응",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151553/Google+Play",
+      "confluence_page_id": "192151553",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "action_items 3개(프로덕션 APK 내부 테스트 트랙 업로드 1/9 데드라인, com.payand.user·com.payand.owner 보안 경고 해소, 이전 버전 APK 경고 최종 확인) 모두 태스크 리스트로 정확히 기록됨. APK 버전 상세(com.payand.user v10/경고 v7, com.payand.owner v9/경고 v6)가 FAQ 테이블에 정확히 기록됨. 데드라인 2019-01-09 명시됨. 계층: 페이앤드 (Client) Root(192053250) 하위 배치 확인. 단, '의사결정 사항' 섹션에 내용 없는 빈 DECIDED 리스트 항목 2개 존재 — 다시쓰미(v4) 교정 필요.",
+      "refiner_note": "의사결정 사항 섹션의 빈 DECIDED 항목 2개 제거 또는 실제 결정 내용(SMS Retriever 방식 전환 결정, Google Play 지원팀 안내 절차 채택) 채워 넣기 교정 필요"
+    },
+    {
+      "task_id": "T4",
+      "target_name": "PINCRUX > 핀크럭스 광고 플랫폼 클릭/포스트백 연동",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191954947",
+      "confluence_page_id": "191954947",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "클릭 연동(핀크럭스→광고주) 및 포스트백 연동(광고주→핀크럭스) 양방향 구조가 '목적 및 배경' 섹션에 명확히 기술됨. 모으미 JSON의 action_items가 빈 배열([])이므로 Confluence '현재 등록된 액션 아이템 없음' 표기는 정상. 슬랙 채널(#01_문서공유) 및 최초 기록일(2019-01-03) 일치. 계층: PINCRUX Root(191987714) 하위 배치 확인. 단, '의사결정 사항' 섹션에 내용 없는 빈 DECIDED 리스트 항목 존재 — 다시쓰미(v4) 교정 필요.",
+      "refiner_note": "의사결정 사항 섹션의 빈 DECIDED 항목 제거 교정 필요"
+    },
+    {
+      "task_id": "T5",
+      "target_name": "PINCRUX > 핀크럭스 광고 SDK/API 연동 관리",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151574/SDK+API",
+      "confluence_page_id": "192151574",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "action_items 2개(SDK/API 연동 문서 링크 외부 반출 금지 준수, 서버 이전 및 연동 점검 시 해당 문서 참조) 모두 체크리스트로 기록됨. 외부 반출 금지 보안 경고가 '보안 주의' 볼드체 및 보안 등급 Status 로젠지로 강조 표시됨. 슬랙 채널(#99_개발문서공유) 및 최초 기록일(2019-01-07) 일치. 계층: PINCRUX Root(191987714) 하위 배치 확인. '의사결정 사항' 섹션 빈 상태는 원본 JSON에 decision 필드 없음에서 기인하며 팩트 오류 아님.",
+      "refiner_note": "의사결정 사항 섹션 빈 상태 교정(빈 섹션 제거 또는 문서화 완료 결정 사항 명시) 필요"
+    }
+  ],
+  "coo_advisory": {
+    "payand_duplicate_risk": {
+      "severity": "MEDIUM",
+      "existing_page_id": "189300769",
+      "existing_page_title": "페이앤드",
+      "existing_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/189300769",
+      "new_root_page_id": "192053250",
+      "new_root_page_title": "페이앤드 (Client)",
+      "new_root_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192053250/Client",
+      "assessment": "기존 189300769 '페이앤드' 페이지(Client > Product, 2026-06-25 등록)는 쓰미가 훼손하지 않음 — Overwrite 에러 없음. 단, 기존 페이지에 구매할인 UI 변경·JS 오류/SMS 정책 위반 해결·iOS TestFlight 등 다수 이슈가 통합 기록되어 있으며, 이번 백필로 생성된 T2(192118785) 및 T3(192151553)와 일부 내용(구매할인 UI, SMS 정책 위반 대응)이 중복됨. 두 페이지 구조가 병존할 경우 향후 독자 혼란 가능성이 있음.",
+      "recommendation": "총총(COO) 판단 요청: (1) 기존 189300769를 192053250 하위로 이전하거나 내용을 T2·T3로 분리 통합하는 정리 작업, 또는 (2) 기존 페이지에 '이 페이지는 통합 이슈 기록 페이지이며 세부 프로젝트는 하위 페이지 참조' 안내 추가 방향 검토 권고."
+    },
+    "refiner_items_summary": "T2·T3·T4·T5 총 4개 페이지의 '의사결정 사항' 섹션에 빈 DECIDED 리스트 항목이 잔존함. 팩트 오류는 아니나 마크다운 렌더링 품질 저하 요소이므로 다시쓰미(v4)가 일괄 교정할 것."
+  }
+}

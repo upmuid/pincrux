@@ -1,7 +1,7 @@
 ---
 document: 노드 간 데이터 교환 인터페이스 — 공통 규격
-version: 1.0.0
-last_updated: 2026-07-20
+version: 1.1.0
+last_updated: 2026-08-10
 owner: 총총(COO)
 ---
 
@@ -77,9 +77,12 @@ Archive_Pincrux/
   "run_date": "YYYY-MM-DD",
   "status": "fail",
   "message": "구체적 오류 사유",
-  "failed_at_step": "데이터 로드 / 컨플루언스 탐색 / 페이지 업데이트 / ..."
+  "failed_at_step": "데이터 로드 / 컨플루언스 탐색 / 페이지 업데이트 / ...",
+  "completed_task_ids": ["T001", "T002"]
 }
 ```
+
+> `completed_task_ids` (2026-08-10 신설, nullable): 쓰미처럼 여러 task를 순차 처리하는 노드가 일부만 처리한 상태에서 실패했을 때, 그 시점까지 Confluence 반영이 이미 끝난 task_id를 기록한다. 총총이 재시도를 지시할 때 이 목록을 제외한 나머지 task만 처리하도록 하여 중복 반영을 방지한다(v0_coo.md 4-B절 "노드 실행 실패 복구 절차" 참조). 해당 없으면(전혀 처리 못하고 실패, 또는 단일 task 노드) `null` 또는 필드 생략.
 
 ### 핵심 제약
 - 각 노드는 **자신의 입력 파일 경로를 직접 읽는다.** 총총이가 데이터를 복사해 전달하지 않는다.

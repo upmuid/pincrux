@@ -1,0 +1,305 @@
+{
+  "schema_version": "1.1",
+  "node": "collector",
+  "run_mode": "backfill",
+  "period": "2019-01-22 to 2019-02-18",
+  "run_date": "2026-06-28",
+  "status": "success",
+  "thread_count": 12,
+  "data_summaries": [
+    {
+      "task_id": "T001",
+      "thread_id": "CBT7G5RUN_1548140288.040300",
+      "channel": "#02_pincrux_매체사업무",
+      "channel_id": "CBT7G5RUN",
+      "timestamp": "2019-01-22T15:58:08+09:00",
+      "participants": ["[PII_REDACTED]<ad@pincrux.com>", "[PII_REDACTED]<peter@pincrux.com>", "[PII_REDACTED]<bliss@pincrux.com>", "[PII_REDACTED]<emily@pincrux.com>", "[PII_REDACTED]<tom@pincrux.com>"],
+      "major_category": "In-house",
+      "minor_category": "Product",
+      "context_status": "matched",
+      "context_reference": "PINCRUX 내부 비즈니스 모델 및 신규 광고 상품 기획 회의. 무료충전소 사업 모델(충전소 이용 고객 15% 유료 전환), 경쟁사(트릴리언/서베이) 탐재 사례, 탑재 영역 추천, 개발 예상 기간, 전략적 상품 개발(자사 및 설문형 광고 상품) 내용 포함.",
+      "entity_name": "PINCRUX",
+      "project_name": "PINCRUX 신규 광고 상품 기획",
+      "page_scope": "child",
+      "issue_title": "금주 매체사 미팅 결과 및 신규 광고 상품 기획 내용 공유",
+      "summary": "무료충전소 비즈니스 모델 설명 및 신규 광고 상품(자사형·설문조사형) 개발 방향 논의. 개발 예상 기간 및 오픈 일정 TBD.",
+      "decision": "무료충전소 탑재 영역 추천 방향 확정. 자사·설문조사형 광고 상품 개발 착수 방향 결정.",
+      "action_items": [
+        "무료충전소 사업 모델 기반 광고 상품 개발 일정 확정",
+        "탑재 영역 추천 및 신규 상품 스펙 정리 후 공유"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBT7G5RUN/p1548140288040300"
+    },
+    {
+      "task_id": "T002",
+      "thread_id": "CBU0PHP3P_1548207817.051200",
+      "channel": "#03_pincrux_개발업무",
+      "channel_id": "CBU0PHP3P",
+      "timestamp": "2019-01-23T10:43:37+09:00",
+      "participants": ["[PII_REDACTED]<ad@pincrux.com>", "[PII_REDACTED]<emily@pincrux.com>", "[PII_REDACTED]<bliss@pincrux.com>", "[PII_REDACTED]<peter@pincrux.com>", "[PII_REDACTED]<tom@pincrux.com>"],
+      "major_category": "In-house",
+      "minor_category": "Product",
+      "context_status": "matched",
+      "context_reference": "PINCRUX 백엔드팀 업무 플로우 정비. 주간 업무 보고 구글 스프레드시트 실시간 관리, 개발 노트(트렌디 기술 적용·문제 해결·셋업/사용법) 체계화 방향 공유. github/notion/velog 모델 검토 중.",
+      "entity_name": "PINCRUX",
+      "project_name": "PINCRUX 개발팀 업무 프로세스 정비",
+      "page_scope": "child",
+      "issue_title": "백엔드팀 업무 플로우 및 개발 노트 관리 정책 수립",
+      "summary": "백엔드팀 주간 업무 보고 실시간 관리 및 개발 노트(기술 적용·문제 해결·셋업) 체계화 방향 결정.",
+      "decision": "주간 업무 보고를 구글 스프레드시트로 실시간 관리. 개발 노트는 github/notion/velog 중 범용 모델로 결정 예정.",
+      "action_items": [
+        "개발팀 전원 구글 스프레드시트 주간 업무 기록 유지 (완료 항목 실시간 표시)",
+        "개발 노트 플랫폼(github/notion/velog) 최종 결정 후 적용"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBU0PHP3P/p1548207817051200"
+    },
+    {
+      "task_id": "T003",
+      "thread_id": "CBU0PHP3P_1548210576.054200",
+      "channel": "#03_pincrux_개발업무",
+      "channel_id": "CBU0PHP3P",
+      "timestamp": "2019-01-23T11:29:36+09:00",
+      "participants": ["[PII_REDACTED]<emily@pincrux.com>", "[PII_REDACTED]<frank@pincrux.com>", "[PII_REDACTED]<peter@pincrux.com>", "[PII_REDACTED]<bliss@pincrux.com>", "[PII_REDACTED]<jack@pincrux.com>"],
+      "major_category": "In-house",
+      "minor_category": "Product",
+      "context_status": "matched",
+      "context_reference": "PINCRUX CS 확인 시스템(cs.pincrux.com) 기능 추가 배포. 기존 클릭 값 추출(핀키 전체) + 신규 핀키 값 추출(가장 최근 핀키 추출) 기능 이원화. 운영팀 요청으로 개발 완료. 협력사 adid 대량 수동지급 시 최근 핀키 필요 케이스 대응.",
+      "entity_name": "PINCRUX",
+      "project_name": "핀크럭스 CS 시스템(cs.pincrux.com) 기능 개선",
+      "page_scope": "child",
+      "issue_title": "cs.pincrux.com 핀키 값 추출 기능 신규 추가 배포",
+      "summary": "cs.pincrux.com에 핀키 값 추출(최근 핀키) 기능 추가 배포. 협력사 adid 대량 수동지급 운영 효율화 목적.",
+      "decision": "신규 핀키 값 추출 기능 배포 완료. 운영팀에서 사용 후 이상 사항 스레드 기록 요청.",
+      "action_items": [
+        "cs.pincrux.com 신규 핀키 값 추출 기능 사용 후 이상 사항 스레드 기록",
+        "appkey 101552 한캠페인 adid 추출 결과(290개 중 184건 확인) 불일치 원인 파악"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBU0PHP3P/p1548210576054200"
+    },
+    {
+      "task_id": "T004",
+      "thread_id": "CBTGBP78F_1548202633.068700",
+      "channel": "#09_project_페이앤드",
+      "channel_id": "CBTGBP78F",
+      "timestamp": "2019-01-23T09:17:13+09:00",
+      "participants": ["[PII_REDACTED]<mason@pincrux.com>", "[PII_REDACTED]<eric@pincrux.com>", "[PII_REDACTED]<ad@pincrux.com>", "[PII_REDACTED]<jerry@pincrux.com>", "[PII_REDACTED]<tom@pincrux.com>"],
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "페이앤드, 앱스토어 3번째 리젝, QR코드 미제공 사유, 재심사 준비",
+      "entity_name": "페이앤드",
+      "project_name": "페이앤드 앱 iOS 출시 준비",
+      "page_scope": "child",
+      "issue_title": "페이앤드 iOS 앱 앱스토어 3차 리젝 — QR코드 URL 미제공",
+      "summary": "페이앤드 iOS 앱 앱스토어 3차 리젝. 사유: QR코드 URL 미제공. QR코드 URL 첨부 후 재심사 제출 예정. 관리자 페이지 공지사항·배너·등록 사용점 정보 정비 필요.",
+      "decision": "QR코드 URL 첨부하여 재심사 제출. 심사 결과 금요일 예상.",
+      "action_items": [
+        "페이앤드 iOS 앱 QR코드 URL 첨부 후 앱스토어 재심사 제출",
+        "관리자 공지사항·배너 이미지·배너 URL·등록 사용점 정보(사진·키워드) 정비"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTGBP78F/p1548202633068700"
+    },
+    {
+      "task_id": "T005",
+      "thread_id": "CBTGBP78F_1548289896.070700",
+      "channel": "#09_project_페이앤드",
+      "channel_id": "CBTGBP78F",
+      "timestamp": "2019-01-24T09:31:36+09:00",
+      "participants": ["[PII_REDACTED]<mason@pincrux.com>", "[PII_REDACTED]<eric@pincrux.com>", "[PII_REDACTED]<ad@pincrux.com>", "[PII_REDACTED]<jerry@pincrux.com>", "[PII_REDACTED]<tom@pincrux.com>"],
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "페이앤드 iOS 앱스토어 검수 통과, 릴리즈 대기",
+      "entity_name": "페이앤드",
+      "project_name": "페이앤드 앱 iOS 출시 준비",
+      "page_scope": "child",
+      "issue_title": "페이앤드 iOS 앱 앱스토어 검수 통과 — 릴리즈 대기",
+      "summary": "페이앤드 iOS 앱이 앱스토어 검수를 통과함. 오더 시 즉시 릴리즈 가능 상태.",
+      "decision": "iOS 앱 앱스토어 검수 통과. 오더 접수 즉시 릴리즈 진행.",
+      "action_items": [
+        "페이앤드 iOS 앱 릴리즈 오더 접수 및 즉시 배포"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTGBP78F/p1548289896070700"
+    },
+    {
+      "task_id": "T006",
+      "thread_id": "CBTGBP78F_1548295787.073000",
+      "channel": "#09_project_페이앤드",
+      "channel_id": "CBTGBP78F",
+      "timestamp": "2019-01-24T11:09:47+09:00",
+      "participants": ["[PII_REDACTED]<mason@pincrux.com>", "[PII_REDACTED]<eric@pincrux.com>", "[PII_REDACTED]<ad@pincrux.com>", "[PII_REDACTED]<jerry@pincrux.com>", "[PII_REDACTED]<tom@pincrux.com>"],
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "페이앤드 Android 버그 수정 버전 릴리즈, iOS 검수 대기 중",
+      "entity_name": "페이앤드",
+      "project_name": "페이앤드 앱 iOS 출시 준비",
+      "page_scope": "child",
+      "issue_title": "페이앤드 Android 버그 수정 버전 릴리즈 및 iOS 검수 대기",
+      "summary": "iOS 검수 통과에 맞춰 Android도 그간 버그 수정 버전 릴리즈(사용자·사용점). Android 새 버전 오후 마켓 노출 예정. iOS는 계속 검수 대기 중.",
+      "decision": "Android 버그 수정 버전 동시 릴리즈. iOS는 검수 통과 후 릴리즈.",
+      "action_items": [
+        "페이앤드 Android 신규 버전(사용자·사용점) 마켓 배포 확인",
+        "페이앤드 iOS 검수 결과 모니터링"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTGBP78F/p1548295787073000"
+    },
+    {
+      "task_id": "T007",
+      "thread_id": "CBTGBP78F_1548304949.083000",
+      "channel": "#09_project_페이앤드",
+      "channel_id": "CBTGBP78F",
+      "timestamp": "2019-01-24T13:42:29+09:00",
+      "participants": ["[PII_REDACTED]<ad@pincrux.com>", "[PII_REDACTED]<test@pincrux.com>", "[PII_REDACTED]<mason@pincrux.com>"],
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "페이앤드 앱 이용약관·개인취급방침 파일 구버전 적용 확인, git 기반 수정 요청",
+      "entity_name": "페이앤드",
+      "project_name": "페이앤드 앱 iOS 출시 준비",
+      "page_scope": "child",
+      "issue_title": "페이앤드 앱 이용약관·개인정보취급방침 최신 버전 교체",
+      "summary": "페이앤드 앱에 적용된 이용약관·개인취급방침이 구버전(2018.12.13)으로 확인됨. 서정철 팀장 정리 최신 파일로 교체 요청. git 방식으로 local 수정 후 전달 원칙 재확인.",
+      "decision": "최신 약관 파일(사용자 이용약관 V1.0, 사용점 이용약관 V1.1, 개인정보처리방침 V1.0.2)로 교체. 서버 직접 수정 절대 금지.",
+      "action_items": [
+        "페이앤드 앱 이용약관·개인정보처리방침 최신 파일로 git 방식 교체 반영",
+        "기존 적용 파일 구조 확인 후 동일 구조로 변경 처리"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTGBP78F/p1548304949083000"
+    },
+    {
+      "task_id": "T008",
+      "thread_id": "CBTGBP78F_1548319111.089100",
+      "channel": "#09_project_페이앤드",
+      "channel_id": "CBTGBP78F",
+      "timestamp": "2019-01-24T17:38:31+09:00",
+      "participants": ["[PII_REDACTED]<mason@pincrux.com>", "[PII_REDACTED]<eric@pincrux.com>", "[PII_REDACTED]<ad@pincrux.com>", "[PII_REDACTED]<jerry@pincrux.com>", "[PII_REDACTED]<tom@pincrux.com>"],
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "페이앤드 iOS 앱 앱스토어 정식 출시",
+      "entity_name": "페이앤드",
+      "project_name": "페이앤드 앱 iOS 출시 준비",
+      "page_scope": "child",
+      "issue_title": "페이앤드 iOS 앱 앱스토어 정식 출시 완료",
+      "summary": "페이앤드 iOS 앱이 앱스토어에 정상 출시됨.",
+      "decision": "페이앤드 iOS 앱 앱스토어 정식 출시 완료 확인.",
+      "action_items": [
+        "페이앤드 iOS 앱스토어 출시 완료 전 관계자 공유",
+        "출시 후 이슈 모니터링 시작"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTGBP78F/p1548319111089100"
+    },
+    {
+      "task_id": "T009",
+      "thread_id": "CBTGBP78F_1548387956.093500",
+      "channel": "#09_project_페이앤드",
+      "channel_id": "CBTGBP78F",
+      "timestamp": "2019-01-25T12:45:56+09:00",
+      "participants": ["[PII_REDACTED]<mason@pincrux.com>", "[PII_REDACTED]<jerry@pincrux.com>", "[PII_REDACTED]<ad@pincrux.com>", "[PII_REDACTED]<test@pincrux.com>", "[PII_REDACTED]<tom@pincrux.com>"],
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "new",
+      "context_reference": "페이앤드 iOS 사용점 앱 개발 일정 및 원소스 방식 공유. 기존 사용자용 iOS 출시 완료 후 신규 사용점 iOS 개발 착수.",
+      "entity_name": "페이앤드",
+      "project_name": "페이앤드 사용점 iOS 앱 개발",
+      "page_scope": "child",
+      "issue_title": "페이앤드 iOS 사용점 앱 개발 일정 및 방식 공유",
+      "summary": "페이앤드 iOS 사용점 앱 개발 일정 공유 (+1주 추가 소요 가능). Android와 동일하게 원소스 방식으로 개발 진행.",
+      "decision": "페이앤드 iOS 사용점 앱 개발 원소스 방식으로 착수. 일정은 최대 +1주 여유 확보.",
+      "action_items": [
+        "페이앤드 iOS 사용점 앱 개발 일정 확정 및 팀 내 공유",
+        "원소스 방식 개발 환경 셋업 확인"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTGBP78F/p1548387956093500"
+    },
+    {
+      "task_id": "T010",
+      "thread_id": "CBTGBP78F_1548755774.107300",
+      "channel": "#09_project_페이앤드",
+      "channel_id": "CBTGBP78F",
+      "timestamp": "2019-01-29T18:56:14+09:00",
+      "participants": ["[PII_REDACTED]<4004sj@naver.com>", "[PII_REDACTED]<eric@pincrux.com>", "[PII_REDACTED]<mason@pincrux.com>"],
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "new",
+      "context_reference": "페이앤드 첫 회원사 오픈일 변경 (3/4 → 2/18 최종 확정). 직원 적응 기간 촉박 및 중간 장부 정산 이슈로 한 달 연기. 2월 장부 사용 후 2/18부터 페이앤드 정식 사용.",
+      "entity_name": "페이앤드",
+      "project_name": "페이앤드 첫 회원사 오픈 준비 (데이브레이크게임즈)",
+      "page_scope": "child",
+      "issue_title": "페이앤드 첫 회원사(데이브레이크게임즈) 오픈일 2/18로 최종 확정",
+      "summary": "페이앤드 첫 회원사 데이브레이크게임즈 오픈일이 3/4에서 2/18(월)로 최종 변경. 2/1~2/17은 장부 사용, 2/18 이후 페이앤드 정식 사용. 2월 분 청구는 장부+페이앤드 혼합으로 처리.",
+      "decision": "페이앤드 첫 회원사 오픈일 2019-02-18 확정. 버그·오류 수정 및 신규 마케팅 진행 병행.",
+      "action_items": [
+        "페이앤드 2/18 오픈 전 버그·오류 수정 작업 완료",
+        "2/1 이후 페이앤드 병행 사용(테스트) 진행",
+        "데이터 초기화 2/17 진행 예정 — 별도 통보"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBTGBP78F/p1548755774107300"
+    },
+    {
+      "task_id": "T011",
+      "thread_id": "CFCGF3CNQ_1548836725.006200",
+      "channel": "#99_db손해보험업무",
+      "channel_id": "CFCGF3CNQ",
+      "timestamp": "2019-01-30T17:25:25+09:00",
+      "participants": ["[PII_REDACTED]<frank@pincrux.com>", "[PII_REDACTED]<peter@pincrux.com>"],
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "DB손해보험 자동차동호회 10일 갱신 리스트 전달. 2월 10일이 일요일이므로 입금은 2월 8일(금) 진행 예정. 광고주 확인 요청.",
+      "entity_name": "DB손해보험",
+      "project_name": "DB손해보험 자동차동호회 가입 이벤트 캠페인",
+      "page_scope": "child",
+      "issue_title": "DB손해보험 자동차동호회 10일 갱신 리스트 전달 및 입금 일정 조율",
+      "summary": "DB손해보험 자동차동호회 가입 이벤트 10일 갱신 리스트 전달. 2/10(일요일)이라 입금은 2/8(금) 진행. 광고주 측 확인 요청.",
+      "decision": "갱신 리스트 전달 완료. 입금일 2/8(금)으로 협의.",
+      "action_items": [
+        "DB손해보험 자동차동호회 10일 갱신 리스트 광고주 확인 요청",
+        "2/8(금) 입금 일정 광고주 컨펌 확보"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CFCGF3CNQ/p1548836725006200"
+    },
+    {
+      "task_id": "T012",
+      "thread_id": "CFCGF3CNQ_1550217853.003600",
+      "channel": "#99_db손해보험업무",
+      "channel_id": "CFCGF3CNQ",
+      "timestamp": "2019-02-15T17:04:13+09:00",
+      "participants": ["[PII_REDACTED]<peter@pincrux.com>", "[PII_REDACTED]<hill@pincrux.com>"],
+      "major_category": "Client",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "DB손해보험 배너 소재 수정 요청. 색상 전체 검정색 변경, CI와 본문 사이 세로 사선 추가, DB손해보험 다이렉트 초록색 박스 추가, 페이지 보험료추가절약하기 팁 삭제 후 블랙박스특약 → 안전운전특약으로 변경.",
+      "entity_name": "DB손해보험",
+      "project_name": "DB손해보험 자동차동호회 가입 이벤트 캠페인",
+      "page_scope": "child",
+      "issue_title": "DB손해보험 배너 소재 및 랜딩 페이지 수정 요청",
+      "summary": "DB손해보험 배너 소재 수정 요청(색상·CI 사선·다이렉트 초록 박스) 및 랜딩 페이지 문구 수정(안전운전특약으로 변경).",
+      "decision": "배너·랜딩 수정 후 슬랙으로 요청, 결과물 스레드 답변 원칙 확인.",
+      "action_items": [
+        "DB손해보험 배너 소재 전체 검정색·CI 사선·다이렉트 초록 박스 수정",
+        "DB손해보험 랜딩 페이지 '보험료추가절약하기 팁' 삭제, 블랙박스특약 → 안전운전특약 변경"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CFCGF3CNQ/p1550217853003600"
+    }
+  ],
+  "collection_meta": {
+    "channels_found": [
+      "#02_pincrux_매체사업무 (CBT7G5RUN)",
+      "#03_pincrux_개발업무 (CBU0PHP3P)",
+      "#03_pincrux_디자인업무 (CBTJWKH0C)",
+      "#09_project_페이앤드 (CBTGBP78F)",
+      "#99_db손해보험업무 (CFCGF3CNQ)"
+    ],
+    "total_slack_messages_scanned": 280,
+    "filtered_out": 230,
+    "note": "기간: 2019-01-22 ~ 2019-02-18 (4주, W4~W7). 단순 확인 응답('네', '감사합니다', '수정완료'), 빈 메시지, 이모지 반응, 단순 소재 제작 의뢰(디자인 작업 지시 단건) 및 완료 확인 메시지 필터링. 기존 엔티티(matched): 페이앤드, PINCRUX, DB손해보험, 미래에셋대우. 신규 엔티티 추가 없음. 미래에셋대우 소재 관련 스레드(디자인업무 채널)는 소재 제작 지시 수준으로 단순 디자인 작업 요청에 해당하여 task_id 미부여 후 필터링 처리. 몰테일 매체사 제휴 API 연동 논의는 내용 불완전(일정 TBD)으로 uncategorized 처리."
+  },
+  "uncategorized": [
+    {
+      "raw_text": "몰테일 매체사 LIST API 연동 미팅 내용 공유 (2019-01-24, #03_pincrux_개발업무). 탑재 OS: Android/iOS, 개발 일정 TBD, CS API 포함 연동 문서 편집 논의.",
+      "reason": "개발 일정 및 오픈 예상 일정 미확정(TBD). 신규 엔티티 판단이나 핵심 의사결정 및 확정 사항 없음. 확정 후 재분류 요청."
+    }
+  ]
+}

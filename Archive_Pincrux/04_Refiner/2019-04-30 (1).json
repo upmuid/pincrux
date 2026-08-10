@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.1",
+  "node": "refiner",
+  "run_date": "2019-04-30",
+  "source_file": "Archive_Pincrux/03_Validator/2019-04-30.json",
+  "node_status": "success",
+  "published_at": "2026-07-02T01:34:07Z",
+  "refine_summary": {
+    "total_published": 6,
+    "pages_updated": 6,
+    "skipped": 1
+  },
+  "published_pages": [
+    {
+      "task_id": "T001",
+      "task_id_ref": "T002",
+      "target_name": "오퍼월 > 오퍼월 플랫폼 운영",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151821",
+      "confluence_page_id": "192151821",
+      "action_taken": "merged_into_existing",
+      "version_after": 4,
+      "published_at": "2026-07-02T01:32:31Z",
+      "polish_notes": "구어체 종결어미 전면 교정. 의사결정 사항 볼드 강조. 액션 아이템 체크리스트 구조화. SDK 릴리스 이력 및 Framework Release 가이드 배포 이력 모두 포함."
+    },
+    {
+      "task_id": "T003",
+      "target_name": "KT > KT 클립 미니충전소",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/196575233",
+      "confluence_page_id": "196575233",
+      "action_taken": "merged_into_existing",
+      "version_after": 4,
+      "published_at": "2026-07-02T01:32:59Z",
+      "polish_notes": "iOS/Android 일정 DECIDED/UNDECIDED 명확 구분. 의사결정 사항 볼드 강조. 구어체 완전 제거."
+    },
+    {
+      "task_id": "T004",
+      "target_name": "캐시비 > 캐시비 충전소 연동",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/196542465",
+      "confluence_page_id": "196542465",
+      "action_taken": "merged_into_existing",
+      "version_after": 4,
+      "published_at": "2026-07-02T01:33:28Z",
+      "polish_notes": "4/9 초기 결정 이력과 4/22~24 미팅 결과 히스토리 시계열 구조화. UI 확정 사항 볼드 강조. 액션 아이템 완료/미완료 체크리스트 명확 분리."
+    },
+    {
+      "task_id": "T005",
+      "target_name": "해피머니",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/196870145",
+      "confluence_page_id": "196870145",
+      "action_taken": "created_new",
+      "version_after": 2,
+      "published_at": "2026-07-02T01:33:40Z",
+      "polish_notes": "매체코드 2종 볼드 강조. 이슈 원인(포인트 단위 설정 누락) 명확 기술. FAQ에 재발 방지 가이드 구조화."
+    },
+    {
+      "task_id": "T006",
+      "target_name": "미스터블루",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/196902913",
+      "confluence_page_id": "196902913",
+      "action_taken": "created_new",
+      "version_after": 2,
+      "published_at": "2026-07-02T01:33:50Z",
+      "polish_notes": "연동 착수 결정 및 이메일 기준 진행 확정 이력 문어체 완전 교정. 향후 세부 스펙 추가 업데이트 여지 확보."
+    },
+    {
+      "task_id": "T007",
+      "target_name": "메리츠화재 > 메리츠화재 포스트백 보험",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/196935681",
+      "confluence_page_id": "196935681",
+      "action_taken": "created_new",
+      "version_after": 2,
+      "published_at": "2026-07-02T01:34:07Z",
+      "polish_notes": "앱키, 유저 식별 3종, 팝업 구성 볼드 강조. 의사결정 4건 시계열 배치. 액션 아이템 담당자별 명확 분리."
+    }
+  ],
+  "skipped_tasks": [
+    {
+      "task_id": "T008",
+      "reason": "validator 단계에서 검증 대상 미포함 (writer 단계에서 inquiry + 엔티티 페이지 미존재로 skipped)"
+    }
+  ]
+}

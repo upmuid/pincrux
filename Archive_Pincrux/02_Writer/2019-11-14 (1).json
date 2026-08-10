@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.1",
+  "node": "writer",
+  "run_date": "2019-11-14",
+  "source_file": "Archive_Pincrux/01_Collector/2019-11-14.json",
+  "node_status": "success",
+  "processed_tasks": [
+    {
+      "task_id": "T001",
+      "entity_name": "KB증권",
+      "project_name": "롯데홈쇼핑",
+      "page_scope": "child",
+      "target_name": "KB증권 > 롯데홈쇼핑",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/198279169/KB",
+      "confluence_page_id": "198279169",
+      "updated_sections": [
+        "KB증권 롯데홈쇼핑 랜딩 사이즈 반복 불일치 및 11월 캠페인 미집행 위기 (2019-11)"
+      ]
+    },
+    {
+      "task_id": "T002",
+      "entity_name": "KB증권",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "KB증권",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/198279169/KB",
+      "confluence_page_id": "198279169",
+      "updated_sections": [
+        "KB증권 네이버페이·카카오페이 채널 운영주체 전환(핀크럭스 재위탁) (2019-11)"
+      ]
+    },
+    {
+      "task_id": "T003",
+      "entity_name": "미래에셋대우",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "미래에셋대우",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955009",
+      "confluence_page_id": "191955009",
+      "updated_sections": [
+        "미래에셋대우 11월 1일 캠페인 라이브 매체수 감소 우려 및 심의 진행 경과 (2019-10) — 운영 히스토리/의사결정 사항/액션 아이템에 11-04 카카오페이·캐시슬라이드 후속 항목 이어붙임 (신규 섹션 생성 없음)"
+      ]
+    },
+    {
+      "task_id": "T004",
+      "entity_name": "PINCRUX",
+      "project_name": "멤버십 팬 서비스(CJE&M·다이아)",
+      "page_scope": "child",
+      "target_name": "PINCRUX > 멤버십 팬 서비스(CJE&M·다이아)",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "updated_sections": [
+        "PINCRUX 멤버십 팬 서비스(CJE&M·다이아) 기획 (2019-10~11) — 섹션 제목을 '가칭/원문 표기 불확실' 명칭에서 확정 명칭으로 갱신, 10월 히스토리(80% 완료 등) 보존한 채 11-12~11-14 히스토리·의사결정·액션 아이템 이어붙임"
+      ]
+    },
+    {
+      "task_id": "T005",
+      "entity_name": "PINCRUX",
+      "project_name": "포인트 통합 쇼핑몰(가칭)",
+      "page_scope": "child",
+      "target_name": "PINCRUX > 포인트 통합 쇼핑몰(가칭)",
+      "context_status": "new",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "updated_sections": [
+        "PINCRUX 포인트 통합 쇼핑몰(가칭) (2019-11) — 신규 프로젝트 섹션(엔티티 단일 페이지 원칙에 따라 PINCRUX 페이지 내부에 추가, 방향 미확정 상태 그대로 표기)"
+      ],
+      "correction_note": "(2026-07-09 COO 정정) 읽어봄이 FAILED 판정(CONTEXT_DISTORTION) 후속 조치: 의사결정 사항에 반영됐던 인용구 '포인트를 여러 개 사용하게 되면 저희 입장에서는 좋을 텐데'(출처 확인 불가)를 실제 원문인 지리산의 발화 '포인트를 두루 사용하게 되면 저희 입장에서는 좋긴 할텐데'(2019-11-04 16:04:24, https://pincrux.slack.com/archives/DPDRHKYL9/p1572851064038800)로 정정하여 컨플루언스 PINCRUX 페이지(191987714) 의사결정 사항 섹션에 재반영 완료(버전 18)."
+    }
+  ],
+  "skipped_tasks": []
+}

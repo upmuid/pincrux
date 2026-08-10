@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.1",
+  "node": "validator",
+  "run_date": "2019-04-15",
+  "run_mode": "backfill",
+  "period": "2019-04-02 to 2019-04-15",
+  "node_status": "success",
+  "validation_results": [
+    {
+      "task_id": "T001",
+      "entity_name": "KB손해보험",
+      "context_status": "matched",
+      "action_taken": "updated_existing",
+      "confluence_page_id": "192086208",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192086208/KB",
+      "pass_1": "PASSED",
+      "pass_2": "N/A",
+      "verdict": "PASSED",
+      "check_notes": "모으미 decision(IT담당자 박찬우 과장 02-6206-8249 연락처 공유, realpincrux 반영 완료)이 Confluence에 정확히 반영됨. 기존 섹션(T004/T005) 훼손 없음 확인."
+    },
+    {
+      "task_id": "T002",
+      "entity_name": "브이피",
+      "context_status": "matched",
+      "action_taken": "created_new",
+      "confluence_page_id": "196247560",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/196247560",
+      "pass_1": "PASSED",
+      "pass_2": "PASSED",
+      "verdict": "PASSED",
+      "check_notes": "신규 페이지 생성(created_new), 2패스 적용. 동일 IP 팝업 제한 방식 결정, 탈퇴 재가입 방지 완료, 강수현 담당 액션 아이템이 Confluence에 정확히 반영됨. 마로인 매체키 910014, IP 전체 차단 미채택 사유까지 상세히 기재됨."
+    },
+    {
+      "task_id": "T003",
+      "entity_name": "OCB",
+      "context_status": "matched",
+      "action_taken": "created_new",
+      "confluence_page_id": "196509697",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/196509697/OCB",
+      "pass_1": "PASSED",
+      "pass_2": "PASSED",
+      "verdict": "PASSED",
+      "check_notes": "신규 페이지 생성(created_new), 2패스 적용. OCB 참여적립 2종 정책 — 상단배너(랜딩 URL 불필요, 소재명 영문 기재), OCB락커(랜딩 URL+소재 필요, OCB 통해 수령) — 이 Confluence에 정확히 반영됨."
+    },
+    {
+      "task_id": "T004",
+      "entity_name": "캐시비",
+      "context_status": "matched",
+      "action_taken": "created_new",
+      "confluence_page_id": "196542465",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/196542465",
+      "pass_1": "PASSED",
+      "pass_2": "PASSED",
+      "verdict": "PASSED",
+      "check_notes": "신규 페이지 생성(created_new), 2패스 적용. 캐시비 AOS 충전소 탑재 결정, 차주 미팅 후 일정 확정 방향, 채수범 담당 개발 일정 확인 액션 아이템이 Confluence에 정확히 반영됨."
+    },
+    {
+      "task_id": "T005",
+      "entity_name": "KT",
+      "context_status": "matched",
+      "action_taken": "created_new",
+      "confluence_page_id": "196575233",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/196575233/KT",
+      "pass_1": "PASSED",
+      "pass_2": "PASSED",
+      "verdict": "PASSED",
+      "check_notes": "신규 페이지 생성(created_new), 2패스 적용. KT CLIP SDK 통합 기술 결정 6종(폰트 소스 분리/디자인 가이드 전달/READ_PHONE_STATE 수령/포인트 삭제/샘플 소스 제공/광고 3줄) 및 SDK 납기 4/26 연장 합의가 Confluence에 정확히 반영됨. KT 엠모바일 별개 엔티티 명시 확인."
+    },
+    {
+      "task_id": "T006",
+      "entity_name": "페이앤드",
+      "context_status": "matched",
+      "action_taken": "updated_existing",
+      "confluence_page_id": "192053250",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192053250",
+      "pass_1": "PASSED",
+      "pass_2": "N/A",
+      "verdict": "PASSED",
+      "check_notes": "모으미 decision(인터파크 연동 기능 4종 개발 리소스 검토 완료, 인터파크 진행 확정 시 기능 확정 후 마켓 릴리즈)이 Confluence에 정확히 반영됨. 기능 4종 상세 리소스 추산 포함. 기존 섹션 훼손 없음 확인."
+    },
+    {
+      "task_id": "T007",
+      "entity_name": "미래에셋대우",
+      "context_status": "matched",
+      "action_taken": "updated_existing",
+      "confluence_page_id": "191955009",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955009",
+      "pass_1": "PASSED",
+      "pass_2": "N/A",
+      "verdict": "PASSED",
+      "check_notes": "심의번호 2종(계좌개설: 제19-01359호 2019.04.02~2019.04.30 / 연금이전: 제19-01361호 2019.04.05~2020.04.01)이 Confluence에 수치 왜곡 없이 정확히 반영됨. 기존 이지원 소재 섹션 훼손 없음 확인."
+    },
+    {
+      "task_id": "T008",
+      "entity_name": "하나멤버스",
+      "context_status": "matched",
+      "action_taken": "updated_existing",
+      "confluence_page_id": "192151700",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151700",
+      "pass_1": "PASSED",
+      "pass_2": "N/A",
+      "verdict": "PASSED",
+      "check_notes": "하나금융그룹 6개사(KEB하나은행/하나카드/하나금융투자/하나캐피탈/하나생명/하나저축은행) 심의번호 카카오페이지 7종·네이버웹툰 7종, 유효기간 2019.04.03~2019.12.31이 Confluence에 정확히 반영됨. CC브랜드 포함 명시 확인."
+    },
+    {
+      "task_id": "T009",
+      "entity_name": "모바일팝",
+      "context_status": "matched",
+      "action_taken": "created_new",
+      "confluence_page_id": "196608001",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/196608001",
+      "pass_1": "PASSED",
+      "pass_2": "PASSED",
+      "verdict": "PASSED",
+      "check_notes": "신규 페이지 생성(created_new), 2패스 적용. 인하우스 광고 버튼 문구 '참여하고 충전권받기' 변경, 대상 appkey 8종(105250/105135/105086/105068/105035/104998/104884/104883) 및 pubkey(910389/910462)가 Confluence에 정확히 반영됨."
+    }
+  ],
+  "summary": {
+    "total_checked": 9,
+    "passed": 9,
+    "failed": 0,
+    "pass_2_executed": 5,
+    "pass_2_targets": ["T002", "T003", "T004", "T005", "T009"]
+  }
+}

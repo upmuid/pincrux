@@ -1,0 +1,116 @@
+{
+  "schema_version": "1.1",
+  "node": "collector",
+  "run_date": "2020-07-31",
+  "run_mode": "backfill",
+  "period": "2020-07-01 to 2020-07-31",
+  "status": "success",
+  "data_summaries": [
+    {
+      "task_id": "T001",
+      "major_category": "Media_Partner",
+      "context_status": "matched",
+      "context_reference": "manifest 고정 분류 유지(entity_manifest.json: SPC, status human_action_required — 사업주체 성격 미확정, 총총 재확인 대기 중). 원문(2020-07-28, #웹개발팀_개발요청, [PII_REDACTED] 작성): '8월1일 SPC 오픈 예정이라고 합니다.'",
+      "entity_name": "SPC",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "SPC",
+      "issue_title": "SPC 매체 8/1 오픈 일정 확정",
+      "summary": "SPC 매체 8월1일 오픈 예정 확정 공유",
+      "decision": "SPC 매체 오픈 일정이 8월 1일로 확정되어 개발팀에 공유됨",
+      "action_items": [
+        "오픈 전 연동/QA 최종 점검 필요(원문상 세부 항목 미기재)"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/C018GBM3ESC/p1595898605004300"
+    },
+    {
+      "task_id": "T002",
+      "major_category": "In-house",
+      "minor_category": "Product",
+      "context_status": "matched",
+      "context_reference": "원문(2020-07-28, #01_공지사항, [PII_REDACTED] 작성, <!channel> 공지): '당사의 점심시간을 아래와 같이 운영하도록 하겠습니다. 서울: 11시30분~13시00분, 부산: 12시00분~13시30분(각 1시간 자유사용)'",
+      "entity_name": "PINCRUX 조직·인사 정책",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "PINCRUX 조직·인사 정책",
+      "issue_title": "점심시간 운영 정책(서울/부산 사업장별 자유시간제) 공식화",
+      "summary": "서울/부산 점심시간 자유사용제 정책 공지",
+      "decision": "서울 사업장 11:30~13:00, 부산 사업장 12:00~13:30 각 1시간 자유사용으로 점심시간 운영 정책 확정",
+      "action_items": [],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBRLA2LGL/p1595905476093900"
+    },
+    {
+      "task_id": "T003",
+      "major_category": "In-house",
+      "minor_category": "Product",
+      "context_status": "matched",
+      "context_reference": "원문(2020-07-03, #01_공지사항, [PII_REDACTED] 작성, <!channel> 공지): '7월 핀크럭스 역시 수도권 코로나 상황을 감안하여 순연합니다. 1.상반기 리뷰 및 하반기 계획 2.6월 실적 및 7월 계획(기존 방식대로 팀장이 합본하여 제출, 제출기한 7/10일 오전 10시)'",
+      "entity_name": "PINCRUX 조직·인사 정책",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "PINCRUX 조직·인사 정책",
+      "issue_title": "상반기 리뷰/하반기 계획 발표 코로나 순연 및 실적보고 프로세스 공지",
+      "summary": "코로나로 상반기 리뷰 발표 순연, 실적보고 절차 공지",
+      "decision": "수도권 코로나 상황을 감안하여 상반기 리뷰 및 하반기 계획 발표를 순연하고, 6월 실적/7월 계획은 기존 방식대로 팀장이 합본하여 7/10 오전 10시까지 제출하는 것으로 진행",
+      "action_items": [
+        "팀별 6월 실적 및 7월 계획 자료를 팀장이 합본하여 7/10 오전 10시까지 제출"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBRLA2LGL/p1593756516090300"
+    },
+    {
+      "task_id": "T004",
+      "major_category": "In-house",
+      "minor_category": "Product",
+      "context_status": "matched",
+      "context_reference": "원문(2020-07-09, #핀크럭스만알림, [PII_REDACTED] 작성): '업데이트된 AOS 개발자 정책 / 8월12일 부로 적용' (Google Play 패키지 가시성(package visibility) 정책 링크 공유)",
+      "entity_name": "PINCRUX 개발팀 업무 프로세스",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "PINCRUX 개발팀 업무 프로세스",
+      "issue_title": "Google Play AOS 패키지 가시성 정책 업데이트 리스크 공지(8/12 적용)",
+      "summary": "구글플레이 AOS 패키지 가시성 정책 변경 공지(8/12~)",
+      "decision": "Google Play 개발자 정책 업데이트(패키지 가시성 관련)가 8월 12일부로 적용됨을 개발팀에 공유. 자사 AOS SDK 영향 여부에 대한 후속 대응 결과는 원문상 미기재",
+      "action_items": [
+        "8/12 정책 적용 전 자사 AOS SDK 영향도 점검 필요"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CRZ7NLGF6/p1594259141029300"
+    },
+    {
+      "task_id": "T005",
+      "major_category": "In-house",
+      "minor_category": "Project",
+      "context_status": "matched",
+      "context_reference": "원문(2020-07-08 16:23, 운영팀 그룹DM, [PII_REDACTED] 작성): '광고주측과 협의하기로 했던 배송비 운영정책에 대해서 상품 금액에 배송비를 포함하는 것은 불가능 하다는 답변을 받았습니다.' / 원문(2020-07-08 17:52, 동일 스레드): '공급사 별 제주도/도서산간 배송비 관련 정책 공유 — 1.글로다온: 기본 무료배송, 단 제주도·도서산간 추가비용 발생(제주도 3,000원, 그외 도서산간 최대 8,000원, 건바이건 대응) 2.우리원: 제주도 3,000원, 나머지 도서산간지역 일괄 7,000원'",
+      "entity_name": "PINCRUX 사업·정책 결정 히스토리",
+      "project_name": "리워드샵 배송비 정책(공급사별 제주/도서산간)",
+      "page_scope": "child",
+      "target_name": "PINCRUX 사업·정책 결정 히스토리 > 리워드샵 배송비 정책(공급사별 제주/도서산간)",
+      "issue_title": "리워드샵 상품 배송비 정책 확정(광고주 배송비 포함 불가 + 공급사별 도서산간 추가비)",
+      "summary": "리워드샵 배송비 정책 확정, 배송비 포함 불가 회신",
+      "decision": "리워드샵 상품 금액에 배송비를 포함하는 것은 불가하다는 광고주측 회신을 받아 정책 확정. 공급사(글로다온/우리원)별 제주도·도서산간 추가배송비 정책도 함께 확정 적용",
+      "action_items": [
+        "배송비 조건관리 화면에 공급사별 추가배송비 정책 반영 필요"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/G016AFYB96Z/p1594193021016800"
+    },
+    {
+      "task_id": "T006",
+      "major_category": "Client",
+      "context_status": "new",
+      "context_reference": "원문(2020-07-31, 운영팀 그룹DM, [PII_REDACTED] 작성): '피플카 CPA 8월 예산 - 4,400만원 total - 11,000건 daily - 350건 매체비 - 1,500원 으로 확인 부탁드리겠습니다.' [신규 엔티티 후보] '피플카'(peoplecar.co.kr)는 entity_manifest.json에 미등록 상태. 슬랙 문맥상 핀크럭스가 캠페인 집행/CPA 정산을 대행하는 구조로 확인되어 major_category는 Client로 추정 분류함(총총 확인 필요).",
+      "entity_name": "피플카",
+      "project_name": "피플카 CPA 캠페인 운영",
+      "page_scope": "child",
+      "target_name": "피플카 > 피플카 CPA 캠페인 운영",
+      "issue_title": "피플카 8월 CPA 캠페인 예산/목표 확정 (신규 엔티티)",
+      "summary": "피플카 8월 CPA 예산 4,400만원/1.1만건 확정",
+      "decision": "피플카 8월 CPA 캠페인 예산 4,400만원, 총 11,000건(일 350건), 매체비 1,500원으로 확인 요청됨",
+      "action_items": [
+        "총총 확인 후 entity_manifest.json에 '피플카' 신규 엔티티 등록 필요(major_category: Client 추정)"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/G0113KM3KK2/p1596181594012100",
+      "new_entity_flag": true
+    }
+  ],
+  "uncategorized": []
+}

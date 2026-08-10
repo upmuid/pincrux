@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.1",
+  "node": "collector",
+  "run_date": "2026-07-27",
+  "run_mode": "backfill",
+  "period": "correction batch — reclassifies uncategorized items from 2021-07 and 2021-08 backfill batches per Jason's direct governance decisions",
+  "status": "success",
+  "data_summaries": [
+    {
+      "task_id": "T007",
+      "major_category": "Client",
+      "minor_category": null,
+      "context_status": "new",
+      "context_reference": "원문(2021-08-25, #운영1팀): \"내일 삼성페이 캠페인 재오픈되어 공유드립니다. 예산 : 7,000만원(vat별도), 단가 : 1,800원(VAT별도), 총 수량 : 38,889건\". 최초 수집 시(01_Collector/2026-07-27_2.json 원본) 기존 Client '삼성카드'(204603393)와 동일 법인인지 불확실하여 uncategorized 처리됐던 항목. 2026-07-27 Jason 확인: 삼성페이와 삼성카드는 서로 별개 엔티티.",
+      "entity_name": "삼성페이",
+      "project_name": "캠페인 재오픈",
+      "page_scope": "child",
+      "target_name": "삼성페이 > 캠페인 재오픈",
+      "issue_title": "삼성페이 캠페인 재오픈",
+      "summary": "삼성페이 캠페인 재오픈, 예산 7,000만원/단가 1,800원/총수량 38,889건",
+      "decision": "8/26 캠페인 재오픈, 예산 7,000만원(vat별도), 단가 1,800원(VAT별도), 총 수량 38,889건",
+      "action_items": ["신규 엔티티(삼성페이) entity_manifest.json 등록 완료 — Client로 확정(Jason 확인, 삼성카드와 별개 법인)"],
+      "slack_thread_link": "https://pincrux.slack.com/archives/G0113KM3KK2/p1629862091012600"
+    },
+    {
+      "task_id": "T008",
+      "major_category": "Media_Partner",
+      "minor_category": null,
+      "context_status": "matched",
+      "context_reference": "원문(#웹개발팀_개발요청, 정빈희, 2021-07-20): \"해피포인트 매체에서 출석체크 장애가 계속 발생되고 있다고 문의 주셨는데... 최근에도 장애가 발생했다고 하는데, 오늘과 동일한 이슈인지 문의 주셨어요... 최근에 장애가 발생한 건들이 해당 패치와 동일한 이슈였는지도 추가 확인 요청 주셨습니다.\" 최초 수집 시(01_Collector/2026-07-27.json 원본) '해피머니'(196870145)와 동일 매체인지 불확실하여 uncategorized 처리됐던 항목. 2026-07-27 Jason 확인: '해피포인트'는 섹타나인(SPC, 204603424)과 동일 엔티티.",
+      "entity_name": "섹타나인",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "섹타나인",
+      "issue_title": "해피포인트(섹타나인) 출석체크 반복 장애 문의",
+      "summary": "해피포인트(섹타나인) 매체 출석체크 반복 장애 문의, 근본원인·최종결론 없이 질의 단계에서 스레드 종료",
+      "decision": "근본원인 미확인, 이전 패치와 동일 이슈인지 확인 요청 단계에서 종료. 정식 결정사항 없음 — 단순 문의로 처리",
+      "action_items": [],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBRLA2LGL/p1626... (원본 01_Collector/2026-07-27.json 참조)"
+    }
+  ],
+  "uncategorized": []
+}

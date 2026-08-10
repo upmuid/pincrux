@@ -1,0 +1,111 @@
+{
+  "schema_version": "1.1",
+  "node": "collector",
+  "run_mode": "backfill",
+  "period": "2019-01-01 to 2019-01-07",
+  "run_date": "2026-06-28",
+  "status": "success",
+  "thread_count": 4,
+  "data_summaries": [
+    {
+      "thread_id": "CBRLA2LGL_1546405802.004400",
+      "channel": "#01_공지사항",
+      "channel_id": "CBRLA2LGL",
+      "timestamp": "2019-01-02T14:10:02+09:00",
+      "participants": ["[PII_REDACTED]<law@pincrux.com>", "[PII_REDACTED]<peter@pincrux.com>", "[PII_REDACTED]<bliss@pincrux.com>", "[PII_REDACTED]<david@pincrux.com>"],
+      "summary": "경영지원실 운영 이메일 정책 변경 공지. 고객사 전자세금계산서 수신 이메일은 tax@pincrux.com으로, 임직원 업무공유 및 보고는 hsw@pincrux.com으로 변경. 2019년 1월(12월 정산분)부터 즉시 적용.",
+      "action_items": [
+        "고객사 전자세금계산서 수신 이메일 → tax@pincrux.com 으로 변경 안내",
+        "임직원 업무공유/보고 이메일 → hsw@pincrux.com 으로 변경 적용"
+      ],
+      "major_category": "In-house",
+      "minor_category": "Product",
+      "entity_name": "PINCRUX",
+      "project_name": null,
+      "page_scope": "root",
+      "context_status": "new",
+      "context_reference": "경영지원실 운영메일 변경, 허성원 이사"
+    },
+    {
+      "thread_id": "CBTGBP78F_1546417274.005200",
+      "channel": "#09_project_페이앤드",
+      "channel_id": "CBTGBP78F",
+      "timestamp": "2019-01-02T17:21:14+09:00",
+      "participants": ["[PII_REDACTED]<ad@pincrux.com>", "[PII_REDACTED]<eric@pincrux.com>", "[PII_REDACTED]<mason@pincrux.com>", "[PII_REDACTED]<test@pincrux.com>"],
+      "summary": "페이앤드 앱 구매할인 기능 관련 UI 변경 요청 및 보고 일정 공유. 1월 중순 업데이트 반영 목표. 추가로 결제 시나리오 중 비밀번호 입력 보안 이슈 검토 요청 — 사용자 앱 로그인 시 이미 비밀번호를 입력하므로 결제 시 패스워드 추가 입력 제외 가능 여부 논의. iOS는 앱이 메모리에서 제거되지 않는 한 종료되지 않으므로 해당 요청 미적용.",
+      "action_items": [
+        "구매할인 관련 앱 UI 자유롭게 변경 (보고 컨텐츠 내용 포함 조건)",
+        "보고 일정 공유 — 1월 중순 업데이트 반영 목표 확인",
+        "결제 시나리오 비밀번호 입력 정책 최종 결정 (서버 API, 디자인 확정 후 적용)"
+      ],
+      "major_category": "Client",
+      "minor_category": "Project",
+      "entity_name": "페이앤드",
+      "project_name": "페이앤드 앱 구매할인 기능 개발",
+      "page_scope": "child",
+      "context_status": "new",
+      "context_reference": "페이앤드, #09_project_페이앤드"
+    },
+    {
+      "thread_id": "CBTGBP78F_1546479049.008400",
+      "channel": "#09_project_페이앤드",
+      "channel_id": "CBTGBP78F",
+      "timestamp": "2019-01-03T10:30:49+09:00",
+      "participants": ["[PII_REDACTED]<mason@pincrux.com>", "[PII_REDACTED]<eric@pincrux.com>", "[PII_REDACTED]<ad@pincrux.com>"],
+      "summary": "페이앤드 앱 Google Play 정책 위반 이슈 대응. JavaScript 인터페이스 삽입 보안 경고 및 SMS 정책 위반(SMS 퍼미션 미제거) 문제로 앱 삭제 위기. SMS Retriever로 변경하였으나 Play Console에서 경고 지속 노출. Google Play 지원팀으로부터 프로덕션 트랙 APK를 내부 테스트 트랙에 업로드하도록 안내받음. com.payand.user(현재 버전 10, 경고는 APK v7 영향), com.payand.owner(현재 버전 9, 경고는 APK v6 영향). 1월 9일까지 미수정 시 앱 삭제 예정.",
+      "action_items": [
+        "프로덕션 트랙 APK(문제 없는 버전)를 내부 테스트 트랙에 업로드 (1/9 데드라인)",
+        "com.payand.user, com.payand.owner 두 앱 공통 SMS/JavaScript 보안 경고 해소",
+        "Google Play Console 이전 버전 APK의 보안 경고 지속 여부 최종 확인"
+      ],
+      "major_category": "Client",
+      "minor_category": "Project",
+      "entity_name": "페이앤드",
+      "project_name": "페이앤드 앱 Google Play 정책 대응",
+      "page_scope": "child",
+      "context_status": "new",
+      "context_reference": "페이앤드, com.payand.user, com.payand.owner, Google Play Developer Support"
+    },
+    {
+      "thread_id": "CBT7QSJ78_1546507196.000100",
+      "channel": "#01_문서공유",
+      "channel_id": "CBT7QSJ78",
+      "timestamp": "2019-01-03T18:19:56+09:00",
+      "participants": ["[PII_REDACTED]<emily@pincrux.com>", "[PII_REDACTED]<tom@pincrux.com>"],
+      "summary": "핀크럭스 플랫폼 광고 연동 구조 문서 공유. 핀크럭스(유저) → 광고주 방향의 클릭 연동과, 광고주 → 핀크럭스 방향의 포스트백 연동 구조 기록.",
+      "action_items": [],
+      "major_category": "In-house",
+      "minor_category": "Product",
+      "entity_name": "PINCRUX",
+      "project_name": "핀크럭스 광고 플랫폼 클릭/포스트백 연동",
+      "page_scope": "child",
+      "context_status": "new",
+      "context_reference": "핀크럭스(유저)>광고주 클릭연동, 광고주>핀크럭스 포스트백연동, #01_문서공유"
+    },
+    {
+      "thread_id": "CDFM2MJAY_1546839696.003000",
+      "channel": "#99_개발문서공유",
+      "channel_id": "CDFM2MJAY",
+      "timestamp": "2019-01-07T14:41:36+09:00",
+      "participants": ["[PII_REDACTED]<ad@pincrux.com>", "[PII_REDACTED]<tom@pincrux.com>", "[PII_REDACTED]<emily@pincrux.com>", "[PII_REDACTED]<mason@pincrux.com>"],
+      "summary": "핀크럭스 광고 SDK 및 API 연동 문서 공유. 각 회사별 커스텀 연동 문서 포함. 서버 이전 및 연동 점검 시 활용 목적. 해당 링크는 외부 반출 절대 금지.",
+      "action_items": [
+        "SDK/API 연동 문서 링크 외부 반출 금지 준수",
+        "서버 이전 및 연동 점검 시 해당 문서 참조"
+      ],
+      "major_category": "In-house",
+      "minor_category": "Product",
+      "entity_name": "PINCRUX",
+      "project_name": "핀크럭스 광고 SDK/API 연동 관리",
+      "page_scope": "child",
+      "context_status": "new",
+      "context_reference": "핀크럭스 광고 SDK, API, 커스텀 연동문서, #99_개발문서공유"
+    }
+  ],
+  "collection_meta": {
+    "channels_found": ["#01_공지사항 (CBRLA2LGL)", "#09_project_페이앤드 (CBTGBP78F)", "#01_문서공유 (CBT7QSJ78)", "#99_개발문서공유 (CDFM2MJAY)"],
+    "total_slack_messages_scanned": 20,
+    "filtered_out": 5,
+    "note": "단순 확인 응답('네 확인했습니다', '넹', '감사합니다'), 빈 메시지(첨부파일만 있는 것으로 추정), 1월 7일 업데이트 예정 단순 안내는 필터링. 첫 백필 실행으로 기존 위키 없음 — 모든 항목 context_status: new 처리."
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.1",
+  "node": "collector",
+  "run_date": "2020-05-31",
+  "run_mode": "backfill",
+  "period": "2020-05-01 to 2020-05-31",
+  "status": "success",
+  "data_summaries": [
+    {
+      "task_id": "T001",
+      "major_category": "Media_Partner",
+      "minor_category": "Project",
+      "context_status": "new",
+      "context_reference": "manifest 미등록 신규 엔티티. 매체 역할 근거: 05-18 '적용 매체 : 네오위즈 / ocb(시럽 포함) / 페이코' 심의번호 삽입 요청(일반 CPS 캠페인 집행). 단, 아래 계약은 단순 매체 집행이 아닌 공동사업/조인트벤처 성격이라 major_category 재확인 필요(human_action_required). 원문 인용: (05-07) '지난번에 검토한 내용 반영해서 네오위즈에서 작성한 계약서가 와서 검토 요청을 드리려고 합니다. 공동사업과 관련된 계약은 경험이 없어서'; (05-10) '애디스콕의 역할에 비하여 5:5의 수익분배는 크다고 생각하는데... 쇼핑몰에 등록된 제품의 주요 판매처가 피망 게임입니다'; (05-29) '계약서 작성이 5월에 되어서 계약일자가 5월로 되어있었거든요' — 5/29 시점까지 계약 미서명, 시작일을 6/1로 조정 논의 중.",
+      "entity_name": "네오위즈",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "네오위즈",
+      "issue_title": "네오위즈(피망) 리워드형 CPS 쇼핑몰 신규 공동사업 계약 검토",
+      "summary": "네오위즈 피망몰 리워드 쇼핑몰 신규계약 검토중(미확정)",
+      "decision": "5월 말 시점까지 계약 미확정. 핀크럭스 1차 검토 후 네오위즈 법무팀 검토 예정이며, 수익분배(판매수수료 50:50, 초기 5:5 안 협의) 및 개발 범위(별첨)는 계속 협의 중. 쇼핑몰 개발은 별도 외주 개발사와 기존 계약에 대한 부속합의서 형태로 진행.",
+      "action_items": [
+        "네오위즈 작성 계약서 법무 최종 검토 및 회신",
+        "애디스콕과의 수익분배·역할 조건 확정",
+        "쇼핑몰(리워드 시스템) 개발 부속합의서 체결",
+        "계약 시작일자(6/1 안) 확정"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/DPNJ7CCHL/p1588828208006700"
+    },
+    {
+      "task_id": "T002",
+      "major_category": "In-house",
+      "minor_category": "Product",
+      "context_status": "matched",
+      "context_reference": "PINCRUX manifest known_sections 'Cluv(클럽) 통합 프로젝트'의 후속 진행 사항. 원문 인용: (05-08, 4월 요약) 'CLUV 베타 버전 론칭 준비 - QA 완료(AOS, Admin) / QA 진행 중(IOS)'; (05-08, 5월 목표) 'CLUV 정식 오픈 버전 개발 F/U'; (05-19) '애디스콕에서 클럽 오픈일정관련 문의 준 메일에 3분기로 오픈 일정 변경(구체적인 일정은 향후 전달)로 회신 하겠습니다'. 애디스콕이 동일 시기 T001(네오위즈 쇼핑몰 수익분배 협상)에도 등장하나, 두 사안의 인과관계는 원문에 명시되어 있지 않아 별도 사실로만 기록.",
+      "entity_name": "PINCRUX",
+      "project_name": "PINCRUX Cluv(클럽) — Creator Membership Community 통합 프로젝트",
+      "page_scope": "child",
+      "target_name": "PINCRUX > PINCRUX Cluv(클럽) — Creator Membership Community 통합 프로젝트",
+      "issue_title": "Cluv 베타 QA 완료 및 정식 오픈 일정 3분기로 변경",
+      "summary": "Cluv 4월 베타QA 완료, 정식오픈 3분기로 연기",
+      "decision": "정식(오픈) 버전 오픈 일정을 3분기로 변경(세부 일정 추후 전달). 4월 베타 버전은 AOS/Admin QA 완료, iOS QA 진행 중.",
+      "action_items": [
+        "iOS 베타 QA 완료",
+        "Admin 개발 항목 QA(이용 통계)",
+        "완료된 기획안(통합 버전, 커뮤니티 기능, 펀딩/투표/당첨자 뽑기 등) 전달 및 리뷰",
+        "정식 오픈 세부 일정 확정 후 애디스콕 측 회신"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/GQR8C4UN8/p1588914519119800"
+    }
+  ],
+  "uncategorized": [
+    {
+      "raw_text": "'애디스콕'(슬랙 원문 표기, 재확인 필요)이 (1) 네오위즈 CPS 리워드 쇼핑몰 수익분배(5:5) 협상 상대방, (2) PINCRUX Cluv 정식 오픈일정 문의 주체로 동시 등장. entity_manifest 미등록. 네오위즈의 자회사/제휴사인지, 핀크럭스의 별도 투자·제휴 파트너인지 원문만으로는 확인 불가.",
+      "reason": "major_category(Client/Media_Partner/In-house) 및 네오위즈와의 관계 불명확. 총총 확인 후 entity_manifest 신규 등재 필요."
+    }
+  ]
+}

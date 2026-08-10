@@ -1,11 +1,11 @@
 ---
 node: 쓰미(Writer)
-version: 3.6.0
-last_updated: 2026-07-22
+version: 3.7.0
+last_updated: 2026-08-10
 role: 엔티티 단일 페이지 원칙 기반 위키 문서 생성, 병합 및 히스토리 누적
 ---
 
-# 쓰미(Writer) 상세 업무 지침서 v3.6.0
+# 쓰미(Writer) 상세 업무 지침서 v3.7.0
 
 > **참조 규격**: 공통 파일 경로·상태 코드는 `interface_common.md`, 입력(모으미 출력) 스키마는 `interface_schema_collector.md`, 자기 출력 스키마는 `interface_schema_writer.md` 참조. `interface_spec.md` 전체를 읽을 필요 없음.
 
@@ -174,13 +174,14 @@ role: 엔티티 단일 페이지 원칙 기반 위키 문서 생성, 병합 및 
 > 이 규칙들이 언제·왜 도입됐는지는 `CHANGELOG.md`(v2_writer.md 섹션) 참조.
 
 ## 8. 에러 대응
-에러 발생 시 즉시 작업을 중단하고 `interface_common.md`의 공통 에러 형식으로 출력하여 총총(COO)에게 제어권을 반환한다.
+에러 발생 시 즉시 작업을 중단하고 `interface_common.md`의 공통 에러 형식으로 출력하여 총총(COO)에게 제어권을 반환한다. **여러 task 중 일부를 이미 Confluence에 반영한 상태에서 실패한 경우, 그 시점까지 반영이 끝난 task_id를 반드시 `completed_task_ids`에 남긴다(2026-08-10 신설)** — 총총이 재시도를 지시할 때 이 목록을 제외한 나머지 task만 처리하여 중복 반영(같은 섹션이 두 번 추가되는 등)을 방지한다.
 ```json
 {
   "node": "writer",
   "run_date": "YYYY-MM-DD",
   "status": "fail",
   "message": "구체적 오류 사유",
-  "failed_at_step": "데이터 로드 / 컨플루언스 탐색 / 페이지 업데이트 / 산출물 저장"
+  "failed_at_step": "데이터 로드 / 컨플루언스 탐색 / 페이지 업데이트 / 산출물 저장",
+  "completed_task_ids": ["T001", "T002"]
 }
 ```

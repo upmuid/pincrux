@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.1",
+  "node": "collector",
+  "run_date": "2026-07-23",
+  "run_mode": "backfill",
+  "period": "2021-03-01 to 2021-03-31",
+  "status": "success",
+  "data_summaries": [
+    {
+      "task_id": "T001",
+      "major_category": "Client",
+      "minor_category": null,
+      "context_status": "matched",
+      "context_reference": "기존 '리메세' 엔티티(2021-01 배치에서 생성, human_action_required 상태)에 이어지는 실제 캠페인 집행 확인. 원문(2021-03-12, 정빈희): '<@김천두> <@김판근> 안녕하세요, 리메세-차울 첫결제 CPA 캠페인 카페24 주문 상세 내역서 추출 부탁드리겠습니다.(광고주측 요청) 기간 : 3월 11일~3월 12일 / 주문 상세 내역 추출 요청' 및 첨부파일(차울_CPS_결제내역리스트.xlsx) 회신(2021-03-12, 김판근). 관련 선행 원문(2021-03-11, 정빈희): '저희가 리메세에 단가 1만원 받는데, 해당 금액 중 일부를 카페24 수수료로 제공하나요?' (질문에 대한 회신은 스레드 내 확인되지 않음).",
+      "entity_name": "리메세",
+      "project_name": "리메세-차울 첫결제 CPA 캠페인 (2021-03)",
+      "page_scope": "child",
+      "target_name": "리메세 > 리메세-차울 첫결제 CPA 캠페인 (2021-03)",
+      "issue_title": "리메세-차울 첫결제 CPA 캠페인 실집행 확인(3/11~3/12), 카페24 주문내역 추출",
+      "summary": "차울 브랜드 첫결제 CPA 캠페인 3/11~3/12 집행, 단가 1만원, 카페24 연동 주문내역 추출·전달",
+      "decision": "리메세 산하 '차울' 브랜드의 첫결제 CPA 캠페인이 2021-03-11~03-12 기간 실제 집행되어, 광고주 요청에 따라 카페24 주문 상세 내역서를 추출해 전달함. 캠페인 단가는 1만원(CPA)이며, 이 중 일부를 카페24 결제수수료로 제공할지 여부는 미확정(질문만 제기, 회신 미확인).",
+      "action_items": ["리메세 CPA 단가(1만원) 중 카페24 수수료 배분 여부 확정 필요 — 슬랙 스레드 내 회신 미확인"],
+      "slack_thread_link": "https://pincrux.slack.com/archives/C018GBM3ESC/p1615514273042900?thread_ts=1615514273.042900&cid=C018GBM3ESC"
+    }
+  ],
+  "uncategorized": []
+}

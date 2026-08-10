@@ -1,0 +1,136 @@
+{
+  "schema_version": "1.1",
+  "node": "writer",
+  "run_date": "2019-11-30",
+  "source_file": "Archive_Pincrux/01_Collector/2019-11-30.json",
+  "node_status": "success",
+  "processed_tasks": [
+    {
+      "task_id": "T001",
+      "entity_name": "삼성카드",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "삼성카드",
+      "context_status": "new",
+      "action_taken": "created_new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/204603393",
+      "confluence_page_id": "204603393",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/190152706",
+      "confluence_parent_page_id": "190152706",
+      "updated_sections": [
+        "## 삼성카드 대규모 계약 체결 예정 및 임직원 카드발급 협조 (2019-11) — 신규 엔티티 페이지 생성(Client > Project 하위), 계약은 체결 예정 상태임을 명시하고 완료형으로 서술하지 않음"
+      ]
+    },
+    {
+      "task_id": "T002",
+      "entity_name": "SSG(신세계)",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "SSG(신세계)",
+      "context_status": "new",
+      "action_taken": "created_new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/204636161",
+      "confluence_page_id": "204636161",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/190414849",
+      "confluence_parent_page_id": "190414849",
+      "updated_sections": [
+        "## SSG 제휴 3종(할인쿠폰/리워드몰/충전소) 업무 착수 및 우선순위 정책 확정 (2019-11) — 신규 엔티티 페이지 생성(Media_Partner > Project 하위)"
+      ]
+    },
+    {
+      "task_id": "T003",
+      "entity_name": "SSG(신세계)",
+      "project_name": "SSG 리워드몰(쇼핑몰) 연동",
+      "page_scope": "child",
+      "target_name": "SSG(신세계) > SSG 리워드몰(쇼핑몰) 연동",
+      "context_status": "new",
+      "action_taken": "created_root_and_child",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/204636161",
+      "confluence_page_id": "204636161",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/190414849",
+      "confluence_parent_page_id": "190414849",
+      "updated_sections": [
+        "## SSG 리워드몰(쇼핑몰) 연동 (2019-11) — T002와 동일 페이지 내 프로젝트 섹션으로 함께 생성"
+      ]
+    },
+    {
+      "task_id": "T004",
+      "entity_name": "페이앤드",
+      "project_name": "자동로그인 기능",
+      "page_scope": "child",
+      "target_name": "페이앤드 > 자동로그인 기능",
+      "context_status": "new",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192053250",
+      "confluence_page_id": "192053250",
+      "updated_sections": [
+        "## 페이앤드 자동로그인 기능 검토 및 화면 반영(스토어 버전 제외) (2019-11) — 기존 페이앤드 페이지에 신규 섹션 추가"
+      ]
+    },
+    {
+      "task_id": "T005",
+      "entity_name": "페이앤드",
+      "project_name": "로그아웃 기능",
+      "page_scope": "child",
+      "target_name": "페이앤드 > 로그아웃 기능",
+      "context_status": "new",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192053250",
+      "confluence_page_id": "192053250",
+      "updated_sections": [
+        "## 페이앤드 로그아웃 기능 구현 이슈로 정책 결정 요청(미결) (2019-11) — 기존 페이앤드 페이지에 신규 섹션 추가, [미결] 상태를 확정처럼 서술하지 않고 명시적으로 유지"
+      ]
+    },
+    {
+      "task_id": "T006",
+      "entity_name": "PINCRUX",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "PINCRUX",
+      "context_status": "new",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714",
+      "confluence_page_id": "191987714",
+      "updated_sections": [
+        "## PINCRUX 채용요청서 양식 공식화 및 승인 프로세스 확정 (2019-11) — 기존 PINCRUX 페이지에 신규 섹션 추가"
+      ]
+    },
+    {
+      "task_id": "T007",
+      "entity_name": "PINCRUX",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "PINCRUX",
+      "context_status": "new",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714",
+      "confluence_page_id": "191987714",
+      "updated_sections": [
+        "## PINCRUX 휴가 보고체계 간소화 및 반반차 제도 신설 (2019-11) — 기존 PINCRUX 페이지에 신규 섹션 추가"
+      ]
+    },
+    {
+      "task_id": "T008",
+      "entity_name": "PINCRUX",
+      "project_name": "Creator Membership Community(대청자)",
+      "page_scope": "child",
+      "target_name": "PINCRUX > Creator Membership Community(대청자)",
+      "context_status": "new",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714",
+      "confluence_page_id": "191987714",
+      "updated_sections": [
+        "## PINCRUX Creator Membership Community(대청자, 대도서관) (2019-11) — 기존 PINCRUX 페이지 내 'PINCRUX 멤버십 팬 서비스(CJE&M·다이아) 기획' 섹션을 실제로 대조한 결과, 대상 크리에이터(대도서관 vs CJE&M·다이아 소속 인플루언서)·계약 주체·인프라(별도 도메인 구매, 별도 AWS 보안정책 확인)가 모두 상이하여 별개 프로젝트로 최종 판단함. collector의 context_status(unknown)를 'new'(신규 프로젝트, 기존 엔티티 페이지 내 신규 섹션)로 확정하고, 섹션 최상단에 [컨텍스트 판단 근거] panel로 판단 근거를 명시함. 두 프로젝트 간 연관성을 시사하는 추가 근거 발견 시 재검토 필요."
+      ]
+    }
+  ],
+  "skipped_tasks": []
+}

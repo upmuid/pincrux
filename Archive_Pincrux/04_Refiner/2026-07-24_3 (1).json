@@ -1,0 +1,307 @@
+{
+  "schema_version": "1.1",
+  "node": "refiner",
+  "run_date": "2026-07-24",
+  "source_file": "Archive_Pincrux/03_Validator/2026-07-24_3.json",
+  "node_status": "success",
+  "published_tasks": [
+    {
+      "task_id": "T001",
+      "target_name": "하나멤버스",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151700",
+      "confluence_page_id": "192151700",
+      "refined_points": [
+        "리워드 재발송 271건 및 전체 재발송 처리 문구를 볼드체로 강조",
+        "의사결정 사항을 인용구(blockquote)로 시각적 강조"
+      ],
+      "published_at": "2026-07-24T20:05:00+09:00"
+    },
+    {
+      "task_id": "T002",
+      "target_name": "오퍼월 > 매체 어뷰징 방지(IP 차단·검증) 정책 강화",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151821",
+      "confluence_page_id": "192151821",
+      "refined_points": [
+        "대상 매체·계정번호(수콤 ADN-iOS 1577 등)를 볼드체로 강조",
+        "의사결정 사항을 인용구로 전환하고 'IP 차단 및 검증 절차' 핵심 문구 강조"
+      ],
+      "published_at": "2026-07-24T20:05:30+09:00"
+    },
+    {
+      "task_id": "T003",
+      "target_name": "네오위즈 > CPS 기획전 디자인 개편 및 연동 구조 정리(기획전/빅배너/목록API)",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/209518599",
+      "confluence_page_id": "209518599",
+      "refined_points": [
+        "의사결정 사항 문단이 두 문장이 공백 없이 붙어있던 오류(결정함핀크럭스)를 발견하여 날짜별 불릿 2건으로 분리",
+        "각 의사결정 항목을 볼드체로 강조"
+      ],
+      "published_at": "2026-07-24T20:06:00+09:00"
+    },
+    {
+      "task_id": "T004",
+      "target_name": "롯데멤버스",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/215121921",
+      "confluence_page_id": "215121921",
+      "refined_points": [
+        "적립오류 194건 수치를 볼드체로 강조",
+        "의사결정 사항을 두 문장으로 분리하고 인용구로 전환"
+      ],
+      "published_at": "2026-07-24T20:06:30+09:00"
+    },
+    {
+      "task_id": "T005",
+      "target_name": "DB금융투자 > 아이파킹 기획전 배너",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151759",
+      "confluence_page_id": "192151759",
+      "refined_points": [
+        "의사결정 사항 문단이 붙어있던 오류(결정함DB금융투자)를 발견하여 날짜별 불릿 2건으로 분리 및 강조"
+      ],
+      "published_at": "2026-07-24T20:07:00+09:00"
+    },
+    {
+      "task_id": "T006",
+      "target_name": "시럽월렛 > 스탬프모아 서비스 종료 및 OCB 포인트 전환",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/218988561",
+      "confluence_page_id": "218988561",
+      "refined_points": [
+        "의사결정 사항을 인용구로 전환하고 OCB 포인트 전환·7/1 대고객 오픈 핵심 문구 강조",
+        "SK플래닛 이중역할 안내문 및 human_action_required 액션아이템은 원문 그대로 보존"
+      ],
+      "published_at": "2026-07-24T20:07:30+09:00"
+    },
+    {
+      "task_id": "T007",
+      "target_name": "GS엠비즈",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/219873281",
+      "confluence_page_id": "219873281",
+      "refined_points": [
+        "신규 페이지 전체 검토 완료(구조·문체 이상 없음)",
+        "의사결정 사항을 인용구로 전환하고 연동 방식·7/10 운영반영 일정 강조"
+      ],
+      "published_at": "2026-07-24T20:08:00+09:00"
+    },
+    {
+      "task_id": "T008",
+      "target_name": "오퍼월 > TNK iOS 연동 예외처리 구조 개선",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151821",
+      "confluence_page_id": "192151821",
+      "refined_points": [
+        "의사결정 사항을 인용구로 전환하고 볼드체로 강조(T002와 동일 페이지 일괄 처리)"
+      ],
+      "published_at": "2026-07-24T20:05:30+09:00"
+    },
+    {
+      "task_id": "T009",
+      "target_name": "토스 > 미래에셋대우 캠페인용 리워드 지급조건 개발",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/219873301",
+      "confluence_page_id": "219873301",
+      "refined_points": [
+        "신규 페이지 전체 검토 완료, 의사결정 사항 인용구 전환 및 3단계 세분화·7월 일정 강조",
+        "미래에셋대우(원문표기: 미래에셋증권) 각주 및 사실관계는 변경 없이 그대로 유지"
+      ],
+      "published_at": "2026-07-24T20:08:30+09:00"
+    },
+    {
+      "task_id": "T010",
+      "target_name": "KB손해보험 > 네이버페이 CPM 배너 노출순위 계약위반 이슈",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192086208",
+      "confluence_page_id": "192086208",
+      "refined_points": [
+        "2~5순위 개런티 대비 9순위 노출 수치를 볼드체로 강조",
+        "'조치 완료 여부 미기재' 불확실성 표현은 원문 그대로 유지"
+      ],
+      "published_at": "2026-07-24T20:09:00+09:00"
+    },
+    {
+      "task_id": "T011",
+      "target_name": "KB손해보험 > 신규 매체 확장(PASS 산출이벤트/네이버페이 CPS/카카오페이지 CPA)",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192086208",
+      "confluence_page_id": "192086208",
+      "refined_points": [
+        "의사결정 사항을 인용구로 전환하고 3단계 확장 순서를 볼드체로 강조(T010과 동일 페이지 일괄 처리)"
+      ],
+      "published_at": "2026-07-24T20:09:00+09:00"
+    },
+    {
+      "task_id": "T012",
+      "target_name": "현대해상 > CPA→CPS 전환(금감원 규제 이슈)",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/219906049",
+      "confluence_page_id": "219906049",
+      "refined_points": [
+        "신규 페이지 전체 검토 완료, 의사결정 사항을 인용구로 전환하고 CPA 종료·CPS 전환 조건 강조"
+      ],
+      "published_at": "2026-07-24T20:09:30+09:00"
+    },
+    {
+      "task_id": "T013",
+      "target_name": "캐롯손해보험 > 카카오페이지 CPA/CPS 종료(금감원·포스트백 이슈)",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/219873321",
+      "confluence_page_id": "219873321",
+      "refined_points": [
+        "의사결정 사항 문단이 붙어있던 오류(결정함광고주측)를 발견하여 날짜별 불릿 2건으로 분리 및 강조"
+      ],
+      "published_at": "2026-07-24T20:10:00+09:00"
+    },
+    {
+      "task_id": "T014",
+      "target_name": "웰컴저축은행 (복수 매체 어뷰징 이슈 대응)",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151790",
+      "confluence_page_id": "192151790",
+      "refined_points": [
+        "자사 IP 디타겟팅 원인 규명 및 3회 제한 조치를 볼드체로 강조, 인용구로 전환"
+      ],
+      "published_at": "2026-07-24T20:10:30+09:00"
+    },
+    {
+      "task_id": "T015",
+      "target_name": "웰컴저축은행 (7월 예산 축소 확정)",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151790",
+      "confluence_page_id": "192151790",
+      "refined_points": [
+        "예산 1.6억원→1.25억원 축소 수치를 볼드체로 강조, 인용구로 전환(T014와 동일 페이지 일괄 처리)"
+      ],
+      "published_at": "2026-07-24T20:10:30+09:00"
+    },
+    {
+      "task_id": "T016",
+      "target_name": "한화자산운용",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/218398779",
+      "confluence_page_id": "218398779",
+      "refined_points": [
+        "신규 페이지 전체 검토 완료, 예산·단가 수치 강조",
+        "계약 최종 체결 여부 미확인이라는 불확실성 표현은 원문 그대로 유지"
+      ],
+      "published_at": "2026-07-24T20:11:00+09:00"
+    },
+    {
+      "task_id": "T017",
+      "target_name": "이지세이브",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/218759184",
+      "confluence_page_id": "218759184",
+      "refined_points": [
+        "신규 페이지 전체 검토 완료, 의사결정 사항 인용구 전환 및 핵심 진행단계 강조",
+        "역할 미확정 human_action_required 안내 문구는 원문 그대로 유지"
+      ],
+      "published_at": "2026-07-24T20:11:30+09:00"
+    },
+    {
+      "task_id": "T018",
+      "target_name": "CJ온스타일",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/219611144",
+      "confluence_page_id": "219611144",
+      "refined_points": [
+        "의사결정 사항 문단이 붙어있던 오류(결정함CJ온스타일)를 발견하여 날짜별 불릿 2건으로 분리 및 강조"
+      ],
+      "published_at": "2026-07-24T20:12:00+09:00"
+    },
+    {
+      "task_id": "T019",
+      "target_name": "DB손해보험 > 투믹스 매체 CS 운영 이관(마로인→핀크럭스 직접)",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955049",
+      "confluence_page_id": "191955049",
+      "refined_points": [
+        "의사결정 사항을 인용구로 전환하고 이관 내용을 볼드체로 강조",
+        "편집 과정에서 실수로 발생한 '주요 담당자' 표 헤더 중복을 즉시 발견하여 원본대로 롤백 수정(추가 버전 커밋으로 복구, 최종 페이지 상태는 원본과 동일)"
+      ],
+      "published_at": "2026-07-24T20:13:00+09:00"
+    },
+    {
+      "task_id": "T020",
+      "target_name": "삼성화재 > 캠페인 재참여 정책 변경(기존 DB 삭제)",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/219414530",
+      "confluence_page_id": "219414530",
+      "refined_points": [
+        "신규 페이지 전체 검토 완료, 의사결정 사항 인용구 전환 및 재참여 허용 기준일 강조"
+      ],
+      "published_at": "2026-07-24T20:13:30+09:00"
+    },
+    {
+      "task_id": "T021",
+      "target_name": "그라운드X > DB손해보험 KLAY Promotion(Klip 지갑 연동)",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/218365953",
+      "confluence_page_id": "218365953",
+      "refined_points": [
+        "6/16 정식오픈 조건(30만원 이상 결제 시 KLAY 지급) 및 6/29 로직변경(지갑동의 페이지 삭제, 뎁스 축소) 항목을 볼드체로 강조"
+      ],
+      "published_at": "2026-07-24T20:14:00+09:00"
+    },
+    {
+      "task_id": "T022",
+      "target_name": "SSG(신세계) > 아울렛 회원가입 캠페인",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/204636161",
+      "confluence_page_id": "204636161",
+      "refined_points": [
+        "의사결정 사항 문단이 붙어있던 오류(결정함추가 모집...결정함SSG)를 발견하여 날짜별 불릿 3건으로 분리",
+        "entity_manifest.json 고정분류(Media_Partner) 및 이중역할 의심 안내 문구는 변경 없이 그대로 유지, human_action_required 액션아이템도 보존"
+      ],
+      "published_at": "2026-07-24T20:14:30+09:00"
+    },
+    {
+      "task_id": "T023",
+      "target_name": "델리오 > 회원가입 CPA",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/219840520",
+      "confluence_page_id": "219840520",
+      "refined_points": [
+        "신규 페이지 전체 검토 완료, 예산·수량 수치를 볼드체로 강조"
+      ],
+      "published_at": "2026-07-24T20:15:00+09:00"
+    },
+    {
+      "task_id": "T024",
+      "target_name": "현대그린푸드 > 그리팅 인스타그램 회원가입 캠페인",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/219774986",
+      "confluence_page_id": "219774986",
+      "refined_points": [
+        "신규 페이지 전체 검토 완료, 총예산 수치를 볼드체로 강조"
+      ],
+      "published_at": "2026-07-24T20:15:30+09:00"
+    },
+    {
+      "task_id": "T025",
+      "target_name": "LG프로모타 > 회원가입 캠페인 예산 단계적 증액",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/219938817",
+      "confluence_page_id": "219938817",
+      "refined_points": [
+        "신규 페이지 전체 검토 완료, 예산 단계적 증액 수치(1천만원→1,200만원→22,320,000원) 및 CPA 단가 유지 조건을 볼드체로 강조"
+      ],
+      "published_at": "2026-07-24T20:16:00+09:00"
+    },
+    {
+      "task_id": "T026",
+      "target_name": "애드미글로벌 > 숨은보험금찾아줌 신규 라이브",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/218726402",
+      "confluence_page_id": "218726402",
+      "refined_points": [
+        "신규 페이지 전체 검토 완료, 예산 수치를 볼드체로 강조"
+      ],
+      "published_at": "2026-07-24T20:16:30+09:00"
+    }
+  ]
+}

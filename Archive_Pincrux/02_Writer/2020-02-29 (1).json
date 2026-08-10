@@ -1,0 +1,146 @@
+{
+  "schema_version": "1.1",
+  "node": "writer",
+  "run_date": "2020-02-29",
+  "source_file": "Archive_Pincrux/01_Collector/2020-02-29.json",
+  "node_status": "success",
+  "processed_tasks": [
+    {
+      "task_id": "T001",
+      "entity_name": "PINCRUX",
+      "project_name": "멤버십 팬 서비스(CJE&M·다이아)",
+      "page_scope": "child",
+      "target_name": "PINCRUX > 멤버십 팬 서비스(CJE&M·다이아)",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "updated_sections": ["PINCRUX 멤버십 팬 서비스(CJE&M·다이아) 기획 (2019-10~11) > 운영 히스토리", "PINCRUX 멤버십 팬 서비스(CJE&M·다이아) 기획 (2019-10~11) > 의사결정 사항", "PINCRUX 멤버십 팬 서비스(CJE&M·다이아) 기획 (2019-10~11) > 액션 아이템"]
+    },
+    {
+      "task_id": "T002",
+      "entity_name": "PINCRUX",
+      "project_name": "인플루언서 앱",
+      "page_scope": "child",
+      "target_name": "PINCRUX > 인플루언서 앱",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "updated_sections": ["PINCRUX 인플루언서 앱 개발(공용 플랫폼 인프라) (2019-12) > 운영 히스토리", "PINCRUX 인플루언서 앱 개발(공용 플랫폼 인프라) (2019-12) > 의사결정 사항", "PINCRUX 인플루언서 앱 개발(공용 플랫폼 인프라) (2019-12) > 액션 아이템"]
+    },
+    {
+      "task_id": "T003",
+      "entity_name": "하나금융투자",
+      "project_name": "비대면계좌개설 CPA 연동",
+      "page_scope": "child",
+      "target_name": "하나금융투자 > 비대면계좌개설 CPA 연동",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/205062145",
+      "confluence_page_id": "205062145",
+      "updated_sections": ["하나금융투자 계좌개설 CPA 연동 (2019-12) > 운영 히스토리", "하나금융투자 계좌개설 CPA 연동 (2019-12) > 의사결정 사항", "하나금융투자 계좌개설 CPA 연동 (2019-12) > 액션 아이템"]
+    },
+    {
+      "task_id": "T004",
+      "entity_name": "PINCRUX",
+      "project_name": "조직·인사정책",
+      "page_scope": "child",
+      "target_name": "PINCRUX > 조직·인사정책",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "updated_sections": ["PINCRUX 조직·인사 정책 (2019-12~2020-01) > 운영 히스토리", "PINCRUX 조직·인사 정책 (2019-12~2020-01) > 의사결정 사항", "PINCRUX 조직·인사 정책 (2019-12~2020-01) > 액션 아이템"]
+    },
+    {
+      "task_id": "T005",
+      "entity_name": "PINCRUX",
+      "project_name": "개발팀 업무프로세스",
+      "page_scope": "child",
+      "target_name": "PINCRUX > 개발팀 업무프로세스",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "updated_sections": ["PINCRUX 개발팀 업무 프로세스 정비 (2019) > 운영 히스토리", "PINCRUX 개발팀 업무 프로세스 정비 (2019) > 의사결정 사항", "PINCRUX 개발팀 업무 프로세스 정비 (2019) > 액션 아이템"]
+    },
+    {
+      "task_id": "T006",
+      "entity_name": "KT",
+      "project_name": "프로젝트K(혜택플랫폼/제휴할인)",
+      "page_scope": "child",
+      "target_name": "KT > 프로젝트K(혜택플랫폼/제휴할인)",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/196575233/KT",
+      "confluence_page_id": "196575233",
+      "updated_sections": ["KT 프로젝트K(혜택플랫폼/제휴할인) 신규 확정 및 개발 일정 수립 (2020-01) > 운영 히스토리", "KT 프로젝트K(혜택플랫폼/제휴할인) 신규 확정 및 개발 일정 수립 (2020-01) > 의사결정 사항", "KT 프로젝트K(혜택플랫폼/제휴할인) 신규 확정 및 개발 일정 수립 (2020-01) > 액션 아이템"]
+    },
+    {
+      "task_id": "T007",
+      "entity_name": "PINCRUX",
+      "project_name": "Creator Membership Community(대청자,대도서관)",
+      "page_scope": "child",
+      "target_name": "PINCRUX > Creator Membership Community(대청자,대도서관)",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "updated_sections": ["PINCRUX Creator Membership Community(대청자, 대도서관) (2019-11~12) > 운영 히스토리", "PINCRUX Creator Membership Community(대청자, 대도서관) (2019-11~12) > 의사결정 사항", "PINCRUX Creator Membership Community(대청자, 대도서관) (2019-11~12) > 액션 아이템"]
+    },
+    {
+      "task_id": "T008",
+      "entity_name": "PINCRUX",
+      "project_name": "Creator Membership Community(대청자,대도서관)",
+      "page_scope": "child",
+      "target_name": "PINCRUX > Creator Membership Community(대청자,대도서관)",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "updated_sections": ["PINCRUX Creator Membership Community(대청자, 대도서관) (2019-11~12) > 운영 히스토리", "PINCRUX Creator Membership Community(대청자, 대도서관) (2019-11~12) > 의사결정 사항", "PINCRUX Creator Membership Community(대청자, 대도서관) (2019-11~12) > 액션 아이템"]
+    },
+    {
+      "task_id": "T009",
+      "entity_name": "PINCRUX",
+      "project_name": "Creator Membership Community(대청자,대도서관)",
+      "page_scope": "child",
+      "target_name": "PINCRUX > Creator Membership Community(대청자,대도서관)",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "updated_sections": ["PINCRUX Creator Membership Community(대청자, 대도서관) (2019-11~12) > 운영 히스토리", "PINCRUX Creator Membership Community(대청자, 대도서관) (2019-11~12) > 의사결정 사항", "PINCRUX Creator Membership Community(대청자, 대도서관) (2019-11~12) > 액션 아이템"]
+    },
+    {
+      "task_id": "T010",
+      "entity_name": "미래에셋대우",
+      "project_name": "주식거래리워드 CPA 연동(계좌개설 실시간+최초거래 익일)",
+      "page_scope": "child",
+      "target_name": "미래에셋대우 > 주식거래리워드 CPA 연동(계좌개설 실시간+최초거래 익일)",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955009",
+      "confluence_page_id": "191955009",
+      "updated_sections": ["미래에셋대우 주식거래리워드 CPA 연동(계좌개설 실시간+최초거래 익일) (2020-02) [신규 추가]"]
+    }
+  ],
+  "skipped_tasks": [
+    {
+      "source": "uncategorized",
+      "raw_text_excerpt": "아이허브-카카오페이지(OHC) 관련 성공신호 48시간 후 지급 협의 및 포스트백 개발 완료 (2020-02-12~13)",
+      "reason": "모으미가 major_category/entity_name 판단을 보류한 항목. 쓰미가 Confluence AR 스페이스에서 '아이허브', '카카오페이지', 'OHC' 키워드로 CQL 제목·본문 검색을 시도하였으나 관련 기존 엔티티 페이지를 확인하지 못함(검색 결과 0건, 'OHC' 텍스트 매칭은 미래에셋대우 페이지 내 무관한 문맥 1건뿐). 아이허브(광고주 추정)와 카카오페이지(매체 추정) 중 어느 쪽을 엔티티로 등록해야 할지, 'OHC'가 지칭하는 사업 실체가 무엇인지 원문만으로 특정할 수 없어 임의로 엔티티를 확정하지 않고 보류함. 추후 추가 문맥(원본 슬랙 채널의 전후 대화 등) 확인 후 별도 처리 필요."
+    }
+  ]
+}

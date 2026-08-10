@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.1",
+  "node": "writer",
+  "run_date": "2026-07-16",
+  "source_file": "Archive_Pincrux/01_Collector/2020-06-30.json",
+  "node_status": "success",
+  "processed_tasks": [
+    {
+      "task_id": "T001",
+      "entity_name": "네오위즈",
+      "project_name": "피망몰 CPS 리워드 쇼핑몰",
+      "page_scope": "child",
+      "target_name": "네오위즈 > 피망몰 CPS 리워드 쇼핑몰",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/209518599",
+      "confluence_page_id": "209518599",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/209518599",
+      "confluence_parent_page_id": "209518599",
+      "updated_sections": [
+        "네오위즈(피망) 리워드형 CPS 쇼핑몰 신규 공동사업 계약 검토 (2020-05) > 운영 히스토리 (2020-06-01 계약 체결 항목 추가)",
+        "네오위즈(피망) 리워드형 CPS 쇼핑몰 신규 공동사업 계약 검토 (2020-05) > 의사결정 사항 (계약 미확정 항목 취소선 처리 후 체결 확정으로 교체, 5:5 조건 확정 주석 추가)",
+        "네오위즈(피망) 리워드형 CPS 쇼핑몰 신규 공동사업 계약 검토 (2020-05) > 액션 아이템 (3건 완료 체크, 2건 신규 추가)"
+      ]
+    },
+    {
+      "task_id": "T002",
+      "entity_name": "CLUV",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "CLUV",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/211320841/CLUV",
+      "confluence_page_id": "211320841",
+      "updated_sections": [
+        "프로젝트 히스토리 > 운영 히스토리 (2020-06-03 5월 실적/6월 목표 보고 항목 추가)",
+        "프로젝트 히스토리 > 의사결정 사항 (6월 목표 확정 항목 추가)",
+        "프로젝트 히스토리 > 액션 아이템 (iOS 베타 QA, 기획안 전달·리뷰 2건 완료 체크, 6월 목표 3건 신규 추가)"
+      ]
+    },
+    {
+      "task_id": "T003",
+      "entity_name": "오퍼월",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "오퍼월",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151821",
+      "confluence_page_id": "192151821",
+      "updated_sections": [
+        "오퍼월 PG 계약 진행 및 오픈 일정 지연 (2020-06) [신규 섹션 추가: 개요 및 배경 / 운영 히스토리 / 의사결정 사항 / 액션 아이템]"
+      ]
+    },
+    {
+      "task_id": "T004",
+      "entity_name": "PINCRUX 조직·인사 정책",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "PINCRUX 조직·인사 정책",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/209321985/PINCRUX",
+      "confluence_page_id": "209321985",
+      "updated_sections": [
+        "PINCRUX 공식 직급·직책 폐지 및 호칭 통일 (2020-06) [신규 섹션 추가: 개요 및 배경 / 운영 히스토리 / 의사결정 사항 / 액션 아이템]"
+      ]
+    },
+    {
+      "task_id": "T005",
+      "entity_name": "PINCRUX 개발팀 업무 프로세스",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "PINCRUX 개발팀 업무 프로세스",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/209256450/PINCRUX",
+      "confluence_page_id": "209256450",
+      "updated_sections": [
+        "PINCRUX 개발팀 업무 프로세스 정비 (2019) > 운영 히스토리 (2020-06-29 SPC pubkey 이슈 항목 추가)",
+        "PINCRUX 개발팀 업무 프로세스 정비 (2019) > 의사결정 사항 (os_flag=2 고정 상수 정책 항목 추가)",
+        "PINCRUX 개발팀 업무 프로세스 정비 (2019) > 액션 아이템 (신규 1건 추가)"
+      ]
+    }
+  ],
+  "skipped_tasks": []
+}

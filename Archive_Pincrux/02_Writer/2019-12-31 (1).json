@@ -1,0 +1,205 @@
+{
+  "schema_version": "1.1",
+  "node": "writer",
+  "run_date": "2019-12-31",
+  "source_file": "Archive_Pincrux/01_Collector/2019-12-31.json",
+  "node_status": "success",
+  "processed_tasks": [
+    {
+      "task_id": "T001",
+      "entity_name": "PINCRUX",
+      "project_name": "PINCRUX Creator Membership Community(대청자, 대도서관)",
+      "page_scope": "child",
+      "target_name": "PINCRUX > PINCRUX Creator Membership Community(대청자, 대도서관)",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "updated_sections": [
+        "## PINCRUX Creator Membership Community(대청자, 대도서관) (2019-11) → (2019-11~12)로 헤더 확장",
+        "동 섹션 내 '[쓰미 추가 판단 근거 — 2019-12-31 배치]' 문단 추가(기존 문단 삭제 없음)",
+        "### 운영 히스토리 — 2019-12-16~12-18 항목 5건 추가(멤버미 벤치마크 언급, 정식 오픈 기능 5종, 펀심 정책, 매출 시뮬레이션, 개발항목 그룹화)",
+        "### 의사결정 사항 — 4건 추가",
+        "### 액션 아이템 — 4건 추가"
+      ],
+      "writer_judgment_note": "모으미는 '멤버미'를 신규 독립 엔티티(In-house/Product, root, context_status: new)로 1차 분류했으나, 쓰미 재검토 결과 '멤버미(memberme.net)'는 원문상 PINCRUX가 검토한 외부 벤치마크 서비스(크리에이터 후원 플랫폼, 해외 벤치마크는 패트리온)로 언급된 것이며, 이어지는 논의(정식 오픈 기능 5종, 펀심 정책, 매출 시뮬레이션)는 기존 'PINCRUX Creator Membership Community(대청자, 대도서관)' 프로젝트의 진행 상황 업데이트로 판단됨. 결정적 단서는 매출 시뮬레이션 중 '대도서관의 경우 초렙이 더 많을거 같아서 오퍼월은 유저 3% 잡았습니다'라는 언급으로 대도서관을 명시적으로 지칭함. 이에 따라 '멤버미'라는 이름의 신규 엔티티 페이지를 생성하지 않고 entity_name을 PINCRUX, project_name을 기존 'Creator Membership Community(대청자, 대도서관)' 섹션으로 재확정하여 병합함(context_status: new → matched로 쓰미 최종 판단 변경). 판단 근거 전문은 컨플루언스 해당 섹션 내 '[쓰미 추가 판단 근거]' 문단에 기록함."
+    },
+    {
+      "task_id": "T002",
+      "entity_name": "오퍼월",
+      "project_name": "오퍼월 플랫폼 운영",
+      "page_scope": "child",
+      "target_name": "오퍼월 > 오퍼월 플랫폼 운영",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151821",
+      "confluence_page_id": "192151821",
+      "updated_sections": [
+        "## 오퍼월 플랫폼 운영 (2019) — ### 운영 히스토리에 2019-12-17/12-18/12-19/12-24 항목 4건 추가",
+        "### 의사결정 사항 — 3건 추가(Referrer Library 전환, MacAddress 제거, SDK 전달 프로세스 재공지)",
+        "### 액션 아이템 — 2건 추가"
+      ],
+      "writer_judgment_note": "모으미는 project_name을 2019-04-30 배치의 '오퍼월 플랫폼 운영' 표기로 승계하여 matched 처리함. CQL로 '오퍼월' 페이지(192151821)를 확인한 결과, 해당 페이지 내 기존 섹션 '오퍼월 플랫폼 운영 (2019)'이 Tracking SDK 개발·릴리즈 이력을 다루는 동일 맥락 섹션임을 확인하여 그대로 병합함(모으미 판단 유효, 추가 재판단 불필요)."
+    },
+    {
+      "task_id": "T003",
+      "entity_name": "PINCRUX",
+      "project_name": "PINCRUX 조직·인사 정책",
+      "page_scope": "child",
+      "target_name": "PINCRUX > PINCRUX 조직·인사 정책",
+      "context_status": "new",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "updated_sections": [
+        "## PINCRUX 조직·인사 정책 (2019-12) — 신규 섹션 최초 생성(T003·T007·T008·T009·T012 5건 통합 수록)"
+      ],
+      "writer_judgment_note": "T003(경조규정 개정)은 PINCRUX 페이지 내 기존 '채용요청서 양식 공식화'·'휴가 보고체계 간소화' 섹션과 주제가 겹치지 않아 병합하지 않고, T007(연말보너스·창립10주년)·T008(2020 회사목표)·T009(외부교육 지원)·T012(연차공유체계 변경)과 함께 신규 섹션 'PINCRUX 조직·인사 정책 (2019-12)'을 생성하여 5건을 주제별 하위 항목으로 통합 기록함. 기존 섹션 내용은 변경하지 않음."
+    },
+    {
+      "task_id": "T004",
+      "entity_name": "페이앤드",
+      "project_name": "페이앤드 테스트 가맹점 매출/정산 관리 제외 설정",
+      "page_scope": "child",
+      "target_name": "페이앤드 > 페이앤드 테스트 가맹점 매출/정산 관리 제외 설정",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192053250",
+      "confluence_page_id": "192053250",
+      "updated_sections": [
+        "## 페이앤드 테스트 가맹점 매출/정산 관리 제외 설정 (2019-12) — 신규 프로젝트 섹션 추가(기존 동명 섹션 없어 새 섹션 생성)"
+      ]
+    },
+    {
+      "task_id": "T005",
+      "entity_name": "SPC",
+      "project_name": "출석체크+충전소 연동",
+      "page_scope": "child",
+      "target_name": "SPC > 출석체크+충전소 연동",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/204603424/SPC",
+      "confluence_page_id": "204603424",
+      "updated_sections": [
+        "## SPC 출석체크+충전소 연동 개발 (2019-12) — ### 운영 히스토리에 2019-12-18 구축방식(SDK vs 웹연동) 협의 항목 2건 추가",
+        "### 의사결정 사항 — 1건 추가",
+        "### 액션 아이템 — 2건 추가"
+      ],
+      "human_action_required": "본 페이지는 2019-12-14 배치 생성 시부터 SPC의 사업 주체 성격(광고주 vs 매체/제휴사)이 human_action_required 상태로 미확정임. 본 배치에서도 재확인되지 않아 기존 비고를 그대로 유지함."
+    },
+    {
+      "task_id": "T006",
+      "entity_name": "페이앤드",
+      "project_name": "페이앤드 iOS13 UI 오류(충전소 버튼 소실·모달뷰 터치불가) 확인",
+      "page_scope": "child",
+      "target_name": "페이앤드 > 페이앤드 iOS13 UI 오류(충전소 버튼 소실·모달뷰 터치불가) 확인",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192053250",
+      "confluence_page_id": "192053250",
+      "updated_sections": [
+        "## 페이앤드 iOS13 UI 오류(충전소 버튼 소실·모달뷰 터치불가) 확인 (2019-12) — 신규 프로젝트 섹션 추가(기존 동명 섹션 없어 새 섹션 생성)"
+      ]
+    },
+    {
+      "task_id": "T007",
+      "entity_name": "PINCRUX",
+      "project_name": "PINCRUX 조직·인사 정책",
+      "page_scope": "child",
+      "target_name": "PINCRUX > PINCRUX 조직·인사 정책",
+      "context_status": "new",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "updated_sections": [
+        "## PINCRUX 조직·인사 정책 (2019-12) — [연말보너스·창립10주년] 하위 항목으로 T003과 함께 신규 섹션에 통합 수록"
+      ]
+    },
+    {
+      "task_id": "T008",
+      "entity_name": "PINCRUX",
+      "project_name": "PINCRUX 조직·인사 정책",
+      "page_scope": "child",
+      "target_name": "PINCRUX > PINCRUX 조직·인사 정책",
+      "context_status": "new",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "updated_sections": [
+        "## PINCRUX 조직·인사 정책 (2019-12) — [2020년 회사목표] 하위 항목으로 통합 수록"
+      ]
+    },
+    {
+      "task_id": "T009",
+      "entity_name": "PINCRUX",
+      "project_name": "PINCRUX 조직·인사 정책",
+      "page_scope": "child",
+      "target_name": "PINCRUX > PINCRUX 조직·인사 정책",
+      "context_status": "new",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "updated_sections": [
+        "## PINCRUX 조직·인사 정책 (2019-12) — [외부교육 지원제도] 하위 항목으로 통합 수록"
+      ]
+    },
+    {
+      "task_id": "T010",
+      "entity_name": "하나금융투자",
+      "project_name": "계좌개설 CPA 연동",
+      "page_scope": "child",
+      "target_name": "하나금융투자 > 계좌개설 CPA 연동",
+      "context_status": "new",
+      "action_taken": "created_new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/205062145",
+      "confluence_page_id": "205062145",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/190152706",
+      "confluence_parent_page_id": "190152706",
+      "updated_sections": [
+        "엔티티 신규 생성(Client > Project, 부모 190152706 하위)",
+        "## 하나금융투자 계좌개설 CPA 연동 (2019-12) — 최초 생성"
+      ]
+    },
+    {
+      "task_id": "T011",
+      "entity_name": "DB금융투자",
+      "project_name": "입금고 이벤트(카카오톡 선물받기)",
+      "page_scope": "child",
+      "target_name": "DB금융투자 > 입금고 이벤트(카카오톡 선물받기)",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151759/DB",
+      "confluence_page_id": "192151759",
+      "updated_sections": [
+        "## DB금융투자 입금고 이벤트(카카오톡 선물받기) (2019-12) — 신규 프로젝트 섹션 추가(기존 동명 섹션 없어 새 섹션 생성)"
+      ]
+    },
+    {
+      "task_id": "T012",
+      "entity_name": "PINCRUX",
+      "project_name": "PINCRUX 조직·인사 정책",
+      "page_scope": "child",
+      "target_name": "PINCRUX > PINCRUX 조직·인사 정책",
+      "context_status": "new",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714/PINCRUX",
+      "confluence_page_id": "191987714",
+      "updated_sections": [
+        "## PINCRUX 조직·인사 정책 (2019-12) — [연차사용 공유체계 변경] 하위 항목으로 통합 수록"
+      ]
+    }
+  ],
+  "skipped_tasks": []
+}

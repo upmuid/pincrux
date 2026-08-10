@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.1",
+  "node": "validator",
+  "run_date": "2019-09-14",
+  "source_files": {
+    "collector": "Archive_Pincrux/01_Collector/2019-09-14.json",
+    "writer": "Archive_Pincrux/02_Writer/2019-09-14.json"
+  },
+  "node_status": "success",
+  "review_summary": {
+    "total_reviewed": 5,
+    "passed_cnt": 5,
+    "failed_cnt": 0,
+    "slack_reread_cnt": 4
+  },
+  "validation_results": [
+    {
+      "task_id": "T001",
+      "target_name": "미래에셋대우 > 주식거래수수료 무료 이벤트",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955009",
+      "confluence_page_id": "191955009",
+      "slack_reread": true,
+      "slack_reread_trigger": "재검증: 총총 정정(T001·T002 분리) 반영 여부 확인",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "컨플루언스 191955009 페이지를 재확인한 결과 '미래에셋대우 주식거래수수료 무료 이벤트 전체 매체 종료 및 재라이브 준비 (2019-09)' 섹션이 T002와 완전히 분리된 독립 섹션으로 존재함. 이전 FAILED의 원인이었던 '최초 재라이브 목표 10월초 → 9/18로 앞당겨짐'이라는 창작된 인과관계 서술이 제거되었고, 해당 섹션은 슬랙 원문(CJP8CLM36/p1567470302006900) 기준 사실(전체매체 종료, 삼성페이 9/3 10시 종료, 10월초 재라이브 예정)만 기술함. 날짜·결정사항 등 사실관계 변경 없음.",
+      "suggested_fix": null
+    },
+    {
+      "task_id": "T002",
+      "target_name": "미래에셋대우 > 이벤트 소재 진행일자 수정",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955009",
+      "confluence_page_id": "191955009",
+      "slack_reread": true,
+      "slack_reread_trigger": "재검증: 총총 정정(T001·T002 분리) 반영 여부 확인",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "컨플루언스 191955009 페이지의 '미래에셋대우 이벤트 소재 진행일자 수정 (2019-09)' 섹션이 T001과 별개 섹션으로 분리됨을 확인. 섹션 본문에도 'T001과 동일 캠페인이라는 근거는 슬랙 원문에서 확인되지 않으며... 별도 사안으로 기록함'이라는 명시적 단서가 포함되어 임의 병합 소지가 제거됨. 슬랙 원문(CBTJWKH0C/p1568166685023900) 기준 '9.17~10.31 날짜 수정, 심의번호 기존 유지, 9/18 라이브 전 코딩반영' 내용도 정확히 일치. entity_name 정규화(미래에셋→미래에셋대우)는 유지되었으나 인과관계 왜곡 없음.",
+      "suggested_fix": null
+    },
+    {
+      "task_id": "T003",
+      "target_name": "웰컴저축은행 > LMS 발송 DB수집 이벤트",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151790",
+      "confluence_page_id": "192151790",
+      "slack_reread": true,
+      "slack_reread_trigger": "재검증: 총총 정정(출처 재표기) 반영 여부 및 슬랙 원문 직접 재확인",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "컨플루언스 192151790 페이지의 '웰컴저축은행 LMS 발송 DB수집 이벤트 (2019-09)' 섹션이 운영 히스토리를 2개 항목(2019-09-10 11:21 / 17:46)으로 분리하고 각각 정확한 슬랙 출처를 병기함. slack_read_thread로 CJCD15KJN 채널 ts=1568082083.001700 메시지를 직접 열어 재확인한 결과, 정회훈이 2019-09-10 11:21:23에 보낸 원문에 'LGu+고객정보만 가능, 입력 페이지에 제3자 제공(웰컴저축은행)내용 들어가는 부분 웰컴측에 미리 공유 부탁드립니다'라는 내용이 그대로 존재함을 확인. 이전 FAILED의 원인이었던 '출처 불명 문구'는 허구가 아니라 단순 출처링크 누락이었음이 최종 확인됨. 예산/단가(500원/건, 2만건 소진) 문구도 별도 출처(p1568105186003800)로 정확히 병기됨.",
+      "suggested_fix": null
+    },
+    {
+      "task_id": "T004",
+      "target_name": "티켓충전소",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/200835080",
+      "confluence_page_id": "200835080",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "이전 검증에서 PASSED 판정된 항목으로 이번 재검증 대상(T001~T003)에 변경이 없어 결과를 그대로 승계함. 페이지 제목이 '티켓모아'로 정상 변경되었고 엔티티 개요에 '티켓모아 (구: 티켓충전소)'로 병기됨. 2019-08 이전 히스토리는 원문 그대로 보존되어 손실 없음.",
+      "suggested_fix": null
+    },
+    {
+      "task_id": "T005",
+      "target_name": "PINCRUX",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191987714",
+      "confluence_page_id": "191987714",
+      "slack_reread": true,
+      "slack_reread_trigger": "context_status: new — 신규 페이지 생성 항목 원본 확인 (이전 검증 승계)",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "이전 검증에서 PASSED 판정된 항목으로 이번 재검증 대상(T001~T003)에 변경이 없어 결과를 그대로 승계함. 슬랙 원문(CBRLA2LGL/p1567674428002200)은 '벤처기업·이노비즈 인증 승인 통보'이며 decision·핵심 사실이 정확히 일치. action_item은 통상적 업무 흐름상 합리적 추정 범위로 판단.",
+      "suggested_fix": null
+    }
+  ]
+}

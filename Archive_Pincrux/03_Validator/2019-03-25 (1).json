@@ -1,0 +1,161 @@
+{
+  "schema_version": "1.1",
+  "node": "validator",
+  "run_date": "2019-03-25",
+  "source_files": {
+    "collector": "Archive_Pincrux/01_Collector/2019-03-25.json",
+    "writer": "Archive_Pincrux/02_Writer/2019-03-25.json"
+  },
+  "node_status": "success",
+  "review_summary": {
+    "total_reviewed": 11,
+    "passed_cnt": 11,
+    "failed_cnt": 0,
+    "slack_reread_cnt": 3
+  },
+  "validation_results": [
+    {
+      "task_id": "T001",
+      "target_name": "미래에셋대우 > 미래에셋대우 이지원페어 캠페인 (2019)",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955009",
+      "confluence_page_id": "191955009",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "이지원페어 계좌개설+연금이전 2ver 소재 제작 내용, 규격(PC 1080×free, MO 600×free), 기존 소재 활용 금지 결정 모두 Confluence에 정확히 반영됨."
+    },
+    {
+      "task_id": "T002",
+      "target_name": "미래에셋대우 > 미래에셋대우 시리즈 캠페인 (2019)",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955009",
+      "confluence_page_id": "191955009",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "심의번호 제19-01040호(2019.03.15~2020.03.14) 3개 매체 공통 삽입, 페이코 심의 진행 중 기재, 4월 내부 이벤트 심사필(19-176호) 삽입 내용 모두 정확히 반영됨."
+    },
+    {
+      "task_id": "T003",
+      "target_name": "삼성증권 > 삼성증권 소재 작업 (2019)",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192086150",
+      "confluence_page_id": "192086150",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "카카오페이지 CPM 팝업지면, OCB 심의번호, 한솔오크밸리 반려사항, CI 국문형 업데이트, '네이버 시리즈'→'시리즈' 표기 수정 결정 등 슬랙 원본 날짜 및 내용과 정합성 확인."
+    },
+    {
+      "task_id": "T004",
+      "target_name": "DB손해보험 > DB손해보험 자동차동호회 가입 이벤트 캠페인 (2019)",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955049",
+      "confluence_page_id": "191955049",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "네이버웹툰 심의번호 오기재 수정 이력(2019-03-21), 한솔오크밸리 반려사항 4건(2019-03-25), 신세계상품권 15,000원 리워드 기간(4/1~4/30) 모두 정확히 반영됨."
+    },
+    {
+      "task_id": "T005",
+      "target_name": "한국투자증권 > 한국투자증권 OCB·시럽피드 캠페인 (2019)",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192086176",
+      "confluence_page_id": "192086176",
+      "slack_reread": true,
+      "slack_reread_trigger": "context_status: new — 신규 페이지이므로 슬랙 원본 확인",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "슬랙 원본(#03_pincrux_디자인업무) 확인: 한국투자증권 OCB 배너 수정 1종(3/22), 시럽피드 심의번호 삽입(3/19) 내용 신규 페이지에 정확히 반영됨. 부모 카테고리(Client > Project, ID: 190152706) 지정 정확."
+    },
+    {
+      "task_id": "T006",
+      "target_name": "웰컴저축은행 > 웰컴저축은행 비대면 계좌개설 캠페인 (2019)",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151790",
+      "confluence_page_id": "192151790",
+      "slack_reread": true,
+      "slack_reread_trigger": "context_status: new — 신규 페이지이므로 슬랙 원본 확인",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "슬랙 원본(#03_pincrux_개발업무) 확인: Branch 트래커 연동, 안드로이드 KR/iOS en_KR 설정 완료, 미정산건 country 필드 기준 내용 정확히 반영됨. 부모 카테고리(Client > Project, ID: 190152706) 지정 정확."
+    },
+    {
+      "task_id": "T007",
+      "target_name": "이노클릭",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192086040",
+      "confluence_page_id": "192086040",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "애드팝콘 리뉴얼 충전소 vs 핀크럭스 비교 인사이트, 이노클릭 긴급 서버 재기동 절차 모두 정확히 반영됨. 개인의견 성격('개인적인 생각') 정보도 배경 맥락으로 적절히 문서화됨."
+    },
+    {
+      "task_id": "T008",
+      "target_name": "샌드박스네트워크 > 샌드박스네트워크 MCN 제휴 논의 (2019)",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192348202",
+      "confluence_page_id": "192348202",
+      "slack_reread": true,
+      "slack_reread_trigger": "context_status: new — 신규 페이지이므로 슬랙 원본 확인",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "슬랙 원본(#04_pincrux_영업업무) 확인: 김범휴 CPO 미팅 두 가지 제휴 방향(MCN 카포인트 제휴, 크리에이터 IP 앱 제안) 정확히 반영됨. 부모 카테고리(Media_Partner > Project, ID: 190414849) 지정 정확."
+    },
+    {
+      "task_id": "T009",
+      "target_name": "핀크럭스 개발 인프라",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/190218243",
+      "confluence_page_id": "190218243",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "어드민 센터 계정 탈퇴 기능 완료 공지는 단순 기능 배포 알림으로, skipped 처리 적절. 기존 핀크럭스 개발 인프라 페이지와의 맥락 충돌 없음."
+    },
+    {
+      "task_id": "T010",
+      "target_name": "핀크럭스 플랫폼 모니터링",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/190513154",
+      "confluence_page_id": "190513154",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "excute.pin 평상시 100건 이하→5분당 4천건 급증, 투믹스 pubkey 910304 연관 가능성, ad_info.pin 22시경 거래량 2배 증가 내용 모두 정확히 반영됨."
+    },
+    {
+      "task_id": "T011",
+      "target_name": "미래에셋대우 > 미래에셋대우 시리즈 캠페인 (2019)",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955009",
+      "confluence_page_id": "191955009",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "피망 에디스쿦 지면 배너 소재 전달 이력이 미래에셋대우 시리즈 캠페인 섹션(2019-03-21)에 적절히 병합됨."
+    }
+  ]
+}
