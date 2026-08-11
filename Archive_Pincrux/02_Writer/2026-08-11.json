@@ -1,0 +1,133 @@
+{
+  "schema_version": "1.1",
+  "node": "writer",
+  "run_date": "2026-08-11",
+  "source_file": "Archive_Pincrux/01_Collector/2026-08-11.json",
+  "node_status": "success",
+  "processed_tasks": [
+    {
+      "task_id": "T001",
+      "entity_name": "KT",
+      "project_name": "KT코인백 결제형 CPA 정률리워드 확장",
+      "page_scope": "child",
+      "target_name": "오퍼월 > KT코인백 결제형 CPA 정률리워드 확장",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "writer_override_note": "모으미는 entity_name을 'KT'(Media_Partner, 196575233)로 분류하였으나, 쓰미 재검토 결과 2022-09-27에 이미 오퍼월(In-house, 192151821) 페이지에 등록된 'KT코인백 결제형 CPA 정률리워드 확장' 개발 건(쿠팡·알리익스프레스 정률리워드 추가 개발)의 실제 반영 완료 소식임을 확인하여 오퍼월 페이지의 해당 섹션에 병합함. KT 엔티티(196575233) 페이지는 변경하지 않음. 이 override는 총총 검토 대상으로 보고함.",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151821",
+      "confluence_page_id": "192151821",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/210763777",
+      "confluence_parent_page_id": "210763777",
+      "updated_sections": ["## KT코인백 결제형 CPA 정률리워드 확장 (2022)"]
+    },
+    {
+      "task_id": "T002",
+      "entity_name": "SK증권",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "SK증권",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/229113858/SK",
+      "confluence_page_id": "229113858",
+      "updated_sections": ["## 캠페인 운영 현황 (2022)"]
+    },
+    {
+      "task_id": "T003",
+      "entity_name": "하이투자증권",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "하이투자증권",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/231112732",
+      "confluence_page_id": "231112732",
+      "updated_sections": ["## 계좌개설 CPA(리워드 익월 일괄지급) (2022)"]
+    },
+    {
+      "task_id": "T004",
+      "entity_name": "디플랜360",
+      "project_name": "뱅겨요 회원가입 캠페인",
+      "page_scope": "child",
+      "target_name": "디플랜360 > 뱅겨요 회원가입 캠페인",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/235012097/360",
+      "confluence_page_id": "235012097",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/210665474",
+      "confluence_parent_page_id": "210665474",
+      "updated_sections": ["## 뱅겨요 회원가입 캠페인 (2022)"]
+    },
+    {
+      "task_id": "T005",
+      "entity_name": "카카오메이커스",
+      "project_name": "카카오메이커스 채널 추가 이벤트",
+      "page_scope": "child",
+      "target_name": "카카오메이커스 > 카카오메이커스 채널 추가 이벤트",
+      "context_status": "new",
+      "action_taken": "created_new",
+      "new_entity_manifest_pending": true,
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/235896833",
+      "confluence_page_id": "235896833",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/210665474",
+      "confluence_parent_page_id": "210665474",
+      "updated_sections": ["## 엔티티 개요", "## 카카오메이커스 채널 추가 이벤트 (2022)"]
+    },
+    {
+      "task_id": "T006",
+      "entity_name": "와이즈버즈",
+      "project_name": "증권플러스 계좌연결 CPA",
+      "page_scope": "child",
+      "target_name": "와이즈버즈 > 증권플러스 계좌연동 CPA 캠페인",
+      "context_status": "unknown",
+      "action_taken": "merged_into_existing",
+      "writer_override_note": "원문의 '아키타입컴퍼니'와 entity_manifest.json 등록 엔티티 '와이즈버즈'(226197512)의 법인 관계가 불명확함. v2_writer.md 5-D절 기준(매칭 확률 80% 이상 시 [추론된 컨텍스트] 라벨 부착 후 병합)에 따라, 동일 캠페인(증권플러스 계좌연결 CPA)에 대해 2022-08 배치에서 이미 동일한 방식으로 병합된 선례가 있어 기존 [추론된 컨텍스트] 히스토리에 이어 병합함. 엔티티명·major_category는 변경하지 않았으며 context_status는 unknown으로 유지, human_action_required 플래그를 유지함.",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/226197512",
+      "confluence_page_id": "226197512",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/210665474",
+      "confluence_parent_page_id": "210665474",
+      "updated_sections": ["## 증권플러스 계좌연동 CPA 캠페인 (2022)"]
+    },
+    {
+      "task_id": "T007",
+      "entity_name": "핀크럭스샵",
+      "project_name": null,
+      "page_scope": "child",
+      "target_name": "오퍼월 > [추론된 컨텍스트] 리워드샵(링크프라이스 연동) 개발",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "writer_override_note": "모으미는 '핀크럭스샵'을 신규 엔티티(context_status: new)로 1차 분류하였으나, 쓰미가 오퍼월(192151821) 페이지를 직접 확인한 결과 '핀크럭스샵'은 2021-08 배치에 등록된 '리워드샵(링크프라이스 연동) 개발' 섹션과 동일 서비스임이 2022-07·2022-09 배치에서 이미 재확인되어 있는 상태임(페이지 내 기록 확인). CQL 제목 검색으로도 '핀크럭스샵' 단독 페이지는 존재하지 않음을 확인함. 따라서 신규 페이지를 생성하지 않고 기존 오퍼월 페이지의 해당 섹션에 병합함(context_status: new → matched로 재분류). 기존 '임직원몰'(226426901) 페이지와는 별개로 유지함.",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151821",
+      "confluence_page_id": "192151821",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/210763777",
+      "confluence_parent_page_id": "210763777",
+      "updated_sections": ["## [추론된 컨텍스트] 리워드샵(링크프라이스 연동) 개발 (2021-08)"]
+    },
+    {
+      "task_id": "T008",
+      "entity_name": "오퍼월",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "오퍼월",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151821",
+      "confluence_page_id": "192151821",
+      "updated_sections": ["## 오퍼월 SDK 암호화 key 보관 방식 변경 제안 (2022-10)"]
+    }
+  ],
+  "skipped_tasks": [
+    {
+      "task_id": "uncategorized-1",
+      "reason": "IGAW/한국경제 CS 인입 건. 'IGAW'와 '한국경제'의 관계 구조(광고주/대행/매체 여부)가 원문만으로 불명확하고 entity_manifest.json에도 두 명칭 모두 등록되어 있지 않음. 정보가 단편적이라 엔티티 계층 분류를 무리하게 판단하지 않고 모으미 판단대로 보류함. FAQ 병합 대상 엔티티 페이지 자체가 특정되지 않아 병합하지 않음."
+    }
+  ]
+}
