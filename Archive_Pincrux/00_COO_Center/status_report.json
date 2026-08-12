@@ -1,32 +1,31 @@
 {
   "pipeline_execution": {
-    "date": "2026-08-11",
+    "date": "2026-08-12",
     "run_mode": "backfill",
     "total_status": "success",
     "batches": [
       {
-        "period": "2022-10-01 to 2022-10-31",
+        "period": "2022-11-01 to 2022-11-30",
         "file_suffix": "(none)",
         "metrics": {
-          "collected_threads": 8,
-          "updated_matched_contexts": 5,
-          "created_new_contexts": 1,
-          "uncategorized_inquiries": 1,
-          "refiner_published_tasks": 8
+          "collected_threads": 5,
+          "updated_matched_contexts": 4,
+          "created_new_contexts": 0,
+          "uncategorized_inquiries": 0,
+          "refiner_published_tasks": 0
         },
-        "validator_refiner": "가동 (context_status:new 1건[카카오메이커스] + 재분류 1건[핀크럭스샵, new→matched] 존재로 읽어봄이 가동 / action_taken:created_new 1건[카카오메이커스] 존재로 다시쓰미 가동 — v0_coo.md 4-C절)",
-        "self_corrected": "사고성 정정 없음. 다시쓰미가 읽어봄이 발견 pending_review 2건(카카오메이커스 수량조건, 핀크럭스샵 부가 변경사항)을 원문 검증된 인용 그대로 보강 반영(사실관계 왜곡 아님, 완결성 보완)."
+        "validator_refiner": "생략 (전 항목 context_status:matched(4)/unknown(1), 재분류 없음, action_taken 전건 merged_into_existing — v0_coo.md 4-C절에 따라 읽어봄이·다시쓰미 모두 생략, 쓰미 완료 시점에 published 인정)",
+        "self_corrected": "사고성 정정 없음."
       }
     ],
-    "note": "2026-08-11 정기 실행(전일(08-10) 실행 이력 있으나 당일(08-11) 실행 이력 없음, 예외 조건 해당 없음. 화요일, 주말/공휴일 아님. 실행시점(2026-08)의 직전 년/월(2026-07)과는 아직 거리가 있어 백필 중단 조건 미해당). 모으미가 8건 수집(T001~T008), uncategorized 1건(IGAW/한국경제, 관계 구조 불명확). 신규 엔티티 1건(카카오메이커스, 235896833) context_status:new로 발견(human_action_required). T006(증권플러스 계좌연동 CPA)에서 기존 '와이즈버즈'(226197512)와 원문 '아키타입컴퍼니' 명칭이 상충하여 임의 병합하지 않고 unknown 유지, 2022-08 배치 선행 이력과 동일하게 [추론된 컨텍스트] 라벨로 병합. 쓰미가 원문을 직접 재확인하여 T001(KT 언급)을 오퍼월의 기존 'KT코인백 정률리워드 확장' 섹션으로, T007(핀크럭스샵, 모으미는 신규로 보고)을 오퍼월의 기존 '리워드샵(핀크럭스샵 리브랜딩)' 섹션으로 재라우팅(new→matched 재분류)하여 처리. 읽어봄이가 신규·재분류 2건(T005·T007)에 슬랙 2패스 재확인을 수행해 8건 전원 PASSED(node_status:success), 경미한 세부사항 생략 2건은 왜곡이 아니라 pending_review로만 기록. 다시쓰미가 해당 2건을 원문 검증된 인용 그대로 보강 반영하여 8건 전체 최종 발행 완료. next_period_start를 2022-11-01로 갱신. entity_manifest.json에 신규 엔티티 1건 등록 완료(human_action_required: 카카오메이커스). 배치 완료 후 자체 감사로 2022-09-30(2026-08-10 실행) 배치가 backfill_checkpoint.json history 배열에 누락되어 있음을 발견, status_report.json(2026-08-10) 기록을 근거로 소급 보완함(실제 작업 결과 영향 없음, 단순 기재 누락)."
+    "note": "2026-08-12 정기 실행(전일(08-11) 실행 이력 있으나 당일(08-12) 실행 이력 없음, 예외 조건 해당 없음. 수요일, 주말/공휴일 아님(2026년 8월 공휴일은 15일 광복절·17일 대체공휴일뿐, 12일과 무관). 실행시점(2026-08)의 직전 년/월(2026-07)과는 아직 거리가 있어 백필 중단 조건 미해당). 모으미가 5건 수집(T001~T005): DB금융투자(IPO 이슈 캠페인 홀딩 후 재라이브), 한화투자증권(예산소진 종료 캠페인 내년예산 선사용 재집행), NBT(반복이슈로 담당자 교체 예정, human_action_required 근거 보강), 캐롯손해보험(충전소 매체 CPS 캠페인 종료), 아키타입컴퍼니(증권플러스 계좌연결 예산상향+CPA→CPE전환, context_status:unknown — 기존 '와이즈버즈'(226197512, human_action_required)와의 명칭 상충이 2022-08 배치부터 4개월 연속 지속). uncategorized 0건, 신규 엔티티 0건. 쓰미가 4건(matched)은 각 엔티티 기존 페이지에 신규 섹션으로 병합, T005(unknown)는 지침 5-D절에 따라 매칭확률 80% 이상으로 판단해 와이즈버즈 페이지에 [추론된 컨텍스트] 라벨로 계속 병합(entity_name·major_category 임의 확정 없음). context_status 재분류 없음, action_taken 전건 merged_into_existing, 신규 페이지 생성·대규모 재구조화 없음 — v0_coo.md 4-C절 기준에 따라 읽어봄이·다시쓰미 모두 생략, 쓰미 완료 시점(02_Writer/2026-08-12.json)에 5건 전체 published 상태로 인정. 반영된 Confluence 페이지: DB금융투자(192151759), 한화투자증권(228458504), NBT(229277697), 캐롯손해보험(219873321), 와이즈버즈(226197512). 사고·자체복구 없음. backfill_checkpoint.json의 pending_review 중 '증권플러스 계좌연동 CPA 대행사 명칭 상충' 항목을 4개월 연속 지속 사실로 갱신. next_period_start를 2022-12-01로 갱신."
   },
   "error_logs": [],
   "incidents_self_corrected": [],
   "human_action_required": [
-    "카카오메이커스(235896833, 2022-10 신규) — major_category(Client 잠정) 확정 필요. 카톡 채널 추가 이벤트 캠페인, 원문 정보 제한적(단발성 온보딩 공지 수준)이라 향후 매체 이중역할 가능성도 배제하지 말 것.",
-    "증권플러스 계좌연동 CPA 대행사 명칭 상충 — '와이즈버즈'(226197512, 기존 human_action_required) vs '아키타입컴퍼니'(2022-10 배치 원문). 2022-08 배치부터 이어진 동일 이슈, 대행사 교체 확정 사실인지 동일 법인 표기 차이인지 확인 필요.",
-    "IGAW/한국경제 — 관계 구조 불명확 문의(uncategorized, 신규 엔티티 미등록).",
-    "기존 미해결 항목 계속 보류(신규 발생 아님, 상세는 backfill_checkpoint.json pending_review 참조): 티몬 파트너십 지속성, 쿠팡 이중역할, 나스미디어 종료여부, 오퍼월·KT 마크다운 잔재 버그, AK몰·KB리브메이트·챌스토어·티모넷 major_category 확정 등.",
-    "2022-11 배치는 다음 정기 실행부터 별도 재확인 없이 자동 진행 예정."
+    "증권플러스 계좌연동 CPA 대행사 명칭 상충 — '와이즈버즈'(226197512, 기존 human_action_required) vs '아키타입컴퍼니'(2022-08~11 배치 원문, 4개월 연속). 대행사 교체 확정 사실인지 동일 법인 표기 차이인지 확인 필요.",
+    "NBT(229277697, 기존 human_action_required) — 매체측 반복 이슈로 담당자 교체 진행 중, 12월 인계 완료 여부 후속 배치에서 확인 필요.",
+    "기존 미해결 항목 계속 보류(신규 발생 아님, 상세는 backfill_checkpoint.json pending_review 참조): 카카오메이커스 major_category 확정, IGAW/한국경제 관계구조, 티몬 파트너십 지속성, 쿠팡 이중역할, 나스미디어 종료여부, 오퍼월·KT 마크다운 잔재 버그, AK몰·KB리브메이트·챌스토어·티모넷 major_category 확정 등.",
+    "2022-12 배치는 다음 정기 실행부터 별도 재확인 없이 자동 진행 예정."
   ]
 }

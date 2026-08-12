@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.1",
+  "node": "collector",
+  "run_date": "2026-08-12",
+  "run_mode": "backfill",
+  "period": "2022-11-01 to 2022-11-30",
+  "status": "success",
+  "data_summaries": [
+    {
+      "task_id": "T001",
+      "major_category": "Client",
+      "minor_category": null,
+      "context_status": "matched",
+      "context_reference": "원문(2022-11-02 백상현, #운영1팀, https://pincrux.slack.com/archives/G0113KM3KK2/p1667370282298659): 'DB금융투자 공모주 이슈로 캠페인 홀딩 예정입니다. 홀딩 기간 : 11월 8일 ~ 21일, 재라이브 시점 : 22일(화)부터 재라이브'. 원문(2022-11-22 백상현, #운영1팀, https://pincrux.slack.com/archives/G0113KM3KK2/p1669089899799099): 'IPO이슈로 7일부터 홀딩되었던 DB금융투자 캠페인 요기요 제외한 전 매체 재라이브 완료되었습니다. 요기요는 사전에 재라이브 셋팅 요청 하였으나 반영이 안되어 메일 보냈습니다.' 완료형 표현 확인(전매체 재라이브 완료, 단 요기요는 미반영 상태로 별도 조치 중).",
+      "entity_name": "DB금융투자",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "DB금융투자",
+      "issue_title": "DB금융투자 공모주(IPO) 이슈로 캠페인 홀딩 후 요기요 제외 전매체 재라이브",
+      "summary": "IPO 이슈로 11/8~21 홀딩 후 11/22 요기요 제외 전매체 재라이브 완료",
+      "decision": "11/7까지 라이브 진행 후 공모주(IPO) 이슈로 11/8~21 홀딩, 11/22부터 요기요를 제외한 전 매체 재라이브 완료. 요기요는 사전에 재라이브 셋팅을 요청했으나 반영되지 않아 별도 메일로 재요청.",
+      "action_items": [
+        "요기요 매체 재라이브 반영 여부 후속 배치에서 확인 필요"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/G0113KM3KK2/p1669089899799099"
+    },
+    {
+      "task_id": "T002",
+      "major_category": "Client",
+      "minor_category": null,
+      "context_status": "matched",
+      "context_reference": "원문(2022-11-22 백상현, #운영1팀, https://pincrux.slack.com/archives/G0113KM3KK2/p1669096607878749): '한화투자증권 캠페인 이슈 공유드립니다. 전일 예산 달성으로 종료된 캠페인 금년도 추가 집행은 없다고 공유 받았으나 내년 예산 일부를 먼저 사용 할 수 있게 되어 11월 25일 ~ 12월 28일, 리워드 변경하여 재 집행 예정입니다. 이벤트 기간: 2022.11.25~2022.12.28 / 리워드 금액: 5천원 / CAP: 2,100개 / 단가: 15,000원(vat별도)'. 원문(2022-11-25 백상현, https://pincrux.slack.com/archives/G0113KM3KK2/p1669337453936849): '한화투자증권 일부 매체 재 라이브 되었습니다. 네이버페이, 페이북, 토스는 금일 오전 11시경 재라이브 될 예정이며 네오위즈 빅배너도 매체측 요청 완료되어 승인 시 바로 라이브 될 예정입니다.' 예정 표현과 완료 표현이 혼재되어 있어 11/25 시점 일부 매체만 완료임에 주의.",
+      "entity_name": "한화투자증권",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "한화투자증권",
+      "issue_title": "한화투자증권 예산소진 종료 캠페인, 내년도 예산 선사용 조건변경 재집행 확정",
+      "summary": "예산소진 종료 캠페인을 내년 예산 선사용해 조건변경 후 11/25~12/28 재집행 확정",
+      "decision": "리워드 5,000원 / 이벤트기간 내 CAP 2,100개 / 단가 15,000원(vat별도)로 조건 변경, 2022.11.25~12.28 재집행 확정. 11/25 오전 11시경 네이버페이·페이북·토스 재라이브 시작, 네오위즈 빅배너는 매체측 승인 후 순차 라이브 예정.",
+      "action_items": [],
+      "slack_thread_link": "https://pincrux.slack.com/archives/G0113KM3KK2/p1669096607878749"
+    },
+    {
+      "task_id": "T003",
+      "major_category": "Media_Partner",
+      "minor_category": null,
+      "context_status": "matched",
+      "context_reference": "원문(2022-11-02 고현복, #운영1팀, https://pincrux.slack.com/archives/G0113KM3KK2/p1667350487880089): 'NBT 측 이슈로 DB손해보험 - 네이버페이 산출이벤트 참여가 불가합니다. 정확한 사유 및 발생 시점, 보상안 협의 후 말씀드릴 수 있도록 하겠습니다.'(반응 rage 2건). 원문(2022-11-22 고현복, https://pincrux.slack.com/archives/G0113KM3KK2/p1669099550954049): '그간 NBT통하여 발생된 크고 작은 이슈로 인하여, 담당자교체 예정에 있습니다. 신규 담당자를 통한 업무는 차주 부터 12월까지 인계될 예정으로 확인 부탁드리겠습니다.' entity_manifest.json에 이미 NBT는 status: human_action_required(광고 네트워크형 중개사 역할·계약형태 미확정)로 등록되어 있으며, 이번 배치의 반복 이슈·담당자교체는 해당 플래그의 근거를 보강함.",
+      "entity_name": "NBT",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "NBT",
+      "issue_title": "NBT 매체측 반복 이슈로 담당자 교체 예정 (DB손해보험 캠페인 참여불가 이슈 포함)",
+      "summary": "NBT발 반복 이슈로 12월까지 신규 담당자 인계·교체 예정",
+      "decision": "확정 아님(진행 중) — 11/2 NBT 측 이슈로 DB손해보험-네이버페이 산출이벤트 참여 불가 발생(사유·보상안 미확정), 11/22 그간의 크고작은 반복 이슈로 NBT 담당자 교체를 예정하며 신규 담당자 인계는 차주부터 12월까지 진행 예정.",
+      "action_items": [
+        "NBT 신규 담당자 인계 완료 여부 및 서비스 안정화 후속 확인 필요 — entity_manifest.json human_action_required 상태 유지"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/G0113KM3KK2/p1669099550954049"
+    },
+    {
+      "task_id": "T004",
+      "major_category": "Client",
+      "minor_category": null,
+      "context_status": "matched",
+      "context_reference": "원문(2022-11-08 고현복, #운영1팀, https://pincrux.slack.com/archives/G0113KM3KK2/p1667888380264879): '캐롯손해보험 - CPS 캠페인 관련하여 자사 일부 충전소 매체 내 노출중이었는데, 소재 OFF 했습니다. 심의기간도 내일까지이며, 거의 반년간 실적이 미발생하여 그냥 종료처리 하였습니다.' 완료형 표현 확인(종료처리 완료).",
+      "entity_name": "캐롯손해보험",
+      "project_name": "충전소 매체 CPS 캠페인",
+      "page_scope": "child",
+      "target_name": "캐롯손해보험 > 충전소 매체 CPS 캠페인",
+      "issue_title": "캐롯손해보험 충전소 매체 CPS 캠페인 실적 미발생으로 종료",
+      "summary": "자사 충전소 매체 CPS 캠페인, 약 반년간 실적 미발생으로 소재 OFF 및 종료 처리",
+      "decision": "자사 일부 충전소 매체에 노출 중이던 캐롯손해보험 CPS 캠페인 소재 OFF, 심의기간 만료(익일) 여부와 무관하게 약 반년간 실적 미발생을 이유로 종료 처리 완료.",
+      "action_items": [],
+      "slack_thread_link": "https://pincrux.slack.com/archives/G0113KM3KK2/p1667888380264879"
+    },
+    {
+      "task_id": "T005",
+      "major_category": "Client",
+      "minor_category": null,
+      "context_status": "unknown",
+      "context_reference": "원문(2022-11-17 이혜민, #운영1팀, https://pincrux.slack.com/archives/G0113KM3KK2/p1668676645220129): '아키타입컴퍼니 증권플러스 계좌연결 CPA 예산 상향되었습니다. 총 예산: 1,000만원 > 1,500만원 / 총 수량: 1,250건 > 1,875건 / 일 수량: 42건 > 77건'. 원문(2022-11-24 이혜민, https://pincrux.slack.com/archives/G0113KM3KK2/p1669282672329449): '아키타입컴퍼니 증권플러스 CPA 캠페인 광고주 요청으로 금일까지 라이브 후 종료되었습니다. 명일부터 CPE 캠페인으로 진행 예정... 총 예산: 20,000,000원, 단가: 400원'. 2026-08-11 백필(2022-10) 배치에서 동일 캠페인(증권플러스 계좌연동 CPA)이 entity_manifest.json 등록 엔티티 '와이즈버즈'(226197512, status: human_action_required)와 이번 명칭 '아키타입컴퍼니' 간 명칭 불일치로 uncategorized 처리된 바 있으며, 이번 11월 배치에서도 동일 명칭 불일치 상태가 그대로 지속됨.",
+      "entity_name": "아키타입컴퍼니",
+      "project_name": "증권플러스 계좌연결 CPA/CPE",
+      "page_scope": "child",
+      "target_name": "아키타입컴퍼니 > 증권플러스 계좌연결 CPA/CPE",
+      "issue_title": "아키타입컴퍼니 증권플러스 계좌연결 캠페인 예산 상향 및 CPA→CPE 전환 (엔티티 명칭 불일치 이슈 지속)",
+      "summary": "증권플러스 계좌연결 캠페인 예산 1000만→1500만 상향 후 11/25부터 CPE로 전환",
+      "decision": "11/17 총예산 1,000만원→1,500만원(총수량 1,250→1,875건, 일수량 42→77건)으로 상향. 11/24 광고주 요청으로 CPA 캠페인 종료, 11/25부터 증권플러스 CPE 캠페인(예산 2,000만원, 단가 400원)으로 전환.",
+      "action_items": [
+        "entity_manifest.json '와이즈버즈'(226197512)와 '아키타입컴퍼니'가 동일 법인의 명칭 정정인지, 대행사 교체 등으로 별도 관리해야 하는 관계인지 총총/Jason 확인 필요 — 2026-07-28 백필(2022-10) 배치에서 최초 발견된 이슈가 이번 배치까지 미해결 상태로 지속됨. 확인 전까지 두 명칭을 임의로 병합하지 말 것."
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/G0113KM3KK2/p1668676645220129"
+    }
+  ],
+  "uncategorized": []
+}

@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.1",
+  "node": "writer",
+  "run_date": "2026-08-12",
+  "source_file": "Archive_Pincrux/01_Collector/2026-08-12.json",
+  "node_status": "success",
+  "processed_tasks": [
+    {
+      "task_id": "T001",
+      "entity_name": "DB금융투자",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "DB금융투자",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151759/DB",
+      "confluence_page_id": "192151759",
+      "updated_sections": ["## 공모주(IPO) 이슈 캠페인 홀딩 및 재라이브 (2022-11)"]
+    },
+    {
+      "task_id": "T002",
+      "entity_name": "한화투자증권",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "한화투자증권",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/228458504",
+      "confluence_page_id": "228458504",
+      "updated_sections": ["## 예산소진 종료 캠페인 예산 선사용 조건변경 재집행 (2022-11)"]
+    },
+    {
+      "task_id": "T003",
+      "entity_name": "NBT",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "NBT",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/229277697/NBT",
+      "confluence_page_id": "229277697",
+      "updated_sections": ["## 반복 이슈로 담당자 교체 예정 (2022-11)"]
+    },
+    {
+      "task_id": "T004",
+      "entity_name": "캐롯손해보험",
+      "project_name": "충전소 매체 CPS 캠페인",
+      "page_scope": "child",
+      "target_name": "캐롯손해보험 > 충전소 매체 CPS 캠페인",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/219873321",
+      "confluence_page_id": "219873321",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/210665474",
+      "confluence_parent_page_id": "210665474",
+      "updated_sections": ["## 충전소 매체 CPS 캠페인 종료 (2022-11)"]
+    },
+    {
+      "task_id": "T005",
+      "entity_name": "아키타입컴퍼니",
+      "project_name": "증권플러스 계좌연결 CPA/CPE",
+      "page_scope": "child",
+      "target_name": "아키타입컴퍼니 > 증권플러스 계좌연결 CPA/CPE",
+      "context_status": "unknown",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/226197512",
+      "confluence_page_id": "226197512",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/210665474",
+      "confluence_parent_page_id": "210665474",
+      "updated_sections": ["## 증권플러스 계좌연동 CPA 캠페인 (2022) — [추론된 컨텍스트] 2022-11-17/2022-11-24 항목 추가"]
+    }
+  ],
+  "skipped_tasks": []
+}
