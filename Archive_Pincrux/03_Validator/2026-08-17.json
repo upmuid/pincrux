@@ -1,0 +1,134 @@
+{
+  "schema_version": "1.1",
+  "node": "validator",
+  "run_date": "2026-08-17",
+  "source_files": {
+    "collector": "Archive_Pincrux/01_Collector/2026-08-17.json",
+    "writer": "Archive_Pincrux/02_Writer/2026-08-17.json"
+  },
+  "node_status": "success",
+  "review_summary": {
+    "total_reviewed": 7,
+    "passed_cnt": 7,
+    "failed_cnt": 0,
+    "slack_reread_cnt": 3
+  },
+  "validation_results": [
+    {
+      "task_id": "T001",
+      "target_name": "DB손해보험",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955049",
+      "confluence_page_id": "191955049",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "JSON decision·action_items가 컨플루언스 '## DB손해보험 딜러 회원가입 URL 생성 페이지 개발 (2023-03)' 섹션과 항목별로 일치(도메인/한글전용/아이디+전화번호 중복판단/전화번호인증 초기화/개인정보 1년보관/삭제버튼 불필요 결론, 액션아이템 2건 모두 매핑). 기존 히스토리 섹션(카카오페이 감사제, 요기요 등)은 그대로 보존되어 맥락 누수·Overwrite 없음. 트리거 조건(불일치/과잉요약/액션아이템 누락) 미해당으로 1패스만 수행."
+    },
+    {
+      "task_id": "T002",
+      "target_name": "오퍼월",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151821",
+      "confluence_page_id": "192151821",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "JSON decision(연도별 신규 테이블 전환 2차 작업 3/22 14:10 적용, 영향범위 목록, 3/24 구테이블 삭제)이 컨플루언스 '## 오퍼월 실적연테이블 구조 변경 2차 작업 적용 (2023-03)' 섹션과 완전히 일치. action_items=[] ↔ 컨플루언스 '해당 없음' 일치. 기존 이커머스 어뷰징방지·usrkey 등 하위 섹션 보존, Overwrite 없음. 트리거 미해당으로 1패스만 수행."
+    },
+    {
+      "task_id": "T003",
+      "target_name": "리워드마켓 > 카카오페이 결제수단 연동",
+      "context_status": "unknown",
+      "confluence_space": null,
+      "confluence_page_url": null,
+      "confluence_page_id": null,
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "컨플루언스 미반영(skipped_tasks) 건으로 컨플루언스 대조 대상 아님. JSON상 스킵 근거만 확인: entity_manifest.json에 '리워드마켓' 미등재, AR 스페이스 title/text 유사도 탐색 결과 '페이앤드'(192053250)·'CPS 기획전 플랫폼'(206012417) 어디에도 '리워드마켓' 언급 없어 80% 매칭 근거 부재. 오퍼월 페이지의 '리워드샵/핀크럭스샵' 섹션도 명칭이 달라 별개 서비스로 임의 병합하지 않은 판단이 타당함. 신규 페이지 생성 대신 human 확인 대기로 안전하게 격리한 처리가 적절함."
+    },
+    {
+      "task_id": "T004",
+      "target_name": "티빗허브",
+      "context_status": "unknown",
+      "confluence_space": null,
+      "confluence_page_url": null,
+      "confluence_page_id": null,
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "컨플루언스 미반영(skipped_tasks) 건으로 컨플루언스 대조 대상 아님. JSON상 스킵 근거만 확인: entity_manifest.json 미등재, AR 스페이스 title/text 유사도 탐색 결과 매칭 페이지 없음. major_category(Media_Partner/Partner)도 원문 정보(상점ID·보안설정, 디자인 진행중)만으로 확정 불가하여 모으미도 잠정분류·human_action_required 표기한 상태와 일치. 신규 페이지 임의 생성 없이 스킵한 처리가 적절함."
+    },
+    {
+      "task_id": "T005",
+      "target_name": "매드업 > 무신사 첫구매",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/238780417",
+      "confluence_page_id": "238780417",
+      "slack_reread": true,
+      "slack_reread_trigger": "context_status: new — 신규 섹션(캠페인)이므로 슬랙 원본 확인",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "slack_thread_link(G0113KM3KK2, ts 1679458321.381139) 원문 확인: 캠페인명 '무신사 첫결제하기'(첫구매), APPKEY 131018/131019, 집행일정 2023.03.22~03.31, 단가 15,000원(NET/VAT별도), 총예산 500만원, 총수량 334건, 일수량 34건 — JSON·컨플루언스 '## 매드업 무신사 첫구매 (2023-03)' 섹션과 정확히 일치. 기존 '그립 CPE' 섹션은 그대로 보존되어 단일 페이지 내 병합 시 데이터 손실 없음. 참고: 슬랙 스레드에는 03/22 라이브 메시지와 '실적 확인되었습니다' 답글만 존재하며, JSON/컨플루언스에 기재된 03/24 예산 상향(500→700만원, 334→467건) 내용은 이 스레드 범위 밖(별도 메시지)이라 이 pinpoint 스레드로는 직접 재확인되지 않음. 내용상 모순은 없어 FAILED로 판정하지 않으나, 아래 pending_review에 경미 사항으로 별도 기록함."
+    },
+    {
+      "task_id": "T006",
+      "target_name": "하나금융투자 > 계좌개설 캠페인(2023 재라이브)",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/205062145",
+      "confluence_page_id": "205062145",
+      "slack_reread": true,
+      "slack_reread_trigger": "context_status: new — 신규 섹션(캠페인)이므로 슬랙 원본 확인",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "slack_thread_link(G0113KM3KK2, ts 1678328768.607699) 원문 확인: 발신자 백상현, '하나증권 신규 계좌개설 캠페인 라이브...약 4년만에 재라이브', 광고주단가 16,000원(vat별도, 리워드포함), 카카오페이 리워드1만원/매체비5천원, 토스 리워드·매체비 각5천원, 네이버페이 리워드5천원/매체비1만원(vat별도,gross) — JSON·컨플루언스와 완전히 일치. '하나증권'(원문) vs '하나금융투자'(manifest) 표기 차이를 임의로 동일시하지 않고 human_action_required로 안전하게 격리한 처리가 원문 뉘앙스에 충실함. 기존 '네이버페이 프리미엄패키지', '계좌개설 CPA 연동(2019)' 섹션 보존, Overwrite 없음. JSON action_items=[]이나 컨플루언스에는 human_action_reason 기반 액션아이템 1건이 명시적으로 추가되어 있어 누락이 아니라 오히려 보완된 것으로 판단(ACTION_ITEM_MISSING 아님)."
+    },
+    {
+      "task_id": "T007",
+      "target_name": "카카오 > 카카오맵 위치공유 CPA",
+      "context_status": "new",
+      "context_status_original_from_collector": "unknown",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/239206401",
+      "confluence_page_id": "239206401",
+      "slack_reread": true,
+      "slack_reread_trigger": "context_status: new(신규 페이지 생성) + 모으미↔쓰미 재분류(unknown→new) — 재분류 타당성 및 원문 일치 여부 확인",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "slack_thread_link(G0113KM3KK2, ts 1679885087.978979) 원문 확인(발신자 정빈희, 스레드 답글 없음): '카카오-카카오맵 위치공유 CPA(소셜) 신규 오픈', 캠페인명 '카카오맵 위치공유 CPA(스크린샷 검증형으로 진행)', 프로세스(이벤트페이지>앱설치/실행>카카오맵 친구에게 위치공유>스크린샷/업로드>리워드지급), 집행일정 2023.03.27~04.02, 단가 400원(VAT별도), 총예산 300만원(VAT별도), 총수량 7,500건, 진행매체 전 매체 — JSON·컨플루언스 신규 페이지 본문과 1:1로 정확히 일치. 신규 페이지('엔티티 개요'/'카카오맵 위치공유 CPA (2023-03)'/'FAQ 및 트러블슈팅'/'주요 담당자' 4개 섹션)에 '카카오페이'(192446504)·'카카오페이지'(231211009)와의 혼동·병합 흔적 없음 — 오히려 human_action_required 안내문에 두 매체 역할 엔티티와의 계열/이중역할 관계를 명시적으로 미확정 상태로 남기고 총총/Jason 확인을 요청하여 임의 통합을 방지함. 액션아이템도 JSON·컨플루언스 간 1건 정확히 매핑됨."
+    }
+  ],
+  "reclassification_review": {
+    "task_id": "T007",
+    "from": "unknown (모으미)",
+    "to": "new (쓰미)",
+    "verdict": "valid",
+    "rationale": "모으미가 unknown으로 분류한 이유는 '카카오'라는 엔티티 자체가 entity_manifest.json에 미등재이고 기존 '카카오페이'/'카카오페이지'(둘 다 Media_Partner 역할)와의 이중역할 관계가 원문만으로 확정 불가하다는 '엔티티 정체성' 차원의 유보였음. 쓰미는 client_media_registry.md 4-2절 정책에 따라 '컨플루언스에 매칭되는 기존 페이지가 없다'는 '작업 실행' 차원에서 new(신규 페이지 생성)로 재분류함 — 이는 서로 다른 축의 판단(엔티티 정체성 vs 페이지 매칭 여부)으로 상호 모순되지 않음. 쓰미는 기존 매체 역할 엔티티에 임의 병합하지 않고 독립 Client 페이지를 생성했고, human_action_required 플래그와 이중역할 미확정 사실을 그대로 승계하여 총총/Jason 최종 판단을 요청했으므로 모으미의 최초 유보 취지를 왜곡하지 않았음. 슬랙 원문과도 완전히 일치. 재분류는 타당함."
+  },
+  "pending_review_notes": [
+    {
+      "task_id": "T005",
+      "type": "minor_source_coverage_gap",
+      "description": "collector context_reference 및 decision에 인용된 03/24 예산 상향(500만원→700만원, 334건→467건, 일수량 28→39건) 발언은 01_Collector JSON의 slack_thread_link(ts 1679458321.381139, 03/22 라이브 스레드) 범위 밖의 별도 메시지로 추정되어, 이번 2패스 pinpoint 조회로는 직접 원문 대조가 불가했음. 컨플루언스·JSON 간 내용은 서로 일치하고 모순도 없어 FAILED 처리하지 않았으나, 사실관계 자체의 왜곡은 아니므로 총총 판단 보류(pending_review)로 남김. 필요 시 모으미에게 03/24 예산상향 메시지의 별도 slack_thread_link 보강을 요청할 수 있음."
+    },
+    {
+      "task_id": "T006",
+      "type": "minor_manifest_alias_confirmation_pending",
+      "description": "'하나증권'(원문 표기) ↔ '하나금융투자'(manifest 표기)가 2023년 사명 변경에 따른 동일 법인인지 여부는 여전히 human_action_required 상태로 총총/Jason 확인 대기 중. 사실관계 왜곡은 아니며 이미 JSON·컨플루언스 양쪽에 안전하게 격리·명시되어 있어 정보 처리 자체는 적절함."
+    },
+    {
+      "task_id": "T005 / T007",
+      "type": "manifest_registration_pending",
+      "description": "T005(매드업, 238780417)와 T007(카카오, 239206401) 모두 entity_manifest.json 신규/보강 등재가 아직 완료되지 않은 human_action_required 상태(총총 처리 대상)로, 이번 배치의 사실관계 검증과는 별개로 파이프라인 후속 조치가 필요함."
+    }
+  ]
+}

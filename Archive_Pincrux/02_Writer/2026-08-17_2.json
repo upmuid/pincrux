@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.1",
+  "node": "writer",
+  "run_date": "2026-08-17",
+  "source_file": "Archive_Pincrux/01_Collector/2026-08-17.json",
+  "node_status": "success",
+  "processed_tasks": [
+    {
+      "task_id": "T003",
+      "entity_name": "오퍼월",
+      "project_name": "리워드샵(링크프라이스 연동) 개발",
+      "page_scope": "child",
+      "target_name": "오퍼월 > [추론된 컨텍스트] 리워드샵(링크프라이스 연동) 개발 (2021-08)",
+      "context_status": "matched",
+      "context_status_original_from_collector": "unknown",
+      "context_status_reclassified_reason": "총총(COO) 지시에 따른 Jason 사후 확인 반영: '리워드마켓'은 별도 엔티티가 아니라 오퍼월(In-house, 192151821) 하위 '리워드샵(핀크럭스샵 리브랜딩)' 리워드형 쇼핑몰을 버즈빌 등 매체에 제공할 때 쓰는 카테고리명(내부 서비스명)임이 확정됨. entity_manifest.json의 '오퍼월' 엔티티에 alias '리워드마켓'이 신규 등록된 것을 확인하고, 원래 쓰미가 skipped_tasks 처리했던 T003(카카오페이 결제수단 연동 건)을 오퍼월 페이지의 기존 '[추론된 컨텍스트] 리워드샵(링크프라이스 연동) 개발 (2021-08)' 섹션에 병합함.",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151821",
+      "confluence_page_id": "192151821",
+      "updated_sections": [
+        "## [추론된 컨텍스트] 리워드샵(링크프라이스 연동) 개발 (2021-08) > 운영 히스토리",
+        "## [추론된 컨텍스트] 리워드샵(링크프라이스 연동) 개발 (2021-08) > 의사결정 사항",
+        "## [추론된 컨텍스트] 리워드샵(링크프라이스 연동) 개발 (2021-08) > 액션 아이템"
+      ],
+      "detail": "운영 히스토리에 2023-03-10(카카오페이 계약 진행 공유)·2023-03-22(나이스페이PG 신규 카카오페이 수단 안내 및 검토 요청)·2023-03-28(카카오페이 직접계약 유지, 나이스페이PG 신규수단 미동의 확정) 3건을 날짜순으로 추가. 의사결정 사항에 최종 확정 내용 1건 추가(볼드체). 액션 아이템에 '카카오페이 직접 계약 테스트 및 피드백 지속 진행', '법무(서정철): 카카오페이 계약 조건 최종 검토' 2건 체크리스트 추가. 기존 항목(2021-08~2022-10 히스토리, 의사결정, 액션 아이템)은 수정·삭제 없이 그대로 보존함."
+    }
+  ],
+  "skipped_tasks": [],
+  "reprocessed_from": {
+    "original_run": "Archive_Pincrux/02_Writer/2026-08-17.json",
+    "original_skipped_task_id": "T003",
+    "original_skip_reason": "entity_name '리워드마켓'이 entity_manifest.json에 미등재이며 매칭 페이지를 찾지 못해 skipped_tasks 처리됨.",
+    "correction_trigger": "총총(COO)이 Jason의 사후 확인을 받아 지시한 정정 반영 1건"
+  }
+}
