@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.1",
+  "node": "refiner",
+  "run_date": "2026-08-17",
+  "source_file": "Archive_Pincrux/03_Validator/2026-08-17.json",
+  "node_status": "success",
+  "published_tasks": [
+    {
+      "task_id": "T001",
+      "target_name": "DB손해보험",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/191955049",
+      "confluence_page_id": "191955049",
+      "refined_points": [
+        "'DB손해보험 딜러 회원가입 URL 생성 페이지 개발 (2023-03)' 섹션 검토 — 잔재 구어체·이모지 없음, 사명 표기('핀크럭스') 정상 확인",
+        "2023-03-23 운영 히스토리 항목에서 5개 결정사항이 한 문장에 몰려 있던 부분을 도메인/등록/인증 정책과 개인정보 보관·법무검토 결정으로 문단 분리하여 가독성 개선(사실관계 변경 없음)",
+        "2023-03-22 항목의 핵심 제약사항 '딜러당 URL 1개 초과 발급 금지'를 볼드체로 강조 처리",
+        "기존 히스토리 섹션(카카오페이 감사제, 요기요 등)은 재포맷·이동 없이 그대로 보존",
+        "신규 섹션 앞 구분선(---) 배치 확인 — 누락 없음",
+        "액션 아이템 체크리스트 형식(- [ ]) 유지 확인"
+      ],
+      "published_at": "2026-08-17T22:31:13+09:00"
+    },
+    {
+      "task_id": "T002",
+      "target_name": "오퍼월",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151821",
+      "confluence_page_id": "192151821",
+      "refined_points": [
+        "'오퍼월 실적연테이블 구조 변경 2차 작업 적용 (2023-03)' 섹션 검토 — 구어체 잔재·이모지 없음, 확정형 문어체 기준 충족 확인",
+        "의사결정 사항 블록에 핵심 결정(연도별 신규 테이블 전환, 구테이블 삭제) 볼드 처리 기존 유지 확인",
+        "액션 아이템 '해당 없음(적용 및 후속 정리 완료 건)' 표기가 검증 JSON의 action_items=[]와 일치함을 재확인",
+        "신규 섹션 앞 구분선(---) 배치 확인 — 누락 없음",
+        "기존 하위 섹션(usrkey 검증 확대, KT코인백 등)은 재포맷·이동 없이 그대로 보존",
+        "내용 변경 없이 최종 확정 퍼블리싱(버전 스탬프)만 수행"
+      ],
+      "published_at": "2026-08-17T22:34:30+09:00"
+    },
+    {
+      "task_id": "T005",
+      "target_name": "매드업 > 무신사 첫구매",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/238780417",
+      "confluence_page_id": "238780417",
+      "refined_points": [
+        "'매드업 무신사 첫구매 (2023-03)' 섹션 검토 — 구어체 잔재 없음, 수치(단가·예산·수량) 표기 정확성 확인",
+        "의사결정 사항 블록의 예산 상향(500만원→700만원, 334건→467건) 볼드 처리 기존 유지 확인",
+        "신규 섹션 앞뒤 구분선(---) 배치 확인 — 누락 없음(기존 '그립 CPE' 섹션과 명확히 분리됨)",
+        "액션 아이템 '해당 없음' 표기가 검증 JSON과 일치함을 재확인",
+        "기존 '그립 CPE' 섹션 및 human_action_required 안내 박스는 재포맷·이동 없이 그대로 보존",
+        "내용 변경 없이 최종 확정 퍼블리싱(버전 스탬프)만 수행"
+      ],
+      "published_at": "2026-08-17T22:35:02+09:00"
+    },
+    {
+      "task_id": "T006",
+      "target_name": "하나금융투자 > 계좌개설 캠페인(2023 재라이브)",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/205062145",
+      "confluence_page_id": "205062145",
+      "refined_points": [
+        "'하나금융투자 신규 계좌개설 캠페인 재라이브 (2023-03)' 섹션 검토 — 구어체 잔재 없음, 매체별 리워드/매체비 수치 정확성 확인",
+        "human_action_required 안내 박스('하나증권' vs '하나금융투자' 표기 확인 대기) 및 액션 아이템 체크리스트 형식 유지 확인",
+        "의사결정 사항 블록의 핵심 수치(단가 16,000원, 매체별 리워드/매체비) 볼드 처리 기존 유지 확인",
+        "신규 섹션 앞 구분선(---) 배치 확인 — 누락 없음",
+        "기존 '네이버페이 프리미엄패키지', '계좌개설 CPA 연동(2019)' 섹션은 재포맷·이동 없이 그대로 보존",
+        "내용 변경 없이 최종 확정 퍼블리싱(버전 스탬프)만 수행"
+      ],
+      "published_at": "2026-08-17T22:35:36+09:00"
+    },
+    {
+      "task_id": "T007",
+      "target_name": "카카오 > 카카오맵 위치공유 CPA",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/239206401",
+      "confluence_page_id": "239206401",
+      "refined_points": [
+        "신규 생성 페이지 전체(엔티티 개요/human_action_required 안내/카카오맵 위치공유 CPA 섹션/FAQ/주요 담당자) 검토 완료 — 구어체 잔재·이모지 없음, 확정형 문어체 기준 충족",
+        "human_action_required 안내 박스('카카오'·'카카오페이'·'카카오페이지' 이중역할 미확정) 및 액션 아이템 체크리스트 형식 유지 확인",
+        "의사결정 사항 블록의 핵심 수치(단가 400원, 총예산 300만원, 총수량 7,500건, 집행일정) 볼드 처리 기존 유지 확인",
+        "엔티티 개요 표 직후 및 캠페인 섹션 직후 구분선(---) 배치 확인 — 누락 없음",
+        "내용 변경 없이 신규 페이지 최종 확정 퍼블리싱(버전 스탬프) 수행"
+      ],
+      "published_at": "2026-08-17T22:35:47+09:00"
+    }
+  ]
+}
