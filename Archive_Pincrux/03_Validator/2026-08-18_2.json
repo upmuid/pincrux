@@ -1,0 +1,162 @@
+{
+  "schema_version": "1.1",
+  "node": "validator",
+  "run_date": "2026-08-18",
+  "source_files": {
+    "collector": "Archive_Pincrux/01_Collector/2026-08-18_2.json",
+    "writer": "Archive_Pincrux/02_Writer/2026-08-18_2.json"
+  },
+  "node_status": "fail",
+  "review_summary": {
+    "total_reviewed": 11,
+    "passed_cnt": 10,
+    "failed_cnt": 1,
+    "slack_reread_cnt": 5
+  },
+  "validation_results": [
+    {
+      "task_id": "T001",
+      "target_name": "여기어때 > CPE 참여형 광고 캠페인",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/239894529",
+      "confluence_page_id": "239894529",
+      "slack_reread": true,
+      "slack_reread_trigger": "context_status: new — 신규 페이지이므로 슬랙 원본 확인",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "슬랙 원문(2023-04-06, G0113KM3KK2/p1680767530463289): 단가280원(NET/VAT별도)/총예산19,320,000원/총수량69,000건, 진행기간 4/7~4/30(APPKEY 131279,131280), AOS 실적 정상·IOS 명일 라이브 후 확인 예정. 모으미 JSON 및 컨플루언스 '의사결정 사항'과 수치가 정확히 일치함. 04/11 재라이브·04/24 일수량 상향(3,000→4,000건)은 원문에 별도로 링크된 후속 스레드 근거로, 이번 2패스 핀포인트 대상(주 slack_thread_link)이 아니므로 재조회하지 않았으며 출처 표기만 확인함. 회사명 오탈자 없음, 기존 섹션 손상 없음."
+    },
+    {
+      "task_id": "T002",
+      "target_name": "매드업 > 그립 CPE 캠페인",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/238780417",
+      "confluence_page_id": "238780417",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "JSON summary/decision(4월 조건 확정, 4/13 소재교체 종료, 4/19 재라이브)과 컨플루언스 '그립 CPE (2023)' 섹션의 운영 히스토리·의사결정 사항이 일치함. action_items 빈 값도 컨플루언스와 부합(2026-08-17 Jason 확인으로 해당 없음 처리). 트리거 조건 미해당으로 슬랙 재조회 안 함. 1·2월 기존 히스토리 및 무신사 첫구매 섹션 등 기존 내용 손상 없이 보존됨. 회사명 오탈자 없음."
+    },
+    {
+      "task_id": "T003",
+      "target_name": "제타미디어 > 비플릭스 회원가입",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/239927297",
+      "confluence_page_id": "239927297",
+      "slack_reread": true,
+      "slack_reread_trigger": "context_status: new — 신규 페이지이므로 슬랙 원본 확인",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "슬랙 원문(2023-04-17, G0113KM3KK2/p1681722269445259): 캠페인명 비플릭스 회원가입, 단가1,200원/총예산500만원/총수량4,167건, 매체 8곳(무툰·봄툰·탑툰·쿠툰·버프툰·투믹스·미스터블루 완전판·레진코믹스) 확인. 모으미 JSON 및 컨플루언스 수치·매체 리스트가 원문과 정확히 일치함. '대행사형 구조로 추정' 서술은 원문에 명시된 사실이 아닌 모으미의 합리적 추론이며, 컨플루언스에도 '추정'·human_action_required로 명확히 구분·격리되어 있어 왜곡이 아님. action_items(대행사/브랜드 관계 확정 필요) 매핑 정상. 회사명 오탈자 없음."
+    },
+    {
+      "task_id": "T004",
+      "target_name": "꼬뮨 > 후디스 그릭 인스타그램 팔로우",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/238649347",
+      "confluence_page_id": "238649347",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "JSON decision(단가320원/총예산320만원/총수량10,000건, 4/21~4/30 재라이브)과 컨플루언스 운영 히스토리·의사결정 사항이 일치함. 네트워크사 표기('애드히어꼼몸')도 그대로 보존됨. 1월 기존 라이브 히스토리 손상 없음. 트리거 미해당으로 슬랙 재조회 생략. 회사명 오탈자 없음."
+    },
+    {
+      "task_id": "T005",
+      "target_name": "성북구청 > 성북TV 유튜브 구독 CPA",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/239960065",
+      "confluence_page_id": "239960065",
+      "slack_reread": true,
+      "slack_reread_trigger": "context_status: new — 신규 페이지이므로 슬랙 원본 확인",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "슬랙 원문(2023-04-25, G0113KM3KK2/p1682395726673789): 광고명 성북TV 유튜브 구독 CPA, 단가400원/예산500만원/총수량12,500건, 기간 2023.04.25~05.25, 진행매체 카카오페이 매일모으기 지면 확인. 모으미 JSON·컨플루언스 수치가 원문과 완전히 일치함. 회사명 오탈자 없음, 신규 페이지 구조 정상."
+    },
+    {
+      "task_id": "T006",
+      "target_name": "에이블리",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/239992833",
+      "confluence_page_id": "239992833",
+      "slack_reread": true,
+      "slack_reread_trigger": "context_status: new — 신규 페이지이므로 슬랙 원본 확인",
+      "result": "FAILED",
+      "error_type": "ACTION_ITEM_MISSING",
+      "comment": "슬랙 원문(2023-04-06, CBT7G5RUN/p1680746842921209) 스레드 답글(정빈희, 18:01:49)에 '일주일 간은 매일 로그 데이터 확인하도록 하겠습니다'라는 구체적 후속 모니터링 약속이 존재하나, 모으미 JSON의 action_items가 빈 배열([])로 처리되고 컨플루언스 '액션 아이템' 섹션도 '해당 없음'으로 기재되어 원문의 실제 후속 조치가 누락됨. 초기 실적 정상 확인 자체는 정확히 반영되었으나 신규 매체 온보딩 특성상 1주일 모니터링 약속은 추적이 필요한 액션 아이템에 해당함.",
+      "suggested_fix": "슬랙 원문 기준으로 action_items에 '에이블리 신규 매체 온보딩 후 1주일간 매일 로그 데이터 모니터링(2023-04-06~04-13경)'을 추가하고, 컨플루언스 '충전소(오퍼월 API) 신규 오픈 (2023)' 섹션의 액션 아이템을 '해당 없음'에서 위 항목으로 정정 필요. 모으미(v1) 재실행 후 쓰미(v2) 재반영 권장."
+    },
+    {
+      "task_id": "T007",
+      "target_name": "다올저축은행 > 토스 매체 신규 캠페인",
+      "context_status": "new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/240025601",
+      "confluence_page_id": "240025601",
+      "slack_reread": true,
+      "slack_reread_trigger": "context_status: new — 신규 페이지이므로 슬랙 원본 확인",
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "슬랙 원문(2023-04-03, G0113KM3KK2/p1680513722785129)은 금융/증권 실적 일일보고로 이베스트투자증권과 다올저축은행 2건을 함께 담고 있으나, 다올저축은행 관련 문구('신규 캠페인으로 토스 매체 우선적으로 라이브되었습니다')만 발췌해 본 task 대상으로 정확히 반영함. 세부조건(캠페인명/단가/예산) 미기재 사실도 원문과 일치하며 action_items(후속 확인 필요)도 적절히 생성됨. 이베스트투자증권 건은 본 task 범위 밖으로 별도 처리 대상."
+    },
+    {
+      "task_id": "T008",
+      "target_name": "CPS 기획전 플랫폼 > 휴대폰결제 취소 리스크 대응",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/206012417",
+      "confluence_page_id": "206012417",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "JSON decision(매월 20일~말일 취소가능사유 확인·정리 후 결제취소불가 처리, 매월 정기 확인 전환)과 컨플루언스 신규 섹션 내용이 일치함. action_items(매월 취소가능사유 확인 및 손실처리 지속)도 정확히 매핑됨. 2019~2022년 기존 히스토리 섹션(포스트백 알림, G마켓 기획전, 이상거래 차단정책 등) 모두 손상 없이 보존됨. 트리거 미해당으로 슬랙 재조회 생략."
+    },
+    {
+      "task_id": "T009",
+      "target_name": "오퍼월 > 리워드마켓 카카오페이 결제 연동",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151821",
+      "confluence_page_id": "192151821",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "JSON decision(카카오페이 결제수단 계약서 체결 완료, 결제 연동 API 개발 착수)이 '[추론된 컨텍스트] 리워드샵(링크프라이스 연동) 개발' 섹션의 2023-04-25 히스토리·의사결정·액션아이템에 정확히 반영됨. action_items(카카오페이 결제 연동 개발 진행)도 체크박스로 정상 매핑됨. 기존 2021~2023년 누적 히스토리(네임서버 변경, PG수수료, NHN커머스 이관, 법무 검토 등) 손상 없음. 트리거 미해당."
+    },
+    {
+      "task_id": "T010",
+      "target_name": "PINCRUX 조직·인사 정책 > 서울사무실 이전 계획",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/209321985",
+      "confluence_page_id": "209321985",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "JSON decision(스파크플러스 잠실점 장소만 확정, 이전일자 미정·추후 재공지)과 컨플루언스 '서울사무실 이전 계획 (2023-04)' 섹션이 정확히 일치함. action_items(확정된 이전 날짜 추후 재공지)도 매핑됨. 기존 인사정책 히스토리(2019~2022) 다수 섹션 손상 없이 보존됨. 트리거 미해당."
+    },
+    {
+      "task_id": "T011",
+      "target_name": "PINCRUX 사업·정책 결정 히스토리 > 앱스토어 매출·다운로드 순위 비공개 법안 모니터링",
+      "context_status": "matched",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/211550226",
+      "confluence_page_id": "211550226",
+      "slack_reread": false,
+      "slack_reread_trigger": null,
+      "result": "PASSED",
+      "error_type": null,
+      "comment": "JSON decision(법안 통과 가능성 낮음, 통과 시 매출 하락 리스크로 인지·공유, 대응방침 미정)과 컨플루언스 신규 섹션 내용이 사실관계·뉘앙스 모두 일치함(단문 과요약 아님). action_items(법안 진행 상황 모니터링)도 매핑됨. 기존 나이스페이 PG, 앱스플라이어 랭킹 등 다수 히스토리 섹션 손상 없음. 트리거 미해당."
+    }
+  ]
+}

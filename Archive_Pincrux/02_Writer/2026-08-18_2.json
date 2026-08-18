@@ -1,0 +1,200 @@
+{
+  "schema_version": "1.1",
+  "node": "writer",
+  "run_date": "2026-08-18",
+  "source_file": "Archive_Pincrux/01_Collector/2026-08-18_2.json",
+  "node_status": "success",
+  "processed_tasks": [
+    {
+      "task_id": "T001",
+      "entity_name": "여기어때",
+      "project_name": "CPE 참여형 광고 캠페인",
+      "page_scope": "child",
+      "target_name": "여기어때 > CPE 참여형 광고 캠페인",
+      "context_status": "new",
+      "action_taken": "created_new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/239894529",
+      "confluence_page_id": "239894529",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/239894529",
+      "confluence_parent_page_id": "239894529",
+      "updated_sections": ["엔티티 개요", "CPE 참여형 광고 캠페인 (2023)"]
+    },
+    {
+      "task_id": "T002",
+      "entity_name": "매드업",
+      "project_name": "그립 CPE 캠페인",
+      "page_scope": "child",
+      "target_name": "매드업 > 그립 CPE 캠페인",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/238780417",
+      "confluence_page_id": "238780417",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/238780417",
+      "confluence_parent_page_id": "238780417",
+      "updated_sections": ["그립 CPE (2023) > 운영 히스토리", "그립 CPE (2023) > 의사결정 사항"]
+    },
+    {
+      "task_id": "T003",
+      "entity_name": "제타미디어",
+      "project_name": "비플릭스 회원가입",
+      "page_scope": "child",
+      "target_name": "제타미디어 > 비플릭스 회원가입",
+      "context_status": "new",
+      "action_taken": "created_new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/239927297",
+      "confluence_page_id": "239927297",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/239927297",
+      "confluence_parent_page_id": "239927297",
+      "updated_sections": ["엔티티 개요", "비플릭스 회원가입 (2023)"]
+    },
+    {
+      "task_id": "T004",
+      "entity_name": "꼬뮨",
+      "project_name": "후디스 그릭 인스타그램 팔로우",
+      "page_scope": "child",
+      "target_name": "꼬뮨 > 후디스 그릭 인스타그램 팔로우",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/238649347",
+      "confluence_page_id": "238649347",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/238649347",
+      "confluence_parent_page_id": "238649347",
+      "updated_sections": ["후디스 그릭 인스타그램 팔로우 (2023) > 운영 히스토리", "후디스 그릭 인스타그램 팔로우 (2023) > 의사결정 사항"]
+    },
+    {
+      "task_id": "T005",
+      "entity_name": "성북구청",
+      "project_name": "성북TV 유튜브 구독 CPA",
+      "page_scope": "child",
+      "target_name": "성북구청 > 성북TV 유튜브 구독 CPA",
+      "context_status": "new",
+      "action_taken": "created_new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/239960065",
+      "confluence_page_id": "239960065",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/239960065",
+      "confluence_parent_page_id": "239960065",
+      "updated_sections": ["엔티티 개요", "성북TV 유튜브 구독 CPA (2023)"]
+    },
+    {
+      "task_id": "T006",
+      "entity_name": "에이블리",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "에이블리",
+      "context_status": "new",
+      "action_taken": "created_new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/239992833",
+      "confluence_page_id": "239992833",
+      "updated_sections": ["엔티티 개요", "충전소(오퍼월 API) 신규 오픈 (2023)"]
+    },
+    {
+      "task_id": "T007",
+      "entity_name": "다올저축은행",
+      "project_name": "토스 매체 신규 캠페인",
+      "page_scope": "child",
+      "target_name": "다올저축은행 > 토스 매체 신규 캠페인",
+      "context_status": "new",
+      "action_taken": "created_new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/240025601",
+      "confluence_page_id": "240025601",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/240025601",
+      "confluence_parent_page_id": "240025601",
+      "updated_sections": ["엔티티 개요", "토스 매체 신규 캠페인 (2023)"]
+    },
+    {
+      "task_id": "T008",
+      "entity_name": "CPS 기획전 플랫폼",
+      "project_name": "휴대폰결제 취소 리스크 대응",
+      "page_scope": "root",
+      "target_name": "CPS 기획전 플랫폼 > 휴대폰결제 취소 리스크 대응",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/206012417",
+      "confluence_page_id": "206012417",
+      "updated_sections": ["CPS 기획전 플랫폼 — 휴대폰결제 취소 리스크 매월 점검 프로세스 신설 (2023-04)"]
+    },
+    {
+      "task_id": "T009",
+      "entity_name": "오퍼월",
+      "project_name": "리워드마켓 카카오페이 결제 연동",
+      "page_scope": "child",
+      "target_name": "오퍼월 > 리워드마켓 카카오페이 결제 연동",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151821",
+      "confluence_page_id": "192151821",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151821",
+      "confluence_parent_page_id": "192151821",
+      "updated_sections": ["[추론된 컨텍스트] 리워드샵(링크프라이스 연동) 개발 (2021-08) > 운영 히스토리", "[추론된 컨텍스트] 리워드샵(링크프라이스 연동) 개발 (2021-08) > 의사결정 사항", "[추론된 컨텍스트] 리워드샵(링크프라이스 연동) 개발 (2021-08) > 액션 아이템"]
+    },
+    {
+      "task_id": "T010",
+      "entity_name": "PINCRUX 조직·인사 정책",
+      "project_name": "서울사무실 이전 계획",
+      "page_scope": "child",
+      "target_name": "PINCRUX 조직·인사 정책 > 서울사무실 이전 계획",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/209321985",
+      "confluence_page_id": "209321985",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/209321985",
+      "confluence_parent_page_id": "209321985",
+      "updated_sections": ["서울사무실 이전 계획 (2023-04)"]
+    },
+    {
+      "task_id": "T011",
+      "entity_name": "PINCRUX 사업·정책 결정 히스토리",
+      "project_name": "앱스토어 매출·다운로드 순위 비공개 법안 모니터링",
+      "page_scope": "child",
+      "target_name": "PINCRUX 사업·정책 결정 히스토리 > 앱스토어 매출·다운로드 순위 비공개 법안 모니터링",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/211550226",
+      "confluence_page_id": "211550226",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/211550226",
+      "confluence_parent_page_id": "211550226",
+      "updated_sections": ["앱스토어 매출·다운로드 순위 비공개 법안 모니터링 (2023-04)"]
+    }
+  ],
+  "skipped_tasks": [],
+  "manifest_registration_candidates": [
+    {
+      "entity_name": "여기어때",
+      "major_category": "Client",
+      "confluence_page_id": "239894529"
+    },
+    {
+      "entity_name": "제타미디어",
+      "major_category": "Client",
+      "confluence_page_id": "239927297",
+      "status": "human_action_required",
+      "reason": "제타미디어-비플릭스 대행사/브랜드 관계 및 major_category 확정 필요"
+    },
+    {
+      "entity_name": "성북구청",
+      "major_category": "Client",
+      "confluence_page_id": "239960065"
+    },
+    {
+      "entity_name": "에이블리",
+      "major_category": "Media_Partner",
+      "confluence_page_id": "239992833"
+    },
+    {
+      "entity_name": "다올저축은행",
+      "major_category": "Client",
+      "confluence_page_id": "240025601"
+    }
+  ]
+}

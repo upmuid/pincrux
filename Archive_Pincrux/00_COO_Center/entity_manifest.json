@@ -1,6 +1,6 @@
 {
   "version": "1.33",
-  "last_updated": "2026-08-17",
+  "last_updated": "2026-08-18",
   "purpose": "모으미/쓰미가 이미 확립된 엔티티를 매번 CQL 검색·카테고리 재판단 없이 즉시 참조하기 위한 고정 매니페스트(조회 전용, 가벼움 유지). 여기 없는 엔티티만 LLM 판단(신규 생성 여부, major 분류)을 수행한다. 신규 엔티티가 확정될 때마다 총총(COO)이 이 파일에 추가한다.",
   "history_ref": "2026-07-20부로 엔티티별 정정 사유·배경 서술은 이 파일에서 entity_history.md로 이관했다. 이 파일은 모으미/쓰미가 매 실행 로드하는 조회 전용 테이블이므로 entity_name/major_category/confluence_page_id/aliases/status만 유지한다. 특정 엔티티의 분류 배경이나 오분류 정정 이력이 궁금하면 entity_history.md에서 entity_name으로 찾을 것(총총 감사·검토 시에만 필요, 모으미/쓰미는 평시 참조 불필요).",
   "parent_category_pages": {
@@ -1080,6 +1080,50 @@
       "confluence_page_id": "239206401",
       "status": "human_action_required",
       "note": "2026-08-17 백필(2023-03) 신규 발견. 카카오맵 위치공유 CPA 캠페인에서 광고주(Client) 역할로 등장. 기존 매체 역할 엔티티 '카카오페이'(192446504)·'카카오페이지'(231211009)와 별개 페이지로 독립 등록(임의 병합하지 않음). **[2026-08-17 Jason 코멘트]**: 카카오페이/카카오페이지와 다른 실체일 가능성이 매우 높음 — 다만 아직 완전 확정은 아니므로 계속 지켜볼 것(별도 페이지 유지 방침은 유지, 최종 확정은 보류)."
+    },
+    {
+      "entity_name": "여기어때",
+      "major_category": "Client",
+      "confluence_page_id": "239894529",
+      "note": "2026-08-18 백필(2023-04) 신규 발견. CPE 참여형 캠페인(단가280원, 4/7~4/30). 핀크럭스가 광고비를 지급받는 구조로 Client 역할 명확, 이중역할 의심 없음."
+    },
+    {
+      "entity_name": "제타미디어",
+      "major_category": "Client",
+      "confluence_page_id": "239927297",
+      "status": "human_action_required",
+      "note": "2026-08-18 백필(2023-04) 신규 발견. 비플릭스 회원가입 캠페인 경유. 리메세·애드맥스·매드업과 유사한 대행사형 구조로 추정되나 확정 아님 — 제타미디어/비플릭스 대행사-브랜드 관계 확정 필요."
+    },
+    {
+      "entity_name": "성북구청",
+      "major_category": "Client",
+      "confluence_page_id": "239960065",
+      "note": "2026-08-18 백필(2023-04) 신규 발견. 성북TV 유튜브 구독 CPA 캠페인(카카오페이 매일모으기 지면). 공공기관 광고주, 역할 모호성 없음."
+    },
+    {
+      "entity_name": "에이블리",
+      "major_category": "Media_Partner",
+      "confluence_page_id": "239992833",
+      "note": "2026-08-18 백필(2023-04) 신규 발견. 오퍼월(API) 충전소 신규 오픈. 읽어봄이 1차 검증에서 온보딩 후 1주일 로그 모니터링 액션아이템 누락 발견 → 모으미 재실행으로 정정, 재검증 PASSED."
+    },
+    {
+      "entity_name": "다올저축은행",
+      "major_category": "Client",
+      "confluence_page_id": "240025601",
+      "status": "human_action_required",
+      "note": "2026-08-18 백필(2023-04) 신규 발견 당시 세부조건 미기재였으나, 2023-05 배치(T004)에서 예산 8,500,000원/단가 1,500원(VAT별도)/총 5,667건 등 세부조건은 확인됨(기존 사유 해소). 다만 기존 섹션의 매체 표기('토스')와 이번 배치 원문의 매체 표기('링크러스')가 상충되어 신규 human_action_required 사유로 전환 — 매체 실체 확정 필요(Jason 확인 대기)."
+    },
+    {
+      "entity_name": "화이트큐브",
+      "major_category": "Client",
+      "confluence_page_id": "240582657",
+      "reason": "2026-08-18 백필(2023-05) 신규 발견. 챌린저스 앱 내 챌린지신청하기 CPA 2종(데카르트/삼성화재 착한걷기), 단가 3,500원(VAT별도). 역할 모호성 없어 Client로 바로 등록."
+    },
+    {
+      "entity_name": "제이이노텍",
+      "major_category": "Client",
+      "confluence_page_id": "240123912",
+      "reason": "2026-08-18 백필(2023-05) 신규 발견. 운세 결제 후 운세보기 CPA 3종(신년대박운세/돈버는운세/성으로 보는 연인운), 단가 10,000원(VAT별도). 역할 모호성 없어 Client로 바로 등록."
     }
   ],
   "usage_instructions": {
