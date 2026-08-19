@@ -1,0 +1,106 @@
+{
+  "schema_version": "1.1",
+  "node": "collector",
+  "run_date": "2026-08-19",
+  "run_mode": "backfill",
+  "period": "2023-06-01 to 2023-06-30",
+  "status": "success",
+  "data_summaries": [
+    {
+      "task_id": "T001",
+      "major_category": "Media_Partner",
+      "minor_category": null,
+      "context_status": "matched",
+      "context_reference": "원문(2023-06-30, 김천두 #웹개발팀_개발요청): '신규API :OIF_253(예정) - 첨부 규격서 ... TB배포일정: 7/7 예정, 상용배포일정 : 7/13 야간예정'. 동일 스레드 내 KT담당자 요청사항(계약번호 마스킹, '요금 납부'→'요금납부' 문구 통일 등)도 2023-06-30 중 확정. 매니페스트 기존 엔티티 'KT'(Media_Partner, 196575233)에 매칭.",
+      "entity_name": "KT",
+      "project_name": "인터넷/지니TV 요금납부 연동",
+      "page_scope": "child",
+      "target_name": "KT > 인터넷/지니TV 요금납부 연동",
+      "issue_title": "KT 인터넷/지니TV 요금납부 신규 API(OIF_253) 연동 규격·배포일정 확정",
+      "summary": "KT 요금납부 신규API 규격·배포일정 확정",
+      "decision": "신규 API(OIF_253: 암호화된 Cust-id 기반 서비스계약번호/구분코드 응답) 규격 확정, TB배포 7/7 예정·상용배포 7/13 야간 예정으로 KT 담당자와 협의 확정",
+      "action_items": [
+        "TB 배포(7/7) 진행",
+        "상용 배포(7/13) 진행",
+        "KT 요청사항(계약번호 마스킹, 문구 변경) 개발 반영"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/C018GBM3ESC/p1688088658653899?thread_ts=1687843786.915849&cid=C018GBM3ESC"
+    },
+    {
+      "task_id": "T002",
+      "major_category": "In-house",
+      "minor_category": "Product",
+      "context_status": "matched",
+      "context_reference": "원문(2023-06-30, 정빈희 #02_pincrux_매체사업무): 'tom이사님과 통화했고, 현재와 동일한 정책으로 계속 진행하도록 하겠습니다... IDFA가 필수적으로 요구되는 광고 참여 시도 시 에러 반환(참여할 수 없는 디바이스)'. 선행 논의(2023-06-29, 김천두): 추적허용미동의 시 IDFA값 0 전달 이슈 및 정책 재확인 요청. 매니페스트 기존 엔티티 '오퍼월'(In-house/Product, aliases: Tracking SDK, 192151821)에 매칭.",
+      "entity_name": "오퍼월",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "오퍼월",
+      "issue_title": "IDFA 필수 광고 참여 시 에러반환 정책 유지 결정",
+      "summary": "IDFA 필수광고 에러반환 정책 유지 확정",
+      "decision": "톰이사 통화 후 현행 정책 유지 확정: 추적허용동의 여부와 무관하게 전체 광고 목록은 노출하되 IDFA가 필수 요구되는 광고 참여 시도 시에는 에러 반환(참여할 수 없는 디바이스). 향후 매체 연동/협의 단계에서 메일로 해당 정책 필수 안내하기로 함",
+      "action_items": [
+        "매체 연동/협의 단계에서 IDFA 필수 정책 메일 필수 안내 프로세스화"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CBT7G5RUN/p1688090716005139?thread_ts=1687997582.848719&cid=CBT7G5RUN"
+    },
+    {
+      "task_id": "T003",
+      "major_category": "Media_Partner",
+      "minor_category": null,
+      "context_status": "new",
+      "context_reference": "원문(2023-06-07, 고현복 #운영1팀): '하나머니측에서 오퍼월 내 진행중인 장기보험 가입 이벤트 모두 종료 요청을 하였습니다. 사유는 직접 컨택하여 별도 제휴지면에 노출 예정이라고 하며 우선 KB손해보험 장기보험은 해당오퍼월 내 노출중지하였는데, 라이나/네트워크등 기타 장기보험 가입이벤트는 하나머니 오퍼월 내 일괄 종료처리 부탁드립니다.' entity_manifest.json에 없는 신규 매체 엔티티 — 핀크럭스 광고(오퍼월 캠페인)가 하나머니 앱 내 오퍼월에 노출되고 매체비를 받는 구조로 판단되어 Media_Partner로 잠정 분류(역할 모호성 낮음). 총총 확인 후 매니페스트 등록 필요.",
+      "entity_name": "하나머니",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "하나머니",
+      "issue_title": "하나머니 오퍼월 내 장기보험 가입 이벤트 캠페인 일괄 종료 요청",
+      "summary": "하나머니, 장기보험 캠페인 전체 종료 요청",
+      "decision": "하나머니측이 보험사가 직접 컨택하여 별도 제휴지면에 노출 예정이라는 사유로, KB손해보험 외 라이나 등 오퍼월 내 모든 장기보험 가입 이벤트 캠페인의 일괄 종료를 요청함",
+      "action_items": [
+        "KB손해보험 장기보험 오퍼월 노출 중지(완료)",
+        "기타 장기보험(라이나 등) 캠페인 일괄 종료 처리"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/G0113KM3KK2/p1686104115963219?thread_ts=1686104115.963219&cid=G0113KM3KK2"
+    },
+    {
+      "task_id": "T004",
+      "major_category": "Media_Partner",
+      "minor_category": null,
+      "context_status": "new",
+      "context_reference": "원문(2023-06-15, 고현복 #운영1팀): '하나머니 충전소 내 성인관련 컨텐츠 및 성인대상 캠페인(도박 / 인터넷방송 등) 캠페인이 노출되고 있는지 확인 부탁드리며, 노출되고 있다면 모두 종료처리 부탁드리겠습니다. (하나머니 요청)'. T003과 동일 신규 엔티티(하나머니)의 별도 날짜·별도 사안 — 두 사실 간 인과관계는 원문에 없으므로 임의 연결하지 않음.",
+      "entity_name": "하나머니",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "하나머니",
+      "issue_title": "하나머니 오퍼월 성인 콘텐츠/캠페인 노출 정책 준수 확인 요청",
+      "summary": "하나머니, 성인콘텐츠 캠페인 노출 확인·종료 요청",
+      "decision": "하나머니측 요청에 따라 오퍼월 내 성인관련 콘텐츠 및 성인대상(도박/인터넷방송 등) 캠페인 노출 여부를 확인하고, 노출이 확인될 경우 모두 종료 처리하기로 함",
+      "action_items": [
+        "오퍼월 내 성인 관련 콘텐츠/캠페인 노출 여부 확인",
+        "노출 확인 시 해당 캠페인 종료 처리"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/G0113KM3KK2/p1686793745046779?thread_ts=1686793745.046779&cid=G0113KM3KK2"
+    },
+    {
+      "task_id": "T005",
+      "major_category": "Client",
+      "minor_category": null,
+      "context_status": "matched",
+      "context_reference": "원문(2023-06-30, 한예림 #cs업무): '수컴 매체측 CS처리 정책 변경되어 전달 받은 내용 아래에 공유드립니다. KB차차차 캠페인의 경우, 일주일에 1번 CS확인이 가능한 것으로 알고 있어서 강제 지급 처리 될 우려가 있어보여...' 변경내용 원문: 'CS 인입 후 5일(영업일 기준) 이내로 확인이 되지 않은 경우 강제 지급 처리될 예정이며... (해당 정책은 7/1 신입 건부터 적용 예정)'. 매니페스트 기존 엔티티 'KB차차차'(Client, human_action_required, 229212161)에 매칭. 원문의 매체명 표기('수컴')가 축약·오기로 추정되어 정확한 매체 실체는 불명확 — 기존 human_action_required 사유(타 KB계열사와의 관계 불명확)와는 별개 사안이므로 별도 확인 필요.",
+      "entity_name": "KB차차차",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "KB차차차",
+      "issue_title": "KB차차차 캠페인 매체측 CS 처리 정책 변경에 따른 강제지급 리스크",
+      "summary": "매체 CS정책 변경, 강제지급 리스크 공유",
+      "decision": "매체 측 CS 처리 정책이 'CS 인입 후 5영업일 내 미확인 시 강제 지급'으로 변경(7/1 신규 유입건부터 적용)됨에 따라, 주 1회만 CS 확인이 가능한 KB차차차 캠페인의 강제지급 리스크가 우려되어 이슈 여부를 확인 요청함",
+      "action_items": [
+        "KB차차차 캠페인 CS 확인 주기 조정 필요성 검토",
+        "매체 실체('수컴' 표기) 확인"
+      ],
+      "slack_thread_link": "https://pincrux.slack.com/archives/CHX4DH5EU/p1688101238607779?thread_ts=1688101238.607779&cid=CHX4DH5EU"
+    }
+  ],
+  "uncategorized": []
+}

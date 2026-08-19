@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.1",
+  "node": "refiner",
+  "run_date": "2026-08-19",
+  "source_file": "Archive_Pincrux/03_Validator/2026-08-19.json",
+  "node_status": "success",
+  "published_tasks": [
+    {
+      "task_id": "T001",
+      "target_name": "KT > 인터넷/지니TV 요금납부 연동 (2023)",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/196575233/KT",
+      "confluence_page_id": "196575233",
+      "refined_points": [
+        "신규 섹션 검수 결과 슬랙 잔재(이모지/구어체/헤징 표현) 없음을 확인, 추가 교정 불필요",
+        "핵심 수치(TB배포 7/7, 상용배포 7/13 야간) 및 API 규격(OIF_253) 볼드체 강조 유지 확인",
+        "액션 아이템 3건 체크리스트(task-item) 형식 준수 확인",
+        "신규 섹션 앞뒤 구분선(---) 정상 존재 확인, 기존 섹션(마이케이티/KT클립/프로젝트K 등) 재포맷·이동 없이 그대로 보존",
+        "회사명 표기('핀크럭스') 오탈자 없음을 재확인"
+      ],
+      "published_at": "2026-08-19T12:15:22+09:00"
+    },
+    {
+      "task_id": "T002",
+      "target_name": "오퍼월 > IDFA 필수 광고 참여 시 에러반환 정책 유지 확정 (2023-06)",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192151821",
+      "confluence_page_id": "192151821",
+      "refined_points": [
+        "신규 섹션 검수 결과 슬랙 잔재·헤징 표현 없음을 확인, 추가 교정 불필요",
+        "의사결정 사항(현행 정책 유지, IDFA 필수 광고 에러반환 유지)을 인용구 및 볼드체로 강조 유지 확인",
+        "액션 아이템(매체 연동/협의 단계 IDFA 정책 메일 안내 프로세스화) 체크리스트 형식 준수 확인",
+        "신규 섹션 앞뒤 구분선(---) 정상 존재 확인, 기존 다수 섹션(2022-02 SDK 출시 등 약 20개 섹션) 변경 없이 보존",
+        "회사명 표기('핀크럭스'/'핀크럭스샵') 오탈자 없음을 재확인"
+      ],
+      "published_at": "2026-08-19T12:18:46+09:00"
+    },
+    {
+      "task_id": "T003",
+      "target_name": "하나머니 > 오퍼월 캠페인 운영 정책 준수 요청 — 장기보험 캠페인 일괄 종료 (2023-06-07)",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/241860609",
+      "confluence_page_id": "241860609",
+      "refined_points": [
+        "정정 재실행(T003 corrected)으로 반영된 후속 결정(보험 카테고리 자동예외처리 미채택, 수동 종료 대응 확정)이 의사결정 인용구 및 액션 아이템에 정확히 반영되어 있음을 확인",
+        "완료 확인된 액션 아이템 2건(KB손해보험 노출중지, 기타 장기보험 일괄종료)을 [x] 완료 체크리스트로 유지",
+        "하나머니/하나멤버스 표기 불일치를 pending_review로 그대로 보존(임의 동일시하지 않음)",
+        "신규 페이지 전체 구조(엔티티 개요/신규 엔티티 안내 패널/FAQ/담당자) 검토, 문어체·강조·체크리스트 기준 이미 충족되어 추가 교정 불필요",
+        "회사명 표기('핀크럭스') 오탈자 없음을 재확인"
+      ],
+      "published_at": "2026-08-19T12:13:00+09:00"
+    },
+    {
+      "task_id": "T004",
+      "target_name": "하나머니 > 오퍼월 캠페인 운영 정책 준수 요청 — 성인 콘텐츠·캠페인 노출 확인 (2023-06-15)",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/241860609",
+      "confluence_page_id": "241860609",
+      "refined_points": [
+        "검증 완료 항목이나 validator의 pending_review(완료여부 표기 갱신 권고)에 대해 독립 확인 근거가 없어 액션 아이템 2건을 [ ] 미완료 상태로 그대로 유지(사실관계 임의 변경 금지 원칙 준수)",
+        "의사결정 인용구 및 액션 아이템 문구가 원문(고현복 요청)과 일치함을 재확인, 문체 교정 불필요",
+        "T003과 동일 섹션 내 공존하는 구조에서 T003 항목만 갱신되고 T004 항목은 변경되지 않도록 분리 확인",
+        "체크리스트 형식 및 볼드 강조 기준 이미 충족 확인"
+      ],
+      "published_at": "2026-08-19T12:13:00+09:00"
+    },
+    {
+      "task_id": "T005",
+      "target_name": "KB차차차 > 마이데이터 연동 회원가입 캠페인 — 매체 CS 정책 변경 대응 (2023-06-30)",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/229212161/KB",
+      "confluence_page_id": "229212161",
+      "refined_points": [
+        "기존 '마이데이터 연동 회원가입 캠페인 (2022)' 섹션 내 신규 추가된 2023-06-30 항목만 검수, 기존 운영 히스토리(2022-04~2022-08) 및 기존 human_action_required 플래그는 변경 없이 보존",
+        "핵심 수치·기한(5영업일 이내 미확인 시 강제지급, 2023-07-01 적용) 볼드체 강조 유지 확인",
+        "매체명 '수컴' 표기 관련 불확실성 서술은 사실관계이므로 임의 수정하지 않고 그대로 보존",
+        "신규 액션 아이템 2건(CS 확인 주기 조정 검토, 매체 실체 확인) 체크리스트 [ ] 미완료 상태로 정확히 반영 확인",
+        "본 항목은 기존 섹션 내부 추가 항목으로 별도 구분선(---) 신설 대상 아님을 확인"
+      ],
+      "published_at": "2026-08-19T12:13:48+09:00"
+    }
+  ]
+}
