@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.1",
+  "node": "writer",
+  "run_date": "2023-09-30",
+  "source_file": "Archive_Pincrux/01_Collector/2023-09-30_2.json",
+  "node_status": "success",
+  "processed_tasks": [
+    {
+      "task_id": "T010",
+      "entity_name": "정오의 데이트",
+      "project_name": "여성 회원가입",
+      "page_scope": "child",
+      "target_name": "정오의 데이트 > 여성 회원가입",
+      "context_status": "new",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/243564556",
+      "confluence_page_id": "243564556",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/210665474",
+      "confluence_parent_page_id": "210665474",
+      "updated_sections": ["## 여성 회원가입 (2023) > ### 의사결정 사항", "## 여성 회원가입 (2023) > ### 액션 아이템"]
+    }
+  ],
+  "skipped_tasks": []
+}

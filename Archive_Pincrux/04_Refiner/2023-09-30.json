@@ -1,0 +1,136 @@
+{
+  "schema_version": "1.1",
+  "node": "refiner",
+  "run_date": "2023-09-30",
+  "source_file": "Archive_Pincrux/03_Validator/2023-09-30.json",
+  "node_status": "success",
+  "published_tasks": [
+    {
+      "task_id": "T001",
+      "target_name": "아스트라페 > 신한라이프 유튜브 구독",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/242843713",
+      "confluence_page_id": "242843713",
+      "refined_points": [
+        "신규 섹션(신한라이프 유튜브 구독)의 '캠페인에 ~ 캠페인이 신규 추가됨' 중복 표현을 '캠페인 목록에 ~ 신규로 추가됨'으로 교정",
+        "구분선(---) 배치 확인 완료(누락 없음), 기존 롯데마트·후레쉬룸 섹션은 변경하지 않음",
+        "액션 아이템 체크리스트·볼드 강조 서식 기준 충족 확인"
+      ],
+      "published_at": "2026-08-20T15:21:32+09:00"
+    },
+    {
+      "task_id": "T002",
+      "target_name": "컬리 > 회원가입(구 첫구매)",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/242745386",
+      "confluence_page_id": "242745386",
+      "refined_points": [
+        "신규 페이지 전체 구조(엔티티 개요/프로젝트 섹션/액션 아이템 체크리스트/FAQ/주요 담당자) 발행 수준 최종 검수 완료, 문체·서식 수정 불요",
+        "의사결정 사항 인용구·볼드 강조 형식 확인 완료",
+        "구분선 배치 확인 완료"
+      ],
+      "published_at": "2026-08-20T15:21:57+09:00"
+    },
+    {
+      "task_id": "T004",
+      "target_name": "신한자산운용 > 유튜브 구독",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/244023317",
+      "confluence_page_id": "244023317",
+      "refined_points": [
+        "신규 페이지 전체 구조(엔티티 개요/프로젝트 섹션/액션 아이템 체크리스트/FAQ/주요 담당자) 발행 수준 최종 검수 완료, 문체·서식 수정 불요",
+        "의사결정 사항 인용구·볼드 강조 형식 확인 완료",
+        "구분선 배치 확인 완료"
+      ],
+      "published_at": "2026-08-20T15:22:02+09:00"
+    },
+    {
+      "task_id": "T005",
+      "target_name": "티머니 > 회원가입 CPA",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/244285442",
+      "confluence_page_id": "244285442",
+      "refined_points": [
+        "신규 페이지 전체 구조(엔티티 개요/프로젝트 섹션/액션 아이템 체크리스트/FAQ/주요 담당자) 발행 수준 최종 검수 완료, 문체·서식 수정 불요",
+        "의사결정 사항 인용구·볼드 강조 형식 확인 완료",
+        "구분선 배치 확인 완료"
+      ],
+      "published_at": "2026-08-20T15:22:09+09:00"
+    },
+    {
+      "task_id": "T006",
+      "target_name": "삼성증권 > 유튜브 구독(대행사 다츠 경유)",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192086150",
+      "confluence_page_id": "192086150",
+      "refined_points": [
+        "신규 섹션(유튜브 구독-대행사 다츠 경유) 문체·서식 경수 완료, 별도 교정 불요",
+        "기존 2019년 이력 섹션(9월 누적목표 관리 등 다수)은 변경하지 않음"
+      ],
+      "published_at": "2026-08-20T15:23:55+09:00"
+    },
+    {
+      "task_id": "T007",
+      "target_name": "에코마케팅 > 그린카 정회원가입",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/226328577",
+      "confluence_page_id": "226328577",
+      "refined_points": [
+        "신규 섹션(그린카 정회원가입) 검수 완료, 별도 교정 불요",
+        "캠페인 공식명 '신규 회원 가입하기' 내 '신규' 중복 표현은 원문 캠페인명의 일부로 확인되어 사실관계 보존을 위해 수정하지 않음",
+        "구분선 배치 확인 완료, 기존 배민B마트 섹션은 변경하지 않음"
+      ],
+      "published_at": "2026-08-20T15:24:15+09:00"
+    },
+    {
+      "task_id": "T008",
+      "target_name": "하나금융투자 > 최초 계좌개설",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/205062145",
+      "confluence_page_id": "205062145",
+      "refined_points": [
+        "9월 병합 반영분(리워드 인상 재개 결정 및 액션 아이템)의 인용구·볼드 강조 서식 확인 완료, 별도 교정 불요",
+        "기존 2023-03/2021-02/2019-12 섹션 및 human_action_required 안내는 변경하지 않음"
+      ],
+      "published_at": "2026-08-20T15:25:15+09:00"
+    },
+    {
+      "task_id": "T009",
+      "target_name": "카카오페이",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192446504",
+      "confluence_page_id": "192446504",
+      "refined_points": [
+        "신규 섹션(카카오페이 버즈빌 경유 금융업종 CPA 캠페인 허용 정책) 검수 완료, 별도 교정 불요",
+        "구분선 배치 확인 완료, 기존 2023-08/2021-12/2019 섹션은 변경하지 않음"
+      ],
+      "published_at": "2026-08-20T15:25:27+09:00"
+    },
+    {
+      "task_id": "T010",
+      "target_name": "정오의 데이트 > 여성 회원가입",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/243564556",
+      "confluence_page_id": "243564556",
+      "refined_points": [
+        "읽어봄이 2차 검증(T010 재검증)으로 반영된 의사결정 사항·액션 아이템 추가분 포함, 신규 페이지 전체 구조 발행 수준 최종 검수 완료",
+        "신규 반영된 '전체 매체 확장' 결정 문구의 볼드 강조 서식 확인 완료",
+        "구분선 배치 확인 완료"
+      ],
+      "published_at": "2026-08-20T15:22:21+09:00"
+    },
+    {
+      "task_id": "T011",
+      "target_name": "PINCRUX 사업·정책 결정 히스토리",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/211550226",
+      "confluence_page_id": "211550226",
+      "refined_points": [
+        "신규 섹션(자동차보험 CPS 캠페인 어뷰징 대응) 검수 완료, 별도 교정 불요",
+        "문서 전체 사명 표기 '핀크럭스' 정확성 재확인(오탈자 없음)",
+        "구분선 배치 확인 완료, 기존 다수의 2019~2023년 이력 섹션은 변경하지 않음"
+      ],
+      "published_at": "2026-08-20T15:27:32+09:00"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.1",
+  "node": "writer",
+  "run_date": "2023-08-31",
+  "source_file": "Archive_Pincrux/01_Collector/2023-08-31.json",
+  "node_status": "success",
+  "processed_tasks": [
+    {
+      "task_id": "T001",
+      "entity_name": "카카오페이",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "카카오페이",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192446504",
+      "confluence_page_id": "192446504",
+      "confluence_parent_page_url": null,
+      "confluence_parent_page_id": null,
+      "updated_sections": ["## 카카오페이·카카오뱅크 매체 지면 통합('카카오 금융') 및 신규 지면 런칭 (2023-08)"]
+    },
+    {
+      "task_id": "T003",
+      "entity_name": "위픽코퍼레이션",
+      "project_name": "LG키친 인스타그램",
+      "page_scope": "child",
+      "target_name": "위픽코퍼레이션 > LG키친 인스타그램",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/238747649",
+      "confluence_page_id": "238747649",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/238747649",
+      "confluence_parent_page_id": "238747649",
+      "updated_sections": ["## LG키친 인스타그램 (2023)"]
+    },
+    {
+      "task_id": "T004",
+      "entity_name": "락앤락",
+      "project_name": "신규 회원가입 캠페인",
+      "page_scope": "child",
+      "target_name": "락앤락 > 신규 회원가입 캠페인",
+      "context_status": "matched",
+      "action_taken": "merged_into_existing",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/237830145",
+      "confluence_page_id": "237830145",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/237830145",
+      "confluence_parent_page_id": "237830145",
+      "updated_sections": ["## 락앤락 신규 회원가입 캠페인 (2022)"]
+    },
+    {
+      "task_id": "T005",
+      "entity_name": "아스트라페",
+      "project_name": null,
+      "page_scope": "root",
+      "target_name": "아스트라페",
+      "context_status": "new",
+      "action_taken": "created_new",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/242843713",
+      "confluence_page_id": "242843713",
+      "confluence_parent_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/210665474",
+      "confluence_parent_page_id": "210665474",
+      "updated_sections": ["## 엔티티 개요", "## 롯데마트 인스타그램 (2023)", "## 후레쉬룸 인스타그램 (2023)"],
+      "notes": "CQL 정확/부분 일치 검색(title=\"아스트라페\", title~\"아스트라페\") 모두 기존 페이지 없음을 확인 후 Client 폴더(210665474) 하위에 신규 생성함. 2023-07-17 '후레쉬룸 인스타그램' 재라이브 이력(참고 정보)도 별도 프로젝트 섹션으로 함께 기록하여 향후 대행사형 구조 판단에 참고되도록 함."
+    }
+  ],
+  "skipped_tasks": [
+    {
+      "task_id": "T002",
+      "reason": "context_status: unknown. entity_name '하나카드'(page_scope child, project '현대해상 매체 연동(포스트백)')에 대해 v2_writer.md 5-D절 절차에 따라 Confluence AR 전체 검색을 수행함: (1) title=\"하나카드\" 정확 일치 0건, (2) title~\"하나카드\" 부분 일치 0건, (3) text~\"하나카드\" 전체 텍스트 검색 결과 '오퍼월'(192151821)·'하나멤버스'(192151700) 2건만 확인되었으나 두 페이지 모두 본문에 '하나카드'라는 표기 자체가 명시적으로 등장하지 않아(검색엔진의 유사 토큰 매칭으로 추정) 실질적 연관성을 확인할 수 없었음. entity_manifest.json에는 '하나머니'(Media_Partner, 241860609, human_action_required)와 '하나멤버스'(Client, 192151700, human_action_required)만 등록되어 있고 '하나카드' 명의의 독립 페이지는 존재하지 않음. 2023-07 배치(디자인 CI 교체 요청)에 이어 이번 8월 배치에서도 '하나카드'가 매체(PUB) 역할로 독립 운영되는 정황(운영_이슈 봇 로그: 'PUB : 하나카드 - 금융 제휴(운영)')이 재확인되었으나, 매칭 확률이 80% 이상으로 확신되는 기존 페이지가 전혀 없어 하나머니/하나멤버스 어느 쪽에도 임의 병합하지 않음. 2023-06~08월 3개 배치에 걸쳐 하나머니/하나멤버스/하나카드 세 표기가 계속 혼재되고 있어, 총총(COO)·Jason의 실체 확정(동일 법인의 표기 차이인지 완전히 별개의 매체인지) 및 신규 페이지 생성 여부 결정이 시급함. 확정 시 하나카드-현대해상 연동(2023-08-04 완료, 포스트백 방식 미확정) 히스토리를 소급 반영해야 함."
+    }
+  ],
+  "manifest_registration_required": [
+    {"entity_name": "아스트라페", "major_category": "Client", "confluence_page_id": "242843713", "note": "human_action_required: 아스트라페가 직접 광고주인지 리메세·애드맥스·매드업과 유사한 대행사형 구조(후레쉬룸·롯데마트 등 개별 브랜드가 하위 프로젝트)인지 확정 필요. major_category(Client/Partner)도 함께 확정 필요."}
+  ],
+  "unresolved_entity_flags": [
+    {
+      "entity_name": "하나카드",
+      "issue": "entity_manifest.json 미등록, Confluence AR 내 매칭 페이지 없음(정확/부분 일치 검색 0건). '하나머니'(241860609)·'하나멤버스'(192151700)와의 동일법인/표기혼용 여부가 2023-06 배치부터 3개월째 미해결.",
+      "recommendation": "총총/Jason 확인 후 (a) 완전 별개 엔티티로 판단되면 Media_Partner 폴더(210894849) 하위 신규 페이지 생성, (b) 표기 혼용으로 판단되면 alias 등록 대상 명확화가 필요함."
+    }
+  ]
+}

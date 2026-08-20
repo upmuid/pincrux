@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.1",
+  "node": "refiner",
+  "run_date": "2023-08-31",
+  "source_file": "Archive_Pincrux/03_Validator/2023-08-31.json",
+  "node_status": "success",
+  "published_tasks": [
+    {
+      "task_id": "T001",
+      "target_name": "카카오페이",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/192446504",
+      "confluence_page_id": "192446504",
+      "refined_points": [
+        "신규 섹션('카카오페이·카카오뱅크 매체 지면 통합' 2023-08) 내 볼드 서식 오류 3개소(리터럴 ** 텍스트로 렌더링되어 강조 처리가 적용되지 않던 부분: '500만원(VAT별도/1개월)', '2023년 8월 16일(수)' 각 1건, 의사결정 인용구 내 1건)를 실제 강조체(bold)로 수정",
+        "구분선(---) 및 액션 아이템 체크리스트 서식 확인 — 누락 없음, 기존 과거 섹션(금융사 리워드 지급방식 변경, PSD 파일 요청)은 변경하지 않음"
+      ],
+      "published_at": "2026-08-20T14:40:20+09:00"
+    },
+    {
+      "task_id": "T003",
+      "target_name": "위픽코퍼레이션 > LG키친 인스타그램",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/238747649",
+      "confluence_page_id": "238747649",
+      "refined_points": [
+        "신규 추가분(2023-08-24 재오픈 이력 및 관련 의사결정 인용구) 가벼운 검수 결과 문체·마크다운 서식 이상 없음(쓰미가 이미 발행 수준으로 작성) — 별도 교정 없이 기존 발행 내용 유지, 재퍼블리싱 생략"
+      ],
+      "published_at": "2026-08-20T14:41:00+09:00"
+    },
+    {
+      "task_id": "T004",
+      "target_name": "락앤락 > 신규 회원가입 캠페인",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/237830145",
+      "confluence_page_id": "237830145",
+      "refined_points": [
+        "신규 추가분(2023-08-18 APPKEY 갱신 이력 및 관련 의사결정 인용구) 가벼운 검수 결과 문체·마크다운 서식 이상 없음 — 별도 교정 없이 기존 발행 내용 유지, 재퍼블리싱 생략",
+        "참고(비수정 관찰사항): 과거 2022-12-26 섹션에 유사한 볼드 서식 오류(리터럴 ** 텍스트) 1건이 잔존하나, 이번 배치 신규/수정 섹션이 아니므로 소급 수정하지 않음(단일 페이지 구조 존중 원칙) — 총총 참고용으로 별도 보고"
+      ],
+      "published_at": "2026-08-20T14:41:00+09:00"
+    },
+    {
+      "task_id": "T005",
+      "target_name": "아스트라페",
+      "confluence_space": "AR",
+      "confluence_page_url": "https://pincrux.atlassian.net/wiki/spaces/AR/pages/242843713",
+      "confluence_page_id": "242843713",
+      "refined_points": [
+        "신규 생성 페이지 전체 구조(엔티티 개요, human_action_required 패널, 롯데마트/후레쉬룸 인스타그램 프로젝트 섹션 2건, FAQ, 주요 담당자) 발행 수준 최종 검수 완료",
+        "롯데마트 인스타그램 의사결정 인용구에 캠페인명 강조(볼드) 추가하여 타 엔티티 페이지와 서식 일관성 확보(사실관계 변경 없음)",
+        "구분선(---) 및 액션 아이템 체크리스트 서식 확인 — 정상, 누락 없음"
+      ],
+      "published_at": "2026-08-20T14:40:51+09:00"
+    }
+  ]
+}
