@@ -1,6 +1,6 @@
 {
-  "version": "1.35",
-  "last_updated": "2026-08-20",
+  "version": "1.36",
+  "last_updated": "2026-08-21",
   "purpose": "모으미/쓰미가 이미 확립된 엔티티를 매번 CQL 검색·카테고리 재판단 없이 즉시 참조하기 위한 고정 매니페스트(조회 전용, 가벼움 유지). 여기 없는 엔티티만 LLM 판단(신규 생성 여부, major 분류)을 수행한다. 신규 엔티티가 확정될 때마다 총총(COO)이 이 파일에 추가한다.",
   "history_ref": "2026-07-20부로 엔티티별 정정 사유·배경 서술은 이 파일에서 entity_history.md로 이관했다. 이 파일은 모으미/쓰미가 매 실행 로드하는 조회 전용 테이블이므로 entity_name/major_category/confluence_page_id/aliases/status만 유지한다. 특정 엔티티의 분류 배경이나 오분류 정정 이력이 궁금하면 entity_history.md에서 entity_name으로 찾을 것(총총 감사·검토 시에만 필요, 모으미/쓰미는 평시 참조 불필요).",
   "parent_category_pages": {
@@ -1162,6 +1162,40 @@
       "major_category": "Client",
       "confluence_page_id": "243564556",
       "reason": "2026-08-20 백필(2023-09) 신규 발견. 데이팅 앱 여성 회원가입 CPA 캠페인. 역할 모호성 없어 Client로 바로 등록."
+    },
+    {
+      "entity_name": "GSMyCar",
+      "major_category": "Client",
+      "confluence_page_id": "244940801",
+      "status": "human_action_required",
+      "note": "2026-08-21 백필(2023-10) 신규 발견. 차량등록 이벤트 종료 후 회원가입 캠페인 전환(예산 25,000,000원, 16,667건, 카카오페이지·애디스콥오퍼월). 부분일치 검색 시 기존 'GS엠비즈'(219873281/222756865)와 유사하게 잡혔으나 캠페인 구조가 달라 임의 병합하지 않고 독립 등록. GS 계열 관계(GS엠비즈와 동일/별개 법인 여부) 확정 필요."
+    },
+    {
+      "entity_name": "카카오커머스",
+      "major_category": "Client",
+      "confluence_page_id": "244973569",
+      "status": "human_action_required",
+      "note": "2026-08-21 백필(2023-10) 신규 발견. 쇼핑하우 핫딜 채널추가 캠페인. 기존 카카오/카카오페이/카카오페이지/카카오(239206401, Client)에 이어 4번째로 발견된 별도 카카오 계열 엔티티 — Jason 기존 방침(계속 모니터링)에 따라 병합하지 않고 별도 등록. 계열·이중역할 관계 확정 필요."
+    },
+    {
+      "entity_name": "아시아경제",
+      "major_category": "Client",
+      "confluence_page_id": "245039105",
+      "reason": "2026-08-21 백필(2023-10) 신규 발견. 네이버뉴스 구독하기 캠페인(카카오페이지 매체 경유). 역할 모호성 없어 Client로 바로 등록."
+    },
+    {
+      "entity_name": "스위치원",
+      "major_category": "Client",
+      "confluence_page_id": "245071873",
+      "status": "human_action_required",
+      "note": "2026-08-21 백필(2023-10) 신규 발견. 회원가입 캠페인, 11~12월 예산 확정. 2023-09 배치 pending_review('스위치원 신규앱키 전환 프로세스 변경') 항목과 동일 엔티티로 추정 — 9~10월 이전에도 반복 언급된 정황이 있어 과거 배치 소급 확인 필요."
+    },
+    {
+      "entity_name": "NH올원뱅크",
+      "major_category": "Client",
+      "confluence_page_id": "245104641",
+      "status": "human_action_required",
+      "note": "2026-08-21 백필(2023-10) 신규 발견. 회원가입 캠페인(OCB 매체). 기존 NH투자증권·NH멤버스와 별개 서비스로 추정되나 계열 관계 미확정. 하나머니(241860609) 예외종료 정책과 연관 정황 발견되어 후속 배치에서 계속 확인 필요."
     }
   ],
   "usage_instructions": {
