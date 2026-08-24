@@ -1,45 +1,42 @@
 {
   "pipeline_execution": {
-    "date": "2026-08-21",
+    "date": "2026-08-24",
     "run_mode": "backfill",
     "total_status": "success",
     "metrics": {
-      "collected_threads": 6,
-      "updated_matched_contexts": 1,
-      "created_new_contexts": 5,
+      "collected_threads": 10,
+      "updated_matched_contexts": 8,
+      "created_new_contexts": 2,
       "uncategorized_inquiries": 0,
-      "refiner_published_tasks": 6
+      "refiner_published_tasks": 10
     },
     "batches": [
       {
-        "period": "2023-10-01 to 2023-10-31",
-        "file_suffix": "collector 1→2(T001 정정), writer 1, validator 1→2(T001 재검증), refiner 1",
+        "period": "2023-11-01 to 2023-11-30",
+        "file_suffix": "collector 1, writer 1→2(T004 정정), validator 1→2(T004 재검증), refiner 1",
         "metrics": {
-          "collected_threads": 6,
-          "updated_matched_contexts": 1,
-          "created_new_contexts": 5,
+          "collected_threads": 10,
+          "updated_matched_contexts": 8,
+          "created_new_contexts": 2,
           "uncategorized_inquiries": 0,
-          "refiner_published_tasks": 6
+          "refiner_published_tasks": 10
         },
-        "validator_refiner": "가동(context_status:new 5건 및 action_taken:created_new 5건 존재, v0_coo.md 4-C절). 읽어봄이 1차 검증에서 T001(GSMyCar) 1건 FAILED(error_type: CONTEXT_DISTORTION) → node_status fail로 다시쓰미 진행 차단 → v0_coo.md 4-B절 원칙(서술·판단 오류는 원인 노드 재실행)에 따라 모으미 재실행(01_Collector/2026-08-21_2.json) → 재조사 결과 서술된 사실(예산 25,000,000원/16,667건/카카오페이지·애디스콥오퍼월/확정)은 정확했고 참조 permalink만 오귀속이었음이 확인됨(쓰미 재실행 불필요) → 읽어봄이 재검증 PASSED(03_Validator/2026-08-21_2.json, 6건 전원) → 다시쓰미가 6건 전체 최종 발행 완료(04_Refiner/2026-08-21.json, T001 출처 링크 정정 포함).",
-        "self_corrected": "다시쓰미가 T003(아시아경제) 편집 중 '엔티티명'→'엔티명' 오타를 자체 재확인으로 즉시 발견·정정(버전 3), 최종 데이터 영향 없음."
+        "validator_refiner": "가동(context_status:new 4건(T001,T004,T009,T010) 및 action_taken:created_new 2건(T009,T010) 존재, v0_coo.md 4-C절). 읽어봄이 1차 검증(2패스 대상 T001·T004·T009·T010)에서 T004(웰컴저축은행) 1건 FAILED(error_type: DATA_LOSS — 슬랙 원문의 '지급시기(만기일시지급, 원금에 가산)' 조건이 쓰미 반영 시 누락) → node_status fail로 다시쓰미 진행 차단 → v0_coo.md 4-B절 원칙(서술·판단 오류는 원인 노드 재실행)에 따라 쓰미 재실행(02_Writer/2026-08-24_2.json, 웰컴저축은행 192151790 해당 섹션만 정정) → 읽어봄이 재검증 PASSED(03_Validator/2026-08-24_2.json) → 다시쓰미가 10건 전체 검수 후 이미 발행 수준으로 판단, published 처리(04_Refiner/2026-08-24.json).",
+        "self_corrected": "쓰미가 T003(SC제일은행) 반영 중 entity_manifest.json 페이지ID 오독으로 무관한 'SK증권'(229113858) 페이지에 1회 잘못 반영했으나 저장 응답의 title 필드로 즉시 자체 발견, 원본 상태로 완전 원복(버전 8) 후 SC제일은행(229146625)에 정상 재반영 — 총총이 두 페이지를 직접 재조회하여 잔여 손상 없음을 독립 검증 완료."
       }
     ],
-    "note": "2026-08-21 정기 실행(금요일, 주말/공휴일 아님, 당일(2026-08-21) 실행 이력 없음(last_run_date 2026-08-20), 백필 종료 경계(2026-07) 미도달)으로 2023-10 배치 완료. 실행 착수 전 총총 자체 감사에서 2026-08-20 실행분의 01_Collector~04_Refiner 로컬 로그 파일이 전혀 존재하지 않는 것을 발견했으나, status_report.json 기록 및 해당 배치 신규 엔티티(예: 컬리 242745386)의 Confluence 페이지 실제 존재를 직접 재조회로 확인하여 실질 데이터(Source of Truth)에는 문제가 없음을 검증하고 정상 진행함(상세는 backfill_checkpoint.json pending_review 참조, resolved 처리). entity_manifest.json을 1.35→1.36으로 갱신(신규 엔티티 5건: GSMyCar·카카오커머스·아시아경제·스위치원·NH올원뱅크). backfill_checkpoint.json의 last_completed_period를 2023-10-31, next_period_start를 2023-11-01로 갱신, completed_weeks 82."
+    "note": "2026-08-24 정기 실행(월요일, 주말/공휴일 아님, 당일 실행 이력 없음(last_run_date 2026-08-21), 백필 종료 경계(2026-07)와는 거리가 있어 미도달)으로 2023-11 배치 완료. entity_manifest.json에 신규 엔티티 2건(나이스지키미·모비데이즈) 반영 대기(human_action_required, 총총 후속 처리 필요). backfill_checkpoint.json의 last_completed_period를 2023-11-30, next_period_start를 2023-12-01로 갱신, completed_weeks 83. 다시쓰미가 '변경 불필요 판단 시 무쓰기 published 처리'를 택한 방법론적 편차가 있어 pending_review에 등록(v4_refiner.md 문언과의 불일치 검토 필요)."
   },
   "error_logs": [],
   "incidents_self_corrected": [
-    "2023-10 배치: 콘텐츠 검증 FAILED 1건(T001 GSMyCar, CONTEXT_DISTORTION) — 시스템/인프라 사고 아님. v0_coo.md 4-B절 역할분리 원칙에 따른 정상 처리(원인 노드인 모으미 재실행 → 읽어봄이 재검증 PASSED). 재조사 결과 실제로는 서술 왜곡이 아니라 인용 permalink 오귀속이었음이 확인됨.",
-    "2023-10 배치: 다시쓰미의 T003(아시아경제) 편집 중 오타('엔티티명'→'엔티명') 1건 — 다시쓰미 자체 재확인으로 즉시 발견·정정, 최종 데이터 영향 없음."
+    "2023-11 배치: 콘텐츠 검증 FAILED 1건(T004 웰컴저축은행, DATA_LOSS) — 시스템/인프라 사고 아님. v0_coo.md 4-B절 역할분리 원칙에 따른 정상 처리(원인 노드인 쓰미 재실행 → 읽어봄이 재검증 PASSED).",
+    "2023-11 배치: 쓰미의 T003(SC제일은행) 반영 중 페이지ID 오독으로 'SK증권' 페이지에 1회 오반영 — 쓰미 자체 발견·즉시 원복, 총총 독립 재검증으로 잔여 손상 없음 확인."
   ],
   "human_action_required": [
-    "GSMyCar(244940801, 신규 엔티티) — 기존 GS엠비즈(219873281/222756865)와 GS 계열 동일/별개 법인 관계 확정 필요.",
-    "카카오커머스(244973569, 신규 엔티티) — 카카오/카카오페이/카카오페이지/카카오(239206401) 등 기존 카카오 계열과의 관계 확정 필요(4번째 별도 카카오 계열, monitoring).",
-    "스위치원(245071873, 신규 엔티티) — 2023-09 배치 pending_review 항목('신규앱키 전환 프로세스 변경')과 동일 엔티티 추정, 소급 확인 필요.",
-    "NH올원뱅크(245104641, 신규 엔티티) — NH투자증권·NH멤버스 계열 관계 및 하나머니(241860609) 예외종료 정책과의 연관성 확정 필요.",
-    "다올저축은행(240025601) — 매체 실체 표기 3건째 상충(토스/링크러스/카카오페이) 추가 확인, 계속 이월.",
-    "아시아경제(245039105) 페이지 액션 아이템 '캠페인 운영 현황 후속 모니터링' 문구 — 근거 불명확, 유지 여부 확인 필요.",
-    "기존 미해결 항목 계속 보류(신규 발생 아님): 아스트라페 대행사형 구조, 우리은행/우리종합금융, 하나카드, 컬리 'BAT' 표기, 카카오 이중역할, 와이즈버즈/아키타입컴퍼니 명칭 상충 등 — 상세는 backfill_checkpoint.json pending_review 참조.",
-    "2023-11 배치는 다음 정기 실행부터 별도 재확인 없이 자동 진행 예정(실행시점의 직전 년/월인 2026-07에 도달하기 전까지 — 아직 여유 있음)."
+    "나이스지키미(247529493, 신규 엔티티) — 정식 법인명·계약형태 및 major_category(Media_Partner 잠정) 확정 필요.",
+    "모비데이즈(248086529, 신규 엔티티) — 대행사(Client) 여부 및 major_category 확정 필요.",
+    "다시쓰미 '무쓰기 published 처리' 방법론 — v4_refiner.md 문언(페이지 업데이트+published_at 기록 두 요건 모두 충족)과의 불일치, 지침 개정 여부 판단 필요.",
+    "기존 미해결 항목 계속 보류(신규 발생 아님): GSMyCar/GS엠비즈 계열관계, 카카오커머스 등 카카오 계열, 스위치원, NH올원뱅크, 다올저축은행 매체 상충, 우리은행/우리종합금융, 하나카드, 아스트라페 대행사형 구조 등 — 상세는 backfill_checkpoint.json pending_review 참조.",
+    "2023-12 배치는 다음 정기 실행부터 별도 재확인 없이 자동 진행 예정(실행시점의 직전 년/월인 2026-07에 도달하기 전까지 — 아직 여유 있음)."
   ]
 }

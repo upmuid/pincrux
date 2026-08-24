@@ -1,6 +1,6 @@
 {
-  "version": "1.36",
-  "last_updated": "2026-08-21",
+  "version": "1.37",
+  "last_updated": "2026-08-24",
   "purpose": "모으미/쓰미가 이미 확립된 엔티티를 매번 CQL 검색·카테고리 재판단 없이 즉시 참조하기 위한 고정 매니페스트(조회 전용, 가벼움 유지). 여기 없는 엔티티만 LLM 판단(신규 생성 여부, major 분류)을 수행한다. 신규 엔티티가 확정될 때마다 총총(COO)이 이 파일에 추가한다.",
   "history_ref": "2026-07-20부로 엔티티별 정정 사유·배경 서술은 이 파일에서 entity_history.md로 이관했다. 이 파일은 모으미/쓰미가 매 실행 로드하는 조회 전용 테이블이므로 entity_name/major_category/confluence_page_id/aliases/status만 유지한다. 특정 엔티티의 분류 배경이나 오분류 정정 이력이 궁금하면 entity_history.md에서 entity_name으로 찾을 것(총총 감사·검토 시에만 필요, 모으미/쓰미는 평시 참조 불필요).",
   "parent_category_pages": {
@@ -1196,6 +1196,20 @@
       "confluence_page_id": "245104641",
       "status": "human_action_required",
       "note": "2026-08-21 백필(2023-10) 신규 발견. 회원가입 캠페인(OCB 매체). 기존 NH투자증권·NH멤버스와 별개 서비스로 추정되나 계열 관계 미확정. 하나머니(241860609) 예외종료 정책과 연관 정황 발견되어 후속 배치에서 계속 확인 필요."
+    },
+    {
+      "entity_name": "나이스지키미",
+      "major_category": "Media_Partner",
+      "confluence_page_id": "247529493",
+      "status": "human_action_required",
+      "note": "2026-08-24 백필(2023-11) 신규 발견. 마이데이터 금융사연동 캠페인 예산 5,500만→6,000만원 상향(11월). 핀크럭스 캠페인이 나이스지키미 앱 내 지면에 노출되고 매체비를 받는 구조로 추정되나, 원문이 예산·성과 언급뿐이라 정식 법인명·계약형태 확정 불가. Jason 확인 필요."
+    },
+    {
+      "entity_name": "모비데이즈",
+      "major_category": "Client",
+      "confluence_page_id": "248086529",
+      "status": "human_action_required",
+      "note": "2026-08-24 백필(2023-11) 신규 발견. 포크쇼핑 투어리얼 완료하기 CPA 캠페인(11/27 오픈, 11/29 예산 280만→340만원 상향). 리메세·애드맥스·매드업과 유사한 '대행사명+브랜드캠페인' 표기 패턴으로 대행사(Client) 구조 추정되나 확정 근거 부족. Jason 확인 필요."
     }
   ],
   "usage_instructions": {
