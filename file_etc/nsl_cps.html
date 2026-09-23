@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NSL CPS Redirect</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 40px 20px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      text-align: center;
+      color: #222;
+    }
+
+    .status {
+      margin-bottom: 24px;
+      font-size: 15px;
+    }
+
+    .debug {
+      margin: 20px auto;
+      padding: 12px;
+      max-width: 600px;
+      font-size: 12px;
+      text-align: left;
+      background: #f5f5f5;
+      word-break: break-all;
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      max-width: 320px;
+      margin: 10px auto;
+      padding: 14px;
+      border: 0;
+      border-radius: 8px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="status" id="status">
+    네이버 앱으로 이동 중입니다.
+  </div>
+
+  <!-- 테스트 중 문제 발생 시 수동 호출용 -->
+  <button id="naverButton">
+    네이버 앱으로 열기
+  </button>
+
+  <button id="webButton">
+    웹으로 열기
+  </button>
+
+  <div class="debug" id="debug"></div>
+
+<script>
+(function () {
+
+  /*
+   * --------------------------------------------------
+   * Target URL
+   * --------------------------------------------------
+   */
+  const TARGET_URL =
+    "https://external-token.pay.naver.com/entry/pincrux" +
+    "?gd=ab8e18ef4ebebeddc0b3152ce9c9006e14fc05242e3fc9ce32246ea6a9543074" +
+    "&ld=1" +
+    "&pinkey=20260901aarlyuelwfqxqrncvaam070903178380";
+
+
+  /*
+   * --------------------------------------------------
+   * User Agent
+   * --------------------------------------------------
+   */
+  const ua = navigator.userAgent || navigator.vendor || window.opera;
+
+  const isAndroid = /Android/i.test(ua);
+
+  const isIOS =
+    /iPhone|iPad|iPod/i.test(ua) ||
+    (
+      /Macintosh/i.test(ua) &&
+      navigator.maxTouchPoints > 1
+    );
+
+  const isMobile = isAndroid || isIOS;
+
+  /*
+   * NAVER 앱 WebView 여부
+   *
+   * 공식 NAVER 앱 UA 예:
+   * NAVER(inapp; search; ...)
+   * NAVER (inapp; search; ...)
+   * NAVER(higgs; search; ...)
+   */
+  const isNaverApp =
+    /NAVER\s*\((inapp|higgs);/i.test(ua);
+
+
+  /*
+   * --------------------------------------------------
+   * 네이버 앱 Scheme
+   * --------------------------------------------------
+   */
+  const encodedTarget = encodeURIComponent(TARGET_URL);
+
+  const NAVER_SCHEME =
+    "naversearchapp://inappbrowser" +
+    "?url=" + encodedTarget +
+    "&target=new" +
+    "&version=6";
+
+
+  /*
+   * --------------------------------------------------
+   * Android Intent
+   *
+   * 앱 미설치 시 browser_fallback_url로
+   * Target URL 직접 이동
+   * --------------------------------------------------
+   */
+  const ANDROID_INTENT =
+    "intent://inappbrowser" +
+    "?url=" + encodedTarget +
+    "&target=new" +
+    "&version=6" +
+    "#Intent;" +
+    "scheme=naversearchapp;" +
+    "action=android.intent.action.VIEW;" +
+    "category=android.intent.category.BROWSABLE;" +
+    "package=com.nhn.android.search;" +
+    "S.browser_fallback_url=" + encodeURIComponent(TARGET_URL) + ";" +
+    "end";
+
+
+  /*
+   * --------------------------------------------------
+   * Debug
+   * --------------------------------------------------
+   */
+  const statusEl = document.getElementById("status");
+  const debugEl = document.getElementById("debug");
+
+  function setStatus(message) {
+    statusEl.textContent = message;
+  }
+
+  debugEl.innerHTML =
+    "<b>환경</b><br>" +
+    "Android: " + isAndroid + "<br>" +
+    "iOS: " + isIOS + "<br>" +
+    "NAVER App: " + isNaverApp + "<br><br>" +
+    "<b>Target</b><br>" +
+    TARGET_URL;
+
+
+  /*
+   * --------------------------------------------------
+   * 웹 Fallback
+   * --------------------------------------------------
+   */
+  function openWeb() {
+    setStatus("웹 페이지로 이동합니다.");
+    window.location.replace(TARGET_URL);
+  }
+
+
+  /*
+   * --------------------------------------------------
+   * 네이버 앱 실행
+   * --------------------------------------------------
+   */
+  function openNaverApp() {
+
+    /*
+     * 이미 네이버 앱 내부인 경우
+     *
+     * 네이버 앱을 다시 호출하지 않고
+     * 바로 Target으로 이동
+     */
+    if (isNaverApp) {
+      setStatus("네이버 앱 내부에서 페이지를 엽니다.");
+      openWeb();
+      return;
+    }
+
+
+    /*
+     * Android
+     */
+    if (isAndroid) {
+
+      setStatus("네이버 앱을 호출합니다.");
+
+      let appOpened = false;
+
+      const fallbackTimer = setTimeout(function () {
+
+        if (!appOpened) {
+          openWeb();
+        }
+
+      }, 1800);
+
+
+      /*
+       * 앱으로 전환되면 현재 페이지가 hidden 처리됨
+       */
+      document.addEventListener("visibilitychange", function () {
+
+        if (document.hidden) {
+          appOpened = true;
+          clearTimeout(fallbackTimer);
+        }
+
+      });
+
+
+      window.addEventListener("pagehide", function () {
+        appOpened = true;
+        clearTimeout(fallbackTimer);
+      });
+
+
+      /*
+       * Intent 호출
+       */
+      window.location.href = ANDROID_INTENT;
+
+      return;
+    }
+
+
+    /*
+     * iOS
+     */
+    if (isIOS) {
+
+      setStatus("네이버 앱을 호출합니다.");
+
+      let appOpened = false;
+
+      const clickedAt = Date.now();
+
+
+      /*
+       * NAVER 공식 가이드와 동일한 변수명 유지
+       */
+      window.naverAppCheckTimer = setTimeout(function () {
+
+        /*
+         * 앱이 열리지 않았고
+         * 페이지가 계속 활성 상태인 경우
+         */
+        if (
+          !appOpened &&
+          !document.hidden &&
+          Date.now() - clickedAt >= 1400
+        ) {
+          openWeb();
+        }
+
+      }, 1500);
+
+
+      document.addEventListener("visibilitychange", function () {
+
+        if (document.hidden) {
+
+          appOpened = true;
+
+          clearTimeout(
+            window.naverAppCheckTimer
+          );
+
+        }
+
+      });
+
+
+      window.addEventListener("pagehide", function () {
+
+        appOpened = true;
+
+        clearTimeout(
+          window.naverAppCheckTimer
+        );
+
+      });
+
+
+      /*
+       * NAVER 앱 Scheme 호출
+       */
+      window.location.href = NAVER_SCHEME;
+
+      return;
+    }
+
+
+    /*
+     * PC / 기타
+     */
+    openWeb();
+  }
+
+
+  /*
+   * --------------------------------------------------
+   * 수동 테스트 버튼
+   * --------------------------------------------------
+   */
+  document
+    .getElementById("naverButton")
+    .addEventListener("click", openNaverApp);
+
+  document
+    .getElementById("webButton")
+    .addEventListener("click", openWeb);
+
+
+  /*
+   * --------------------------------------------------
+   * 자동 실행
+   * --------------------------------------------------
+   */
+
+  if (!isMobile) {
+
+    /*
+     * PC
+     */
+    setStatus("페이지로 이동합니다.");
+    openWeb();
+
+  } else {
+
+    /*
+     * Mobile
+     */
+    openNaverApp();
+
+  }
+
+})();
+</script>
+
+</body>
+</html>
