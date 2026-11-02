@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+  <title>쇼핑플러스 10월 매출 통계 보고서 (특정 유저 제외)</title>
+  <style>
+   * { box-sizing:border-box; margin:0; padding:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif; }
+   body { background:#f5f7fa; color:#333; line-height:1.5; padding:12px; }
+   .container { max-width:480px; margin:0 auto; }
+   header { background:linear-gradient(135deg,#1e3a8a,#3b82f6); color:#fff; padding:20px 16px; border-radius:12px; margin-bottom:16px; box-shadow:0 4px 6px rgba(0,0,0,0.05); }
+   header h1 { font-size:20px; font-weight:700; margin-bottom:4px; }
+   header p { font-size:13px; opacity:0.9; }
+   .card { background:#fff; border-radius:12px; padding:16px; margin-bottom:16px; box-shadow:0 2px 4px rgba(0,0,0,0.02); }
+   .card-title { font-size:15px; font-weight:700; color:#1e293b; margin-bottom:12px; border-left:4px solid #3b82f6; padding-left:8px; }
+   .kpi-grid { display:table; width:100%; margin-bottom:8px; }
+   .kpi-row { display:table-row; }
+   .kpi-cell { display:table-cell; padding:10px 0; border-bottom:1px solid #f1f5f9; vertical-align:middle; }
+   .kpi-label { font-size:13px; color:#64748b; font-weight:500; }
+   .kpi-value-container { text-align:right; }
+   .kpi-value { font-size:15px; font-weight:600; color:#0f172a; }
+   .up { color:#ef4444; font-weight:600; font-size:11px; }
+   .down { color:#3b82f6; font-weight:600; font-size:11px; }
+   .neutral { color:#64748b; font-weight:600; font-size:11px; }
+   .table-responsive { width:100%; overflow-x:auto; -webkit-overflow-scrolling:touch; margin-bottom:4px; }
+   table { width:100%; border-collapse:collapse; font-size:11px; text-align:right; white-space:nowrap; }
+   th { background:#f8fafc; color:#475569; font-weight:600; padding:8px 6px; border-bottom:2px solid #e2e8f0; font-size:11px; }
+   td { padding:8px 6px; border-bottom:1px solid #f1f5f9; color:#334155; }
+   .text-left { text-align:left; }
+   .text-center { text-align:center; }
+   .font-bold { font-weight:700; }
+   .bg-total { background:#f8fafc; font-weight:700; }
+   .notes { font-size:11px; color:#64748b; line-height:1.6; margin-top:8px; padding-left:4px; }
+   .notes p { margin-bottom:4px; position:relative; padding-left:12px; }
+   .notes p::before { content:"※"; position:absolute; left:0; top:0; }
+   .foot { font-size:10px; color:#94a3b8; margin-top:6px; padding-left:4px; }
+   /* 바 차트 */
+   .bar-row { display:flex; align-items:center; margin-bottom:8px; gap:6px; }
+   .bar-label { font-size:11px; font-weight:600; color:#475569; width:22px; flex-shrink:0; }
+   .bar-track { flex:1; background:#f1f5f9; border-radius:4px; height:18px; overflow:hidden; }
+   .bar-fill { height:100%; border-radius:4px; transition:width 0.3s; }
+   .bar-value { font-size:11px; color:#334155; width:38px; text-align:right; flex-shrink:0; }
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <header>
+    <h1>쇼핑플러스 대시보드</h1>
+    <p>쇼핑플러스 10월 통계 및 월별 매출 요약 (특정 유저 제외)</p>
+   </header>
+   <div class="card">
+    <div class="card-title">쇼핑플러스 10월 요약 지표</div>
+    <div class="kpi-grid">
+     <div class="kpi-row">
+      <div class="kpi-cell kpi-label">전체 결제 금액</div>
+      <div class="kpi-cell kpi-value-container">
+       <span class="kpi-value">16,639,546,961</span>
+       <span class="up" style="font-size:11px">+2.83%</span>
+      </div>
+     </div>
+     <div class="kpi-row">
+      <div class="kpi-cell kpi-label">전체 실 결제금액</div>
+      <div class="kpi-cell kpi-value-container">
+       <span class="kpi-value">14,306,522,776</span>
+       <span class="up" style="font-size:11px">+1.54%</span>
+      </div>
+     </div>
+     <div class="kpi-row">
+      <div class="kpi-cell kpi-label">최종 적립 포인트</div>
+      <div class="kpi-cell kpi-value-container">
+       <span class="kpi-value">279,236,534</span>
+       <span class="up" style="font-size:11px">+0.11%</span>
+      </div>
+     </div>
+     <div class="kpi-row">
+      <div class="kpi-cell kpi-label">총 구매 횟수</div>
+      <div class="kpi-cell kpi-value-container">
+       <span class="kpi-value">405,408</span>
+       <span class="down" style="font-size:11px">-0.18%</span>
+      </div>
+     </div>
+     <div class="kpi-row">
+      <div class="kpi-cell kpi-label">매출</div>
+      <div class="kpi-cell kpi-value-container">
+       <span class="kpi-value">418,669,647</span>
+       <span class="up" style="font-size:11px">+2.86%</span>
+      </div>
+     </div>
+     <div class="kpi-row">
+      <div class="kpi-cell kpi-label">총 참여자 수 (구매자)</div>
+      <div class="kpi-cell kpi-value-container">
+       <span class="kpi-value">52,992</span>
+       <span class="up" style="font-size:11px">+11.63%</span>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="card">
+    <div class="card-title">주요 특이사항</div>
+    <div class="notes">
+     <p>※ 본 보고서는 특정 유저키(PUSRKEY_1b3382419fb7…) 1명의 10월 구매 내역을 모든 지표에서 제외한 기준입니다. 미취소 26건(1,635,137,635원, 이마트 353111)은 전체 결제금액·실 결제금액·포인트·매체비·매출에서, 이미 취소된 39건(2,560,716,740원, 이마트 353111 38건 + SSG 352586 1건)은 전체 결제금액·취소금액에서 제외했습니다(실 결제금액에는 이미 미반영). 매체(카카오페이지)·캠페인(이마트, SSG) 실적에도 동일 적용했으며, 구매 한도 초과 7건은 집계 대상이 아니어서 제외 대상이 아닙니다.</p>
+     <p>실결제 +1.54%(140.9억→143.1억, 1~10월 최고치) · 매출 +2.86% · 영업이익 +12.73%(82,413,265원→92,901,895원) — 영업이익률 20.2%→22.2%</p>
+     <p>신규 매체 카카오페이지(912314): 9월 전액 취소(0원) → 10월 실결제 433,405,313원(매체 비중 3.03%). 대부분 이마트 신규 appkey 353111(나스미디어, 실결제 401,172,864원)이며, 이마트 실결제 +2,432.98%, 캠페인 비중 3.0%</p>
+     <p>COUPANG 실결제 +125.52% — KT엠모바일 경유 352739(1,082,373,956원), SBI저축은행 경유 352703(186,361,933원) 확대, LS증권 경유 신규 appkey 353207(13,699,955원) 추가. 세 appkey 모두 정산률표 미등재로 3.5% 적용 → 정산률 확인 필요</p>
+     <p>키움x쿠팡리워드플러스 실결제 -20.90%(99.5억→78.7억), 키움 매체 -16.60%. 매체 비중 82.73%→67.95%</p>
+     <p>삼프로TV 106,460원 → 161,510,100원(구매자 811명), KT엠모바일 5,843,562원 → 1,172,284,529원으로 대폭 확대. 총 취소금액 2,333,024,185원(총결제 대비 14.0%, 9월 12.9%)</p>
+     <p>9월 신규였던 미스터블루(MoWeb)(910498)는 10월 실적이 없어 매체표에서 제외</p>
+    </div>
+   </div>
+   <div class="card">
+    <div class="card-title">월별 실 결제금액 추이 (1~10월)</div>
+      <div class="bar-row">
+        <div class="bar-label">1월</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width:63.9%;background:#3b82f6"></div>
+        </div>
+        <div class="bar-value">91.3억</div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label">2월</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width:58.0%;background:#3b82f6"></div>
+        </div>
+        <div class="bar-value">83.0억</div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label">3월</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width:72.1%;background:#3b82f6"></div>
+        </div>
+        <div class="bar-value">103.1억</div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label">4월</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width:79.3%;background:#3b82f6"></div>
+        </div>
+        <div class="bar-value">113.4억</div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label">5월</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width:91.8%;background:#3b82f6"></div>
+        </div>
+        <div class="bar-value">131.4억</div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label">6월</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width:85.5%;background:#3b82f6"></div>
+        </div>
+        <div class="bar-value">122.4억</div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label">7월</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width:87.2%;background:#3b82f6"></div>
+        </div>
+        <div class="bar-value">124.7억</div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label">8월</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width:88.0%;background:#3b82f6"></div>
+        </div>
+        <div class="bar-value">125.9억</div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label">9월</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width:98.5%;background:#3b82f6"></div>
+        </div>
+        <div class="bar-value">140.9억</div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label">10월</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width:100.0%;background:#1e3a8a"></div>
+        </div>
+        <div class="bar-value">143.1억</div>
+      </div>
+   </div>
+   <div class="card">
+    <div class="card-title">월별 매출 요약 (2026년 1월~10월)</div>
+    <div class="table-responsive">
+     <table>
+      <thead>
+       <tr>
+        <th class="text-center">-</th>
+        <th>매출</th><th>매체비</th><th>지급포인트</th>
+        <th>영업이익</th><th>영업이익률</th>
+        <th class="text-center">등락</th>
+       </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td class="text-center font-bold">1월</td>
+        <td>274,216,786</td>
+        <td>182,851,486</td>
+        <td>182,803,054</td>
+        <td>91,365,300</td>
+        <td>33.3%</td>
+        <td class="text-center"><span class="neutral">-</span></td>
+      </tr>
+      <tr>
+        <td class="text-center font-bold">2월</td>
+        <td>250,853,280</td>
+        <td>167,330,145</td>
+        <td>166,113,969</td>
+        <td>83,523,135</td>
+        <td>33.3%</td>
+        <td class="text-center"><span class="down" style="font-size:11px">-8.52%</span></td>
+      </tr>
+      <tr>
+        <td class="text-center font-bold">3월</td>
+        <td>314,907,878</td>
+        <td>209,856,731</td>
+        <td>206,369,018</td>
+        <td>105,051,147</td>
+        <td>33.4%</td>
+        <td class="text-center"><span class="up" style="font-size:11px">+25.53%</span></td>
+      </tr>
+      <tr>
+        <td class="text-center font-bold">4월</td>
+        <td>344,115,845</td>
+        <td>271,143,608</td>
+        <td>225,968,879</td>
+        <td>72,972,237</td>
+        <td>21.2%</td>
+        <td class="text-center"><span class="up" style="font-size:11px">+9.28%</span></td>
+      </tr>
+      <tr>
+        <td class="text-center font-bold">5월</td>
+        <td>399,402,300</td>
+        <td>311,087,223</td>
+        <td>255,786,018</td>
+        <td>88,315,077</td>
+        <td>22.1%</td>
+        <td class="text-center"><span class="up" style="font-size:11px">+16.07%</span></td>
+      </tr>
+      <tr>
+        <td class="text-center font-bold">6월</td>
+        <td>375,632,240</td>
+        <td>292,309,916</td>
+        <td>244,349,284</td>
+        <td>83,322,324</td>
+        <td>22.2%</td>
+        <td class="text-center"><span class="down" style="font-size:11px">-5.95%</span></td>
+      </tr>
+      <tr>
+        <td class="text-center font-bold">7월</td>
+        <td>369,655,112</td>
+        <td>291,362,340</td>
+        <td>247,309,234</td>
+        <td>78,292,772</td>
+        <td>21.2%</td>
+        <td class="text-center"><span class="down" style="font-size:11px">-1.59%</span></td>
+      </tr>
+      <tr>
+        <td class="text-center font-bold">8월</td>
+        <td>365,590,550</td>
+        <td>291,121,760</td>
+        <td>248,676,405</td>
+        <td>74,468,790</td>
+        <td>20.4%</td>
+        <td class="text-center"><span class="down" style="font-size:11px">-1.10%</span></td>
+      </tr>
+      <tr>
+        <td class="text-center font-bold">9월</td>
+        <td>407,039,592</td>
+        <td>324,626,327</td>
+        <td>278,922,540</td>
+        <td>82,413,265</td>
+        <td>20.2%</td>
+        <td class="text-center"><span class="up" style="font-size:11px">+11.34%</span></td>
+      </tr>
+      <tr>
+        <td class="text-center font-bold">10월</td>
+        <td>418,669,647</td>
+        <td>325,767,752</td>
+        <td>279,236,534</td>
+        <td>92,901,895</td>
+        <td>22.2%</td>
+        <td class="text-center"><span class="up" style="font-size:11px">+2.86%</span></td>
+      </tr>
+      <tr class="bg-total">
+        <td class="text-center">합계</td>
+        <td>3,520,083,230</td>
+        <td>2,667,457,288</td>
+        <td>2,335,534,935</td>
+        <td>852,625,942</td>
+        <td>24.2%</td>
+        <td></td>
+      </tr>
+      </tbody>
+     </table>
+    </div>
+   </div>
+   <div class="card">
+    <div class="card-title">매체별 실적</div>
+    <div class="table-responsive">
+     <table>
+      <thead>
+       <tr>
+        <th class="text-left">매체</th>
+        <th>실 결제금액</th><th>비중</th>
+        <th>결제(등락)</th>
+        <th>구매자 수</th><th>구매자(등락)</th>
+       </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td class="text-left">키움 <span style="font-size:10px;color:#94a3b8">(쿠팡+네이버 포함)</span></td>
+        <td>9,721,868,077</td>
+        <td>67.95%</td>
+        <td><span class="down" style="font-size:11px">-16.60%</span></td>
+        <td>35,767</td>
+        <td><span class="down" style="font-size:11px">-0.95%</span></td>
+      </tr>
+      <tr>
+        <td class="text-left">겸사겸사</td>
+        <td>1,195,689,079</td>
+        <td>8.36%</td>
+        <td><span class="up" style="font-size:11px">+28.93%</span></td>
+        <td>5,546</td>
+        <td><span class="up" style="font-size:11px">+43.23%</span></td>
+      </tr>
+      <tr>
+        <td class="text-left">KT엠모바일</td>
+        <td>1,172,284,529</td>
+        <td>8.19%</td>
+        <td><span class="up" style="font-size:11px">+19,961.13%</span></td>
+        <td>4,396</td>
+        <td><span class="up" style="font-size:11px">+2,613.58%</span></td>
+      </tr>
+      <tr>
+        <td class="text-left">카카오페이지</td>
+        <td>433,405,313</td>
+        <td>3.03%</td>
+        <td><span class="neutral">신규</span></td>
+        <td>225</td>
+        <td><span class="neutral">신규</span></td>
+      </tr>
+      <tr>
+        <td class="text-left">라이프플래닛</td>
+        <td>391,362,052</td>
+        <td>2.74%</td>
+        <td><span class="up" style="font-size:11px">+7.88%</span></td>
+        <td>1,687</td>
+        <td><span class="up" style="font-size:11px">+1.81%</span></td>
+      </tr>
+      <tr>
+        <td class="text-left">KB PAY</td>
+        <td>336,171,488</td>
+        <td>2.35%</td>
+        <td><span class="down" style="font-size:11px">-0.98%</span></td>
+        <td>1,253</td>
+        <td><span class="up" style="font-size:11px">+0.56%</span></td>
+      </tr>
+      <tr>
+        <td class="text-left">SBI저축은행</td>
+        <td>249,365,564</td>
+        <td>1.74%</td>
+        <td><span class="down" style="font-size:11px">-5.97%</span></td>
+        <td>1,304</td>
+        <td><span class="down" style="font-size:11px">-43.23%</span></td>
+      </tr>
+      <tr>
+        <td class="text-left">국민은행</td>
+        <td>230,027,658</td>
+        <td>1.61%</td>
+        <td><span class="up" style="font-size:11px">+21.51%</span></td>
+        <td>1,554</td>
+        <td><span class="down" style="font-size:11px">-8.86%</span></td>
+      </tr>
+      <tr>
+        <td class="text-left">우리투자증권</td>
+        <td>202,732,691</td>
+        <td>1.42%</td>
+        <td><span class="up" style="font-size:11px">+34.14%</span></td>
+        <td>195</td>
+        <td><span class="up" style="font-size:11px">+2.63%</span></td>
+      </tr>
+      <tr>
+        <td class="text-left">롯데멤버스</td>
+        <td>176,180,308</td>
+        <td>1.23%</td>
+        <td><span class="up" style="font-size:11px">+6.23%</span></td>
+        <td>38</td>
+        <td><span class="down" style="font-size:11px">-22.45%</span></td>
+      </tr>
+      <tr>
+        <td class="text-left">삼프로TV</td>
+        <td>161,510,100</td>
+        <td>1.13%</td>
+        <td><span class="up" style="font-size:11px">+151,609.66%</span></td>
+        <td>811</td>
+        <td><span class="up" style="font-size:11px">+26,933.33%</span></td>
+      </tr>
+      <tr>
+        <td class="text-left">LS 증권</td>
+        <td>26,278,444</td>
+        <td>0.18%</td>
+        <td><span class="up" style="font-size:11px">+77.49%</span></td>
+        <td>142</td>
+        <td><span class="up" style="font-size:11px">+36.54%</span></td>
+      </tr>
+      <tr>
+        <td class="text-left">부산은행</td>
+        <td>4,962,017</td>
+        <td>0.03%</td>
+        <td><span class="down" style="font-size:11px">-10.47%</span></td>
+        <td>40</td>
+        <td><span class="up" style="font-size:11px">+5.26%</span></td>
+      </tr>
+      <tr>
+        <td class="text-left">SK 증권</td>
+        <td>2,469,220</td>
+        <td>0.02%</td>
+        <td><span class="up" style="font-size:11px">+63.83%</span></td>
+        <td>12</td>
+        <td><span class="up" style="font-size:11px">+50.00%</span></td>
+      </tr>
+      <tr>
+        <td class="text-left">PASS(SKT)</td>
+        <td>1,556,732</td>
+        <td>0.01%</td>
+        <td><span class="down" style="font-size:11px">-39.77%</span></td>
+        <td>13</td>
+        <td><span class="down" style="font-size:11px">-35.00%</span></td>
+      </tr>
+      <tr>
+        <td class="text-left">PASS(LGU)</td>
+        <td>659,504</td>
+        <td>0.00%</td>
+        <td><span class="down" style="font-size:11px">-44.40%</span></td>
+        <td>9</td>
+        <td><span class="down" style="font-size:11px">-18.18%</span></td>
+      </tr>
+      <tr class="bg-total">
+        <td class="text-left">종합계</td>
+        <td>14,306,522,776</td>
+        <td>100.00%</td>
+        <td><span class="up" style="font-size:11px">+1.54%</span></td>
+        <td>52,992<span style="font-size:9px;color:#94a3b8">*</span></td>
+        <td><span class="up" style="font-size:11px">+11.63%</span></td>
+      </tr>
+      </tbody>
+     </table>
+    </div>
+    <div class="foot">* 종합계 구매자 수는 매체 간 중복을 제거한 고유 유저키(usrkey) 기준(usrkey 공백 98건 제외). 카카오페이지(912314)는 9월 전액 취소로 실결제 0원이어서 10월 '신규'로 표기. 9월 미스터블루(MoWeb)(910498, 490,000원)는 10월 실적이 없어 표에서 제외. 매체별 합계와 캠페인별 합계는 일치(차이 0원).</div>
+   </div>
+   <div class="card">
+    <div class="card-title">캠페인별 실적</div>
+    <div class="table-responsive">
+     <table>
+      <thead>
+       <tr>
+        <th class="text-left">캠페인</th>
+        <th>실 결제금액</th><th>결제(등락)</th>
+        <th>구매 횟수</th><th>평균 구매금액</th>
+        <th>구매자 수</th><th>객단가</th>
+       </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td class="text-left">키움x쿠팡리워드플러스</td>
+        <td>7,872,022,177</td>
+        <td><span class="down" style="font-size:11px">-20.90%</span></td>
+        <td>271,240</td>
+        <td>29,022</td>
+        <td>27,936</td>
+        <td>281,788</td>
+      </tr>
+      <tr>
+        <td class="text-left">COUPANG</td>
+        <td>2,871,468,839</td>
+        <td><span class="up" style="font-size:11px">+125.52%</span></td>
+        <td>98,021</td>
+        <td>29,294</td>
+        <td>13,138</td>
+        <td>218,562</td>
+      </tr>
+      <tr>
+        <td class="text-left">네이버+ 스토어</td>
+        <td>2,331,661,990</td>
+        <td><span class="up" style="font-size:11px">+8.40%</span></td>
+        <td>27,713</td>
+        <td>84,136</td>
+        <td>10,467</td>
+        <td>222,763</td>
+      </tr>
+      <tr>
+        <td class="text-left">LGE.COM</td>
+        <td>476,432,180</td>
+        <td><span class="up" style="font-size:11px">+10.02%</span></td>
+        <td>377</td>
+        <td>1,263,746</td>
+        <td>180</td>
+        <td>2,646,845</td>
+      </tr>
+      <tr>
+        <td class="text-left">이마트</td>
+        <td>431,281,720</td>
+        <td><span class="up" style="font-size:11px">+2,432.98%</span></td>
+        <td>642</td>
+        <td>671,778</td>
+        <td>283</td>
+        <td>1,523,964</td>
+      </tr>
+      <tr>
+        <td class="text-left">SSG</td>
+        <td>90,258,359</td>
+        <td><span class="up" style="font-size:11px">+103.22%</span></td>
+        <td>1,300</td>
+        <td>69,430</td>
+        <td>607</td>
+        <td>148,696</td>
+      </tr>
+      <tr>
+        <td class="text-left">알리익스프레스</td>
+        <td>67,277,162</td>
+        <td><span class="up" style="font-size:11px">+42.10%</span></td>
+        <td>2,590</td>
+        <td>25,976</td>
+        <td>1,273</td>
+        <td>52,849</td>
+      </tr>
+      <tr>
+        <td class="text-left">에이블리</td>
+        <td>52,441,250</td>
+        <td><span class="up" style="font-size:11px">+21.83%</span></td>
+        <td>1,693</td>
+        <td>30,975</td>
+        <td>827</td>
+        <td>63,411</td>
+      </tr>
+      <tr>
+        <td class="text-left">마켓컬리</td>
+        <td>29,973,384</td>
+        <td><span class="down" style="font-size:11px">-40.05%</span></td>
+        <td>760</td>
+        <td>39,439</td>
+        <td>560</td>
+        <td>53,524</td>
+      </tr>
+      <tr>
+        <td class="text-left">N+ 스토어 추천 브랜드</td>
+        <td>28,398,880</td>
+        <td><span class="up" style="font-size:11px">+21.05%</span></td>
+        <td>646</td>
+        <td>43,961</td>
+        <td>491</td>
+        <td>57,839</td>
+      </tr>
+      <tr>
+        <td class="text-left">트립닷컴</td>
+        <td>27,297,467</td>
+        <td><span class="down" style="font-size:11px">-32.39%</span></td>
+        <td>131</td>
+        <td>208,378</td>
+        <td>78</td>
+        <td>349,968</td>
+      </tr>
+      <tr>
+        <td class="text-left">오늘의집</td>
+        <td>27,189,970</td>
+        <td><span class="up" style="font-size:11px">+95.91%</span></td>
+        <td>262</td>
+        <td>103,779</td>
+        <td>191</td>
+        <td>142,356</td>
+      </tr>
+      <tr>
+        <td class="text-left">온누리공공몰</td>
+        <td>674,930</td>
+        <td><span class="down" style="font-size:11px">-38.54%</span></td>
+        <td>24</td>
+        <td>28,122</td>
+        <td>17</td>
+        <td>39,702</td>
+      </tr>
+      <tr>
+        <td class="text-left">이심이지</td>
+        <td>144,468</td>
+        <td><span class="up" style="font-size:11px">+509.60%</span></td>
+        <td>9</td>
+        <td>16,052</td>
+        <td>9</td>
+        <td>16,052</td>
+      </tr>
+      <tr class="bg-total">
+        <td class="text-left">합계 / 평균</td>
+        <td>14,306,522,776</td>
+        <td><span class="up" style="font-size:11px">+1.54%</span></td>
+        <td>405,408</td>
+        <td>35,289</td>
+        <td>52,992</td>
+        <td>269,975</td>
+      </tr>
+      </tbody>
+     </table>
+    </div>
+    <div class="foot">* 구매 횟수 = Complete 건수, 구매자 수 = 고유 유저키(usrkey) 기준.</div>
+   </div>
+
+  </div>
+ </body>
+</html>
