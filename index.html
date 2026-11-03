@@ -2,19 +2,102 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>쇼핑플러스 메뉴</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>작업물 보관소</title>
+
     <style>
-        /* 제이슨님이 좋아하실만한 깔끔한 스타일링 */
-        body { font-family: sans-serif; line-height: 1.6; padding: 20px; color: #333; }
-        .link-list { list-style: none; padding: 0; }
-        .link-list li { margin-bottom: 10px; }
-        a { color: #1A633F; text-decoration: none; font-weight: bold; }
-        a:hover { text-decoration: underline; }
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            min-height: 100%;
+            background: #f6f8f7;
+        }
+
+        body {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 64px 24px;
+            color: #24332c;
+            font-family: -apple-system, BlinkMacSystemFont,
+                         "Segoe UI", "맑은 고딕", sans-serif;
+            line-height: 1.6;
+            word-break: keep-all;
+        }
+
+        .link-list {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            list-style: none;
+            background: #fff;
+            border: 1px solid #e1e8e3;
+            border-radius: 16px;
+            box-shadow: 0 6px 24px rgb(24 55 37 / 4%);
+        }
+
+        .link-list li + li {
+            border-top: 1px solid #edf1ee;
+        }
+
+        .link-list a {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            min-height: 60px;
+            padding: 17px 24px;
+            color: #34463b;
+            font-size: 15px;
+            font-weight: 500;
+            letter-spacing: -0.3px;
+            text-decoration: none;
+            overflow-wrap: anywhere;
+            transition: background-color 0.15s, color 0.15s;
+        }
+
+        .link-list a::after {
+            content: "›";
+            flex-shrink: 0;
+            color: #a7b5ab;
+            font-size: 24px;
+            line-height: 1;
+        }
+
+        .link-list a:hover {
+            color: #1a633f;
+            background: #f0f7f2;
+        }
+
+        .link-list a:hover::after {
+            color: #1a633f;
+        }
+
+        .link-list a:focus-visible {
+            outline: 2px solid #1a633f;
+            outline-offset: -4px;
+            border-radius: 8px;
+            background: #f0f7f2;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 36px 16px;
+            }
+
+            h2 {
+                font-size: 23px;
+            }
+
+            .link-list a {
+                padding: 16px 18px;
+                font-size: 14px;
+            }
+        }
     </style>
 </head>
 <body>
-
-    <h2>서비스 바로가기</h2>
     
     <ul class="link-list">
         <li><a href="adpop_banner/">1. 애드팝콘 배너 테스트</a></li>
